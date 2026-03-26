@@ -38,6 +38,7 @@ android {
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 
     packaging {
@@ -77,6 +78,7 @@ dependencies {
 
     // Security
     implementation(libs.androidx.security.crypto)
+    implementation(libs.androidx.exifinterface)
 
     // WorkManager
     implementation(libs.androidx.work.runtime.ktx)

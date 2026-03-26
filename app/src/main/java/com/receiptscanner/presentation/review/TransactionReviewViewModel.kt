@@ -20,6 +20,7 @@ import com.receiptscanner.domain.usecase.SubmitTransactionUseCase
 import com.receiptscanner.domain.usecase.SuggestCategoryUseCase
 import com.receiptscanner.domain.util.MilliunitConverter
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharedFlow
@@ -29,6 +30,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import java.time.LocalDate
+import kotlin.math.abs
 import javax.inject.Inject
 
 @HiltViewModel
@@ -64,6 +66,10 @@ class TransactionReviewViewModel @Inject constructor(
         val isSubmitted: Boolean = false,
         val error: String? = null,
         val budgetId: String? = null,
+        /** True once the user has explicitly chosen a category — prevents late matching results from overriding it. */
+        val userEditedCategory: Boolean = false,
+        /** True once the user has explicitly chosen a payee — prevents late matching results from overriding it. */
+        val userEditedPayee: Boolean = false,
     ) {
         data class CategorySuggestion(
             val category: Category,
@@ -79,6 +85,9 @@ class TransactionReviewViewModel @Inject constructor(
     val submissionSuccess: SharedFlow<Unit> = _submissionSuccess.asSharedFlow()
 
     private val receiptId: String = savedStateHandle.get<String>("receiptId") ?: ""
+
+    /** Tracks the latest payee search coroutine so stale results can be cancelled. */
+    private var payeeSearchJob: Job? = null
 
     init {
         loadReceipt()
@@ -145,15 +154,16 @@ class TransactionReviewViewModel @Inject constructor(
             val payeeMatches = matchPayeeUseCase(storeName, budgetId)
             _uiState.update { state ->
                 val bestPayee = payeeMatches.firstOrNull()
+                // Only auto-apply payee if the user hasn't already chosen one
+                val shouldApplyPayee = !state.userEditedPayee && bestPayee != null && bestPayee.confidence > 0.7
                 state.copy(
                     payeeMatches = payeeMatches,
-                    selectedPayeeId = bestPayee?.payee?.id,
-                    payeeName = if (bestPayee != null && bestPayee.confidence > 0.7)
-                        bestPayee.payee.name else state.payeeName,
+                    selectedPayeeId = if (shouldApplyPayee) bestPayee!!.payee.id else state.selectedPayeeId,
+                    payeeName = if (shouldApplyPayee) bestPayee!!.payee.name else state.payeeName,
                 )
             }
 
-            val bestMatch = payeeMatches.firstOrNull()
+            val bestMatch = _uiState.value.payeeMatches.firstOrNull()
             val suggestions = suggestCategoryUseCase(
                 budgetId = budgetId,
                 payeeId = bestMatch?.payee?.id,
@@ -165,7 +175,9 @@ class TransactionReviewViewModel @Inject constructor(
                     categorySuggestions = suggestions.map {
                         UiState.CategorySuggestion(it.category, it.frequency, it.confidence)
                     },
-                    selectedCategory = bestCategory?.category ?: state.selectedCategory,
+                    // Only auto-apply category if the user hasn't already chosen one
+                    selectedCategory = if (!state.userEditedCategory) bestCategory?.category ?: state.selectedCategory
+                    else state.selectedCategory,
                 )
             }
         }
@@ -183,7 +195,9 @@ class TransactionReviewViewModel @Inject constructor(
     fun updatePayeeName(name: String) {
         _uiState.update { it.copy(payeeName = name, selectedPayeeId = null) }
         val budgetId = _uiState.value.budgetId ?: return
-        viewModelScope.launch {
+        // Cancel the previous search so stale results don't overwrite the latest query
+        payeeSearchJob?.cancel()
+        payeeSearchJob = viewModelScope.launch {
             if (name.length >= 2) {
                 val matches = matchPayeeUseCase(name, budgetId)
                 _uiState.update { it.copy(payeeMatches = matches) }
@@ -199,6 +213,7 @@ class TransactionReviewViewModel @Inject constructor(
                 payeeName = match.payee.name,
                 selectedPayeeId = match.payee.id,
                 payeeMatches = emptyList(),
+                userEditedPayee = true,
             )
         }
         val budgetId = _uiState.value.budgetId ?: return
@@ -213,7 +228,10 @@ class TransactionReviewViewModel @Inject constructor(
                     categorySuggestions = suggestions.map {
                         UiState.CategorySuggestion(it.category, it.frequency, it.confidence)
                     },
-                    selectedCategory = suggestions.firstOrNull()?.category ?: state.selectedCategory,
+                    // Explicit payee selection may update category suggestion but still respects userEditedCategory
+                    selectedCategory = if (!state.userEditedCategory)
+                        suggestions.firstOrNull()?.category ?: state.selectedCategory
+                    else state.selectedCategory,
                 )
             }
         }
@@ -242,7 +260,7 @@ class TransactionReviewViewModel @Inject constructor(
     }
 
     fun selectCategory(category: Category) {
-        _uiState.update { it.copy(selectedCategory = category) }
+        _uiState.update { it.copy(selectedCategory = category, userEditedCategory = true) }
     }
 
     fun submitTransaction() {
@@ -264,7 +282,8 @@ class TransactionReviewViewModel @Inject constructor(
             val transaction = Transaction(
                 accountId = account.id,
                 date = state.date,
-                amount = -state.amountMilliunits,
+                // abs() prevents double-negation if user types a negative amount manually
+                amount = -abs(state.amountMilliunits),
                 payeeName = state.payeeName.ifBlank { null },
                 payeeId = state.selectedPayeeId,
                 categoryId = state.selectedCategory?.id,
@@ -280,17 +299,28 @@ class TransactionReviewViewModel @Inject constructor(
                     _uiState.update { it.copy(isSubmitting = false, isSubmitted = true) }
                     _submissionSuccess.emit(Unit)
                 },
-                onFailure = { e ->
-                    // Enqueue for offline retry
-                    transactionQueueRepository.enqueue(transaction)
-                    _uiState.update {
-                        it.copy(
-                            isSubmitting = false,
-                            isSubmitted = true,
-                            error = null,
-                        )
-                    }
-                    _submissionSuccess.emit(Unit)
+                onFailure = { _ ->
+                    // Attempt to queue for offline retry; surface error if that also fails
+                    transactionQueueRepository.enqueue(transaction).fold(
+                        onSuccess = {
+                            _uiState.update {
+                                it.copy(
+                                    isSubmitting = false,
+                                    isSubmitted = true,
+                                    error = null,
+                                )
+                            }
+                            _submissionSuccess.emit(Unit)
+                        },
+                        onFailure = { queueError ->
+                            _uiState.update {
+                                it.copy(
+                                    isSubmitting = false,
+                                    error = "Submission failed and could not be queued: ${queueError.message}",
+                                )
+                            }
+                        },
+                    )
                 },
             )
         }

@@ -1,5 +1,6 @@
 package com.receiptscanner.di
 
+import com.receiptscanner.BuildConfig
 import com.receiptscanner.data.remote.YnabApi
 import com.receiptscanner.data.remote.interceptor.AuthInterceptor
 import com.squareup.moshi.Moshi
@@ -33,11 +34,16 @@ object NetworkModule {
             .readTimeout(30, TimeUnit.SECONDS)
             .writeTimeout(30, TimeUnit.SECONDS)
             .addInterceptor(authInterceptor)
-            .addInterceptor(
-                HttpLoggingInterceptor().apply {
-                    level = HttpLoggingInterceptor.Level.BODY
-                },
-            )
+            .apply {
+                if (BuildConfig.DEBUG) {
+                    addInterceptor(
+                        HttpLoggingInterceptor().apply {
+                            redactHeader("Authorization")
+                            level = HttpLoggingInterceptor.Level.BASIC
+                        },
+                    )
+                }
+            }
             .build()
     }
 

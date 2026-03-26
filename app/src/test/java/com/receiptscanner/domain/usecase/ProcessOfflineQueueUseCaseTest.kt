@@ -199,4 +199,12 @@ class FakeTransactionQueueRepository : TransactionQueueRepository {
     override fun getPendingCount(): Flow<Int> {
         return flowOf(pendingTransactions.count { it.status == PendingStatus.PENDING })
     }
+
+    override fun getActionableCount(): Flow<Int> {
+        return flowOf(pendingTransactions.count { it.status in listOf(PendingStatus.PENDING, PendingStatus.FAILED) })
+    }
+
+    override suspend fun resetStuckSubmitting(thresholdMs: Long): Result<Unit> {
+        return Result.success(Unit)
+    }
 }

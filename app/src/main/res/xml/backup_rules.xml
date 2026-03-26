@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Backup rules for Android < 12. Receipt data, tokens, and images are excluded
+    because they contain sensitive financial information (card last-4, raw OCR text,
+    YNAB auth credentials).
+-->
+<full-backup-content>
+    <exclude domain="database" path="receipt_scanner.db" />
+    <exclude domain="file" path="receipts" />
+    <exclude domain="sharedpref" path="encrypted_prefs.xml" />
+    <exclude domain="sharedpref" path="user_prefs.xml" />
+</full-backup-content>

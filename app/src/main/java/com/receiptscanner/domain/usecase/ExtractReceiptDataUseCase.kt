@@ -10,9 +10,9 @@ class ExtractReceiptDataUseCase @Inject constructor(
     private val textRecognizer: MlKitTextRecognizer,
     private val receiptParser: ReceiptParser,
 ) {
-    suspend operator fun invoke(bitmap: Bitmap): Result<ExtractedReceiptData> {
+    suspend operator fun invoke(bitmap: Bitmap, rotationDegrees: Int = 0): Result<ExtractedReceiptData> {
         return try {
-            val ocrResult = textRecognizer.recognizeText(bitmap)
+            val ocrResult = textRecognizer.recognizeText(bitmap, rotationDegrees)
             val extractedData = receiptParser.parse(ocrResult)
             Result.success(extractedData)
         } catch (e: Exception) {

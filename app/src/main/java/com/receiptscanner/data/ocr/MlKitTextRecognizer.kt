@@ -17,33 +17,37 @@ class MlKitTextRecognizer @Inject constructor() {
     private val recognizer: TextRecognizer =
         TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
 
-    suspend fun recognizeText(bitmap: Bitmap): TextRecognitionResult {
-        val image = InputImage.fromBitmap(bitmap, 0)
+    suspend fun recognizeText(bitmap: Bitmap, rotationDegrees: Int = 0): TextRecognitionResult {
+        val image = InputImage.fromBitmap(bitmap, rotationDegrees)
         return suspendCancellableCoroutine { continuation ->
             recognizer.process(image)
                 .addOnSuccessListener { visionText ->
-                    val blocks = visionText.textBlocks.map { block ->
-                        TextBlock(
-                            text = block.text,
-                            lines = block.lines.map { line ->
-                                TextLine(
-                                    text = line.text,
-                                    boundingBox = line.boundingBox,
-                                    confidence = line.confidence,
-                                )
-                            },
-                            boundingBox = block.boundingBox,
+                    if (continuation.isActive) {
+                        val blocks = visionText.textBlocks.map { block ->
+                            TextBlock(
+                                text = block.text,
+                                lines = block.lines.map { line ->
+                                    TextLine(
+                                        text = line.text,
+                                        boundingBox = line.boundingBox,
+                                        confidence = line.confidence,
+                                    )
+                                },
+                                boundingBox = block.boundingBox,
+                            )
+                        }
+                        continuation.resume(
+                            TextRecognitionResult(
+                                fullText = visionText.text,
+                                blocks = blocks,
+                            )
                         )
                     }
-                    continuation.resume(
-                        TextRecognitionResult(
-                            fullText = visionText.text,
-                            blocks = blocks,
-                        )
-                    )
                 }
                 .addOnFailureListener { e ->
-                    continuation.resumeWithException(e)
+                    if (continuation.isActive) {
+                        continuation.resumeWithException(e)
+                    }
                 }
         }
     }

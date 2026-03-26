@@ -12,6 +12,9 @@ class ProcessOfflineQueueUseCase @Inject constructor(
 ) {
     suspend operator fun invoke(budgetId: String): Result<Int> {
         return try {
+            // Reset any transactions stuck in SUBMITTING (e.g. due to process death mid-flight).
+            queueRepository.resetStuckSubmitting()
+
             var submitted = 0
             val pendingList = queueRepository.getPendingTransactions().first()
 

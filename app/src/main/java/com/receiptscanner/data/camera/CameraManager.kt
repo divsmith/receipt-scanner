@@ -12,7 +12,10 @@ import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.LifecycleOwner
+import androidx.exifinterface.media.ExifInterface
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.suspendCancellableCoroutine
+import kotlinx.coroutines.withContext
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -21,6 +24,9 @@ import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
+
+/** Maximum dimension (px) to which bitmaps are downsampled before OCR. Prevents OOM on high-MP cameras. */
+private const val MAX_BITMAP_DIMENSION = 2048
 
 @Singleton
 class CameraManager @Inject constructor() {
@@ -36,7 +42,9 @@ class CameraManager @Inject constructor() {
         val provider = suspendCancellableCoroutine<ProcessCameraProvider> { continuation ->
             val future = ProcessCameraProvider.getInstance(context)
             future.addListener(
-                { continuation.resume(future.get()) },
+                {
+                    if (continuation.isActive) continuation.resume(future.get())
+                },
                 ContextCompat.getMainExecutor(context),
             )
         }
@@ -74,25 +82,35 @@ class CameraManager @Inject constructor() {
                 ContextCompat.getMainExecutor(context),
                 object : ImageCapture.OnImageSavedCallback {
                     override fun onImageSaved(output: ImageCapture.OutputFileResults) {
-                        continuation.resume(photoFile)
+                        if (continuation.isActive) continuation.resume(photoFile)
                     }
 
                     override fun onError(exception: ImageCaptureException) {
                         photoFile.delete()
-                        continuation.resumeWithException(exception)
+                        if (continuation.isActive) continuation.resumeWithException(exception)
                     }
                 },
             )
         }
     }
 
-    fun loadBitmapFromFile(file: File): Bitmap? {
-        return BitmapFactory.decodeFile(file.absolutePath)
+    /**
+     * Decodes a JPEG file into a Bitmap, downsampling to [MAX_BITMAP_DIMENSION] on the IO
+     * dispatcher to avoid OOM and UI jank on high-megapixel cameras.
+     */
+    suspend fun loadBitmapFromFile(file: File): Bitmap? = withContext(Dispatchers.IO) {
+        decodeSampled(file.absolutePath, null, null)
     }
 
-    fun loadBitmapFromUri(context: Context, uri: Uri): Bitmap? {
-        return context.contentResolver.openInputStream(uri)?.use { stream ->
-            BitmapFactory.decodeStream(stream)
+    /**
+     * Decodes an image from a content URI, downsampling to [MAX_BITMAP_DIMENSION] on the IO
+     * dispatcher to avoid OOM and UI jank with large gallery images.
+     */
+    suspend fun loadBitmapFromUri(context: Context, uri: Uri): Bitmap? = withContext(Dispatchers.IO) {
+        context.contentResolver.openInputStream(uri)?.use { stream ->
+            // Buffer the stream so we can read twice (once for bounds, once for pixels)
+            val bytes = stream.readBytes()
+            decodeSampled(null, null, bytes)
         }
     }
 
@@ -102,10 +120,61 @@ class CameraManager @Inject constructor() {
         imageCapture = null
     }
 
+    /**
+     * Reads the EXIF rotation from a JPEG file and returns the matching rotation in degrees
+     * for use with [MlKitTextRecognizer.recognizeText].
+     */
+    fun readExifRotation(file: File): Int {
+        return try {
+            val exif = ExifInterface(file.absolutePath)
+            when (exif.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL)) {
+                ExifInterface.ORIENTATION_ROTATE_90 -> 90
+                ExifInterface.ORIENTATION_ROTATE_180 -> 180
+                ExifInterface.ORIENTATION_ROTATE_270 -> 270
+                else -> 0
+            }
+        } catch (_: Exception) {
+            0
+        }
+    }
+
     private fun createPhotoFile(context: Context): File {
         val timestamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(Date())
         val storageDir = File(context.filesDir, "receipts")
         if (!storageDir.exists()) storageDir.mkdirs()
         return File(storageDir, "receipt_${timestamp}.jpg")
+    }
+
+    private fun decodeSampled(path: String?, file: File?, bytes: ByteArray?): Bitmap? {
+        val options = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+        when {
+            path != null -> BitmapFactory.decodeFile(path, options)
+            bytes != null -> BitmapFactory.decodeByteArray(bytes, 0, bytes.size, options)
+            else -> return null
+        }
+
+        options.inSampleSize = calculateInSampleSize(options.outWidth, options.outHeight)
+        options.inJustDecodeBounds = false
+
+        return when {
+            path != null -> BitmapFactory.decodeFile(path, options)
+            bytes != null -> BitmapFactory.decodeByteArray(bytes, 0, bytes.size, options)
+            else -> null
+        }
+    }
+
+    private fun calculateInSampleSize(width: Int, height: Int): Int {
+        var inSampleSize = 1
+        if (height > MAX_BITMAP_DIMENSION || width > MAX_BITMAP_DIMENSION) {
+            val halfHeight = height / 2
+            val halfWidth = width / 2
+            while (
+                halfHeight / inSampleSize >= MAX_BITMAP_DIMENSION &&
+                halfWidth / inSampleSize >= MAX_BITMAP_DIMENSION
+            ) {
+                inSampleSize *= 2
+            }
+        }
+        return inSampleSize
     }
 }

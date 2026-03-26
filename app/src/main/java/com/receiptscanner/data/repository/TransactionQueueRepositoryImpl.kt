@@ -61,6 +61,15 @@ class TransactionQueueRepositoryImpl @Inject constructor(
     override fun getPendingCount(): Flow<Int> {
         return pendingTransactionDao.countPending()
     }
+
+    override fun getActionableCount(): Flow<Int> {
+        return pendingTransactionDao.countActionable()
+    }
+
+    override suspend fun resetStuckSubmitting(thresholdMs: Long): Result<Unit> = runCatching {
+        val threshold = System.currentTimeMillis() - thresholdMs
+        pendingTransactionDao.resetStuckSubmitting(threshold)
+    }
 }
 
 private fun PendingTransactionEntity.toDomain() = PendingTransaction(

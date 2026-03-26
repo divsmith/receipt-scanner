@@ -53,7 +53,8 @@ class SettingsViewModel @Inject constructor(
 
     private fun observePendingCount() {
         viewModelScope.launch {
-            transactionQueueRepository.getPendingCount().collect { count ->
+            // Use actionable count (PENDING + FAILED) so the retry panel stays visible for failed items
+            transactionQueueRepository.getActionableCount().collect { count ->
                 _uiState.update { it.copy(pendingCount = count) }
             }
         }
@@ -67,7 +68,10 @@ class SettingsViewModel @Inject constructor(
 
             _uiState.update {
                 it.copy(
-                    token = existingToken ?: "",
+                    // Never expose the raw token in UI state; show only a masked hint for saved tokens
+                    token = if (!existingToken.isNullOrBlank())
+                        "••••" + existingToken.takeLast(4)
+                    else "",
                     isTokenSaved = !existingToken.isNullOrBlank(),
                     selectedBudgetId = budgetId,
                     defaultAccountId = defaultAccountId,
@@ -89,12 +93,19 @@ class SettingsViewModel @Inject constructor(
 
     fun saveToken() {
         val token = _uiState.value.token.trim()
-        if (token.isBlank()) {
-            _uiState.update { it.copy(error = "Token cannot be empty") }
+        if (token.isBlank() || token.startsWith("••••")) {
+            _uiState.update { it.copy(error = "Please enter a new token") }
             return
         }
         tokenProvider.setToken(token)
-        _uiState.update { it.copy(isTokenSaved = true, successMessage = "Token saved") }
+        _uiState.update {
+            it.copy(
+                // Replace displayed value with masked version immediately after save
+                token = "••••" + token.takeLast(4),
+                isTokenSaved = true,
+                successMessage = "Token saved",
+            )
+        }
         loadBudgets()
     }
 

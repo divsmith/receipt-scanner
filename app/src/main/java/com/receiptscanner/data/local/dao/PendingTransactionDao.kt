@@ -26,6 +26,12 @@ interface PendingTransactionDao {
     @Query("SELECT COUNT(*) FROM pending_transactions WHERE status = 'PENDING'")
     fun countPending(): Flow<Int>
 
+    @Query("SELECT COUNT(*) FROM pending_transactions WHERE status IN ('PENDING', 'FAILED')")
+    fun countActionable(): Flow<Int>
+
     @Query("UPDATE pending_transactions SET status = 'PENDING', error_message = NULL WHERE status = 'FAILED'")
     suspend fun retryAllFailed()
+
+    @Query("UPDATE pending_transactions SET status = 'PENDING', error_message = NULL WHERE status = 'SUBMITTING' AND created_at < :thresholdMs")
+    suspend fun resetStuckSubmitting(thresholdMs: Long)
 }

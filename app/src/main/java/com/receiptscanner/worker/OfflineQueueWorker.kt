@@ -60,7 +60,11 @@ class OfflineQueueWorker @AssistedInject constructor(
             val request = OneTimeWorkRequestBuilder<OfflineQueueWorker>()
                 .setConstraints(networkConstraints)
                 .build()
-            workManager.enqueue(request)
+            workManager.enqueueUniqueWork(
+                "${WORK_NAME}_oneshot",
+                androidx.work.ExistingWorkPolicy.REPLACE,
+                request,
+            )
         }
     }
 }

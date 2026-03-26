@@ -11,5 +11,10 @@ interface TransactionQueueRepository {
     suspend fun markSubmitted(id: Long): Result<Unit>
     suspend fun markFailed(id: Long, error: String): Result<Unit>
     suspend fun retryFailed(): Result<Unit>
+    /** Count of PENDING-only items (active queue). */
     fun getPendingCount(): Flow<Int>
+    /** Count of PENDING + FAILED items (shown in settings retry panel). */
+    fun getActionableCount(): Flow<Int>
+    /** Reset SUBMITTING items older than [thresholdMs] back to PENDING so they can be retried. */
+    suspend fun resetStuckSubmitting(thresholdMs: Long = 5 * 60 * 1000L): Result<Unit>
 }

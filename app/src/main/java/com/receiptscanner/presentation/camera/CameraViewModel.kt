@@ -45,9 +45,10 @@ class CameraViewModel @Inject constructor(
             _uiState.update { it.copy(isProcessing = true, error = null) }
             try {
                 val file = cameraManager.capturePhoto(context)
+                val rotation = cameraManager.readExifRotation(file)
                 val bitmap = cameraManager.loadBitmapFromFile(file)
                 if (bitmap != null) {
-                    processImage(bitmap, file.absolutePath)
+                    processImage(bitmap, file.absolutePath, rotation)
                 } else {
                     _uiState.update { it.copy(isProcessing = false, error = "Failed to load captured image") }
                 }
@@ -70,7 +71,8 @@ class CameraViewModel @Inject constructor(
                     file.outputStream().use { out ->
                         bitmap.compress(Bitmap.CompressFormat.JPEG, 90, out)
                     }
-                    processImage(bitmap, file.absolutePath)
+                    // Gallery images are already rotated by the system; rotation = 0
+                    processImage(bitmap, file.absolutePath, 0)
                 } else {
                     _uiState.update { it.copy(isProcessing = false, error = "Failed to load image") }
                 }
@@ -80,8 +82,8 @@ class CameraViewModel @Inject constructor(
         }
     }
 
-    private suspend fun processImage(bitmap: Bitmap, imagePath: String) {
-        val result = extractReceiptDataUseCase(bitmap)
+    private suspend fun processImage(bitmap: Bitmap, imagePath: String, rotationDegrees: Int = 0) {
+        val result = extractReceiptDataUseCase(bitmap, rotationDegrees)
         result.fold(
             onSuccess = { extractedData ->
                 val receipt = Receipt(
