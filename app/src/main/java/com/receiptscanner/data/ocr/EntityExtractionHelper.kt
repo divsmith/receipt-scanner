@@ -8,7 +8,6 @@ import com.google.mlkit.nl.entityextraction.EntityExtractorOptions
 import com.google.mlkit.nl.entityextraction.MoneyEntity
 import com.google.mlkit.nl.entityextraction.PaymentCardEntity
 import kotlinx.coroutines.suspendCancellableCoroutine
-import java.math.BigDecimal
 import java.time.Instant
 import java.time.LocalDate
 import java.time.ZoneId
@@ -81,10 +80,10 @@ class EntityExtractionHelper @Inject constructor() {
                             Entity.TYPE_MONEY -> {
                                 val money = entity as? MoneyEntity ?: continue
                                 // Take the largest money entity as the probable total.
-                                val fractional = money.fractionalPart ?: 0
-                                val whole = money.integerPart ?: 0L
+                                val fractional = money.fractionalPart  // Int (non-nullable)
+                                val whole = money.integerPart          // Int (non-nullable)
                                 // Convert to milliunits: (whole * 100 + fractional) * 10
-                                val milliUnits = (whole * 100 + fractional) * 10L
+                                val milliUnits = (whole.toLong() * 100 + fractional) * 10L
                                 if (totalAmount == null || milliUnits > totalAmount!!) {
                                     totalAmount = milliUnits
                                 }
@@ -92,7 +91,7 @@ class EntityExtractionHelper @Inject constructor() {
                             Entity.TYPE_PAYMENT_CARD -> {
                                 if (cardLastFour == null) {
                                     val card = entity as? PaymentCardEntity ?: continue
-                                    val number = card.cardNumber ?: continue
+                                    val number = card.paymentCardNumber ?: continue
                                     if (number.length >= 4) {
                                         cardLastFour = number.takeLast(4)
                                     }
