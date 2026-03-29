@@ -53,6 +53,7 @@ class TransactionReviewViewModel @Inject constructor(
         val selectedPayeeId: String? = null,
         val amount: String = "",
         val amountMilliunits: Long = 0,
+        val totalConfidence: Float = 0f,
         val date: LocalDate = LocalDate.now(),
         val memo: String = "",
         val selectedAccount: Account? = null,
@@ -111,6 +112,7 @@ class TransactionReviewViewModel @Inject constructor(
             val extractedData = receipt.extractedData
             val storeName = extractedData?.storeName ?: ""
             val totalMilliunits = extractedData?.totalAmount ?: 0L
+            val totalConfidence = extractedData?.totalConfidence ?: 0f
             val receiptDate = extractedData?.date ?: LocalDate.now()
             val cardLastFour = extractedData?.cardLastFour
 
@@ -122,6 +124,7 @@ class TransactionReviewViewModel @Inject constructor(
                         MilliunitConverter.milliunitsToDollars(totalMilliunits).toPlainString()
                     else "",
                     amountMilliunits = totalMilliunits,
+                    totalConfidence = totalConfidence,
                     date = receiptDate,
                     memo = "Scanned receipt",
                 )

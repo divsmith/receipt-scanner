@@ -116,6 +116,7 @@ dependencies {
     // Unit Testing
     testImplementation(libs.bundles.testing)
     testRuntimeOnly(libs.junit5.engine)
+    testRuntimeOnly(libs.junit5.platform.launcher)
 
     // Android / Instrumentation Testing
     androidTestImplementation(libs.bundles.android.testing)

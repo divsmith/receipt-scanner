@@ -1,6 +1,7 @@
 package com.receiptscanner.data.ocr
 
 import android.graphics.Bitmap
+import android.graphics.Rect
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.text.TextRecognition
 import com.google.mlkit.vision.text.TextRecognizer
@@ -29,11 +30,11 @@ class MlKitTextRecognizer @Inject constructor() {
                                 lines = block.lines.map { line ->
                                     TextLine(
                                         text = line.text,
-                                        boundingBox = line.boundingBox,
+                                        boundingBox = line.boundingBox?.toBoundingBox(),
                                         confidence = line.confidence,
                                     )
                                 },
-                                boundingBox = block.boundingBox,
+                                boundingBox = block.boundingBox?.toBoundingBox(),
                             )
                         }
                         continuation.resume(
@@ -57,6 +58,8 @@ class MlKitTextRecognizer @Inject constructor() {
     }
 }
 
+private fun Rect.toBoundingBox() = BoundingBox(left = left, top = top, right = right, bottom = bottom)
+
 data class TextRecognitionResult(
     val fullText: String,
     val blocks: List<TextBlock>,
@@ -65,11 +68,11 @@ data class TextRecognitionResult(
 data class TextBlock(
     val text: String,
     val lines: List<TextLine>,
-    val boundingBox: android.graphics.Rect?,
+    val boundingBox: BoundingBox?,
 )
 
 data class TextLine(
     val text: String,
-    val boundingBox: android.graphics.Rect?,
+    val boundingBox: BoundingBox?,
     val confidence: Float?,
 )

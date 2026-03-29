@@ -12,20 +12,67 @@ import javax.inject.Singleton
 @Singleton
 class ReceiptParser @Inject constructor() {
 
+    /**
+     * Keywords that indicate a line is promotional, informational, or otherwise NOT a transaction
+     * total. Matched case-insensitively anywhere in the line text.
+     */
+    private val negativeKeywords = listOf(
+        "savings", "saved", "you saved", "annual savings",
+        "discount", "coupon", "reward", "loyalty", "points",
+        "change due", "change", "cash back", "cashback",
+        "credit applied", "refund", "void",
+        "tip suggestion", "suggested tip",
+    )
+
+    private val negativePattern = Regex(
+        negativeKeywords.joinToString("|") { Regex.escape(it) },
+        RegexOption.IGNORE_CASE,
+    )
+
+    /**
+     * Total keyword pattern with word boundaries to avoid matching "SUBTOTAL".
+     * Uses negative lookbehind/lookahead to enforce whole-word matching on "total".
+     */
+    private val totalKeyword = Regex(
+        """(?i)(?<!\w)(?:grand\s*)?total(?!\w)|amount\s*due|balance\s*due"""
+    )
+
+    private val amountPattern = Regex("""\$?\s*([\d,]+\.\d{2})""")
+
     fun parse(ocrResult: TextRecognitionResult): ExtractedReceiptData {
         val storeName = extractStoreName(ocrResult)
-        val totalAmount = extractTotalAmountSpatially(ocrResult.blocks)
-            ?: extractTotalAmount(ocrResult.fullText)
+        val totalResult = extractTotalWithConfidence(ocrResult)
         val date = extractDate(ocrResult.fullText)
         val cardLastFour = extractCardLastFour(ocrResult.fullText)
 
         return ExtractedReceiptData(
             storeName = storeName,
-            totalAmount = totalAmount,
+            totalAmount = totalResult?.amount,
+            totalConfidence = totalResult?.confidence ?: 0f,
             date = date,
             cardLastFour = cardLastFour,
             rawText = ocrResult.fullText,
         )
+    }
+
+    /**
+     * Master total extraction that tries spatial analysis first, then text-based keyword search,
+     * then a context-aware fallback. Returns the best candidate with a confidence score.
+     */
+    internal fun extractTotalWithConfidence(ocrResult: TextRecognitionResult): ScoredAmount? {
+        val allLines = ocrResult.blocks.flatMap { it.lines }
+        val totalLineCount = allLines.size
+
+        // 1. Try spatial extraction (highest confidence source)
+        val spatialResult = extractTotalAmountSpatially(ocrResult.blocks)
+        if (spatialResult != null) return spatialResult
+
+        // 2. Try keyword-based text extraction
+        val textResult = extractTotalAmountFromText(ocrResult.fullText, totalLineCount)
+        if (textResult != null) return textResult
+
+        // 3. Context-aware fallback (lower confidence)
+        return extractFallbackAmount(ocrResult)
     }
 
     /**
@@ -76,36 +123,63 @@ class ReceiptParser @Inject constructor() {
     private fun cleanStoreName(raw: String): String {
         val cleaned = raw
             .replace(Regex("#\\d+"), "")
-            .replace(Regex("\\bSTORE\\b", RegexOption.IGNORE_CASE), "")
-            .replace(Regex("\\bLOC(ATION)?\\b", RegexOption.IGNORE_CASE), "")
+            // Only strip "STORE" when it's followed by a number/hash (e.g., "STORE #123")
+            .replace(Regex("\\bSTORE\\s*#?\\d+", RegexOption.IGNORE_CASE), "")
+            .replace(Regex("\\bLOC(ATION)?\\s*#?\\d+", RegexOption.IGNORE_CASE), "")
             .trim()
             .replace(Regex("\\s+"), " ")
         return cleaned.ifEmpty { raw.trim() }
     }
 
+    /** Returns true if the line text contains a negative/promotional keyword. */
+    internal fun containsNegativeKeyword(text: String): Boolean {
+        return negativePattern.containsMatchIn(text)
+    }
+
     /**
      * Spatial total extraction: finds lines containing a TOTAL keyword, then searches nearby
      * lines (same row or immediately below, using bounding box coordinates) for a dollar amount.
-     * This avoids picking up sub-totals that appear earlier in the receipt.
-     *
-     * Returns null if no spatial match is found; the caller should then fall back to
-     * [extractTotalAmount].
+     * Lines containing negative keywords are excluded.
      */
-    internal fun extractTotalAmountSpatially(blocks: List<TextBlock>): Long? {
+    internal fun extractTotalAmountSpatially(blocks: List<TextBlock>): ScoredAmount? {
         val allLines = blocks.flatMap { it.lines }
         if (allLines.all { it.boundingBox == null }) return null
 
-        val totalKeyword = Regex("""(?i)(?:grand\s*)?total|amount\s*due|balance\s*due""")
-        val amountPattern = Regex("""\$?\s*([\d,]+\.\d{2})""")
+        // Find total keyword lines, excluding those with negative keywords
+        val totalLines = allLines
+            .filter { totalKeyword.containsMatchIn(it.text) && !containsNegativeKeyword(it.text) }
+            .reversed() // search from bottom for the final total
 
-        // Find all lines that contain a total keyword (search from the bottom for the final total).
-        val totalLines = allLines.filter { totalKeyword.containsMatchIn(it.text) }.reversed()
+        val totalLineCount = allLines.size
 
         for (totalLine in totalLines) {
+            var confidence = 0.40f // base keyword match
+            val lineIndex = allLines.indexOf(totalLine)
+
+            // Position bonus: bottom third of receipt
+            if (totalLineCount > 0 && lineIndex >= totalLineCount * 2 / 3) {
+                confidence += 0.15f
+            } else if (totalLineCount > 0 && lineIndex >= totalLineCount / 2) {
+                confidence += 0.05f
+            }
+
+            // "GRAND" prefix bonus
+            if (totalLine.text.contains("grand", ignoreCase = true)) {
+                confidence += 0.10f
+            }
+
+            // OCR confidence bonus
+            if ((totalLine.confidence ?: 0f) >= 0.85f) {
+                confidence += 0.10f
+            }
+
             // 1. Check if the total amount is on the same line as the keyword.
             val sameLineMatch = amountPattern.find(totalLine.text)
             if (sameLineMatch != null) {
-                return parseMilliunits(sameLineMatch.groupValues[1])
+                val amount = parseMilliunits(sameLineMatch.groupValues[1]) ?: continue
+                // Dollar sign bonus
+                if (totalLine.text.contains("$")) confidence += 0.05f
+                return ScoredAmount(amount, confidence.coerceAtMost(1f))
             }
 
             // 2. Look for an amount on a nearby line (to the right or directly below).
@@ -129,7 +203,12 @@ class ReceiptParser @Inject constructor() {
 
             if (nearbyAmount != null) {
                 val match = amountPattern.find(nearbyAmount.text)
-                if (match != null) return parseMilliunits(match.groupValues[1])
+                if (match != null) {
+                    val amount = parseMilliunits(match.groupValues[1]) ?: continue
+                    confidence += 0.15f // spatial alignment bonus
+                    if (nearbyAmount.text.contains("$")) confidence += 0.05f
+                    return ScoredAmount(amount, confidence.coerceAtMost(1f))
+                }
             }
         }
 
@@ -147,47 +226,104 @@ class ReceiptParser @Inject constructor() {
     /**
      * Extract total amount by looking for keywords like TOTAL, AMOUNT DUE, BALANCE DUE
      * followed by a dollar amount. Takes the LAST matching "total" to avoid subtotals.
+     * Lines containing negative keywords are skipped.
      */
-    internal fun extractTotalAmount(text: String): Long? {
+    internal fun extractTotalAmountFromText(text: String, totalLineCount: Int): ScoredAmount? {
         val lines = text.lines()
 
         val totalPatterns = listOf(
-            Regex("(?i)(?:GRAND\\s*)?TOTAL\\s*:?\\s*\\$?\\s*([\\d,]+\\.\\d{2})"),
-            Regex("(?i)AMOUNT\\s*DUE\\s*:?\\s*\\$?\\s*([\\d,]+\\.\\d{2})"),
-            Regex("(?i)BALANCE\\s*DUE\\s*:?\\s*\\$?\\s*([\\d,]+\\.\\d{2})"),
-            Regex("(?i)TOTAL\\s+\\$?\\s*([\\d,]+\\.\\d{2})"),
-            Regex("(?i)(?:^|\\s)TOTAL\\s*\\$?([\\d,]+\\.\\d{2})"),
+            Regex("(?i)(?<!\\w)(?:GRAND\\s*)?TOTAL\\s*:?\\s*\\$?\\s*([\\d,]+\\.\\d{2})"),
+            Regex("(?i)(?<!\\w)AMOUNT\\s*DUE\\s*:?\\s*\\$?\\s*([\\d,]+\\.\\d{2})"),
+            Regex("(?i)(?<!\\w)BALANCE\\s*DUE\\s*:?\\s*\\$?\\s*([\\d,]+\\.\\d{2})"),
         )
 
         // Search from bottom up (the final total is usually near the bottom)
-        for (line in lines.reversed()) {
+        for ((lineIndex, line) in lines.withIndex().toList().reversed()) {
+            // Skip lines with promotional/negative keywords
+            if (containsNegativeKeyword(line)) continue
+
             for (pattern in totalPatterns) {
-                val match = pattern.find(line)
-                if (match != null) {
-                    val amountStr = match.groupValues[1].replace(",", "")
-                    return try {
-                        val dollars = BigDecimal(amountStr)
-                        MilliunitConverter.dollarsToMilliunits(dollars)
-                    } catch (e: NumberFormatException) {
-                        null
-                    }
+                val match = pattern.find(line) ?: continue
+                val amountStr = match.groupValues[1].replace(",", "")
+                val amount = try {
+                    MilliunitConverter.dollarsToMilliunits(BigDecimal(amountStr))
+                } catch (e: NumberFormatException) {
+                    continue
                 }
+
+                var confidence = 0.40f // keyword match
+                if (totalLineCount > 0 && lineIndex >= totalLineCount * 2 / 3) confidence += 0.15f
+                else if (totalLineCount > 0 && lineIndex >= totalLineCount / 2) confidence += 0.05f
+                if (line.contains("grand", ignoreCase = true)) confidence += 0.10f
+                if (line.contains("$")) confidence += 0.05f
+                return ScoredAmount(amount, confidence.coerceAtMost(1f))
             }
         }
 
-        // Fallback: look for the largest dollar amount on the receipt
-        val allAmounts = Regex("\\$\\s*([\\d,]+\\.\\d{2})")
-            .findAll(text)
-            .mapNotNull { match ->
-                try {
-                    BigDecimal(match.groupValues[1].replace(",", ""))
-                } catch (e: NumberFormatException) {
-                    null
-                }
-            }
-            .toList()
+        return null
+    }
 
-        return allAmounts.maxOrNull()?.let { MilliunitConverter.dollarsToMilliunits(it) }
+    /**
+     * Kept for backward compatibility. Delegates to the text-based extraction without confidence.
+     */
+    internal fun extractTotalAmount(text: String): Long? {
+        return extractTotalAmountFromText(text, text.lines().size)?.amount
+    }
+
+    /**
+     * Context-aware fallback when no total keyword is found. Instead of blindly taking the
+     * largest amount, applies filtering and position-based scoring.
+     */
+    internal fun extractFallbackAmount(ocrResult: TextRecognitionResult): ScoredAmount? {
+        val allLines = ocrResult.blocks.flatMap { it.lines }
+        val totalLineCount = allLines.size
+
+        data class Candidate(val amount: Long, val lineIndex: Int, val hasDollarSign: Boolean, val lineText: String)
+
+        val candidates = mutableListOf<Candidate>()
+
+        for ((lineIndex, line) in allLines.withIndex()) {
+            // Skip lines with negative/promotional keywords
+            if (containsNegativeKeyword(line.text)) continue
+
+            // Skip lines that look like individual items (long description + small amount)
+            // These typically have significant non-numeric text before the amount
+            val trimmed = line.text.trim()
+            val amountMatch = amountPattern.find(trimmed) ?: continue
+            val textBeforeAmount = trimmed.substring(0, amountMatch.range.first).trim()
+
+            // If there's a long description before the amount and it doesn't look like a total line,
+            // it's probably a line item — skip it for total detection
+            val looksLikeLineItem = textBeforeAmount.length > 10 &&
+                !totalKeyword.containsMatchIn(textBeforeAmount)
+            if (looksLikeLineItem) continue
+
+            val amount = parseMilliunits(amountMatch.groupValues[1]) ?: continue
+            candidates.add(Candidate(amount, lineIndex, trimmed.contains("$"), trimmed))
+        }
+
+        if (candidates.isEmpty()) return null
+
+        // Score each candidate: position + amount magnitude (mild preference for larger)
+        val maxAmount = candidates.maxOf { it.amount }
+        val best = candidates.maxByOrNull { candidate ->
+            var score = 0.0
+            // Position: bottom third gets a big boost
+            if (totalLineCount > 0 && candidate.lineIndex >= totalLineCount * 2 / 3) score += 3.0
+            else if (totalLineCount > 0 && candidate.lineIndex >= totalLineCount / 2) score += 1.0
+            // Mild preference for larger amounts (normalized 0–1)
+            if (maxAmount > 0) score += (candidate.amount.toDouble() / maxAmount) * 1.0
+            // Dollar sign
+            if (candidate.hasDollarSign) score += 0.5
+            score
+        } ?: return null
+
+        // Fallback confidence is always lower since no keyword was found
+        var confidence = 0.15f
+        if (totalLineCount > 0 && best.lineIndex >= totalLineCount * 2 / 3) confidence += 0.10f
+        if (best.hasDollarSign) confidence += 0.05f
+
+        return ScoredAmount(best.amount, confidence.coerceAtMost(1f))
     }
 
     /**
@@ -261,3 +397,9 @@ class ReceiptParser @Inject constructor() {
         return null
     }
 }
+
+/** A dollar amount with an associated confidence score (0.0–1.0). */
+data class ScoredAmount(
+    val amount: Long,
+    val confidence: Float,
+)
