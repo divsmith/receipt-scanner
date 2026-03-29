@@ -16,6 +16,8 @@ import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.CameraAlt
+import androidx.compose.material.icons.filled.FlashOff
+import androidx.compose.material.icons.filled.FlashOn
 import androidx.compose.material.icons.filled.History
 import androidx.compose.material.icons.filled.PhotoLibrary
 import androidx.compose.material.icons.filled.Settings
@@ -147,6 +149,18 @@ fun CameraScreen(
                         .padding(8.dp),
                 ) {
                     androidx.compose.foundation.layout.Row {
+                        IconButton(
+                            onClick = { viewModel.toggleTorch() },
+                            colors = IconButtonDefaults.iconButtonColors(
+                                containerColor = Color.Black.copy(alpha = 0.4f),
+                                contentColor = Color.White,
+                            ),
+                        ) {
+                            Icon(
+                                imageVector = if (uiState.isTorchEnabled) Icons.Default.FlashOn else Icons.Default.FlashOff,
+                                contentDescription = if (uiState.isTorchEnabled) "Torch on" else "Torch off",
+                            )
+                        }
                         IconButton(
                             onClick = onNavigateToHistory,
                             colors = IconButtonDefaults.iconButtonColors(

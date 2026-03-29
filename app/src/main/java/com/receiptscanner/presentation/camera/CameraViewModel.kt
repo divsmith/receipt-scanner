@@ -32,6 +32,7 @@ class CameraViewModel @Inject constructor(
     data class UiState(
         val isProcessing: Boolean = false,
         val error: String? = null,
+        val isTorchEnabled: Boolean = false,
     )
 
     private val _uiState = MutableStateFlow(UiState())
@@ -109,6 +110,12 @@ class CameraViewModel @Inject constructor(
 
     fun clearError() {
         _uiState.update { it.copy(error = null) }
+    }
+
+    fun toggleTorch() {
+        val newEnabled = !_uiState.value.isTorchEnabled
+        _uiState.update { it.copy(isTorchEnabled = newEnabled) }
+        cameraManager.enableTorch(newEnabled)
     }
 
     fun getCameraManager(): CameraManager = cameraManager

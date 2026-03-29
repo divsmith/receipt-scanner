@@ -4,6 +4,7 @@ import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
+import androidx.camera.core.Camera
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
 import androidx.camera.core.ImageCaptureException
@@ -26,13 +27,14 @@ import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 
 /** Maximum dimension (px) to which bitmaps are downsampled before OCR. Prevents OOM on high-MP cameras. */
-private const val MAX_BITMAP_DIMENSION = 2048
+private const val MAX_BITMAP_DIMENSION = 4096
 
 @Singleton
 class CameraManager @Inject constructor() {
 
     private var imageCapture: ImageCapture? = null
     private var cameraProvider: ProcessCameraProvider? = null
+    private var camera: Camera? = null
 
     suspend fun initialize(
         context: Context,
@@ -62,7 +64,7 @@ class CameraManager @Inject constructor() {
 
         val cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
 
-        provider.bindToLifecycle(
+        camera = provider.bindToLifecycle(
             lifecycleOwner,
             cameraSelector,
             preview,
@@ -118,7 +120,16 @@ class CameraManager @Inject constructor() {
         cameraProvider?.unbindAll()
         cameraProvider = null
         imageCapture = null
+        camera = null
     }
+
+    /** Turns the camera torch (flashlight) on or off. No-op if the device has no torch. */
+    fun enableTorch(enabled: Boolean) {
+        camera?.cameraControl?.enableTorch(enabled)
+    }
+
+    /** Returns true if the current camera has a torch (flashlight) available. */
+    fun hasTorch(): Boolean = camera?.cameraInfo?.hasFlashUnit() == true
 
     /**
      * Reads the EXIF rotation from a JPEG file and returns the matching rotation in degrees

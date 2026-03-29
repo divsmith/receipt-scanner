@@ -104,6 +104,7 @@ dependencies {
 
     // ML Kit
     implementation(libs.mlkit.text.recognition)
+    implementation(libs.mlkit.entity.extraction)
 
     // Coil
     implementation(libs.coil.compose)

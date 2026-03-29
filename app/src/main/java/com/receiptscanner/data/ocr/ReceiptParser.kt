@@ -14,7 +14,8 @@ class ReceiptParser @Inject constructor() {
 
     fun parse(ocrResult: TextRecognitionResult): ExtractedReceiptData {
         val storeName = extractStoreName(ocrResult)
-        val totalAmount = extractTotalAmount(ocrResult.fullText)
+        val totalAmount = extractTotalAmountSpatially(ocrResult.blocks)
+            ?: extractTotalAmount(ocrResult.fullText)
         val date = extractDate(ocrResult.fullText)
         val cardLastFour = extractCardLastFour(ocrResult.fullText)
 
@@ -28,20 +29,48 @@ class ReceiptParser @Inject constructor() {
     }
 
     /**
-     * Extract store name: typically the first meaningful text block at the top of the receipt.
-     * Skip very short lines (likely "STORE #123" numbers) and look for the first substantial block.
+     * Extract store name using spatial analysis. Prioritises the line with the tallest bounding
+     * box (largest rendered font) in the first few blocks — that line is almost always the store
+     * header/logo text. Falls back to the first meaningful text line if no bounding boxes are
+     * available (e.g., in unit tests).
      */
     internal fun extractStoreName(ocrResult: TextRecognitionResult): String? {
         if (ocrResult.blocks.isEmpty()) return null
 
-        for (block in ocrResult.blocks.take(3)) {
+        val candidateBlocks = ocrResult.blocks.take(3)
+
+        // Collect all candidate lines with their bounding-box heights.
+        val linesWithHeight = candidateBlocks
+            .flatMap { it.lines }
+            .mapNotNull { line ->
+                val text = line.text.trim()
+                if (!isValidStoreNameLine(text)) return@mapNotNull null
+                val height = line.boundingBox?.height() ?: 0
+                Pair(text, height)
+            }
+
+        // Prefer the tallest line (largest font = most prominent text = store name).
+        val byHeight = linesWithHeight.maxByOrNull { it.second }
+        if (byHeight != null && byHeight.second > 0) {
+            return cleanStoreName(byHeight.first)
+        }
+
+        // No bounding boxes — fall back to the first valid line in the first 3 blocks.
+        for (block in candidateBlocks) {
             val firstLine = block.lines.firstOrNull()?.text?.trim() ?: continue
-            if (firstLine.length < 3) continue
-            if (firstLine.all { it.isDigit() || it == '-' || it == '/' }) continue
-            if (firstLine.matches(Regex("(?i)(receipt|transaction|welcome|thank you|thanks).*"))) continue
+            if (!isValidStoreNameLine(firstLine)) continue
             return cleanStoreName(firstLine)
         }
+
         return ocrResult.blocks.firstOrNull()?.lines?.firstOrNull()?.text?.trim()
+    }
+
+    /** Returns true if the line is a plausible store-name candidate (not noise/header text). */
+    private fun isValidStoreNameLine(text: String): Boolean {
+        if (text.length < 3) return false
+        if (text.all { it.isDigit() || it == '-' || it == '/' || it == ' ' }) return false
+        if (text.matches(Regex("""(?i)(receipt|transaction|welcome|thank\s*you|thanks|store\s*#\d*|address|phone|tel|www\.|http).*"""))) return false
+        return true
     }
 
     private fun cleanStoreName(raw: String): String {
@@ -52,6 +81,67 @@ class ReceiptParser @Inject constructor() {
             .trim()
             .replace(Regex("\\s+"), " ")
         return cleaned.ifEmpty { raw.trim() }
+    }
+
+    /**
+     * Spatial total extraction: finds lines containing a TOTAL keyword, then searches nearby
+     * lines (same row or immediately below, using bounding box coordinates) for a dollar amount.
+     * This avoids picking up sub-totals that appear earlier in the receipt.
+     *
+     * Returns null if no spatial match is found; the caller should then fall back to
+     * [extractTotalAmount].
+     */
+    internal fun extractTotalAmountSpatially(blocks: List<TextBlock>): Long? {
+        val allLines = blocks.flatMap { it.lines }
+        if (allLines.all { it.boundingBox == null }) return null
+
+        val totalKeyword = Regex("""(?i)(?:grand\s*)?total|amount\s*due|balance\s*due""")
+        val amountPattern = Regex("""\$?\s*([\d,]+\.\d{2})""")
+
+        // Find all lines that contain a total keyword (search from the bottom for the final total).
+        val totalLines = allLines.filter { totalKeyword.containsMatchIn(it.text) }.reversed()
+
+        for (totalLine in totalLines) {
+            // 1. Check if the total amount is on the same line as the keyword.
+            val sameLineMatch = amountPattern.find(totalLine.text)
+            if (sameLineMatch != null) {
+                return parseMilliunits(sameLineMatch.groupValues[1])
+            }
+
+            // 2. Look for an amount on a nearby line (to the right or directly below).
+            val totalBox = totalLine.boundingBox ?: continue
+            val totalMidY = (totalBox.top + totalBox.bottom) / 2
+
+            val nearbyAmount = allLines
+                .filter { candidate ->
+                    val box = candidate.boundingBox ?: return@filter false
+                    val candidateMidY = (box.top + box.bottom) / 2
+                    val isRightOf = box.left > totalBox.right && kotlin.math.abs(candidateMidY - totalMidY) < totalBox.height()
+                    val isBelow = box.top >= totalBox.bottom && box.top <= totalBox.bottom + totalBox.height() * 2
+                    (isRightOf || isBelow) && amountPattern.containsMatchIn(candidate.text)
+                }
+                .minByOrNull { candidate ->
+                    val box = candidate.boundingBox!!
+                    val dx = maxOf(0, box.left - totalBox.right)
+                    val dy = maxOf(0, box.top - totalBox.bottom)
+                    dx + dy
+                }
+
+            if (nearbyAmount != null) {
+                val match = amountPattern.find(nearbyAmount.text)
+                if (match != null) return parseMilliunits(match.groupValues[1])
+            }
+        }
+
+        return null
+    }
+
+    private fun parseMilliunits(amountStr: String): Long? {
+        return try {
+            MilliunitConverter.dollarsToMilliunits(BigDecimal(amountStr.replace(",", "")))
+        } catch (e: NumberFormatException) {
+            null
+        }
     }
 
     /**

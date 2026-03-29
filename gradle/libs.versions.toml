@@ -1,7 +1,7 @@
 [versions]
 # Kotlin & Android
 kotlin = "2.1.10"
-agp = "8.8.2"
+agp = "8.13.2"
 ksp = "2.1.10-1.0.31"
 
 # Compose
@@ -35,6 +35,7 @@ camerax = "1.4.1"
 
 # ML Kit
 mlkitTextRecognition = "19.0.1"
+mlkitEntityExtraction = "16.0.0-beta5"
 
 # Image Loading
 coil = "3.1.0"
@@ -120,6 +121,7 @@ camerax-view = { group = "androidx.camera", name = "camera-view", version.ref = 
 
 # ML Kit
 mlkit-text-recognition = { group = "com.google.android.gms", name = "play-services-mlkit-text-recognition", version.ref = "mlkitTextRecognition" }
+mlkit-entity-extraction = { group = "com.google.mlkit", name = "entity-extraction", version.ref = "mlkitEntityExtraction" }
 
 # Coil
 coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
