@@ -1,0 +1,587 @@
+{
+  "fullText": "Falmoath\nRAW BARa\nFALMOUTH RAW BAR\n56 Scranton Ave.\nFalmouth, MA 02540\n(508) 548-7729\nCheck 5738/1\nGuests 5 Abby\n5\n07/02/18-A\n1..6 0ysters\n1..Fish and Chips\n3..MONSTAH roll\n1..Chicken Wings\n3..*Patron\n2..*Sparkling Wine\n1..*0pern Liquor\nI patron double\nItems\n6:28pm\n(*Item shown with tax included)\ntown/MA tax\nTable 33\n19.00\n22.00\n114.00\n12.00\n28.50\n22.00\n6.00\n219.81\n15.38\nTOTAL 235.19\nAMERICAN",
+  "blocks": [
+    {
+      "text": "Falmoath",
+      "lines": [
+        {
+          "text": "Falmoath",
+          "boundingBox": {
+            "left": 477,
+            "top": 101,
+            "right": 593,
+            "bottom": 132
+          },
+          "confidence": 0.64208984
+        }
+      ],
+      "boundingBox": {
+        "left": 477,
+        "top": 101,
+        "right": 593,
+        "bottom": 132
+      }
+    },
+    {
+      "text": "RAW BARa",
+      "lines": [
+        {
+          "text": "RAW BARa",
+          "boundingBox": {
+            "left": 466,
+            "top": 115,
+            "right": 1041,
+            "bottom": 282
+          },
+          "confidence": 0.5139509
+        }
+      ],
+      "boundingBox": {
+        "left": 466,
+        "top": 115,
+        "right": 1041,
+        "bottom": 282
+      }
+    },
+    {
+      "text": "FALMOUTH RAW BAR",
+      "lines": [
+        {
+          "text": "FALMOUTH RAW BAR",
+          "boundingBox": {
+            "left": 296,
+            "top": 277,
+            "right": 1006,
+            "bottom": 353
+          },
+          "confidence": 0.797433
+        }
+      ],
+      "boundingBox": {
+        "left": 296,
+        "top": 277,
+        "right": 1006,
+        "bottom": 353
+      }
+    },
+    {
+      "text": "56 Scranton Ave.\nFalmouth, MA 02540\n(508) 548-7729",
+      "lines": [
+        {
+          "text": "56 Scranton Ave.",
+          "boundingBox": {
+            "left": 450,
+            "top": 348,
+            "right": 815,
+            "bottom": 388
+          },
+          "confidence": 0.85546875
+        },
+        {
+          "text": "Falmouth, MA 02540",
+          "boundingBox": {
+            "left": 424,
+            "top": 386,
+            "right": 846,
+            "bottom": 427
+          },
+          "confidence": 0.8432617
+        },
+        {
+          "text": "(508) 548-7729",
+          "boundingBox": {
+            "left": 482,
+            "top": 426,
+            "right": 800,
+            "bottom": 472
+          },
+          "confidence": 0.8777043
+        }
+      ],
+      "boundingBox": {
+        "left": 424,
+        "top": 346,
+        "right": 846,
+        "bottom": 472
+      }
+    },
+    {
+      "text": "Check 5738/1\nGuests 5 Abby\n5",
+      "lines": [
+        {
+          "text": "Check 5738/1",
+          "boundingBox": {
+            "left": 153,
+            "top": 548,
+            "right": 435,
+            "bottom": 590
+          },
+          "confidence": 0.9129972
+        },
+        {
+          "text": "Guests 5 Abby",
+          "boundingBox": {
+            "left": 146,
+            "top": 599,
+            "right": 485,
+            "bottom": 657
+          },
+          "confidence": 0.84872156
+        },
+        {
+          "text": "5",
+          "boundingBox": {
+            "left": 317,
+            "top": 589,
+            "right": 362,
+            "bottom": 648
+          },
+          "confidence": 0.9609375
+        }
+      ],
+      "boundingBox": {
+        "left": 146,
+        "top": 545,
+        "right": 485,
+        "bottom": 657
+      }
+    },
+    {
+      "text": "07/02/18-A",
+      "lines": [
+        {
+          "text": "07/02/18-A",
+          "boundingBox": {
+            "left": 514,
+            "top": 525,
+            "right": 752,
+            "bottom": 599
+          },
+          "confidence": 0.7734375
+        }
+      ],
+      "boundingBox": {
+        "left": 514,
+        "top": 525,
+        "right": 752,
+        "bottom": 599
+      }
+    },
+    {
+      "text": "1..6 0ysters\n1..Fish and Chips\n3..MONSTAH roll\n1..Chicken Wings\n3..*Patron\n2..*Sparkling Wine",
+      "lines": [
+        {
+          "text": "1..6 0ysters",
+          "boundingBox": {
+            "left": 148,
+            "top": 700,
+            "right": 436,
+            "bottom": 736
+          },
+          "confidence": 0.796875
+        },
+        {
+          "text": "1..Fish and Chips",
+          "boundingBox": {
+            "left": 144,
+            "top": 738,
+            "right": 556,
+            "bottom": 782
+          },
+          "confidence": 0.8541667
+        },
+        {
+          "text": "3..MONSTAH roll",
+          "boundingBox": {
+            "left": 136,
+            "top": 780,
+            "right": 516,
+            "bottom": 825
+          },
+          "confidence": 0.7279576
+        },
+        {
+          "text": "1..Chicken Wings",
+          "boundingBox": {
+            "left": 138,
+            "top": 832,
+            "right": 532,
+            "bottom": 870
+          },
+          "confidence": 0.85364586
+        },
+        {
+          "text": "3..*Patron",
+          "boundingBox": {
+            "left": 130,
+            "top": 880,
+            "right": 380,
+            "bottom": 914
+          },
+          "confidence": 0.76601565
+        },
+        {
+          "text": "2..*Sparkling Wine",
+          "boundingBox": {
+            "left": 126,
+            "top": 919,
+            "right": 576,
+            "bottom": 965
+          },
+          "confidence": 0.8021599
+        }
+      ],
+      "boundingBox": {
+        "left": 125,
+        "top": 697,
+        "right": 576,
+        "bottom": 965
+      }
+    },
+    {
+      "text": "1..*0pern Liquor\nI patron double",
+      "lines": [
+        {
+          "text": "1..*0pern Liquor",
+          "boundingBox": {
+            "left": 130,
+            "top": 972,
+            "right": 502,
+            "bottom": 1018
+          },
+          "confidence": 0.7393229
+        },
+        {
+          "text": "I patron double",
+          "boundingBox": {
+            "left": 253,
+            "top": 1010,
+            "right": 597,
+            "bottom": 1064
+          },
+          "confidence": 0.82572114
+        }
+      ],
+      "boundingBox": {
+        "left": 129,
+        "top": 965,
+        "right": 597,
+        "bottom": 1066
+      }
+    },
+    {
+      "text": "Items",
+      "lines": [
+        {
+          "text": "Items",
+          "boundingBox": {
+            "left": 604,
+            "top": 1160,
+            "right": 726,
+            "bottom": 1196
+          },
+          "confidence": 0.8875
+        }
+      ],
+      "boundingBox": {
+        "left": 604,
+        "top": 1160,
+        "right": 726,
+        "bottom": 1196
+      }
+    },
+    {
+      "text": "6:28pm",
+      "lines": [
+        {
+          "text": "6:28pm",
+          "boundingBox": {
+            "left": 825,
+            "top": 514,
+            "right": 1107,
+            "bottom": 590
+          },
+          "confidence": 0.71158856
+        }
+      ],
+      "boundingBox": {
+        "left": 825,
+        "top": 514,
+        "right": 1107,
+        "bottom": 590
+      }
+    },
+    {
+      "text": "(*Item shown with tax included)",
+      "lines": [
+        {
+          "text": "(*Item shown with tax included)",
+          "boundingBox": {
+            "left": 122,
+            "top": 1056,
+            "right": 900,
+            "bottom": 1106
+          },
+          "confidence": 0.8501157
+        }
+      ],
+      "boundingBox": {
+        "left": 122,
+        "top": 1056,
+        "right": 900,
+        "bottom": 1106
+      }
+    },
+    {
+      "text": "town/MA tax",
+      "lines": [
+        {
+          "text": "town/MA tax",
+          "boundingBox": {
+            "left": 446,
+            "top": 1204,
+            "right": 726,
+            "bottom": 1251
+          },
+          "confidence": 0.8390625
+        }
+      ],
+      "boundingBox": {
+        "left": 446,
+        "top": 1204,
+        "right": 726,
+        "bottom": 1251
+      }
+    },
+    {
+      "text": "Table 33",
+      "lines": [
+        {
+          "text": "Table 33",
+          "boundingBox": {
+            "left": 874,
+            "top": 584,
+            "right": 1113,
+            "bottom": 661
+          },
+          "confidence": 0.8973214
+        }
+      ],
+      "boundingBox": {
+        "left": 874,
+        "top": 584,
+        "right": 1113,
+        "bottom": 661
+      }
+    },
+    {
+      "text": "19.00\n22.00",
+      "lines": [
+        {
+          "text": "19.00",
+          "boundingBox": {
+            "left": 1002,
+            "top": 696,
+            "right": 1118,
+            "bottom": 730
+          },
+          "confidence": 0.9234375
+        },
+        {
+          "text": "22.00",
+          "boundingBox": {
+            "left": 998,
+            "top": 740,
+            "right": 1120,
+            "bottom": 772
+          },
+          "confidence": 0.85546875
+        }
+      ],
+      "boundingBox": {
+        "left": 998,
+        "top": 696,
+        "right": 1120,
+        "bottom": 772
+      }
+    },
+    {
+      "text": "114.00",
+      "lines": [
+        {
+          "text": "114.00",
+          "boundingBox": {
+            "left": 980,
+            "top": 784,
+            "right": 1120,
+            "bottom": 818
+          },
+          "confidence": 0.8964844
+        }
+      ],
+      "boundingBox": {
+        "left": 980,
+        "top": 784,
+        "right": 1120,
+        "bottom": 818
+      }
+    },
+    {
+      "text": "12.00",
+      "lines": [
+        {
+          "text": "12.00",
+          "boundingBox": {
+            "left": 1006,
+            "top": 830,
+            "right": 1124,
+            "bottom": 862
+          },
+          "confidence": 0.890625
+        }
+      ],
+      "boundingBox": {
+        "left": 1006,
+        "top": 830,
+        "right": 1124,
+        "bottom": 862
+      }
+    },
+    {
+      "text": "28.50",
+      "lines": [
+        {
+          "text": "28.50",
+          "boundingBox": {
+            "left": 1002,
+            "top": 874,
+            "right": 1124,
+            "bottom": 908
+          },
+          "confidence": 0.9085938
+        }
+      ],
+      "boundingBox": {
+        "left": 1002,
+        "top": 874,
+        "right": 1124,
+        "bottom": 908
+      }
+    },
+    {
+      "text": "22.00",
+      "lines": [
+        {
+          "text": "22.00",
+          "boundingBox": {
+            "left": 1004,
+            "top": 920,
+            "right": 1128,
+            "bottom": 954
+          },
+          "confidence": 0.87890625
+        }
+      ],
+      "boundingBox": {
+        "left": 1004,
+        "top": 920,
+        "right": 1128,
+        "bottom": 954
+      }
+    },
+    {
+      "text": "6.00",
+      "lines": [
+        {
+          "text": "6.00",
+          "boundingBox": {
+            "left": 1032,
+            "top": 968,
+            "right": 1130,
+            "bottom": 1000
+          },
+          "confidence": 0.8964844
+        }
+      ],
+      "boundingBox": {
+        "left": 1032,
+        "top": 968,
+        "right": 1130,
+        "bottom": 1000
+      }
+    },
+    {
+      "text": "219.81\n15.38",
+      "lines": [
+        {
+          "text": "219.81",
+          "boundingBox": {
+            "left": 986,
+            "top": 1155,
+            "right": 1131,
+            "bottom": 1193
+          },
+          "confidence": 0.91796875
+        },
+        {
+          "text": "15.38",
+          "boundingBox": {
+            "left": 1019,
+            "top": 1206,
+            "right": 1141,
+            "bottom": 1242
+          },
+          "confidence": 0.87890625
+        }
+      ],
+      "boundingBox": {
+        "left": 986,
+        "top": 1155,
+        "right": 1140,
+        "bottom": 1242
+      }
+    },
+    {
+      "text": "TOTAL 235.19",
+      "lines": [
+        {
+          "text": "TOTAL 235.19",
+          "boundingBox": {
+            "left": 470,
+            "top": 1258,
+            "right": 1140,
+            "bottom": 1328
+          },
+          "confidence": 0.84090906
+        }
+      ],
+      "boundingBox": {
+        "left": 470,
+        "top": 1258,
+        "right": 1140,
+        "bottom": 1328
+      }
+    },
+    {
+      "text": "AMERICAN",
+      "lines": [
+        {
+          "text": "AMERICAN",
+          "boundingBox": {
+            "left": 1219,
+            "top": 1468,
+            "right": 1538,
+            "bottom": 1543
+          },
+          "confidence": 0.40429688
+        }
+      ],
+      "boundingBox": {
+        "left": 1219,
+        "top": 1468,
+        "right": 1538,
+        "bottom": 1543
+      }
+    }
+  ]
+}

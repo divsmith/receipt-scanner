@@ -1,0 +1,453 @@
+{
+  "fullText": "Server: Ana\nTable 24/1\nGuests: 2\nCoors Light\nIce Tea\nShr imp Fajita\nStuffed Chicken\nSubtotal\nTax\nEl Charro Cafe Ventana\n6910 E SUNRISE DR\nTotal\nBalance Due\n06/24/2018\n8:00 PM\n#30076\nEAT FOR FREE!!!\n5.00\n3.25\n18.95\n17.95\n45.15\n2.75\n47.90\n47.90",
+  "blocks": [
+    {
+      "text": "Server: Ana\nTable 24/1\nGuests: 2",
+      "lines": [
+        {
+          "text": "Server: Ana",
+          "boundingBox": {
+            "left": 218,
+            "top": 223,
+            "right": 515,
+            "bottom": 290
+          },
+          "confidence": 0.7988281
+        },
+        {
+          "text": "Table 24/1",
+          "boundingBox": {
+            "left": 217,
+            "top": 284,
+            "right": 481,
+            "bottom": 345
+          },
+          "confidence": 0.86762154
+        },
+        {
+          "text": "Guests: 2",
+          "boundingBox": {
+            "left": 200,
+            "top": 341,
+            "right": 454,
+            "bottom": 403
+          },
+          "confidence": 0.80322266
+        }
+      ],
+      "boundingBox": {
+        "left": 193,
+        "top": 222,
+        "right": 522,
+        "bottom": 403
+      }
+    },
+    {
+      "text": "Coors Light\nIce Tea\nShr imp Fajita\nStuffed Chicken",
+      "lines": [
+        {
+          "text": "Coors Light",
+          "boundingBox": {
+            "left": 172,
+            "top": 525,
+            "right": 495,
+            "bottom": 591
+          },
+          "confidence": 0.8917969
+        },
+        {
+          "text": "Ice Tea",
+          "boundingBox": {
+            "left": 164,
+            "top": 595,
+            "right": 369,
+            "bottom": 651
+          },
+          "confidence": 0.8515625
+        },
+        {
+          "text": "Shr imp Fajita",
+          "boundingBox": {
+            "left": 168,
+            "top": 654,
+            "right": 551,
+            "bottom": 727
+          },
+          "confidence": 0.82682294
+        },
+        {
+          "text": "Stuffed Chicken",
+          "boundingBox": {
+            "left": 140,
+            "top": 729,
+            "right": 612,
+            "bottom": 789
+          },
+          "confidence": 0.90122765
+        }
+      ],
+      "boundingBox": {
+        "left": 134,
+        "top": 523,
+        "right": 612,
+        "bottom": 795
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 116,
+            "top": 880,
+            "right": 370,
+            "bottom": 936
+          },
+          "confidence": 0.8339844
+        }
+      ],
+      "boundingBox": {
+        "left": 116,
+        "top": 880,
+        "right": 370,
+        "bottom": 936
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 110,
+            "top": 958,
+            "right": 202,
+            "bottom": 1012
+          },
+          "confidence": 0.81901044
+        }
+      ],
+      "boundingBox": {
+        "left": 110,
+        "top": 958,
+        "right": 202,
+        "bottom": 1012
+      }
+    },
+    {
+      "text": "El Charro Cafe Ventana\n6910 E SUNRISE DR",
+      "lines": [
+        {
+          "text": "El Charro Cafe Ventana",
+          "boundingBox": {
+            "left": 524,
+            "top": 58,
+            "right": 1087,
+            "bottom": 113
+          },
+          "confidence": 0.81825656
+        },
+        {
+          "text": "6910 E SUNRISE DR",
+          "boundingBox": {
+            "left": 550,
+            "top": 108,
+            "right": 1010,
+            "bottom": 162
+          },
+          "confidence": 0.84012276
+        }
+      ],
+      "boundingBox": {
+        "left": 523,
+        "top": 53,
+        "right": 1086,
+        "bottom": 163
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 82,
+            "top": 1120,
+            "right": 242,
+            "bottom": 1181
+          },
+          "confidence": 0.8484375
+        }
+      ],
+      "boundingBox": {
+        "left": 82,
+        "top": 1120,
+        "right": 242,
+        "bottom": 1181
+      }
+    },
+    {
+      "text": "Balance Due",
+      "lines": [
+        {
+          "text": "Balance Due",
+          "boundingBox": {
+            "left": 46,
+            "top": 1288,
+            "right": 836,
+            "bottom": 1363
+          },
+          "confidence": 0.7949219
+        }
+      ],
+      "boundingBox": {
+        "left": 46,
+        "top": 1288,
+        "right": 836,
+        "bottom": 1363
+      }
+    },
+    {
+      "text": "06/24/2018\n8:00 PM",
+      "lines": [
+        {
+          "text": "06/24/2018",
+          "boundingBox": {
+            "left": 1102,
+            "top": 200,
+            "right": 1384,
+            "bottom": 262
+          },
+          "confidence": 0.81328124
+        },
+        {
+          "text": "8:00 PM",
+          "boundingBox": {
+            "left": 1194,
+            "top": 250,
+            "right": 1394,
+            "bottom": 310
+          },
+          "confidence": 0.8183594
+        }
+      ],
+      "boundingBox": {
+        "left": 1102,
+        "top": 198,
+        "right": 1394,
+        "bottom": 315
+      }
+    },
+    {
+      "text": "#30076",
+      "lines": [
+        {
+          "text": "#30076",
+          "boundingBox": {
+            "left": 1065,
+            "top": 370,
+            "right": 1410,
+            "bottom": 430
+          },
+          "confidence": 0.8105469
+        }
+      ],
+      "boundingBox": {
+        "left": 1065,
+        "top": 370,
+        "right": 1410,
+        "bottom": 430
+      }
+    },
+    {
+      "text": "EAT FOR FREE!!!",
+      "lines": [
+        {
+          "text": "EAT FOR FREE!!!",
+          "boundingBox": {
+            "left": 500,
+            "top": 1464,
+            "right": 1071,
+            "bottom": 1567
+          },
+          "confidence": 0.7938702
+        }
+      ],
+      "boundingBox": {
+        "left": 500,
+        "top": 1464,
+        "right": 1071,
+        "bottom": 1567
+      }
+    },
+    {
+      "text": "5.00",
+      "lines": [
+        {
+          "text": "5.00",
+          "boundingBox": {
+            "left": 1316,
+            "top": 502,
+            "right": 1438,
+            "bottom": 552
+          },
+          "confidence": 0.91308594
+        }
+      ],
+      "boundingBox": {
+        "left": 1316,
+        "top": 502,
+        "right": 1438,
+        "bottom": 552
+      }
+    },
+    {
+      "text": "3.25",
+      "lines": [
+        {
+          "text": "3.25",
+          "boundingBox": {
+            "left": 1324,
+            "top": 570,
+            "right": 1450,
+            "bottom": 622
+          },
+          "confidence": 0.91796875
+        }
+      ],
+      "boundingBox": {
+        "left": 1324,
+        "top": 570,
+        "right": 1450,
+        "bottom": 622
+      }
+    },
+    {
+      "text": "18.95",
+      "lines": [
+        {
+          "text": "18.95",
+          "boundingBox": {
+            "left": 1308,
+            "top": 640,
+            "right": 1460,
+            "bottom": 692
+          },
+          "confidence": 0.89375
+        }
+      ],
+      "boundingBox": {
+        "left": 1308,
+        "top": 640,
+        "right": 1460,
+        "bottom": 692
+      }
+    },
+    {
+      "text": "17.95",
+      "lines": [
+        {
+          "text": "17.95",
+          "boundingBox": {
+            "left": 1318,
+            "top": 711,
+            "right": 1470,
+            "bottom": 765
+          },
+          "confidence": 0.88984376
+        }
+      ],
+      "boundingBox": {
+        "left": 1318,
+        "top": 711,
+        "right": 1470,
+        "bottom": 765
+      }
+    },
+    {
+      "text": "45.15",
+      "lines": [
+        {
+          "text": "45.15",
+          "boundingBox": {
+            "left": 1336,
+            "top": 857,
+            "right": 1496,
+            "bottom": 915
+          },
+          "confidence": 0.88359374
+        }
+      ],
+      "boundingBox": {
+        "left": 1336,
+        "top": 857,
+        "right": 1496,
+        "bottom": 915
+      }
+    },
+    {
+      "text": "2.75",
+      "lines": [
+        {
+          "text": "2.75",
+          "boundingBox": {
+            "left": 1379,
+            "top": 931,
+            "right": 1513,
+            "bottom": 993
+          },
+          "confidence": 0.9033203
+        }
+      ],
+      "boundingBox": {
+        "left": 1379,
+        "top": 931,
+        "right": 1513,
+        "bottom": 993
+      }
+    },
+    {
+      "text": "47.90",
+      "lines": [
+        {
+          "text": "47.90",
+          "boundingBox": {
+            "left": 1375,
+            "top": 1095,
+            "right": 1546,
+            "bottom": 1159
+          },
+          "confidence": 0.8390625
+        }
+      ],
+      "boundingBox": {
+        "left": 1375,
+        "top": 1095,
+        "right": 1546,
+        "bottom": 1159
+      }
+    },
+    {
+      "text": "47.90",
+      "lines": [
+        {
+          "text": "47.90",
+          "boundingBox": {
+            "left": 1218,
+            "top": 1268,
+            "right": 1579,
+            "bottom": 1346
+          },
+          "confidence": 0.78515625
+        }
+      ],
+      "boundingBox": {
+        "left": 1218,
+        "top": 1268,
+        "right": 1579,
+        "bottom": 1346
+      }
+    }
+  ]
+}

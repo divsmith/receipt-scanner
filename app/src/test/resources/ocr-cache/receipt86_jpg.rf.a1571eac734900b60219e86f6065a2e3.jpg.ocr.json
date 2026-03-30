@@ -1,0 +1,492 @@
+{
+  "fullText": "Trattoria Saporito\n328, Washingtonstreet\nHoboken, NJ 07030\n201-533-1801\nTABLE # 4\nCHECK# 27273\nDATE/TIME: 7/1/2018 5:53:48 PM\nSERVER: Gastone\nSTATION: 01\nItem Count: 4\n1 STUFFED ARTICHOKE*\nCCC222\nBK FETT AL PORCINI *\nCOSTOLETTE/ALLA/PAP*\n1 BROCCOLI RABE W/ GA*\n1 ESPRESSO*\n1 DBLD ESPRESS0*\nSubtotal\nTax\nGRAND TOTAL\nOpened: 7/1/2018 5:53:48 PM\n$18.00\n$36.00\n$42.00\n$10.50\n$3.75\n$7.50\n$117.75\n$8.24\n$125.99",
+  "blocks": [
+    {
+      "text": "Trattoria Saporito",
+      "lines": [
+        {
+          "text": "Trattoria Saporito",
+          "boundingBox": {
+            "left": 305,
+            "top": 54,
+            "right": 814,
+            "bottom": 146
+          },
+          "confidence": 0.8019301
+        }
+      ],
+      "boundingBox": {
+        "left": 305,
+        "top": 54,
+        "right": 814,
+        "bottom": 146
+      }
+    },
+    {
+      "text": "328, Washingtonstreet\nHoboken, NJ 07030\n201-533-1801",
+      "lines": [
+        {
+          "text": "328, Washingtonstreet",
+          "boundingBox": {
+            "left": 234,
+            "top": 130,
+            "right": 812,
+            "bottom": 194
+          },
+          "confidence": 0.80390626
+        },
+        {
+          "text": "Hoboken, NJ 07030",
+          "boundingBox": {
+            "left": 342,
+            "top": 173,
+            "right": 816,
+            "bottom": 232
+          },
+          "confidence": 0.8283854
+        },
+        {
+          "text": "201-533-1801",
+          "boundingBox": {
+            "left": 402,
+            "top": 211,
+            "right": 754,
+            "bottom": 265
+          },
+          "confidence": 0.7639974
+        }
+      ],
+      "boundingBox": {
+        "left": 234,
+        "top": 130,
+        "right": 816,
+        "bottom": 270
+      }
+    },
+    {
+      "text": "TABLE # 4\nCHECK# 27273",
+      "lines": [
+        {
+          "text": "TABLE # 4",
+          "boundingBox": {
+            "left": 60,
+            "top": 308,
+            "right": 310,
+            "bottom": 363
+          },
+          "confidence": 0.74497765
+        },
+        {
+          "text": "CHECK# 27273",
+          "boundingBox": {
+            "left": 56,
+            "top": 327,
+            "right": 409,
+            "bottom": 415
+          },
+          "confidence": 0.78267044
+        }
+      ],
+      "boundingBox": {
+        "left": 53,
+        "top": 295,
+        "right": 409,
+        "bottom": 415
+      }
+    },
+    {
+      "text": "DATE/TIME: 7/1/2018 5:53:48 PM\nSERVER: Gastone\nSTATION: 01",
+      "lines": [
+        {
+          "text": "DATE/TIME: 7/1/2018 5:53:48 PM",
+          "boundingBox": {
+            "left": 58,
+            "top": 430,
+            "right": 942,
+            "bottom": 493
+          },
+          "confidence": 0.854456
+        },
+        {
+          "text": "SERVER: Gastone",
+          "boundingBox": {
+            "left": 51,
+            "top": 484,
+            "right": 531,
+            "bottom": 538
+          },
+          "confidence": 0.79324776
+        },
+        {
+          "text": "STATION: 01",
+          "boundingBox": {
+            "left": 52,
+            "top": 526,
+            "right": 374,
+            "bottom": 577
+          },
+          "confidence": 0.72148436
+        }
+      ],
+      "boundingBox": {
+        "left": 50,
+        "top": 430,
+        "right": 943,
+        "bottom": 577
+      }
+    },
+    {
+      "text": "Item Count: 4",
+      "lines": [
+        {
+          "text": "Item Count: 4",
+          "boundingBox": {
+            "left": 60,
+            "top": 616,
+            "right": 444,
+            "bottom": 663
+          },
+          "confidence": 0.8583097
+        }
+      ],
+      "boundingBox": {
+        "left": 60,
+        "top": 616,
+        "right": 444,
+        "bottom": 663
+      }
+    },
+    {
+      "text": "1 STUFFED ARTICHOKE*",
+      "lines": [
+        {
+          "text": "1 STUFFED ARTICHOKE*",
+          "boundingBox": {
+            "left": 78,
+            "top": 699,
+            "right": 654,
+            "bottom": 755
+          },
+          "confidence": 0.80078125
+        }
+      ],
+      "boundingBox": {
+        "left": 78,
+        "top": 699,
+        "right": 654,
+        "bottom": 755
+      }
+    },
+    {
+      "text": "CCC222",
+      "lines": [
+        {
+          "text": "CCC222",
+          "boundingBox": {
+            "left": 267,
+            "top": 749,
+            "right": 447,
+            "bottom": 797
+          },
+          "confidence": 0.7480469
+        }
+      ],
+      "boundingBox": {
+        "left": 267,
+        "top": 749,
+        "right": 447,
+        "bottom": 797
+      }
+    },
+    {
+      "text": "BK FETT AL PORCINI *\nCOSTOLETTE/ALLA/PAP*\n1 BROCCOLI RABE W/ GA*\n1 ESPRESSO*\n1 DBLD ESPRESS0*",
+      "lines": [
+        {
+          "text": "BK FETT AL PORCINI *",
+          "boundingBox": {
+            "left": 116,
+            "top": 787,
+            "right": 716,
+            "bottom": 842
+          },
+          "confidence": 0.75
+        },
+        {
+          "text": "COSTOLETTE/ALLA/PAP*",
+          "boundingBox": {
+            "left": 116,
+            "top": 830,
+            "right": 718,
+            "bottom": 889
+          },
+          "confidence": 0.7089844
+        },
+        {
+          "text": "1 BROCCOLI RABE W/ GA*",
+          "boundingBox": {
+            "left": 78,
+            "top": 874,
+            "right": 719,
+            "bottom": 935
+          },
+          "confidence": 0.74327254
+        },
+        {
+          "text": "1 ESPRESSO*",
+          "boundingBox": {
+            "left": 74,
+            "top": 924,
+            "right": 386,
+            "bottom": 978
+          },
+          "confidence": 0.75078124
+        },
+        {
+          "text": "1 DBLD ESPRESS0*",
+          "boundingBox": {
+            "left": 74,
+            "top": 964,
+            "right": 540,
+            "bottom": 1027
+          },
+          "confidence": 0.78348213
+        }
+      ],
+      "boundingBox": {
+        "left": 71,
+        "top": 788,
+        "right": 721,
+        "bottom": 1027
+      }
+    },
+    {
+      "text": "Subtotal\nTax",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 43,
+            "top": 1057,
+            "right": 289,
+            "bottom": 1121
+          },
+          "confidence": 0.83935547
+        },
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 68,
+            "top": 1116,
+            "right": 148,
+            "bottom": 1167
+          },
+          "confidence": 0.83203125
+        }
+      ],
+      "boundingBox": {
+        "left": 43,
+        "top": 1057,
+        "right": 289,
+        "bottom": 1167
+      }
+    },
+    {
+      "text": "GRAND TOTAL",
+      "lines": [
+        {
+          "text": "GRAND TOTAL",
+          "boundingBox": {
+            "left": 42,
+            "top": 1150,
+            "right": 388,
+            "bottom": 1256
+          },
+          "confidence": 0.8394531
+        }
+      ],
+      "boundingBox": {
+        "left": 42,
+        "top": 1150,
+        "right": 388,
+        "bottom": 1256
+      }
+    },
+    {
+      "text": "Opened: 7/1/2018 5:53:48 PM",
+      "lines": [
+        {
+          "text": "Opened: 7/1/2018 5:53:48 PM",
+          "boundingBox": {
+            "left": 38,
+            "top": 1320,
+            "right": 885,
+            "bottom": 1403
+          },
+          "confidence": 0.8230794
+        }
+      ],
+      "boundingBox": {
+        "left": 38,
+        "top": 1320,
+        "right": 885,
+        "bottom": 1403
+      }
+    },
+    {
+      "text": "$18.00",
+      "lines": [
+        {
+          "text": "$18.00",
+          "boundingBox": {
+            "left": 926,
+            "top": 695,
+            "right": 1099,
+            "bottom": 743
+          },
+          "confidence": 0.81640625
+        }
+      ],
+      "boundingBox": {
+        "left": 926,
+        "top": 695,
+        "right": 1099,
+        "bottom": 743
+      }
+    },
+    {
+      "text": "$36.00\n$42.00\n$10.50",
+      "lines": [
+        {
+          "text": "$36.00",
+          "boundingBox": {
+            "left": 930,
+            "top": 781,
+            "right": 1099,
+            "bottom": 833
+          },
+          "confidence": 0.8938802
+        },
+        {
+          "text": "$42.00",
+          "boundingBox": {
+            "left": 931,
+            "top": 825,
+            "right": 1107,
+            "bottom": 873
+          },
+          "confidence": 0.88216144
+        },
+        {
+          "text": "$10.50",
+          "boundingBox": {
+            "left": 934,
+            "top": 868,
+            "right": 1107,
+            "bottom": 918
+          },
+          "confidence": 0.8984375
+        }
+      ],
+      "boundingBox": {
+        "left": 930,
+        "top": 782,
+        "right": 1108,
+        "bottom": 918
+      }
+    },
+    {
+      "text": "$3.75",
+      "lines": [
+        {
+          "text": "$3.75",
+          "boundingBox": {
+            "left": 965,
+            "top": 915,
+            "right": 1109,
+            "bottom": 962
+          },
+          "confidence": 0.915625
+        }
+      ],
+      "boundingBox": {
+        "left": 965,
+        "top": 915,
+        "right": 1109,
+        "bottom": 962
+      }
+    },
+    {
+      "text": "$7.50",
+      "lines": [
+        {
+          "text": "$7.50",
+          "boundingBox": {
+            "left": 967,
+            "top": 958,
+            "right": 1111,
+            "bottom": 1008
+          },
+          "confidence": 0.9234375
+        }
+      ],
+      "boundingBox": {
+        "left": 967,
+        "top": 958,
+        "right": 1111,
+        "bottom": 1008
+      }
+    },
+    {
+      "text": "$117.75\n$8.24",
+      "lines": [
+        {
+          "text": "$117.75",
+          "boundingBox": {
+            "left": 910,
+            "top": 1047,
+            "right": 1115,
+            "bottom": 1100
+          },
+          "confidence": 0.89564735
+        },
+        {
+          "text": "$8.24",
+          "boundingBox": {
+            "left": 974,
+            "top": 1098,
+            "right": 1122,
+            "bottom": 1146
+          },
+          "confidence": 0.8796875
+        }
+      ],
+      "boundingBox": {
+        "left": 910,
+        "top": 1047,
+        "right": 1121,
+        "bottom": 1149
+      }
+    },
+    {
+      "text": "$125.99",
+      "lines": [
+        {
+          "text": "$125.99",
+          "boundingBox": {
+            "left": 916,
+            "top": 1140,
+            "right": 1124,
+            "bottom": 1234
+          },
+          "confidence": 0.7014509
+        }
+      ],
+      "boundingBox": {
+        "left": 916,
+        "top": 1140,
+        "right": 1124,
+        "bottom": 1234
+      }
+    }
+  ]
+}

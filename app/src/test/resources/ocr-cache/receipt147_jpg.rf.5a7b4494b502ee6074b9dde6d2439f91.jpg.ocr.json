@@ -1,0 +1,317 @@
+{
+  "fullText": "Rihanna's Caribbean Restaurarnt\n12709 BEECHNUT ST STE100\nHOUSTON, TX 77072\n8328902382\nCashier: LeeLee\n12-Aug-2018 3:01:40P\n1 1 Curry Chicken\n1 Beef Pattie\nSubtotal\nTax\nORDER: 12\nTotal\nOrder S\n$10.00\n$2.25\n$12.25\n$1.01\n$13.26",
+  "blocks": [
+    {
+      "text": "Rihanna's Caribbean Restaurarnt\n12709 BEECHNUT ST STE100\nHOUSTON, TX 77072\n8328902382",
+      "lines": [
+        {
+          "text": "Rihanna's Caribbean Restaurarnt",
+          "boundingBox": {
+            "left": 128,
+            "top": 184,
+            "right": 1336,
+            "bottom": 272
+          },
+          "confidence": 0.84213364
+        },
+        {
+          "text": "12709 BEECHNUT ST STE100",
+          "boundingBox": {
+            "left": 313,
+            "top": 289,
+            "right": 1155,
+            "bottom": 358
+          },
+          "confidence": 0.80189735
+        },
+        {
+          "text": "HOUSTON, TX 77072",
+          "boundingBox": {
+            "left": 414,
+            "top": 372,
+            "right": 1020,
+            "bottom": 434
+          },
+          "confidence": 0.79010415
+        },
+        {
+          "text": "8328902382",
+          "boundingBox": {
+            "left": 532,
+            "top": 452,
+            "right": 892,
+            "bottom": 504
+          },
+          "confidence": 0.9140625
+        }
+      ],
+      "boundingBox": {
+        "left": 128,
+        "top": 184,
+        "right": 1336,
+        "bottom": 504
+      }
+    },
+    {
+      "text": "Cashier: LeeLee\n12-Aug-2018 3:01:40P",
+      "lines": [
+        {
+          "text": "Cashier: LeeLee",
+          "boundingBox": {
+            "left": 35,
+            "top": 669,
+            "right": 497,
+            "bottom": 732
+          },
+          "confidence": 0.85658485
+        },
+        {
+          "text": "12-Aug-2018 3:01:40P",
+          "boundingBox": {
+            "left": 53,
+            "top": 748,
+            "right": 710,
+            "bottom": 820
+          },
+          "confidence": 0.79050165
+        }
+      ],
+      "boundingBox": {
+        "left": 34,
+        "top": 669,
+        "right": 710,
+        "bottom": 823
+      }
+    },
+    {
+      "text": "1 1 Curry Chicken\n1 Beef Pattie",
+      "lines": [
+        {
+          "text": "1 1 Curry Chicken",
+          "boundingBox": {
+            "left": 35,
+            "top": 904,
+            "right": 558,
+            "bottom": 974
+          },
+          "confidence": 0.812779
+        },
+        {
+          "text": "1 Beef Pattie",
+          "boundingBox": {
+            "left": 52,
+            "top": 982,
+            "right": 460,
+            "bottom": 1050
+          },
+          "confidence": 0.8618608
+        }
+      ],
+      "boundingBox": {
+        "left": 35,
+        "top": 904,
+        "right": 558,
+        "bottom": 1050
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 25,
+            "top": 1144,
+            "right": 272,
+            "bottom": 1201
+          },
+          "confidence": 0.8857422
+        }
+      ],
+      "boundingBox": {
+        "left": 25,
+        "top": 1144,
+        "right": 272,
+        "bottom": 1201
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 26,
+            "top": 1226,
+            "right": 120,
+            "bottom": 1280
+          },
+          "confidence": 0.8333333
+        }
+      ],
+      "boundingBox": {
+        "left": 26,
+        "top": 1226,
+        "right": 120,
+        "bottom": 1280
+      }
+    },
+    {
+      "text": "ORDER: 12",
+      "lines": [
+        {
+          "text": "ORDER: 12",
+          "boundingBox": {
+            "left": 472,
+            "top": 568,
+            "right": 952,
+            "bottom": 656
+          },
+          "confidence": 0.8618164
+        }
+      ],
+      "boundingBox": {
+        "left": 472,
+        "top": 568,
+        "right": 952,
+        "bottom": 656
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 23,
+            "top": 1385,
+            "right": 159,
+            "bottom": 1442
+          },
+          "confidence": 0.8484375
+        }
+      ],
+      "boundingBox": {
+        "left": 23,
+        "top": 1385,
+        "right": 159,
+        "bottom": 1442
+      }
+    },
+    {
+      "text": "Order S",
+      "lines": [
+        {
+          "text": "Order S",
+          "boundingBox": {
+            "left": 18,
+            "top": 1546,
+            "right": 226,
+            "bottom": 1605
+          },
+          "confidence": 0.7858073
+        }
+      ],
+      "boundingBox": {
+        "left": 18,
+        "top": 1546,
+        "right": 226,
+        "bottom": 1605
+      }
+    },
+    {
+      "text": "$10.00\n$2.25",
+      "lines": [
+        {
+          "text": "$10.00",
+          "boundingBox": {
+            "left": 1152,
+            "top": 931,
+            "right": 1371,
+            "bottom": 1005
+          },
+          "confidence": 0.70963544
+        },
+        {
+          "text": "$2.25",
+          "boundingBox": {
+            "left": 1188,
+            "top": 1011,
+            "right": 1366,
+            "bottom": 1081
+          },
+          "confidence": 0.86796874
+        }
+      ],
+      "boundingBox": {
+        "left": 1147,
+        "top": 931,
+        "right": 1371,
+        "bottom": 1082
+      }
+    },
+    {
+      "text": "$12.25",
+      "lines": [
+        {
+          "text": "$12.25",
+          "boundingBox": {
+            "left": 1145,
+            "top": 1153,
+            "right": 1361,
+            "bottom": 1229
+          },
+          "confidence": 0.82877606
+        }
+      ],
+      "boundingBox": {
+        "left": 1145,
+        "top": 1153,
+        "right": 1361,
+        "bottom": 1229
+      }
+    },
+    {
+      "text": "$1.01",
+      "lines": [
+        {
+          "text": "$1.01",
+          "boundingBox": {
+            "left": 1186,
+            "top": 1225,
+            "right": 1351,
+            "bottom": 1299
+          },
+          "confidence": 0.6484375
+        }
+      ],
+      "boundingBox": {
+        "left": 1186,
+        "top": 1225,
+        "right": 1351,
+        "bottom": 1299
+      }
+    },
+    {
+      "text": "$13.26",
+      "lines": [
+        {
+          "text": "$13.26",
+          "boundingBox": {
+            "left": 1146,
+            "top": 1380,
+            "right": 1352,
+            "bottom": 1436
+          },
+          "confidence": 0.8619792
+        }
+      ],
+      "boundingBox": {
+        "left": 1146,
+        "top": 1380,
+        "right": 1352,
+        "bottom": 1436
+      }
+    }
+  ]
+}

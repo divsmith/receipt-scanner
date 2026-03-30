@@ -1,0 +1,575 @@
+{
+  "fullText": "KS# 2\nSIde1\nHcDone le st 3100\n1617 NEST .\nLOS ANGELE E Ch S23153\nTEL 21 94 730\n1 Db1 2tr Chees\nSpecta l Reque t\nADD Leaf LettiC\nADD Mac Sauca\nSLbtotsl\nTax\nTake-0ut Total\nCash less\nChange\nMERs 43206\nCARO ISSUER\n21a 03:08 PM\nDrcor 97\nBOW DEIT CARD#EE\nTRANSACTION AMOT\nCHIP READ\nAJTHORIZATICN CC- 3154\nSEQ# 039988\nAID: A000000042\n5.99\n0.25\n0.40\n6.64\n0.63\nT.27\n7.27\n0.00\n7.27\nMcDona d's now aa1 at m JberEATS",
+  "blocks": [
+    {
+      "text": "KS# 2",
+      "lines": [
+        {
+          "text": "KS# 2",
+          "boundingBox": {
+            "left": 238,
+            "top": 275,
+            "right": 365,
+            "bottom": 318
+          },
+          "confidence": 0.57421875
+        }
+      ],
+      "boundingBox": {
+        "left": 238,
+        "top": 275,
+        "right": 365,
+        "bottom": 318
+      }
+    },
+    {
+      "text": "SIde1",
+      "lines": [
+        {
+          "text": "SIde1",
+          "boundingBox": {
+            "left": 242,
+            "top": 326,
+            "right": 362,
+            "bottom": 366
+          },
+          "confidence": 0.4609375
+        }
+      ],
+      "boundingBox": {
+        "left": 242,
+        "top": 326,
+        "right": 362,
+        "bottom": 366
+      }
+    },
+    {
+      "text": "HcDone le st 3100\n1617 NEST .\nLOS ANGELE E Ch S23153\nTEL 21 94 730",
+      "lines": [
+        {
+          "text": "HcDone le st 3100",
+          "boundingBox": {
+            "left": 407,
+            "top": 5,
+            "right": 1051,
+            "bottom": 81
+          },
+          "confidence": 0.40457588
+        },
+        {
+          "text": "1617 NEST .",
+          "boundingBox": {
+            "left": 471,
+            "top": 56,
+            "right": 956,
+            "bottom": 122
+          },
+          "confidence": 0.5980903
+        },
+        {
+          "text": "LOS ANGELE E Ch S23153",
+          "boundingBox": {
+            "left": 384,
+            "top": 97,
+            "right": 1026,
+            "bottom": 175
+          },
+          "confidence": 0.5789931
+        },
+        {
+          "text": "TEL 21 94 730",
+          "boundingBox": {
+            "left": 504,
+            "top": 152,
+            "right": 943,
+            "bottom": 211
+          },
+          "confidence": 0.40976563
+        }
+      ],
+      "boundingBox": {
+        "left": 380,
+        "top": 5,
+        "right": 1057,
+        "bottom": 220
+      }
+    },
+    {
+      "text": "1 Db1 2tr Chees\nSpecta l Reque t\nADD Leaf LettiC\nADD Mac Sauca",
+      "lines": [
+        {
+          "text": "1 Db1 2tr Chees",
+          "boundingBox": {
+            "left": 271,
+            "top": 405,
+            "right": 633,
+            "bottom": 466
+          },
+          "confidence": 0.57454425
+        },
+        {
+          "text": "Specta l Reque t",
+          "boundingBox": {
+            "left": 296,
+            "top": 451,
+            "right": 688,
+            "bottom": 520
+          },
+          "confidence": 0.6439303
+        },
+        {
+          "text": "ADD Leaf LettiC",
+          "boundingBox": {
+            "left": 320,
+            "top": 503,
+            "right": 704,
+            "bottom": 564
+          },
+          "confidence": 0.64873797
+        },
+        {
+          "text": "ADD Mac Sauca",
+          "boundingBox": {
+            "left": 302,
+            "top": 557,
+            "right": 639,
+            "bottom": 613
+          },
+          "confidence": 0.67791194
+        }
+      ],
+      "boundingBox": {
+        "left": 271,
+        "top": 399,
+        "right": 706,
+        "bottom": 616
+      }
+    },
+    {
+      "text": "SLbtotsl\nTax\nTake-0ut Total",
+      "lines": [
+        {
+          "text": "SLbtotsl",
+          "boundingBox": {
+            "left": 272,
+            "top": 661,
+            "right": 476,
+            "bottom": 720
+          },
+          "confidence": 0.6040039
+        },
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 312,
+            "top": 728,
+            "right": 386,
+            "bottom": 766
+          },
+          "confidence": 0.74088544
+        },
+        {
+          "text": "Take-0ut Total",
+          "boundingBox": {
+            "left": 258,
+            "top": 757,
+            "right": 621,
+            "bottom": 824
+          },
+          "confidence": 0.6733774
+        }
+      ],
+      "boundingBox": {
+        "left": 254,
+        "top": 657,
+        "right": 621,
+        "bottom": 824
+      }
+    },
+    {
+      "text": "Cash less\nChange",
+      "lines": [
+        {
+          "text": "Cash less",
+          "boundingBox": {
+            "left": 256,
+            "top": 875,
+            "right": 471,
+            "bottom": 930
+          },
+          "confidence": 0.7441406
+        },
+        {
+          "text": "Change",
+          "boundingBox": {
+            "left": 258,
+            "top": 941,
+            "right": 418,
+            "bottom": 985
+          },
+          "confidence": 0.72526044
+        }
+      ],
+      "boundingBox": {
+        "left": 255,
+        "top": 875,
+        "right": 473,
+        "bottom": 988
+      }
+    },
+    {
+      "text": "MERs 43206\nCARO ISSUER",
+      "lines": [
+        {
+          "text": "MERs 43206",
+          "boundingBox": {
+            "left": 261,
+            "top": 1032,
+            "right": 558,
+            "bottom": 1100
+          },
+          "confidence": 0.6970486
+        },
+        {
+          "text": "CARO ISSUER",
+          "boundingBox": {
+            "left": 264,
+            "top": 1087,
+            "right": 564,
+            "bottom": 1154
+          },
+          "confidence": 0.70390624
+        }
+      ],
+      "boundingBox": {
+        "left": 260,
+        "top": 1032,
+        "right": 564,
+        "bottom": 1155
+      }
+    },
+    {
+      "text": "21a 03:08 PM\nDrcor 97",
+      "lines": [
+        {
+          "text": "21a 03:08 PM",
+          "boundingBox": {
+            "left": 746,
+            "top": 219,
+            "right": 1222,
+            "bottom": 299
+          },
+          "confidence": 0.5414063
+        },
+        {
+          "text": "Drcor 97",
+          "boundingBox": {
+            "left": 1020,
+            "top": 270,
+            "right": 1219,
+            "bottom": 326
+          },
+          "confidence": 0.531808
+        }
+      ],
+      "boundingBox": {
+        "left": 746,
+        "top": 215,
+        "right": 1226,
+        "bottom": 347
+      }
+    },
+    {
+      "text": "BOW DEIT CARD#EE\nTRANSACTION AMOT\nCHIP READ\nAJTHORIZATICN CC- 3154",
+      "lines": [
+        {
+          "text": "BOW DEIT CARD#EE",
+          "boundingBox": {
+            "left": 277,
+            "top": 1115,
+            "right": 899,
+            "bottom": 1212
+          },
+          "confidence": 0.6157924
+        },
+        {
+          "text": "TRANSACTION AMOT",
+          "boundingBox": {
+            "left": 273,
+            "top": 1180,
+            "right": 798,
+            "bottom": 1270
+          },
+          "confidence": 0.7182292
+        },
+        {
+          "text": "CHIP READ",
+          "boundingBox": {
+            "left": 286,
+            "top": 1257,
+            "right": 520,
+            "bottom": 1324
+          },
+          "confidence": 0.75439453
+        },
+        {
+          "text": "AJTHORIZATICN CC- 3154",
+          "boundingBox": {
+            "left": 290,
+            "top": 1273,
+            "right": 993,
+            "bottom": 1387
+          },
+          "confidence": 0.6388672
+        }
+      ],
+      "boundingBox": {
+        "left": 269,
+        "top": 1110,
+        "right": 993,
+        "bottom": 1388
+      }
+    },
+    {
+      "text": "SEQ# 039988",
+      "lines": [
+        {
+          "text": "SEQ# 039988",
+          "boundingBox": {
+            "left": 278,
+            "top": 1370,
+            "right": 584,
+            "bottom": 1436
+          },
+          "confidence": 0.571875
+        }
+      ],
+      "boundingBox": {
+        "left": 278,
+        "top": 1370,
+        "right": 584,
+        "bottom": 1436
+      }
+    },
+    {
+      "text": "AID: A000000042",
+      "lines": [
+        {
+          "text": "AID: A000000042",
+          "boundingBox": {
+            "left": 282,
+            "top": 1405,
+            "right": 789,
+            "bottom": 1498
+          },
+          "confidence": 0.71428573
+        }
+      ],
+      "boundingBox": {
+        "left": 282,
+        "top": 1405,
+        "right": 789,
+        "bottom": 1498
+      }
+    },
+    {
+      "text": "5.99",
+      "lines": [
+        {
+          "text": "5.99",
+          "boundingBox": {
+            "left": 1130,
+            "top": 363,
+            "right": 1239,
+            "bottom": 419
+          },
+          "confidence": 0.74316406
+        }
+      ],
+      "boundingBox": {
+        "left": 1130,
+        "top": 363,
+        "right": 1239,
+        "bottom": 419
+      }
+    },
+    {
+      "text": "0.25",
+      "lines": [
+        {
+          "text": "0.25",
+          "boundingBox": {
+            "left": 1144,
+            "top": 466,
+            "right": 1252,
+            "bottom": 510
+          },
+          "confidence": 0.66015625
+        }
+      ],
+      "boundingBox": {
+        "left": 1144,
+        "top": 466,
+        "right": 1252,
+        "bottom": 510
+      }
+    },
+    {
+      "text": "0.40",
+      "lines": [
+        {
+          "text": "0.40",
+          "boundingBox": {
+            "left": 1152,
+            "top": 516,
+            "right": 1256,
+            "bottom": 560
+          },
+          "confidence": 0.63183594
+        }
+      ],
+      "boundingBox": {
+        "left": 1152,
+        "top": 516,
+        "right": 1256,
+        "bottom": 560
+      }
+    },
+    {
+      "text": "6.64",
+      "lines": [
+        {
+          "text": "6.64",
+          "boundingBox": {
+            "left": 1160,
+            "top": 613,
+            "right": 1266,
+            "bottom": 662
+          },
+          "confidence": 0.7324219
+        }
+      ],
+      "boundingBox": {
+        "left": 1160,
+        "top": 613,
+        "right": 1266,
+        "bottom": 662
+      }
+    },
+    {
+      "text": "0.63",
+      "lines": [
+        {
+          "text": "0.63",
+          "boundingBox": {
+            "left": 1168,
+            "top": 666,
+            "right": 1272,
+            "bottom": 712
+          },
+          "confidence": 0.66015625
+        }
+      ],
+      "boundingBox": {
+        "left": 1168,
+        "top": 666,
+        "right": 1272,
+        "bottom": 712
+      }
+    },
+    {
+      "text": "T.27",
+      "lines": [
+        {
+          "text": "T.27",
+          "boundingBox": {
+            "left": 1176,
+            "top": 717,
+            "right": 1276,
+            "bottom": 762
+          },
+          "confidence": 0.6279297
+        }
+      ],
+      "boundingBox": {
+        "left": 1176,
+        "top": 717,
+        "right": 1276,
+        "bottom": 762
+      }
+    },
+    {
+      "text": "7.27\n0.00",
+      "lines": [
+        {
+          "text": "7.27",
+          "boundingBox": {
+            "left": 1190,
+            "top": 826,
+            "right": 1292,
+            "bottom": 868
+          },
+          "confidence": 0.76660156
+        },
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 1192,
+            "top": 873,
+            "right": 1304,
+            "bottom": 928
+          },
+          "confidence": 0.71875
+        }
+      ],
+      "boundingBox": {
+        "left": 1188,
+        "top": 821,
+        "right": 1303,
+        "bottom": 928
+      }
+    },
+    {
+      "text": "7.27",
+      "lines": [
+        {
+          "text": "7.27",
+          "boundingBox": {
+            "left": 1230,
+            "top": 1154,
+            "right": 1336,
+            "bottom": 1204
+          },
+          "confidence": 0.7060547
+        }
+      ],
+      "boundingBox": {
+        "left": 1230,
+        "top": 1154,
+        "right": 1336,
+        "bottom": 1204
+      }
+    },
+    {
+      "text": "McDona d's now aa1 at m JberEATS",
+      "lines": [
+        {
+          "text": "McDona d's now aa1 at m JberEATS",
+          "boundingBox": {
+            "left": 336,
+            "top": 1492,
+            "right": 1326,
+            "bottom": 1602
+          },
+          "confidence": 0.5196815
+        }
+      ],
+      "boundingBox": {
+        "left": 336,
+        "top": 1492,
+        "right": 1326,
+        "bottom": 1602
+      }
+    }
+  ]
+}

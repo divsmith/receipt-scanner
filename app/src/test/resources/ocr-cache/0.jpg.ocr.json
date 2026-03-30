@@ -1,0 +1,554 @@
+{
+  "fullText": "WAL·MART\nALWAYS LOW PRICEs.\nST# 5748 OP# 00000158 TE# 14 TR# 03178\nBANANAS\n0.41 lb\nFRAP\nSUPERCENTER\nOPEN 24 HOURS\nMANAGER . TBA\n( 515 ) 986 - 1783\n000000004011KF\n1 lb /0.49\n001200010451 F\nDISCOUNT GIVEN\nSUBTOTAL\nTOTAL\nCASH TEND\nCHANGE DUE\n# ITEMS SOLD 2\nTC# 5679 8348 6485 7828 2003\n0.20 N\n5.48 N\n0.57\n13:12:01\n5.11\n11.00\n5.11\n5.89\nTHANK YOU FOR SHOPPING WITH US\nNATHANIEL BUSH\nShop at Walmart & Get\nYour Back\n<to School List for Less.\n08/20/10",
+  "blocks": [
+    {
+      "text": "WAL·MART",
+      "lines": [
+        {
+          "text": "WAL·MART",
+          "boundingBox": {
+            "left": 236,
+            "top": 296,
+            "right": 758,
+            "bottom": 395
+          },
+          "confidence": 0.76953125
+        }
+      ],
+      "boundingBox": {
+        "left": 236,
+        "top": 296,
+        "right": 758,
+        "bottom": 395
+      }
+    },
+    {
+      "text": "ALWAYS LOW PRICEs.",
+      "lines": [
+        {
+          "text": "ALWAYS LOW PRICEs.",
+          "boundingBox": {
+            "left": 300,
+            "top": 397,
+            "right": 713,
+            "bottom": 430
+          },
+          "confidence": 0.765625
+        }
+      ],
+      "boundingBox": {
+        "left": 300,
+        "top": 397,
+        "right": 713,
+        "bottom": 430
+      }
+    },
+    {
+      "text": "ST# 5748 OP# 00000158 TE# 14 TR# 03178\nBANANAS",
+      "lines": [
+        {
+          "text": "ST# 5748 OP# 00000158 TE# 14 TR# 03178",
+          "boundingBox": {
+            "left": 160,
+            "top": 706,
+            "right": 870,
+            "bottom": 744
+          },
+          "confidence": 0.8623992
+        },
+        {
+          "text": "BANANAS",
+          "boundingBox": {
+            "left": 162,
+            "top": 741,
+            "right": 291,
+            "bottom": 775
+          },
+          "confidence": 0.844308
+        }
+      ],
+      "boundingBox": {
+        "left": 159,
+        "top": 692,
+        "right": 870,
+        "bottom": 775
+      }
+    },
+    {
+      "text": "0.41 lb",
+      "lines": [
+        {
+          "text": "0.41 lb",
+          "boundingBox": {
+            "left": 198,
+            "top": 772,
+            "right": 331,
+            "bottom": 809
+          },
+          "confidence": 0.7760417
+        }
+      ],
+      "boundingBox": {
+        "left": 198,
+        "top": 772,
+        "right": 331,
+        "bottom": 809
+      }
+    },
+    {
+      "text": "FRAP",
+      "lines": [
+        {
+          "text": "FRAP",
+          "boundingBox": {
+            "left": 167,
+            "top": 807,
+            "right": 237,
+            "bottom": 839
+          },
+          "confidence": 0.7753906
+        }
+      ],
+      "boundingBox": {
+        "left": 167,
+        "top": 807,
+        "right": 237,
+        "bottom": 839
+      }
+    },
+    {
+      "text": "SUPERCENTER\nOPEN 24 HOURS\nMANAGER . TBA\n( 515 ) 986 - 1783",
+      "lines": [
+        {
+          "text": "SUPERCENTER",
+          "boundingBox": {
+            "left": 400,
+            "top": 573,
+            "right": 605,
+            "bottom": 604
+          },
+          "confidence": 0.85085225
+        },
+        {
+          "text": "OPEN 24 HOURS",
+          "boundingBox": {
+            "left": 381,
+            "top": 603,
+            "right": 622,
+            "bottom": 644
+          },
+          "confidence": 0.81853694
+        },
+        {
+          "text": "MANAGER . TBA",
+          "boundingBox": {
+            "left": 383,
+            "top": 642,
+            "right": 624,
+            "bottom": 673
+          },
+          "confidence": 0.8160511
+        },
+        {
+          "text": "( 515 ) 986 - 1783",
+          "boundingBox": {
+            "left": 366,
+            "top": 671,
+            "right": 680,
+            "bottom": 710
+          },
+          "confidence": 0.8500601
+        }
+      ],
+      "boundingBox": {
+        "left": 365,
+        "top": 571,
+        "right": 678,
+        "bottom": 711
+      }
+    },
+    {
+      "text": "000000004011KF\n1 lb /0.49\n001200010451 F",
+      "lines": [
+        {
+          "text": "000000004011KF",
+          "boundingBox": {
+            "left": 405,
+            "top": 743,
+            "right": 658,
+            "bottom": 777
+          },
+          "confidence": 0.8264509
+        },
+        {
+          "text": "1 lb /0.49",
+          "boundingBox": {
+            "left": 425,
+            "top": 772,
+            "right": 611,
+            "bottom": 809
+          },
+          "confidence": 0.76904297
+        },
+        {
+          "text": "001200010451 F",
+          "boundingBox": {
+            "left": 405,
+            "top": 808,
+            "right": 658,
+            "bottom": 841
+          },
+          "confidence": 0.8969351
+        }
+      ],
+      "boundingBox": {
+        "left": 404,
+        "top": 742,
+        "right": 658,
+        "bottom": 841
+      }
+    },
+    {
+      "text": "DISCOUNT GIVEN\nSUBTOTAL\nTOTAL\nCASH TEND\nCHANGE DUE",
+      "lines": [
+        {
+          "text": "DISCOUNT GIVEN",
+          "boundingBox": {
+            "left": 387,
+            "top": 873,
+            "right": 639,
+            "bottom": 906
+          },
+          "confidence": 0.8182091
+        },
+        {
+          "text": "SUBTOTAL",
+          "boundingBox": {
+            "left": 496,
+            "top": 908,
+            "right": 637,
+            "bottom": 941
+          },
+          "confidence": 0.7675781
+        },
+        {
+          "text": "TOTAL",
+          "boundingBox": {
+            "left": 548,
+            "top": 942,
+            "right": 638,
+            "bottom": 974
+          },
+          "confidence": 0.7992188
+        },
+        {
+          "text": "CASH TEND",
+          "boundingBox": {
+            "left": 458,
+            "top": 972,
+            "right": 637,
+            "bottom": 1010
+          },
+          "confidence": 0.8618164
+        },
+        {
+          "text": "CHANGE DUE",
+          "boundingBox": {
+            "left": 460,
+            "top": 1004,
+            "right": 637,
+            "bottom": 1037
+          },
+          "confidence": 0.85373265
+        }
+      ],
+      "boundingBox": {
+        "left": 384,
+        "top": 870,
+        "right": 640,
+        "bottom": 1039
+      }
+    },
+    {
+      "text": "# ITEMS SOLD 2",
+      "lines": [
+        {
+          "text": "# ITEMS SOLD 2",
+          "boundingBox": {
+            "left": 240,
+            "top": 1055,
+            "right": 745,
+            "bottom": 1141
+          },
+          "confidence": 0.80859375
+        }
+      ],
+      "boundingBox": {
+        "left": 240,
+        "top": 1055,
+        "right": 745,
+        "bottom": 1141
+      }
+    },
+    {
+      "text": "TC# 5679 8348 6485 7828 2003",
+      "lines": [
+        {
+          "text": "TC# 5679 8348 6485 7828 2003",
+          "boundingBox": {
+            "left": 251,
+            "top": 1148,
+            "right": 742,
+            "bottom": 1198
+          },
+          "confidence": 0.91202444
+        }
+      ],
+      "boundingBox": {
+        "left": 251,
+        "top": 1148,
+        "right": 742,
+        "bottom": 1198
+      }
+    },
+    {
+      "text": "0.20 N\n5.48 N",
+      "lines": [
+        {
+          "text": "0.20 N",
+          "boundingBox": {
+            "left": 753,
+            "top": 780,
+            "right": 867,
+            "bottom": 812
+          },
+          "confidence": 0.87109375
+        },
+        {
+          "text": "5.48 N",
+          "boundingBox": {
+            "left": 752,
+            "top": 813,
+            "right": 866,
+            "bottom": 847
+          },
+          "confidence": 0.9
+        }
+      ],
+      "boundingBox": {
+        "left": 752,
+        "top": 779,
+        "right": 867,
+        "bottom": 847
+      }
+    },
+    {
+      "text": "0.57",
+      "lines": [
+        {
+          "text": "0.57",
+          "boundingBox": {
+            "left": 751,
+            "top": 883,
+            "right": 826,
+            "bottom": 917
+          },
+          "confidence": 0.90625
+        }
+      ],
+      "boundingBox": {
+        "left": 751,
+        "top": 883,
+        "right": 826,
+        "bottom": 917
+      }
+    },
+    {
+      "text": "13:12:01",
+      "lines": [
+        {
+          "text": "13:12:01",
+          "boundingBox": {
+            "left": 552,
+            "top": 1380,
+            "right": 683,
+            "bottom": 1407
+          },
+          "confidence": 0.88964844
+        }
+      ],
+      "boundingBox": {
+        "left": 552,
+        "top": 1380,
+        "right": 683,
+        "bottom": 1407
+      }
+    },
+    {
+      "text": "5.11",
+      "lines": [
+        {
+          "text": "5.11",
+          "boundingBox": {
+            "left": 751,
+            "top": 916,
+            "right": 823,
+            "bottom": 947
+          },
+          "confidence": 0.9326172
+        }
+      ],
+      "boundingBox": {
+        "left": 751,
+        "top": 916,
+        "right": 823,
+        "bottom": 947
+      }
+    },
+    {
+      "text": "11.00",
+      "lines": [
+        {
+          "text": "11.00",
+          "boundingBox": {
+            "left": 733,
+            "top": 983,
+            "right": 823,
+            "bottom": 1013
+          },
+          "confidence": 0.9
+        }
+      ],
+      "boundingBox": {
+        "left": 733,
+        "top": 983,
+        "right": 823,
+        "bottom": 1013
+      }
+    },
+    {
+      "text": "5.11",
+      "lines": [
+        {
+          "text": "5.11",
+          "boundingBox": {
+            "left": 749,
+            "top": 949,
+            "right": 821,
+            "bottom": 979
+          },
+          "confidence": 0.9316406
+        }
+      ],
+      "boundingBox": {
+        "left": 749,
+        "top": 949,
+        "right": 821,
+        "bottom": 979
+      }
+    },
+    {
+      "text": "5.89",
+      "lines": [
+        {
+          "text": "5.89",
+          "boundingBox": {
+            "left": 748,
+            "top": 1015,
+            "right": 820,
+            "bottom": 1044
+          },
+          "confidence": 0.92285156
+        }
+      ],
+      "boundingBox": {
+        "left": 748,
+        "top": 1015,
+        "right": 820,
+        "bottom": 1044
+      }
+    },
+    {
+      "text": "THANK YOU FOR SHOPPING WITH US\nNATHANIEL BUSH",
+      "lines": [
+        {
+          "text": "THANK YOU FOR SHOPPING WITH US",
+          "boundingBox": {
+            "left": 258,
+            "top": 1268,
+            "right": 774,
+            "bottom": 1318
+          },
+          "confidence": 0.8048437
+        },
+        {
+          "text": "NATHANIEL BUSH",
+          "boundingBox": {
+            "left": 394,
+            "top": 1301,
+            "right": 635,
+            "bottom": 1338
+          },
+          "confidence": 0.81340146
+        }
+      ],
+      "boundingBox": {
+        "left": 257,
+        "top": 1268,
+        "right": 774,
+        "bottom": 1345
+      }
+    },
+    {
+      "text": "Shop at Walmart & Get\nYour Back\n<to School List for Less.\n08/20/10",
+      "lines": [
+        {
+          "text": "Shop at Walmart & Get",
+          "boundingBox": {
+            "left": 329,
+            "top": 1325,
+            "right": 683,
+            "bottom": 1364
+          },
+          "confidence": 0.8802849
+        },
+        {
+          "text": "Your Back",
+          "boundingBox": {
+            "left": 231,
+            "top": 1342,
+            "right": 386,
+            "bottom": 1374
+          },
+          "confidence": 0.8256836
+        },
+        {
+          "text": "<to School List for Less.",
+          "boundingBox": {
+            "left": 369,
+            "top": 1350,
+            "right": 799,
+            "bottom": 1393
+          },
+          "confidence": 0.7847842
+        },
+        {
+          "text": "08/20/10",
+          "boundingBox": {
+            "left": 335,
+            "top": 1371,
+            "right": 467,
+            "bottom": 1396
+          },
+          "confidence": 0.80908203
+        }
+      ],
+      "boundingBox": {
+        "left": 231,
+        "top": 1321,
+        "right": 800,
+        "bottom": 1410
+      }
+    }
+  ]
+}

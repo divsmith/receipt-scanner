@@ -1,0 +1,631 @@
+{
+  "fullText": "Ticket 215406\nStation: 1\nDeser tption\n4/24/2016 6:30:31 PH\nSubtotal\nTax\n100027\nPARIS\n100026\nLE CLASSSIQUE\n432T N Expreetway /83\n956-350-8686\nTotal\nTender\nCASH\nMIX\nBr osville, DX 78521\n956-643-5089\nCharige (CASH)\nNkumber of\nOty\nSales Rep KRIST\nPrice\n5.25\nUser KRIST\n4. 95\nTotal\n5.25\n4.96\n10,20\n0. 84\n11.04\n20.00\n-8.96",
+  "blocks": [
+    {
+      "text": "Ticket 215406\nStation: 1",
+      "lines": [
+        {
+          "text": "Ticket 215406",
+          "boundingBox": {
+            "left": 319,
+            "top": 350,
+            "right": 653,
+            "bottom": 413
+          },
+          "confidence": 0.7060547
+        },
+        {
+          "text": "Station: 1",
+          "boundingBox": {
+            "left": 319,
+            "top": 396,
+            "right": 520,
+            "bottom": 446
+          },
+          "confidence": 0.67057294
+        }
+      ],
+      "boundingBox": {
+        "left": 317,
+        "top": 350,
+        "right": 653,
+        "bottom": 452
+      }
+    },
+    {
+      "text": "Deser tption",
+      "lines": [
+        {
+          "text": "Deser tption",
+          "boundingBox": {
+            "left": 299,
+            "top": 574,
+            "right": 583,
+            "bottom": 630
+          },
+          "confidence": 0.61860794
+        }
+      ],
+      "boundingBox": {
+        "left": 299,
+        "top": 574,
+        "right": 583,
+        "bottom": 630
+      }
+    },
+    {
+      "text": "4/24/2016 6:30:31 PH",
+      "lines": [
+        {
+          "text": "4/24/2016 6:30:31 PH",
+          "boundingBox": {
+            "left": 287,
+            "top": 437,
+            "right": 803,
+            "bottom": 503
+          },
+          "confidence": 0.6710069
+        }
+      ],
+      "boundingBox": {
+        "left": 287,
+        "top": 437,
+        "right": 803,
+        "bottom": 503
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 230,
+            "top": 900,
+            "right": 440,
+            "bottom": 950
+          },
+          "confidence": 0.67333984
+        }
+      ],
+      "boundingBox": {
+        "left": 230,
+        "top": 900,
+        "right": 440,
+        "bottom": 950
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 230,
+            "top": 952,
+            "right": 304,
+            "bottom": 988
+          },
+          "confidence": 0.5885417
+        }
+      ],
+      "boundingBox": {
+        "left": 230,
+        "top": 952,
+        "right": 304,
+        "bottom": 988
+      }
+    },
+    {
+      "text": "100027\nPARIS\n100026\nLE CLASSSIQUE",
+      "lines": [
+        {
+          "text": "100027",
+          "boundingBox": {
+            "left": 268,
+            "top": 658,
+            "right": 421,
+            "bottom": 715
+          },
+          "confidence": 0.6614583
+        },
+        {
+          "text": "PARIS",
+          "boundingBox": {
+            "left": 283,
+            "top": 707,
+            "right": 417,
+            "bottom": 757
+          },
+          "confidence": 0.76875
+        },
+        {
+          "text": "100026",
+          "boundingBox": {
+            "left": 250,
+            "top": 752,
+            "right": 407,
+            "bottom": 807
+          },
+          "confidence": 0.6451823
+        },
+        {
+          "text": "LE CLASSSIQUE",
+          "boundingBox": {
+            "left": 278,
+            "top": 800,
+            "right": 583,
+            "bottom": 865
+          },
+          "confidence": 0.5875651
+        }
+      ],
+      "boundingBox": {
+        "left": 246,
+        "top": 657,
+        "right": 595,
+        "bottom": 874
+      }
+    },
+    {
+      "text": "432T N Expreetway /83\n956-350-8686",
+      "lines": [
+        {
+          "text": "432T N Expreetway /83",
+          "boundingBox": {
+            "left": 518,
+            "top": 193,
+            "right": 1117,
+            "bottom": 260
+          },
+          "confidence": 0.4856771
+        },
+        {
+          "text": "956-350-8686",
+          "boundingBox": {
+            "left": 662,
+            "top": 241,
+            "right": 963,
+            "bottom": 292
+          },
+          "confidence": 0.54003906
+        }
+      ],
+      "boundingBox": {
+        "left": 515,
+        "top": 193,
+        "right": 1117,
+        "bottom": 300
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 212,
+            "top": 1046,
+            "right": 339,
+            "bottom": 1093
+          },
+          "confidence": 0.83671874
+        }
+      ],
+      "boundingBox": {
+        "left": 212,
+        "top": 1046,
+        "right": 339,
+        "bottom": 1093
+      }
+    },
+    {
+      "text": "Tender\nCASH",
+      "lines": [
+        {
+          "text": "Tender",
+          "boundingBox": {
+            "left": 208,
+            "top": 1140,
+            "right": 357,
+            "bottom": 1206
+          },
+          "confidence": 0.8333333
+        },
+        {
+          "text": "CASH",
+          "boundingBox": {
+            "left": 182,
+            "top": 1204,
+            "right": 296,
+            "bottom": 1252
+          },
+          "confidence": 0.8457031
+        }
+      ],
+      "boundingBox": {
+        "left": 180,
+        "top": 1139,
+        "right": 357,
+        "bottom": 1256
+      }
+    },
+    {
+      "text": "MIX",
+      "lines": [
+        {
+          "text": "MIX",
+          "boundingBox": {
+            "left": 796,
+            "top": 134,
+            "right": 892,
+            "bottom": 164
+          },
+          "confidence": 0.45572916
+        }
+      ],
+      "boundingBox": {
+        "left": 796,
+        "top": 134,
+        "right": 892,
+        "bottom": 164
+      }
+    },
+    {
+      "text": "Br osville, DX 78521\n956-643-5089",
+      "lines": [
+        {
+          "text": "Br osville, DX 78521",
+          "boundingBox": {
+            "left": 582,
+            "top": 278,
+            "right": 1082,
+            "bottom": 346
+          },
+          "confidence": 0.5762868
+        },
+        {
+          "text": "956-643-5089",
+          "boundingBox": {
+            "left": 655,
+            "top": 326,
+            "right": 960,
+            "bottom": 383
+          },
+          "confidence": 0.6090495
+        }
+      ],
+      "boundingBox": {
+        "left": 580,
+        "top": 275,
+        "right": 1082,
+        "bottom": 388
+      }
+    },
+    {
+      "text": "Charige (CASH)",
+      "lines": [
+        {
+          "text": "Charige (CASH)",
+          "boundingBox": {
+            "left": 161,
+            "top": 1311,
+            "right": 527,
+            "bottom": 1380
+          },
+          "confidence": 0.6995192
+        }
+      ],
+      "boundingBox": {
+        "left": 161,
+        "top": 1311,
+        "right": 527,
+        "bottom": 1380
+      }
+    },
+    {
+      "text": "Nkumber of",
+      "lines": [
+        {
+          "text": "Nkumber of",
+          "boundingBox": {
+            "left": 133,
+            "top": 1538,
+            "right": 391,
+            "bottom": 1596
+          },
+          "confidence": 0.5329861
+        }
+      ],
+      "boundingBox": {
+        "left": 133,
+        "top": 1538,
+        "right": 391,
+        "bottom": 1596
+      }
+    },
+    {
+      "text": "Oty",
+      "lines": [
+        {
+          "text": "Oty",
+          "boundingBox": {
+            "left": 792,
+            "top": 562,
+            "right": 868,
+            "bottom": 602
+          },
+          "confidence": 0.49479166
+        }
+      ],
+      "boundingBox": {
+        "left": 792,
+        "top": 562,
+        "right": 868,
+        "bottom": 602
+      }
+    },
+    {
+      "text": "Sales Rep KRIST",
+      "lines": [
+        {
+          "text": "Sales Rep KRIST",
+          "boundingBox": {
+            "left": 977,
+            "top": 436,
+            "right": 1357,
+            "bottom": 496
+          },
+          "confidence": 0.71935093
+        }
+      ],
+      "boundingBox": {
+        "left": 977,
+        "top": 436,
+        "right": 1357,
+        "bottom": 496
+      }
+    },
+    {
+      "text": "Price",
+      "lines": [
+        {
+          "text": "Price",
+          "boundingBox": {
+            "left": 943,
+            "top": 570,
+            "right": 1075,
+            "bottom": 615
+          },
+          "confidence": 0.6765625
+        }
+      ],
+      "boundingBox": {
+        "left": 943,
+        "top": 570,
+        "right": 1075,
+        "bottom": 615
+      }
+    },
+    {
+      "text": "5.25",
+      "lines": [
+        {
+          "text": "5.25",
+          "boundingBox": {
+            "left": 966,
+            "top": 710,
+            "right": 1064,
+            "bottom": 752
+          },
+          "confidence": 0.5966797
+        }
+      ],
+      "boundingBox": {
+        "left": 966,
+        "top": 710,
+        "right": 1064,
+        "bottom": 752
+      }
+    },
+    {
+      "text": "User KRIST",
+      "lines": [
+        {
+          "text": "User KRIST",
+          "boundingBox": {
+            "left": 1130,
+            "top": 392,
+            "right": 1358,
+            "bottom": 454
+          },
+          "confidence": 0.58203125
+        }
+      ],
+      "boundingBox": {
+        "left": 1130,
+        "top": 392,
+        "right": 1358,
+        "bottom": 454
+      }
+    },
+    {
+      "text": "4. 95",
+      "lines": [
+        {
+          "text": "4. 95",
+          "boundingBox": {
+            "left": 960,
+            "top": 804,
+            "right": 1066,
+            "bottom": 846
+          },
+          "confidence": 0.73535156
+        }
+      ],
+      "boundingBox": {
+        "left": 960,
+        "top": 804,
+        "right": 1066,
+        "bottom": 846
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 1230,
+            "top": 590,
+            "right": 1352,
+            "bottom": 635
+          },
+          "confidence": 0.6671875
+        }
+      ],
+      "boundingBox": {
+        "left": 1230,
+        "top": 590,
+        "right": 1352,
+        "bottom": 635
+      }
+    },
+    {
+      "text": "5.25",
+      "lines": [
+        {
+          "text": "5.25",
+          "boundingBox": {
+            "left": 1251,
+            "top": 729,
+            "right": 1358,
+            "bottom": 770
+          },
+          "confidence": 0.6894531
+        }
+      ],
+      "boundingBox": {
+        "left": 1251,
+        "top": 729,
+        "right": 1358,
+        "bottom": 770
+      }
+    },
+    {
+      "text": "4.96",
+      "lines": [
+        {
+          "text": "4.96",
+          "boundingBox": {
+            "left": 1252,
+            "top": 823,
+            "right": 1358,
+            "bottom": 863
+          },
+          "confidence": 0.7578125
+        }
+      ],
+      "boundingBox": {
+        "left": 1252,
+        "top": 823,
+        "right": 1358,
+        "bottom": 863
+      }
+    },
+    {
+      "text": "10,20\n0. 84",
+      "lines": [
+        {
+          "text": "10,20",
+          "boundingBox": {
+            "left": 1230,
+            "top": 965,
+            "right": 1359,
+            "bottom": 1010
+          },
+          "confidence": 0.6359375
+        },
+        {
+          "text": "0. 84",
+          "boundingBox": {
+            "left": 1251,
+            "top": 1018,
+            "right": 1357,
+            "bottom": 1058
+          },
+          "confidence": 0.7392578
+        }
+      ],
+      "boundingBox": {
+        "left": 1227,
+        "top": 965,
+        "right": 1359,
+        "bottom": 1058
+      }
+    },
+    {
+      "text": "11.04",
+      "lines": [
+        {
+          "text": "11.04",
+          "boundingBox": {
+            "left": 1225,
+            "top": 1112,
+            "right": 1360,
+            "bottom": 1163
+          },
+          "confidence": 0.6828125
+        }
+      ],
+      "boundingBox": {
+        "left": 1225,
+        "top": 1112,
+        "right": 1360,
+        "bottom": 1163
+      }
+    },
+    {
+      "text": "20.00",
+      "lines": [
+        {
+          "text": "20.00",
+          "boundingBox": {
+            "left": 1227,
+            "top": 1270,
+            "right": 1369,
+            "bottom": 1322
+          },
+          "confidence": 0.68828124
+        }
+      ],
+      "boundingBox": {
+        "left": 1227,
+        "top": 1270,
+        "right": 1369,
+        "bottom": 1322
+      }
+    },
+    {
+      "text": "-8.96",
+      "lines": [
+        {
+          "text": "-8.96",
+          "boundingBox": {
+            "left": 1246,
+            "top": 1384,
+            "right": 1374,
+            "bottom": 1432
+          },
+          "confidence": 0.740625
+        }
+      ],
+      "boundingBox": {
+        "left": 1246,
+        "top": 1384,
+        "right": 1374,
+        "bottom": 1432
+      }
+    }
+  ]
+}

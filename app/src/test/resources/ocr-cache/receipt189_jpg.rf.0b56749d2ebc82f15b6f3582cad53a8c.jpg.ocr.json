@@ -1,0 +1,380 @@
+{
+  "fullText": "New China\nI130 North Higley Rd.Suitet7-102\nMesa, AZ 85205\nTel:(48O}218-9888/9892\nWalk In\nDale: 03-12-2016 Tinme: 4:02PM\nServer: BOSS\n1 Beef w. Broccoli\nw. Chicken Fried Rice\n1 Sweet / Sour Chicken\n1 Chicken Chow Mein\n# 23\nThank you very much.\n8.25\n2.00\n7.95\n6.75\nAmount:\nTAX(8.05%}: 2.01\nTOTAL: 26.96\n24.95",
+  "blocks": [
+    {
+      "text": "New China",
+      "lines": [
+        {
+          "text": "New China",
+          "boundingBox": {
+            "left": 610,
+            "top": 125,
+            "right": 970,
+            "bottom": 201
+          },
+          "confidence": 0.84521484
+        }
+      ],
+      "boundingBox": {
+        "left": 610,
+        "top": 125,
+        "right": 970,
+        "bottom": 201
+      }
+    },
+    {
+      "text": "I130 North Higley Rd.Suitet7-102\nMesa, AZ 85205\nTel:(48O}218-9888/9892",
+      "lines": [
+        {
+          "text": "I130 North Higley Rd.Suitet7-102",
+          "boundingBox": {
+            "left": 357,
+            "top": 181,
+            "right": 1200,
+            "bottom": 270
+          },
+          "confidence": 0.6706627
+        },
+        {
+          "text": "Mesa, AZ 85205",
+          "boundingBox": {
+            "left": 544,
+            "top": 244,
+            "right": 980,
+            "bottom": 310
+          },
+          "confidence": 0.8203125
+        },
+        {
+          "text": "Tel:(48O}218-9888/9892",
+          "boundingBox": {
+            "left": 445,
+            "top": 288,
+            "right": 1094,
+            "bottom": 364
+          },
+          "confidence": 0.74715906
+        }
+      ],
+      "boundingBox": {
+        "left": 357,
+        "top": 180,
+        "right": 1205,
+        "bottom": 370
+      }
+    },
+    {
+      "text": "Walk In",
+      "lines": [
+        {
+          "text": "Walk In",
+          "boundingBox": {
+            "left": 614,
+            "top": 405,
+            "right": 897,
+            "bottom": 470
+          },
+          "confidence": 0.7467448
+        }
+      ],
+      "boundingBox": {
+        "left": 614,
+        "top": 405,
+        "right": 897,
+        "bottom": 470
+      }
+    },
+    {
+      "text": "Dale: 03-12-2016 Tinme: 4:02PM\nServer: BOSS",
+      "lines": [
+        {
+          "text": "Dale: 03-12-2016 Tinme: 4:02PM",
+          "boundingBox": {
+            "left": 167,
+            "top": 471,
+            "right": 1021,
+            "bottom": 539
+          },
+          "confidence": 0.70847803
+        },
+        {
+          "text": "Server: BOSS",
+          "boundingBox": {
+            "left": 152,
+            "top": 563,
+            "right": 474,
+            "bottom": 615
+          },
+          "confidence": 0.7691761
+        }
+      ],
+      "boundingBox": {
+        "left": 150,
+        "top": 471,
+        "right": 1022,
+        "bottom": 615
+      }
+    },
+    {
+      "text": "1 Beef w. Broccoli",
+      "lines": [
+        {
+          "text": "1 Beef w. Broccoli",
+          "boundingBox": {
+            "left": 284,
+            "top": 642,
+            "right": 863,
+            "bottom": 710
+          },
+          "confidence": 0.78515625
+        }
+      ],
+      "boundingBox": {
+        "left": 284,
+        "top": 642,
+        "right": 863,
+        "bottom": 710
+      }
+    },
+    {
+      "text": "w. Chicken Fried Rice",
+      "lines": [
+        {
+          "text": "w. Chicken Fried Rice",
+          "boundingBox": {
+            "left": 466,
+            "top": 702,
+            "right": 1130,
+            "bottom": 770
+          },
+          "confidence": 0.82703996
+        }
+      ],
+      "boundingBox": {
+        "left": 466,
+        "top": 702,
+        "right": 1130,
+        "bottom": 770
+      }
+    },
+    {
+      "text": "1 Sweet / Sour Chicken\n1 Chicken Chow Mein",
+      "lines": [
+        {
+          "text": "1 Sweet / Sour Chicken",
+          "boundingBox": {
+            "left": 291,
+            "top": 792,
+            "right": 1058,
+            "bottom": 867
+          },
+          "confidence": 0.8020833
+        },
+        {
+          "text": "1 Chicken Chow Mein",
+          "boundingBox": {
+            "left": 294,
+            "top": 886,
+            "right": 1020,
+            "bottom": 958
+          },
+          "confidence": 0.85498047
+        }
+      ],
+      "boundingBox": {
+        "left": 291,
+        "top": 792,
+        "right": 1059,
+        "bottom": 963
+      }
+    },
+    {
+      "text": "# 23",
+      "lines": [
+        {
+          "text": "# 23",
+          "boundingBox": {
+            "left": 1248,
+            "top": 444,
+            "right": 1418,
+            "bottom": 501
+          },
+          "confidence": 0.90625
+        }
+      ],
+      "boundingBox": {
+        "left": 1248,
+        "top": 444,
+        "right": 1418,
+        "bottom": 501
+      }
+    },
+    {
+      "text": "Thank you very much.",
+      "lines": [
+        {
+          "text": "Thank you very much.",
+          "boundingBox": {
+            "left": 388,
+            "top": 1250,
+            "right": 1184,
+            "bottom": 1320
+          },
+          "confidence": 0.8382353
+        }
+      ],
+      "boundingBox": {
+        "left": 388,
+        "top": 1250,
+        "right": 1184,
+        "bottom": 1320
+      }
+    },
+    {
+      "text": "8.25",
+      "lines": [
+        {
+          "text": "8.25",
+          "boundingBox": {
+            "left": 1316,
+            "top": 634,
+            "right": 1471,
+            "bottom": 689
+          },
+          "confidence": 0.9345703
+        }
+      ],
+      "boundingBox": {
+        "left": 1316,
+        "top": 634,
+        "right": 1471,
+        "bottom": 689
+      }
+    },
+    {
+      "text": "2.00",
+      "lines": [
+        {
+          "text": "2.00",
+          "boundingBox": {
+            "left": 1324,
+            "top": 702,
+            "right": 1482,
+            "bottom": 754
+          },
+          "confidence": 0.7636719
+        }
+      ],
+      "boundingBox": {
+        "left": 1324,
+        "top": 702,
+        "right": 1482,
+        "bottom": 754
+      }
+    },
+    {
+      "text": "7.95",
+      "lines": [
+        {
+          "text": "7.95",
+          "boundingBox": {
+            "left": 1334,
+            "top": 794,
+            "right": 1488,
+            "bottom": 842
+          },
+          "confidence": 0.85253906
+        }
+      ],
+      "boundingBox": {
+        "left": 1334,
+        "top": 794,
+        "right": 1488,
+        "bottom": 842
+      }
+    },
+    {
+      "text": "6.75",
+      "lines": [
+        {
+          "text": "6.75",
+          "boundingBox": {
+            "left": 1344,
+            "top": 886,
+            "right": 1497,
+            "bottom": 937
+          },
+          "confidence": 0.8623047
+        }
+      ],
+      "boundingBox": {
+        "left": 1344,
+        "top": 886,
+        "right": 1497,
+        "bottom": 937
+      }
+    },
+    {
+      "text": "Amount:\nTAX(8.05%}: 2.01\nTOTAL: 26.96",
+      "lines": [
+        {
+          "text": "Amount:",
+          "boundingBox": {
+            "left": 900,
+            "top": 984,
+            "right": 1220,
+            "bottom": 1038
+          },
+          "confidence": 0.8035714
+        },
+        {
+          "text": "TAX(8.05%}: 2.01",
+          "boundingBox": {
+            "left": 823,
+            "top": 1055,
+            "right": 1520,
+            "bottom": 1110
+          },
+          "confidence": 0.60546875
+        },
+        {
+          "text": "TOTAL: 26.96",
+          "boundingBox": {
+            "left": 895,
+            "top": 1123,
+            "right": 1531,
+            "bottom": 1185
+          },
+          "confidence": 0.82173294
+        }
+      ],
+      "boundingBox": {
+        "left": 822,
+        "top": 984,
+        "right": 1531,
+        "bottom": 1186
+      }
+    },
+    {
+      "text": "24.95",
+      "lines": [
+        {
+          "text": "24.95",
+          "boundingBox": {
+            "left": 1299,
+            "top": 982,
+            "right": 1508,
+            "bottom": 1034
+          },
+          "confidence": 0.8875
+        }
+      ],
+      "boundingBox": {
+        "left": 1299,
+        "top": 982,
+        "right": 1508,
+        "bottom": 1034
+      }
+    }
+  ]
+}

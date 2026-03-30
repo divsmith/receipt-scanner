@@ -1,0 +1,410 @@
+{
+  "fullText": "Chef Wang\n1902 Jichu Tunpke\nNes Isyde Park NY TI640\nTet:S16 354 2xS8 Fax:S16.77o 0587\nDine In\nPUrsc\n02.14 PM O3,03 PM\nScallion Pncak\nie aiuy ok Buns\nIoaf w Tink Chos (\n# 1022\n0202 19\nSubTotal\nSales fax\nTotal\nS5.25\nS9.95\nThank You\nHave A Nice Day\nS8.75\nS8.75\nS3270\n$282\n$35.52",
+  "blocks": [
+    {
+      "text": "Chef Wang\n1902 Jichu Tunpke",
+      "lines": [
+        {
+          "text": "Chef Wang",
+          "boundingBox": {
+            "left": 538,
+            "top": 264,
+            "right": 860,
+            "bottom": 360
+          },
+          "confidence": 0.73583984
+        },
+        {
+          "text": "1902 Jichu Tunpke",
+          "boundingBox": {
+            "left": 470,
+            "top": 309,
+            "right": 918,
+            "bottom": 425
+          },
+          "confidence": 0.47057292
+        }
+      ],
+      "boundingBox": {
+        "left": 462,
+        "top": 254,
+        "right": 919,
+        "bottom": 425
+      }
+    },
+    {
+      "text": "Nes Isyde Park NY TI640\nTet:S16 354 2xS8 Fax:S16.77o 0587",
+      "lines": [
+        {
+          "text": "Nes Isyde Park NY TI640",
+          "boundingBox": {
+            "left": 405,
+            "top": 341,
+            "right": 971,
+            "bottom": 484
+          },
+          "confidence": 0.44202304
+        },
+        {
+          "text": "Tet:S16 354 2xS8 Fax:S16.77o 0587",
+          "boundingBox": {
+            "left": 298,
+            "top": 364,
+            "right": 1102,
+            "bottom": 539
+          },
+          "confidence": 0.37769395
+        }
+      ],
+      "boundingBox": {
+        "left": 291,
+        "top": 320,
+        "right": 1101,
+        "bottom": 541
+      }
+    },
+    {
+      "text": "Dine In",
+      "lines": [
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 255,
+            "top": 606,
+            "right": 463,
+            "bottom": 678
+          },
+          "confidence": 0.63216144
+        }
+      ],
+      "boundingBox": {
+        "left": 255,
+        "top": 606,
+        "right": 463,
+        "bottom": 678
+      }
+    },
+    {
+      "text": "PUrsc",
+      "lines": [
+        {
+          "text": "PUrsc",
+          "boundingBox": {
+            "left": 336,
+            "top": 694,
+            "right": 492,
+            "bottom": 758
+          },
+          "confidence": 0.4109375
+        }
+      ],
+      "boundingBox": {
+        "left": 336,
+        "top": 694,
+        "right": 492,
+        "bottom": 758
+      }
+    },
+    {
+      "text": "02.14 PM O3,03 PM",
+      "lines": [
+        {
+          "text": "02.14 PM O3,03 PM",
+          "boundingBox": {
+            "left": 661,
+            "top": 575,
+            "right": 1160,
+            "bottom": 699
+          },
+          "confidence": 0.39481026
+        }
+      ],
+      "boundingBox": {
+        "left": 661,
+        "top": 575,
+        "right": 1160,
+        "bottom": 699
+      }
+    },
+    {
+      "text": "Scallion Pncak\nie aiuy ok Buns\nIoaf w Tink Chos (",
+      "lines": [
+        {
+          "text": "Scallion Pncak",
+          "boundingBox": {
+            "left": 362,
+            "top": 736,
+            "right": 741,
+            "bottom": 843
+          },
+          "confidence": 0.52584136
+        },
+        {
+          "text": "ie aiuy ok Buns",
+          "boundingBox": {
+            "left": 364,
+            "top": 758,
+            "right": 862,
+            "bottom": 887
+          },
+          "confidence": 0.3984375
+        },
+        {
+          "text": "Ioaf w Tink Chos (",
+          "boundingBox": {
+            "left": 366,
+            "top": 810,
+            "right": 812,
+            "bottom": 933
+          },
+          "confidence": 0.3359375
+        }
+      ],
+      "boundingBox": {
+        "left": 351,
+        "top": 716,
+        "right": 869,
+        "bottom": 933
+      }
+    },
+    {
+      "text": "# 1022\n0202 19",
+      "lines": [
+        {
+          "text": "# 1022",
+          "boundingBox": {
+            "left": 931,
+            "top": 484,
+            "right": 1141,
+            "bottom": 562
+          },
+          "confidence": 0.5492188
+        },
+        {
+          "text": "0202 19",
+          "boundingBox": {
+            "left": 963,
+            "top": 533,
+            "right": 1156,
+            "bottom": 603
+          },
+          "confidence": 0.47851562
+        }
+      ],
+      "boundingBox": {
+        "left": 931,
+        "top": 482,
+        "right": 1156,
+        "bottom": 607
+      }
+    },
+    {
+      "text": "SubTotal\nSales fax",
+      "lines": [
+        {
+          "text": "SubTotal",
+          "boundingBox": {
+            "left": 748,
+            "top": 927,
+            "right": 951,
+            "bottom": 998
+          },
+          "confidence": 0.54052734
+        },
+        {
+          "text": "Sales fax",
+          "boundingBox": {
+            "left": 738,
+            "top": 977,
+            "right": 955,
+            "bottom": 1052
+          },
+          "confidence": 0.4951172
+        }
+      ],
+      "boundingBox": {
+        "left": 730,
+        "top": 928,
+        "right": 960,
+        "bottom": 1054
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 645,
+            "top": 1105,
+            "right": 823,
+            "bottom": 1190
+          },
+          "confidence": 0.88359374
+        }
+      ],
+      "boundingBox": {
+        "left": 645,
+        "top": 1105,
+        "right": 823,
+        "bottom": 1190
+      }
+    },
+    {
+      "text": "S5.25\nS9.95",
+      "lines": [
+        {
+          "text": "S5.25",
+          "boundingBox": {
+            "left": 1051,
+            "top": 659,
+            "right": 1174,
+            "bottom": 717
+          },
+          "confidence": 0.5132812
+        },
+        {
+          "text": "S9.95",
+          "boundingBox": {
+            "left": 1059,
+            "top": 702,
+            "right": 1181,
+            "bottom": 757
+          },
+          "confidence": 0.6078125
+        }
+      ],
+      "boundingBox": {
+        "left": 1050,
+        "top": 658,
+        "right": 1182,
+        "bottom": 757
+      }
+    },
+    {
+      "text": "Thank You\nHave A Nice Day",
+      "lines": [
+        {
+          "text": "Thank You",
+          "boundingBox": {
+            "left": 617,
+            "top": 1243,
+            "right": 928,
+            "bottom": 1347
+          },
+          "confidence": 0.6904297
+        },
+        {
+          "text": "Have A Nice Day",
+          "boundingBox": {
+            "left": 524,
+            "top": 1286,
+            "right": 1023,
+            "bottom": 1437
+          },
+          "confidence": 0.726237
+        }
+      ],
+      "boundingBox": {
+        "left": 512,
+        "top": 1226,
+        "right": 1023,
+        "bottom": 1438
+      }
+    },
+    {
+      "text": "S8.75",
+      "lines": [
+        {
+          "text": "S8.75",
+          "boundingBox": {
+            "left": 1066,
+            "top": 744,
+            "right": 1191,
+            "bottom": 803
+          },
+          "confidence": 0.5421875
+        }
+      ],
+      "boundingBox": {
+        "left": 1066,
+        "top": 744,
+        "right": 1191,
+        "bottom": 803
+      }
+    },
+    {
+      "text": "S8.75",
+      "lines": [
+        {
+          "text": "S8.75",
+          "boundingBox": {
+            "left": 1074,
+            "top": 791,
+            "right": 1197,
+            "bottom": 843
+          },
+          "confidence": 0.6015625
+        }
+      ],
+      "boundingBox": {
+        "left": 1074,
+        "top": 791,
+        "right": 1197,
+        "bottom": 843
+      }
+    },
+    {
+      "text": "S3270\n$282",
+      "lines": [
+        {
+          "text": "S3270",
+          "boundingBox": {
+            "left": 1058,
+            "top": 879,
+            "right": 1214,
+            "bottom": 943
+          },
+          "confidence": 0.5546875
+        },
+        {
+          "text": "$282",
+          "boundingBox": {
+            "left": 1094,
+            "top": 921,
+            "right": 1226,
+            "bottom": 988
+          },
+          "confidence": 0.4736328
+        }
+      ],
+      "boundingBox": {
+        "left": 1057,
+        "top": 875,
+        "right": 1226,
+        "bottom": 993
+      }
+    },
+    {
+      "text": "$35.52",
+      "lines": [
+        {
+          "text": "$35.52",
+          "boundingBox": {
+            "left": 1003,
+            "top": 1023,
+            "right": 1244,
+            "bottom": 1121
+          },
+          "confidence": 0.7454427
+        }
+      ],
+      "boundingBox": {
+        "left": 1003,
+        "top": 1023,
+        "right": 1244,
+        "bottom": 1121
+      }
+    }
+  ]
+}

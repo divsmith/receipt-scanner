@@ -1,0 +1,556 @@
+{
+  "fullText": "STEPHEN R\nCoffee\nGRAND ILTKCYFE\nChicken Parsesan\nPr ine Top Str lotn\nThe BOor-Cheese Burger\nCoffee\nRoosevelt Fleld\nTABLE 101 #Party 3\nSvrCki 4 16:43 04/25/15\n04/25 17:42 TOTALE\n208\nGratutty Nat ino lded\nSupaested Gratuity:\n13.85\n12.47\nI\n10,39\nSut Totala\nSut Totat\nTaxs\nIt's been a pleasure to serve you.\nThank vou for dining with u\nG9.\n2.95\n174 99\n25.95\n13.95\n2.95\n83.25\nS.50\n69.25",
+  "blocks": [
+    {
+      "text": "STEPHEN R",
+      "lines": [
+        {
+          "text": "STEPHEN R",
+          "boundingBox": {
+            "left": 318,
+            "top": 191,
+            "right": 558,
+            "bottom": 290
+          },
+          "confidence": 0.7548828
+        }
+      ],
+      "boundingBox": {
+        "left": 318,
+        "top": 191,
+        "right": 558,
+        "bottom": 290
+      }
+    },
+    {
+      "text": "Coffee",
+      "lines": [
+        {
+          "text": "Coffee",
+          "boundingBox": {
+            "left": 293,
+            "top": 271,
+            "right": 459,
+            "bottom": 358
+          },
+          "confidence": 0.7675781
+        }
+      ],
+      "boundingBox": {
+        "left": 293,
+        "top": 271,
+        "right": 459,
+        "bottom": 358
+      }
+    },
+    {
+      "text": "GRAND ILTKCYFE",
+      "lines": [
+        {
+          "text": "GRAND ILTKCYFE",
+          "boundingBox": {
+            "left": 457,
+            "top": 6,
+            "right": 1468,
+            "bottom": 407
+          },
+          "confidence": 0.35276443
+        }
+      ],
+      "boundingBox": {
+        "left": 457,
+        "top": 6,
+        "right": 1468,
+        "bottom": 407
+      }
+    },
+    {
+      "text": "Chicken Parsesan\nPr ine Top Str lotn\nThe BOor-Cheese Burger\nCoffee",
+      "lines": [
+        {
+          "text": "Chicken Parsesan",
+          "boundingBox": {
+            "left": 281,
+            "top": 315,
+            "right": 701,
+            "bottom": 477
+          },
+          "confidence": 0.7007812
+        },
+        {
+          "text": "Pr ine Top Str lotn",
+          "boundingBox": {
+            "left": 269,
+            "top": 358,
+            "right": 714,
+            "bottom": 528
+          },
+          "confidence": 0.540625
+        },
+        {
+          "text": "The BOor-Cheese Burger",
+          "boundingBox": {
+            "left": 261,
+            "top": 401,
+            "right": 843,
+            "bottom": 613
+          },
+          "confidence": 0.5890625
+        },
+        {
+          "text": "Coffee",
+          "boundingBox": {
+            "left": 248,
+            "top": 442,
+            "right": 410,
+            "bottom": 523
+          },
+          "confidence": 0.6432292
+        }
+      ],
+      "boundingBox": {
+        "left": 243,
+        "top": 315,
+        "right": 869,
+        "bottom": 651
+      }
+    },
+    {
+      "text": "Roosevelt Fleld\nTABLE 101 #Party 3\nSvrCki 4 16:43 04/25/15",
+      "lines": [
+        {
+          "text": "Roosevelt Fleld",
+          "boundingBox": {
+            "left": 654,
+            "top": 198,
+            "right": 1063,
+            "bottom": 356
+          },
+          "confidence": 0.49860492
+        },
+        {
+          "text": "TABLE 101 #Party 3",
+          "boundingBox": {
+            "left": 593,
+            "top": 222,
+            "right": 1127,
+            "bottom": 427
+          },
+          "confidence": 0.59583336
+        },
+        {
+          "text": "SvrCki 4 16:43 04/25/15",
+          "boundingBox": {
+            "left": 627,
+            "top": 285,
+            "right": 1259,
+            "bottom": 509
+          },
+          "confidence": 0.64882815
+        }
+      ],
+      "boundingBox": {
+        "left": 578,
+        "top": 183,
+        "right": 1285,
+        "bottom": 513
+      }
+    },
+    {
+      "text": "04/25 17:42 TOTALE",
+      "lines": [
+        {
+          "text": "04/25 17:42 TOTALE",
+          "boundingBox": {
+            "left": 191,
+            "top": 631,
+            "right": 784,
+            "bottom": 834
+          },
+          "confidence": 0.5136719
+        }
+      ],
+      "boundingBox": {
+        "left": 191,
+        "top": 631,
+        "right": 784,
+        "bottom": 834
+      }
+    },
+    {
+      "text": "208",
+      "lines": [
+        {
+          "text": "208",
+          "boundingBox": {
+            "left": 339,
+            "top": 859,
+            "right": 423,
+            "bottom": 911
+          },
+          "confidence": 0.52734375
+        }
+      ],
+      "boundingBox": {
+        "left": 339,
+        "top": 859,
+        "right": 423,
+        "bottom": 911
+      }
+    },
+    {
+      "text": "Gratutty Nat ino lded\nSupaested Gratuity:",
+      "lines": [
+        {
+          "text": "Gratutty Nat ino lded",
+          "boundingBox": {
+            "left": 159,
+            "top": 712,
+            "right": 706,
+            "bottom": 904
+          },
+          "confidence": 0.56966144
+        },
+        {
+          "text": "Supaested Gratuity:",
+          "boundingBox": {
+            "left": 163,
+            "top": 764,
+            "right": 645,
+            "bottom": 933
+          },
+          "confidence": 0.6534288
+        }
+      ],
+      "boundingBox": {
+        "left": 147,
+        "top": 712,
+        "right": 707,
+        "bottom": 947
+      }
+    },
+    {
+      "text": "13.85\n12.47",
+      "lines": [
+        {
+          "text": "13.85",
+          "boundingBox": {
+            "left": 549,
+            "top": 913,
+            "right": 674,
+            "bottom": 981
+          },
+          "confidence": 0.553125
+        },
+        {
+          "text": "12.47",
+          "boundingBox": {
+            "left": 534,
+            "top": 955,
+            "right": 666,
+            "bottom": 1025
+          },
+          "confidence": 0.6890625
+        }
+      ],
+      "boundingBox": {
+        "left": 534,
+        "top": 912,
+        "right": 678,
+        "bottom": 1027
+      }
+    },
+    {
+      "text": "I",
+      "lines": [
+        {
+          "text": "I",
+          "boundingBox": {
+            "left": 929,
+            "top": 163,
+            "right": 968,
+            "bottom": 230
+          },
+          "confidence": 0.3203125
+        }
+      ],
+      "boundingBox": {
+        "left": 929,
+        "top": 163,
+        "right": 968,
+        "bottom": 230
+      }
+    },
+    {
+      "text": "10,39",
+      "lines": [
+        {
+          "text": "10,39",
+          "boundingBox": {
+            "left": 523,
+            "top": 999,
+            "right": 651,
+            "bottom": 1066
+          },
+          "confidence": 0.70703125
+        }
+      ],
+      "boundingBox": {
+        "left": 523,
+        "top": 999,
+        "right": 651,
+        "bottom": 1066
+      }
+    },
+    {
+      "text": "Sut Totala",
+      "lines": [
+        {
+          "text": "Sut Totala",
+          "boundingBox": {
+            "left": 721,
+            "top": 669,
+            "right": 972,
+            "bottom": 782
+          },
+          "confidence": 0.51345485
+        }
+      ],
+      "boundingBox": {
+        "left": 721,
+        "top": 669,
+        "right": 972,
+        "bottom": 782
+      }
+    },
+    {
+      "text": "Sut Totat",
+      "lines": [
+        {
+          "text": "Sut Totat",
+          "boundingBox": {
+            "left": 699,
+            "top": 737,
+            "right": 932,
+            "bottom": 844
+          },
+          "confidence": 0.5073242
+        }
+      ],
+      "boundingBox": {
+        "left": 699,
+        "top": 737,
+        "right": 932,
+        "bottom": 844
+      }
+    },
+    {
+      "text": "Taxs",
+      "lines": [
+        {
+          "text": "Taxs",
+          "boundingBox": {
+            "left": 910,
+            "top": 765,
+            "right": 1012,
+            "bottom": 830
+          },
+          "confidence": 0.31445312
+        }
+      ],
+      "boundingBox": {
+        "left": 910,
+        "top": 765,
+        "right": 1012,
+        "bottom": 830
+      }
+    },
+    {
+      "text": "It's been a pleasure to serve you.\nThank vou for dining with u",
+      "lines": [
+        {
+          "text": "It's been a pleasure to serve you.",
+          "boundingBox": {
+            "left": 150,
+            "top": 989,
+            "right": 1034,
+            "bottom": 1272
+          },
+          "confidence": 0.7280971
+        },
+        {
+          "text": "Thank vou for dining with u",
+          "boundingBox": {
+            "left": 214,
+            "top": 1055,
+            "right": 943,
+            "bottom": 1290
+          },
+          "confidence": 0.6484375
+        }
+      ],
+      "boundingBox": {
+        "left": 138,
+        "top": 989,
+        "right": 1035,
+        "bottom": 1313
+      }
+    },
+    {
+      "text": "G9.",
+      "lines": [
+        {
+          "text": "G9.",
+          "boundingBox": {
+            "left": 957,
+            "top": 854,
+            "right": 1087,
+            "bottom": 922
+          },
+          "confidence": 0.34635416
+        }
+      ],
+      "boundingBox": {
+        "left": 957,
+        "top": 854,
+        "right": 1087,
+        "bottom": 922
+      }
+    },
+    {
+      "text": "2.95\n174 99",
+      "lines": [
+        {
+          "text": "2.95",
+          "boundingBox": {
+            "left": 1213,
+            "top": 552,
+            "right": 1324,
+            "bottom": 634
+          },
+          "confidence": 0.5732422
+        },
+        {
+          "text": "174 99",
+          "boundingBox": {
+            "left": 1190,
+            "top": 582,
+            "right": 1308,
+            "bottom": 669
+          },
+          "confidence": 0.4609375
+        }
+      ],
+      "boundingBox": {
+        "left": 1190,
+        "top": 549,
+        "right": 1325,
+        "bottom": 670
+      }
+    },
+    {
+      "text": "25.95",
+      "lines": [
+        {
+          "text": "25.95",
+          "boundingBox": {
+            "left": 1154,
+            "top": 629,
+            "right": 1291,
+            "bottom": 696
+          },
+          "confidence": 0.62109375
+        }
+      ],
+      "boundingBox": {
+        "left": 1154,
+        "top": 629,
+        "right": 1291,
+        "bottom": 696
+      }
+    },
+    {
+      "text": "13.95",
+      "lines": [
+        {
+          "text": "13.95",
+          "boundingBox": {
+            "left": 1147,
+            "top": 669,
+            "right": 1272,
+            "bottom": 734
+          },
+          "confidence": 0.77734375
+        }
+      ],
+      "boundingBox": {
+        "left": 1147,
+        "top": 669,
+        "right": 1272,
+        "bottom": 734
+      }
+    },
+    {
+      "text": "2.95",
+      "lines": [
+        {
+          "text": "2.95",
+          "boundingBox": {
+            "left": 1149,
+            "top": 714,
+            "right": 1257,
+            "bottom": 773
+          },
+          "confidence": 0.36132812
+        }
+      ],
+      "boundingBox": {
+        "left": 1149,
+        "top": 714,
+        "right": 1257,
+        "bottom": 773
+      }
+    },
+    {
+      "text": "83.25\nS.50\n69.25",
+      "lines": [
+        {
+          "text": "83.25",
+          "boundingBox": {
+            "left": 1092,
+            "top": 779,
+            "right": 1223,
+            "bottom": 845
+          },
+          "confidence": 0.4828125
+        },
+        {
+          "text": "S.50",
+          "boundingBox": {
+            "left": 1101,
+            "top": 819,
+            "right": 1209,
+            "bottom": 877
+          },
+          "confidence": 0.46289062
+        },
+        {
+          "text": "69.25",
+          "boundingBox": {
+            "left": 1060,
+            "top": 844,
+            "right": 1189,
+            "bottom": 912
+          },
+          "confidence": 0.51484376
+        }
+      ],
+      "boundingBox": {
+        "left": 1059,
+        "top": 775,
+        "right": 1223,
+        "bottom": 916
+      }
+    }
+  ]
+}

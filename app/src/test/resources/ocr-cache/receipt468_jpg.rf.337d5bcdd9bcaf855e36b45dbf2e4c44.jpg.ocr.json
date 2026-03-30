@@ -1,0 +1,565 @@
+{
+  "fullText": "CHRISTS HAMDURGERS\n7701 ATLANTIC AVE.\nCUDAHY CR. 90201\nPhf3231562-4125\nDATE 07(2212010 SUN\nTAXASLE T1\nTaxALE TE\nTAXABLE 1\nTAABLE 11\nTAxARLE TI\nTAXARLE TI\nTAXAKLE TL\nTAXARLE T2\nTAXARLE T1\nTAXABLE T1\nTAXABLE T1\nTOTAL\nCASH\nCLERK OL\nTiNE 19:24\n$21.4\nS0.50-\nS0.30\nS05\n13.0-\n$5.4\n549-\nS0.99\nS0.99\n$4.39-\n8S1.82\n$51.82\nKa.00154\n00",
+  "blocks": [
+    {
+      "text": "CHRISTS HAMDURGERS\n7701 ATLANTIC AVE.\nCUDAHY CR. 90201\nPhf3231562-4125",
+      "lines": [
+        {
+          "text": "CHRISTS HAMDURGERS",
+          "boundingBox": {
+            "left": 450,
+            "top": 81,
+            "right": 1017,
+            "bottom": 210
+          },
+          "confidence": 0.57651657
+        },
+        {
+          "text": "7701 ATLANTIC AVE.",
+          "boundingBox": {
+            "left": 472,
+            "top": 141,
+            "right": 971,
+            "bottom": 263
+          },
+          "confidence": 0.5227051
+        },
+        {
+          "text": "CUDAHY CR. 90201",
+          "boundingBox": {
+            "left": 500,
+            "top": 199,
+            "right": 967,
+            "bottom": 318
+          },
+          "confidence": 0.58063614
+        },
+        {
+          "text": "Phf3231562-4125",
+          "boundingBox": {
+            "left": 457,
+            "top": 243,
+            "right": 927,
+            "bottom": 371
+          },
+          "confidence": 0.6388021
+        }
+      ],
+      "boundingBox": {
+        "left": 426,
+        "top": 79,
+        "right": 1017,
+        "bottom": 380
+      }
+    },
+    {
+      "text": "DATE 07(2212010 SUN",
+      "lines": [
+        {
+          "text": "DATE 07(2212010 SUN",
+          "boundingBox": {
+            "left": 365,
+            "top": 510,
+            "right": 990,
+            "bottom": 658
+          },
+          "confidence": 0.41429228
+        }
+      ],
+      "boundingBox": {
+        "left": 365,
+        "top": 510,
+        "right": 990,
+        "bottom": 658
+      }
+    },
+    {
+      "text": "TAXASLE T1\nTaxALE TE\nTAXABLE 1\nTAABLE 11",
+      "lines": [
+        {
+          "text": "TAXASLE T1",
+          "boundingBox": {
+            "left": 356,
+            "top": 622,
+            "right": 668,
+            "bottom": 717
+          },
+          "confidence": 0.38498265
+        },
+        {
+          "text": "TaxALE TE",
+          "boundingBox": {
+            "left": 368,
+            "top": 680,
+            "right": 653,
+            "bottom": 774
+          },
+          "confidence": 0.48583984
+        },
+        {
+          "text": "TAXABLE 1",
+          "boundingBox": {
+            "left": 346,
+            "top": 740,
+            "right": 647,
+            "bottom": 827
+          },
+          "confidence": 0.5058594
+        },
+        {
+          "text": "TAABLE 11",
+          "boundingBox": {
+            "left": 346,
+            "top": 794,
+            "right": 638,
+            "bottom": 874
+          },
+          "confidence": 0.4638672
+        }
+      ],
+      "boundingBox": {
+        "left": 338,
+        "top": 622,
+        "right": 669,
+        "bottom": 881
+      }
+    },
+    {
+      "text": "TAxARLE TI\nTAXARLE TI\nTAXAKLE TL",
+      "lines": [
+        {
+          "text": "TAxARLE TI",
+          "boundingBox": {
+            "left": 334,
+            "top": 848,
+            "right": 643,
+            "bottom": 932
+          },
+          "confidence": 0.33637154
+        },
+        {
+          "text": "TAXARLE TI",
+          "boundingBox": {
+            "left": 336,
+            "top": 901,
+            "right": 619,
+            "bottom": 983
+          },
+          "confidence": 0.6145833
+        },
+        {
+          "text": "TAXAKLE TL",
+          "boundingBox": {
+            "left": 326,
+            "top": 953,
+            "right": 621,
+            "bottom": 1039
+          },
+          "confidence": 0.46180555
+        }
+      ],
+      "boundingBox": {
+        "left": 322,
+        "top": 848,
+        "right": 643,
+        "bottom": 1042
+      }
+    },
+    {
+      "text": "TAXARLE T2\nTAXARLE T1",
+      "lines": [
+        {
+          "text": "TAXARLE T2",
+          "boundingBox": {
+            "left": 320,
+            "top": 1009,
+            "right": 608,
+            "bottom": 1093
+          },
+          "confidence": 0.51605904
+        },
+        {
+          "text": "TAXARLE T1",
+          "boundingBox": {
+            "left": 313,
+            "top": 1069,
+            "right": 599,
+            "bottom": 1139
+          },
+          "confidence": 0.5720486
+        }
+      ],
+      "boundingBox": {
+        "left": 312,
+        "top": 1009,
+        "right": 608,
+        "bottom": 1143
+      }
+    },
+    {
+      "text": "TAXABLE T1",
+      "lines": [
+        {
+          "text": "TAXABLE T1",
+          "boundingBox": {
+            "left": 306,
+            "top": 1123,
+            "right": 595,
+            "bottom": 1198
+          },
+          "confidence": 0.51258683
+        }
+      ],
+      "boundingBox": {
+        "left": 306,
+        "top": 1123,
+        "right": 595,
+        "bottom": 1198
+      }
+    },
+    {
+      "text": "TAXABLE T1",
+      "lines": [
+        {
+          "text": "TAXABLE T1",
+          "boundingBox": {
+            "left": 300,
+            "top": 1178,
+            "right": 582,
+            "bottom": 1248
+          },
+          "confidence": 0.52126735
+        }
+      ],
+      "boundingBox": {
+        "left": 300,
+        "top": 1178,
+        "right": 582,
+        "bottom": 1248
+      }
+    },
+    {
+      "text": "TOTAL\nCASH\nCLERK OL\nTiNE 19:24",
+      "lines": [
+        {
+          "text": "TOTAL",
+          "boundingBox": {
+            "left": 279,
+            "top": 1286,
+            "right": 422,
+            "bottom": 1346
+          },
+          "confidence": 0.546875
+        },
+        {
+          "text": "CASH",
+          "boundingBox": {
+            "left": 269,
+            "top": 1336,
+            "right": 396,
+            "bottom": 1394
+          },
+          "confidence": 0.69921875
+        },
+        {
+          "text": "CLERK OL",
+          "boundingBox": {
+            "left": 266,
+            "top": 1397,
+            "right": 507,
+            "bottom": 1468
+          },
+          "confidence": 0.51953125
+        },
+        {
+          "text": "TiNE 19:24",
+          "boundingBox": {
+            "left": 264,
+            "top": 1452,
+            "right": 565,
+            "bottom": 1528
+          },
+          "confidence": 0.5034722
+        }
+      ],
+      "boundingBox": {
+        "left": 259,
+        "top": 1286,
+        "right": 579,
+        "bottom": 1532
+      }
+    },
+    {
+      "text": "$21.4\nS0.50-",
+      "lines": [
+        {
+          "text": "$21.4",
+          "boundingBox": {
+            "left": 800,
+            "top": 687,
+            "right": 998,
+            "bottom": 755
+          },
+          "confidence": 0.353125
+        },
+        {
+          "text": "S0.50-",
+          "boundingBox": {
+            "left": 824,
+            "top": 747,
+            "right": 1007,
+            "bottom": 812
+          },
+          "confidence": 0.40820312
+        }
+      ],
+      "boundingBox": {
+        "left": 794,
+        "top": 687,
+        "right": 1013,
+        "bottom": 814
+      }
+    },
+    {
+      "text": "S0.30",
+      "lines": [
+        {
+          "text": "S0.30",
+          "boundingBox": {
+            "left": 811,
+            "top": 796,
+            "right": 961,
+            "bottom": 861
+          },
+          "confidence": 0.37578124
+        }
+      ],
+      "boundingBox": {
+        "left": 811,
+        "top": 796,
+        "right": 961,
+        "bottom": 861
+      }
+    },
+    {
+      "text": "S05",
+      "lines": [
+        {
+          "text": "S05",
+          "boundingBox": {
+            "left": 802,
+            "top": 905,
+            "right": 954,
+            "bottom": 962
+          },
+          "confidence": 0.3515625
+        }
+      ],
+      "boundingBox": {
+        "left": 802,
+        "top": 905,
+        "right": 954,
+        "bottom": 962
+      }
+    },
+    {
+      "text": "13.0-",
+      "lines": [
+        {
+          "text": "13.0-",
+          "boundingBox": {
+            "left": 784,
+            "top": 1003,
+            "right": 945,
+            "bottom": 1078
+          },
+          "confidence": 0.5445312
+        }
+      ],
+      "boundingBox": {
+        "left": 784,
+        "top": 1003,
+        "right": 945,
+        "bottom": 1078
+      }
+    },
+    {
+      "text": "$5.4",
+      "lines": [
+        {
+          "text": "$5.4",
+          "boundingBox": {
+            "left": 782,
+            "top": 1062,
+            "right": 907,
+            "bottom": 1122
+          },
+          "confidence": 0.4033203
+        }
+      ],
+      "boundingBox": {
+        "left": 782,
+        "top": 1062,
+        "right": 907,
+        "bottom": 1122
+      }
+    },
+    {
+      "text": "549-",
+      "lines": [
+        {
+          "text": "549-",
+          "boundingBox": {
+            "left": 815,
+            "top": 1114,
+            "right": 949,
+            "bottom": 1182
+          },
+          "confidence": 0.35839844
+        }
+      ],
+      "boundingBox": {
+        "left": 815,
+        "top": 1114,
+        "right": 949,
+        "bottom": 1182
+      }
+    },
+    {
+      "text": "S0.99",
+      "lines": [
+        {
+          "text": "S0.99",
+          "boundingBox": {
+            "left": 766,
+            "top": 1166,
+            "right": 913,
+            "bottom": 1228
+          },
+          "confidence": 0.48359376
+        }
+      ],
+      "boundingBox": {
+        "left": 766,
+        "top": 1166,
+        "right": 913,
+        "bottom": 1228
+      }
+    },
+    {
+      "text": "S0.99",
+      "lines": [
+        {
+          "text": "S0.99",
+          "boundingBox": {
+            "left": 760,
+            "top": 1219,
+            "right": 906,
+            "bottom": 1281
+          },
+          "confidence": 0.4578125
+        }
+      ],
+      "boundingBox": {
+        "left": 760,
+        "top": 1219,
+        "right": 906,
+        "bottom": 1281
+      }
+    },
+    {
+      "text": "$4.39-",
+      "lines": [
+        {
+          "text": "$4.39-",
+          "boundingBox": {
+            "left": 777,
+            "top": 1275,
+            "right": 933,
+            "bottom": 1342
+          },
+          "confidence": 0.47135416
+        }
+      ],
+      "boundingBox": {
+        "left": 777,
+        "top": 1275,
+        "right": 933,
+        "bottom": 1342
+      }
+    },
+    {
+      "text": "8S1.82",
+      "lines": [
+        {
+          "text": "8S1.82",
+          "boundingBox": {
+            "left": 717,
+            "top": 1320,
+            "right": 896,
+            "bottom": 1390
+          },
+          "confidence": 0.50716144
+        }
+      ],
+      "boundingBox": {
+        "left": 717,
+        "top": 1320,
+        "right": 896,
+        "bottom": 1390
+      }
+    },
+    {
+      "text": "$51.82\nKa.00154",
+      "lines": [
+        {
+          "text": "$51.82",
+          "boundingBox": {
+            "left": 711,
+            "top": 1376,
+            "right": 890,
+            "bottom": 1447
+          },
+          "confidence": 0.49934897
+        },
+        {
+          "text": "Ka.00154",
+          "boundingBox": {
+            "left": 646,
+            "top": 1428,
+            "right": 875,
+            "bottom": 1497
+          },
+          "confidence": 0.5698242
+        }
+      ],
+      "boundingBox": {
+        "left": 645,
+        "top": 1371,
+        "right": 890,
+        "bottom": 1500
+      }
+    },
+    {
+      "text": "00",
+      "lines": [
+        {
+          "text": "00",
+          "boundingBox": {
+            "left": 814,
+            "top": 1502,
+            "right": 870,
+            "bottom": 1548
+          },
+          "confidence": 0.5
+        }
+      ],
+      "boundingBox": {
+        "left": 814,
+        "top": 1502,
+        "right": 870,
+        "bottom": 1548
+      }
+    }
+  ]
+}

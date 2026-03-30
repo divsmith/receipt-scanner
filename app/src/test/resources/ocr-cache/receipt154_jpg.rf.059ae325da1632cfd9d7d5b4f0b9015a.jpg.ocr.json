@@ -1,0 +1,745 @@
+{
+  "fullText": "Gordon Ramsay Steak\nParis Las Vegas\n10/21/2014\nGordon Ramsay Steak\nCheck: 2042367\nServer : Lomberto\nTerminal: 42\nRegular\n1 Pinms Cup\n2 The Drifter\n14.00\n1 Kobe Beef S1ider\n1 New York\n1 Amer Kobe Filet\n1 Lobster\n1 Potato Puree\nTail\nTable: T-35\nGuests: 2\n1 Grlld Asparagus\n1 Peppercorn\n1 Pepst\n1 Choc Pot De Crem\nSubtotal\nTax\nTotal\n19:41\n14.00\n28.00\n18.00\n63.00\n79.00\n38.00\n12.00\n13.00\n6.00\n6.00\n13.00\n290.00\n23.49\n313.49",
+  "blocks": [
+    {
+      "text": "Gordon Ramsay Steak\nParis Las Vegas",
+      "lines": [
+        {
+          "text": "Gordon Ramsay Steak",
+          "boundingBox": {
+            "left": 332,
+            "top": 54,
+            "right": 858,
+            "bottom": 97
+          },
+          "confidence": 0.87109375
+        },
+        {
+          "text": "Paris Las Vegas",
+          "boundingBox": {
+            "left": 382,
+            "top": 94,
+            "right": 804,
+            "bottom": 139
+          },
+          "confidence": 0.8765024
+        }
+      ],
+      "boundingBox": {
+        "left": 332,
+        "top": 54,
+        "right": 859,
+        "bottom": 140
+      }
+    },
+    {
+      "text": "10/21/2014",
+      "lines": [
+        {
+          "text": "10/21/2014",
+          "boundingBox": {
+            "left": 136,
+            "top": 142,
+            "right": 405,
+            "bottom": 193
+          },
+          "confidence": 0.8730469
+        }
+      ],
+      "boundingBox": {
+        "left": 136,
+        "top": 142,
+        "right": 405,
+        "bottom": 193
+      }
+    },
+    {
+      "text": "Gordon Ramsay Steak",
+      "lines": [
+        {
+          "text": "Gordon Ramsay Steak",
+          "boundingBox": {
+            "left": 288,
+            "top": 226,
+            "right": 831,
+            "bottom": 283
+          },
+          "confidence": 0.8972886
+        }
+      ],
+      "boundingBox": {
+        "left": 288,
+        "top": 226,
+        "right": 831,
+        "bottom": 283
+      }
+    },
+    {
+      "text": "Check: 2042367\nServer : Lomberto\nTerminal: 42",
+      "lines": [
+        {
+          "text": "Check: 2042367",
+          "boundingBox": {
+            "left": 120,
+            "top": 282,
+            "right": 543,
+            "bottom": 339
+          },
+          "confidence": 0.8951322
+        },
+        {
+          "text": "Server : Lomberto",
+          "boundingBox": {
+            "left": 122,
+            "top": 331,
+            "right": 571,
+            "bottom": 393
+          },
+          "confidence": 0.834375
+        },
+        {
+          "text": "Terminal: 42",
+          "boundingBox": {
+            "left": 124,
+            "top": 384,
+            "right": 452,
+            "bottom": 447
+          },
+          "confidence": 0.8370028
+        }
+      ],
+      "boundingBox": {
+        "left": 119,
+        "top": 278,
+        "right": 574,
+        "bottom": 447
+      }
+    },
+    {
+      "text": "Regular",
+      "lines": [
+        {
+          "text": "Regular",
+          "boundingBox": {
+            "left": 482,
+            "top": 487,
+            "right": 687,
+            "bottom": 541
+          },
+          "confidence": 0.8844866
+        }
+      ],
+      "boundingBox": {
+        "left": 482,
+        "top": 487,
+        "right": 687,
+        "bottom": 541
+      }
+    },
+    {
+      "text": "1 Pinms Cup\n2 The Drifter\n14.00",
+      "lines": [
+        {
+          "text": "1 Pinms Cup",
+          "boundingBox": {
+            "left": 318,
+            "top": 542,
+            "right": 629,
+            "bottom": 600
+          },
+          "confidence": 0.71050346
+        },
+        {
+          "text": "2 The Drifter",
+          "boundingBox": {
+            "left": 290,
+            "top": 596,
+            "right": 657,
+            "bottom": 655
+          },
+          "confidence": 0.90625
+        },
+        {
+          "text": "14.00",
+          "boundingBox": {
+            "left": 406,
+            "top": 655,
+            "right": 539,
+            "bottom": 704
+          },
+          "confidence": 0.903125
+        }
+      ],
+      "boundingBox": {
+        "left": 288,
+        "top": 539,
+        "right": 658,
+        "bottom": 708
+      }
+    },
+    {
+      "text": "1 Kobe Beef S1ider",
+      "lines": [
+        {
+          "text": "1 Kobe Beef S1ider",
+          "boundingBox": {
+            "left": 314,
+            "top": 700,
+            "right": 807,
+            "bottom": 764
+          },
+          "confidence": 0.8072917
+        }
+      ],
+      "boundingBox": {
+        "left": 314,
+        "top": 700,
+        "right": 807,
+        "bottom": 764
+      }
+    },
+    {
+      "text": "1 New York",
+      "lines": [
+        {
+          "text": "1 New York",
+          "boundingBox": {
+            "left": 318,
+            "top": 764,
+            "right": 570,
+            "bottom": 821
+          },
+          "confidence": 0.8408203
+        }
+      ],
+      "boundingBox": {
+        "left": 318,
+        "top": 764,
+        "right": 570,
+        "bottom": 821
+      }
+    },
+    {
+      "text": "1 Amer Kobe Filet\n1 Lobster\n1 Potato Puree",
+      "lines": [
+        {
+          "text": "1 Amer Kobe Filet",
+          "boundingBox": {
+            "left": 314,
+            "top": 815,
+            "right": 779,
+            "bottom": 878
+          },
+          "confidence": 0.8111049
+        },
+        {
+          "text": "1 Lobster",
+          "boundingBox": {
+            "left": 308,
+            "top": 873,
+            "right": 542,
+            "bottom": 935
+          },
+          "confidence": 0.87353516
+        },
+        {
+          "text": "1 Potato Puree",
+          "boundingBox": {
+            "left": 304,
+            "top": 933,
+            "right": 692,
+            "bottom": 991
+          },
+          "confidence": 0.8277995
+        }
+      ],
+      "boundingBox": {
+        "left": 302,
+        "top": 814,
+        "right": 780,
+        "bottom": 994
+      }
+    },
+    {
+      "text": "Tail",
+      "lines": [
+        {
+          "text": "Tail",
+          "boundingBox": {
+            "left": 593,
+            "top": 873,
+            "right": 702,
+            "bottom": 932
+          },
+          "confidence": 0.765625
+        }
+      ],
+      "boundingBox": {
+        "left": 593,
+        "top": 873,
+        "right": 702,
+        "bottom": 932
+      }
+    },
+    {
+      "text": "Table: T-35\nGuests: 2",
+      "lines": [
+        {
+          "text": "Table: T-35",
+          "boundingBox": {
+            "left": 690,
+            "top": 266,
+            "right": 1011,
+            "bottom": 323
+          },
+          "confidence": 0.82890624
+        },
+        {
+          "text": "Guests: 2",
+          "boundingBox": {
+            "left": 690,
+            "top": 321,
+            "right": 953,
+            "bottom": 371
+          },
+          "confidence": 0.82421875
+        }
+      ],
+      "boundingBox": {
+        "left": 688,
+        "top": 266,
+        "right": 1013,
+        "bottom": 371
+      }
+    },
+    {
+      "text": "1 Grlld Asparagus",
+      "lines": [
+        {
+          "text": "1 Grlld Asparagus",
+          "boundingBox": {
+            "left": 307,
+            "top": 988,
+            "right": 781,
+            "bottom": 1049
+          },
+          "confidence": 0.83958334
+        }
+      ],
+      "boundingBox": {
+        "left": 307,
+        "top": 988,
+        "right": 781,
+        "bottom": 1049
+      }
+    },
+    {
+      "text": "1 Peppercorn\n1 Pepst",
+      "lines": [
+        {
+          "text": "1 Peppercorn",
+          "boundingBox": {
+            "left": 299,
+            "top": 1049,
+            "right": 629,
+            "bottom": 1105
+          },
+          "confidence": 0.887429
+        },
+        {
+          "text": "1 Pepst",
+          "boundingBox": {
+            "left": 300,
+            "top": 1110,
+            "right": 470,
+            "bottom": 1162
+          },
+          "confidence": 0.7545573
+        }
+      ],
+      "boundingBox": {
+        "left": 299,
+        "top": 1049,
+        "right": 629,
+        "bottom": 1162
+      }
+    },
+    {
+      "text": "1 Choc Pot De Crem",
+      "lines": [
+        {
+          "text": "1 Choc Pot De Crem",
+          "boundingBox": {
+            "left": 291,
+            "top": 1165,
+            "right": 815,
+            "bottom": 1226
+          },
+          "confidence": 0.875279
+        }
+      ],
+      "boundingBox": {
+        "left": 291,
+        "top": 1165,
+        "right": 815,
+        "bottom": 1226
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 376,
+            "top": 1292,
+            "right": 612,
+            "bottom": 1342
+          },
+          "confidence": 0.80322266
+        }
+      ],
+      "boundingBox": {
+        "left": 376,
+        "top": 1292,
+        "right": 612,
+        "bottom": 1342
+      }
+    },
+    {
+      "text": "Tax\nTotal",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 529,
+            "top": 1357,
+            "right": 620,
+            "bottom": 1407
+          },
+          "confidence": 0.8515625
+        },
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 464,
+            "top": 1421,
+            "right": 614,
+            "bottom": 1473
+          },
+          "confidence": 0.7914063
+        }
+      ],
+      "boundingBox": {
+        "left": 463,
+        "top": 1356,
+        "right": 620,
+        "bottom": 1474
+      }
+    },
+    {
+      "text": "19:41",
+      "lines": [
+        {
+          "text": "19:41",
+          "boundingBox": {
+            "left": 930,
+            "top": 136,
+            "right": 1060,
+            "bottom": 170
+          },
+          "confidence": 0.9078125
+        }
+      ],
+      "boundingBox": {
+        "left": 930,
+        "top": 136,
+        "right": 1060,
+        "bottom": 170
+      }
+    },
+    {
+      "text": "14.00\n28.00",
+      "lines": [
+        {
+          "text": "14.00",
+          "boundingBox": {
+            "left": 938,
+            "top": 530,
+            "right": 1082,
+            "bottom": 578
+          },
+          "confidence": 0.88984376
+        },
+        {
+          "text": "28.00",
+          "boundingBox": {
+            "left": 934,
+            "top": 585,
+            "right": 1082,
+            "bottom": 633
+          },
+          "confidence": 0.9242188
+        }
+      ],
+      "boundingBox": {
+        "left": 931,
+        "top": 530,
+        "right": 1085,
+        "bottom": 635
+      }
+    },
+    {
+      "text": "18.00",
+      "lines": [
+        {
+          "text": "18.00",
+          "boundingBox": {
+            "left": 942,
+            "top": 700,
+            "right": 1090,
+            "bottom": 744
+          },
+          "confidence": 0.8960937
+        }
+      ],
+      "boundingBox": {
+        "left": 942,
+        "top": 700,
+        "right": 1090,
+        "bottom": 744
+      }
+    },
+    {
+      "text": "63.00",
+      "lines": [
+        {
+          "text": "63.00",
+          "boundingBox": {
+            "left": 938,
+            "top": 756,
+            "right": 1094,
+            "bottom": 800
+          },
+          "confidence": 0.91796875
+        }
+      ],
+      "boundingBox": {
+        "left": 938,
+        "top": 756,
+        "right": 1094,
+        "bottom": 800
+      }
+    },
+    {
+      "text": "79.00",
+      "lines": [
+        {
+          "text": "79.00",
+          "boundingBox": {
+            "left": 940,
+            "top": 813,
+            "right": 1095,
+            "bottom": 859
+          },
+          "confidence": 0.9015625
+        }
+      ],
+      "boundingBox": {
+        "left": 940,
+        "top": 813,
+        "right": 1095,
+        "bottom": 859
+      }
+    },
+    {
+      "text": "38.00",
+      "lines": [
+        {
+          "text": "38.00",
+          "boundingBox": {
+            "left": 940,
+            "top": 869,
+            "right": 1096,
+            "bottom": 921
+          },
+          "confidence": 0.865625
+        }
+      ],
+      "boundingBox": {
+        "left": 940,
+        "top": 869,
+        "right": 1096,
+        "bottom": 921
+      }
+    },
+    {
+      "text": "12.00",
+      "lines": [
+        {
+          "text": "12.00",
+          "boundingBox": {
+            "left": 948,
+            "top": 932,
+            "right": 1098,
+            "bottom": 978
+          },
+          "confidence": 0.8609375
+        }
+      ],
+      "boundingBox": {
+        "left": 948,
+        "top": 932,
+        "right": 1098,
+        "bottom": 978
+      }
+    },
+    {
+      "text": "13.00",
+      "lines": [
+        {
+          "text": "13.00",
+          "boundingBox": {
+            "left": 949,
+            "top": 990,
+            "right": 1101,
+            "bottom": 1038
+          },
+          "confidence": 0.89765626
+        }
+      ],
+      "boundingBox": {
+        "left": 949,
+        "top": 990,
+        "right": 1101,
+        "bottom": 1038
+      }
+    },
+    {
+      "text": "6.00",
+      "lines": [
+        {
+          "text": "6.00",
+          "boundingBox": {
+            "left": 976,
+            "top": 1054,
+            "right": 1104,
+            "bottom": 1100
+          },
+          "confidence": 0.8798828
+        }
+      ],
+      "boundingBox": {
+        "left": 976,
+        "top": 1054,
+        "right": 1104,
+        "bottom": 1100
+      }
+    },
+    {
+      "text": "6.00",
+      "lines": [
+        {
+          "text": "6.00",
+          "boundingBox": {
+            "left": 978,
+            "top": 1113,
+            "right": 1106,
+            "bottom": 1163
+          },
+          "confidence": 0.8857422
+        }
+      ],
+      "boundingBox": {
+        "left": 978,
+        "top": 1113,
+        "right": 1106,
+        "bottom": 1163
+      }
+    },
+    {
+      "text": "13.00",
+      "lines": [
+        {
+          "text": "13.00",
+          "boundingBox": {
+            "left": 954,
+            "top": 1174,
+            "right": 1108,
+            "bottom": 1225
+          },
+          "confidence": 0.8773438
+        }
+      ],
+      "boundingBox": {
+        "left": 954,
+        "top": 1174,
+        "right": 1108,
+        "bottom": 1225
+      }
+    },
+    {
+      "text": "290.00",
+      "lines": [
+        {
+          "text": "290.00",
+          "boundingBox": {
+            "left": 851,
+            "top": 1301,
+            "right": 1046,
+            "bottom": 1353
+          },
+          "confidence": 0.88216144
+        }
+      ],
+      "boundingBox": {
+        "left": 851,
+        "top": 1301,
+        "right": 1046,
+        "bottom": 1353
+      }
+    },
+    {
+      "text": "23.49",
+      "lines": [
+        {
+          "text": "23.49",
+          "boundingBox": {
+            "left": 884,
+            "top": 1366,
+            "right": 1051,
+            "bottom": 1423
+          },
+          "confidence": 0.88125
+        }
+      ],
+      "boundingBox": {
+        "left": 884,
+        "top": 1366,
+        "right": 1051,
+        "bottom": 1423
+      }
+    },
+    {
+      "text": "313.49",
+      "lines": [
+        {
+          "text": "313.49",
+          "boundingBox": {
+            "left": 850,
+            "top": 1432,
+            "right": 1053,
+            "bottom": 1490
+          },
+          "confidence": 0.8854167
+        }
+      ],
+      "boundingBox": {
+        "left": 850,
+        "top": 1432,
+        "right": 1053,
+        "bottom": 1490
+      }
+    }
+  ]
+}

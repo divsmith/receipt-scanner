@@ -1,0 +1,307 @@
+{
+  "fullText": "COLLEGE OF SOUTHERN NEVADA\nRUSSELL'S RESTAURANT\n108 SERV 7\nTbl 55/1 Chk 4488\nOct08'14 12:10PM\n1 LATTE\n*NO FLAVOR\n1 SALMON\nGst 1\nPLEASE PAY CASHIER\n1.75\n12:44PM Amount Due 9.70\nThank You\n7.95\nCOLLEGE OF SOUTHERN NEVADA\nWHERE HOSPITALITY EDUCATION\nTAKES LIFE",
+  "blocks": [
+    {
+      "text": "COLLEGE OF SOUTHERN NEVADA\nRUSSELL'S RESTAURANT",
+      "lines": [
+        {
+          "text": "COLLEGE OF SOUTHERN NEVADA",
+          "boundingBox": {
+            "left": 477,
+            "top": 100,
+            "right": 1320,
+            "bottom": 195
+          },
+          "confidence": 0.8023098
+        },
+        {
+          "text": "RUSSELL'S RESTAURANT",
+          "boundingBox": {
+            "left": 540,
+            "top": 164,
+            "right": 1219,
+            "bottom": 253
+          },
+          "confidence": 0.80900496
+        }
+      ],
+      "boundingBox": {
+        "left": 473,
+        "top": 99,
+        "right": 1320,
+        "bottom": 258
+      }
+    },
+    {
+      "text": "108 SERV 7",
+      "lines": [
+        {
+          "text": "108 SERV 7",
+          "boundingBox": {
+            "left": 413,
+            "top": 286,
+            "right": 726,
+            "bottom": 348
+          },
+          "confidence": 0.7939453
+        }
+      ],
+      "boundingBox": {
+        "left": 413,
+        "top": 286,
+        "right": 726,
+        "bottom": 348
+      }
+    },
+    {
+      "text": "Tbl 55/1 Chk 4488\nOct08'14 12:10PM",
+      "lines": [
+        {
+          "text": "Tbl 55/1 Chk 4488",
+          "boundingBox": {
+            "left": 391,
+            "top": 400,
+            "right": 1014,
+            "bottom": 497
+          },
+          "confidence": 0.7363281
+        },
+        {
+          "text": "Oct08'14 12:10PM",
+          "boundingBox": {
+            "left": 631,
+            "top": 480,
+            "right": 1135,
+            "bottom": 555
+          },
+          "confidence": 0.7367188
+        }
+      ],
+      "boundingBox": {
+        "left": 389,
+        "top": 400,
+        "right": 1139,
+        "bottom": 555
+      }
+    },
+    {
+      "text": "1 LATTE",
+      "lines": [
+        {
+          "text": "1 LATTE",
+          "boundingBox": {
+            "left": 461,
+            "top": 595,
+            "right": 651,
+            "bottom": 654
+          },
+          "confidence": 0.7233073
+        }
+      ],
+      "boundingBox": {
+        "left": 461,
+        "top": 595,
+        "right": 651,
+        "bottom": 654
+      }
+    },
+    {
+      "text": "*NO FLAVOR\n1 SALMON",
+      "lines": [
+        {
+          "text": "*NO FLAVOR",
+          "boundingBox": {
+            "left": 564,
+            "top": 659,
+            "right": 873,
+            "bottom": 717
+          },
+          "confidence": 0.7100694
+        },
+        {
+          "text": "1 SALMON",
+          "boundingBox": {
+            "left": 461,
+            "top": 711,
+            "right": 685,
+            "bottom": 775
+          },
+          "confidence": 0.73214287
+        }
+      ],
+      "boundingBox": {
+        "left": 462,
+        "top": 655,
+        "right": 873,
+        "bottom": 781
+      }
+    },
+    {
+      "text": "Gst 1",
+      "lines": [
+        {
+          "text": "Gst 1",
+          "boundingBox": {
+            "left": 1212,
+            "top": 452,
+            "right": 1390,
+            "bottom": 503
+          },
+          "confidence": 0.64453125
+        }
+      ],
+      "boundingBox": {
+        "left": 1212,
+        "top": 452,
+        "right": 1390,
+        "bottom": 503
+      }
+    },
+    {
+      "text": "PLEASE PAY CASHIER",
+      "lines": [
+        {
+          "text": "PLEASE PAY CASHIER",
+          "boundingBox": {
+            "left": 607,
+            "top": 1238,
+            "right": 1159,
+            "bottom": 1310
+          },
+          "confidence": 0.8364258
+        }
+      ],
+      "boundingBox": {
+        "left": 607,
+        "top": 1238,
+        "right": 1159,
+        "bottom": 1310
+      }
+    },
+    {
+      "text": "1.75",
+      "lines": [
+        {
+          "text": "1.75",
+          "boundingBox": {
+            "left": 1176,
+            "top": 630,
+            "right": 1284,
+            "bottom": 678
+          },
+          "confidence": 0.7841797
+        }
+      ],
+      "boundingBox": {
+        "left": 1176,
+        "top": 630,
+        "right": 1284,
+        "bottom": 678
+      }
+    },
+    {
+      "text": "12:44PM Amount Due 9.70",
+      "lines": [
+        {
+          "text": "12:44PM Amount Due 9.70",
+          "boundingBox": {
+            "left": 395,
+            "top": 815,
+            "right": 1260,
+            "bottom": 923
+          },
+          "confidence": 0.6970703
+        }
+      ],
+      "boundingBox": {
+        "left": 395,
+        "top": 815,
+        "right": 1260,
+        "bottom": 923
+      }
+    },
+    {
+      "text": "Thank You",
+      "lines": [
+        {
+          "text": "Thank You",
+          "boundingBox": {
+            "left": 634,
+            "top": 1500,
+            "right": 1008,
+            "bottom": 1560
+          },
+          "confidence": 0.88623047
+        }
+      ],
+      "boundingBox": {
+        "left": 634,
+        "top": 1500,
+        "right": 1008,
+        "bottom": 1560
+      }
+    },
+    {
+      "text": "7.95",
+      "lines": [
+        {
+          "text": "7.95",
+          "boundingBox": {
+            "left": 1163,
+            "top": 744,
+            "right": 1277,
+            "bottom": 793
+          },
+          "confidence": 0.80371094
+        }
+      ],
+      "boundingBox": {
+        "left": 1163,
+        "top": 744,
+        "right": 1277,
+        "bottom": 793
+      }
+    },
+    {
+      "text": "COLLEGE OF SOUTHERN NEVADA\nWHERE HOSPITALITY EDUCATION\nTAKES LIFE",
+      "lines": [
+        {
+          "text": "COLLEGE OF SOUTHERN NEVADA",
+          "boundingBox": {
+            "left": 359,
+            "top": 936,
+            "right": 1172,
+            "bottom": 1021
+          },
+          "confidence": 0.7814198
+        },
+        {
+          "text": "WHERE HOSPITALITY EDUCATION",
+          "boundingBox": {
+            "left": 425,
+            "top": 997,
+            "right": 1264,
+            "bottom": 1090
+          },
+          "confidence": 0.7740625
+        },
+        {
+          "text": "TAKES LIFE",
+          "boundingBox": {
+            "left": 709,
+            "top": 1070,
+            "right": 1010,
+            "bottom": 1130
+          },
+          "confidence": 0.7942708
+        }
+      ],
+      "boundingBox": {
+        "left": 354,
+        "top": 934,
+        "right": 1267,
+        "bottom": 1140
+      }
+    }
+  ]
+}

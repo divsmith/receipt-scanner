@@ -1,0 +1,515 @@
+{
+  "fullText": "Server: Jake\nTable 24/1\nGuests : 2\nG1 Karma Cab Sauv\nG1 Douglass Green SB\nPKLI Green Curry Scallops\nPKLI Piri Piri Chicken\nSubtota l\nTax\n1660 India Street\nSurcharge 3.75% SC*\nTotal\nBalance Due\n12/17/2017\n6:29 PM\n20018\n*3.75% SC - In support\nof the increases to min wage\nTo find out why, visit\nwww.wnlhosp.com/rttd\n12.00\n11.00\n27.95\n23.75\n74.70\n6.00\n2.80\n83.50\n83.50",
+  "blocks": [
+    {
+      "text": "Server: Jake\nTable 24/1\nGuests : 2",
+      "lines": [
+        {
+          "text": "Server: Jake",
+          "boundingBox": {
+            "left": 188,
+            "top": 229,
+            "right": 521,
+            "bottom": 287
+          },
+          "confidence": 0.8384233
+        },
+        {
+          "text": "Table 24/1",
+          "boundingBox": {
+            "left": 192,
+            "top": 287,
+            "right": 460,
+            "bottom": 345
+          },
+          "confidence": 0.8967014
+        },
+        {
+          "text": "Guests : 2",
+          "boundingBox": {
+            "left": 190,
+            "top": 343,
+            "right": 441,
+            "bottom": 394
+          },
+          "confidence": 0.8496094
+        }
+      ],
+      "boundingBox": {
+        "left": 185,
+        "top": 228,
+        "right": 527,
+        "bottom": 394
+      }
+    },
+    {
+      "text": "G1 Karma Cab Sauv\nG1 Douglass Green SB\nPKLI Green Curry Scallops\nPKLI Piri Piri Chicken",
+      "lines": [
+        {
+          "text": "G1 Karma Cab Sauv",
+          "boundingBox": {
+            "left": 201,
+            "top": 438,
+            "right": 669,
+            "bottom": 502
+          },
+          "confidence": 0.76004463
+        },
+        {
+          "text": "G1 Douglass Green SB",
+          "boundingBox": {
+            "left": 199,
+            "top": 488,
+            "right": 759,
+            "bottom": 552
+          },
+          "confidence": 0.82766545
+        },
+        {
+          "text": "PKLI Green Curry Scallops",
+          "boundingBox": {
+            "left": 196,
+            "top": 537,
+            "right": 913,
+            "bottom": 605
+          },
+          "confidence": 0.8897372
+        },
+        {
+          "text": "PKLI Piri Piri Chicken",
+          "boundingBox": {
+            "left": 180,
+            "top": 597,
+            "right": 822,
+            "bottom": 655
+          },
+          "confidence": 0.8353207
+        }
+      ],
+      "boundingBox": {
+        "left": 175,
+        "top": 431,
+        "right": 914,
+        "bottom": 663
+      }
+    },
+    {
+      "text": "Subtota l",
+      "lines": [
+        {
+          "text": "Subtota l",
+          "boundingBox": {
+            "left": 175,
+            "top": 714,
+            "right": 395,
+            "bottom": 763
+          },
+          "confidence": 0.8232422
+        }
+      ],
+      "boundingBox": {
+        "left": 175,
+        "top": 714,
+        "right": 395,
+        "bottom": 763
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 174,
+            "top": 778,
+            "right": 254,
+            "bottom": 816
+          },
+          "confidence": 0.7942708
+        }
+      ],
+      "boundingBox": {
+        "left": 174,
+        "top": 778,
+        "right": 254,
+        "bottom": 816
+      }
+    },
+    {
+      "text": "1660 India Street",
+      "lines": [
+        {
+          "text": "1660 India Street",
+          "boundingBox": {
+            "left": 526,
+            "top": 94,
+            "right": 1017,
+            "bottom": 159
+          },
+          "confidence": 0.8697917
+        }
+      ],
+      "boundingBox": {
+        "left": 526,
+        "top": 94,
+        "right": 1017,
+        "bottom": 159
+      }
+    },
+    {
+      "text": "Surcharge 3.75% SC*",
+      "lines": [
+        {
+          "text": "Surcharge 3.75% SC*",
+          "boundingBox": {
+            "left": 168,
+            "top": 878,
+            "right": 730,
+            "bottom": 935
+          },
+          "confidence": 0.8543199
+        }
+      ],
+      "boundingBox": {
+        "left": 168,
+        "top": 878,
+        "right": 730,
+        "bottom": 935
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 166,
+            "top": 1000,
+            "right": 300,
+            "bottom": 1040
+          },
+          "confidence": 0.85
+        }
+      ],
+      "boundingBox": {
+        "left": 166,
+        "top": 1000,
+        "right": 300,
+        "bottom": 1040
+      }
+    },
+    {
+      "text": "Balance Due",
+      "lines": [
+        {
+          "text": "Balance Due",
+          "boundingBox": {
+            "left": 160,
+            "top": 1114,
+            "right": 828,
+            "bottom": 1160
+          },
+          "confidence": 0.84296876
+        }
+      ],
+      "boundingBox": {
+        "left": 160,
+        "top": 1114,
+        "right": 828,
+        "bottom": 1160
+      }
+    },
+    {
+      "text": "12/17/2017\n6:29 PM",
+      "lines": [
+        {
+          "text": "12/17/2017",
+          "boundingBox": {
+            "left": 1124,
+            "top": 194,
+            "right": 1419,
+            "bottom": 253
+          },
+          "confidence": 0.9199219
+        },
+        {
+          "text": "6:29 PM",
+          "boundingBox": {
+            "left": 1210,
+            "top": 252,
+            "right": 1421,
+            "bottom": 300
+          },
+          "confidence": 0.87369794
+        }
+      ],
+      "boundingBox": {
+        "left": 1124,
+        "top": 193,
+        "right": 1421,
+        "bottom": 303
+      }
+    },
+    {
+      "text": "20018",
+      "lines": [
+        {
+          "text": "20018",
+          "boundingBox": {
+            "left": 1272,
+            "top": 306,
+            "right": 1425,
+            "bottom": 356
+          },
+          "confidence": 0.92109376
+        }
+      ],
+      "boundingBox": {
+        "left": 1272,
+        "top": 306,
+        "right": 1425,
+        "bottom": 356
+      }
+    },
+    {
+      "text": "*3.75% SC - In support\nof the increases to min wage\nTo find out why, visit\nwww.wnlhosp.com/rttd",
+      "lines": [
+        {
+          "text": "*3.75% SC - In support",
+          "boundingBox": {
+            "left": 459,
+            "top": 1230,
+            "right": 1155,
+            "bottom": 1287
+          },
+          "confidence": 0.82877606
+        },
+        {
+          "text": "of the increases to min wage",
+          "boundingBox": {
+            "left": 365,
+            "top": 1291,
+            "right": 1257,
+            "bottom": 1351
+          },
+          "confidence": 0.8423913
+        },
+        {
+          "text": "To find out why, visit",
+          "boundingBox": {
+            "left": 472,
+            "top": 1349,
+            "right": 1159,
+            "bottom": 1416
+          },
+          "confidence": 0.84136283
+        },
+        {
+          "text": "www.wnlhosp.com/rttd",
+          "boundingBox": {
+            "left": 487,
+            "top": 1415,
+            "right": 1133,
+            "bottom": 1474
+          },
+          "confidence": 0.7945312
+        }
+      ],
+      "boundingBox": {
+        "left": 363,
+        "top": 1227,
+        "right": 1258,
+        "bottom": 1477
+      }
+    },
+    {
+      "text": "12.00",
+      "lines": [
+        {
+          "text": "12.00",
+          "boundingBox": {
+            "left": 1286,
+            "top": 417,
+            "right": 1432,
+            "bottom": 463
+          },
+          "confidence": 0.9171875
+        }
+      ],
+      "boundingBox": {
+        "left": 1286,
+        "top": 417,
+        "right": 1432,
+        "bottom": 463
+      }
+    },
+    {
+      "text": "11.00",
+      "lines": [
+        {
+          "text": "11.00",
+          "boundingBox": {
+            "left": 1290,
+            "top": 472,
+            "right": 1435,
+            "bottom": 516
+          },
+          "confidence": 0.88359374
+        }
+      ],
+      "boundingBox": {
+        "left": 1290,
+        "top": 472,
+        "right": 1435,
+        "bottom": 516
+      }
+    },
+    {
+      "text": "27.95",
+      "lines": [
+        {
+          "text": "27.95",
+          "boundingBox": {
+            "left": 1288,
+            "top": 527,
+            "right": 1442,
+            "bottom": 573
+          },
+          "confidence": 0.909375
+        }
+      ],
+      "boundingBox": {
+        "left": 1288,
+        "top": 527,
+        "right": 1442,
+        "bottom": 573
+      }
+    },
+    {
+      "text": "23.75",
+      "lines": [
+        {
+          "text": "23.75",
+          "boundingBox": {
+            "left": 1292,
+            "top": 582,
+            "right": 1447,
+            "bottom": 628
+          },
+          "confidence": 0.9007813
+        }
+      ],
+      "boundingBox": {
+        "left": 1292,
+        "top": 582,
+        "right": 1447,
+        "bottom": 628
+      }
+    },
+    {
+      "text": "74.70",
+      "lines": [
+        {
+          "text": "74.70",
+          "boundingBox": {
+            "left": 1300,
+            "top": 700,
+            "right": 1454,
+            "bottom": 740
+          },
+          "confidence": 0.8453125
+        }
+      ],
+      "boundingBox": {
+        "left": 1300,
+        "top": 700,
+        "right": 1454,
+        "bottom": 740
+      }
+    },
+    {
+      "text": "6.00",
+      "lines": [
+        {
+          "text": "6.00",
+          "boundingBox": {
+            "left": 1334,
+            "top": 755,
+            "right": 1457,
+            "bottom": 800
+          },
+          "confidence": 0.8769531
+        }
+      ],
+      "boundingBox": {
+        "left": 1334,
+        "top": 755,
+        "right": 1457,
+        "bottom": 800
+      }
+    },
+    {
+      "text": "2.80",
+      "lines": [
+        {
+          "text": "2.80",
+          "boundingBox": {
+            "left": 1340,
+            "top": 874,
+            "right": 1464,
+            "bottom": 919
+          },
+          "confidence": 0.87890625
+        }
+      ],
+      "boundingBox": {
+        "left": 1340,
+        "top": 874,
+        "right": 1464,
+        "bottom": 919
+      }
+    },
+    {
+      "text": "83.50",
+      "lines": [
+        {
+          "text": "83.50",
+          "boundingBox": {
+            "left": 1314,
+            "top": 992,
+            "right": 1470,
+            "bottom": 1038
+          },
+          "confidence": 0.8953125
+        }
+      ],
+      "boundingBox": {
+        "left": 1314,
+        "top": 992,
+        "right": 1470,
+        "bottom": 1038
+      }
+    },
+    {
+      "text": "83.50",
+      "lines": [
+        {
+          "text": "83.50",
+          "boundingBox": {
+            "left": 1158,
+            "top": 1112,
+            "right": 1472,
+            "bottom": 1161
+          },
+          "confidence": 0.825
+        }
+      ],
+      "boundingBox": {
+        "left": 1158,
+        "top": 1112,
+        "right": 1472,
+        "bottom": 1161
+      }
+    }
+  ]
+}

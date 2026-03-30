@@ -1,0 +1,610 @@
+{
+  "fullText": "Phil\nQTY\n386 R1 w\nGlenmont, NY 1207T\nAkira\n201811.16 18 58 34\n#37 PICKUP\n1\n618-434-880\nwww.akirasushigroup.co\nMed\n1 AiChk Steak(KjS2%\nNoodie\nITEM\nSushi Deluxe\n1 Glenmont Rol\n1 Philly R\nSp Tuna R\nSalmon R\nSubtotai\nTax\nTotal:\nArmt\nUnpaid *\n$2 00\n$20.75\nS15 95\n$6 50\nS13.00\n$5 50\nS86 65\nS6 93\nS93.58",
+  "blocks": [
+    {
+      "text": "Phil\nQTY",
+      "lines": [
+        {
+          "text": "Phil",
+          "boundingBox": {
+            "left": 87,
+            "top": 656,
+            "right": 169,
+            "bottom": 722
+          },
+          "confidence": 0.6953125
+        },
+        {
+          "text": "QTY",
+          "boundingBox": {
+            "left": 68,
+            "top": 735,
+            "right": 169,
+            "bottom": 782
+          },
+          "confidence": 0.71875
+        }
+      ],
+      "boundingBox": {
+        "left": 67,
+        "top": 654,
+        "right": 169,
+        "bottom": 782
+      }
+    },
+    {
+      "text": "386 R1 w\nGlenmont, NY 1207T",
+      "lines": [
+        {
+          "text": "386 R1 w",
+          "boundingBox": {
+            "left": 320,
+            "top": 143,
+            "right": 566,
+            "bottom": 205
+          },
+          "confidence": 0.6152344
+        },
+        {
+          "text": "Glenmont, NY 1207T",
+          "boundingBox": {
+            "left": 235,
+            "top": 198,
+            "right": 673,
+            "bottom": 270
+          },
+          "confidence": 0.69018555
+        }
+      ],
+      "boundingBox": {
+        "left": 233,
+        "top": 140,
+        "right": 673,
+        "bottom": 270
+      }
+    },
+    {
+      "text": "Akira",
+      "lines": [
+        {
+          "text": "Akira",
+          "boundingBox": {
+            "left": 352,
+            "top": 66,
+            "right": 512,
+            "bottom": 117
+          },
+          "confidence": 0.8515625
+        }
+      ],
+      "boundingBox": {
+        "left": 352,
+        "top": 66,
+        "right": 512,
+        "bottom": 117
+      }
+    },
+    {
+      "text": "201811.16 18 58 34\n#37 PICKUP",
+      "lines": [
+        {
+          "text": "201811.16 18 58 34",
+          "boundingBox": {
+            "left": 44,
+            "top": 421,
+            "right": 433,
+            "bottom": 477
+          },
+          "confidence": 0.6075521
+        },
+        {
+          "text": "#37 PICKUP",
+          "boundingBox": {
+            "left": 52,
+            "top": 483,
+            "right": 391,
+            "bottom": 544
+          },
+          "confidence": 0.7769097
+        }
+      ],
+      "boundingBox": {
+        "left": 44,
+        "top": 420,
+        "right": 434,
+        "bottom": 544
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 112,
+            "top": 996,
+            "right": 134,
+            "bottom": 1066
+          },
+          "confidence": 0.76171875
+        }
+      ],
+      "boundingBox": {
+        "left": 112,
+        "top": 996,
+        "right": 134,
+        "bottom": 1066
+      }
+    },
+    {
+      "text": "618-434-880",
+      "lines": [
+        {
+          "text": "618-434-880",
+          "boundingBox": {
+            "left": 302,
+            "top": 282,
+            "right": 592,
+            "bottom": 329
+          },
+          "confidence": 0.58309656
+        }
+      ],
+      "boundingBox": {
+        "left": 302,
+        "top": 282,
+        "right": 592,
+        "bottom": 329
+      }
+    },
+    {
+      "text": "www.akirasushigroup.co",
+      "lines": [
+        {
+          "text": "www.akirasushigroup.co",
+          "boundingBox": {
+            "left": 179,
+            "top": 334,
+            "right": 711,
+            "bottom": 419
+          },
+          "confidence": 0.65482956
+        }
+      ],
+      "boundingBox": {
+        "left": 179,
+        "top": 334,
+        "right": 711,
+        "bottom": 419
+      }
+    },
+    {
+      "text": "Med",
+      "lines": [
+        {
+          "text": "Med",
+          "boundingBox": {
+            "left": 172,
+            "top": 868,
+            "right": 280,
+            "bottom": 914
+          },
+          "confidence": 0.84765625
+        }
+      ],
+      "boundingBox": {
+        "left": 172,
+        "top": 868,
+        "right": 280,
+        "bottom": 914
+      }
+    },
+    {
+      "text": "1 AiChk Steak(KjS2%",
+      "lines": [
+        {
+          "text": "1 AiChk Steak(KjS2%",
+          "boundingBox": {
+            "left": 100,
+            "top": 762,
+            "right": 906,
+            "bottom": 868
+          },
+          "confidence": 0.3738511
+        }
+      ],
+      "boundingBox": {
+        "left": 100,
+        "top": 762,
+        "right": 906,
+        "bottom": 868
+      }
+    },
+    {
+      "text": "Noodie",
+      "lines": [
+        {
+          "text": "Noodie",
+          "boundingBox": {
+            "left": 176,
+            "top": 923,
+            "right": 351,
+            "bottom": 975
+          },
+          "confidence": 0.68033856
+        }
+      ],
+      "boundingBox": {
+        "left": 176,
+        "top": 923,
+        "right": 351,
+        "bottom": 975
+      }
+    },
+    {
+      "text": "ITEM",
+      "lines": [
+        {
+          "text": "ITEM",
+          "boundingBox": {
+            "left": 359,
+            "top": 730,
+            "right": 481,
+            "bottom": 773
+          },
+          "confidence": 0.7548828
+        }
+      ],
+      "boundingBox": {
+        "left": 359,
+        "top": 730,
+        "right": 481,
+        "bottom": 773
+      }
+    },
+    {
+      "text": "Sushi Deluxe\n1 Glenmont Rol\n1 Philly R",
+      "lines": [
+        {
+          "text": "Sushi Deluxe",
+          "boundingBox": {
+            "left": 193,
+            "top": 983,
+            "right": 552,
+            "bottom": 1064
+          },
+          "confidence": 0.79545456
+        },
+        {
+          "text": "1 Glenmont Rol",
+          "boundingBox": {
+            "left": 115,
+            "top": 1053,
+            "right": 599,
+            "bottom": 1136
+          },
+          "confidence": 0.741862
+        },
+        {
+          "text": "1 Philly R",
+          "boundingBox": {
+            "left": 126,
+            "top": 1134,
+            "right": 405,
+            "bottom": 1213
+          },
+          "confidence": 0.80126953
+        }
+      ],
+      "boundingBox": {
+        "left": 113,
+        "top": 983,
+        "right": 601,
+        "bottom": 1214
+      }
+    },
+    {
+      "text": "Sp Tuna R",
+      "lines": [
+        {
+          "text": "Sp Tuna R",
+          "boundingBox": {
+            "left": 206,
+            "top": 1218,
+            "right": 495,
+            "bottom": 1290
+          },
+          "confidence": 0.82310265
+        }
+      ],
+      "boundingBox": {
+        "left": 206,
+        "top": 1218,
+        "right": 495,
+        "bottom": 1290
+      }
+    },
+    {
+      "text": "Salmon R",
+      "lines": [
+        {
+          "text": "Salmon R",
+          "boundingBox": {
+            "left": 244,
+            "top": 1296,
+            "right": 477,
+            "bottom": 1372
+          },
+          "confidence": 0.7254464
+        }
+      ],
+      "boundingBox": {
+        "left": 244,
+        "top": 1296,
+        "right": 477,
+        "bottom": 1372
+      }
+    },
+    {
+      "text": "Subtotai\nTax\nTotal:",
+      "lines": [
+        {
+          "text": "Subtotai",
+          "boundingBox": {
+            "left": 294,
+            "top": 1365,
+            "right": 463,
+            "bottom": 1413
+          },
+          "confidence": 0.54541016
+        },
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 294,
+            "top": 1421,
+            "right": 375,
+            "bottom": 1461
+          },
+          "confidence": 0.61067706
+        },
+        {
+          "text": "Total:",
+          "boundingBox": {
+            "left": 302,
+            "top": 1469,
+            "right": 463,
+            "bottom": 1522
+          },
+          "confidence": 0.78190106
+        }
+      ],
+      "boundingBox": {
+        "left": 294,
+        "top": 1365,
+        "right": 464,
+        "bottom": 1522
+      }
+    },
+    {
+      "text": "Armt",
+      "lines": [
+        {
+          "text": "Armt",
+          "boundingBox": {
+            "left": 791,
+            "top": 721,
+            "right": 887,
+            "bottom": 762
+          },
+          "confidence": 0.57714844
+        }
+      ],
+      "boundingBox": {
+        "left": 791,
+        "top": 721,
+        "right": 887,
+        "bottom": 762
+      }
+    },
+    {
+      "text": "Unpaid *",
+      "lines": [
+        {
+          "text": "Unpaid *",
+          "boundingBox": {
+            "left": 442,
+            "top": 1545,
+            "right": 704,
+            "bottom": 1594
+          },
+          "confidence": 0.69754463
+        }
+      ],
+      "boundingBox": {
+        "left": 442,
+        "top": 1545,
+        "right": 704,
+        "bottom": 1594
+      }
+    },
+    {
+      "text": "$2 00",
+      "lines": [
+        {
+          "text": "$2 00",
+          "boundingBox": {
+            "left": 794,
+            "top": 920,
+            "right": 904,
+            "bottom": 958
+          },
+          "confidence": 0.5888672
+        }
+      ],
+      "boundingBox": {
+        "left": 794,
+        "top": 920,
+        "right": 904,
+        "bottom": 958
+      }
+    },
+    {
+      "text": "$20.75",
+      "lines": [
+        {
+          "text": "$20.75",
+          "boundingBox": {
+            "left": 752,
+            "top": 984,
+            "right": 904,
+            "bottom": 1030
+          },
+          "confidence": 0.68359375
+        }
+      ],
+      "boundingBox": {
+        "left": 752,
+        "top": 984,
+        "right": 904,
+        "bottom": 1030
+      }
+    },
+    {
+      "text": "S15 95",
+      "lines": [
+        {
+          "text": "S15 95",
+          "boundingBox": {
+            "left": 754,
+            "top": 1060,
+            "right": 912,
+            "bottom": 1106
+          },
+          "confidence": 0.6625
+        }
+      ],
+      "boundingBox": {
+        "left": 754,
+        "top": 1060,
+        "right": 912,
+        "bottom": 1106
+      }
+    },
+    {
+      "text": "$6 50",
+      "lines": [
+        {
+          "text": "$6 50",
+          "boundingBox": {
+            "left": 786,
+            "top": 1136,
+            "right": 916,
+            "bottom": 1182
+          },
+          "confidence": 0.5917969
+        }
+      ],
+      "boundingBox": {
+        "left": 786,
+        "top": 1136,
+        "right": 916,
+        "bottom": 1182
+      }
+    },
+    {
+      "text": "S13.00",
+      "lines": [
+        {
+          "text": "S13.00",
+          "boundingBox": {
+            "left": 764,
+            "top": 1218,
+            "right": 924,
+            "bottom": 1264
+          },
+          "confidence": 0.6875
+        }
+      ],
+      "boundingBox": {
+        "left": 764,
+        "top": 1218,
+        "right": 924,
+        "bottom": 1264
+      }
+    },
+    {
+      "text": "$5 50",
+      "lines": [
+        {
+          "text": "$5 50",
+          "boundingBox": {
+            "left": 802,
+            "top": 1302,
+            "right": 928,
+            "bottom": 1344
+          },
+          "confidence": 0.7578125
+        }
+      ],
+      "boundingBox": {
+        "left": 802,
+        "top": 1302,
+        "right": 928,
+        "bottom": 1344
+      }
+    },
+    {
+      "text": "S86 65",
+      "lines": [
+        {
+          "text": "S86 65",
+          "boundingBox": {
+            "left": 780,
+            "top": 1363,
+            "right": 923,
+            "bottom": 1409
+          },
+          "confidence": 0.71875
+        }
+      ],
+      "boundingBox": {
+        "left": 780,
+        "top": 1363,
+        "right": 923,
+        "bottom": 1409
+      }
+    },
+    {
+      "text": "S6 93\nS93.58",
+      "lines": [
+        {
+          "text": "S6 93",
+          "boundingBox": {
+            "left": 807,
+            "top": 1415,
+            "right": 932,
+            "bottom": 1465
+          },
+          "confidence": 0.5390625
+        },
+        {
+          "text": "S93.58",
+          "boundingBox": {
+            "left": 753,
+            "top": 1471,
+            "right": 935,
+            "bottom": 1524
+          },
+          "confidence": 0.7363281
+        }
+      ],
+      "boundingBox": {
+        "left": 752,
+        "top": 1413,
+        "right": 938,
+        "bottom": 1527
+      }
+    }
+  ]
+}

@@ -1,0 +1,524 @@
+{
+  "fullText": "GRAND XNFE\nRooseve iL Fle id\n0480 TABLE 101 WParty 3\nSTEPHENR SvrCkt 4 16:43 04/25/15\nCoffee\nChickern Parnesan\nPrime Top Strloin\nThe Bacon-Cheese Burger\nCoffee\n04/25 17:42 TOTA:\n20N\nSu Total:\nGratutty Not Inc luded\nSuageated Gratuityr\nT8%\n158\nSut Tatali\n13.85\n12.47\nTaxt\n10.39\n2.95\n17.95\n25.95\n13.95\n2.95\n63./5\nS.50\n69.5\nIt's been a pleasure to serve you.\nThank you for dining with us",
+  "blocks": [
+    {
+      "text": "GRAND XNFE",
+      "lines": [
+        {
+          "text": "GRAND XNFE",
+          "boundingBox": {
+            "left": 282,
+            "top": 165,
+            "right": 1319,
+            "bottom": 262
+          },
+          "confidence": 0.41623265
+        }
+      ],
+      "boundingBox": {
+        "left": 282,
+        "top": 165,
+        "right": 1319,
+        "bottom": 262
+      }
+    },
+    {
+      "text": "Rooseve iL Fle id\n0480 TABLE 101 WParty 3\nSTEPHENR SvrCkt 4 16:43 04/25/15",
+      "lines": [
+        {
+          "text": "Rooseve iL Fle id",
+          "boundingBox": {
+            "left": 495,
+            "top": 294,
+            "right": 926,
+            "bottom": 339
+          },
+          "confidence": 0.44475445
+        },
+        {
+          "text": "0480 TABLE 101 WParty 3",
+          "boundingBox": {
+            "left": 162,
+            "top": 336,
+            "right": 996,
+            "bottom": 380
+          },
+          "confidence": 0.52693254
+        },
+        {
+          "text": "STEPHENR SvrCkt 4 16:43 04/25/15",
+          "boundingBox": {
+            "left": 167,
+            "top": 378,
+            "right": 1164,
+            "bottom": 432
+          },
+          "confidence": 0.62779015
+        }
+      ],
+      "boundingBox": {
+        "left": 162,
+        "top": 294,
+        "right": 1164,
+        "bottom": 432
+      }
+    },
+    {
+      "text": "Coffee",
+      "lines": [
+        {
+          "text": "Coffee",
+          "boundingBox": {
+            "left": 174,
+            "top": 469,
+            "right": 340,
+            "bottom": 515
+          },
+          "confidence": 0.74088544
+        }
+      ],
+      "boundingBox": {
+        "left": 174,
+        "top": 469,
+        "right": 340,
+        "bottom": 515
+      }
+    },
+    {
+      "text": "Chickern Parnesan\nPrime Top Strloin\nThe Bacon-Cheese Burger\nCoffee",
+      "lines": [
+        {
+          "text": "Chickern Parnesan",
+          "boundingBox": {
+            "left": 180,
+            "top": 516,
+            "right": 616,
+            "bottom": 554
+          },
+          "confidence": 0.6755371
+        },
+        {
+          "text": "Prime Top Strloin",
+          "boundingBox": {
+            "left": 184,
+            "top": 558,
+            "right": 648,
+            "bottom": 598
+          },
+          "confidence": 0.6565104
+        },
+        {
+          "text": "The Bacon-Cheese Burger",
+          "boundingBox": {
+            "left": 190,
+            "top": 602,
+            "right": 800,
+            "bottom": 638
+          },
+          "confidence": 0.5922619
+        },
+        {
+          "text": "Coffee",
+          "boundingBox": {
+            "left": 192,
+            "top": 645,
+            "right": 354,
+            "bottom": 679
+          },
+          "confidence": 0.63346356
+        }
+      ],
+      "boundingBox": {
+        "left": 180,
+        "top": 516,
+        "right": 800,
+        "bottom": 679
+      }
+    },
+    {
+      "text": "04/25 17:42 TOTA:",
+      "lines": [
+        {
+          "text": "04/25 17:42 TOTA:",
+          "boundingBox": {
+            "left": 210,
+            "top": 820,
+            "right": 819,
+            "bottom": 877
+          },
+          "confidence": 0.58697915
+        }
+      ],
+      "boundingBox": {
+        "left": 210,
+        "top": 820,
+        "right": 819,
+        "bottom": 877
+      }
+    },
+    {
+      "text": "20N",
+      "lines": [
+        {
+          "text": "20N",
+          "boundingBox": {
+            "left": 430,
+            "top": 1005,
+            "right": 508,
+            "bottom": 1042
+          },
+          "confidence": 0.47395834
+        }
+      ],
+      "boundingBox": {
+        "left": 430,
+        "top": 1005,
+        "right": 508,
+        "bottom": 1042
+      }
+    },
+    {
+      "text": "Su Total:",
+      "lines": [
+        {
+          "text": "Su Total:",
+          "boundingBox": {
+            "left": 730,
+            "top": 714,
+            "right": 1001,
+            "bottom": 762
+          },
+          "confidence": 0.49316406
+        }
+      ],
+      "boundingBox": {
+        "left": 730,
+        "top": 714,
+        "right": 1001,
+        "bottom": 762
+      }
+    },
+    {
+      "text": "Gratutty Not Inc luded\nSuageated Gratuityr",
+      "lines": [
+        {
+          "text": "Gratutty Not Inc luded",
+          "boundingBox": {
+            "left": 206,
+            "top": 904,
+            "right": 778,
+            "bottom": 971
+          },
+          "confidence": 0.6611842
+        },
+        {
+          "text": "Suageated Gratuityr",
+          "boundingBox": {
+            "left": 208,
+            "top": 954,
+            "right": 716,
+            "bottom": 1009
+          },
+          "confidence": 0.6425781
+        }
+      ],
+      "boundingBox": {
+        "left": 206,
+        "top": 904,
+        "right": 779,
+        "bottom": 1011
+      }
+    },
+    {
+      "text": "T8%",
+      "lines": [
+        {
+          "text": "T8%",
+          "boundingBox": {
+            "left": 436,
+            "top": 1052,
+            "right": 512,
+            "bottom": 1085
+          },
+          "confidence": 0.3359375
+        }
+      ],
+      "boundingBox": {
+        "left": 436,
+        "top": 1052,
+        "right": 512,
+        "bottom": 1085
+      }
+    },
+    {
+      "text": "158",
+      "lines": [
+        {
+          "text": "158",
+          "boundingBox": {
+            "left": 440,
+            "top": 1091,
+            "right": 513,
+            "bottom": 1128
+          },
+          "confidence": 0.3424479
+        }
+      ],
+      "boundingBox": {
+        "left": 440,
+        "top": 1091,
+        "right": 513,
+        "bottom": 1128
+      }
+    },
+    {
+      "text": "Sut Tatali",
+      "lines": [
+        {
+          "text": "Sut Tatali",
+          "boundingBox": {
+            "left": 733,
+            "top": 789,
+            "right": 982,
+            "bottom": 824
+          },
+          "confidence": 0.41319445
+        }
+      ],
+      "boundingBox": {
+        "left": 733,
+        "top": 789,
+        "right": 982,
+        "bottom": 824
+      }
+    },
+    {
+      "text": "13.85\n12.47",
+      "lines": [
+        {
+          "text": "13.85",
+          "boundingBox": {
+            "left": 652,
+            "top": 996,
+            "right": 777,
+            "bottom": 1035
+          },
+          "confidence": 0.6976563
+        },
+        {
+          "text": "12.47",
+          "boundingBox": {
+            "left": 652,
+            "top": 1037,
+            "right": 777,
+            "bottom": 1079
+          },
+          "confidence": 0.66875
+        }
+      ],
+      "boundingBox": {
+        "left": 650,
+        "top": 996,
+        "right": 779,
+        "bottom": 1079
+      }
+    },
+    {
+      "text": "Taxt",
+      "lines": [
+        {
+          "text": "Taxt",
+          "boundingBox": {
+            "left": 942,
+            "top": 756,
+            "right": 1034,
+            "bottom": 786
+          },
+          "confidence": 0.40527344
+        }
+      ],
+      "boundingBox": {
+        "left": 942,
+        "top": 756,
+        "right": 1034,
+        "bottom": 786
+      }
+    },
+    {
+      "text": "10.39",
+      "lines": [
+        {
+          "text": "10.39",
+          "boundingBox": {
+            "left": 654,
+            "top": 1081,
+            "right": 785,
+            "bottom": 1125
+          },
+          "confidence": 0.66875
+        }
+      ],
+      "boundingBox": {
+        "left": 654,
+        "top": 1081,
+        "right": 785,
+        "bottom": 1125
+      }
+    },
+    {
+      "text": "2.95\n17.95",
+      "lines": [
+        {
+          "text": "2.95",
+          "boundingBox": {
+            "left": 1160,
+            "top": 469,
+            "right": 1268,
+            "bottom": 513
+          },
+          "confidence": 0.73339844
+        },
+        {
+          "text": "17.95",
+          "boundingBox": {
+            "left": 1140,
+            "top": 508,
+            "right": 1262,
+            "bottom": 547
+          },
+          "confidence": 0.72265625
+        }
+      ],
+      "boundingBox": {
+        "left": 1139,
+        "top": 466,
+        "right": 1268,
+        "bottom": 547
+      }
+    },
+    {
+      "text": "25.95\n13.95",
+      "lines": [
+        {
+          "text": "25.95",
+          "boundingBox": {
+            "left": 1128,
+            "top": 550,
+            "right": 1260,
+            "bottom": 590
+          },
+          "confidence": 0.6734375
+        },
+        {
+          "text": "13.95",
+          "boundingBox": {
+            "left": 1134,
+            "top": 591,
+            "right": 1257,
+            "bottom": 631
+          },
+          "confidence": 0.5609375
+        }
+      ],
+      "boundingBox": {
+        "left": 1128,
+        "top": 550,
+        "right": 1261,
+        "bottom": 631
+      }
+    },
+    {
+      "text": "2.95",
+      "lines": [
+        {
+          "text": "2.95",
+          "boundingBox": {
+            "left": 1151,
+            "top": 632,
+            "right": 1255,
+            "bottom": 673
+          },
+          "confidence": 0.5673828
+        }
+      ],
+      "boundingBox": {
+        "left": 1151,
+        "top": 632,
+        "right": 1255,
+        "bottom": 673
+      }
+    },
+    {
+      "text": "63./5\nS.50\n69.5",
+      "lines": [
+        {
+          "text": "63./5",
+          "boundingBox": {
+            "left": 1119,
+            "top": 715,
+            "right": 1252,
+            "bottom": 752
+          },
+          "confidence": 0.4453125
+        },
+        {
+          "text": "S.50",
+          "boundingBox": {
+            "left": 1143,
+            "top": 747,
+            "right": 1248,
+            "bottom": 784
+          },
+          "confidence": 0.5390625
+        },
+        {
+          "text": "69.5",
+          "boundingBox": {
+            "left": 1104,
+            "top": 786,
+            "right": 1245,
+            "bottom": 822
+          },
+          "confidence": 0.31640625
+        }
+      ],
+      "boundingBox": {
+        "left": 1103,
+        "top": 713,
+        "right": 1251,
+        "bottom": 824
+      }
+    },
+    {
+      "text": "It's been a pleasure to serve you.\nThank you for dining with us",
+      "lines": [
+        {
+          "text": "It's been a pleasure to serve you.",
+          "boundingBox": {
+            "left": 302,
+            "top": 1157,
+            "right": 1205,
+            "bottom": 1225
+          },
+          "confidence": 0.76604354
+        },
+        {
+          "text": "Thank you for dining with us",
+          "boundingBox": {
+            "left": 382,
+            "top": 1200,
+            "right": 1138,
+            "bottom": 1275
+          },
+          "confidence": 0.6394361
+        }
+      ],
+      "boundingBox": {
+        "left": 302,
+        "top": 1153,
+        "right": 1207,
+        "bottom": 1278
+      }
+    }
+  ]
+}

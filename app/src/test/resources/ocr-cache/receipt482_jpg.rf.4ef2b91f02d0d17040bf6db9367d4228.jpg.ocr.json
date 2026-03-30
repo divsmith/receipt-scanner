@@ -1,0 +1,807 @@
+{
+  "fullText": "Server: E11jah J\nCheck 24016\nTable: 44/0\nItos\nGreen Salad\nRanch\nTAWA\nLongboarda\n92-161 Wa fpahe Place\nKapo let, HI 96707\n(e08) 679-4700\nKagyu Cheeseburger\nMedfum Well\nGerlic Fries\nADD RAW ONIONSA BACON PLL\nOrfnk af the Day\nTea\nSbtotal\nDhana Discount Breakfast\nHI HNLKO 4.7128 GET\nTotal\nGratutty\nTotat\nO1/11/2019\n12:46 PH\nDfne In.\nPrice\n8.00\n19.00\n2.00\n9.75\n4.00\n$42.75\n-3.30\n1.86\n$41.31\n3,00\n4931\nLCE\nle\n1400\n1700\n19,00\n20 00\ne",
+  "blocks": [
+    {
+      "text": "Server: E11jah J\nCheck 24016\nTable: 44/0",
+      "lines": [
+        {
+          "text": "Server: E11jah J",
+          "boundingBox": {
+            "left": 220,
+            "top": 279,
+            "right": 584,
+            "bottom": 350
+          },
+          "confidence": 0.63058037
+        },
+        {
+          "text": "Check 24016",
+          "boundingBox": {
+            "left": 236,
+            "top": 323,
+            "right": 495,
+            "bottom": 394
+          },
+          "confidence": 0.84648436
+        },
+        {
+          "text": "Table: 44/0",
+          "boundingBox": {
+            "left": 245,
+            "top": 369,
+            "right": 475,
+            "bottom": 433
+          },
+          "confidence": 0.73945314
+        }
+      ],
+      "boundingBox": {
+        "left": 220,
+        "top": 276,
+        "right": 592,
+        "bottom": 437
+      }
+    },
+    {
+      "text": "Itos",
+      "lines": [
+        {
+          "text": "Itos",
+          "boundingBox": {
+            "left": 234,
+            "top": 480,
+            "right": 320,
+            "bottom": 514
+          },
+          "confidence": 0.47851562
+        }
+      ],
+      "boundingBox": {
+        "left": 234,
+        "top": 480,
+        "right": 320,
+        "bottom": 514
+      }
+    },
+    {
+      "text": "Green Salad\nRanch",
+      "lines": [
+        {
+          "text": "Green Salad",
+          "boundingBox": {
+            "left": 230,
+            "top": 542,
+            "right": 483,
+            "bottom": 598
+          },
+          "confidence": 0.7296875
+        },
+        {
+          "text": "Ranch",
+          "boundingBox": {
+            "left": 301,
+            "top": 590,
+            "right": 418,
+            "bottom": 634
+          },
+          "confidence": 0.7398437
+        }
+      ],
+      "boundingBox": {
+        "left": 230,
+        "top": 542,
+        "right": 487,
+        "bottom": 639
+      }
+    },
+    {
+      "text": "TAWA\nLongboarda\n92-161 Wa fpahe Place\nKapo let, HI 96707\n(e08) 679-4700",
+      "lines": [
+        {
+          "text": "TAWA",
+          "boundingBox": {
+            "left": 678,
+            "top": 0,
+            "right": 843,
+            "bottom": 36
+          },
+          "confidence": 0.60839844
+        },
+        {
+          "text": "Longboarda",
+          "boundingBox": {
+            "left": 581,
+            "top": 48,
+            "right": 811,
+            "bottom": 100
+          },
+          "confidence": 0.60117185
+        },
+        {
+          "text": "92-161 Wa fpahe Place",
+          "boundingBox": {
+            "left": 465,
+            "top": 76,
+            "right": 925,
+            "bottom": 158
+          },
+          "confidence": 0.68185765
+        },
+        {
+          "text": "Kapo let, HI 96707",
+          "boundingBox": {
+            "left": 518,
+            "top": 120,
+            "right": 892,
+            "bottom": 199
+          },
+          "confidence": 0.6606771
+        },
+        {
+          "text": "(e08) 679-4700",
+          "boundingBox": {
+            "left": 542,
+            "top": 168,
+            "right": 862,
+            "bottom": 237
+          },
+          "confidence": 0.60907453
+        }
+      ],
+      "boundingBox": {
+        "left": 459,
+        "top": -8,
+        "right": 931,
+        "bottom": 243
+      }
+    },
+    {
+      "text": "Kagyu Cheeseburger\nMedfum Well",
+      "lines": [
+        {
+          "text": "Kagyu Cheeseburger",
+          "boundingBox": {
+            "left": 238,
+            "top": 612,
+            "right": 641,
+            "bottom": 685
+          },
+          "confidence": 0.6440717
+        },
+        {
+          "text": "Medfum Well",
+          "boundingBox": {
+            "left": 306,
+            "top": 661,
+            "right": 556,
+            "bottom": 719
+          },
+          "confidence": 0.5714844
+        }
+      ],
+      "boundingBox": {
+        "left": 238,
+        "top": 612,
+        "right": 644,
+        "bottom": 725
+      }
+    },
+    {
+      "text": "Gerlic Fries",
+      "lines": [
+        {
+          "text": "Gerlic Fries",
+          "boundingBox": {
+            "left": 309,
+            "top": 699,
+            "right": 578,
+            "bottom": 762
+          },
+          "confidence": 0.550071
+        }
+      ],
+      "boundingBox": {
+        "left": 309,
+        "top": 699,
+        "right": 578,
+        "bottom": 762
+      }
+    },
+    {
+      "text": "ADD RAW ONIONSA BACON PLL",
+      "lines": [
+        {
+          "text": "ADD RAW ONIONSA BACON PLL",
+          "boundingBox": {
+            "left": 311,
+            "top": 710,
+            "right": 869,
+            "bottom": 800
+          },
+          "confidence": 0.65550596
+        }
+      ],
+      "boundingBox": {
+        "left": 311,
+        "top": 710,
+        "right": 869,
+        "bottom": 800
+      }
+    },
+    {
+      "text": "Orfnk af the Day",
+      "lines": [
+        {
+          "text": "Orfnk af the Day",
+          "boundingBox": {
+            "left": 244,
+            "top": 780,
+            "right": 604,
+            "bottom": 847
+          },
+          "confidence": 0.671875
+        }
+      ],
+      "boundingBox": {
+        "left": 244,
+        "top": 780,
+        "right": 604,
+        "bottom": 847
+      }
+    },
+    {
+      "text": "Tea",
+      "lines": [
+        {
+          "text": "Tea",
+          "boundingBox": {
+            "left": 252,
+            "top": 852,
+            "right": 314,
+            "bottom": 886
+          },
+          "confidence": 0.4466146
+        }
+      ],
+      "boundingBox": {
+        "left": 252,
+        "top": 852,
+        "right": 314,
+        "bottom": 886
+      }
+    },
+    {
+      "text": "Sbtotal",
+      "lines": [
+        {
+          "text": "Sbtotal",
+          "boundingBox": {
+            "left": 251,
+            "top": 921,
+            "right": 423,
+            "bottom": 969
+          },
+          "confidence": 0.6010045
+        }
+      ],
+      "boundingBox": {
+        "left": 251,
+        "top": 921,
+        "right": 423,
+        "bottom": 969
+      }
+    },
+    {
+      "text": "Dhana Discount Breakfast\nHI HNLKO 4.7128 GET",
+      "lines": [
+        {
+          "text": "Dhana Discount Breakfast",
+          "boundingBox": {
+            "left": 248,
+            "top": 970,
+            "right": 786,
+            "bottom": 1064
+          },
+          "confidence": 0.65181106
+        },
+        {
+          "text": "HI HNLKO 4.7128 GET",
+          "boundingBox": {
+            "left": 264,
+            "top": 1022,
+            "right": 676,
+            "bottom": 1099
+          },
+          "confidence": 0.60546875
+        }
+      ],
+      "boundingBox": {
+        "left": 248,
+        "top": 970,
+        "right": 790,
+        "bottom": 1102
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 254,
+            "top": 1182,
+            "right": 358,
+            "bottom": 1222
+          },
+          "confidence": 0.7679688
+        }
+      ],
+      "boundingBox": {
+        "left": 254,
+        "top": 1182,
+        "right": 358,
+        "bottom": 1222
+      }
+    },
+    {
+      "text": "Gratutty",
+      "lines": [
+        {
+          "text": "Gratutty",
+          "boundingBox": {
+            "left": 586,
+            "top": 1379,
+            "right": 775,
+            "bottom": 1425
+          },
+          "confidence": 0.8017578
+        }
+      ],
+      "boundingBox": {
+        "left": 586,
+        "top": 1379,
+        "right": 775,
+        "bottom": 1425
+      }
+    },
+    {
+      "text": "Totat",
+      "lines": [
+        {
+          "text": "Totat",
+          "boundingBox": {
+            "left": 664,
+            "top": 1509,
+            "right": 778,
+            "bottom": 1559
+          },
+          "confidence": 0.5328125
+        }
+      ],
+      "boundingBox": {
+        "left": 664,
+        "top": 1509,
+        "right": 778,
+        "bottom": 1559
+      }
+    },
+    {
+      "text": "O1/11/2019\n12:46 PH\nDfne In.",
+      "lines": [
+        {
+          "text": "O1/11/2019",
+          "boundingBox": {
+            "left": 942,
+            "top": 230,
+            "right": 1172,
+            "bottom": 288
+          },
+          "confidence": 0.63554686
+        },
+        {
+          "text": "12:46 PH",
+          "boundingBox": {
+            "left": 994,
+            "top": 270,
+            "right": 1174,
+            "bottom": 324
+          },
+          "confidence": 0.62779015
+        },
+        {
+          "text": "Dfne In.",
+          "boundingBox": {
+            "left": 1037,
+            "top": 314,
+            "right": 1402,
+            "bottom": 362
+          },
+          "confidence": 0.546875
+        }
+      ],
+      "boundingBox": {
+        "left": 942,
+        "top": 217,
+        "right": 1404,
+        "bottom": 387
+      }
+    },
+    {
+      "text": "Price",
+      "lines": [
+        {
+          "text": "Price",
+          "boundingBox": {
+            "left": 1062,
+            "top": 399,
+            "right": 1177,
+            "bottom": 442
+          },
+          "confidence": 0.7328125
+        }
+      ],
+      "boundingBox": {
+        "left": 1062,
+        "top": 399,
+        "right": 1177,
+        "bottom": 442
+      }
+    },
+    {
+      "text": "8.00",
+      "lines": [
+        {
+          "text": "8.00",
+          "boundingBox": {
+            "left": 1088,
+            "top": 484,
+            "right": 1180,
+            "bottom": 522
+          },
+          "confidence": 0.6064453
+        }
+      ],
+      "boundingBox": {
+        "left": 1088,
+        "top": 484,
+        "right": 1180,
+        "bottom": 522
+      }
+    },
+    {
+      "text": "19.00",
+      "lines": [
+        {
+          "text": "19.00",
+          "boundingBox": {
+            "left": 1074,
+            "top": 556,
+            "right": 1187,
+            "bottom": 614
+          },
+          "confidence": 0.8179687
+        }
+      ],
+      "boundingBox": {
+        "left": 1074,
+        "top": 556,
+        "right": 1187,
+        "bottom": 614
+      }
+    },
+    {
+      "text": "2.00",
+      "lines": [
+        {
+          "text": "2.00",
+          "boundingBox": {
+            "left": 1094,
+            "top": 639,
+            "right": 1191,
+            "bottom": 693
+          },
+          "confidence": 0.6669922
+        }
+      ],
+      "boundingBox": {
+        "left": 1094,
+        "top": 639,
+        "right": 1191,
+        "bottom": 693
+      }
+    },
+    {
+      "text": "9.75\n4.00",
+      "lines": [
+        {
+          "text": "9.75",
+          "boundingBox": {
+            "left": 1100,
+            "top": 722,
+            "right": 1194,
+            "bottom": 777
+          },
+          "confidence": 0.7441406
+        },
+        {
+          "text": "4.00",
+          "boundingBox": {
+            "left": 1102,
+            "top": 768,
+            "right": 1197,
+            "bottom": 814
+          },
+          "confidence": 0.85253906
+        }
+      ],
+      "boundingBox": {
+        "left": 1095,
+        "top": 721,
+        "right": 1202,
+        "bottom": 819
+      }
+    },
+    {
+      "text": "$42.75",
+      "lines": [
+        {
+          "text": "$42.75",
+          "boundingBox": {
+            "left": 1058,
+            "top": 848,
+            "right": 1204,
+            "bottom": 904
+          },
+          "confidence": 0.6894531
+        }
+      ],
+      "boundingBox": {
+        "left": 1058,
+        "top": 848,
+        "right": 1204,
+        "bottom": 904
+      }
+    },
+    {
+      "text": "-3.30\n1.86",
+      "lines": [
+        {
+          "text": "-3.30",
+          "boundingBox": {
+            "left": 1095,
+            "top": 939,
+            "right": 1211,
+            "bottom": 983
+          },
+          "confidence": 0.59765625
+        },
+        {
+          "text": "1.86",
+          "boundingBox": {
+            "left": 1124,
+            "top": 986,
+            "right": 1216,
+            "bottom": 1026
+          },
+          "confidence": 0.4716797
+        }
+      ],
+      "boundingBox": {
+        "left": 1095,
+        "top": 939,
+        "right": 1215,
+        "bottom": 1028
+      }
+    },
+    {
+      "text": "$41.31",
+      "lines": [
+        {
+          "text": "$41.31",
+          "boundingBox": {
+            "left": 1076,
+            "top": 1104,
+            "right": 1225,
+            "bottom": 1177
+          },
+          "confidence": 0.5520833
+        }
+      ],
+      "boundingBox": {
+        "left": 1076,
+        "top": 1104,
+        "right": 1225,
+        "bottom": 1177
+      }
+    },
+    {
+      "text": "3,00",
+      "lines": [
+        {
+          "text": "3,00",
+          "boundingBox": {
+            "left": 1085,
+            "top": 1309,
+            "right": 1239,
+            "bottom": 1388
+          },
+          "confidence": 0.4560547
+        }
+      ],
+      "boundingBox": {
+        "left": 1085,
+        "top": 1309,
+        "right": 1239,
+        "bottom": 1388
+      }
+    },
+    {
+      "text": "4931",
+      "lines": [
+        {
+          "text": "4931",
+          "boundingBox": {
+            "left": 1036,
+            "top": 1448,
+            "right": 1201,
+            "bottom": 1514
+          },
+          "confidence": 0.32128906
+        }
+      ],
+      "boundingBox": {
+        "left": 1036,
+        "top": 1448,
+        "right": 1201,
+        "bottom": 1514
+      }
+    },
+    {
+      "text": "LCE",
+      "lines": [
+        {
+          "text": "LCE",
+          "boundingBox": {
+            "left": 1273,
+            "top": 404,
+            "right": 1411,
+            "bottom": 454
+          },
+          "confidence": 0.16927083
+        }
+      ],
+      "boundingBox": {
+        "left": 1273,
+        "top": 404,
+        "right": 1411,
+        "bottom": 454
+      }
+    },
+    {
+      "text": "le",
+      "lines": [
+        {
+          "text": "le",
+          "boundingBox": {
+            "left": 1467,
+            "top": 156,
+            "right": 1492,
+            "bottom": 188
+          },
+          "confidence": 0.3671875
+        }
+      ],
+      "boundingBox": {
+        "left": 1467,
+        "top": 156,
+        "right": 1492,
+        "bottom": 188
+      }
+    },
+    {
+      "text": "1400",
+      "lines": [
+        {
+          "text": "1400",
+          "boundingBox": {
+            "left": 1410,
+            "top": 735,
+            "right": 1503,
+            "bottom": 764
+          },
+          "confidence": 0.47460938
+        }
+      ],
+      "boundingBox": {
+        "left": 1410,
+        "top": 735,
+        "right": 1503,
+        "bottom": 764
+      }
+    },
+    {
+      "text": "1700",
+      "lines": [
+        {
+          "text": "1700",
+          "boundingBox": {
+            "left": 1394,
+            "top": 895,
+            "right": 1487,
+            "bottom": 923
+          },
+          "confidence": 0.33496094
+        }
+      ],
+      "boundingBox": {
+        "left": 1394,
+        "top": 895,
+        "right": 1487,
+        "bottom": 923
+      }
+    },
+    {
+      "text": "19,00",
+      "lines": [
+        {
+          "text": "19,00",
+          "boundingBox": {
+            "left": 1380,
+            "top": 1001,
+            "right": 1476,
+            "bottom": 1030
+          },
+          "confidence": 0.40234375
+        }
+      ],
+      "boundingBox": {
+        "left": 1380,
+        "top": 1001,
+        "right": 1476,
+        "bottom": 1030
+      }
+    },
+    {
+      "text": "20 00",
+      "lines": [
+        {
+          "text": "20 00",
+          "boundingBox": {
+            "left": 1387,
+            "top": 1051,
+            "right": 1474,
+            "bottom": 1084
+          },
+          "confidence": 0.51660156
+        }
+      ],
+      "boundingBox": {
+        "left": 1387,
+        "top": 1051,
+        "right": 1474,
+        "bottom": 1084
+      }
+    },
+    {
+      "text": "e",
+      "lines": [
+        {
+          "text": "e",
+          "boundingBox": {
+            "left": 1438,
+            "top": 1368,
+            "right": 1449,
+            "bottom": 1400
+          },
+          "confidence": 0.48046875
+        }
+      ],
+      "boundingBox": {
+        "left": 1438,
+        "top": 1368,
+        "right": 1449,
+        "bottom": 1400
+      }
+    }
+  ]
+}

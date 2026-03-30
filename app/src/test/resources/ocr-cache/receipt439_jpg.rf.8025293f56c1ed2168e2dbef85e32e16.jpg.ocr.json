@@ -1,0 +1,525 @@
+{
+  "fullText": "Tha Gnto estaurnt\n2011 Hesitt Ave\nEvrett 9201\nTel. 425-252-355 Fax. 425 252-3S25\nGÜSTO\neToone to fhat Gusto\nDete: 6t6/2017 12:06 PM\nServerE PRADH\nChang (2083.50)\n#L14 GerIfe Deltght\ntChtcken] [5**) [Ssal1 Broun Rice]\n#L28 Red Curr\nTotal 4 tten(s)\nSa les Tax\n[Ch1cken] (Ses]CSmal1 Broun Rtcel\nTíp Guide\nTable4\nGrand Total\n158-34.52, 185$5.43, 20N-$6.03\nThank you very uch.\nCone back again.\nCT.1)\n-GUEST DHECK -\nhis 1s not a recetpt.\n$T.00\n$10.24\n$30.15\n$10.24\n$27,48\n12.67",
+  "blocks": [
+    {
+      "text": "Tha Gnto estaurnt\n2011 Hesitt Ave\nEvrett 9201\nTel. 425-252-355 Fax. 425 252-3S25",
+      "lines": [
+        {
+          "text": "Tha Gnto estaurnt",
+          "boundingBox": {
+            "left": 608,
+            "top": 165,
+            "right": 1004,
+            "bottom": 215
+          },
+          "confidence": 0.60078126
+        },
+        {
+          "text": "2011 Hesitt Ave",
+          "boundingBox": {
+            "left": 659,
+            "top": 205,
+            "right": 947,
+            "bottom": 245
+          },
+          "confidence": 0.54507214
+        },
+        {
+          "text": "Evrett 9201",
+          "boundingBox": {
+            "left": 657,
+            "top": 230,
+            "right": 966,
+            "bottom": 286
+          },
+          "confidence": 0.41992188
+        },
+        {
+          "text": "Tel. 425-252-355 Fax. 425 252-3S25",
+          "boundingBox": {
+            "left": 480,
+            "top": 256,
+            "right": 1137,
+            "bottom": 326
+          },
+          "confidence": 0.48046875
+        }
+      ],
+      "boundingBox": {
+        "left": 480,
+        "top": 158,
+        "right": 1142,
+        "bottom": 326
+      }
+    },
+    {
+      "text": "GÜSTO",
+      "lines": [
+        {
+          "text": "GÜSTO",
+          "boundingBox": {
+            "left": 670,
+            "top": 79,
+            "right": 981,
+            "bottom": 180
+          },
+          "confidence": 0.5765625
+        }
+      ],
+      "boundingBox": {
+        "left": 670,
+        "top": 79,
+        "right": 981,
+        "bottom": 180
+      }
+    },
+    {
+      "text": "eToone to fhat Gusto",
+      "lines": [
+        {
+          "text": "eToone to fhat Gusto",
+          "boundingBox": {
+            "left": 594,
+            "top": 337,
+            "right": 1003,
+            "bottom": 381
+          },
+          "confidence": 0.41245404
+        }
+      ],
+      "boundingBox": {
+        "left": 594,
+        "top": 337,
+        "right": 1003,
+        "bottom": 381
+      }
+    },
+    {
+      "text": "Dete: 6t6/2017 12:06 PM\nServerE PRADH",
+      "lines": [
+        {
+          "text": "Dete: 6t6/2017 12:06 PM",
+          "boundingBox": {
+            "left": 380,
+            "top": 465,
+            "right": 857,
+            "bottom": 523
+          },
+          "confidence": 0.60429686
+        },
+        {
+          "text": "ServerE PRADH",
+          "boundingBox": {
+            "left": 392,
+            "top": 504,
+            "right": 640,
+            "bottom": 547
+          },
+          "confidence": 0.7239583
+        }
+      ],
+      "boundingBox": {
+        "left": 379,
+        "top": 465,
+        "right": 857,
+        "bottom": 556
+      }
+    },
+    {
+      "text": "Chang (2083.50)\n#L14 GerIfe Deltght",
+      "lines": [
+        {
+          "text": "Chang (2083.50)",
+          "boundingBox": {
+            "left": 372,
+            "top": 575,
+            "right": 671,
+            "bottom": 615
+          },
+          "confidence": 0.57254463
+        },
+        {
+          "text": "#L14 GerIfe Deltght",
+          "boundingBox": {
+            "left": 381,
+            "top": 605,
+            "right": 750,
+            "bottom": 658
+          },
+          "confidence": 0.49149817
+        }
+      ],
+      "boundingBox": {
+        "left": 371,
+        "top": 574,
+        "right": 751,
+        "bottom": 658
+      }
+    },
+    {
+      "text": "tChtcken] [5**) [Ssal1 Broun Rice]\n#L28 Red Curr",
+      "lines": [
+        {
+          "text": "tChtcken] [5**) [Ssal1 Broun Rice]",
+          "boundingBox": {
+            "left": 401,
+            "top": 641,
+            "right": 1083,
+            "bottom": 709
+          },
+          "confidence": 0.38723958
+        },
+        {
+          "text": "#L28 Red Curr",
+          "boundingBox": {
+            "left": 358,
+            "top": 675,
+            "right": 648,
+            "bottom": 727
+          },
+          "confidence": 0.6331676
+        }
+      ],
+      "boundingBox": {
+        "left": 359,
+        "top": 633,
+        "right": 1083,
+        "bottom": 747
+      }
+    },
+    {
+      "text": "Total 4 tten(s)\nSa les Tax",
+      "lines": [
+        {
+          "text": "Total 4 tten(s)",
+          "boundingBox": {
+            "left": 350,
+            "top": 789,
+            "right": 656,
+            "bottom": 833
+          },
+          "confidence": 0.56189907
+        },
+        {
+          "text": "Sa les Tax",
+          "boundingBox": {
+            "left": 344,
+            "top": 828,
+            "right": 532,
+            "bottom": 862
+          },
+          "confidence": 0.67626953
+        }
+      ],
+      "boundingBox": {
+        "left": 343,
+        "top": 789,
+        "right": 656,
+        "bottom": 868
+      }
+    },
+    {
+      "text": "[Ch1cken] (Ses]CSmal1 Broun Rtcel",
+      "lines": [
+        {
+          "text": "[Ch1cken] (Ses]CSmal1 Broun Rtcel",
+          "boundingBox": {
+            "left": 398,
+            "top": 713,
+            "right": 1085,
+            "bottom": 777
+          },
+          "confidence": 0.42565104
+        }
+      ],
+      "boundingBox": {
+        "left": 398,
+        "top": 713,
+        "right": 1085,
+        "bottom": 777
+      }
+    },
+    {
+      "text": "Típ Guide",
+      "lines": [
+        {
+          "text": "Típ Guide",
+          "boundingBox": {
+            "left": 310,
+            "top": 1051,
+            "right": 511,
+            "bottom": 1095
+          },
+          "confidence": 0.47314453
+        }
+      ],
+      "boundingBox": {
+        "left": 310,
+        "top": 1051,
+        "right": 511,
+        "bottom": 1095
+      }
+    },
+    {
+      "text": "Table4",
+      "lines": [
+        {
+          "text": "Table4",
+          "boundingBox": {
+            "left": 941,
+            "top": 457,
+            "right": 1203,
+            "bottom": 492
+          },
+          "confidence": 0.6139323
+        }
+      ],
+      "boundingBox": {
+        "left": 941,
+        "top": 457,
+        "right": 1203,
+        "bottom": 492
+      }
+    },
+    {
+      "text": "Grand Total",
+      "lines": [
+        {
+          "text": "Grand Total",
+          "boundingBox": {
+            "left": 326,
+            "top": 904,
+            "right": 785,
+            "bottom": 974
+          },
+          "confidence": 0.8648437
+        }
+      ],
+      "boundingBox": {
+        "left": 326,
+        "top": 904,
+        "right": 785,
+        "bottom": 974
+      }
+    },
+    {
+      "text": "158-34.52, 185$5.43, 20N-$6.03",
+      "lines": [
+        {
+          "text": "158-34.52, 185$5.43, 20N-$6.03",
+          "boundingBox": {
+            "left": 307,
+            "top": 1089,
+            "right": 1033,
+            "bottom": 1144
+          },
+          "confidence": 0.55831474
+        }
+      ],
+      "boundingBox": {
+        "left": 307,
+        "top": 1089,
+        "right": 1033,
+        "bottom": 1144
+      }
+    },
+    {
+      "text": "Thank you very uch.\nCone back again.",
+      "lines": [
+        {
+          "text": "Thank you very uch.",
+          "boundingBox": {
+            "left": 539,
+            "top": 1229,
+            "right": 985,
+            "bottom": 1280
+          },
+          "confidence": 0.7414551
+        },
+        {
+          "text": "Cone back again.",
+          "boundingBox": {
+            "left": 576,
+            "top": 1271,
+            "right": 941,
+            "bottom": 1324
+          },
+          "confidence": 0.63560265
+        }
+      ],
+      "boundingBox": {
+        "left": 537,
+        "top": 1228,
+        "right": 985,
+        "bottom": 1325
+      }
+    },
+    {
+      "text": "CT.1)",
+      "lines": [
+        {
+          "text": "CT.1)",
+          "boundingBox": {
+            "left": 1112,
+            "top": 532,
+            "right": 1206,
+            "bottom": 564
+          },
+          "confidence": 0.37265626
+        }
+      ],
+      "boundingBox": {
+        "left": 1112,
+        "top": 532,
+        "right": 1206,
+        "bottom": 564
+      }
+    },
+    {
+      "text": "-GUEST DHECK -\nhis 1s not a recetpt.",
+      "lines": [
+        {
+          "text": "-GUEST DHECK -",
+          "boundingBox": {
+            "left": 576,
+            "top": 1367,
+            "right": 917,
+            "bottom": 1407
+          },
+          "confidence": 0.5279948
+        },
+        {
+          "text": "his 1s not a recetpt.",
+          "boundingBox": {
+            "left": 525,
+            "top": 1411,
+            "right": 1003,
+            "bottom": 1458
+          },
+          "confidence": 0.6443015
+        }
+      ],
+      "boundingBox": {
+        "left": 525,
+        "top": 1365,
+        "right": 1003,
+        "bottom": 1458
+      }
+    },
+    {
+      "text": "$T.00",
+      "lines": [
+        {
+          "text": "$T.00",
+          "boundingBox": {
+            "left": 1108,
+            "top": 601,
+            "right": 1209,
+            "bottom": 631
+          },
+          "confidence": 0.53828126
+        }
+      ],
+      "boundingBox": {
+        "left": 1108,
+        "top": 601,
+        "right": 1209,
+        "bottom": 631
+      }
+    },
+    {
+      "text": "$10.24",
+      "lines": [
+        {
+          "text": "$10.24",
+          "boundingBox": {
+            "left": 1090,
+            "top": 638,
+            "right": 1208,
+            "bottom": 666
+          },
+          "confidence": 0.6425781
+        }
+      ],
+      "boundingBox": {
+        "left": 1090,
+        "top": 638,
+        "right": 1208,
+        "bottom": 666
+      }
+    },
+    {
+      "text": "$30.15",
+      "lines": [
+        {
+          "text": "$30.15",
+          "boundingBox": {
+            "left": 966,
+            "top": 924,
+            "right": 1217,
+            "bottom": 992
+          },
+          "confidence": 0.86328125
+        }
+      ],
+      "boundingBox": {
+        "left": 966,
+        "top": 924,
+        "right": 1217,
+        "bottom": 992
+      }
+    },
+    {
+      "text": "$10.24",
+      "lines": [
+        {
+          "text": "$10.24",
+          "boundingBox": {
+            "left": 1090,
+            "top": 708,
+            "right": 1212,
+            "bottom": 738
+          },
+          "confidence": 0.6816406
+        }
+      ],
+      "boundingBox": {
+        "left": 1090,
+        "top": 708,
+        "right": 1212,
+        "bottom": 738
+      }
+    },
+    {
+      "text": "$27,48\n12.67",
+      "lines": [
+        {
+          "text": "$27,48",
+          "boundingBox": {
+            "left": 1090,
+            "top": 809,
+            "right": 1215,
+            "bottom": 847
+          },
+          "confidence": 0.6119792
+        },
+        {
+          "text": "12.67",
+          "boundingBox": {
+            "left": 1111,
+            "top": 851,
+            "right": 1214,
+            "bottom": 885
+          },
+          "confidence": 0.6117188
+        }
+      ],
+      "boundingBox": {
+        "left": 1089,
+        "top": 809,
+        "right": 1215,
+        "bottom": 886
+      }
+    }
+  ]
+}

@@ -1,0 +1,747 @@
+{
+  "fullText": "Qty Name\n1\n1\nMeatbal ls 10\nTax:\n20%VAT\nNet SubTotal :\nVISA\nReceived:\nIKEA MILTON KEYNES 185\nVAT: GB 527773320\nFish & Chips Acult\nPetit Pain - whi te\nWine rose\nWine\nTota1 to Pay:\nred\nIKEA FOOD\nVisa Credit\nStarti\nKEA\nAddress4\n******K* 9529\nPrice\n3.80\n4.95\nO50\n2.30\n2.80\nTotal\n3.80\n4.95\n0.50\n2.80\n280\n12.37\n2.48\n14.85\n14.85",
+  "blocks": [
+    {
+      "text": "Qty Name",
+      "lines": [
+        {
+          "text": "Qty Name",
+          "boundingBox": {
+            "left": 35,
+            "top": 548,
+            "right": 326,
+            "bottom": 587
+          },
+          "confidence": 0.67633927
+        }
+      ],
+      "boundingBox": {
+        "left": 35,
+        "top": 548,
+        "right": 326,
+        "bottom": 587
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 36,
+            "top": 628,
+            "right": 54,
+            "bottom": 658
+          },
+          "confidence": 0.41796875
+        }
+      ],
+      "boundingBox": {
+        "left": 36,
+        "top": 628,
+        "right": 54,
+        "bottom": 658
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 26,
+            "top": 746,
+            "right": 46,
+            "bottom": 778
+          },
+          "confidence": 0.4375
+        }
+      ],
+      "boundingBox": {
+        "left": 26,
+        "top": 746,
+        "right": 46,
+        "bottom": 778
+      }
+    },
+    {
+      "text": "Meatbal ls 10",
+      "lines": [
+        {
+          "text": "Meatbal ls 10",
+          "boundingBox": {
+            "left": 199,
+            "top": 620,
+            "right": 612,
+            "bottom": 660
+          },
+          "confidence": 0.73579544
+        }
+      ],
+      "boundingBox": {
+        "left": 199,
+        "top": 620,
+        "right": 612,
+        "bottom": 660
+      }
+    },
+    {
+      "text": "Tax:\n20%VAT",
+      "lines": [
+        {
+          "text": "Tax:",
+          "boundingBox": {
+            "left": 15,
+            "top": 948,
+            "right": 146,
+            "bottom": 985
+          },
+          "confidence": 0.5410156
+        },
+        {
+          "text": "20%VAT",
+          "boundingBox": {
+            "left": 8,
+            "top": 983,
+            "right": 233,
+            "bottom": 1031
+          },
+          "confidence": 0.75130206
+        }
+      ],
+      "boundingBox": {
+        "left": 7,
+        "top": 948,
+        "right": 233,
+        "bottom": 1031
+      }
+    },
+    {
+      "text": "Net SubTotal :",
+      "lines": [
+        {
+          "text": "Net SubTotal :",
+          "boundingBox": {
+            "left": 42,
+            "top": 862,
+            "right": 509,
+            "bottom": 908
+          },
+          "confidence": 0.6901042
+        }
+      ],
+      "boundingBox": {
+        "left": 42,
+        "top": 862,
+        "right": 509,
+        "bottom": 908
+      }
+    },
+    {
+      "text": "VISA",
+      "lines": [
+        {
+          "text": "VISA",
+          "boundingBox": {
+            "left": 19,
+            "top": 1236,
+            "right": 161,
+            "bottom": 1273
+          },
+          "confidence": 0.8027344
+        }
+      ],
+      "boundingBox": {
+        "left": 19,
+        "top": 1236,
+        "right": 161,
+        "bottom": 1273
+      }
+    },
+    {
+      "text": "Received:",
+      "lines": [
+        {
+          "text": "Received:",
+          "boundingBox": {
+            "left": 15,
+            "top": 1157,
+            "right": 338,
+            "bottom": 1192
+          },
+          "confidence": 0.78515625
+        }
+      ],
+      "boundingBox": {
+        "left": 15,
+        "top": 1157,
+        "right": 338,
+        "bottom": 1192
+      }
+    },
+    {
+      "text": "IKEA MILTON KEYNES 185\nVAT: GB 527773320",
+      "lines": [
+        {
+          "text": "IKEA MILTON KEYNES 185",
+          "boundingBox": {
+            "left": 396,
+            "top": 362,
+            "right": 1146,
+            "bottom": 408
+          },
+          "confidence": 0.7541118
+        },
+        {
+          "text": "VAT: GB 527773320",
+          "boundingBox": {
+            "left": 467,
+            "top": 400,
+            "right": 1042,
+            "bottom": 440
+          },
+          "confidence": 0.7403646
+        }
+      ],
+      "boundingBox": {
+        "left": 396,
+        "top": 362,
+        "right": 1146,
+        "bottom": 440
+      }
+    },
+    {
+      "text": "Fish & Chips Acult\nPetit Pain - whi te\nWine rose\nWine",
+      "lines": [
+        {
+          "text": "Fish & Chips Acult",
+          "boundingBox": {
+            "left": 174,
+            "top": 662,
+            "right": 830,
+            "bottom": 704
+          },
+          "confidence": 0.70208335
+        },
+        {
+          "text": "Petit Pain - whi te",
+          "boundingBox": {
+            "left": 171,
+            "top": 701,
+            "right": 841,
+            "bottom": 745
+          },
+          "confidence": 0.7315104
+        },
+        {
+          "text": "Wine rose",
+          "boundingBox": {
+            "left": 170,
+            "top": 746,
+            "right": 504,
+            "bottom": 780
+          },
+          "confidence": 0.53466797
+        },
+        {
+          "text": "Wine",
+          "boundingBox": {
+            "left": 170,
+            "top": 786,
+            "right": 318,
+            "bottom": 819
+          },
+          "confidence": 0.38671875
+        }
+      ],
+      "boundingBox": {
+        "left": 170,
+        "top": 662,
+        "right": 841,
+        "bottom": 819
+      }
+    },
+    {
+      "text": "Tota1 to Pay:",
+      "lines": [
+        {
+          "text": "Tota1 to Pay:",
+          "boundingBox": {
+            "left": 27,
+            "top": 1067,
+            "right": 493,
+            "bottom": 1117
+          },
+          "confidence": 0.7389915
+        }
+      ],
+      "boundingBox": {
+        "left": 27,
+        "top": 1067,
+        "right": 493,
+        "bottom": 1117
+      }
+    },
+    {
+      "text": "red",
+      "lines": [
+        {
+          "text": "red",
+          "boundingBox": {
+            "left": 359,
+            "top": 786,
+            "right": 468,
+            "bottom": 819
+          },
+          "confidence": 0.8072917
+        }
+      ],
+      "boundingBox": {
+        "left": 359,
+        "top": 786,
+        "right": 468,
+        "bottom": 819
+      }
+    },
+    {
+      "text": "IKEA FOOD",
+      "lines": [
+        {
+          "text": "IKEA FOOD",
+          "boundingBox": {
+            "left": 588,
+            "top": 328,
+            "right": 896,
+            "bottom": 364
+          },
+          "confidence": 0.6801758
+        }
+      ],
+      "boundingBox": {
+        "left": 588,
+        "top": 328,
+        "right": 896,
+        "bottom": 364
+      }
+    },
+    {
+      "text": "Visa Credit",
+      "lines": [
+        {
+          "text": "Visa Credit",
+          "boundingBox": {
+            "left": 16,
+            "top": 1323,
+            "right": 458,
+            "bottom": 1364
+          },
+          "confidence": 0.70390624
+        }
+      ],
+      "boundingBox": {
+        "left": 16,
+        "top": 1323,
+        "right": 458,
+        "bottom": 1364
+      }
+    },
+    {
+      "text": "Starti",
+      "lines": [
+        {
+          "text": "Starti",
+          "boundingBox": {
+            "left": 31,
+            "top": 1398,
+            "right": 242,
+            "bottom": 1436
+          },
+          "confidence": 0.40820312
+        }
+      ],
+      "boundingBox": {
+        "left": 31,
+        "top": 1398,
+        "right": 242,
+        "bottom": 1436
+      }
+    },
+    {
+      "text": "KEA",
+      "lines": [
+        {
+          "text": "KEA",
+          "boundingBox": {
+            "left": 736,
+            "top": 152,
+            "right": 984,
+            "bottom": 231
+          },
+          "confidence": 0.35546875
+        }
+      ],
+      "boundingBox": {
+        "left": 736,
+        "top": 152,
+        "right": 984,
+        "bottom": 231
+      }
+    },
+    {
+      "text": "Address4",
+      "lines": [
+        {
+          "text": "Address4",
+          "boundingBox": {
+            "left": 620,
+            "top": 441,
+            "right": 898,
+            "bottom": 472
+          },
+          "confidence": 0.6459961
+        }
+      ],
+      "boundingBox": {
+        "left": 620,
+        "top": 441,
+        "right": 898,
+        "bottom": 472
+      }
+    },
+    {
+      "text": "******K* 9529",
+      "lines": [
+        {
+          "text": "******K* 9529",
+          "boundingBox": {
+            "left": 72,
+            "top": 1361,
+            "right": 634,
+            "bottom": 1395
+          },
+          "confidence": 0.34472656
+        }
+      ],
+      "boundingBox": {
+        "left": 72,
+        "top": 1361,
+        "right": 634,
+        "bottom": 1395
+      }
+    },
+    {
+      "text": "Price",
+      "lines": [
+        {
+          "text": "Price",
+          "boundingBox": {
+            "left": 977,
+            "top": 548,
+            "right": 1158,
+            "bottom": 583
+          },
+          "confidence": 0.659375
+        }
+      ],
+      "boundingBox": {
+        "left": 977,
+        "top": 548,
+        "right": 1158,
+        "bottom": 583
+      }
+    },
+    {
+      "text": "3.80",
+      "lines": [
+        {
+          "text": "3.80",
+          "boundingBox": {
+            "left": 1018,
+            "top": 625,
+            "right": 1159,
+            "bottom": 659
+          },
+          "confidence": 0.6777344
+        }
+      ],
+      "boundingBox": {
+        "left": 1018,
+        "top": 625,
+        "right": 1159,
+        "bottom": 659
+      }
+    },
+    {
+      "text": "4.95",
+      "lines": [
+        {
+          "text": "4.95",
+          "boundingBox": {
+            "left": 1020,
+            "top": 664,
+            "right": 1160,
+            "bottom": 698
+          },
+          "confidence": 0.75683594
+        }
+      ],
+      "boundingBox": {
+        "left": 1020,
+        "top": 664,
+        "right": 1160,
+        "bottom": 698
+      }
+    },
+    {
+      "text": "O50",
+      "lines": [
+        {
+          "text": "O50",
+          "boundingBox": {
+            "left": 1018,
+            "top": 706,
+            "right": 1162,
+            "bottom": 738
+          },
+          "confidence": 0.6354167
+        }
+      ],
+      "boundingBox": {
+        "left": 1018,
+        "top": 706,
+        "right": 1162,
+        "bottom": 738
+      }
+    },
+    {
+      "text": "2.30",
+      "lines": [
+        {
+          "text": "2.30",
+          "boundingBox": {
+            "left": 1020,
+            "top": 746,
+            "right": 1166,
+            "bottom": 778
+          },
+          "confidence": 0.7607422
+        }
+      ],
+      "boundingBox": {
+        "left": 1020,
+        "top": 746,
+        "right": 1166,
+        "bottom": 778
+      }
+    },
+    {
+      "text": "2.80",
+      "lines": [
+        {
+          "text": "2.80",
+          "boundingBox": {
+            "left": 1020,
+            "top": 786,
+            "right": 1164,
+            "bottom": 818
+          },
+          "confidence": 0.70703125
+        }
+      ],
+      "boundingBox": {
+        "left": 1020,
+        "top": 786,
+        "right": 1164,
+        "bottom": 818
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 1234,
+            "top": 548,
+            "right": 1397,
+            "bottom": 585
+          },
+          "confidence": 0.7210938
+        }
+      ],
+      "boundingBox": {
+        "left": 1234,
+        "top": 548,
+        "right": 1397,
+        "bottom": 585
+      }
+    },
+    {
+      "text": "3.80\n4.95",
+      "lines": [
+        {
+          "text": "3.80",
+          "boundingBox": {
+            "left": 1344,
+            "top": 620,
+            "right": 1492,
+            "bottom": 668
+          },
+          "confidence": 0.7207031
+        },
+        {
+          "text": "4.95",
+          "boundingBox": {
+            "left": 1349,
+            "top": 664,
+            "right": 1490,
+            "bottom": 700
+          },
+          "confidence": 0.8125
+        }
+      ],
+      "boundingBox": {
+        "left": 1344,
+        "top": 620,
+        "right": 1492,
+        "bottom": 704
+      }
+    },
+    {
+      "text": "0.50\n2.80",
+      "lines": [
+        {
+          "text": "0.50",
+          "boundingBox": {
+            "left": 1350,
+            "top": 706,
+            "right": 1496,
+            "bottom": 740
+          },
+          "confidence": 0.66015625
+        },
+        {
+          "text": "2.80",
+          "boundingBox": {
+            "left": 1367,
+            "top": 745,
+            "right": 1503,
+            "bottom": 779
+          },
+          "confidence": 0.640625
+        }
+      ],
+      "boundingBox": {
+        "left": 1349,
+        "top": 705,
+        "right": 1503,
+        "bottom": 779
+      }
+    },
+    {
+      "text": "280",
+      "lines": [
+        {
+          "text": "280",
+          "boundingBox": {
+            "left": 1355,
+            "top": 777,
+            "right": 1502,
+            "bottom": 823
+          },
+          "confidence": 0.78255206
+        }
+      ],
+      "boundingBox": {
+        "left": 1355,
+        "top": 777,
+        "right": 1502,
+        "bottom": 823
+      }
+    },
+    {
+      "text": "12.37",
+      "lines": [
+        {
+          "text": "12.37",
+          "boundingBox": {
+            "left": 1326,
+            "top": 869,
+            "right": 1510,
+            "bottom": 903
+          },
+          "confidence": 0.69140625
+        }
+      ],
+      "boundingBox": {
+        "left": 1326,
+        "top": 869,
+        "right": 1510,
+        "bottom": 903
+      }
+    },
+    {
+      "text": "2.48",
+      "lines": [
+        {
+          "text": "2.48",
+          "boundingBox": {
+            "left": 1366,
+            "top": 986,
+            "right": 1514,
+            "bottom": 1029
+          },
+          "confidence": 0.6347656
+        }
+      ],
+      "boundingBox": {
+        "left": 1366,
+        "top": 986,
+        "right": 1514,
+        "bottom": 1029
+      }
+    },
+    {
+      "text": "14.85",
+      "lines": [
+        {
+          "text": "14.85",
+          "boundingBox": {
+            "left": 1334,
+            "top": 1072,
+            "right": 1518,
+            "bottom": 1108
+          },
+          "confidence": 0.81640625
+        }
+      ],
+      "boundingBox": {
+        "left": 1334,
+        "top": 1072,
+        "right": 1518,
+        "bottom": 1108
+      }
+    },
+    {
+      "text": "14.85",
+      "lines": [
+        {
+          "text": "14.85",
+          "boundingBox": {
+            "left": 1329,
+            "top": 1229,
+            "right": 1508,
+            "bottom": 1264
+          },
+          "confidence": 0.771875
+        }
+      ],
+      "boundingBox": {
+        "left": 1329,
+        "top": 1229,
+        "right": 1508,
+        "bottom": 1264
+      }
+    }
+  ]
+}

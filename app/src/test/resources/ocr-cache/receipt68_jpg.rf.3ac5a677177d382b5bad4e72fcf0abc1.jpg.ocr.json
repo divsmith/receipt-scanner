@@ -1,0 +1,558 @@
+{
+  "fullText": "RISTORANTE\nBELLAGIO (C0)\nTELEFONO 031/951888\nTAV.\nSALA UNICA\n14/07/2019\n4 COPERTO\n9\n2 ACQUA NAT\n1 SALMERINO PIASTRA\n1 TRENETTE AL PESTO\nCOPERTI\n1 FETTUCCINE RAGU'\n1 PATATINE FRITTE\n1 SPAGHETTI POM. BASILICO\nMANCIA/TIP\n16:23\nTOTALE\nPrego ritirare il\ndocumento fiscale\nalla cassa\n4\n12.00\n8.00\n18.00\n13.00\n10.00\n15.00\n6.00\n82.00",
+  "blocks": [
+    {
+      "text": "RISTORANTE\nBELLAGIO (C0)\nTELEFONO 031/951888",
+      "lines": [
+        {
+          "text": "RISTORANTE",
+          "boundingBox": {
+            "left": 601,
+            "top": 67,
+            "right": 885,
+            "bottom": 107
+          },
+          "confidence": 0.8527344
+        },
+        {
+          "text": "BELLAGIO (C0)",
+          "boundingBox": {
+            "left": 578,
+            "top": 106,
+            "right": 923,
+            "bottom": 163
+          },
+          "confidence": 0.8030599
+        },
+        {
+          "text": "TELEFONO 031/951888",
+          "boundingBox": {
+            "left": 469,
+            "top": 157,
+            "right": 1019,
+            "bottom": 205
+          },
+          "confidence": 0.8496094
+        }
+      ],
+      "boundingBox": {
+        "left": 469,
+        "top": 65,
+        "right": 1021,
+        "bottom": 207
+      }
+    },
+    {
+      "text": "TAV.",
+      "lines": [
+        {
+          "text": "TAV.",
+          "boundingBox": {
+            "left": 362,
+            "top": 258,
+            "right": 472,
+            "bottom": 294
+          },
+          "confidence": 0.75390625
+        }
+      ],
+      "boundingBox": {
+        "left": 362,
+        "top": 258,
+        "right": 472,
+        "bottom": 294
+      }
+    },
+    {
+      "text": "SALA UNICA\n14/07/2019",
+      "lines": [
+        {
+          "text": "SALA UNICA",
+          "boundingBox": {
+            "left": 350,
+            "top": 308,
+            "right": 650,
+            "bottom": 346
+          },
+          "confidence": 0.80772567
+        },
+        {
+          "text": "14/07/2019",
+          "boundingBox": {
+            "left": 427,
+            "top": 358,
+            "right": 724,
+            "bottom": 402
+          },
+          "confidence": 0.8605469
+        }
+      ],
+      "boundingBox": {
+        "left": 350,
+        "top": 308,
+        "right": 724,
+        "bottom": 402
+      }
+    },
+    {
+      "text": "4 COPERTO",
+      "lines": [
+        {
+          "text": "4 COPERTO",
+          "boundingBox": {
+            "left": 306,
+            "top": 466,
+            "right": 584,
+            "bottom": 506
+          },
+          "confidence": 0.86035156
+        }
+      ],
+      "boundingBox": {
+        "left": 306,
+        "top": 466,
+        "right": 584,
+        "bottom": 506
+      }
+    },
+    {
+      "text": "9",
+      "lines": [
+        {
+          "text": "9",
+          "boundingBox": {
+            "left": 724,
+            "top": 262,
+            "right": 750,
+            "bottom": 296
+          },
+          "confidence": 0.68359375
+        }
+      ],
+      "boundingBox": {
+        "left": 724,
+        "top": 262,
+        "right": 750,
+        "bottom": 296
+      }
+    },
+    {
+      "text": "2 ACQUA NAT",
+      "lines": [
+        {
+          "text": "2 ACQUA NAT",
+          "boundingBox": {
+            "left": 304,
+            "top": 520,
+            "right": 646,
+            "bottom": 560
+          },
+          "confidence": 0.83637154
+        }
+      ],
+      "boundingBox": {
+        "left": 304,
+        "top": 520,
+        "right": 646,
+        "bottom": 560
+      }
+    },
+    {
+      "text": "1 SALMERINO PIASTRA\n1 TRENETTE AL PESTO",
+      "lines": [
+        {
+          "text": "1 SALMERINO PIASTRA",
+          "boundingBox": {
+            "left": 332,
+            "top": 570,
+            "right": 892,
+            "bottom": 622
+          },
+          "confidence": 0.85202205
+        },
+        {
+          "text": "1 TRENETTE AL PESTO",
+          "boundingBox": {
+            "left": 328,
+            "top": 620,
+            "right": 890,
+            "bottom": 679
+          },
+          "confidence": 0.82592773
+        }
+      ],
+      "boundingBox": {
+        "left": 328,
+        "top": 567,
+        "right": 891,
+        "bottom": 679
+      }
+    },
+    {
+      "text": "COPERTI",
+      "lines": [
+        {
+          "text": "COPERTI",
+          "boundingBox": {
+            "left": 870,
+            "top": 262,
+            "right": 1068,
+            "bottom": 300
+          },
+          "confidence": 0.796875
+        }
+      ],
+      "boundingBox": {
+        "left": 870,
+        "top": 262,
+        "right": 1068,
+        "bottom": 300
+      }
+    },
+    {
+      "text": "1 FETTUCCINE RAGU'\n1 PATATINE FRITTE",
+      "lines": [
+        {
+          "text": "1 FETTUCCINE RAGU'",
+          "boundingBox": {
+            "left": 326,
+            "top": 730,
+            "right": 855,
+            "bottom": 794
+          },
+          "confidence": 0.80078125
+        },
+        {
+          "text": "1 PATATINE FRITTE",
+          "boundingBox": {
+            "left": 326,
+            "top": 790,
+            "right": 843,
+            "bottom": 852
+          },
+          "confidence": 0.79036456
+        }
+      ],
+      "boundingBox": {
+        "left": 325,
+        "top": 730,
+        "right": 856,
+        "bottom": 852
+      }
+    },
+    {
+      "text": "1 SPAGHETTI POM. BASILICO",
+      "lines": [
+        {
+          "text": "1 SPAGHETTI POM. BASILICO",
+          "boundingBox": {
+            "left": 326,
+            "top": 676,
+            "right": 1078,
+            "bottom": 737
+          },
+          "confidence": 0.8212003
+        }
+      ],
+      "boundingBox": {
+        "left": 326,
+        "top": 676,
+        "right": 1078,
+        "bottom": 737
+      }
+    },
+    {
+      "text": "MANCIA/TIP",
+      "lines": [
+        {
+          "text": "MANCIA/TIP",
+          "boundingBox": {
+            "left": 430,
+            "top": 1128,
+            "right": 760,
+            "bottom": 1196
+          },
+          "confidence": 0.7945312
+        }
+      ],
+      "boundingBox": {
+        "left": 430,
+        "top": 1128,
+        "right": 760,
+        "bottom": 1196
+      }
+    },
+    {
+      "text": "16:23",
+      "lines": [
+        {
+          "text": "16:23",
+          "boundingBox": {
+            "left": 939,
+            "top": 361,
+            "right": 1077,
+            "bottom": 400
+          },
+          "confidence": 0.8890625
+        }
+      ],
+      "boundingBox": {
+        "left": 939,
+        "top": 361,
+        "right": 1077,
+        "bottom": 400
+      }
+    },
+    {
+      "text": "TOTALE",
+      "lines": [
+        {
+          "text": "TOTALE",
+          "boundingBox": {
+            "left": 884,
+            "top": 910,
+            "right": 1072,
+            "bottom": 994
+          },
+          "confidence": 0.7005208
+        }
+      ],
+      "boundingBox": {
+        "left": 884,
+        "top": 910,
+        "right": 1072,
+        "bottom": 994
+      }
+    },
+    {
+      "text": "Prego ritirare il\ndocumento fiscale\nalla cassa",
+      "lines": [
+        {
+          "text": "Prego ritirare il",
+          "boundingBox": {
+            "left": 528,
+            "top": 1301,
+            "right": 1057,
+            "bottom": 1383
+          },
+          "confidence": 0.85833335
+        },
+        {
+          "text": "documento fiscale",
+          "boundingBox": {
+            "left": 508,
+            "top": 1359,
+            "right": 1068,
+            "bottom": 1440
+          },
+          "confidence": 0.8847656
+        },
+        {
+          "text": "alla cassa",
+          "boundingBox": {
+            "left": 628,
+            "top": 1438,
+            "right": 955,
+            "bottom": 1499
+          },
+          "confidence": 0.8897569
+        }
+      ],
+      "boundingBox": {
+        "left": 505,
+        "top": 1301,
+        "right": 1070,
+        "bottom": 1508
+      }
+    },
+    {
+      "text": "4",
+      "lines": [
+        {
+          "text": "4",
+          "boundingBox": {
+            "left": 1215,
+            "top": 267,
+            "right": 1242,
+            "bottom": 300
+          },
+          "confidence": 0.94921875
+        }
+      ],
+      "boundingBox": {
+        "left": 1215,
+        "top": 267,
+        "right": 1242,
+        "bottom": 300
+      }
+    },
+    {
+      "text": "12.00",
+      "lines": [
+        {
+          "text": "12.00",
+          "boundingBox": {
+            "left": 1248,
+            "top": 466,
+            "right": 1386,
+            "bottom": 506
+          },
+          "confidence": 0.8734375
+        }
+      ],
+      "boundingBox": {
+        "left": 1248,
+        "top": 466,
+        "right": 1386,
+        "bottom": 506
+      }
+    },
+    {
+      "text": "8.00",
+      "lines": [
+        {
+          "text": "8.00",
+          "boundingBox": {
+            "left": 1276,
+            "top": 518,
+            "right": 1390,
+            "bottom": 556
+          },
+          "confidence": 0.9423828
+        }
+      ],
+      "boundingBox": {
+        "left": 1276,
+        "top": 518,
+        "right": 1390,
+        "bottom": 556
+      }
+    },
+    {
+      "text": "18.00",
+      "lines": [
+        {
+          "text": "18.00",
+          "boundingBox": {
+            "left": 1256,
+            "top": 567,
+            "right": 1391,
+            "bottom": 613
+          },
+          "confidence": 0.8875
+        }
+      ],
+      "boundingBox": {
+        "left": 1256,
+        "top": 567,
+        "right": 1391,
+        "bottom": 613
+      }
+    },
+    {
+      "text": "13.00",
+      "lines": [
+        {
+          "text": "13.00",
+          "boundingBox": {
+            "left": 1262,
+            "top": 621,
+            "right": 1394,
+            "bottom": 663
+          },
+          "confidence": 0.89375
+        }
+      ],
+      "boundingBox": {
+        "left": 1262,
+        "top": 621,
+        "right": 1394,
+        "bottom": 663
+      }
+    },
+    {
+      "text": "10.00",
+      "lines": [
+        {
+          "text": "10.00",
+          "boundingBox": {
+            "left": 1266,
+            "top": 680,
+            "right": 1408,
+            "bottom": 718
+          },
+          "confidence": 0.86796874
+        }
+      ],
+      "boundingBox": {
+        "left": 1266,
+        "top": 680,
+        "right": 1408,
+        "bottom": 718
+      }
+    },
+    {
+      "text": "15.00",
+      "lines": [
+        {
+          "text": "15.00",
+          "boundingBox": {
+            "left": 1272,
+            "top": 732,
+            "right": 1412,
+            "bottom": 774
+          },
+          "confidence": 0.90234375
+        }
+      ],
+      "boundingBox": {
+        "left": 1272,
+        "top": 732,
+        "right": 1412,
+        "bottom": 774
+      }
+    },
+    {
+      "text": "6.00",
+      "lines": [
+        {
+          "text": "6.00",
+          "boundingBox": {
+            "left": 1304,
+            "top": 788,
+            "right": 1418,
+            "bottom": 828
+          },
+          "confidence": 0.8515625
+        }
+      ],
+      "boundingBox": {
+        "left": 1304,
+        "top": 788,
+        "right": 1418,
+        "bottom": 828
+      }
+    },
+    {
+      "text": "82.00",
+      "lines": [
+        {
+          "text": "82.00",
+          "boundingBox": {
+            "left": 1284,
+            "top": 899,
+            "right": 1431,
+            "bottom": 983
+          },
+          "confidence": 0.7867187
+        }
+      ],
+      "boundingBox": {
+        "left": 1284,
+        "top": 899,
+        "right": 1431,
+        "bottom": 983
+      }
+    }
+  ]
+}

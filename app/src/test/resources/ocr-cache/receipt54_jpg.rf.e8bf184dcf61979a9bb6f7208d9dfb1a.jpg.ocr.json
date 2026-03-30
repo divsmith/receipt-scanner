@@ -1,0 +1,619 @@
+{
+  "fullText": "1\n1\n1\n106 Tom\nCheck: 1075\nTable: 34-1\nn\n255-41 Jericho Turnpike\nFloral Park, NY 11001\nTel: 718.343-4616\nWww.nancysrestaurant .net\n09/24/2016 08:22PM\nDINE IN\ngl Inp White\nBlue Moon Tap\nMozzarella&Tomato\nPork Quesadilla\nFren Onion Soup\nS\nPork Chop\nHanger Sizz le\nSUBTOTAL\nTax\nDUE\nGuests: 2\n7.75\n6.00\n9.95\n9.95\n5.95\n21.95\n24.95\n86.50\n1.68\n$94.18",
+  "blocks": [
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 177,
+            "top": 1135,
+            "right": 193,
+            "bottom": 1185
+          },
+          "confidence": 0.4921875
+        }
+      ],
+      "boundingBox": {
+        "left": 177,
+        "top": 1135,
+        "right": 193,
+        "bottom": 1185
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 209,
+            "top": 849,
+            "right": 222,
+            "bottom": 894
+          },
+          "confidence": 0.47265625
+        }
+      ],
+      "boundingBox": {
+        "left": 209,
+        "top": 849,
+        "right": 222,
+        "bottom": 894
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 202,
+            "top": 919,
+            "right": 217,
+            "bottom": 965
+          },
+          "confidence": 0.7109375
+        }
+      ],
+      "boundingBox": {
+        "left": 202,
+        "top": 919,
+        "right": 217,
+        "bottom": 965
+      }
+    },
+    {
+      "text": "106 Tom",
+      "lines": [
+        {
+          "text": "106 Tom",
+          "boundingBox": {
+            "left": 247,
+            "top": 328,
+            "right": 438,
+            "bottom": 382
+          },
+          "confidence": 0.8489583
+        }
+      ],
+      "boundingBox": {
+        "left": 247,
+        "top": 328,
+        "right": 438,
+        "bottom": 382
+      }
+    },
+    {
+      "text": "Check: 1075\nTable: 34-1",
+      "lines": [
+        {
+          "text": "Check: 1075",
+          "boundingBox": {
+            "left": 232,
+            "top": 454,
+            "right": 548,
+            "bottom": 502
+          },
+          "confidence": 0.8804687
+        },
+        {
+          "text": "Table: 34-1",
+          "boundingBox": {
+            "left": 230,
+            "top": 512,
+            "right": 538,
+            "bottom": 567
+          },
+          "confidence": 0.85546875
+        }
+      ],
+      "boundingBox": {
+        "left": 230,
+        "top": 452,
+        "right": 547,
+        "bottom": 567
+      }
+    },
+    {
+      "text": "n",
+      "lines": [
+        {
+          "text": "n",
+          "boundingBox": {
+            "left": 695,
+            "top": 3,
+            "right": 739,
+            "bottom": 32
+          },
+          "confidence": 0.42578125
+        }
+      ],
+      "boundingBox": {
+        "left": 695,
+        "top": 3,
+        "right": 739,
+        "bottom": 32
+      }
+    },
+    {
+      "text": "255-41 Jericho Turnpike\nFloral Park, NY 11001\nTel: 718.343-4616\nWww.nancysrestaurant .net",
+      "lines": [
+        {
+          "text": "255-41 Jericho Turnpike",
+          "boundingBox": {
+            "left": 496,
+            "top": 33,
+            "right": 1089,
+            "bottom": 99
+          },
+          "confidence": 0.8670015
+        },
+        {
+          "text": "Floral Park, NY 11001",
+          "boundingBox": {
+            "left": 526,
+            "top": 91,
+            "right": 1059,
+            "bottom": 152
+          },
+          "confidence": 0.8361545
+        },
+        {
+          "text": "Tel: 718.343-4616",
+          "boundingBox": {
+            "left": 558,
+            "top": 156,
+            "right": 1016,
+            "bottom": 204
+          },
+          "confidence": 0.84399414
+        },
+        {
+          "text": "Www.nancysrestaurant .net",
+          "boundingBox": {
+            "left": 472,
+            "top": 220,
+            "right": 1124,
+            "bottom": 266
+          },
+          "confidence": 0.8038737
+        }
+      ],
+      "boundingBox": {
+        "left": 471,
+        "top": 33,
+        "right": 1124,
+        "bottom": 268
+      }
+    },
+    {
+      "text": "09/24/2016 08:22PM",
+      "lines": [
+        {
+          "text": "09/24/2016 08:22PM",
+          "boundingBox": {
+            "left": 548,
+            "top": 580,
+            "right": 1066,
+            "bottom": 632
+          },
+          "confidence": 0.83754593
+        }
+      ],
+      "boundingBox": {
+        "left": 548,
+        "top": 580,
+        "right": 1066,
+        "bottom": 632
+      }
+    },
+    {
+      "text": "DINE IN",
+      "lines": [
+        {
+          "text": "DINE IN",
+          "boundingBox": {
+            "left": 574,
+            "top": 708,
+            "right": 982,
+            "bottom": 758
+          },
+          "confidence": 0.8359375
+        }
+      ],
+      "boundingBox": {
+        "left": 574,
+        "top": 708,
+        "right": 982,
+        "bottom": 758
+      }
+    },
+    {
+      "text": "gl Inp White\nBlue Moon Tap\nMozzarella&Tomato\nPork Quesadilla\nFren Onion Soup",
+      "lines": [
+        {
+          "text": "gl Inp White",
+          "boundingBox": {
+            "left": 379,
+            "top": 766,
+            "right": 722,
+            "bottom": 836
+          },
+          "confidence": 0.7175781
+        },
+        {
+          "text": "Blue Moon Tap",
+          "boundingBox": {
+            "left": 354,
+            "top": 833,
+            "right": 750,
+            "bottom": 900
+          },
+          "confidence": 0.8100142
+        },
+        {
+          "text": "Mozzarella&Tomato",
+          "boundingBox": {
+            "left": 350,
+            "top": 901,
+            "right": 874,
+            "bottom": 967
+          },
+          "confidence": 0.80170035
+        },
+        {
+          "text": "Pork Quesadilla",
+          "boundingBox": {
+            "left": 344,
+            "top": 973,
+            "right": 814,
+            "bottom": 1037
+          },
+          "confidence": 0.86160713
+        },
+        {
+          "text": "Fren Onion Soup",
+          "boundingBox": {
+            "left": 340,
+            "top": 1046,
+            "right": 820,
+            "bottom": 1116
+          },
+          "confidence": 0.8296274
+        }
+      ],
+      "boundingBox": {
+        "left": 336,
+        "top": 761,
+        "right": 876,
+        "bottom": 1119
+      }
+    },
+    {
+      "text": "S",
+      "lines": [
+        {
+          "text": "S",
+          "boundingBox": {
+            "left": 904,
+            "top": 5,
+            "right": 949,
+            "bottom": 36
+          },
+          "confidence": 0.44921875
+        }
+      ],
+      "boundingBox": {
+        "left": 904,
+        "top": 5,
+        "right": 949,
+        "bottom": 36
+      }
+    },
+    {
+      "text": "Pork Chop\nHanger Sizz le",
+      "lines": [
+        {
+          "text": "Pork Chop",
+          "boundingBox": {
+            "left": 333,
+            "top": 1121,
+            "right": 624,
+            "bottom": 1189
+          },
+          "confidence": 0.89208984
+        },
+        {
+          "text": "Hanger Sizz le",
+          "boundingBox": {
+            "left": 326,
+            "top": 1194,
+            "right": 755,
+            "bottom": 1273
+          },
+          "confidence": 0.8203125
+        }
+      ],
+      "boundingBox": {
+        "left": 324,
+        "top": 1117,
+        "right": 755,
+        "bottom": 1273
+      }
+    },
+    {
+      "text": "SUBTOTAL\nTax",
+      "lines": [
+        {
+          "text": "SUBTOTAL",
+          "boundingBox": {
+            "left": 312,
+            "top": 1361,
+            "right": 584,
+            "bottom": 1431
+          },
+          "confidence": 0.8125
+        },
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 310,
+            "top": 1452,
+            "right": 412,
+            "bottom": 1518
+          },
+          "confidence": 0.8125
+        }
+      ],
+      "boundingBox": {
+        "left": 310,
+        "top": 1361,
+        "right": 584,
+        "bottom": 1518
+      }
+    },
+    {
+      "text": "DUE",
+      "lines": [
+        {
+          "text": "DUE",
+          "boundingBox": {
+            "left": 550,
+            "top": 1534,
+            "right": 754,
+            "bottom": 1600
+          },
+          "confidence": 0.80078125
+        }
+      ],
+      "boundingBox": {
+        "left": 550,
+        "top": 1534,
+        "right": 754,
+        "bottom": 1600
+      }
+    },
+    {
+      "text": "Guests: 2",
+      "lines": [
+        {
+          "text": "Guests: 2",
+          "boundingBox": {
+            "left": 1116,
+            "top": 456,
+            "right": 1368,
+            "bottom": 502
+          },
+          "confidence": 0.83154297
+        }
+      ],
+      "boundingBox": {
+        "left": 1116,
+        "top": 456,
+        "right": 1368,
+        "bottom": 502
+      }
+    },
+    {
+      "text": "7.75",
+      "lines": [
+        {
+          "text": "7.75",
+          "boundingBox": {
+            "left": 1140,
+            "top": 765,
+            "right": 1259,
+            "bottom": 819
+          },
+          "confidence": 0.8691406
+        }
+      ],
+      "boundingBox": {
+        "left": 1140,
+        "top": 765,
+        "right": 1259,
+        "bottom": 819
+      }
+    },
+    {
+      "text": "6.00",
+      "lines": [
+        {
+          "text": "6.00",
+          "boundingBox": {
+            "left": 1146,
+            "top": 836,
+            "right": 1270,
+            "bottom": 888
+          },
+          "confidence": 0.83496094
+        }
+      ],
+      "boundingBox": {
+        "left": 1146,
+        "top": 836,
+        "right": 1270,
+        "bottom": 888
+      }
+    },
+    {
+      "text": "9.95",
+      "lines": [
+        {
+          "text": "9.95",
+          "boundingBox": {
+            "left": 1154,
+            "top": 900,
+            "right": 1276,
+            "bottom": 957
+          },
+          "confidence": 0.87109375
+        }
+      ],
+      "boundingBox": {
+        "left": 1154,
+        "top": 900,
+        "right": 1276,
+        "bottom": 957
+      }
+    },
+    {
+      "text": "9.95",
+      "lines": [
+        {
+          "text": "9.95",
+          "boundingBox": {
+            "left": 1162,
+            "top": 972,
+            "right": 1288,
+            "bottom": 1026
+          },
+          "confidence": 0.8339844
+        }
+      ],
+      "boundingBox": {
+        "left": 1162,
+        "top": 972,
+        "right": 1288,
+        "bottom": 1026
+      }
+    },
+    {
+      "text": "5.95",
+      "lines": [
+        {
+          "text": "5.95",
+          "boundingBox": {
+            "left": 1170,
+            "top": 1039,
+            "right": 1296,
+            "bottom": 1102
+          },
+          "confidence": 0.8564453
+        }
+      ],
+      "boundingBox": {
+        "left": 1170,
+        "top": 1039,
+        "right": 1296,
+        "bottom": 1102
+      }
+    },
+    {
+      "text": "21.95",
+      "lines": [
+        {
+          "text": "21.95",
+          "boundingBox": {
+            "left": 1146,
+            "top": 1118,
+            "right": 1308,
+            "bottom": 1176
+          },
+          "confidence": 0.8609375
+        }
+      ],
+      "boundingBox": {
+        "left": 1146,
+        "top": 1118,
+        "right": 1308,
+        "bottom": 1176
+      }
+    },
+    {
+      "text": "24.95",
+      "lines": [
+        {
+          "text": "24.95",
+          "boundingBox": {
+            "left": 1153,
+            "top": 1191,
+            "right": 1317,
+            "bottom": 1252
+          },
+          "confidence": 0.9109375
+        }
+      ],
+      "boundingBox": {
+        "left": 1153,
+        "top": 1191,
+        "right": 1317,
+        "bottom": 1252
+      }
+    },
+    {
+      "text": "86.50",
+      "lines": [
+        {
+          "text": "86.50",
+          "boundingBox": {
+            "left": 1168,
+            "top": 1352,
+            "right": 1340,
+            "bottom": 1419
+          },
+          "confidence": 0.7757813
+        }
+      ],
+      "boundingBox": {
+        "left": 1168,
+        "top": 1352,
+        "right": 1340,
+        "bottom": 1419
+      }
+    },
+    {
+      "text": "1.68\n$94.18",
+      "lines": [
+        {
+          "text": "1.68",
+          "boundingBox": {
+            "left": 1210,
+            "top": 1438,
+            "right": 1350,
+            "bottom": 1504
+          },
+          "confidence": 0.6357422
+        },
+        {
+          "text": "$94.18",
+          "boundingBox": {
+            "left": 1114,
+            "top": 1522,
+            "right": 1525,
+            "bottom": 1606
+          },
+          "confidence": 0.86067706
+        }
+      ],
+      "boundingBox": {
+        "left": 1113,
+        "top": 1435,
+        "right": 1525,
+        "bottom": 1606
+      }
+    }
+  ]
+}

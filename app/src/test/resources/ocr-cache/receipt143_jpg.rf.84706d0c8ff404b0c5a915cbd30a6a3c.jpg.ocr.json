@@ -1,0 +1,547 @@
+{
+  "fullText": "Blue Bear Tavern\n216 S 11th Street\n(215)922-3427\nWww.bluebeartavern.com\nCheck #: 00225\nDate: 01/13/2012 10:16 PM\nStat ion: Pos3\nGuests: 1\n1 Crimint\n1 Salami\n1 01ives\n1 Lrg Clams\\mussels\n4 Reg Ketel One\n1 House Cab\nSub Total\nCheck\nServer Andrew\nTOTAL\n00/25\n3.00\n3.00\n3.00\n14.00\n52.00\n6.00\n81.00\nPhilly Liquor Tax 0.60\nPhilly Pa Sales Tax\n1.84\n83.44",
+  "blocks": [
+    {
+      "text": "Blue Bear Tavern\n216 S 11th Street\n(215)922-3427\nWww.bluebeartavern.com",
+      "lines": [
+        {
+          "text": "Blue Bear Tavern",
+          "boundingBox": {
+            "left": 436,
+            "top": 130,
+            "right": 924,
+            "bottom": 202
+          },
+          "confidence": 0.8311942
+        },
+        {
+          "text": "216 S 11th Street",
+          "boundingBox": {
+            "left": 408,
+            "top": 182,
+            "right": 923,
+            "bottom": 262
+          },
+          "confidence": 0.8797433
+        },
+        {
+          "text": "(215)922-3427",
+          "boundingBox": {
+            "left": 472,
+            "top": 243,
+            "right": 862,
+            "bottom": 317
+          },
+          "confidence": 0.9089543
+        },
+        {
+          "text": "Www.bluebeartavern.com",
+          "boundingBox": {
+            "left": 352,
+            "top": 296,
+            "right": 1024,
+            "bottom": 377
+          },
+          "confidence": 0.7787642
+        }
+      ],
+      "boundingBox": {
+        "left": 343,
+        "top": 120,
+        "right": 1025,
+        "bottom": 380
+      }
+    },
+    {
+      "text": "Check #: 00225",
+      "lines": [
+        {
+          "text": "Check #: 00225",
+          "boundingBox": {
+            "left": 76,
+            "top": 497,
+            "right": 472,
+            "bottom": 562
+          },
+          "confidence": 0.86295575
+        }
+      ],
+      "boundingBox": {
+        "left": 76,
+        "top": 497,
+        "right": 472,
+        "bottom": 562
+      }
+    },
+    {
+      "text": "Date: 01/13/2012 10:16 PM",
+      "lines": [
+        {
+          "text": "Date: 01/13/2012 10:16 PM",
+          "boundingBox": {
+            "left": 94,
+            "top": 541,
+            "right": 810,
+            "bottom": 626
+          },
+          "confidence": 0.8785511
+        }
+      ],
+      "boundingBox": {
+        "left": 94,
+        "top": 541,
+        "right": 810,
+        "bottom": 626
+      }
+    },
+    {
+      "text": "Stat ion: Pos3\nGuests: 1",
+      "lines": [
+        {
+          "text": "Stat ion: Pos3",
+          "boundingBox": {
+            "left": 80,
+            "top": 615,
+            "right": 453,
+            "bottom": 671
+          },
+          "confidence": 0.7815755
+        },
+        {
+          "text": "Guests: 1",
+          "boundingBox": {
+            "left": 83,
+            "top": 676,
+            "right": 330,
+            "bottom": 726
+          },
+          "confidence": 0.7836914
+        }
+      ],
+      "boundingBox": {
+        "left": 80,
+        "top": 615,
+        "right": 454,
+        "bottom": 727
+      }
+    },
+    {
+      "text": "1 Crimint",
+      "lines": [
+        {
+          "text": "1 Crimint",
+          "boundingBox": {
+            "left": 184,
+            "top": 784,
+            "right": 400,
+            "bottom": 836
+          },
+          "confidence": 0.70996094
+        }
+      ],
+      "boundingBox": {
+        "left": 184,
+        "top": 784,
+        "right": 400,
+        "bottom": 836
+      }
+    },
+    {
+      "text": "1 Salami",
+      "lines": [
+        {
+          "text": "1 Salami",
+          "boundingBox": {
+            "left": 185,
+            "top": 839,
+            "right": 375,
+            "bottom": 888
+          },
+          "confidence": 0.7098214
+        }
+      ],
+      "boundingBox": {
+        "left": 185,
+        "top": 839,
+        "right": 375,
+        "bottom": 888
+      }
+    },
+    {
+      "text": "1 01ives",
+      "lines": [
+        {
+          "text": "1 01ives",
+          "boundingBox": {
+            "left": 196,
+            "top": 894,
+            "right": 388,
+            "bottom": 942
+          },
+          "confidence": 0.73995537
+        }
+      ],
+      "boundingBox": {
+        "left": 196,
+        "top": 894,
+        "right": 388,
+        "bottom": 942
+      }
+    },
+    {
+      "text": "1 Lrg Clams\\mussels\n4 Reg Ketel One\n1 House Cab",
+      "lines": [
+        {
+          "text": "1 Lrg Clams\\mussels",
+          "boundingBox": {
+            "left": 202,
+            "top": 945,
+            "right": 697,
+            "bottom": 999
+          },
+          "confidence": 0.7334559
+        },
+        {
+          "text": "4 Reg Ketel One",
+          "boundingBox": {
+            "left": 201,
+            "top": 1000,
+            "right": 586,
+            "bottom": 1052
+          },
+          "confidence": 0.804362
+        },
+        {
+          "text": "1 House Cab",
+          "boundingBox": {
+            "left": 195,
+            "top": 1053,
+            "right": 471,
+            "bottom": 1105
+          },
+          "confidence": 0.8541667
+        }
+      ],
+      "boundingBox": {
+        "left": 195,
+        "top": 945,
+        "right": 697,
+        "bottom": 1108
+      }
+    },
+    {
+      "text": "Sub Total",
+      "lines": [
+        {
+          "text": "Sub Total",
+          "boundingBox": {
+            "left": 496,
+            "top": 1228,
+            "right": 741,
+            "bottom": 1292
+          },
+          "confidence": 0.828125
+        }
+      ],
+      "boundingBox": {
+        "left": 496,
+        "top": 1228,
+        "right": 741,
+        "bottom": 1292
+      }
+    },
+    {
+      "text": "Check\nServer Andrew",
+      "lines": [
+        {
+          "text": "Check",
+          "boundingBox": {
+            "left": 954,
+            "top": 528,
+            "right": 1096,
+            "bottom": 589
+          },
+          "confidence": 0.85
+        },
+        {
+          "text": "Server Andrew",
+          "boundingBox": {
+            "left": 900,
+            "top": 598,
+            "right": 1310,
+            "bottom": 652
+          },
+          "confidence": 0.6848958
+        }
+      ],
+      "boundingBox": {
+        "left": 898,
+        "top": 527,
+        "right": 1311,
+        "bottom": 658
+      }
+    },
+    {
+      "text": "TOTAL",
+      "lines": [
+        {
+          "text": "TOTAL",
+          "boundingBox": {
+            "left": 487,
+            "top": 1462,
+            "right": 641,
+            "bottom": 1555
+          },
+          "confidence": 0.721875
+        }
+      ],
+      "boundingBox": {
+        "left": 487,
+        "top": 1462,
+        "right": 641,
+        "bottom": 1555
+      }
+    },
+    {
+      "text": "00/25",
+      "lines": [
+        {
+          "text": "00/25",
+          "boundingBox": {
+            "left": 1175,
+            "top": 536,
+            "right": 1306,
+            "bottom": 597
+          },
+          "confidence": 0.4015625
+        }
+      ],
+      "boundingBox": {
+        "left": 1175,
+        "top": 536,
+        "right": 1306,
+        "bottom": 597
+      }
+    },
+    {
+      "text": "3.00",
+      "lines": [
+        {
+          "text": "3.00",
+          "boundingBox": {
+            "left": 1228,
+            "top": 772,
+            "right": 1352,
+            "bottom": 818
+          },
+          "confidence": 0.7548828
+        }
+      ],
+      "boundingBox": {
+        "left": 1228,
+        "top": 772,
+        "right": 1352,
+        "bottom": 818
+      }
+    },
+    {
+      "text": "3.00",
+      "lines": [
+        {
+          "text": "3.00",
+          "boundingBox": {
+            "left": 1227,
+            "top": 828,
+            "right": 1349,
+            "bottom": 878
+          },
+          "confidence": 0.72753906
+        }
+      ],
+      "boundingBox": {
+        "left": 1227,
+        "top": 828,
+        "right": 1349,
+        "bottom": 878
+      }
+    },
+    {
+      "text": "3.00",
+      "lines": [
+        {
+          "text": "3.00",
+          "boundingBox": {
+            "left": 1228,
+            "top": 892,
+            "right": 1350,
+            "bottom": 938
+          },
+          "confidence": 0.7548828
+        }
+      ],
+      "boundingBox": {
+        "left": 1228,
+        "top": 892,
+        "right": 1350,
+        "bottom": 938
+      }
+    },
+    {
+      "text": "14.00",
+      "lines": [
+        {
+          "text": "14.00",
+          "boundingBox": {
+            "left": 1204,
+            "top": 952,
+            "right": 1350,
+            "bottom": 1000
+          },
+          "confidence": 0.7328125
+        }
+      ],
+      "boundingBox": {
+        "left": 1204,
+        "top": 952,
+        "right": 1350,
+        "bottom": 1000
+      }
+    },
+    {
+      "text": "52.00",
+      "lines": [
+        {
+          "text": "52.00",
+          "boundingBox": {
+            "left": 1196,
+            "top": 1009,
+            "right": 1353,
+            "bottom": 1061
+          },
+          "confidence": 0.85625
+        }
+      ],
+      "boundingBox": {
+        "left": 1196,
+        "top": 1009,
+        "right": 1353,
+        "bottom": 1061
+      }
+    },
+    {
+      "text": "6.00",
+      "lines": [
+        {
+          "text": "6.00",
+          "boundingBox": {
+            "left": 1228,
+            "top": 1070,
+            "right": 1352,
+            "bottom": 1120
+          },
+          "confidence": 0.8251953
+        }
+      ],
+      "boundingBox": {
+        "left": 1228,
+        "top": 1070,
+        "right": 1352,
+        "bottom": 1120
+      }
+    },
+    {
+      "text": "81.00",
+      "lines": [
+        {
+          "text": "81.00",
+          "boundingBox": {
+            "left": 1194,
+            "top": 1245,
+            "right": 1344,
+            "bottom": 1298
+          },
+          "confidence": 0.8148438
+        }
+      ],
+      "boundingBox": {
+        "left": 1194,
+        "top": 1245,
+        "right": 1344,
+        "bottom": 1298
+      }
+    },
+    {
+      "text": "Philly Liquor Tax 0.60\nPhilly Pa Sales Tax",
+      "lines": [
+        {
+          "text": "Philly Liquor Tax 0.60",
+          "boundingBox": {
+            "left": 628,
+            "top": 1304,
+            "right": 1346,
+            "bottom": 1366
+          },
+          "confidence": 0.7072368
+        },
+        {
+          "text": "Philly Pa Sales Tax",
+          "boundingBox": {
+            "left": 634,
+            "top": 1357,
+            "right": 1211,
+            "bottom": 1432
+          },
+          "confidence": 0.7753906
+        }
+      ],
+      "boundingBox": {
+        "left": 626,
+        "top": 1295,
+        "right": 1346,
+        "bottom": 1434
+      }
+    },
+    {
+      "text": "1.84",
+      "lines": [
+        {
+          "text": "1.84",
+          "boundingBox": {
+            "left": 1228,
+            "top": 1424,
+            "right": 1350,
+            "bottom": 1470
+          },
+          "confidence": 0.79003906
+        }
+      ],
+      "boundingBox": {
+        "left": 1228,
+        "top": 1424,
+        "right": 1350,
+        "bottom": 1470
+      }
+    },
+    {
+      "text": "83.44",
+      "lines": [
+        {
+          "text": "83.44",
+          "boundingBox": {
+            "left": 1190,
+            "top": 1482,
+            "right": 1345,
+            "bottom": 1573
+          },
+          "confidence": 0.603125
+        }
+      ],
+      "boundingBox": {
+        "left": 1190,
+        "top": 1482,
+        "right": 1345,
+        "bottom": 1573
+      }
+    }
+  ]
+}

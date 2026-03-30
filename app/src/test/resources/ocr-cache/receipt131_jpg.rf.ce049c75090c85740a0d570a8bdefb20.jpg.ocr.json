@@ -1,0 +1,453 @@
+{
+  "fullText": "O051a TABLE 308 #Party 1\nSvrCk: 13 13:22 12/20/17\n1-of-3\nBAR L\nBOA\n(310) 278-2050\nSeparate checks:\n1 CRAB CAKE\n1 SKIRT STK LUNCH\nSUGGESTED GRATUITY\n18%\n20%\nSub Total:\nTax:\n12/20 14:29 TOTAL:\nSub Total:\n8.48\n9.42\n15.00\n28.00\n43.00\n4.09\n47.09\n47.O9\nard",
+  "blocks": [
+    {
+      "text": "O051a TABLE 308 #Party 1\nSvrCk: 13 13:22 12/20/17\n1-of-3",
+      "lines": [
+        {
+          "text": "O051a TABLE 308 #Party 1",
+          "boundingBox": {
+            "left": 217,
+            "top": 350,
+            "right": 1068,
+            "bottom": 421
+          },
+          "confidence": 0.8033203
+        },
+        {
+          "text": "SvrCk: 13 13:22 12/20/17",
+          "boundingBox": {
+            "left": 514,
+            "top": 399,
+            "right": 1189,
+            "bottom": 467
+          },
+          "confidence": 0.8642113
+        },
+        {
+          "text": "1-of-3",
+          "boundingBox": {
+            "left": 760,
+            "top": 464,
+            "right": 920,
+            "bottom": 514
+          },
+          "confidence": 0.8470052
+        }
+      ],
+      "boundingBox": {
+        "left": 217,
+        "top": 345,
+        "right": 1191,
+        "bottom": 529
+      }
+    },
+    {
+      "text": "BAR L",
+      "lines": [
+        {
+          "text": "BAR L",
+          "boundingBox": {
+            "left": 176,
+            "top": 426,
+            "right": 312,
+            "bottom": 462
+          },
+          "confidence": 0.8691406
+        }
+      ],
+      "boundingBox": {
+        "left": 176,
+        "top": 426,
+        "right": 312,
+        "bottom": 462
+      }
+    },
+    {
+      "text": "BOA\n(310) 278-2050",
+      "lines": [
+        {
+          "text": "BOA",
+          "boundingBox": {
+            "left": 622,
+            "top": 260,
+            "right": 780,
+            "bottom": 302
+          },
+          "confidence": 0.66536456
+        },
+        {
+          "text": "(310) 278-2050",
+          "boundingBox": {
+            "left": 556,
+            "top": 297,
+            "right": 947,
+            "bottom": 364
+          },
+          "confidence": 0.91496396
+        }
+      ],
+      "boundingBox": {
+        "left": 554,
+        "top": 253,
+        "right": 946,
+        "bottom": 364
+      }
+    },
+    {
+      "text": "Separate checks:",
+      "lines": [
+        {
+          "text": "Separate checks:",
+          "boundingBox": {
+            "left": 260,
+            "top": 467,
+            "right": 698,
+            "bottom": 523
+          },
+          "confidence": 0.884375
+        }
+      ],
+      "boundingBox": {
+        "left": 260,
+        "top": 467,
+        "right": 698,
+        "bottom": 523
+      }
+    },
+    {
+      "text": "1 CRAB CAKE",
+      "lines": [
+        {
+          "text": "1 CRAB CAKE",
+          "boundingBox": {
+            "left": 195,
+            "top": 570,
+            "right": 482,
+            "bottom": 619
+          },
+          "confidence": 0.8611111
+        }
+      ],
+      "boundingBox": {
+        "left": 195,
+        "top": 570,
+        "right": 482,
+        "bottom": 619
+      }
+    },
+    {
+      "text": "1 SKIRT STK LUNCH",
+      "lines": [
+        {
+          "text": "1 SKIRT STK LUNCH",
+          "boundingBox": {
+            "left": 194,
+            "top": 618,
+            "right": 650,
+            "bottom": 671
+          },
+          "confidence": 0.81529015
+        }
+      ],
+      "boundingBox": {
+        "left": 194,
+        "top": 618,
+        "right": 650,
+        "bottom": 671
+      }
+    },
+    {
+      "text": "SUGGESTED GRATUITY",
+      "lines": [
+        {
+          "text": "SUGGESTED GRATUITY",
+          "boundingBox": {
+            "left": 158,
+            "top": 987,
+            "right": 680,
+            "bottom": 1039
+          },
+          "confidence": 0.86098343
+        }
+      ],
+      "boundingBox": {
+        "left": 158,
+        "top": 987,
+        "right": 680,
+        "bottom": 1039
+      }
+    },
+    {
+      "text": "18%\n20%",
+      "lines": [
+        {
+          "text": "18%",
+          "boundingBox": {
+            "left": 398,
+            "top": 1050,
+            "right": 476,
+            "bottom": 1088
+          },
+          "confidence": 0.8229167
+        },
+        {
+          "text": "20%",
+          "boundingBox": {
+            "left": 390,
+            "top": 1106,
+            "right": 474,
+            "bottom": 1146
+          },
+          "confidence": 0.88932294
+        }
+      ],
+      "boundingBox": {
+        "left": 390,
+        "top": 1050,
+        "right": 476,
+        "bottom": 1146
+      }
+    },
+    {
+      "text": "Sub Total:\nTax:",
+      "lines": [
+        {
+          "text": "Sub Total:",
+          "boundingBox": {
+            "left": 742,
+            "top": 720,
+            "right": 1016,
+            "bottom": 762
+          },
+          "confidence": 0.87890625
+        },
+        {
+          "text": "Tax:",
+          "boundingBox": {
+            "left": 913,
+            "top": 773,
+            "right": 1017,
+            "bottom": 812
+          },
+          "confidence": 0.8027344
+        }
+      ],
+      "boundingBox": {
+        "left": 741,
+        "top": 718,
+        "right": 1017,
+        "bottom": 812
+      }
+    },
+    {
+      "text": "12/20 14:29 TOTAL:",
+      "lines": [
+        {
+          "text": "12/20 14:29 TOTAL:",
+          "boundingBox": {
+            "left": 170,
+            "top": 880,
+            "right": 832,
+            "bottom": 933
+          },
+          "confidence": 0.85180664
+        }
+      ],
+      "boundingBox": {
+        "left": 170,
+        "top": 880,
+        "right": 832,
+        "bottom": 933
+      }
+    },
+    {
+      "text": "Sub Total:",
+      "lines": [
+        {
+          "text": "Sub Total:",
+          "boundingBox": {
+            "left": 742,
+            "top": 824,
+            "right": 1020,
+            "bottom": 866
+          },
+          "confidence": 0.8732639
+        }
+      ],
+      "boundingBox": {
+        "left": 742,
+        "top": 824,
+        "right": 1020,
+        "bottom": 866
+      }
+    },
+    {
+      "text": "8.48\n9.42",
+      "lines": [
+        {
+          "text": "8.48",
+          "boundingBox": {
+            "left": 656,
+            "top": 1043,
+            "right": 769,
+            "bottom": 1085
+          },
+          "confidence": 0.921875
+        },
+        {
+          "text": "9.42",
+          "boundingBox": {
+            "left": 656,
+            "top": 1100,
+            "right": 770,
+            "bottom": 1142
+          },
+          "confidence": 0.88183594
+        }
+      ],
+      "boundingBox": {
+        "left": 656,
+        "top": 1043,
+        "right": 769,
+        "bottom": 1142
+      }
+    },
+    {
+      "text": "15.00",
+      "lines": [
+        {
+          "text": "15.00",
+          "boundingBox": {
+            "left": 1174,
+            "top": 554,
+            "right": 1313,
+            "bottom": 596
+          },
+          "confidence": 0.9078125
+        }
+      ],
+      "boundingBox": {
+        "left": 1174,
+        "top": 554,
+        "right": 1313,
+        "bottom": 596
+      }
+    },
+    {
+      "text": "28.00",
+      "lines": [
+        {
+          "text": "28.00",
+          "boundingBox": {
+            "left": 1170,
+            "top": 606,
+            "right": 1314,
+            "bottom": 651
+          },
+          "confidence": 0.9171875
+        }
+      ],
+      "boundingBox": {
+        "left": 1170,
+        "top": 606,
+        "right": 1314,
+        "bottom": 651
+      }
+    },
+    {
+      "text": "43.00",
+      "lines": [
+        {
+          "text": "43.00",
+          "boundingBox": {
+            "left": 1172,
+            "top": 709,
+            "right": 1318,
+            "bottom": 760
+          },
+          "confidence": 0.91015625
+        }
+      ],
+      "boundingBox": {
+        "left": 1172,
+        "top": 709,
+        "right": 1318,
+        "bottom": 760
+      }
+    },
+    {
+      "text": "4.09\n47.09",
+      "lines": [
+        {
+          "text": "4.09",
+          "boundingBox": {
+            "left": 1206,
+            "top": 768,
+            "right": 1324,
+            "bottom": 808
+          },
+          "confidence": 0.89941406
+        },
+        {
+          "text": "47.09",
+          "boundingBox": {
+            "left": 1179,
+            "top": 820,
+            "right": 1324,
+            "bottom": 861
+          },
+          "confidence": 0.91796875
+        }
+      ],
+      "boundingBox": {
+        "left": 1178,
+        "top": 766,
+        "right": 1323,
+        "bottom": 861
+      }
+    },
+    {
+      "text": "47.O9",
+      "lines": [
+        {
+          "text": "47.O9",
+          "boundingBox": {
+            "left": 1032,
+            "top": 878,
+            "right": 1324,
+            "bottom": 918
+          },
+          "confidence": 0.6109375
+        }
+      ],
+      "boundingBox": {
+        "left": 1032,
+        "top": 878,
+        "right": 1324,
+        "bottom": 918
+      }
+    },
+    {
+      "text": "ard",
+      "lines": [
+        {
+          "text": "ard",
+          "boundingBox": {
+            "left": 1489,
+            "top": 1526,
+            "right": 1592,
+            "bottom": 1567
+          },
+          "confidence": 0.87630206
+        }
+      ],
+      "boundingBox": {
+        "left": 1489,
+        "top": 1526,
+        "right": 1592,
+        "bottom": 1567
+      }
+    }
+  ]
+}

@@ -1,0 +1,534 @@
+{
+  "fullText": "*****\nLaurel Tavern Hermosa Beach\n1220 Hermosa Beach\nHermosa Beach, CA 90254\nTel.\n01/12/19\nWaiter 80 Sophie\nTable 501 Cust 1\nOrder 1388\n1 BTL BEER\n1:23 PM\n1 BRUSSELS SPROUTS\n1 CANTONESE TENDERS\n1GRILLED CHEESE\n1$ ADD GARLIC FRIES\nTaxable:\nSub-total:\nTaxes:\nTHANK YOU!!!\nALWAYS DRIVE SAFELY\n5.00\n8.00\nPlease visit our website:\nwww. laureltavern.com\nINSTAGRAM: laureltavern\n11.00\n12.00\n4.50\n40.50\n40.50\nTota1 Due: 44 35\n3.85",
+  "blocks": [
+    {
+      "text": "*****",
+      "lines": [
+        {
+          "text": "*****",
+          "boundingBox": {
+            "left": 380,
+            "top": 233,
+            "right": 471,
+            "bottom": 254
+          },
+          "confidence": 0.58671874
+        }
+      ],
+      "boundingBox": {
+        "left": 380,
+        "top": 233,
+        "right": 471,
+        "bottom": 254
+      }
+    },
+    {
+      "text": "Laurel Tavern Hermosa Beach\n1220 Hermosa Beach",
+      "lines": [
+        {
+          "text": "Laurel Tavern Hermosa Beach",
+          "boundingBox": {
+            "left": 386,
+            "top": 264,
+            "right": 925,
+            "bottom": 307
+          },
+          "confidence": 0.86002606
+        },
+        {
+          "text": "1220 Hermosa Beach",
+          "boundingBox": {
+            "left": 381,
+            "top": 300,
+            "right": 743,
+            "bottom": 330
+          },
+          "confidence": 0.6660156
+        }
+      ],
+      "boundingBox": {
+        "left": 382,
+        "top": 264,
+        "right": 925,
+        "bottom": 333
+      }
+    },
+    {
+      "text": "Hermosa Beach, CA 90254\nTel.",
+      "lines": [
+        {
+          "text": "Hermosa Beach, CA 90254",
+          "boundingBox": {
+            "left": 371,
+            "top": 330,
+            "right": 864,
+            "bottom": 374
+          },
+          "confidence": 0.86386716
+        },
+        {
+          "text": "Tel.",
+          "boundingBox": {
+            "left": 373,
+            "top": 367,
+            "right": 450,
+            "bottom": 402
+          },
+          "confidence": 0.74121094
+        }
+      ],
+      "boundingBox": {
+        "left": 369,
+        "top": 323,
+        "right": 864,
+        "bottom": 418
+      }
+    },
+    {
+      "text": "01/12/19\nWaiter 80 Sophie\nTable 501 Cust 1\nOrder 1388",
+      "lines": [
+        {
+          "text": "01/12/19",
+          "boundingBox": {
+            "left": 371,
+            "top": 406,
+            "right": 538,
+            "bottom": 445
+          },
+          "confidence": 0.8779297
+        },
+        {
+          "text": "Waiter 80 Sophie",
+          "boundingBox": {
+            "left": 371,
+            "top": 446,
+            "right": 701,
+            "bottom": 487
+          },
+          "confidence": 0.8501674
+        },
+        {
+          "text": "Table 501 Cust 1",
+          "boundingBox": {
+            "left": 373,
+            "top": 483,
+            "right": 718,
+            "bottom": 527
+          },
+          "confidence": 0.8572716
+        },
+        {
+          "text": "Order 1388",
+          "boundingBox": {
+            "left": 371,
+            "top": 526,
+            "right": 578,
+            "bottom": 557
+          },
+          "confidence": 0.8402778
+        }
+      ],
+      "boundingBox": {
+        "left": 369,
+        "top": 406,
+        "right": 719,
+        "bottom": 561
+      }
+    },
+    {
+      "text": "1 BTL BEER",
+      "lines": [
+        {
+          "text": "1 BTL BEER",
+          "boundingBox": {
+            "left": 386,
+            "top": 638,
+            "right": 578,
+            "bottom": 675
+          },
+          "confidence": 0.80029297
+        }
+      ],
+      "boundingBox": {
+        "left": 386,
+        "top": 638,
+        "right": 578,
+        "bottom": 675
+      }
+    },
+    {
+      "text": "1:23 PM",
+      "lines": [
+        {
+          "text": "1:23 PM",
+          "boundingBox": {
+            "left": 606,
+            "top": 412,
+            "right": 744,
+            "bottom": 450
+          },
+          "confidence": 0.828125
+        }
+      ],
+      "boundingBox": {
+        "left": 606,
+        "top": 412,
+        "right": 744,
+        "bottom": 450
+      }
+    },
+    {
+      "text": "1 BRUSSELS SPROUTS\n1 CANTONESE TENDERS\n1GRILLED CHEESE\n1$ ADD GARLIC FRIES",
+      "lines": [
+        {
+          "text": "1 BRUSSELS SPROUTS",
+          "boundingBox": {
+            "left": 386,
+            "top": 677,
+            "right": 743,
+            "bottom": 715
+          },
+          "confidence": 0.7841797
+        },
+        {
+          "text": "1 CANTONESE TENDERS",
+          "boundingBox": {
+            "left": 382,
+            "top": 714,
+            "right": 763,
+            "bottom": 751
+          },
+          "confidence": 0.8184743
+        },
+        {
+          "text": "1GRILLED CHEESE",
+          "boundingBox": {
+            "left": 379,
+            "top": 751,
+            "right": 697,
+            "bottom": 788
+          },
+          "confidence": 0.79268974
+        },
+        {
+          "text": "1$ ADD GARLIC FRIES",
+          "boundingBox": {
+            "left": 372,
+            "top": 788,
+            "right": 783,
+            "bottom": 826
+          },
+          "confidence": 0.84765625
+        }
+      ],
+      "boundingBox": {
+        "left": 372,
+        "top": 677,
+        "right": 783,
+        "bottom": 826
+      }
+    },
+    {
+      "text": "Taxable:",
+      "lines": [
+        {
+          "text": "Taxable:",
+          "boundingBox": {
+            "left": 766,
+            "top": 866,
+            "right": 919,
+            "bottom": 898
+          },
+          "confidence": 0.88427734
+        }
+      ],
+      "boundingBox": {
+        "left": 766,
+        "top": 866,
+        "right": 919,
+        "bottom": 898
+      }
+    },
+    {
+      "text": "Sub-total:\nTaxes:",
+      "lines": [
+        {
+          "text": "Sub-total:",
+          "boundingBox": {
+            "left": 723,
+            "top": 943,
+            "right": 921,
+            "bottom": 972
+          },
+          "confidence": 0.8359375
+        },
+        {
+          "text": "Taxes:",
+          "boundingBox": {
+            "left": 806,
+            "top": 981,
+            "right": 919,
+            "bottom": 1010
+          },
+          "confidence": 0.8144531
+        }
+      ],
+      "boundingBox": {
+        "left": 722,
+        "top": 942,
+        "right": 920,
+        "bottom": 1010
+      }
+    },
+    {
+      "text": "THANK YOU!!!\nALWAYS DRIVE SAFELY",
+      "lines": [
+        {
+          "text": "THANK YOU!!!",
+          "boundingBox": {
+            "left": 662,
+            "top": 1210,
+            "right": 899,
+            "bottom": 1241
+          },
+          "confidence": 0.6985085
+        },
+        {
+          "text": "ALWAYS DRIVE SAFELY",
+          "boundingBox": {
+            "left": 577,
+            "top": 1250,
+            "right": 965,
+            "bottom": 1280
+          },
+          "confidence": 0.81387866
+        }
+      ],
+      "boundingBox": {
+        "left": 577,
+        "top": 1210,
+        "right": 965,
+        "bottom": 1280
+      }
+    },
+    {
+      "text": "5.00\n8.00",
+      "lines": [
+        {
+          "text": "5.00",
+          "boundingBox": {
+            "left": 1074,
+            "top": 641,
+            "right": 1154,
+            "bottom": 676
+          },
+          "confidence": 0.8857422
+        },
+        {
+          "text": "8.00",
+          "boundingBox": {
+            "left": 1076,
+            "top": 680,
+            "right": 1154,
+            "bottom": 709
+          },
+          "confidence": 0.890625
+        }
+      ],
+      "boundingBox": {
+        "left": 1074,
+        "top": 641,
+        "right": 1155,
+        "bottom": 710
+      }
+    },
+    {
+      "text": "Please visit our website:\nwww. laureltavern.com\nINSTAGRAM: laureltavern",
+      "lines": [
+        {
+          "text": "Please visit our website:",
+          "boundingBox": {
+            "left": 512,
+            "top": 1330,
+            "right": 1026,
+            "bottom": 1363
+          },
+          "confidence": 0.8536932
+        },
+        {
+          "text": "www. laureltavern.com",
+          "boundingBox": {
+            "left": 574,
+            "top": 1371,
+            "right": 992,
+            "bottom": 1404
+          },
+          "confidence": 0.8107422
+        },
+        {
+          "text": "INSTAGRAM: laureltavern",
+          "boundingBox": {
+            "left": 536,
+            "top": 1410,
+            "right": 1036,
+            "bottom": 1444
+          },
+          "confidence": 0.8457031
+        }
+      ],
+      "boundingBox": {
+        "left": 512,
+        "top": 1330,
+        "right": 1036,
+        "bottom": 1444
+      }
+    },
+    {
+      "text": "11.00",
+      "lines": [
+        {
+          "text": "11.00",
+          "boundingBox": {
+            "left": 1062,
+            "top": 720,
+            "right": 1160,
+            "bottom": 750
+          },
+          "confidence": 0.81640625
+        }
+      ],
+      "boundingBox": {
+        "left": 1062,
+        "top": 720,
+        "right": 1160,
+        "bottom": 750
+      }
+    },
+    {
+      "text": "12.00",
+      "lines": [
+        {
+          "text": "12.00",
+          "boundingBox": {
+            "left": 1062,
+            "top": 752,
+            "right": 1156,
+            "bottom": 785
+          },
+          "confidence": 0.83203125
+        }
+      ],
+      "boundingBox": {
+        "left": 1062,
+        "top": 752,
+        "right": 1156,
+        "bottom": 785
+      }
+    },
+    {
+      "text": "4.50",
+      "lines": [
+        {
+          "text": "4.50",
+          "boundingBox": {
+            "left": 1075,
+            "top": 795,
+            "right": 1157,
+            "bottom": 823
+          },
+          "confidence": 0.88183594
+        }
+      ],
+      "boundingBox": {
+        "left": 1075,
+        "top": 795,
+        "right": 1157,
+        "bottom": 823
+      }
+    },
+    {
+      "text": "40.50",
+      "lines": [
+        {
+          "text": "40.50",
+          "boundingBox": {
+            "left": 1052,
+            "top": 871,
+            "right": 1153,
+            "bottom": 898
+          },
+          "confidence": 0.91015625
+        }
+      ],
+      "boundingBox": {
+        "left": 1052,
+        "top": 871,
+        "right": 1153,
+        "bottom": 898
+      }
+    },
+    {
+      "text": "40.50",
+      "lines": [
+        {
+          "text": "40.50",
+          "boundingBox": {
+            "left": 1050,
+            "top": 946,
+            "right": 1150,
+            "bottom": 972
+          },
+          "confidence": 0.8929688
+        }
+      ],
+      "boundingBox": {
+        "left": 1050,
+        "top": 946,
+        "right": 1150,
+        "bottom": 972
+      }
+    },
+    {
+      "text": "Tota1 Due: 44 35",
+      "lines": [
+        {
+          "text": "Tota1 Due: 44 35",
+          "boundingBox": {
+            "left": 560,
+            "top": 1050,
+            "right": 1191,
+            "bottom": 1094
+          },
+          "confidence": 0.7614183
+        }
+      ],
+      "boundingBox": {
+        "left": 560,
+        "top": 1050,
+        "right": 1191,
+        "bottom": 1094
+      }
+    },
+    {
+      "text": "3.85",
+      "lines": [
+        {
+          "text": "3.85",
+          "boundingBox": {
+            "left": 1068,
+            "top": 982,
+            "right": 1149,
+            "bottom": 1010
+          },
+          "confidence": 0.9013672
+        }
+      ],
+      "boundingBox": {
+        "left": 1068,
+        "top": 982,
+        "right": 1149,
+        "bottom": 1010
+      }
+    }
+  ]
+}

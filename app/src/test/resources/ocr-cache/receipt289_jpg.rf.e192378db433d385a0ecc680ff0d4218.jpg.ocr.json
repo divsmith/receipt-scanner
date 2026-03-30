@@ -1,0 +1,335 @@
+{
+  "fullText": "TO30 V2San Fonarca fRd\nSon Feenando CA 91341\nVero\nCENTERL\n1CHicharon\n3 Pupusa Queso\n1Platanos Orden\n1Diet cOke\n2Quesaditla salvadorena\nThank You!\nTIP SUGGESTIONS\n18% $4.40\n20%: $4.89\n25%: s6.12\n$2 25\n$6.75\n$I75\n$1,50\n$4 00\nSURTOTAL $22 25\nTAX: $2.22\nTOTAL: $24.47",
+  "blocks": [
+    {
+      "text": "TO30 V2San Fonarca fRd\nSon Feenando CA 91341",
+      "lines": [
+        {
+          "text": "TO30 V2San Fonarca fRd",
+          "boundingBox": {
+            "left": 608,
+            "top": 56,
+            "right": 1233,
+            "bottom": 249
+          },
+          "confidence": 0.3073602
+        },
+        {
+          "text": "Son Feenando CA 91341",
+          "boundingBox": {
+            "left": 634,
+            "top": 99,
+            "right": 1193,
+            "bottom": 277
+          },
+          "confidence": 0.5199653
+        }
+      ],
+      "boundingBox": {
+        "left": 599,
+        "top": 56,
+        "right": 1233,
+        "bottom": 286
+      }
+    },
+    {
+      "text": "Vero\nCENTERL",
+      "lines": [
+        {
+          "text": "Vero",
+          "boundingBox": {
+            "left": 821,
+            "top": 236,
+            "right": 938,
+            "bottom": 294
+          },
+          "confidence": 0.6308594
+        },
+        {
+          "text": "CENTERL",
+          "boundingBox": {
+            "left": 731,
+            "top": 259,
+            "right": 981,
+            "bottom": 355
+          },
+          "confidence": 0.80189735
+        }
+      ],
+      "boundingBox": {
+        "left": 732,
+        "top": 216,
+        "right": 993,
+        "bottom": 356
+      }
+    },
+    {
+      "text": "1CHicharon\n3 Pupusa Queso\n1Platanos Orden\n1Diet cOke\n2Quesaditla salvadorena",
+      "lines": [
+        {
+          "text": "1CHicharon",
+          "boundingBox": {
+            "left": 357,
+            "top": 307,
+            "right": 664,
+            "bottom": 426
+          },
+          "confidence": 0.83203125
+        },
+        {
+          "text": "3 Pupusa Queso",
+          "boundingBox": {
+            "left": 368,
+            "top": 364,
+            "right": 769,
+            "bottom": 517
+          },
+          "confidence": 0.81315106
+        },
+        {
+          "text": "1Platanos Orden",
+          "boundingBox": {
+            "left": 334,
+            "top": 412,
+            "right": 750,
+            "bottom": 571
+          },
+          "confidence": 0.7737165
+        },
+        {
+          "text": "1Diet cOke",
+          "boundingBox": {
+            "left": 326,
+            "top": 467,
+            "right": 597,
+            "bottom": 580
+          },
+          "confidence": 0.7222222
+        },
+        {
+          "text": "2Quesaditla salvadorena",
+          "boundingBox": {
+            "left": 308,
+            "top": 516,
+            "right": 925,
+            "bottom": 723
+          },
+          "confidence": 0.7301136
+        }
+      ],
+      "boundingBox": {
+        "left": 299,
+        "top": 307,
+        "right": 978,
+        "bottom": 727
+      }
+    },
+    {
+      "text": "Thank You!",
+      "lines": [
+        {
+          "text": "Thank You!",
+          "boundingBox": {
+            "left": 381,
+            "top": 1353,
+            "right": 660,
+            "bottom": 1463
+          },
+          "confidence": 0.76605904
+        }
+      ],
+      "boundingBox": {
+        "left": 381,
+        "top": 1353,
+        "right": 660,
+        "bottom": 1463
+      }
+    },
+    {
+      "text": "TIP SUGGESTIONS\n18% $4.40\n20%: $4.89\n25%: s6.12",
+      "lines": [
+        {
+          "text": "TIP SUGGESTIONS",
+          "boundingBox": {
+            "left": 392,
+            "top": 1011,
+            "right": 859,
+            "bottom": 1175
+          },
+          "confidence": 0.7421875
+        },
+        {
+          "text": "18% $4.40",
+          "boundingBox": {
+            "left": 465,
+            "top": 1090,
+            "right": 755,
+            "bottom": 1199
+          },
+          "confidence": 0.69433594
+        },
+        {
+          "text": "20%: $4.89",
+          "boundingBox": {
+            "left": 462,
+            "top": 1139,
+            "right": 740,
+            "bottom": 1257
+          },
+          "confidence": 0.7291667
+        },
+        {
+          "text": "25%: s6.12",
+          "boundingBox": {
+            "left": 431,
+            "top": 1194,
+            "right": 715,
+            "bottom": 1303
+          },
+          "confidence": 0.63671875
+        }
+      ],
+      "boundingBox": {
+        "left": 351,
+        "top": 1011,
+        "right": 860,
+        "bottom": 1331
+      }
+    },
+    {
+      "text": "$2 25\n$6.75",
+      "lines": [
+        {
+          "text": "$2 25",
+          "boundingBox": {
+            "left": 1127,
+            "top": 510,
+            "right": 1279,
+            "bottom": 586
+          },
+          "confidence": 0.75
+        },
+        {
+          "text": "$6.75",
+          "boundingBox": {
+            "left": 1112,
+            "top": 562,
+            "right": 1269,
+            "bottom": 635
+          },
+          "confidence": 0.7054688
+        }
+      ],
+      "boundingBox": {
+        "left": 1111,
+        "top": 509,
+        "right": 1280,
+        "bottom": 636
+      }
+    },
+    {
+      "text": "$I75\n$1,50",
+      "lines": [
+        {
+          "text": "$I75",
+          "boundingBox": {
+            "left": 1105,
+            "top": 615,
+            "right": 1253,
+            "bottom": 695
+          },
+          "confidence": 0.50683594
+        },
+        {
+          "text": "$1,50",
+          "boundingBox": {
+            "left": 1083,
+            "top": 666,
+            "right": 1235,
+            "bottom": 738
+          },
+          "confidence": 0.6539062
+        }
+      ],
+      "boundingBox": {
+        "left": 1082,
+        "top": 613,
+        "right": 1253,
+        "bottom": 743
+      }
+    },
+    {
+      "text": "$4 00",
+      "lines": [
+        {
+          "text": "$4 00",
+          "boundingBox": {
+            "left": 1055,
+            "top": 712,
+            "right": 1217,
+            "bottom": 790
+          },
+          "confidence": 0.7128906
+        }
+      ],
+      "boundingBox": {
+        "left": 1055,
+        "top": 712,
+        "right": 1217,
+        "bottom": 790
+      }
+    },
+    {
+      "text": "SURTOTAL $22 25\nTAX: $2.22",
+      "lines": [
+        {
+          "text": "SURTOTAL $22 25",
+          "boundingBox": {
+            "left": 679,
+            "top": 779,
+            "right": 1163,
+            "bottom": 936
+          },
+          "confidence": 0.63371396
+        },
+        {
+          "text": "TAX: $2.22",
+          "boundingBox": {
+            "left": 879,
+            "top": 878,
+            "right": 1145,
+            "bottom": 993
+          },
+          "confidence": 0.64539933
+        }
+      ],
+      "boundingBox": {
+        "left": 665,
+        "top": 776,
+        "right": 1163,
+        "bottom": 994
+      }
+    },
+    {
+      "text": "TOTAL: $24.47",
+      "lines": [
+        {
+          "text": "TOTAL: $24.47",
+          "boundingBox": {
+            "left": 740,
+            "top": 934,
+            "right": 1116,
+            "bottom": 1084
+          },
+          "confidence": 0.75358075
+        }
+      ],
+      "boundingBox": {
+        "left": 740,
+        "top": 934,
+        "right": 1116,
+        "bottom": 1084
+      }
+    }
+  ]
+}

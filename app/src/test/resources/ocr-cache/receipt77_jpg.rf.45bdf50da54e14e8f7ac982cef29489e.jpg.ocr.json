@@ -1,0 +1,536 @@
+{
+  "fullText": "ORDER# 39\nCASHIER\n5/22/2014 2:00:48 PM\nSUBTOTAL:\nTAX:\nSERVER\nSmokeBoxBBO\n2361 Whitney Ave\nHamden, CT 06518\n203 909 6545\nTOTAL :\nCash\nChange\nCLOSED\n1 FXN DIET BIRCH\n1 FULL BOX\n#\nT#0000074\nGUESTS\n1\n1\nTHANK YOU! !\n1.50\n12.00\n13.50\n0.86\n$1436\n20.00\n5.64\n5/22/2014 2:02:00 PM",
+  "blocks": [
+    {
+      "text": "ORDER# 39\nCASHIER\n5/22/2014 2:00:48 PM",
+      "lines": [
+        {
+          "text": "ORDER# 39",
+          "boundingBox": {
+            "left": 418,
+            "top": 500,
+            "right": 787,
+            "bottom": 542
+          },
+          "confidence": 0.76464844
+        },
+        {
+          "text": "CASHIER",
+          "boundingBox": {
+            "left": 412,
+            "top": 536,
+            "right": 700,
+            "bottom": 575
+          },
+          "confidence": 0.79241073
+        },
+        {
+          "text": "5/22/2014 2:00:48 PM",
+          "boundingBox": {
+            "left": 405,
+            "top": 563,
+            "right": 830,
+            "bottom": 611
+          },
+          "confidence": 0.81727433
+        }
+      ],
+      "boundingBox": {
+        "left": 402,
+        "top": 499,
+        "right": 829,
+        "bottom": 611
+      }
+    },
+    {
+      "text": "SUBTOTAL:",
+      "lines": [
+        {
+          "text": "SUBTOTAL:",
+          "boundingBox": {
+            "left": 382,
+            "top": 714,
+            "right": 571,
+            "bottom": 748
+          },
+          "confidence": 0.77300346
+        }
+      ],
+      "boundingBox": {
+        "left": 382,
+        "top": 714,
+        "right": 571,
+        "bottom": 748
+      }
+    },
+    {
+      "text": "TAX:\nSERVER",
+      "lines": [
+        {
+          "text": "TAX:",
+          "boundingBox": {
+            "left": 380,
+            "top": 755,
+            "right": 456,
+            "bottom": 784
+          },
+          "confidence": 0.7626953
+        },
+        {
+          "text": "SERVER",
+          "boundingBox": {
+            "left": 369,
+            "top": 789,
+            "right": 502,
+            "bottom": 823
+          },
+          "confidence": 0.88346356
+        }
+      ],
+      "boundingBox": {
+        "left": 368,
+        "top": 754,
+        "right": 502,
+        "bottom": 823
+      }
+    },
+    {
+      "text": "SmokeBoxBBO\n2361 Whitney Ave\nHamden, CT 06518\n203 909 6545",
+      "lines": [
+        {
+          "text": "SmokeBoxBBO",
+          "boundingBox": {
+            "left": 605,
+            "top": 312,
+            "right": 1041,
+            "bottom": 350
+          },
+          "confidence": 0.58771306
+        },
+        {
+          "text": "2361 Whitney Ave",
+          "boundingBox": {
+            "left": 680,
+            "top": 343,
+            "right": 1002,
+            "bottom": 377
+          },
+          "confidence": 0.7728795
+        },
+        {
+          "text": "Hamden, CT 06518",
+          "boundingBox": {
+            "left": 676,
+            "top": 368,
+            "right": 1004,
+            "bottom": 409
+          },
+          "confidence": 0.77762276
+        },
+        {
+          "text": "203 909 6545",
+          "boundingBox": {
+            "left": 715,
+            "top": 400,
+            "right": 962,
+            "bottom": 435
+          },
+          "confidence": 0.8460938
+        }
+      ],
+      "boundingBox": {
+        "left": 605,
+        "top": 311,
+        "right": 1044,
+        "bottom": 439
+      }
+    },
+    {
+      "text": "TOTAL :",
+      "lines": [
+        {
+          "text": "TOTAL :",
+          "boundingBox": {
+            "left": 367,
+            "top": 818,
+            "right": 632,
+            "bottom": 874
+          },
+          "confidence": 0.76432294
+        }
+      ],
+      "boundingBox": {
+        "left": 367,
+        "top": 818,
+        "right": 632,
+        "bottom": 874
+      }
+    },
+    {
+      "text": "Cash\nChange",
+      "lines": [
+        {
+          "text": "Cash",
+          "boundingBox": {
+            "left": 347,
+            "top": 908,
+            "right": 438,
+            "bottom": 942
+          },
+          "confidence": 0.89453125
+        },
+        {
+          "text": "Change",
+          "boundingBox": {
+            "left": 340,
+            "top": 952,
+            "right": 480,
+            "bottom": 986
+          },
+          "confidence": 0.9029948
+        }
+      ],
+      "boundingBox": {
+        "left": 340,
+        "top": 908,
+        "right": 479,
+        "bottom": 986
+      }
+    },
+    {
+      "text": "CLOSED",
+      "lines": [
+        {
+          "text": "CLOSED",
+          "boundingBox": {
+            "left": 323,
+            "top": 1034,
+            "right": 466,
+            "bottom": 1070
+          },
+          "confidence": 0.82877606
+        }
+      ],
+      "boundingBox": {
+        "left": 323,
+        "top": 1034,
+        "right": 466,
+        "bottom": 1070
+      }
+    },
+    {
+      "text": "1 FXN DIET BIRCH\n1 FULL BOX",
+      "lines": [
+        {
+          "text": "1 FXN DIET BIRCH",
+          "boundingBox": {
+            "left": 659,
+            "top": 631,
+            "right": 1006,
+            "bottom": 666
+          },
+          "confidence": 0.83623797
+        },
+        {
+          "text": "1 FULL BOX",
+          "boundingBox": {
+            "left": 668,
+            "top": 664,
+            "right": 869,
+            "bottom": 706
+          },
+          "confidence": 0.82470703
+        }
+      ],
+      "boundingBox": {
+        "left": 659,
+        "top": 631,
+        "right": 1007,
+        "bottom": 706
+      }
+    },
+    {
+      "text": "#",
+      "lines": [
+        {
+          "text": "#",
+          "boundingBox": {
+            "left": 1010,
+            "top": 533,
+            "right": 1046,
+            "bottom": 556
+          },
+          "confidence": 0.4921875
+        }
+      ],
+      "boundingBox": {
+        "left": 1010,
+        "top": 533,
+        "right": 1046,
+        "bottom": 556
+      }
+    },
+    {
+      "text": "T#0000074",
+      "lines": [
+        {
+          "text": "T#0000074",
+          "boundingBox": {
+            "left": 800,
+            "top": 782,
+            "right": 1012,
+            "bottom": 813
+          },
+          "confidence": 0.7717014
+        }
+      ],
+      "boundingBox": {
+        "left": 800,
+        "top": 782,
+        "right": 1012,
+        "bottom": 813
+      }
+    },
+    {
+      "text": "GUESTS",
+      "lines": [
+        {
+          "text": "GUESTS",
+          "boundingBox": {
+            "left": 1032,
+            "top": 565,
+            "right": 1165,
+            "bottom": 591
+          },
+          "confidence": 0.8535156
+        }
+      ],
+      "boundingBox": {
+        "left": 1032,
+        "top": 565,
+        "right": 1165,
+        "bottom": 591
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 1240,
+            "top": 528,
+            "right": 1260,
+            "bottom": 554
+          },
+          "confidence": 0.67578125
+        }
+      ],
+      "boundingBox": {
+        "left": 1240,
+        "top": 528,
+        "right": 1260,
+        "bottom": 554
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 1237,
+            "top": 563,
+            "right": 1250,
+            "bottom": 588
+          },
+          "confidence": 0.828125
+        }
+      ],
+      "boundingBox": {
+        "left": 1237,
+        "top": 563,
+        "right": 1250,
+        "bottom": 588
+      }
+    },
+    {
+      "text": "THANK YOU! !",
+      "lines": [
+        {
+          "text": "THANK YOU! !",
+          "boundingBox": {
+            "left": 502,
+            "top": 1164,
+            "right": 1052,
+            "bottom": 1218
+          },
+          "confidence": 0.7457031
+        }
+      ],
+      "boundingBox": {
+        "left": 502,
+        "top": 1164,
+        "right": 1052,
+        "bottom": 1218
+      }
+    },
+    {
+      "text": "1.50",
+      "lines": [
+        {
+          "text": "1.50",
+          "boundingBox": {
+            "left": 1197,
+            "top": 631,
+            "right": 1284,
+            "bottom": 661
+          },
+          "confidence": 0.80859375
+        }
+      ],
+      "boundingBox": {
+        "left": 1197,
+        "top": 631,
+        "right": 1284,
+        "bottom": 661
+      }
+    },
+    {
+      "text": "12.00",
+      "lines": [
+        {
+          "text": "12.00",
+          "boundingBox": {
+            "left": 1177,
+            "top": 670,
+            "right": 1288,
+            "bottom": 698
+          },
+          "confidence": 0.81953126
+        }
+      ],
+      "boundingBox": {
+        "left": 1177,
+        "top": 670,
+        "right": 1288,
+        "bottom": 698
+      }
+    },
+    {
+      "text": "13.50",
+      "lines": [
+        {
+          "text": "13.50",
+          "boundingBox": {
+            "left": 1179,
+            "top": 705,
+            "right": 1291,
+            "bottom": 736
+          },
+          "confidence": 0.89140624
+        }
+      ],
+      "boundingBox": {
+        "left": 1179,
+        "top": 705,
+        "right": 1291,
+        "bottom": 736
+      }
+    },
+    {
+      "text": "0.86",
+      "lines": [
+        {
+          "text": "0.86",
+          "boundingBox": {
+            "left": 1200,
+            "top": 745,
+            "right": 1296,
+            "bottom": 773
+          },
+          "confidence": 0.7001953
+        }
+      ],
+      "boundingBox": {
+        "left": 1200,
+        "top": 745,
+        "right": 1296,
+        "bottom": 773
+      }
+    },
+    {
+      "text": "$1436",
+      "lines": [
+        {
+          "text": "$1436",
+          "boundingBox": {
+            "left": 1014,
+            "top": 822,
+            "right": 1300,
+            "bottom": 854
+          },
+          "confidence": 0.7789062
+        }
+      ],
+      "boundingBox": {
+        "left": 1014,
+        "top": 822,
+        "right": 1300,
+        "bottom": 854
+      }
+    },
+    {
+      "text": "20.00\n5.64",
+      "lines": [
+        {
+          "text": "20.00",
+          "boundingBox": {
+            "left": 1188,
+            "top": 904,
+            "right": 1312,
+            "bottom": 934
+          },
+          "confidence": 0.86796874
+        },
+        {
+          "text": "5.64",
+          "boundingBox": {
+            "left": 1216,
+            "top": 946,
+            "right": 1320,
+            "bottom": 978
+          },
+          "confidence": 0.9140625
+        }
+      ],
+      "boundingBox": {
+        "left": 1188,
+        "top": 904,
+        "right": 1320,
+        "bottom": 978
+      }
+    },
+    {
+      "text": "5/22/2014 2:02:00 PM",
+      "lines": [
+        {
+          "text": "5/22/2014 2:02:00 PM",
+          "boundingBox": {
+            "left": 812,
+            "top": 1030,
+            "right": 1328,
+            "bottom": 1070
+          },
+          "confidence": 0.8943142
+        }
+      ],
+      "boundingBox": {
+        "left": 812,
+        "top": 1030,
+        "right": 1328,
+        "bottom": 1070
+      }
+    }
+  ]
+}

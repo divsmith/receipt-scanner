@@ -1,0 +1,537 @@
+{
+  "fullText": "2012-04-27\nIN-N-OUT BURGER SANTA CLARA\nL1 T1\nYOUR GUEST NUMBER IS\n12\nHAMB\nCashier: KEVIN DU\nCheck: 12\n176 1 262 1110\nW GR XLXTMInst pro\nCounter-Take\nTAX 8.25%\nAmont Due\nCash Tender\nCharnge\n2012-04-27\nTHANK\nL1 T1\nYOU\n12:49 PM\nut\n12:48 PM\n2.00\n2.00\n17\n$2.i7\n$3.O0\n$.83\n12:49 PM",
+  "blocks": [
+    {
+      "text": "2012-04-27",
+      "lines": [
+        {
+          "text": "2012-04-27",
+          "boundingBox": {
+            "left": 260,
+            "top": 446,
+            "right": 571,
+            "bottom": 505
+          },
+          "confidence": 0.8558594
+        }
+      ],
+      "boundingBox": {
+        "left": 260,
+        "top": 446,
+        "right": 571,
+        "bottom": 505
+      }
+    },
+    {
+      "text": "IN-N-OUT BURGER SANTA CLARA",
+      "lines": [
+        {
+          "text": "IN-N-OUT BURGER SANTA CLARA",
+          "boundingBox": {
+            "left": 452,
+            "top": 361,
+            "right": 1329,
+            "bottom": 443
+          },
+          "confidence": 0.7998047
+        }
+      ],
+      "boundingBox": {
+        "left": 452,
+        "top": 361,
+        "right": 1329,
+        "bottom": 443
+      }
+    },
+    {
+      "text": "L1 T1\nYOUR GUEST NUMBER IS\n12",
+      "lines": [
+        {
+          "text": "L1 T1",
+          "boundingBox": {
+            "left": 818,
+            "top": 130,
+            "right": 959,
+            "bottom": 195
+          },
+          "confidence": 0.64160156
+        },
+        {
+          "text": "YOUR GUEST NUMBER IS",
+          "boundingBox": {
+            "left": 584,
+            "top": 177,
+            "right": 1232,
+            "bottom": 262
+          },
+          "confidence": 0.8127298
+        },
+        {
+          "text": "12",
+          "boundingBox": {
+            "left": 854,
+            "top": 254,
+            "right": 958,
+            "bottom": 305
+          },
+          "confidence": 0.68359375
+        }
+      ],
+      "boundingBox": {
+        "left": 581,
+        "top": 117,
+        "right": 1235,
+        "bottom": 319
+      }
+    },
+    {
+      "text": "HAMB",
+      "lines": [
+        {
+          "text": "HAMB",
+          "boundingBox": {
+            "left": 339,
+            "top": 801,
+            "right": 473,
+            "bottom": 853
+          },
+          "confidence": 0.8310547
+        }
+      ],
+      "boundingBox": {
+        "left": 339,
+        "top": 801,
+        "right": 473,
+        "bottom": 853
+      }
+    },
+    {
+      "text": "Cashier: KEVIN DU\nCheck: 12",
+      "lines": [
+        {
+          "text": "Cashier: KEVIN DU",
+          "boundingBox": {
+            "left": 264,
+            "top": 619,
+            "right": 801,
+            "bottom": 681
+          },
+          "confidence": 0.7786458
+        },
+        {
+          "text": "Check: 12",
+          "boundingBox": {
+            "left": 290,
+            "top": 682,
+            "right": 611,
+            "bottom": 743
+          },
+          "confidence": 0.81396484
+        }
+      ],
+      "boundingBox": {
+        "left": 264,
+        "top": 619,
+        "right": 802,
+        "bottom": 745
+      }
+    },
+    {
+      "text": "176 1 262 1110",
+      "lines": [
+        {
+          "text": "176 1 262 1110",
+          "boundingBox": {
+            "left": 676,
+            "top": 485,
+            "right": 1123,
+            "bottom": 558
+          },
+          "confidence": 0.81072444
+        }
+      ],
+      "boundingBox": {
+        "left": 676,
+        "top": 485,
+        "right": 1123,
+        "bottom": 558
+      }
+    },
+    {
+      "text": "W GR XLXTMInst pro",
+      "lines": [
+        {
+          "text": "W GR XLXTMInst pro",
+          "boundingBox": {
+            "left": 378,
+            "top": 854,
+            "right": 1134,
+            "bottom": 920
+          },
+          "confidence": 0.74088544
+        }
+      ],
+      "boundingBox": {
+        "left": 378,
+        "top": 854,
+        "right": 1134,
+        "bottom": 920
+      }
+    },
+    {
+      "text": "Counter-Take",
+      "lines": [
+        {
+          "text": "Counter-Take",
+          "boundingBox": {
+            "left": 236,
+            "top": 974,
+            "right": 996,
+            "bottom": 1046
+          },
+          "confidence": 0.76497394
+        }
+      ],
+      "boundingBox": {
+        "left": 236,
+        "top": 974,
+        "right": 996,
+        "bottom": 1046
+      }
+    },
+    {
+      "text": "TAX 8.25%\nAmont Due",
+      "lines": [
+        {
+          "text": "TAX 8.25%",
+          "boundingBox": {
+            "left": 230,
+            "top": 1099,
+            "right": 805,
+            "bottom": 1169
+          },
+          "confidence": 0.7241211
+        },
+        {
+          "text": "Amont Due",
+          "boundingBox": {
+            "left": 220,
+            "top": 1156,
+            "right": 863,
+            "bottom": 1227
+          },
+          "confidence": 0.73876953
+        }
+      ],
+      "boundingBox": {
+        "left": 219,
+        "top": 1093,
+        "right": 863,
+        "bottom": 1227
+      }
+    },
+    {
+      "text": "Cash Tender",
+      "lines": [
+        {
+          "text": "Cash Tender",
+          "boundingBox": {
+            "left": 210,
+            "top": 1282,
+            "right": 912,
+            "bottom": 1340
+          },
+          "confidence": 0.87421876
+        }
+      ],
+      "boundingBox": {
+        "left": 210,
+        "top": 1282,
+        "right": 912,
+        "bottom": 1340
+      }
+    },
+    {
+      "text": "Charnge",
+      "lines": [
+        {
+          "text": "Charnge",
+          "boundingBox": {
+            "left": 246,
+            "top": 1348,
+            "right": 604,
+            "bottom": 1410
+          },
+          "confidence": 0.7014509
+        }
+      ],
+      "boundingBox": {
+        "left": 246,
+        "top": 1348,
+        "right": 604,
+        "bottom": 1410
+      }
+    },
+    {
+      "text": "2012-04-27",
+      "lines": [
+        {
+          "text": "2012-04-27",
+          "boundingBox": {
+            "left": 204,
+            "top": 1463,
+            "right": 533,
+            "bottom": 1521
+          },
+          "confidence": 0.89101565
+        }
+      ],
+      "boundingBox": {
+        "left": 204,
+        "top": 1463,
+        "right": 533,
+        "bottom": 1521
+      }
+    },
+    {
+      "text": "THANK\nL1 T1",
+      "lines": [
+        {
+          "text": "THANK",
+          "boundingBox": {
+            "left": 543,
+            "top": 1384,
+            "right": 849,
+            "bottom": 1474
+          },
+          "confidence": 0.83125
+        },
+        {
+          "text": "L1 T1",
+          "boundingBox": {
+            "left": 777,
+            "top": 1459,
+            "right": 930,
+            "bottom": 1535
+          },
+          "confidence": 0.54003906
+        }
+      ],
+      "boundingBox": {
+        "left": 540,
+        "top": 1384,
+        "right": 934,
+        "bottom": 1536
+      }
+    },
+    {
+      "text": "YOU",
+      "lines": [
+        {
+          "text": "YOU",
+          "boundingBox": {
+            "left": 956,
+            "top": 1409,
+            "right": 1124,
+            "bottom": 1490
+          },
+          "confidence": 0.5911458
+        }
+      ],
+      "boundingBox": {
+        "left": 956,
+        "top": 1409,
+        "right": 1124,
+        "bottom": 1490
+      }
+    },
+    {
+      "text": "12:49 PM",
+      "lines": [
+        {
+          "text": "12:49 PM",
+          "boundingBox": {
+            "left": 1309,
+            "top": 92,
+            "right": 1576,
+            "bottom": 158
+          },
+          "confidence": 0.8376116
+        }
+      ],
+      "boundingBox": {
+        "left": 1309,
+        "top": 92,
+        "right": 1576,
+        "bottom": 158
+      }
+    },
+    {
+      "text": "ut",
+      "lines": [
+        {
+          "text": "ut",
+          "boundingBox": {
+            "left": 1188,
+            "top": 974,
+            "right": 1252,
+            "bottom": 1046
+          },
+          "confidence": 0.6152344
+        }
+      ],
+      "boundingBox": {
+        "left": 1188,
+        "top": 974,
+        "right": 1252,
+        "bottom": 1046
+      }
+    },
+    {
+      "text": "12:48 PM",
+      "lines": [
+        {
+          "text": "12:48 PM",
+          "boundingBox": {
+            "left": 1305,
+            "top": 399,
+            "right": 1590,
+            "bottom": 475
+          },
+          "confidence": 0.827567
+        }
+      ],
+      "boundingBox": {
+        "left": 1305,
+        "top": 399,
+        "right": 1590,
+        "bottom": 475
+      }
+    },
+    {
+      "text": "2.00",
+      "lines": [
+        {
+          "text": "2.00",
+          "boundingBox": {
+            "left": 1422,
+            "top": 794,
+            "right": 1566,
+            "bottom": 842
+          },
+          "confidence": 0.83496094
+        }
+      ],
+      "boundingBox": {
+        "left": 1422,
+        "top": 794,
+        "right": 1566,
+        "bottom": 842
+      }
+    },
+    {
+      "text": "2.00",
+      "lines": [
+        {
+          "text": "2.00",
+          "boundingBox": {
+            "left": 1270,
+            "top": 1058,
+            "right": 1552,
+            "bottom": 1106
+          },
+          "confidence": 0.77734375
+        }
+      ],
+      "boundingBox": {
+        "left": 1270,
+        "top": 1058,
+        "right": 1552,
+        "bottom": 1106
+      }
+    },
+    {
+      "text": "17\n$2.i7",
+      "lines": [
+        {
+          "text": "17",
+          "boundingBox": {
+            "left": 1428,
+            "top": 1123,
+            "right": 1542,
+            "bottom": 1194
+          },
+          "confidence": 0.49414062
+        },
+        {
+          "text": "$2.i7",
+          "boundingBox": {
+            "left": 1192,
+            "top": 1164,
+            "right": 1536,
+            "bottom": 1240
+          },
+          "confidence": 0.5640625
+        }
+      ],
+      "boundingBox": {
+        "left": 1190,
+        "top": 1121,
+        "right": 1542,
+        "bottom": 1242
+      }
+    },
+    {
+      "text": "$3.O0\n$.83",
+      "lines": [
+        {
+          "text": "$3.O0",
+          "boundingBox": {
+            "left": 1185,
+            "top": 1315,
+            "right": 1531,
+            "bottom": 1370
+          },
+          "confidence": 0.54296875
+        },
+        {
+          "text": "$.83",
+          "boundingBox": {
+            "left": 1252,
+            "top": 1377,
+            "right": 1528,
+            "bottom": 1432
+          },
+          "confidence": 0.5449219
+        }
+      ],
+      "boundingBox": {
+        "left": 1184,
+        "top": 1314,
+        "right": 1531,
+        "bottom": 1432
+      }
+    },
+    {
+      "text": "12:49 PM",
+      "lines": [
+        {
+          "text": "12:49 PM",
+          "boundingBox": {
+            "left": 1270,
+            "top": 1496,
+            "right": 1537,
+            "bottom": 1562
+          },
+          "confidence": 0.7728795
+        }
+      ],
+      "boundingBox": {
+        "left": 1270,
+        "top": 1496,
+        "right": 1537,
+        "bottom": 1562
+      }
+    }
+  ]
+}

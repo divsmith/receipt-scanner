@@ -1,0 +1,390 @@
+{
+  "fullText": "MEXICAN\n11732 ARTESIA BLVD.\nARTESIA,CA.\nPh: (562) 860-2530\nPHONE ORDERS WELCOME\nALBETOS\nORDER # 01029\n3 ASADA TACO\nATM CHARGE\nSUBTOTAL\nTAX TOTAL\nTOTAL\nATM\nRECALL\nFOOD\n:636\n8.10\n0.75\n8.85\n0.73\n9.58\n9.58",
+  "blocks": [
+    {
+      "text": "MEXICAN\n11732 ARTESIA BLVD.\nARTESIA,CA.\nPh: (562) 860-2530\nPHONE ORDERS WELCOME",
+      "lines": [
+        {
+          "text": "MEXICAN",
+          "boundingBox": {
+            "left": 312,
+            "top": 252,
+            "right": 802,
+            "bottom": 350
+          },
+          "confidence": 0.8364955
+        },
+        {
+          "text": "11732 ARTESIA BLVD.",
+          "boundingBox": {
+            "left": 435,
+            "top": 310,
+            "right": 1089,
+            "bottom": 420
+          },
+          "confidence": 0.8088235
+        },
+        {
+          "text": "ARTESIA,CA.",
+          "boundingBox": {
+            "left": 516,
+            "top": 406,
+            "right": 884,
+            "bottom": 484
+          },
+          "confidence": 0.79616475
+        },
+        {
+          "text": "Ph: (562) 860-2530",
+          "boundingBox": {
+            "left": 474,
+            "top": 462,
+            "right": 1077,
+            "bottom": 569
+          },
+          "confidence": 0.8449707
+        },
+        {
+          "text": "PHONE ORDERS WELCOME",
+          "boundingBox": {
+            "left": 370,
+            "top": 539,
+            "right": 1152,
+            "bottom": 634
+          },
+          "confidence": 0.8404948
+        }
+      ],
+      "boundingBox": {
+        "left": 312,
+        "top": 234,
+        "right": 1152,
+        "bottom": 644
+      }
+    },
+    {
+      "text": "ALBETOS",
+      "lines": [
+        {
+          "text": "ALBETOS",
+          "boundingBox": {
+            "left": 552,
+            "top": 178,
+            "right": 800,
+            "bottom": 250
+          },
+          "confidence": 0.7578125
+        }
+      ],
+      "boundingBox": {
+        "left": 552,
+        "top": 178,
+        "right": 800,
+        "bottom": 250
+      }
+    },
+    {
+      "text": "ORDER # 01029",
+      "lines": [
+        {
+          "text": "ORDER # 01029",
+          "boundingBox": {
+            "left": 129,
+            "top": 692,
+            "right": 983,
+            "bottom": 782
+          },
+          "confidence": 0.7833807
+        }
+      ],
+      "boundingBox": {
+        "left": 129,
+        "top": 692,
+        "right": 983,
+        "bottom": 782
+      }
+    },
+    {
+      "text": "3 ASADA TACO\nATM CHARGE",
+      "lines": [
+        {
+          "text": "3 ASADA TACO",
+          "boundingBox": {
+            "left": 236,
+            "top": 845,
+            "right": 635,
+            "bottom": 914
+          },
+          "confidence": 0.828125
+        },
+        {
+          "text": "ATM CHARGE",
+          "boundingBox": {
+            "left": 310,
+            "top": 914,
+            "right": 641,
+            "bottom": 978
+          },
+          "confidence": 0.8220486
+        }
+      ],
+      "boundingBox": {
+        "left": 236,
+        "top": 846,
+        "right": 641,
+        "bottom": 980
+      }
+    },
+    {
+      "text": "SUBTOTAL\nTAX TOTAL",
+      "lines": [
+        {
+          "text": "SUBTOTAL",
+          "boundingBox": {
+            "left": 318,
+            "top": 1057,
+            "right": 582,
+            "bottom": 1119
+          },
+          "confidence": 0.74658203
+        },
+        {
+          "text": "TAX TOTAL",
+          "boundingBox": {
+            "left": 320,
+            "top": 1128,
+            "right": 622,
+            "bottom": 1190
+          },
+          "confidence": 0.7314453
+        }
+      ],
+      "boundingBox": {
+        "left": 318,
+        "top": 1056,
+        "right": 622,
+        "bottom": 1190
+      }
+    },
+    {
+      "text": "TOTAL",
+      "lines": [
+        {
+          "text": "TOTAL",
+          "boundingBox": {
+            "left": 326,
+            "top": 1203,
+            "right": 490,
+            "bottom": 1265
+          },
+          "confidence": 0.7789062
+        }
+      ],
+      "boundingBox": {
+        "left": 326,
+        "top": 1203,
+        "right": 490,
+        "bottom": 1265
+      }
+    },
+    {
+      "text": "ATM",
+      "lines": [
+        {
+          "text": "ATM",
+          "boundingBox": {
+            "left": 329,
+            "top": 1355,
+            "right": 433,
+            "bottom": 1411
+          },
+          "confidence": 0.77994794
+        }
+      ],
+      "boundingBox": {
+        "left": 329,
+        "top": 1355,
+        "right": 433,
+        "bottom": 1411
+      }
+    },
+    {
+      "text": "RECALL",
+      "lines": [
+        {
+          "text": "RECALL",
+          "boundingBox": {
+            "left": 226,
+            "top": 1505,
+            "right": 437,
+            "bottom": 1569
+          },
+          "confidence": 0.8470052
+        }
+      ],
+      "boundingBox": {
+        "left": 226,
+        "top": 1505,
+        "right": 437,
+        "bottom": 1569
+      }
+    },
+    {
+      "text": "FOOD",
+      "lines": [
+        {
+          "text": "FOOD",
+          "boundingBox": {
+            "left": 882,
+            "top": 228,
+            "right": 1161,
+            "bottom": 312
+          },
+          "confidence": 0.69140625
+        }
+      ],
+      "boundingBox": {
+        "left": 882,
+        "top": 228,
+        "right": 1161,
+        "bottom": 312
+      }
+    },
+    {
+      "text": ":636",
+      "lines": [
+        {
+          "text": ":636",
+          "boundingBox": {
+            "left": 657,
+            "top": 1496,
+            "right": 785,
+            "bottom": 1560
+          },
+          "confidence": 0.78222656
+        }
+      ],
+      "boundingBox": {
+        "left": 657,
+        "top": 1496,
+        "right": 785,
+        "bottom": 1560
+      }
+    },
+    {
+      "text": "8.10\n0.75",
+      "lines": [
+        {
+          "text": "8.10",
+          "boundingBox": {
+            "left": 1252,
+            "top": 819,
+            "right": 1397,
+            "bottom": 882
+          },
+          "confidence": 0.86035156
+        },
+        {
+          "text": "0.75",
+          "boundingBox": {
+            "left": 1260,
+            "top": 896,
+            "right": 1408,
+            "bottom": 952
+          },
+          "confidence": 0.8544922
+        }
+      ],
+      "boundingBox": {
+        "left": 1252,
+        "top": 819,
+        "right": 1407,
+        "bottom": 954
+      }
+    },
+    {
+      "text": "8.85",
+      "lines": [
+        {
+          "text": "8.85",
+          "boundingBox": {
+            "left": 1276,
+            "top": 1044,
+            "right": 1424,
+            "bottom": 1104
+          },
+          "confidence": 0.8564453
+        }
+      ],
+      "boundingBox": {
+        "left": 1276,
+        "top": 1044,
+        "right": 1424,
+        "bottom": 1104
+      }
+    },
+    {
+      "text": "0.73",
+      "lines": [
+        {
+          "text": "0.73",
+          "boundingBox": {
+            "left": 1284,
+            "top": 1120,
+            "right": 1436,
+            "bottom": 1180
+          },
+          "confidence": 0.8417969
+        }
+      ],
+      "boundingBox": {
+        "left": 1284,
+        "top": 1120,
+        "right": 1436,
+        "bottom": 1180
+      }
+    },
+    {
+      "text": "9.58",
+      "lines": [
+        {
+          "text": "9.58",
+          "boundingBox": {
+            "left": 1293,
+            "top": 1194,
+            "right": 1441,
+            "bottom": 1255
+          },
+          "confidence": 0.8535156
+        }
+      ],
+      "boundingBox": {
+        "left": 1293,
+        "top": 1194,
+        "right": 1441,
+        "bottom": 1255
+      }
+    },
+    {
+      "text": "9.58",
+      "lines": [
+        {
+          "text": "9.58",
+          "boundingBox": {
+            "left": 1310,
+            "top": 1348,
+            "right": 1459,
+            "bottom": 1413
+          },
+          "confidence": 0.8886719
+        }
+      ],
+      "boundingBox": {
+        "left": 1310,
+        "top": 1348,
+        "right": 1459,
+        "bottom": 1413
+      }
+    }
+  ]
+}

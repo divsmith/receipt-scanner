@@ -1,0 +1,546 @@
+{
+  "fullText": "er: Megan\n27e 3/1\nR2sts: 2\nReprint #: 1\nSubtotal\n730 Tavern Kitchen & Patio\nTax\nManhat tan (3 a16.00)\n(3) Makers Mark\nGrey Goose (3 @9.50)\nRocks (3 81.00)\nTotal\nCambr idge, MA 02139-330A\n617-868-8800\n730tavern.com\n730 Mass Ave\nBalance Due\n09/23/2017\n9:40 PM\n30062\n22% 17.49\n48.00\n28.50\n3.00\n79.50\n5.57\n85.07\n85.07\nSUGGESTED GRATUITY PRIOR TO DIScOUNT\n45757\n$85.",
+  "blocks": [
+    {
+      "text": "er: Megan\n27e 3/1\nR2sts: 2\nReprint #: 1",
+      "lines": [
+        {
+          "text": "er: Megan",
+          "boundingBox": {
+            "left": 335,
+            "top": 380,
+            "right": 567,
+            "bottom": 442
+          },
+          "confidence": 0.7607422
+        },
+        {
+          "text": "27e 3/1",
+          "boundingBox": {
+            "left": 330,
+            "top": 426,
+            "right": 478,
+            "bottom": 479
+          },
+          "confidence": 0.60872394
+        },
+        {
+          "text": "R2sts: 2",
+          "boundingBox": {
+            "left": 279,
+            "top": 466,
+            "right": 470,
+            "bottom": 525
+          },
+          "confidence": 0.5546875
+        },
+        {
+          "text": "Reprint #: 1",
+          "boundingBox": {
+            "left": 253,
+            "top": 495,
+            "right": 532,
+            "bottom": 566
+          },
+          "confidence": 0.70390624
+        }
+      ],
+      "boundingBox": {
+        "left": 240,
+        "top": 380,
+        "right": 579,
+        "bottom": 565
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 200,
+            "top": 812,
+            "right": 405,
+            "bottom": 860
+          },
+          "confidence": 0.8388672
+        }
+      ],
+      "boundingBox": {
+        "left": 200,
+        "top": 812,
+        "right": 405,
+        "bottom": 860
+      }
+    },
+    {
+      "text": "730 Tavern Kitchen & Patio",
+      "lines": [
+        {
+          "text": "730 Tavern Kitchen & Patio",
+          "boundingBox": {
+            "left": 445,
+            "top": 78,
+            "right": 1071,
+            "bottom": 196
+          },
+          "confidence": 0.7620739
+        }
+      ],
+      "boundingBox": {
+        "left": 445,
+        "top": 78,
+        "right": 1071,
+        "bottom": 196
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 200,
+            "top": 871,
+            "right": 272,
+            "bottom": 907
+          },
+          "confidence": 0.8125
+        }
+      ],
+      "boundingBox": {
+        "left": 200,
+        "top": 871,
+        "right": 272,
+        "bottom": 907
+      }
+    },
+    {
+      "text": "Manhat tan (3 a16.00)\n(3) Makers Mark\nGrey Goose (3 @9.50)\nRocks (3 81.00)",
+      "lines": [
+        {
+          "text": "Manhat tan (3 a16.00)",
+          "boundingBox": {
+            "left": 261,
+            "top": 558,
+            "right": 728,
+            "bottom": 643
+          },
+          "confidence": 0.7934028
+        },
+        {
+          "text": "(3) Makers Mark",
+          "boundingBox": {
+            "left": 300,
+            "top": 613,
+            "right": 624,
+            "bottom": 679
+          },
+          "confidence": 0.90655047
+        },
+        {
+          "text": "Grey Goose (3 @9.50)",
+          "boundingBox": {
+            "left": 223,
+            "top": 649,
+            "right": 728,
+            "bottom": 732
+          },
+          "confidence": 0.7959559
+        },
+        {
+          "text": "Rocks (3 81.00)",
+          "boundingBox": {
+            "left": 266,
+            "top": 703,
+            "right": 647,
+            "bottom": 770
+          },
+          "confidence": 0.78155047
+        }
+      ],
+      "boundingBox": {
+        "left": 216,
+        "top": 559,
+        "right": 739,
+        "bottom": 778
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 184,
+            "top": 968,
+            "right": 315,
+            "bottom": 1012
+          },
+          "confidence": 0.8296875
+        }
+      ],
+      "boundingBox": {
+        "left": 184,
+        "top": 968,
+        "right": 315,
+        "bottom": 1012
+      }
+    },
+    {
+      "text": "Cambr idge, MA 02139-330A\n617-868-8800",
+      "lines": [
+        {
+          "text": "Cambr idge, MA 02139-330A",
+          "boundingBox": {
+            "left": 488,
+            "top": 182,
+            "right": 1050,
+            "bottom": 306
+          },
+          "confidence": 0.6896307
+        },
+        {
+          "text": "617-868-8800",
+          "boundingBox": {
+            "left": 612,
+            "top": 242,
+            "right": 905,
+            "bottom": 320
+          },
+          "confidence": 0.6695964
+        }
+      ],
+      "boundingBox": {
+        "left": 488,
+        "top": 182,
+        "right": 1056,
+        "bottom": 339
+      }
+    },
+    {
+      "text": "730tavern.com\n730 Mass Ave",
+      "lines": [
+        {
+          "text": "730tavern.com",
+          "boundingBox": {
+            "left": 580,
+            "top": 131,
+            "right": 892,
+            "bottom": 201
+          },
+          "confidence": 0.7400841
+        },
+        {
+          "text": "730 Mass Ave",
+          "boundingBox": {
+            "left": 611,
+            "top": 164,
+            "right": 894,
+            "bottom": 242
+          },
+          "confidence": 0.8886719
+        }
+      ],
+      "boundingBox": {
+        "left": 580,
+        "top": 127,
+        "right": 898,
+        "bottom": 246
+      }
+    },
+    {
+      "text": "Balance Due",
+      "lines": [
+        {
+          "text": "Balance Due",
+          "boundingBox": {
+            "left": 172,
+            "top": 1065,
+            "right": 493,
+            "bottom": 1121
+          },
+          "confidence": 0.89570314
+        }
+      ],
+      "boundingBox": {
+        "left": 172,
+        "top": 1065,
+        "right": 493,
+        "bottom": 1121
+      }
+    },
+    {
+      "text": "09/23/2017\n9:40 PM\n30062",
+      "lines": [
+        {
+          "text": "09/23/2017",
+          "boundingBox": {
+            "left": 1058,
+            "top": 303,
+            "right": 1313,
+            "bottom": 356
+          },
+          "confidence": 0.83554685
+        },
+        {
+          "text": "9:40 PM",
+          "boundingBox": {
+            "left": 1122,
+            "top": 346,
+            "right": 1316,
+            "bottom": 393
+          },
+          "confidence": 0.8020833
+        },
+        {
+          "text": "30062",
+          "boundingBox": {
+            "left": 1188,
+            "top": 395,
+            "right": 1323,
+            "bottom": 435
+          },
+          "confidence": 0.875
+        }
+      ],
+      "boundingBox": {
+        "left": 1058,
+        "top": 303,
+        "right": 1323,
+        "bottom": 439
+      }
+    },
+    {
+      "text": "22% 17.49",
+      "lines": [
+        {
+          "text": "22% 17.49",
+          "boundingBox": {
+            "left": 641,
+            "top": 1191,
+            "right": 920,
+            "bottom": 1249
+          },
+          "confidence": 0.70458984
+        }
+      ],
+      "boundingBox": {
+        "left": 641,
+        "top": 1191,
+        "right": 920,
+        "bottom": 1249
+      }
+    },
+    {
+      "text": "48.00",
+      "lines": [
+        {
+          "text": "48.00",
+          "boundingBox": {
+            "left": 1202,
+            "top": 535,
+            "right": 1341,
+            "bottom": 578
+          },
+          "confidence": 0.8953125
+        }
+      ],
+      "boundingBox": {
+        "left": 1202,
+        "top": 535,
+        "right": 1341,
+        "bottom": 578
+      }
+    },
+    {
+      "text": "28.50",
+      "lines": [
+        {
+          "text": "28.50",
+          "boundingBox": {
+            "left": 1204,
+            "top": 632,
+            "right": 1350,
+            "bottom": 684
+          },
+          "confidence": 0.88671875
+        }
+      ],
+      "boundingBox": {
+        "left": 1204,
+        "top": 632,
+        "right": 1350,
+        "bottom": 684
+      }
+    },
+    {
+      "text": "3.00",
+      "lines": [
+        {
+          "text": "3.00",
+          "boundingBox": {
+            "left": 1263,
+            "top": 681,
+            "right": 1356,
+            "bottom": 734
+          },
+          "confidence": 0.87109375
+        }
+      ],
+      "boundingBox": {
+        "left": 1263,
+        "top": 681,
+        "right": 1356,
+        "bottom": 734
+      }
+    },
+    {
+      "text": "79.50",
+      "lines": [
+        {
+          "text": "79.50",
+          "boundingBox": {
+            "left": 1220,
+            "top": 787,
+            "right": 1361,
+            "bottom": 833
+          },
+          "confidence": 0.875
+        }
+      ],
+      "boundingBox": {
+        "left": 1220,
+        "top": 787,
+        "right": 1361,
+        "bottom": 833
+      }
+    },
+    {
+      "text": "5.57",
+      "lines": [
+        {
+          "text": "5.57",
+          "boundingBox": {
+            "left": 1256,
+            "top": 840,
+            "right": 1365,
+            "bottom": 884
+          },
+          "confidence": 0.85058594
+        }
+      ],
+      "boundingBox": {
+        "left": 1256,
+        "top": 840,
+        "right": 1365,
+        "bottom": 884
+      }
+    },
+    {
+      "text": "85.07",
+      "lines": [
+        {
+          "text": "85.07",
+          "boundingBox": {
+            "left": 1230,
+            "top": 945,
+            "right": 1372,
+            "bottom": 993
+          },
+          "confidence": 0.859375
+        }
+      ],
+      "boundingBox": {
+        "left": 1230,
+        "top": 945,
+        "right": 1372,
+        "bottom": 993
+      }
+    },
+    {
+      "text": "85.07",
+      "lines": [
+        {
+          "text": "85.07",
+          "boundingBox": {
+            "left": 1230,
+            "top": 1044,
+            "right": 1369,
+            "bottom": 1091
+          },
+          "confidence": 0.8
+        }
+      ],
+      "boundingBox": {
+        "left": 1230,
+        "top": 1044,
+        "right": 1369,
+        "bottom": 1091
+      }
+    },
+    {
+      "text": "SUGGESTED GRATUITY PRIOR TO DIScOUNT",
+      "lines": [
+        {
+          "text": "SUGGESTED GRATUITY PRIOR TO DIScOUNT",
+          "boundingBox": {
+            "left": 271,
+            "top": 1140,
+            "right": 1276,
+            "bottom": 1224
+          },
+          "confidence": 0.74121094
+        }
+      ],
+      "boundingBox": {
+        "left": 271,
+        "top": 1140,
+        "right": 1276,
+        "bottom": 1224
+      }
+    },
+    {
+      "text": "45757",
+      "lines": [
+        {
+          "text": "45757",
+          "boundingBox": {
+            "left": 1402,
+            "top": 284,
+            "right": 1526,
+            "bottom": 349
+          },
+          "confidence": 0.8546875
+        }
+      ],
+      "boundingBox": {
+        "left": 1402,
+        "top": 284,
+        "right": 1526,
+        "bottom": 349
+      }
+    },
+    {
+      "text": "$85.",
+      "lines": [
+        {
+          "text": "$85.",
+          "boundingBox": {
+            "left": 1531,
+            "top": 618,
+            "right": 1606,
+            "bottom": 681
+          },
+          "confidence": 0.62597656
+        }
+      ],
+      "boundingBox": {
+        "left": 1531,
+        "top": 618,
+        "right": 1606,
+        "bottom": 681
+      }
+    }
+  ]
+}

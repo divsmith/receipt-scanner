@@ -1,0 +1,568 @@
+{
+  "fullText": "Server: Jerry\nTable: 3\n1 Coffee\nVILLA0 ESTE RESTAURANE\nT86 Jericho Tpke\nfloral park. NY 11001\n(516) 354-1355\n1 Glass Houuse Wine\n1 Junbo Coctai1 Shriap\nDine In\n1 Escargot Bourguigonne\n1 Veal Zingaria\n1 Duckl ing ala Arancio\nSUB TOTAL:\nTax 1:\nTOTAL:\nStation: 6\nGuests: 2\n» Ticket #: 7 <<\n12/8/2017 4:44:05 PM\n3.50\n9.95\n12.95\n10.95\n23.95\n25.95\n87.25\n7.53\n$94.78\nThank you for dining at Ville D'Este\nPlease come again soon.",
+  "blocks": [
+    {
+      "text": "Server: Jerry",
+      "lines": [
+        {
+          "text": "Server: Jerry",
+          "boundingBox": {
+            "left": 154,
+            "top": 301,
+            "right": 483,
+            "bottom": 368
+          },
+          "confidence": 0.76660156
+        }
+      ],
+      "boundingBox": {
+        "left": 154,
+        "top": 301,
+        "right": 483,
+        "bottom": 368
+      }
+    },
+    {
+      "text": "Table: 3",
+      "lines": [
+        {
+          "text": "Table: 3",
+          "boundingBox": {
+            "left": 158,
+            "top": 457,
+            "right": 358,
+            "bottom": 506
+          },
+          "confidence": 0.80970985
+        }
+      ],
+      "boundingBox": {
+        "left": 158,
+        "top": 457,
+        "right": 358,
+        "bottom": 506
+      }
+    },
+    {
+      "text": "1 Coffee",
+      "lines": [
+        {
+          "text": "1 Coffee",
+          "boundingBox": {
+            "left": 182,
+            "top": 550,
+            "right": 357,
+            "bottom": 604
+          },
+          "confidence": 0.796317
+        }
+      ],
+      "boundingBox": {
+        "left": 182,
+        "top": 550,
+        "right": 357,
+        "bottom": 604
+      }
+    },
+    {
+      "text": "VILLA0 ESTE RESTAURANE\nT86 Jericho Tpke\nfloral park. NY 11001\n(516) 354-1355",
+      "lines": [
+        {
+          "text": "VILLA0 ESTE RESTAURANE",
+          "boundingBox": {
+            "left": 373,
+            "top": 37,
+            "right": 952,
+            "bottom": 124
+          },
+          "confidence": 0.609375
+        },
+        {
+          "text": "T86 Jericho Tpke",
+          "boundingBox": {
+            "left": 460,
+            "top": 84,
+            "right": 871,
+            "bottom": 150
+          },
+          "confidence": 0.73939735
+        },
+        {
+          "text": "floral park. NY 11001",
+          "boundingBox": {
+            "left": 376,
+            "top": 113,
+            "right": 929,
+            "bottom": 208
+          },
+          "confidence": 0.7424045
+        },
+        {
+          "text": "(516) 354-1355",
+          "boundingBox": {
+            "left": 490,
+            "top": 163,
+            "right": 856,
+            "bottom": 252
+          },
+          "confidence": 0.8254207
+        }
+      ],
+      "boundingBox": {
+        "left": 369,
+        "top": 34,
+        "right": 963,
+        "bottom": 262
+      }
+    },
+    {
+      "text": "1 Glass Houuse Wine",
+      "lines": [
+        {
+          "text": "1 Glass Houuse Wine",
+          "boundingBox": {
+            "left": 180,
+            "top": 580,
+            "right": 624,
+            "bottom": 653
+          },
+          "confidence": 0.66796875
+        }
+      ],
+      "boundingBox": {
+        "left": 180,
+        "top": 580,
+        "right": 624,
+        "bottom": 653
+      }
+    },
+    {
+      "text": "1 Junbo Coctai1 Shriap",
+      "lines": [
+        {
+          "text": "1 Junbo Coctai1 Shriap",
+          "boundingBox": {
+            "left": 158,
+            "top": 625,
+            "right": 733,
+            "bottom": 698
+          },
+          "confidence": 0.7158717
+        }
+      ],
+      "boundingBox": {
+        "left": 158,
+        "top": 625,
+        "right": 733,
+        "bottom": 698
+      }
+    },
+    {
+      "text": "Dine In",
+      "lines": [
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 564,
+            "top": 378,
+            "right": 754,
+            "bottom": 430
+          },
+          "confidence": 0.7988281
+        }
+      ],
+      "boundingBox": {
+        "left": 564,
+        "top": 378,
+        "right": 754,
+        "bottom": 430
+      }
+    },
+    {
+      "text": "1 Escargot Bourguigonne\n1 Veal Zingaria",
+      "lines": [
+        {
+          "text": "1 Escargot Bourguigonne",
+          "boundingBox": {
+            "left": 172,
+            "top": 674,
+            "right": 760,
+            "bottom": 752
+          },
+          "confidence": 0.749442
+        },
+        {
+          "text": "1 Veal Zingaria",
+          "boundingBox": {
+            "left": 166,
+            "top": 733,
+            "right": 536,
+            "bottom": 800
+          },
+          "confidence": 0.71905047
+        }
+      ],
+      "boundingBox": {
+        "left": 164,
+        "top": 673,
+        "right": 762,
+        "bottom": 801
+      }
+    },
+    {
+      "text": "1 Duckl ing ala Arancio",
+      "lines": [
+        {
+          "text": "1 Duckl ing ala Arancio",
+          "boundingBox": {
+            "left": 160,
+            "top": 771,
+            "right": 736,
+            "bottom": 850
+          },
+          "confidence": 0.7740543
+        }
+      ],
+      "boundingBox": {
+        "left": 160,
+        "top": 771,
+        "right": 736,
+        "bottom": 850
+      }
+    },
+    {
+      "text": "SUB TOTAL:",
+      "lines": [
+        {
+          "text": "SUB TOTAL:",
+          "boundingBox": {
+            "left": 122,
+            "top": 894,
+            "right": 385,
+            "bottom": 945
+          },
+          "confidence": 0.72005206
+        }
+      ],
+      "boundingBox": {
+        "left": 122,
+        "top": 894,
+        "right": 385,
+        "bottom": 945
+      }
+    },
+    {
+      "text": "Tax 1:",
+      "lines": [
+        {
+          "text": "Tax 1:",
+          "boundingBox": {
+            "left": 122,
+            "top": 952,
+            "right": 271,
+            "bottom": 999
+          },
+          "confidence": 0.76875
+        }
+      ],
+      "boundingBox": {
+        "left": 122,
+        "top": 952,
+        "right": 271,
+        "bottom": 999
+      }
+    },
+    {
+      "text": "TOTAL:",
+      "lines": [
+        {
+          "text": "TOTAL:",
+          "boundingBox": {
+            "left": 110,
+            "top": 1064,
+            "right": 264,
+            "bottom": 1108
+          },
+          "confidence": 0.74609375
+        }
+      ],
+      "boundingBox": {
+        "left": 110,
+        "top": 1064,
+        "right": 264,
+        "bottom": 1108
+      }
+    },
+    {
+      "text": "Station: 6",
+      "lines": [
+        {
+          "text": "Station: 6",
+          "boundingBox": {
+            "left": 941,
+            "top": 235,
+            "right": 1230,
+            "bottom": 300
+          },
+          "confidence": 0.7630208
+        }
+      ],
+      "boundingBox": {
+        "left": 941,
+        "top": 235,
+        "right": 1230,
+        "bottom": 300
+      }
+    },
+    {
+      "text": "Guests: 2",
+      "lines": [
+        {
+          "text": "Guests: 2",
+          "boundingBox": {
+            "left": 978,
+            "top": 385,
+            "right": 1242,
+            "bottom": 450
+          },
+          "confidence": 0.7285156
+        }
+      ],
+      "boundingBox": {
+        "left": 978,
+        "top": 385,
+        "right": 1242,
+        "bottom": 450
+      }
+    },
+    {
+      "text": "» Ticket #: 7 <<\n12/8/2017 4:44:05 PM",
+      "lines": [
+        {
+          "text": "» Ticket #: 7 <<",
+          "boundingBox": {
+            "left": 405,
+            "top": 1162,
+            "right": 916,
+            "bottom": 1217
+          },
+          "confidence": 0.67285156
+        },
+        {
+          "text": "12/8/2017 4:44:05 PM",
+          "boundingBox": {
+            "left": 377,
+            "top": 1220,
+            "right": 990,
+            "bottom": 1282
+          },
+          "confidence": 0.8368056
+        }
+      ],
+      "boundingBox": {
+        "left": 376,
+        "top": 1160,
+        "right": 990,
+        "bottom": 1282
+      }
+    },
+    {
+      "text": "3.50\n9.95",
+      "lines": [
+        {
+          "text": "3.50",
+          "boundingBox": {
+            "left": 1130,
+            "top": 485,
+            "right": 1253,
+            "bottom": 536
+          },
+          "confidence": 0.87890625
+        },
+        {
+          "text": "9.95",
+          "boundingBox": {
+            "left": 1136,
+            "top": 540,
+            "right": 1256,
+            "bottom": 586
+          },
+          "confidence": 0.796875
+        }
+      ],
+      "boundingBox": {
+        "left": 1130,
+        "top": 485,
+        "right": 1257,
+        "bottom": 590
+      }
+    },
+    {
+      "text": "12.95",
+      "lines": [
+        {
+          "text": "12.95",
+          "boundingBox": {
+            "left": 1118,
+            "top": 590,
+            "right": 1260,
+            "bottom": 638
+          },
+          "confidence": 0.86796874
+        }
+      ],
+      "boundingBox": {
+        "left": 1118,
+        "top": 590,
+        "right": 1260,
+        "bottom": 638
+      }
+    },
+    {
+      "text": "10.95",
+      "lines": [
+        {
+          "text": "10.95",
+          "boundingBox": {
+            "left": 1120,
+            "top": 641,
+            "right": 1268,
+            "bottom": 690
+          },
+          "confidence": 0.88984376
+        }
+      ],
+      "boundingBox": {
+        "left": 1120,
+        "top": 641,
+        "right": 1268,
+        "bottom": 690
+      }
+    },
+    {
+      "text": "23.95",
+      "lines": [
+        {
+          "text": "23.95",
+          "boundingBox": {
+            "left": 1118,
+            "top": 693,
+            "right": 1271,
+            "bottom": 744
+          },
+          "confidence": 0.9117187
+        }
+      ],
+      "boundingBox": {
+        "left": 1118,
+        "top": 693,
+        "right": 1271,
+        "bottom": 744
+      }
+    },
+    {
+      "text": "25.95",
+      "lines": [
+        {
+          "text": "25.95",
+          "boundingBox": {
+            "left": 1120,
+            "top": 748,
+            "right": 1277,
+            "bottom": 798
+          },
+          "confidence": 0.890625
+        }
+      ],
+      "boundingBox": {
+        "left": 1120,
+        "top": 748,
+        "right": 1277,
+        "bottom": 798
+      }
+    },
+    {
+      "text": "87.25\n7.53",
+      "lines": [
+        {
+          "text": "87.25",
+          "boundingBox": {
+            "left": 1130,
+            "top": 859,
+            "right": 1289,
+            "bottom": 909
+          },
+          "confidence": 0.91484374
+        },
+        {
+          "text": "7.53",
+          "boundingBox": {
+            "left": 1166,
+            "top": 916,
+            "right": 1294,
+            "bottom": 963
+          },
+          "confidence": 0.85253906
+        }
+      ],
+      "boundingBox": {
+        "left": 1130,
+        "top": 859,
+        "right": 1295,
+        "bottom": 965
+      }
+    },
+    {
+      "text": "$94.78",
+      "lines": [
+        {
+          "text": "$94.78",
+          "boundingBox": {
+            "left": 1110,
+            "top": 1036,
+            "right": 1308,
+            "bottom": 1090
+          },
+          "confidence": 0.8626302
+        }
+      ],
+      "boundingBox": {
+        "left": 1110,
+        "top": 1036,
+        "right": 1308,
+        "bottom": 1090
+      }
+    },
+    {
+      "text": "Thank you for dining at Ville D'Este\nPlease come again soon.",
+      "lines": [
+        {
+          "text": "Thank you for dining at Ville D'Este",
+          "boundingBox": {
+            "left": 64,
+            "top": 1412,
+            "right": 1208,
+            "bottom": 1476
+          },
+          "confidence": 0.7734375
+        },
+        {
+          "text": "Please come again soon.",
+          "boundingBox": {
+            "left": 57,
+            "top": 1470,
+            "right": 762,
+            "bottom": 1539
+          },
+          "confidence": 0.8070313
+        }
+      ],
+      "boundingBox": {
+        "left": 57,
+        "top": 1400,
+        "right": 1208,
+        "bottom": 1544
+      }
+    }
+  ]
+}

@@ -1,0 +1,673 @@
+{
+  "fullText": "1 1\n1\n1\nTax\nORDER: SECOND FLOOR 19\nCashier: Kiran\n24-Mar 2019 7:14:55P\n1 Chicken Lollipop\n1 Naan\nNAANCHING\n103 MONTGOMERRY SI\nJERSEY CITY, NJ 07302\n2019840709\nTotal\nThal Fried Rice\n1 Mango Lassi\nSubtotal\nDine-in\nChicken Tikka Masala\nVegetable Biryani\nService Charge (18.0%)\n$9.00\nMed $0,00\n$12.00\nVegetables $0.00\nMed $0.00\n$16.00\nMILD PLEASE\n$3.00\n$12.00\nMAKE IT MILD PLEASE\n$4.00\n$56.00\n$3.71\n$10.08\n$69.79",
+  "blocks": [
+    {
+      "text": "1 1",
+      "lines": [
+        {
+          "text": "1 1",
+          "boundingBox": {
+            "left": 146,
+            "top": 964,
+            "right": 158,
+            "bottom": 998
+          },
+          "confidence": 0.6152344
+        }
+      ],
+      "boundingBox": {
+        "left": 146,
+        "top": 964,
+        "right": 158,
+        "bottom": 998
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 168,
+            "top": 754,
+            "right": 180,
+            "bottom": 786
+          },
+          "confidence": 0.84375
+        }
+      ],
+      "boundingBox": {
+        "left": 168,
+        "top": 754,
+        "right": 180,
+        "bottom": 786
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 188,
+            "top": 559,
+            "right": 199,
+            "bottom": 590
+          },
+          "confidence": 0.71875
+        }
+      ],
+      "boundingBox": {
+        "left": 188,
+        "top": 559,
+        "right": 199,
+        "bottom": 590
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 102,
+            "top": 1310,
+            "right": 180,
+            "bottom": 1351
+          },
+          "confidence": 0.87630206
+        }
+      ],
+      "boundingBox": {
+        "left": 102,
+        "top": 1310,
+        "right": 180,
+        "bottom": 1351
+      }
+    },
+    {
+      "text": "ORDER: SECOND FLOOR 19",
+      "lines": [
+        {
+          "text": "ORDER: SECOND FLOOR 19",
+          "boundingBox": {
+            "left": 252,
+            "top": 180,
+            "right": 1168,
+            "bottom": 239
+          },
+          "confidence": 0.84806746
+        }
+      ],
+      "boundingBox": {
+        "left": 252,
+        "top": 180,
+        "right": 1168,
+        "bottom": 239
+      }
+    },
+    {
+      "text": "Cashier: Kiran\n24-Mar 2019 7:14:55P\n1 Chicken Lollipop",
+      "lines": [
+        {
+          "text": "Cashier: Kiran",
+          "boundingBox": {
+            "left": 204,
+            "top": 312,
+            "right": 501,
+            "bottom": 361
+          },
+          "confidence": 0.78365386
+        },
+        {
+          "text": "24-Mar 2019 7:14:55P",
+          "boundingBox": {
+            "left": 198,
+            "top": 352,
+            "right": 677,
+            "bottom": 405
+          },
+          "confidence": 0.86762154
+        },
+        {
+          "text": "1 Chicken Lollipop",
+          "boundingBox": {
+            "left": 200,
+            "top": 402,
+            "right": 648,
+            "bottom": 448
+          },
+          "confidence": 0.8232422
+        }
+      ],
+      "boundingBox": {
+        "left": 197,
+        "top": 308,
+        "right": 678,
+        "bottom": 456
+      }
+    },
+    {
+      "text": "1 Naan",
+      "lines": [
+        {
+          "text": "1 Naan",
+          "boundingBox": {
+            "left": 163,
+            "top": 895,
+            "right": 350,
+            "bottom": 951
+          },
+          "confidence": 0.78046876
+        }
+      ],
+      "boundingBox": {
+        "left": 163,
+        "top": 895,
+        "right": 350,
+        "bottom": 951
+      }
+    },
+    {
+      "text": "NAANCHING",
+      "lines": [
+        {
+          "text": "NAANCHING",
+          "boundingBox": {
+            "left": 547,
+            "top": 4,
+            "right": 876,
+            "bottom": 40
+          },
+          "confidence": 0.8368056
+        }
+      ],
+      "boundingBox": {
+        "left": 547,
+        "top": 4,
+        "right": 876,
+        "bottom": 40
+      }
+    },
+    {
+      "text": "103 MONTGOMERRY SI\nJERSEY CITY, NJ 07302\n2019840709",
+      "lines": [
+        {
+          "text": "103 MONTGOMERRY SI",
+          "boundingBox": {
+            "left": 477,
+            "top": 29,
+            "right": 953,
+            "bottom": 79
+          },
+          "confidence": 0.75268555
+        },
+        {
+          "text": "JERSEY CITY, NJ 07302",
+          "boundingBox": {
+            "left": 466,
+            "top": 61,
+            "right": 955,
+            "bottom": 112
+          },
+          "confidence": 0.72894967
+        },
+        {
+          "text": "2019840709",
+          "boundingBox": {
+            "left": 574,
+            "top": 104,
+            "right": 841,
+            "bottom": 141
+          },
+          "confidence": 0.83632815
+        }
+      ],
+      "boundingBox": {
+        "left": 465,
+        "top": 28,
+        "right": 956,
+        "bottom": 144
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 83,
+            "top": 1493,
+            "right": 205,
+            "bottom": 1541
+          },
+          "confidence": 0.8328125
+        }
+      ],
+      "boundingBox": {
+        "left": 83,
+        "top": 1493,
+        "right": 205,
+        "bottom": 1541
+      }
+    },
+    {
+      "text": "Thal Fried Rice",
+      "lines": [
+        {
+          "text": "Thal Fried Rice",
+          "boundingBox": {
+            "left": 275,
+            "top": 536,
+            "right": 596,
+            "bottom": 583
+          },
+          "confidence": 0.8296274
+        }
+      ],
+      "boundingBox": {
+        "left": 275,
+        "top": 536,
+        "right": 596,
+        "bottom": 583
+      }
+    },
+    {
+      "text": "1 Mango Lassi",
+      "lines": [
+        {
+          "text": "1 Mango Lassi",
+          "boundingBox": {
+            "left": 140,
+            "top": 1112,
+            "right": 527,
+            "bottom": 1184
+          },
+          "confidence": 0.8235085
+        }
+      ],
+      "boundingBox": {
+        "left": 140,
+        "top": 1112,
+        "right": 527,
+        "bottom": 1184
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 107,
+            "top": 1241,
+            "right": 312,
+            "bottom": 1288
+          },
+          "confidence": 0.8520508
+        }
+      ],
+      "boundingBox": {
+        "left": 107,
+        "top": 1241,
+        "right": 312,
+        "bottom": 1288
+      }
+    },
+    {
+      "text": "Dine-in",
+      "lines": [
+        {
+          "text": "Dine-in",
+          "boundingBox": {
+            "left": 582,
+            "top": 250,
+            "right": 818,
+            "bottom": 298
+          },
+          "confidence": 0.859375
+        }
+      ],
+      "boundingBox": {
+        "left": 582,
+        "top": 250,
+        "right": 818,
+        "bottom": 298
+      }
+    },
+    {
+      "text": "Chicken Tikka Masala",
+      "lines": [
+        {
+          "text": "Chicken Tikka Masala",
+          "boundingBox": {
+            "left": 250,
+            "top": 739,
+            "right": 765,
+            "bottom": 777
+          },
+          "confidence": 0.8782552
+        }
+      ],
+      "boundingBox": {
+        "left": 250,
+        "top": 739,
+        "right": 765,
+        "bottom": 777
+      }
+    },
+    {
+      "text": "Vegetable Biryani",
+      "lines": [
+        {
+          "text": "Vegetable Biryani",
+          "boundingBox": {
+            "left": 230,
+            "top": 944,
+            "right": 648,
+            "bottom": 1003
+          },
+          "confidence": 0.87280273
+        }
+      ],
+      "boundingBox": {
+        "left": 230,
+        "top": 944,
+        "right": 648,
+        "bottom": 1003
+      }
+    },
+    {
+      "text": "Service Charge (18.0%)",
+      "lines": [
+        {
+          "text": "Service Charge (18.0%)",
+          "boundingBox": {
+            "left": 96,
+            "top": 1364,
+            "right": 696,
+            "bottom": 1424
+          },
+          "confidence": 0.86679685
+        }
+      ],
+      "boundingBox": {
+        "left": 96,
+        "top": 1364,
+        "right": 696,
+        "bottom": 1424
+      }
+    },
+    {
+      "text": "$9.00\nMed $0,00",
+      "lines": [
+        {
+          "text": "$9.00",
+          "boundingBox": {
+            "left": 1100,
+            "top": 404,
+            "right": 1224,
+            "bottom": 440
+          },
+          "confidence": 0.8578125
+        },
+        {
+          "text": "Med $0,00",
+          "boundingBox": {
+            "left": 988,
+            "top": 446,
+            "right": 1226,
+            "bottom": 489
+          },
+          "confidence": 0.67529297
+        }
+      ],
+      "boundingBox": {
+        "left": 988,
+        "top": 403,
+        "right": 1226,
+        "bottom": 489
+      }
+    },
+    {
+      "text": "$12.00",
+      "lines": [
+        {
+          "text": "$12.00",
+          "boundingBox": {
+            "left": 1080,
+            "top": 537,
+            "right": 1236,
+            "bottom": 579
+          },
+          "confidence": 0.8170573
+        }
+      ],
+      "boundingBox": {
+        "left": 1080,
+        "top": 537,
+        "right": 1236,
+        "bottom": 579
+      }
+    },
+    {
+      "text": "Vegetables $0.00\nMed $0.00",
+      "lines": [
+        {
+          "text": "Vegetables $0.00",
+          "boundingBox": {
+            "left": 836,
+            "top": 583,
+            "right": 1241,
+            "bottom": 637
+          },
+          "confidence": 0.8020833
+        },
+        {
+          "text": "Med $0.00",
+          "boundingBox": {
+            "left": 996,
+            "top": 630,
+            "right": 1245,
+            "bottom": 679
+          },
+          "confidence": 0.74365234
+        }
+      ],
+      "boundingBox": {
+        "left": 836,
+        "top": 583,
+        "right": 1245,
+        "bottom": 683
+      }
+    },
+    {
+      "text": "$16.00\nMILD PLEASE",
+      "lines": [
+        {
+          "text": "$16.00",
+          "boundingBox": {
+            "left": 1090,
+            "top": 730,
+            "right": 1254,
+            "bottom": 773
+          },
+          "confidence": 0.82877606
+        },
+        {
+          "text": "MILD PLEASE",
+          "boundingBox": {
+            "left": 924,
+            "top": 782,
+            "right": 1247,
+            "bottom": 827
+          },
+          "confidence": 0.8257812
+        }
+      ],
+      "boundingBox": {
+        "left": 923,
+        "top": 730,
+        "right": 1255,
+        "bottom": 827
+      }
+    },
+    {
+      "text": "$3.00\n$12.00",
+      "lines": [
+        {
+          "text": "$3.00",
+          "boundingBox": {
+            "left": 1134,
+            "top": 888,
+            "right": 1272,
+            "bottom": 932
+          },
+          "confidence": 0.78125
+        },
+        {
+          "text": "$12.00",
+          "boundingBox": {
+            "left": 1108,
+            "top": 942,
+            "right": 1278,
+            "bottom": 985
+          },
+          "confidence": 0.8183594
+        }
+      ],
+      "boundingBox": {
+        "left": 1108,
+        "top": 888,
+        "right": 1278,
+        "bottom": 985
+      }
+    },
+    {
+      "text": "MAKE IT MILD PLEASE",
+      "lines": [
+        {
+          "text": "MAKE IT MILD PLEASE",
+          "boundingBox": {
+            "left": 716,
+            "top": 992,
+            "right": 1278,
+            "bottom": 1047
+          },
+          "confidence": 0.8129883
+        }
+      ],
+      "boundingBox": {
+        "left": 716,
+        "top": 992,
+        "right": 1278,
+        "bottom": 1047
+      }
+    },
+    {
+      "text": "$4.00",
+      "lines": [
+        {
+          "text": "$4.00",
+          "boundingBox": {
+            "left": 1153,
+            "top": 1110,
+            "right": 1295,
+            "bottom": 1157
+          },
+          "confidence": 0.79609376
+        }
+      ],
+      "boundingBox": {
+        "left": 1153,
+        "top": 1110,
+        "right": 1295,
+        "bottom": 1157
+      }
+    },
+    {
+      "text": "$56.00",
+      "lines": [
+        {
+          "text": "$56.00",
+          "boundingBox": {
+            "left": 1134,
+            "top": 1233,
+            "right": 1309,
+            "bottom": 1283
+          },
+          "confidence": 0.81966144
+        }
+      ],
+      "boundingBox": {
+        "left": 1134,
+        "top": 1233,
+        "right": 1309,
+        "bottom": 1283
+      }
+    },
+    {
+      "text": "$3.71",
+      "lines": [
+        {
+          "text": "$3.71",
+          "boundingBox": {
+            "left": 1168,
+            "top": 1295,
+            "right": 1308,
+            "bottom": 1346
+          },
+          "confidence": 0.8492187
+        }
+      ],
+      "boundingBox": {
+        "left": 1168,
+        "top": 1295,
+        "right": 1308,
+        "bottom": 1346
+      }
+    },
+    {
+      "text": "$10.08",
+      "lines": [
+        {
+          "text": "$10.08",
+          "boundingBox": {
+            "left": 1144,
+            "top": 1360,
+            "right": 1322,
+            "bottom": 1410
+          },
+          "confidence": 0.7083333
+        }
+      ],
+      "boundingBox": {
+        "left": 1144,
+        "top": 1360,
+        "right": 1322,
+        "bottom": 1410
+      }
+    },
+    {
+      "text": "$69.79",
+      "lines": [
+        {
+          "text": "$69.79",
+          "boundingBox": {
+            "left": 1150,
+            "top": 1489,
+            "right": 1333,
+            "bottom": 1547
+          },
+          "confidence": 0.8359375
+        }
+      ],
+      "boundingBox": {
+        "left": 1150,
+        "top": 1489,
+        "right": 1333,
+        "bottom": 1547
+      }
+    }
+  ]
+}

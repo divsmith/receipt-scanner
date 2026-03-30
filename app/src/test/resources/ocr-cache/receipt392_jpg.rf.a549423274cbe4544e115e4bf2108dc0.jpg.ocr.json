@@ -1,0 +1,485 @@
+{
+  "fullText": "L1 T1\nYOUR GUEST NUMBER IS\n12\n2012-04-27\nIN-N-OUT BURGER SANTA CLARA\n176 1 262 1110\nCashier: KEVIN DU\nCheck: 12\nHAMB\nW GR X LXTM Inst pro\nTAX 8,25%\nAmount Due\nCounter-Take Out\nCash Tender\n12:49 PM\n12:48 PM\nChange\n2012-04-27\nTHANK YOU!\nL1 T1\n2.00\n2.0\n1\n$2. 1\n$3.C\n12:4",
+  "blocks": [
+    {
+      "text": "L1 T1\nYOUR GUEST NUMBER IS\n12",
+      "lines": [
+        {
+          "text": "L1 T1",
+          "boundingBox": {
+            "left": 735,
+            "top": 139,
+            "right": 879,
+            "bottom": 223
+          },
+          "confidence": 0.5371094
+        },
+        {
+          "text": "YOUR GUEST NUMBER IS",
+          "boundingBox": {
+            "left": 517,
+            "top": 151,
+            "right": 1158,
+            "bottom": 326
+          },
+          "confidence": 0.777114
+        },
+        {
+          "text": "12",
+          "boundingBox": {
+            "left": 794,
+            "top": 264,
+            "right": 903,
+            "bottom": 329
+          },
+          "confidence": 0.6855469
+        }
+      ],
+      "boundingBox": {
+        "left": 506,
+        "top": 89,
+        "right": 1168,
+        "bottom": 380
+      }
+    },
+    {
+      "text": "2012-04-27",
+      "lines": [
+        {
+          "text": "2012-04-27",
+          "boundingBox": {
+            "left": 253,
+            "top": 503,
+            "right": 564,
+            "bottom": 603
+          },
+          "confidence": 0.88125
+        }
+      ],
+      "boundingBox": {
+        "left": 253,
+        "top": 503,
+        "right": 564,
+        "bottom": 603
+      }
+    },
+    {
+      "text": "IN-N-OUT BURGER SANTA CLARA",
+      "lines": [
+        {
+          "text": "IN-N-OUT BURGER SANTA CLARA",
+          "boundingBox": {
+            "left": 428,
+            "top": 315,
+            "right": 1296,
+            "bottom": 521
+          },
+          "confidence": 0.80159503
+        }
+      ],
+      "boundingBox": {
+        "left": 428,
+        "top": 315,
+        "right": 1296,
+        "bottom": 521
+      }
+    },
+    {
+      "text": "176 1 262 1110",
+      "lines": [
+        {
+          "text": "176 1 262 1110",
+          "boundingBox": {
+            "left": 672,
+            "top": 471,
+            "right": 1122,
+            "bottom": 600
+          },
+          "confidence": 0.85298294
+        }
+      ],
+      "boundingBox": {
+        "left": 672,
+        "top": 471,
+        "right": 1122,
+        "bottom": 600
+      }
+    },
+    {
+      "text": "Cashier: KEVIN DU\nCheck: 12",
+      "lines": [
+        {
+          "text": "Cashier: KEVIN DU",
+          "boundingBox": {
+            "left": 316,
+            "top": 639,
+            "right": 829,
+            "bottom": 777
+          },
+          "confidence": 0.7867187
+        },
+        {
+          "text": "Check: 12",
+          "boundingBox": {
+            "left": 328,
+            "top": 730,
+            "right": 659,
+            "bottom": 836
+          },
+          "confidence": 0.80566406
+        }
+      ],
+      "boundingBox": {
+        "left": 316,
+        "top": 639,
+        "right": 839,
+        "bottom": 837
+      }
+    },
+    {
+      "text": "HAMB",
+      "lines": [
+        {
+          "text": "HAMB",
+          "boundingBox": {
+            "left": 419,
+            "top": 871,
+            "right": 547,
+            "bottom": 936
+          },
+          "confidence": 0.7763672
+        }
+      ],
+      "boundingBox": {
+        "left": 419,
+        "top": 871,
+        "right": 547,
+        "bottom": 936
+      }
+    },
+    {
+      "text": "W GR X LXTM Inst pro",
+      "lines": [
+        {
+          "text": "W GR X LXTM Inst pro",
+          "boundingBox": {
+            "left": 458,
+            "top": 832,
+            "right": 1210,
+            "bottom": 996
+          },
+          "confidence": 0.73645836
+        }
+      ],
+      "boundingBox": {
+        "left": 458,
+        "top": 832,
+        "right": 1210,
+        "bottom": 996
+      }
+    },
+    {
+      "text": "TAX 8,25%\nAmount Due",
+      "lines": [
+        {
+          "text": "TAX 8,25%",
+          "boundingBox": {
+            "left": 364,
+            "top": 1111,
+            "right": 944,
+            "bottom": 1259
+          },
+          "confidence": 0.6977539
+        },
+        {
+          "text": "Amount Due",
+          "boundingBox": {
+            "left": 374,
+            "top": 1170,
+            "right": 1014,
+            "bottom": 1315
+          },
+          "confidence": 0.7135417
+        }
+      ],
+      "boundingBox": {
+        "left": 364,
+        "top": 1100,
+        "right": 1014,
+        "bottom": 1315
+      }
+    },
+    {
+      "text": "Counter-Take Out",
+      "lines": [
+        {
+          "text": "Counter-Take Out",
+          "boundingBox": {
+            "left": 349,
+            "top": 942,
+            "right": 1356,
+            "bottom": 1128
+          },
+          "confidence": 0.7661458
+        }
+      ],
+      "boundingBox": {
+        "left": 349,
+        "top": 942,
+        "right": 1356,
+        "bottom": 1128
+      }
+    },
+    {
+      "text": "Cash Tender",
+      "lines": [
+        {
+          "text": "Cash Tender",
+          "boundingBox": {
+            "left": 387,
+            "top": 1282,
+            "right": 1087,
+            "bottom": 1431
+          },
+          "confidence": 0.8546875
+        }
+      ],
+      "boundingBox": {
+        "left": 387,
+        "top": 1282,
+        "right": 1087,
+        "bottom": 1431
+      }
+    },
+    {
+      "text": "12:49 PM",
+      "lines": [
+        {
+          "text": "12:49 PM",
+          "boundingBox": {
+            "left": 1210,
+            "top": 25,
+            "right": 1481,
+            "bottom": 127
+          },
+          "confidence": 0.78683037
+        }
+      ],
+      "boundingBox": {
+        "left": 1210,
+        "top": 25,
+        "right": 1481,
+        "bottom": 127
+      }
+    },
+    {
+      "text": "12:48 PM",
+      "lines": [
+        {
+          "text": "12:48 PM",
+          "boundingBox": {
+            "left": 1274,
+            "top": 331,
+            "right": 1552,
+            "bottom": 432
+          },
+          "confidence": 0.83370537
+        }
+      ],
+      "boundingBox": {
+        "left": 1274,
+        "top": 331,
+        "right": 1552,
+        "bottom": 432
+      }
+    },
+    {
+      "text": "Change",
+      "lines": [
+        {
+          "text": "Change",
+          "boundingBox": {
+            "left": 402,
+            "top": 1390,
+            "right": 794,
+            "bottom": 1498
+          },
+          "confidence": 0.7682292
+        }
+      ],
+      "boundingBox": {
+        "left": 402,
+        "top": 1390,
+        "right": 794,
+        "bottom": 1498
+      }
+    },
+    {
+      "text": "2012-04-27",
+      "lines": [
+        {
+          "text": "2012-04-27",
+          "boundingBox": {
+            "left": 427,
+            "top": 1513,
+            "right": 752,
+            "bottom": 1608
+          },
+          "confidence": 0.88125
+        }
+      ],
+      "boundingBox": {
+        "left": 427,
+        "top": 1513,
+        "right": 752,
+        "bottom": 1608
+      }
+    },
+    {
+      "text": "THANK YOU!\nL1 T1",
+      "lines": [
+        {
+          "text": "THANK YOU!",
+          "boundingBox": {
+            "left": 772,
+            "top": 1398,
+            "right": 1354,
+            "bottom": 1498
+          },
+          "confidence": 0.69574654
+        },
+        {
+          "text": "L1 T1",
+          "boundingBox": {
+            "left": 982,
+            "top": 1465,
+            "right": 1140,
+            "bottom": 1535
+          },
+          "confidence": 0.5078125
+        }
+      ],
+      "boundingBox": {
+        "left": 772,
+        "top": 1397,
+        "right": 1357,
+        "bottom": 1546
+      }
+    },
+    {
+      "text": "2.00",
+      "lines": [
+        {
+          "text": "2.00",
+          "boundingBox": {
+            "left": 1494,
+            "top": 711,
+            "right": 1615,
+            "bottom": 794
+          },
+          "confidence": 0.76953125
+        }
+      ],
+      "boundingBox": {
+        "left": 1494,
+        "top": 711,
+        "right": 1615,
+        "bottom": 794
+      }
+    },
+    {
+      "text": "2.0",
+      "lines": [
+        {
+          "text": "2.0",
+          "boundingBox": {
+            "left": 1381,
+            "top": 993,
+            "right": 1596,
+            "bottom": 1080
+          },
+          "confidence": 0.6354167
+        }
+      ],
+      "boundingBox": {
+        "left": 1381,
+        "top": 993,
+        "right": 1596,
+        "bottom": 1080
+      }
+    },
+    {
+      "text": "1\n$2. 1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 1582,
+            "top": 1054,
+            "right": 1606,
+            "bottom": 1108
+          },
+          "confidence": 0.67578125
+        },
+        {
+          "text": "$2. 1",
+          "boundingBox": {
+            "left": 1369,
+            "top": 1115,
+            "right": 1599,
+            "bottom": 1211
+          },
+          "confidence": 0.6923828
+        }
+      ],
+      "boundingBox": {
+        "left": 1358,
+        "top": 1052,
+        "right": 1618,
+        "bottom": 1223
+      }
+    },
+    {
+      "text": "$3.C",
+      "lines": [
+        {
+          "text": "$3.C",
+          "boundingBox": {
+            "left": 1395,
+            "top": 1241,
+            "right": 1627,
+            "bottom": 1334
+          },
+          "confidence": 0.5263672
+        }
+      ],
+      "boundingBox": {
+        "left": 1395,
+        "top": 1241,
+        "right": 1627,
+        "bottom": 1334
+      }
+    },
+    {
+      "text": "12:4",
+      "lines": [
+        {
+          "text": "12:4",
+          "boundingBox": {
+            "left": 1461,
+            "top": 1448,
+            "right": 1594,
+            "bottom": 1499
+          },
+          "confidence": 0.82714844
+        }
+      ],
+      "boundingBox": {
+        "left": 1461,
+        "top": 1448,
+        "right": 1594,
+        "bottom": 1499
+      }
+    }
+  ]
+}

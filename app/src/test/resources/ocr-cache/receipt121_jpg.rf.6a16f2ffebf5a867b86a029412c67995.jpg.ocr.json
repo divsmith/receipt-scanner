@@ -1,0 +1,755 @@
+{
+  "fullText": "1 Plate\nPanda Express #2614\n12/22/2017 4:58:01 PM\nOrder: 196812\n1 Plate\nCHOW MEIN-1/2\nCHOW MEIN-1/2\nBROCCOLI BEEF\nBEI JING BEEF\n*x PURCHASE x*\nBrooklyn, NY\n(718)246-3898\n1 XTRA ENTREE\nCHOW MEIN-1/2\nCHOW MEIN-1/2\nCKN EGG ROLL\nKUNG PAO CKN\n1 XTRA ENTREE\nGRILLTERIYAKI CKN\nGÉIL TERIYAKI CKN\n1 PEPSI 20 ỞE\n1 PEPSI 20 0Z\nSubTotal\nTAX\nTotal\nVisa\nServer: Cheryfia M\nAcct:XXXXXXXX0103\nAuthCode:02776A\nX***\n-TO GO-\nFREE ENTREE ITEM!\n9.10\n9.10\n1,50\n1.50\n2.00\n2.00\n25.20\n2.24\n27.44\n27,44",
+  "blocks": [
+    {
+      "text": "1 Plate",
+      "lines": [
+        {
+          "text": "1 Plate",
+          "boundingBox": {
+            "left": 300,
+            "top": 498,
+            "right": 478,
+            "bottom": 534
+          },
+          "confidence": 0.8776042
+        }
+      ],
+      "boundingBox": {
+        "left": 300,
+        "top": 498,
+        "right": 478,
+        "bottom": 534
+      }
+    },
+    {
+      "text": "Panda Express #2614",
+      "lines": [
+        {
+          "text": "Panda Express #2614",
+          "boundingBox": {
+            "left": 552,
+            "top": 216,
+            "right": 1057,
+            "bottom": 321
+          },
+          "confidence": 0.7849265
+        }
+      ],
+      "boundingBox": {
+        "left": 552,
+        "top": 216,
+        "right": 1057,
+        "bottom": 321
+      }
+    },
+    {
+      "text": "12/22/2017 4:58:01 PM\nOrder: 196812",
+      "lines": [
+        {
+          "text": "12/22/2017 4:58:01 PM",
+          "boundingBox": {
+            "left": 218,
+            "top": 370,
+            "right": 763,
+            "bottom": 436
+          },
+          "confidence": 0.91837996
+        },
+        {
+          "text": "Order: 196812",
+          "boundingBox": {
+            "left": 214,
+            "top": 413,
+            "right": 561,
+            "bottom": 463
+          },
+          "confidence": 0.8421224
+        }
+      ],
+      "boundingBox": {
+        "left": 214,
+        "top": 370,
+        "right": 764,
+        "bottom": 478
+      }
+    },
+    {
+      "text": "1 Plate",
+      "lines": [
+        {
+          "text": "1 Plate",
+          "boundingBox": {
+            "left": 299,
+            "top": 681,
+            "right": 469,
+            "bottom": 715
+          },
+          "confidence": 0.87369794
+        }
+      ],
+      "boundingBox": {
+        "left": 299,
+        "top": 681,
+        "right": 469,
+        "bottom": 715
+      }
+    },
+    {
+      "text": "CHOW MEIN-1/2\nCHOW MEIN-1/2\nBROCCOLI BEEF\nBEI JING BEEF",
+      "lines": [
+        {
+          "text": "CHOW MEIN-1/2",
+          "boundingBox": {
+            "left": 426,
+            "top": 537,
+            "right": 741,
+            "bottom": 584
+          },
+          "confidence": 0.8499349
+        },
+        {
+          "text": "CHOW MEIN-1/2",
+          "boundingBox": {
+            "left": 424,
+            "top": 573,
+            "right": 740,
+            "bottom": 619
+          },
+          "confidence": 0.79557294
+        },
+        {
+          "text": "BROCCOLI BEEF",
+          "boundingBox": {
+            "left": 423,
+            "top": 611,
+            "right": 738,
+            "bottom": 654
+          },
+          "confidence": 0.8108724
+        },
+        {
+          "text": "BEI JING BEEF",
+          "boundingBox": {
+            "left": 423,
+            "top": 648,
+            "right": 712,
+            "bottom": 690
+          },
+          "confidence": 0.8661222
+        }
+      ],
+      "boundingBox": {
+        "left": 421,
+        "top": 537,
+        "right": 742,
+        "bottom": 693
+      }
+    },
+    {
+      "text": "*x PURCHASE x*",
+      "lines": [
+        {
+          "text": "*x PURCHASE x*",
+          "boundingBox": {
+            "left": 657,
+            "top": 47,
+            "right": 1044,
+            "bottom": 153
+          },
+          "confidence": 0.5283203
+        }
+      ],
+      "boundingBox": {
+        "left": 657,
+        "top": 47,
+        "right": 1044,
+        "bottom": 153
+      }
+    },
+    {
+      "text": "Brooklyn, NY\n(718)246-3898",
+      "lines": [
+        {
+          "text": "Brooklyn, NY",
+          "boundingBox": {
+            "left": 654,
+            "top": 289,
+            "right": 961,
+            "bottom": 345
+          },
+          "confidence": 0.7297585
+        },
+        {
+          "text": "(718)246-3898",
+          "boundingBox": {
+            "left": 628,
+            "top": 316,
+            "right": 948,
+            "bottom": 372
+          },
+          "confidence": 0.8088942
+        }
+      ],
+      "boundingBox": {
+        "left": 628,
+        "top": 287,
+        "right": 961,
+        "bottom": 374
+      }
+    },
+    {
+      "text": "1 XTRA ENTREE",
+      "lines": [
+        {
+          "text": "1 XTRA ENTREE",
+          "boundingBox": {
+            "left": 297,
+            "top": 851,
+            "right": 607,
+            "bottom": 889
+          },
+          "confidence": 0.746804
+        }
+      ],
+      "boundingBox": {
+        "left": 297,
+        "top": 851,
+        "right": 607,
+        "bottom": 889
+      }
+    },
+    {
+      "text": "CHOW MEIN-1/2\nCHOW MEIN-1/2\nCKN EGG ROLL\nKUNG PAO CKN",
+      "lines": [
+        {
+          "text": "CHOW MEIN-1/2",
+          "boundingBox": {
+            "left": 422,
+            "top": 719,
+            "right": 725,
+            "bottom": 762
+          },
+          "confidence": 0.7945964
+        },
+        {
+          "text": "CHOW MEIN-1/2",
+          "boundingBox": {
+            "left": 421,
+            "top": 751,
+            "right": 722,
+            "bottom": 794
+          },
+          "confidence": 0.8404948
+        },
+        {
+          "text": "CKN EGG ROLL",
+          "boundingBox": {
+            "left": 419,
+            "top": 789,
+            "right": 694,
+            "bottom": 829
+          },
+          "confidence": 0.8390625
+        },
+        {
+          "text": "KUNG PAO CKN",
+          "boundingBox": {
+            "left": 442,
+            "top": 822,
+            "right": 701,
+            "bottom": 860
+          },
+          "confidence": 0.76054686
+        }
+      ],
+      "boundingBox": {
+        "left": 418,
+        "top": 719,
+        "right": 725,
+        "bottom": 862
+      }
+    },
+    {
+      "text": "1 XTRA ENTREE",
+      "lines": [
+        {
+          "text": "1 XTRA ENTREE",
+          "boundingBox": {
+            "left": 299,
+            "top": 903,
+            "right": 609,
+            "bottom": 948
+          },
+          "confidence": 0.79296875
+        }
+      ],
+      "boundingBox": {
+        "left": 299,
+        "top": 903,
+        "right": 609,
+        "bottom": 948
+      }
+    },
+    {
+      "text": "GRILLTERIYAKI CKN",
+      "lines": [
+        {
+          "text": "GRILLTERIYAKI CKN",
+          "boundingBox": {
+            "left": 417,
+            "top": 879,
+            "right": 817,
+            "bottom": 923
+          },
+          "confidence": 0.7685547
+        }
+      ],
+      "boundingBox": {
+        "left": 417,
+        "top": 879,
+        "right": 817,
+        "bottom": 923
+      }
+    },
+    {
+      "text": "GÉIL TERIYAKI CKN\n1 PEPSI 20 ỞE\n1 PEPSI 20 0Z",
+      "lines": [
+        {
+          "text": "GÉIL TERIYAKI CKN",
+          "boundingBox": {
+            "left": 410,
+            "top": 937,
+            "right": 811,
+            "bottom": 988
+          },
+          "confidence": 0.71458334
+        },
+        {
+          "text": "1 PEPSI 20 ỞE",
+          "boundingBox": {
+            "left": 308,
+            "top": 960,
+            "right": 598,
+            "bottom": 1007
+          },
+          "confidence": 0.6550781
+        },
+        {
+          "text": "1 PEPSI 20 0Z",
+          "boundingBox": {
+            "left": 287,
+            "top": 995,
+            "right": 589,
+            "bottom": 1035
+          },
+          "confidence": 0.8238281
+        }
+      ],
+      "boundingBox": {
+        "left": 286,
+        "top": 933,
+        "right": 811,
+        "bottom": 1048
+      }
+    },
+    {
+      "text": "SubTotal",
+      "lines": [
+        {
+          "text": "SubTotal",
+          "boundingBox": {
+            "left": 576,
+            "top": 1069,
+            "right": 762,
+            "bottom": 1111
+          },
+          "confidence": 0.8364258
+        }
+      ],
+      "boundingBox": {
+        "left": 576,
+        "top": 1069,
+        "right": 762,
+        "bottom": 1111
+      }
+    },
+    {
+      "text": "TAX",
+      "lines": [
+        {
+          "text": "TAX",
+          "boundingBox": {
+            "left": 582,
+            "top": 1112,
+            "right": 650,
+            "bottom": 1144
+          },
+          "confidence": 0.75
+        }
+      ],
+      "boundingBox": {
+        "left": 582,
+        "top": 1112,
+        "right": 650,
+        "bottom": 1144
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 577,
+            "top": 1148,
+            "right": 684,
+            "bottom": 1211
+          },
+          "confidence": 0.84453124
+        }
+      ],
+      "boundingBox": {
+        "left": 577,
+        "top": 1148,
+        "right": 684,
+        "bottom": 1211
+      }
+    },
+    {
+      "text": "Visa",
+      "lines": [
+        {
+          "text": "Visa",
+          "boundingBox": {
+            "left": 565,
+            "top": 1296,
+            "right": 662,
+            "bottom": 1361
+          },
+          "confidence": 0.828125
+        }
+      ],
+      "boundingBox": {
+        "left": 565,
+        "top": 1296,
+        "right": 662,
+        "bottom": 1361
+      }
+    },
+    {
+      "text": "Server: Cheryfia M",
+      "lines": [
+        {
+          "text": "Server: Cheryfia M",
+          "boundingBox": {
+            "left": 783,
+            "top": 444,
+            "right": 1204,
+            "bottom": 511
+          },
+          "confidence": 0.8847656
+        }
+      ],
+      "boundingBox": {
+        "left": 783,
+        "top": 444,
+        "right": 1204,
+        "bottom": 511
+      }
+    },
+    {
+      "text": "Acct:XXXXXXXX0103\nAuthCode:02776A",
+      "lines": [
+        {
+          "text": "Acct:XXXXXXXX0103",
+          "boundingBox": {
+            "left": 563,
+            "top": 1369,
+            "right": 976,
+            "bottom": 1409
+          },
+          "confidence": 0.75482535
+        },
+        {
+          "text": "AuthCode:02776A",
+          "boundingBox": {
+            "left": 561,
+            "top": 1403,
+            "right": 924,
+            "bottom": 1441
+          },
+          "confidence": 0.8385417
+        }
+      ],
+      "boundingBox": {
+        "left": 561,
+        "top": 1369,
+        "right": 976,
+        "bottom": 1441
+      }
+    },
+    {
+      "text": "X***",
+      "lines": [
+        {
+          "text": "X***",
+          "boundingBox": {
+            "left": 825,
+            "top": 1483,
+            "right": 905,
+            "bottom": 1507
+          },
+          "confidence": 0.41601562
+        }
+      ],
+      "boundingBox": {
+        "left": 825,
+        "top": 1483,
+        "right": 905,
+        "bottom": 1507
+      }
+    },
+    {
+      "text": "-TO GO-",
+      "lines": [
+        {
+          "text": "-TO GO-",
+          "boundingBox": {
+            "left": 1051,
+            "top": 425,
+            "right": 1209,
+            "bottom": 472
+          },
+          "confidence": 0.6744792
+        }
+      ],
+      "boundingBox": {
+        "left": 1051,
+        "top": 425,
+        "right": 1209,
+        "bottom": 472
+      }
+    },
+    {
+      "text": "FREE ENTREE ITEM!",
+      "lines": [
+        {
+          "text": "FREE ENTREE ITEM!",
+          "boundingBox": {
+            "left": 470,
+            "top": 1509,
+            "right": 884,
+            "bottom": 1595
+          },
+          "confidence": 0.6450521
+        }
+      ],
+      "boundingBox": {
+        "left": 470,
+        "top": 1509,
+        "right": 884,
+        "bottom": 1595
+      }
+    },
+    {
+      "text": "9.10",
+      "lines": [
+        {
+          "text": "9.10",
+          "boundingBox": {
+            "left": 1092,
+            "top": 543,
+            "right": 1181,
+            "bottom": 573
+          },
+          "confidence": 0.78515625
+        }
+      ],
+      "boundingBox": {
+        "left": 1092,
+        "top": 543,
+        "right": 1181,
+        "bottom": 573
+      }
+    },
+    {
+      "text": "9.10",
+      "lines": [
+        {
+          "text": "9.10",
+          "boundingBox": {
+            "left": 1063,
+            "top": 710,
+            "right": 1149,
+            "bottom": 739
+          },
+          "confidence": 0.81640625
+        }
+      ],
+      "boundingBox": {
+        "left": 1063,
+        "top": 710,
+        "right": 1149,
+        "bottom": 739
+      }
+    },
+    {
+      "text": "1,50",
+      "lines": [
+        {
+          "text": "1,50",
+          "boundingBox": {
+            "left": 1039,
+            "top": 872,
+            "right": 1123,
+            "bottom": 902
+          },
+          "confidence": 0.7734375
+        }
+      ],
+      "boundingBox": {
+        "left": 1039,
+        "top": 872,
+        "right": 1123,
+        "bottom": 902
+      }
+    },
+    {
+      "text": "1.50",
+      "lines": [
+        {
+          "text": "1.50",
+          "boundingBox": {
+            "left": 1032,
+            "top": 935,
+            "right": 1114,
+            "bottom": 966
+          },
+          "confidence": 0.80859375
+        }
+      ],
+      "boundingBox": {
+        "left": 1032,
+        "top": 935,
+        "right": 1114,
+        "bottom": 966
+      }
+    },
+    {
+      "text": "2.00",
+      "lines": [
+        {
+          "text": "2.00",
+          "boundingBox": {
+            "left": 1034,
+            "top": 990,
+            "right": 1119,
+            "bottom": 1027
+          },
+          "confidence": 0.61816406
+        }
+      ],
+      "boundingBox": {
+        "left": 1034,
+        "top": 990,
+        "right": 1119,
+        "bottom": 1027
+      }
+    },
+    {
+      "text": "2.00",
+      "lines": [
+        {
+          "text": "2.00",
+          "boundingBox": {
+            "left": 1040,
+            "top": 1018,
+            "right": 1128,
+            "bottom": 1050
+          },
+          "confidence": 0.81347656
+        }
+      ],
+      "boundingBox": {
+        "left": 1040,
+        "top": 1018,
+        "right": 1128,
+        "bottom": 1050
+      }
+    },
+    {
+      "text": "25.20\n2.24",
+      "lines": [
+        {
+          "text": "25.20",
+          "boundingBox": {
+            "left": 1024,
+            "top": 1085,
+            "right": 1136,
+            "bottom": 1117
+          },
+          "confidence": 0.9140625
+        },
+        {
+          "text": "2.24",
+          "boundingBox": {
+            "left": 1047,
+            "top": 1119,
+            "right": 1136,
+            "bottom": 1164
+          },
+          "confidence": 0.8105469
+        }
+      ],
+      "boundingBox": {
+        "left": 1024,
+        "top": 1084,
+        "right": 1136,
+        "bottom": 1164
+      }
+    },
+    {
+      "text": "27.44",
+      "lines": [
+        {
+          "text": "27.44",
+          "boundingBox": {
+            "left": 1023,
+            "top": 1161,
+            "right": 1137,
+            "bottom": 1219
+          },
+          "confidence": 0.8804687
+        }
+      ],
+      "boundingBox": {
+        "left": 1023,
+        "top": 1161,
+        "right": 1137,
+        "bottom": 1219
+      }
+    },
+    {
+      "text": "27,44",
+      "lines": [
+        {
+          "text": "27,44",
+          "boundingBox": {
+            "left": 1022,
+            "top": 1304,
+            "right": 1135,
+            "bottom": 1364
+          },
+          "confidence": 0.8140625
+        }
+      ],
+      "boundingBox": {
+        "left": 1022,
+        "top": 1304,
+        "right": 1135,
+        "bottom": 1364
+      }
+    }
+  ]
+}

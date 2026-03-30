@@ -1,0 +1,470 @@
+{
+  "fullText": "Server:\nCashier:\n143/2\nGuests: 1\nRepr.int #: 1\nWhiskey\nSubtota i\nTax\nTotal\nBar Louie Huntsville\n365 The Bridge St.,Suitel\nHuntSv111e, AL, 35806\nCASH\nChange\n07/03/2015\nThank you for visiting us!\nAsk us abaut hosting\nyour party or private event\nat Bar Loute Huntsville!\nEat. Drink, Be Happy!\nhuntsville@barlouieamerica.\nCheck Closed\n4:42 PM\n20111\n6.25\n6.25\n1.31\n7.56\n10.0O\n244",
+  "blocks": [
+    {
+      "text": "Server:\nCashier:\n143/2\nGuests: 1\nRepr.int #: 1",
+      "lines": [
+        {
+          "text": "Server:",
+          "boundingBox": {
+            "left": 106,
+            "top": 450,
+            "right": 321,
+            "bottom": 495
+          },
+          "confidence": 0.86328125
+        },
+        {
+          "text": "Cashier:",
+          "boundingBox": {
+            "left": 85,
+            "top": 496,
+            "right": 339,
+            "bottom": 533
+          },
+          "confidence": 0.83984375
+        },
+        {
+          "text": "143/2",
+          "boundingBox": {
+            "left": 91,
+            "top": 539,
+            "right": 247,
+            "bottom": 580
+          },
+          "confidence": 0.890625
+        },
+        {
+          "text": "Guests: 1",
+          "boundingBox": {
+            "left": 84,
+            "top": 585,
+            "right": 390,
+            "bottom": 626
+          },
+          "confidence": 0.82177734
+        },
+        {
+          "text": "Repr.int #: 1",
+          "boundingBox": {
+            "left": 84,
+            "top": 632,
+            "right": 478,
+            "bottom": 666
+          },
+          "confidence": 0.76740056
+        }
+      ],
+      "boundingBox": {
+        "left": 83,
+        "top": 450,
+        "right": 479,
+        "bottom": 670
+      }
+    },
+    {
+      "text": "Whiskey",
+      "lines": [
+        {
+          "text": "Whiskey",
+          "boundingBox": {
+            "left": 85,
+            "top": 720,
+            "right": 316,
+            "bottom": 753
+          },
+          "confidence": 0.83258927
+        }
+      ],
+      "boundingBox": {
+        "left": 85,
+        "top": 720,
+        "right": 316,
+        "bottom": 753
+      }
+    },
+    {
+      "text": "Subtota i\nTax",
+      "lines": [
+        {
+          "text": "Subtota i",
+          "boundingBox": {
+            "left": 107,
+            "top": 802,
+            "right": 340,
+            "bottom": 848
+          },
+          "confidence": 0.8198242
+        },
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 88,
+            "top": 845,
+            "right": 180,
+            "bottom": 883
+          },
+          "confidence": 0.81640625
+        }
+      ],
+      "boundingBox": {
+        "left": 87,
+        "top": 796,
+        "right": 340,
+        "bottom": 883
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 87,
+            "top": 936,
+            "right": 238,
+            "bottom": 969
+          },
+          "confidence": 0.8453125
+        }
+      ],
+      "boundingBox": {
+        "left": 87,
+        "top": 936,
+        "right": 238,
+        "bottom": 969
+      }
+    },
+    {
+      "text": "Bar Louie Huntsville\n365 The Bridge St.,Suitel\nHuntSv111e, AL, 35806",
+      "lines": [
+        {
+          "text": "Bar Louie Huntsville",
+          "boundingBox": {
+            "left": 454,
+            "top": 280,
+            "right": 1146,
+            "bottom": 314
+          },
+          "confidence": 0.71766496
+        },
+        {
+          "text": "365 The Bridge St.,Suitel",
+          "boundingBox": {
+            "left": 354,
+            "top": 323,
+            "right": 1207,
+            "bottom": 361
+          },
+          "confidence": 0.75071025
+        },
+        {
+          "text": "HuntSv111e, AL, 35806",
+          "boundingBox": {
+            "left": 443,
+            "top": 364,
+            "right": 1146,
+            "bottom": 404
+          },
+          "confidence": 0.6095806
+        }
+      ],
+      "boundingBox": {
+        "left": 354,
+        "top": 280,
+        "right": 1207,
+        "bottom": 404
+      }
+    },
+    {
+      "text": "CASH",
+      "lines": [
+        {
+          "text": "CASH",
+          "boundingBox": {
+            "left": 84,
+            "top": 1026,
+            "right": 212,
+            "bottom": 1056
+          },
+          "confidence": 0.8564453
+        }
+      ],
+      "boundingBox": {
+        "left": 84,
+        "top": 1026,
+        "right": 212,
+        "bottom": 1056
+      }
+    },
+    {
+      "text": "Change",
+      "lines": [
+        {
+          "text": "Change",
+          "boundingBox": {
+            "left": 111,
+            "top": 1061,
+            "right": 488,
+            "bottom": 1109
+          },
+          "confidence": 0.6542969
+        }
+      ],
+      "boundingBox": {
+        "left": 111,
+        "top": 1061,
+        "right": 488,
+        "bottom": 1109
+      }
+    },
+    {
+      "text": "07/03/2015",
+      "lines": [
+        {
+          "text": "07/03/2015",
+          "boundingBox": {
+            "left": 1184,
+            "top": 454,
+            "right": 1528,
+            "bottom": 490
+          },
+          "confidence": 0.8296875
+        }
+      ],
+      "boundingBox": {
+        "left": 1184,
+        "top": 454,
+        "right": 1528,
+        "bottom": 490
+      }
+    },
+    {
+      "text": "Thank you for visiting us!\nAsk us abaut hosting\nyour party or private event\nat Bar Loute Huntsville!\nEat. Drink, Be Happy!\nhuntsville@barlouieamerica.",
+      "lines": [
+        {
+          "text": "Thank you for visiting us!",
+          "boundingBox": {
+            "left": 354,
+            "top": 1150,
+            "right": 1236,
+            "bottom": 1194
+          },
+          "confidence": 0.8057528
+        },
+        {
+          "text": "Ask us abaut hosting",
+          "boundingBox": {
+            "left": 454,
+            "top": 1200,
+            "right": 1142,
+            "bottom": 1234
+          },
+          "confidence": 0.7913603
+        },
+        {
+          "text": "your party or private event",
+          "boundingBox": {
+            "left": 338,
+            "top": 1240,
+            "right": 1240,
+            "bottom": 1282
+          },
+          "confidence": 0.80723506
+        },
+        {
+          "text": "at Bar Loute Huntsville!",
+          "boundingBox": {
+            "left": 386,
+            "top": 1286,
+            "right": 1202,
+            "bottom": 1320
+          },
+          "confidence": 0.7829241
+        },
+        {
+          "text": "Eat. Drink, Be Happy!",
+          "boundingBox": {
+            "left": 420,
+            "top": 1330,
+            "right": 1132,
+            "bottom": 1366
+          },
+          "confidence": 0.77387154
+        },
+        {
+          "text": "huntsville@barlouieamerica.",
+          "boundingBox": {
+            "left": 298,
+            "top": 1370,
+            "right": 1207,
+            "bottom": 1414
+          },
+          "confidence": 0.7427662
+        }
+      ],
+      "boundingBox": {
+        "left": 298,
+        "top": 1150,
+        "right": 1240,
+        "bottom": 1414
+      }
+    },
+    {
+      "text": "Check Closed",
+      "lines": [
+        {
+          "text": "Check Closed",
+          "boundingBox": {
+            "left": 589,
+            "top": 1461,
+            "right": 1003,
+            "bottom": 1495
+          },
+          "confidence": 0.8259943
+        }
+      ],
+      "boundingBox": {
+        "left": 589,
+        "top": 1461,
+        "right": 1003,
+        "bottom": 1495
+      }
+    },
+    {
+      "text": "4:42 PM\n20111",
+      "lines": [
+        {
+          "text": "4:42 PM",
+          "boundingBox": {
+            "left": 1288,
+            "top": 542,
+            "right": 1529,
+            "bottom": 574
+          },
+          "confidence": 0.8561198
+        },
+        {
+          "text": "20111",
+          "boundingBox": {
+            "left": 1358,
+            "top": 582,
+            "right": 1518,
+            "bottom": 617
+          },
+          "confidence": 0.81328124
+        }
+      ],
+      "boundingBox": {
+        "left": 1288,
+        "top": 540,
+        "right": 1528,
+        "bottom": 617
+      }
+    },
+    {
+      "text": "6.25",
+      "lines": [
+        {
+          "text": "6.25",
+          "boundingBox": {
+            "left": 1394,
+            "top": 717,
+            "right": 1528,
+            "bottom": 748
+          },
+          "confidence": 0.8017578
+        }
+      ],
+      "boundingBox": {
+        "left": 1394,
+        "top": 717,
+        "right": 1528,
+        "bottom": 748
+      }
+    },
+    {
+      "text": "6.25\n1.31",
+      "lines": [
+        {
+          "text": "6.25",
+          "boundingBox": {
+            "left": 1394,
+            "top": 800,
+            "right": 1524,
+            "bottom": 837
+          },
+          "confidence": 0.7832031
+        },
+        {
+          "text": "1.31",
+          "boundingBox": {
+            "left": 1411,
+            "top": 841,
+            "right": 1532,
+            "bottom": 881
+          },
+          "confidence": 0.82714844
+        }
+      ],
+      "boundingBox": {
+        "left": 1394,
+        "top": 800,
+        "right": 1532,
+        "bottom": 882
+      }
+    },
+    {
+      "text": "7.56",
+      "lines": [
+        {
+          "text": "7.56",
+          "boundingBox": {
+            "left": 1393,
+            "top": 931,
+            "right": 1526,
+            "bottom": 966
+          },
+          "confidence": 0.8232422
+        }
+      ],
+      "boundingBox": {
+        "left": 1393,
+        "top": 931,
+        "right": 1526,
+        "bottom": 966
+      }
+    },
+    {
+      "text": "10.0O\n244",
+      "lines": [
+        {
+          "text": "10.0O",
+          "boundingBox": {
+            "left": 1362,
+            "top": 1024,
+            "right": 1528,
+            "bottom": 1054
+          },
+          "confidence": 0.634375
+        },
+        {
+          "text": "244",
+          "boundingBox": {
+            "left": 1258,
+            "top": 1058,
+            "right": 1539,
+            "bottom": 1101
+          },
+          "confidence": 0.6822917
+        }
+      ],
+      "boundingBox": {
+        "left": 1258,
+        "top": 1022,
+        "right": 1539,
+        "bottom": 1101
+      }
+    }
+  ]
+}

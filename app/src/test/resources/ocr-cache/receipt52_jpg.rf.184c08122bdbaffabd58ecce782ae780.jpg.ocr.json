@@ -1,0 +1,612 @@
+{
+  "fullText": "HOLLYuooD CAFE\nheck: 332114 Table: 42\nOvers: 2 Person#: 1\nate: 09/08/2017 Time: 12:45:41 PM\nSODA\nerver #: 346 Opened: 12:13:00 PM\nCHEESE STEAK\n+AMERICAN CHS\n+FRD ONION\nChix Cheesesteak\nSUB-TOTAL\nAM Dinting Rm\nFood Tax\nLiquor Tax\n& SPORTS, BAR\nOther Taxes\nTotal Tax\n&\nTOTAL\n2.49\nTHANK YOU !\n10.49\n1.00\n0,75\n10.49\n25.22\n0.00\n1.74\n0.00\n1.74\n26.96",
+  "blocks": [
+    {
+      "text": "HOLLYuooD CAFE",
+      "lines": [
+        {
+          "text": "HOLLYuooD CAFE",
+          "boundingBox": {
+            "left": 266,
+            "top": 389,
+            "right": 750,
+            "bottom": 417
+          },
+          "confidence": 0.5973558
+        }
+      ],
+      "boundingBox": {
+        "left": 266,
+        "top": 389,
+        "right": 750,
+        "bottom": 417
+      }
+    },
+    {
+      "text": "heck: 332114 Table: 42\nOvers: 2 Person#: 1",
+      "lines": [
+        {
+          "text": "heck: 332114 Table: 42",
+          "boundingBox": {
+            "left": 166,
+            "top": 579,
+            "right": 740,
+            "bottom": 627
+          },
+          "confidence": 0.88898027
+        },
+        {
+          "text": "Overs: 2 Person#: 1",
+          "boundingBox": {
+            "left": 162,
+            "top": 619,
+            "right": 664,
+            "bottom": 669
+          },
+          "confidence": 0.8391113
+        }
+      ],
+      "boundingBox": {
+        "left": 161,
+        "top": 576,
+        "right": 741,
+        "bottom": 669
+      }
+    },
+    {
+      "text": "ate: 09/08/2017 Time: 12:45:41 PM",
+      "lines": [
+        {
+          "text": "ate: 09/08/2017 Time: 12:45:41 PM",
+          "boundingBox": {
+            "left": 196,
+            "top": 489,
+            "right": 1009,
+            "bottom": 621
+          },
+          "confidence": 0.8383621
+        }
+      ],
+      "boundingBox": {
+        "left": 196,
+        "top": 489,
+        "right": 1009,
+        "bottom": 621
+      }
+    },
+    {
+      "text": "SODA",
+      "lines": [
+        {
+          "text": "SODA",
+          "boundingBox": {
+            "left": 314,
+            "top": 762,
+            "right": 412,
+            "bottom": 798
+          },
+          "confidence": 0.7392578
+        }
+      ],
+      "boundingBox": {
+        "left": 314,
+        "top": 762,
+        "right": 412,
+        "bottom": 798
+      }
+    },
+    {
+      "text": "erver #: 346 Opened: 12:13:00 PM",
+      "lines": [
+        {
+          "text": "erver #: 346 Opened: 12:13:00 PM",
+          "boundingBox": {
+            "left": 197,
+            "top": 633,
+            "right": 986,
+            "bottom": 725
+          },
+          "confidence": 0.8188657
+        }
+      ],
+      "boundingBox": {
+        "left": 197,
+        "top": 633,
+        "right": 986,
+        "bottom": 725
+      }
+    },
+    {
+      "text": "CHEESE STEAK",
+      "lines": [
+        {
+          "text": "CHEESE STEAK",
+          "boundingBox": {
+            "left": 309,
+            "top": 801,
+            "right": 614,
+            "bottom": 843
+          },
+          "confidence": 0.87322444
+        }
+      ],
+      "boundingBox": {
+        "left": 309,
+        "top": 801,
+        "right": 614,
+        "bottom": 843
+      }
+    },
+    {
+      "text": "+AMERICAN CHS\n+FRD ONION\nChix Cheesesteak",
+      "lines": [
+        {
+          "text": "+AMERICAN CHS",
+          "boundingBox": {
+            "left": 359,
+            "top": 843,
+            "right": 696,
+            "bottom": 891
+          },
+          "confidence": 0.8730469
+        },
+        {
+          "text": "+FRD ONION",
+          "boundingBox": {
+            "left": 356,
+            "top": 895,
+            "right": 612,
+            "bottom": 937
+          },
+          "confidence": 0.79730904
+        },
+        {
+          "text": "Chix Cheesesteak",
+          "boundingBox": {
+            "left": 302,
+            "top": 943,
+            "right": 712,
+            "bottom": 987
+          },
+          "confidence": 0.8875
+        }
+      ],
+      "boundingBox": {
+        "left": 300,
+        "top": 842,
+        "right": 712,
+        "bottom": 988
+      }
+    },
+    {
+      "text": "SUB-TOTAL",
+      "lines": [
+        {
+          "text": "SUB-TOTAL",
+          "boundingBox": {
+            "left": 348,
+            "top": 1045,
+            "right": 580,
+            "bottom": 1087
+          },
+          "confidence": 0.7717014
+        }
+      ],
+      "boundingBox": {
+        "left": 348,
+        "top": 1045,
+        "right": 580,
+        "bottom": 1087
+      }
+    },
+    {
+      "text": "AM Dinting Rm",
+      "lines": [
+        {
+          "text": "AM Dinting Rm",
+          "boundingBox": {
+            "left": 601,
+            "top": 430,
+            "right": 874,
+            "bottom": 464
+          },
+          "confidence": 0.7556818
+        }
+      ],
+      "boundingBox": {
+        "left": 601,
+        "top": 430,
+        "right": 874,
+        "bottom": 464
+      }
+    },
+    {
+      "text": "Food Tax",
+      "lines": [
+        {
+          "text": "Food Tax",
+          "boundingBox": {
+            "left": 347,
+            "top": 1100,
+            "right": 556,
+            "bottom": 1139
+          },
+          "confidence": 0.8426339
+        }
+      ],
+      "boundingBox": {
+        "left": 347,
+        "top": 1100,
+        "right": 556,
+        "bottom": 1139
+      }
+    },
+    {
+      "text": "Liquor Tax",
+      "lines": [
+        {
+          "text": "Liquor Tax",
+          "boundingBox": {
+            "left": 344,
+            "top": 1148,
+            "right": 606,
+            "bottom": 1197
+          },
+          "confidence": 0.87022567
+        }
+      ],
+      "boundingBox": {
+        "left": 344,
+        "top": 1148,
+        "right": 606,
+        "bottom": 1197
+      }
+    },
+    {
+      "text": "& SPORTS, BAR",
+      "lines": [
+        {
+          "text": "& SPORTS, BAR",
+          "boundingBox": {
+            "left": 780,
+            "top": 297,
+            "right": 1206,
+            "bottom": 429
+          },
+          "confidence": 0.63139206
+        }
+      ],
+      "boundingBox": {
+        "left": 780,
+        "top": 297,
+        "right": 1206,
+        "bottom": 429
+      }
+    },
+    {
+      "text": "Other Taxes",
+      "lines": [
+        {
+          "text": "Other Taxes",
+          "boundingBox": {
+            "left": 341,
+            "top": 1205,
+            "right": 635,
+            "bottom": 1247
+          },
+          "confidence": 0.840625
+        }
+      ],
+      "boundingBox": {
+        "left": 341,
+        "top": 1205,
+        "right": 635,
+        "bottom": 1247
+      }
+    },
+    {
+      "text": "Total Tax",
+      "lines": [
+        {
+          "text": "Total Tax",
+          "boundingBox": {
+            "left": 359,
+            "top": 1257,
+            "right": 581,
+            "bottom": 1307
+          },
+          "confidence": 0.80078125
+        }
+      ],
+      "boundingBox": {
+        "left": 359,
+        "top": 1257,
+        "right": 581,
+        "bottom": 1307
+      }
+    },
+    {
+      "text": "&",
+      "lines": [
+        {
+          "text": "&",
+          "boundingBox": {
+            "left": 795,
+            "top": 394,
+            "right": 821,
+            "bottom": 417
+          },
+          "confidence": 0.35546875
+        }
+      ],
+      "boundingBox": {
+        "left": 795,
+        "top": 394,
+        "right": 821,
+        "bottom": 417
+      }
+    },
+    {
+      "text": "TOTAL",
+      "lines": [
+        {
+          "text": "TOTAL",
+          "boundingBox": {
+            "left": 300,
+            "top": 1312,
+            "right": 572,
+            "bottom": 1410
+          },
+          "confidence": 0.5046875
+        }
+      ],
+      "boundingBox": {
+        "left": 300,
+        "top": 1312,
+        "right": 572,
+        "bottom": 1410
+      }
+    },
+    {
+      "text": "2.49",
+      "lines": [
+        {
+          "text": "2.49",
+          "boundingBox": {
+            "left": 1036,
+            "top": 710,
+            "right": 1140,
+            "bottom": 750
+          },
+          "confidence": 0.8691406
+        }
+      ],
+      "boundingBox": {
+        "left": 1036,
+        "top": 710,
+        "right": 1140,
+        "bottom": 750
+      }
+    },
+    {
+      "text": "THANK YOU !",
+      "lines": [
+        {
+          "text": "THANK YOU !",
+          "boundingBox": {
+            "left": 526,
+            "top": 1519,
+            "right": 956,
+            "bottom": 1583
+          },
+          "confidence": 0.74435765
+        }
+      ],
+      "boundingBox": {
+        "left": 526,
+        "top": 1519,
+        "right": 956,
+        "bottom": 1583
+      }
+    },
+    {
+      "text": "10.49",
+      "lines": [
+        {
+          "text": "10.49",
+          "boundingBox": {
+            "left": 1016,
+            "top": 758,
+            "right": 1146,
+            "bottom": 800
+          },
+          "confidence": 0.8414062
+        }
+      ],
+      "boundingBox": {
+        "left": 1016,
+        "top": 758,
+        "right": 1146,
+        "bottom": 800
+      }
+    },
+    {
+      "text": "1.00",
+      "lines": [
+        {
+          "text": "1.00",
+          "boundingBox": {
+            "left": 1047,
+            "top": 803,
+            "right": 1151,
+            "bottom": 848
+          },
+          "confidence": 0.8144531
+        }
+      ],
+      "boundingBox": {
+        "left": 1047,
+        "top": 803,
+        "right": 1151,
+        "bottom": 848
+      }
+    },
+    {
+      "text": "0,75\n10.49",
+      "lines": [
+        {
+          "text": "0,75",
+          "boundingBox": {
+            "left": 1048,
+            "top": 856,
+            "right": 1160,
+            "bottom": 908
+          },
+          "confidence": 0.68652344
+        },
+        {
+          "text": "10.49",
+          "boundingBox": {
+            "left": 1028,
+            "top": 902,
+            "right": 1165,
+            "bottom": 955
+          },
+          "confidence": 0.85234374
+        }
+      ],
+      "boundingBox": {
+        "left": 1027,
+        "top": 853,
+        "right": 1165,
+        "bottom": 955
+      }
+    },
+    {
+      "text": "25.22",
+      "lines": [
+        {
+          "text": "25.22",
+          "boundingBox": {
+            "left": 1034,
+            "top": 1014,
+            "right": 1179,
+            "bottom": 1062
+          },
+          "confidence": 0.8890625
+        }
+      ],
+      "boundingBox": {
+        "left": 1034,
+        "top": 1014,
+        "right": 1179,
+        "bottom": 1062
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 934,
+            "top": 1196,
+            "right": 1048,
+            "bottom": 1238
+          },
+          "confidence": 0.8466797
+        }
+      ],
+      "boundingBox": {
+        "left": 934,
+        "top": 1196,
+        "right": 1048,
+        "bottom": 1238
+      }
+    },
+    {
+      "text": "1.74",
+      "lines": [
+        {
+          "text": "1.74",
+          "boundingBox": {
+            "left": 1074,
+            "top": 1074,
+            "right": 1188,
+            "bottom": 1116
+          },
+          "confidence": 0.8613281
+        }
+      ],
+      "boundingBox": {
+        "left": 1074,
+        "top": 1074,
+        "right": 1188,
+        "bottom": 1116
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 1074,
+            "top": 1130,
+            "right": 1194,
+            "bottom": 1174
+          },
+          "confidence": 0.8544922
+        }
+      ],
+      "boundingBox": {
+        "left": 1074,
+        "top": 1130,
+        "right": 1194,
+        "bottom": 1174
+      }
+    },
+    {
+      "text": "1.74",
+      "lines": [
+        {
+          "text": "1.74",
+          "boundingBox": {
+            "left": 1091,
+            "top": 1247,
+            "right": 1207,
+            "bottom": 1294
+          },
+          "confidence": 0.84765625
+        }
+      ],
+      "boundingBox": {
+        "left": 1091,
+        "top": 1247,
+        "right": 1207,
+        "bottom": 1294
+      }
+    },
+    {
+      "text": "26.96",
+      "lines": [
+        {
+          "text": "26.96",
+          "boundingBox": {
+            "left": 1150,
+            "top": 1306,
+            "right": 1494,
+            "bottom": 1416
+          },
+          "confidence": 0.82734376
+        }
+      ],
+      "boundingBox": {
+        "left": 1150,
+        "top": 1306,
+        "right": 1494,
+        "bottom": 1416
+      }
+    }
+  ]
+}

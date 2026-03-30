@@ -1,0 +1,526 @@
+{
+  "fullText": "Angelo's Pizza Restaurant\nServer: Melina\n12247 Sheridan St\nCooper Cityb, FL 33026\n(954) 893-2000\nOrder #: 4876\nTable: 1\n1 Sprite\n1 Chicken Caesar Salad\n1 Chefs Special\n> Chefs Special\nSoup of Day\nTOTAL:\nBar Subtotal:\nFood Subtotal:\nTax 1:\nStation: 2\n» Ticket :56 <<\n7/10/2017 9:32:06 PM\nTHANK YOU!\nDine In\nGuests: 4\n2.55\n8.95\n19.95\n0.00\n31.45\n1.89\n$3.34",
+  "blocks": [
+    {
+      "text": "Angelo's Pizza Restaurant",
+      "lines": [
+        {
+          "text": "Angelo's Pizza Restaurant",
+          "boundingBox": {
+            "left": 440,
+            "top": 153,
+            "right": 978,
+            "bottom": 237
+          },
+          "confidence": 0.8257473
+        }
+      ],
+      "boundingBox": {
+        "left": 440,
+        "top": 153,
+        "right": 978,
+        "bottom": 237
+      }
+    },
+    {
+      "text": "Server: Melina",
+      "lines": [
+        {
+          "text": "Server: Melina",
+          "boundingBox": {
+            "left": 297,
+            "top": 391,
+            "right": 592,
+            "bottom": 427
+          },
+          "confidence": 0.85997593
+        }
+      ],
+      "boundingBox": {
+        "left": 297,
+        "top": 391,
+        "right": 592,
+        "bottom": 427
+      }
+    },
+    {
+      "text": "12247 Sheridan St\nCooper Cityb, FL 33026\n(954) 893-2000",
+      "lines": [
+        {
+          "text": "12247 Sheridan St",
+          "boundingBox": {
+            "left": 532,
+            "top": 219,
+            "right": 888,
+            "bottom": 261
+          },
+          "confidence": 0.89973956
+        },
+        {
+          "text": "Cooper Cityb, FL 33026",
+          "boundingBox": {
+            "left": 485,
+            "top": 259,
+            "right": 959,
+            "bottom": 309
+          },
+          "confidence": 0.9031661
+        },
+        {
+          "text": "(954) 893-2000",
+          "boundingBox": {
+            "left": 576,
+            "top": 302,
+            "right": 872,
+            "bottom": 345
+          },
+          "confidence": 0.9140625
+        }
+      ],
+      "boundingBox": {
+        "left": 484,
+        "top": 215,
+        "right": 960,
+        "bottom": 348
+      }
+    },
+    {
+      "text": "Order #: 4876\nTable: 1",
+      "lines": [
+        {
+          "text": "Order #: 4876",
+          "boundingBox": {
+            "left": 297,
+            "top": 473,
+            "right": 573,
+            "bottom": 507
+          },
+          "confidence": 0.82421875
+        },
+        {
+          "text": "Table: 1",
+          "boundingBox": {
+            "left": 300,
+            "top": 516,
+            "right": 463,
+            "bottom": 547
+          },
+          "confidence": 0.84095985
+        }
+      ],
+      "boundingBox": {
+        "left": 297,
+        "top": 473,
+        "right": 573,
+        "bottom": 547
+      }
+    },
+    {
+      "text": "1 Sprite",
+      "lines": [
+        {
+          "text": "1 Sprite",
+          "boundingBox": {
+            "left": 318,
+            "top": 592,
+            "right": 471,
+            "bottom": 633
+          },
+          "confidence": 0.84654015
+        }
+      ],
+      "boundingBox": {
+        "left": 318,
+        "top": 592,
+        "right": 471,
+        "bottom": 633
+      }
+    },
+    {
+      "text": "1 Chicken Caesar Salad\n1 Chefs Special",
+      "lines": [
+        {
+          "text": "1 Chicken Caesar Salad",
+          "boundingBox": {
+            "left": 318,
+            "top": 625,
+            "right": 770,
+            "bottom": 672
+          },
+          "confidence": 0.87417763
+        },
+        {
+          "text": "1 Chefs Special",
+          "boundingBox": {
+            "left": 320,
+            "top": 667,
+            "right": 610,
+            "bottom": 713
+          },
+          "confidence": 0.8488582
+        }
+      ],
+      "boundingBox": {
+        "left": 318,
+        "top": 625,
+        "right": 771,
+        "bottom": 714
+      }
+    },
+    {
+      "text": "> Chefs Special\nSoup of Day",
+      "lines": [
+        {
+          "text": "> Chefs Special",
+          "boundingBox": {
+            "left": 348,
+            "top": 711,
+            "right": 658,
+            "bottom": 749
+          },
+          "confidence": 0.83623797
+        },
+        {
+          "text": "Soup of Day",
+          "boundingBox": {
+            "left": 347,
+            "top": 751,
+            "right": 578,
+            "bottom": 789
+          },
+          "confidence": 0.86241317
+        }
+      ],
+      "boundingBox": {
+        "left": 347,
+        "top": 711,
+        "right": 658,
+        "bottom": 789
+      }
+    },
+    {
+      "text": "TOTAL:",
+      "lines": [
+        {
+          "text": "TOTAL:",
+          "boundingBox": {
+            "left": 310,
+            "top": 997,
+            "right": 431,
+            "bottom": 1057
+          },
+          "confidence": 0.7239583
+        }
+      ],
+      "boundingBox": {
+        "left": 310,
+        "top": 997,
+        "right": 431,
+        "bottom": 1057
+      }
+    },
+    {
+      "text": "Bar Subtotal:\nFood Subtotal:\nTax 1:",
+      "lines": [
+        {
+          "text": "Bar Subtotal:",
+          "boundingBox": {
+            "left": 304,
+            "top": 832,
+            "right": 573,
+            "bottom": 870
+          },
+          "confidence": 0.8616536
+        },
+        {
+          "text": "Food Subtotal:",
+          "boundingBox": {
+            "left": 308,
+            "top": 875,
+            "right": 600,
+            "bottom": 907
+          },
+          "confidence": 0.8308293
+        },
+        {
+          "text": "Tax 1:",
+          "boundingBox": {
+            "left": 307,
+            "top": 918,
+            "right": 429,
+            "bottom": 948
+          },
+          "confidence": 0.81328124
+        }
+      ],
+      "boundingBox": {
+        "left": 304,
+        "top": 832,
+        "right": 600,
+        "bottom": 948
+      }
+    },
+    {
+      "text": "Station: 2",
+      "lines": [
+        {
+          "text": "Station: 2",
+          "boundingBox": {
+            "left": 944,
+            "top": 378,
+            "right": 1161,
+            "bottom": 414
+          },
+          "confidence": 0.84939235
+        }
+      ],
+      "boundingBox": {
+        "left": 944,
+        "top": 378,
+        "right": 1161,
+        "bottom": 414
+      }
+    },
+    {
+      "text": "» Ticket :56 <<\n7/10/2017 9:32:06 PM",
+      "lines": [
+        {
+          "text": "» Ticket :56 <<",
+          "boundingBox": {
+            "left": 590,
+            "top": 1102,
+            "right": 940,
+            "bottom": 1166
+          },
+          "confidence": 0.7093099
+        },
+        {
+          "text": "7/10/2017 9:32:06 PM",
+          "boundingBox": {
+            "left": 542,
+            "top": 1159,
+            "right": 965,
+            "bottom": 1208
+          },
+          "confidence": 0.8791233
+        }
+      ],
+      "boundingBox": {
+        "left": 542,
+        "top": 1099,
+        "right": 965,
+        "bottom": 1208
+      }
+    },
+    {
+      "text": "THANK YOU!",
+      "lines": [
+        {
+          "text": "THANK YOU!",
+          "boundingBox": {
+            "left": 639,
+            "top": 1248,
+            "right": 850,
+            "bottom": 1283
+          },
+          "confidence": 0.78342015
+        }
+      ],
+      "boundingBox": {
+        "left": 639,
+        "top": 1248,
+        "right": 850,
+        "bottom": 1283
+      }
+    },
+    {
+      "text": "Dine In",
+      "lines": [
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 1011,
+            "top": 461,
+            "right": 1161,
+            "bottom": 495
+          },
+          "confidence": 0.89127606
+        }
+      ],
+      "boundingBox": {
+        "left": 1011,
+        "top": 461,
+        "right": 1161,
+        "bottom": 495
+      }
+    },
+    {
+      "text": "Guests: 4",
+      "lines": [
+        {
+          "text": "Guests: 4",
+          "boundingBox": {
+            "left": 968,
+            "top": 501,
+            "right": 1164,
+            "bottom": 535
+          },
+          "confidence": 0.8696289
+        }
+      ],
+      "boundingBox": {
+        "left": 968,
+        "top": 501,
+        "right": 1164,
+        "bottom": 535
+      }
+    },
+    {
+      "text": "2.55",
+      "lines": [
+        {
+          "text": "2.55",
+          "boundingBox": {
+            "left": 1080,
+            "top": 584,
+            "right": 1168,
+            "bottom": 616
+          },
+          "confidence": 0.89453125
+        }
+      ],
+      "boundingBox": {
+        "left": 1080,
+        "top": 584,
+        "right": 1168,
+        "bottom": 616
+      }
+    },
+    {
+      "text": "8.95",
+      "lines": [
+        {
+          "text": "8.95",
+          "boundingBox": {
+            "left": 1082,
+            "top": 624,
+            "right": 1166,
+            "bottom": 655
+          },
+          "confidence": 0.93652344
+        }
+      ],
+      "boundingBox": {
+        "left": 1082,
+        "top": 624,
+        "right": 1166,
+        "bottom": 655
+      }
+    },
+    {
+      "text": "19.95",
+      "lines": [
+        {
+          "text": "19.95",
+          "boundingBox": {
+            "left": 1066,
+            "top": 666,
+            "right": 1170,
+            "bottom": 696
+          },
+          "confidence": 0.93359375
+        }
+      ],
+      "boundingBox": {
+        "left": 1066,
+        "top": 666,
+        "right": 1170,
+        "bottom": 696
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 1090,
+            "top": 830,
+            "right": 1176,
+            "bottom": 860
+          },
+          "confidence": 0.875
+        }
+      ],
+      "boundingBox": {
+        "left": 1090,
+        "top": 830,
+        "right": 1176,
+        "bottom": 860
+      }
+    },
+    {
+      "text": "31.45",
+      "lines": [
+        {
+          "text": "31.45",
+          "boundingBox": {
+            "left": 1069,
+            "top": 872,
+            "right": 1178,
+            "bottom": 901
+          },
+          "confidence": 0.85
+        }
+      ],
+      "boundingBox": {
+        "left": 1069,
+        "top": 872,
+        "right": 1178,
+        "bottom": 901
+      }
+    },
+    {
+      "text": "1.89",
+      "lines": [
+        {
+          "text": "1.89",
+          "boundingBox": {
+            "left": 1096,
+            "top": 910,
+            "right": 1178,
+            "bottom": 943
+          },
+          "confidence": 0.828125
+        }
+      ],
+      "boundingBox": {
+        "left": 1096,
+        "top": 910,
+        "right": 1178,
+        "bottom": 943
+      }
+    },
+    {
+      "text": "$3.34",
+      "lines": [
+        {
+          "text": "$3.34",
+          "boundingBox": {
+            "left": 1050,
+            "top": 992,
+            "right": 1186,
+            "bottom": 1060
+          },
+          "confidence": 0.73515624
+        }
+      ],
+      "boundingBox": {
+        "left": 1050,
+        "top": 992,
+        "right": 1186,
+        "bottom": 1060
+      }
+    }
+  ]
+}

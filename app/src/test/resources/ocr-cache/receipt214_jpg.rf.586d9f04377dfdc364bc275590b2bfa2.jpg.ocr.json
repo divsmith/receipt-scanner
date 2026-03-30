@@ -1,0 +1,389 @@
+{
+  "fullText": "2 Lunch\n1 Coke\n530% E PACIFiC COAST HWY\nBeach, CA 90Ou\n(S623 S970906\nLong\nSer ver Frane is\nDrder6992\nTab te BI1\nTOTAL:\nGREEN FIELD\nSUB T0 TAL:\nTax 12\nStat. on 3\nDine In\nBuestse\nS/26/2016 12.53:10 PH\nTHANK You\n3.00\nUS 90\n3.00\n51 90\n$56.58",
+  "blocks": [
+    {
+      "text": "2 Lunch\n1 Coke",
+      "lines": [
+        {
+          "text": "2 Lunch",
+          "boundingBox": {
+            "left": 382,
+            "top": 946,
+            "right": 560,
+            "bottom": 989
+          },
+          "confidence": 0.5345052
+        },
+        {
+          "text": "1 Coke",
+          "boundingBox": {
+            "left": 408,
+            "top": 994,
+            "right": 536,
+            "bottom": 1036
+          },
+          "confidence": 0.709375
+        }
+      ],
+      "boundingBox": {
+        "left": 382,
+        "top": 946,
+        "right": 562,
+        "bottom": 1039
+      }
+    },
+    {
+      "text": "530% E PACIFiC COAST HWY\nBeach, CA 90Ou\n(S623 S970906",
+      "lines": [
+        {
+          "text": "530% E PACIFiC COAST HWY",
+          "boundingBox": {
+            "left": 562,
+            "top": 476,
+            "right": 1129,
+            "bottom": 562
+          },
+          "confidence": 0.5451172
+        },
+        {
+          "text": "Beach, CA 90Ou",
+          "boundingBox": {
+            "left": 727,
+            "top": 525,
+            "right": 1086,
+            "bottom": 589
+          },
+          "confidence": 0.523763
+        },
+        {
+          "text": "(S623 S970906",
+          "boundingBox": {
+            "left": 703,
+            "top": 566,
+            "right": 1016,
+            "bottom": 634
+          },
+          "confidence": 0.4860026
+        }
+      ],
+      "boundingBox": {
+        "left": 562,
+        "top": 475,
+        "right": 1136,
+        "bottom": 645
+      }
+    },
+    {
+      "text": "Long",
+      "lines": [
+        {
+          "text": "Long",
+          "boundingBox": {
+            "left": 612,
+            "top": 557,
+            "right": 704,
+            "bottom": 598
+          },
+          "confidence": 0.5732422
+        }
+      ],
+      "boundingBox": {
+        "left": 612,
+        "top": 557,
+        "right": 704,
+        "bottom": 598
+      }
+    },
+    {
+      "text": "Ser ver Frane is",
+      "lines": [
+        {
+          "text": "Ser ver Frane is",
+          "boundingBox": {
+            "left": 397,
+            "top": 672,
+            "right": 740,
+            "bottom": 742
+          },
+          "confidence": 0.6219952
+        }
+      ],
+      "boundingBox": {
+        "left": 397,
+        "top": 672,
+        "right": 740,
+        "bottom": 742
+      }
+    },
+    {
+      "text": "Drder6992\nTab te BI1",
+      "lines": [
+        {
+          "text": "Drder6992",
+          "boundingBox": {
+            "left": 380,
+            "top": 757,
+            "right": 697,
+            "bottom": 818
+          },
+          "confidence": 0.4561632
+        },
+        {
+          "text": "Tab te BI1",
+          "boundingBox": {
+            "left": 396,
+            "top": 804,
+            "right": 635,
+            "bottom": 863
+          },
+          "confidence": 0.44384766
+        }
+      ],
+      "boundingBox": {
+        "left": 380,
+        "top": 757,
+        "right": 701,
+        "bottom": 865
+      }
+    },
+    {
+      "text": "TOTAL:",
+      "lines": [
+        {
+          "text": "TOTAL:",
+          "boundingBox": {
+            "left": 396,
+            "top": 1224,
+            "right": 542,
+            "bottom": 1302
+          },
+          "confidence": 0.63932294
+        }
+      ],
+      "boundingBox": {
+        "left": 396,
+        "top": 1224,
+        "right": 542,
+        "bottom": 1302
+      }
+    },
+    {
+      "text": "GREEN FIELD",
+      "lines": [
+        {
+          "text": "GREEN FIELD",
+          "boundingBox": {
+            "left": 715,
+            "top": 431,
+            "right": 960,
+            "bottom": 516
+          },
+          "confidence": 0.6519531
+        }
+      ],
+      "boundingBox": {
+        "left": 715,
+        "top": 431,
+        "right": 960,
+        "bottom": 516
+      }
+    },
+    {
+      "text": "SUB T0 TAL:\nTax 12",
+      "lines": [
+        {
+          "text": "SUB T0 TAL:",
+          "boundingBox": {
+            "left": 386,
+            "top": 1067,
+            "right": 644,
+            "bottom": 1129
+          },
+          "confidence": 0.42925346
+        },
+        {
+          "text": "Tax 12",
+          "boundingBox": {
+            "left": 394,
+            "top": 1120,
+            "right": 546,
+            "bottom": 1175
+          },
+          "confidence": 0.496875
+        }
+      ],
+      "boundingBox": {
+        "left": 385,
+        "top": 1061,
+        "right": 648,
+        "bottom": 1176
+      }
+    },
+    {
+      "text": "Stat. on 3",
+      "lines": [
+        {
+          "text": "Stat. on 3",
+          "boundingBox": {
+            "left": 1119,
+            "top": 615,
+            "right": 1357,
+            "bottom": 685
+          },
+          "confidence": 0.5083008
+        }
+      ],
+      "boundingBox": {
+        "left": 1119,
+        "top": 615,
+        "right": 1357,
+        "bottom": 685
+      }
+    },
+    {
+      "text": "Dine In\nBuestse",
+      "lines": [
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 1188,
+            "top": 704,
+            "right": 1366,
+            "bottom": 754
+          },
+          "confidence": 0.43033853
+        },
+        {
+          "text": "Buestse",
+          "boundingBox": {
+            "left": 1144,
+            "top": 745,
+            "right": 1375,
+            "bottom": 800
+          },
+          "confidence": 0.39676338
+        }
+      ],
+      "boundingBox": {
+        "left": 1140,
+        "top": 703,
+        "right": 1374,
+        "bottom": 800
+      }
+    },
+    {
+      "text": "S/26/2016 12.53:10 PH\nTHANK You",
+      "lines": [
+        {
+          "text": "S/26/2016 12.53:10 PH",
+          "boundingBox": {
+            "left": 628,
+            "top": 1306,
+            "right": 1195,
+            "bottom": 1380
+          },
+          "confidence": 0.5300164
+        },
+        {
+          "text": "THANK You",
+          "boundingBox": {
+            "left": 802,
+            "top": 1411,
+            "right": 1057,
+            "bottom": 1478
+          },
+          "confidence": 0.55810547
+        }
+      ],
+      "boundingBox": {
+        "left": 628,
+        "top": 1304,
+        "right": 1201,
+        "bottom": 1488
+      }
+    },
+    {
+      "text": "3.00\nUS 90\n3.00",
+      "lines": [
+        {
+          "text": "3.00",
+          "boundingBox": {
+            "left": 1294,
+            "top": 831,
+            "right": 1391,
+            "bottom": 872
+          },
+          "confidence": 0.49609375
+        },
+        {
+          "text": "US 90",
+          "boundingBox": {
+            "left": 1282,
+            "top": 880,
+            "right": 1399,
+            "bottom": 916
+          },
+          "confidence": 0.5126953
+        },
+        {
+          "text": "3.00",
+          "boundingBox": {
+            "left": 1304,
+            "top": 926,
+            "right": 1410,
+            "bottom": 962
+          },
+          "confidence": 0.34277344
+        }
+      ],
+      "boundingBox": {
+        "left": 1280,
+        "top": 831,
+        "right": 1409,
+        "bottom": 964
+      }
+    },
+    {
+      "text": "51 90",
+      "lines": [
+        {
+          "text": "51 90",
+          "boundingBox": {
+            "left": 1306,
+            "top": 1016,
+            "right": 1422,
+            "bottom": 1058
+          },
+          "confidence": 0.703125
+        }
+      ],
+      "boundingBox": {
+        "left": 1306,
+        "top": 1016,
+        "right": 1422,
+        "bottom": 1058
+      }
+    },
+    {
+      "text": "$56.58",
+      "lines": [
+        {
+          "text": "$56.58",
+          "boundingBox": {
+            "left": 1288,
+            "top": 1162,
+            "right": 1459,
+            "bottom": 1240
+          },
+          "confidence": 0.6582031
+        }
+      ],
+      "boundingBox": {
+        "left": 1288,
+        "top": 1162,
+        "right": 1459,
+        "bottom": 1240
+      }
+    }
+  ]
+}
