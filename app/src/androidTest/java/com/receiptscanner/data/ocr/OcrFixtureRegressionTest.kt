@@ -11,11 +11,13 @@ import com.receiptscanner.domain.usecase.mergeParsedAndEntityData
 import com.receiptscanner.testing.receiptfixtures.ReceiptFixture
 import com.receiptscanner.testing.receiptfixtures.ReceiptFixtureNormalizer
 import com.receiptscanner.testing.receiptfixtures.ReceiptFixtureScorecard
+import com.receiptscanner.testing.receiptfixtures.OcrResultSerializer
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
+import java.io.File
 import java.time.LocalDate
 
 @RunWith(AndroidJUnit4::class)
@@ -77,6 +79,18 @@ class OcrFixtureRegressionTest {
             }
             FixtureRun(fixture = fixture, trace = trace)
         }
+
+        val dumpOcrResults = arguments.getString("ocrFixture.dumpOcrResults") == "true"
+        if (dumpOcrResults) {
+            val dumpDir = File(targetContext.getExternalFilesDir(null), "ocr-cache").apply { mkdirs() }
+            runs.forEach { run ->
+                val json = OcrResultSerializer.toJson(run.trace.ocrResult)
+                File(dumpDir, "${run.fixture.imageName}.ocr.json").writeText(json)
+            }
+            Log.i(TAG, "Dumped ${runs.size} OCR results to ${dumpDir.absolutePath}")
+            println("Dumped ${runs.size} OCR results to ${dumpDir.absolutePath}")
+        }
+
         val diffs = runs.map { run -> ReceiptFixtureScorecard.compare(run.fixture, run.trace.merged) }
         val summary = ReceiptFixtureScorecard.summarize(diffs)
         val renderedSummary = ReceiptFixtureScorecard.render(summary)
@@ -130,6 +144,7 @@ class OcrFixtureRegressionTest {
                 val merged = mergeParsedAndEntityData(parsed, entities)
                 ExtractionTrace(
                     rawText = ocrResult.fullText,
+                    ocrResult = ocrResult,
                     parsed = parsed,
                     entities = entities,
                     merged = merged,
@@ -264,6 +279,7 @@ class OcrFixtureRegressionTest {
 
     private data class ExtractionTrace(
         val rawText: String,
+        val ocrResult: TextRecognitionResult,
         val parsed: ExtractedReceiptData,
         val entities: EntityExtractionHelper.ExtractionResult,
         val merged: ExtractedReceiptData,

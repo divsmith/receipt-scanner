@@ -60,17 +60,20 @@ class MlKitTextRecognizer @Inject constructor() {
 
 private fun Rect.toBoundingBox() = BoundingBox(left = left, top = top, right = right, bottom = bottom)
 
+@com.squareup.moshi.JsonClass(generateAdapter = true)
 data class TextRecognitionResult(
     val fullText: String,
     val blocks: List<TextBlock>,
 )
 
+@com.squareup.moshi.JsonClass(generateAdapter = true)
 data class TextBlock(
     val text: String,
     val lines: List<TextLine>,
     val boundingBox: BoundingBox?,
 )
 
+@com.squareup.moshi.JsonClass(generateAdapter = true)
 data class TextLine(
     val text: String,
     val boundingBox: BoundingBox?,

@@ -65,6 +65,38 @@ Current baseline gates:
 On failure, the test prints an OCR fixture scorecard with per-image mismatches so parser and
 normalization regressions can be tuned incrementally.
 
+#### Dumping OCR Results for Offline Iteration
+
+The on-device test can serialize ML Kit's raw OCR output to JSON files. This lets you iterate
+on `ReceiptParser` heuristics using the fast JVM-only test (seconds) instead of re-running the
+full on-device pipeline (minutes).
+
+**Step 1 — Dump OCR results from device:**
+
+```bash
+./gradlew connectedDebugAndroidTest \
+  -Pandroid.testInstrumentationRunnerArguments.class=com.receiptscanner.data.ocr.OcrFixtureRegressionTest#extractedDataMatchesLabelledReceipts \
+  -Pandroid.testInstrumentationRunnerArguments.ocrFixture.dumpOcrResults=true \
+  -Pandroid.testInstrumentationRunnerArguments.ocrFixture.enforceThresholds=false
+```
+
+**Step 2 — Pull OCR cache to your machine:**
+
+```bash
+adb pull /sdcard/Android/data/com.receiptscanner/files/ocr-cache/ app/src/test/resources/ocr-cache/
+```
+
+**Step 3 — Iterate on parser heuristics using the JVM test:**
+
+```bash
+./gradlew testDebugUnitTest --tests "com.receiptscanner.data.ocr.ReceiptParserFixtureTest"
+```
+
+This test replays the cached ML Kit output through `ReceiptParser` and prints a scorecard.
+Change parser logic → re-run → check scores → repeat. No emulator required.
+
+Re-dump OCR results (Step 1) only when you change image preprocessing.
+
 ### All Tests
 
 ```bash
