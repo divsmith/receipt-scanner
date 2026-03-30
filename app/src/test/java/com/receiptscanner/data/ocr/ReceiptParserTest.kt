@@ -173,6 +173,39 @@ class ReceiptParserTest {
             )
             assertEquals("WALMART", parser.extractStoreName(result))
         }
+
+        @Test
+        fun `spatial - prefers merchant name over taller address line`() {
+            val result = makeOcrResultWithBounds(
+                "951 AVENIDA PICO" to 42,
+                "Walmart" to 28,
+                "SAN CLEMENTE CA 92673" to 24,
+            )
+
+            assertEquals("Walmart", parser.extractStoreName(result))
+        }
+
+        @Test
+        fun `spatial - prefers merchant name over survey banner noise`() {
+            val result = makeOcrResultWithBounds(
+                "tback of recelpt for your" to 42,
+                "Walmart" to 28,
+                "Save money. Live better." to 12,
+            )
+
+            assertEquals("Walmart", parser.extractStoreName(result))
+        }
+
+        @Test
+        fun `spatial - prefers brand line over city state zip`() {
+            val result = makeOcrResultWithBounds(
+                "HorneGoods" to 28,
+                "THE BRICKYARD SHOP CNTR" to 20,
+                "SALT LAKE CITY, UT 84106" to 42,
+            )
+
+            assertEquals("HorneGoods", parser.extractStoreName(result))
+        }
     }
 
     @Nested
@@ -614,6 +647,18 @@ class ReceiptParserTest {
         fun `extracts date with dashes`() {
             val text = "Date: 03-15-2024"
             assertEquals(LocalDate.of(2024, 3, 15), parser.extractDate(text))
+        }
+
+        @Test
+        fun `prefers labeled receipt date over later expiry date`() {
+            val text = """
+                DATE 11/23/22 TIME 4:32 PM
+                REG 2
+                TRANS 9832
+                POINTS EXPIRING 12/31/2022
+            """.trimIndent()
+
+            assertEquals(LocalDate.of(2022, 11, 23), parser.extractDate(text))
         }
     }
 

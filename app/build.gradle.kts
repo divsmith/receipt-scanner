@@ -1,9 +1,17 @@
+import org.gradle.api.tasks.Sync
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.hilt)
     alias(libs.plugins.ksp)
+}
+
+val sharedTestAssetsDir = layout.buildDirectory.dir("generated/shared-test-assets")
+val syncSharedTestAssets by tasks.registering(Sync::class) {
+    from("src/test/resources")
+    into(sharedTestAssetsDir)
 }
 
 android {
@@ -55,7 +63,7 @@ android {
         }
         getByName("androidTest") {
             java.srcDir("src/sharedTest/kotlin")
-            assets.srcDir("src/test/resources")
+            assets.srcDir(sharedTestAssetsDir.get().asFile)
         }
     }
 }
@@ -137,3 +145,8 @@ dependencies {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
+
+tasks.matching { it.name.startsWith("merge") && it.name.endsWith("AndroidTestAssets") }
+    .configureEach {
+        dependsOn(syncSharedTestAssets)
+    }

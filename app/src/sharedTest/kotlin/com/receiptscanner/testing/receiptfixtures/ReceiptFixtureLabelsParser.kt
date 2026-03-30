@@ -6,35 +6,49 @@ import java.time.format.DateTimeParseException
 
 object ReceiptFixtureLabelsParser {
 
-    private val sectionPattern = Regex(
-        pattern = """(?ms)^## ([^\n]+)\n\n\| Field \| Value \|\n\|---\|---\|\n(.*?)(?=^---\s*$|\z)"""
-    )
+    private val headingPattern = Regex("""(?m)^##\s+(.+?)\s*$""")
+    private val separatorPattern = Regex("""^\|\s*:?-+\s*\|\s*:?-+\s*\|$""")
 
     fun parse(markdown: String): List<ReceiptFixture> {
-        return sectionPattern.findAll(markdown)
-            .map { match ->
-                val imageName = match.groupValues[1].trim()
-                val fields = parseFields(match.groupValues[2])
+        val headings = headingPattern.findAll(markdown).toList()
 
-                ReceiptFixture(
-                    imageName = imageName,
-                    expected = ReceiptFixtureExpectation(
-                        store = fields["Store"].toNullIfNotAvailable(),
-                        totalLabel = fields["Total"].toNullIfNotAvailable(),
-                        date = fields["Date"].toNullIfNotAvailable()?.let(::parseDate),
-                        cardLastFour = fields["Card Last 4"].toNullIfNotAvailable(),
-                    ),
-                )
-            }
+        return headings.mapIndexed { index, heading ->
+            val imageName = heading.groupValues[1].trim()
+            val sectionStart = heading.range.last + 1
+            val sectionEnd = headings.getOrNull(index + 1)?.range?.first ?: markdown.length
+            val fields = parseFields(
+                imageName = imageName,
+                sectionBody = markdown.substring(sectionStart, sectionEnd),
+            )
+
+            ReceiptFixture(
+                imageName = imageName,
+                expected = ReceiptFixtureExpectation(
+                    store = fields["Store"].toNullIfNotAvailable(),
+                    totalLabel = fields["Total"].toNullIfNotAvailable(),
+                    date = fields["Date"].toNullIfNotAvailable()?.let(::parseDate),
+                    cardLastFour = fields["Card Last 4"].toNullIfNotAvailable(),
+                ),
+            )
+        }
             .toList()
     }
 
-    private fun parseFields(tableBody: String): Map<String, String> {
-        return tableBody
+    private fun parseFields(imageName: String, sectionBody: String): Map<String, String> {
+        val rows = sectionBody
             .lineSequence()
+            .map { it.trim() }
             .filter { it.startsWith("|") }
+            .filterNot { row ->
+                row.equals("| Field | Value |", ignoreCase = true) || separatorPattern.matches(row)
+            }
+            .toList()
+
+        require(rows.isNotEmpty()) { "No label rows found for $imageName" }
+
+        return rows
             .associate { row ->
-                val columns = row.trim('|').split('|').map { it.trim() }
+                val columns = row.trim('|').split('|', limit = 2).map { it.trim() }
                 require(columns.size == 2) { "Malformed label row: $row" }
                 columns[0] to columns[1]
             }

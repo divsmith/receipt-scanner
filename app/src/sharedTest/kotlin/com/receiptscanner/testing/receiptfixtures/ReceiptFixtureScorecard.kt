@@ -58,14 +58,16 @@ object ReceiptFixtureScorecard {
         )
     }
 
-    fun render(summary: ReceiptFixtureSummary): String {
+    fun render(summary: ReceiptFixtureSummary, maxDiffs: Int = 25): String {
+        val mismatches = summary.diffs.filterNot { it.isExactMatch }
         val lines = mutableListOf(
             "OCR fixture summary",
             "store=${formatPercent(summary.storeAccuracy)} total=${formatPercent(summary.totalAccuracy)} date=${formatPercent(summary.dateAccuracy)} card=${formatPercent(summary.cardLastFourAccuracy)} exact=${formatPercent(summary.exactRecordAccuracy)}",
+            "mismatch-counts store=${summary.diffs.count { "store" in it.mismatchedFields }} total=${summary.diffs.count { "total" in it.mismatchedFields }} date=${summary.diffs.count { "date" in it.mismatchedFields }} card=${summary.diffs.count { "cardLastFour" in it.mismatchedFields }} records=${mismatches.size}",
         )
 
-        summary.diffs
-            .filterNot { it.isExactMatch }
+        mismatches
+            .take(maxDiffs)
             .forEach { diff ->
                 lines += buildString {
                     append(diff.imageName)
@@ -77,6 +79,11 @@ object ReceiptFixtureScorecard {
                     append(diff.actual)
                 }
             }
+
+        val omittedCount = mismatches.size - maxDiffs
+        if (omittedCount > 0) {
+            lines += "... $omittedCount more mismatched receipts omitted"
+        }
 
         return lines.joinToString("\n")
     }

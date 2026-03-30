@@ -5,21 +5,25 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertNull
 import org.junit.jupiter.api.Test
+import java.io.File
 import java.time.LocalDate
 
 class ReceiptFixtureLabelsParserTest {
 
     @Test
     fun `parses every labelled receipt expectation`() {
-        val fixtures = ReceiptFixtureLabelsParser.parse(
-            loadResourceText("images/labels.md")
-        )
+        val labels = loadResourceText("images/labels.md")
+        val fixtures = ReceiptFixtureLabelsParser.parse(labels)
 
-        assertEquals(34, fixtures.size)
+        assertEquals(countLabelSections(labels), fixtures.size)
         assertEquals("Walmart", fixtures.first { it.imageName == "0.jpg" }.expected.store)
         assertEquals(LocalDate.of(2021, 2, 23), fixtures.first { it.imageName == "10.jpg" }.expected.date)
         assertNull(fixtures.first { it.imageName == "11.jpg" }.expected.date)
         assertEquals("0784", fixtures.first { it.imageName == "20221116_161833.jpg" }.expected.cardLastFour)
+        assertEquals(
+            "Green Field",
+            fixtures.first { it.imageName == "receipt1_jpg.rf.91386a3225104d5c45f7e5e00238aeb4.jpg" }.expected.store
+        )
     }
 
     @Test
@@ -158,8 +162,17 @@ class ReceiptFixtureLabelsParserTest {
     }
 
     private fun loadResourceText(path: String): String {
+        listOf(
+            File("app/src/test/resources/$path"),
+            File("src/test/resources/$path"),
+        ).firstOrNull { it.exists() }?.let { return it.readText() }
+
         return checkNotNull(javaClass.classLoader?.getResourceAsStream(path)) {
             "Missing test resource: $path"
         }.bufferedReader().use { it.readText() }
+    }
+
+    private fun countLabelSections(markdown: String): Int {
+        return Regex("""(?m)^##\s+.+$""").findAll(markdown).count()
     }
 }
