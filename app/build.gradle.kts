@@ -44,6 +44,18 @@ android {
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "/META-INF/LICENSE.md"
+            excludes += "/META-INF/LICENSE-notice.md"
+        }
+    }
+
+    sourceSets {
+        getByName("test") {
+            java.srcDir("src/sharedTest/kotlin")
+        }
+        getByName("androidTest") {
+            java.srcDir("src/sharedTest/kotlin")
+            assets.srcDir("src/test/resources")
         }
     }
 }

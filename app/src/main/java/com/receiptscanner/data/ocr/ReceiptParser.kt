@@ -122,7 +122,9 @@ class ReceiptParser @Inject constructor() {
     private fun isValidStoreNameLine(text: String): Boolean {
         if (text.length < 3) return false
         if (text.all { it.isDigit() || it == '-' || it == '/' || it == ' ' }) return false
+        if (Regex("""\b\d{3}[-.\s]?\d{3}[-.\s]?\d{4}\b""").containsMatchIn(text)) return false
         if (text.matches(Regex("""(?i)(receipt|transaction|welcome|thank\s*you|thanks|store\s*#\d*|address|phone|tel|www\.|http).*"""))) return false
+        if (Regex("""(?i)(mgr\s*:|manager|see\s+back\s+of\s+receipt|your\s+chance|to\s+win\b|survey|feedback)""").containsMatchIn(text)) return false
         return true
     }
 

@@ -34,6 +34,37 @@ Reports at: `app/build/reports/tests/testDebugUnitTest/`
 
 Requires a connected device or running emulator. Reports at: `app/build/reports/androidTests/connected/`
 
+### OCR Fixture Regression
+
+Labelled OCR fixtures live under `app/src/test/resources/images/`, with expectations in
+`app/src/test/resources/images/labels.md`.
+
+Run the fixture-backed OCR regression on a connected device or emulator with:
+
+```bash
+./gradlew connectedDebugAndroidTest \
+  -Pandroid.testInstrumentationRunnerArguments.class=com.receiptscanner.data.ocr.OcrFixtureRegressionTest#extractedDataMatchesLabelledReceipts
+```
+
+The suite exercises the real on-device OCR pipeline end to end:
+
+1. Load receipt images from test assets
+2. Run ML Kit text recognition on-device
+3. Parse store, total, date, and card-last-four
+4. Compare extracted data to the labelled expectations
+5. Fail only if baseline accuracy thresholds regress
+
+Current baseline gates:
+
+- store accuracy >= 60%
+- total accuracy >= 65%
+- date accuracy >= 65%
+- card last-four accuracy >= 75%
+- exact record accuracy >= 20%
+
+On failure, the test prints an OCR fixture scorecard with per-image mismatches so parser and
+normalization regressions can be tuned incrementally.
+
 ### All Tests
 
 ```bash

@@ -34,7 +34,7 @@ moshi = "1.15.2"
 camerax = "1.4.1"
 
 # ML Kit
-mlkitTextRecognition = "19.0.1"
+mlkitTextRecognition = "16.0.1"
 mlkitEntityExtraction = "16.0.0-beta5"
 
 # Image Loading
@@ -120,7 +120,7 @@ camerax-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", vers
 camerax-view = { group = "androidx.camera", name = "camera-view", version.ref = "camerax" }
 
 # ML Kit
-mlkit-text-recognition = { group = "com.google.android.gms", name = "play-services-mlkit-text-recognition", version.ref = "mlkitTextRecognition" }
+mlkit-text-recognition = { group = "com.google.mlkit", name = "text-recognition", version.ref = "mlkitTextRecognition" }
 mlkit-entity-extraction = { group = "com.google.mlkit", name = "entity-extraction", version.ref = "mlkitEntityExtraction" }
 
 # Coil

@@ -143,6 +143,36 @@ class ReceiptParserTest {
             )
             assertEquals("SAFEWAY", parser.extractStoreName(result))
         }
+
+        @Test
+        fun `spatial - ignores promotional sweepstakes banner lines`() {
+            val result = makeOcrResultWithBounds(
+                "TO WIN $1000" to 42,
+                "WALMART" to 30,
+                "Save money. Live better." to 12,
+            )
+            assertEquals("WALMART", parser.extractStoreName(result))
+        }
+
+        @Test
+        fun `spatial - ignores receipt chance banner lines`() {
+            val result = makeOcrResultWithBounds(
+                "SEE BACK OF RECEIPT FOR YOUR CHANCE" to 42,
+                "WALMART" to 30,
+                "123 Main St" to 12,
+            )
+            assertEquals("WALMART", parser.extractStoreName(result))
+        }
+
+        @Test
+        fun `spatial - ignores phone manager lines`() {
+            val result = makeOcrResultWithBounds(
+                "863-676-9425 MGR: EURIELDA" to 38,
+                "WALMART" to 30,
+                "123 Main St" to 12,
+            )
+            assertEquals("WALMART", parser.extractStoreName(result))
+        }
     }
 
     @Nested
