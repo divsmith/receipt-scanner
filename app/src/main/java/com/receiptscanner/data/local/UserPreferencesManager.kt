@@ -10,6 +10,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
+import com.receiptscanner.domain.model.OcrMode
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -20,6 +21,14 @@ class UserPreferencesManager @Inject constructor(
     @ApplicationContext private val context: Context,
 ) {
     private val dataStore = context.dataStore
+
+    val ocrMode: Flow<OcrMode> = dataStore.data.map { prefs ->
+        try {
+            OcrMode.valueOf(prefs[KEY_OCR_MODE] ?: OcrMode.LOCAL.name)
+        } catch (_: IllegalArgumentException) {
+            OcrMode.LOCAL
+        }
+    }
 
     val budgetId: Flow<String?> = dataStore.data.map { prefs ->
         prefs[KEY_BUDGET_ID]
@@ -50,6 +59,12 @@ class UserPreferencesManager @Inject constructor(
         }
     }
 
+    suspend fun saveOcrMode(mode: OcrMode) {
+        dataStore.edit { prefs ->
+            prefs[KEY_OCR_MODE] = mode.name
+        }
+    }
+
     suspend fun clearAll() {
         dataStore.edit { it.clear() }
     }
@@ -58,5 +73,6 @@ class UserPreferencesManager @Inject constructor(
         private val KEY_BUDGET_ID = stringPreferencesKey("selected_budget_id")
         private val KEY_BUDGET_NAME = stringPreferencesKey("selected_budget_name")
         private val KEY_DEFAULT_ACCOUNT_ID = stringPreferencesKey("default_account_id")
+        private val KEY_OCR_MODE = stringPreferencesKey("ocr_mode")
     }
 }

@@ -3,6 +3,9 @@ package com.receiptscanner.di
 import com.receiptscanner.data.ocr.ImagePreprocessor
 import com.receiptscanner.data.ocr.MlKitTextRecognizer
 import com.receiptscanner.data.ocr.ReceiptParser
+import com.receiptscanner.data.remote.copilot.CopilotTokenProvider
+import com.receiptscanner.data.remote.copilot.CopilotTokenProviderImpl
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -30,4 +33,13 @@ object OcrModule {
     fun provideImagePreprocessor(): ImagePreprocessor {
         return ImagePreprocessor()
     }
+}
+
+@Module
+@InstallIn(SingletonComponent::class)
+abstract class OcrBindingsModule {
+
+    @Binds
+    @Singleton
+    abstract fun bindCopilotTokenProvider(impl: CopilotTokenProviderImpl): CopilotTokenProvider
 }

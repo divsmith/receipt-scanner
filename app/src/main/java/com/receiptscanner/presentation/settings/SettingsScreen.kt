@@ -31,6 +31,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.MenuAnchorType
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
@@ -49,6 +50,7 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.receiptscanner.domain.model.OcrMode
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -130,6 +132,101 @@ fun SettingsScreen(
                         modifier = Modifier.fillMaxWidth(),
                     ) {
                         Text("Save Token")
+                    }
+                }
+            }
+
+            // OCR Settings
+            Card(modifier = Modifier.fillMaxWidth()) {
+                Column(modifier = Modifier.padding(16.dp)) {
+                    Text(
+                        "OCR Settings",
+                        style = MaterialTheme.typography.titleMedium,
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clickable { viewModel.updateOcrMode(OcrMode.LOCAL) }
+                            .padding(vertical = 4.dp),
+                    ) {
+                        RadioButton(
+                            selected = uiState.ocrMode == OcrMode.LOCAL,
+                            onClick = { viewModel.updateOcrMode(OcrMode.LOCAL) },
+                        )
+                        Column(modifier = Modifier.padding(start = 8.dp)) {
+                            Text("Local (ML Kit)", style = MaterialTheme.typography.bodyLarge)
+                            Text(
+                                "On-device OCR — works offline",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            )
+                        }
+                    }
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clickable { viewModel.updateOcrMode(OcrMode.CLOUD) }
+                            .padding(vertical = 4.dp),
+                    ) {
+                        RadioButton(
+                            selected = uiState.ocrMode == OcrMode.CLOUD,
+                            onClick = { viewModel.updateOcrMode(OcrMode.CLOUD) },
+                        )
+                        Column(modifier = Modifier.padding(start = 8.dp)) {
+                            Text("Cloud (GitHub Copilot AI)", style = MaterialTheme.typography.bodyLarge)
+                            Text(
+                                "Vision AI — more accurate, requires internet",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            )
+                        }
+                    }
+
+                    if (uiState.ocrMode == OcrMode.CLOUD) {
+                        var showCopilotToken by remember { mutableStateOf(false) }
+                        Spacer(modifier = Modifier.height(12.dp))
+                        HorizontalDivider()
+                        Spacer(modifier = Modifier.height(12.dp))
+                        Text(
+                            "GitHub Token",
+                            style = MaterialTheme.typography.titleSmall,
+                        )
+                        Spacer(modifier = Modifier.height(4.dp))
+                        Text(
+                            "Requires a GitHub PAT with Copilot access. Create one at github.com/settings/tokens.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
+                        OutlinedTextField(
+                            value = uiState.copilotToken,
+                            onValueChange = viewModel::updateCopilotToken,
+                            modifier = Modifier.fillMaxWidth(),
+                            label = { Text("GitHub Personal Access Token") },
+                            singleLine = true,
+                            visualTransformation = if (showCopilotToken)
+                                VisualTransformation.None
+                            else PasswordVisualTransformation(),
+                            trailingIcon = {
+                                IconButton(onClick = { showCopilotToken = !showCopilotToken }) {
+                                    Icon(
+                                        if (showCopilotToken) Icons.Default.VisibilityOff
+                                        else Icons.Default.Visibility,
+                                        contentDescription = if (showCopilotToken) "Hide" else "Show",
+                                    )
+                                }
+                            },
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Button(
+                            onClick = viewModel::saveCopilotToken,
+                            modifier = Modifier.fillMaxWidth(),
+                        ) {
+                            Text("Save GitHub Token")
+                        }
                     }
                 }
             }

@@ -1,12 +1,13 @@
 package com.receiptscanner.domain.usecase
 
 import android.graphics.Bitmap
-import com.receiptscanner.data.ocr.EntityExtractionHelper
-import com.receiptscanner.data.ocr.MlKitTextRecognizer
-import com.receiptscanner.data.ocr.ReceiptParser
-import com.receiptscanner.data.ocr.ImagePreprocessor
+import com.receiptscanner.data.local.UserPreferencesManager
+import com.receiptscanner.data.ocr.CloudOcrProvider
+import com.receiptscanner.data.ocr.LocalOcrProvider
 import com.receiptscanner.domain.model.ExtractedReceiptData
+import com.receiptscanner.domain.model.OcrMode
 import java.time.LocalDate
+import kotlinx.coroutines.flow.first
 import javax.inject.Inject
 
 internal fun mergeParsedAndEntityData(
@@ -29,27 +30,14 @@ internal fun mergeParsedAndEntityData(
 }
 
 class ExtractReceiptDataUseCase @Inject constructor(
-    private val textRecognizer: MlKitTextRecognizer,
-    private val receiptParser: ReceiptParser,
-    private val entityExtractor: EntityExtractionHelper,
-    private val imagePreprocessor: ImagePreprocessor,
+    private val localOcrProvider: LocalOcrProvider,
+    private val cloudOcrProvider: CloudOcrProvider,
+    private val userPreferencesManager: UserPreferencesManager,
 ) {
     suspend operator fun invoke(bitmap: Bitmap, rotationDegrees: Int = 0): Result<ExtractedReceiptData> {
-        return try {
-            val processed = imagePreprocessor.preprocess(bitmap)
-            try {
-                val ocrResult = textRecognizer.recognizeText(processed, rotationDegrees)
-                val parsed = receiptParser.parse(ocrResult)
-
-                val entities = entityExtractor.extract(ocrResult.fullText)
-                val merged = mergeParsedAndEntityData(parsed, entities)
-
-                Result.success(merged)
-            } finally {
-                processed.recycle()
-            }
-        } catch (e: Exception) {
-            Result.failure(e)
+        return when (userPreferencesManager.ocrMode.first()) {
+            OcrMode.LOCAL -> localOcrProvider.extract(bitmap, rotationDegrees)
+            OcrMode.CLOUD -> cloudOcrProvider.extract(bitmap, rotationDegrees)
         }
     }
 }

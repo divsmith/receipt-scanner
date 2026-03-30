@@ -5,8 +5,10 @@ import androidx.lifecycle.viewModelScope
 import androidx.work.WorkManager
 import com.receiptscanner.data.local.TokenProvider
 import com.receiptscanner.data.local.UserPreferencesManager
+import com.receiptscanner.data.remote.copilot.CopilotTokenProvider
 import com.receiptscanner.domain.model.Account
 import com.receiptscanner.domain.model.Budget
+import com.receiptscanner.domain.model.OcrMode
 import com.receiptscanner.domain.repository.TransactionQueueRepository
 import com.receiptscanner.domain.repository.YnabRepository
 import com.receiptscanner.domain.usecase.SyncPayeeCacheUseCase
@@ -22,6 +24,7 @@ import javax.inject.Inject
 @HiltViewModel
 class SettingsViewModel @Inject constructor(
     private val tokenProvider: TokenProvider,
+    private val copilotTokenProvider: CopilotTokenProvider,
     private val ynabRepository: YnabRepository,
     private val syncPayeeCacheUseCase: SyncPayeeCacheUseCase,
     private val userPreferencesManager: UserPreferencesManager,
@@ -39,6 +42,9 @@ class SettingsViewModel @Inject constructor(
         val defaultAccountId: String? = null,
         val isSyncing: Boolean = false,
         val pendingCount: Int = 0,
+        val ocrMode: OcrMode = OcrMode.LOCAL,
+        val copilotToken: String = "",
+        val isCopilotTokenSaved: Boolean = false,
         val error: String? = null,
         val successMessage: String? = null,
     )
@@ -49,6 +55,15 @@ class SettingsViewModel @Inject constructor(
     init {
         loadSavedState()
         observePendingCount()
+        observeOcrMode()
+    }
+
+    private fun observeOcrMode() {
+        viewModelScope.launch {
+            userPreferencesManager.ocrMode.collect { mode ->
+                _uiState.update { it.copy(ocrMode = mode) }
+            }
+        }
     }
 
     private fun observePendingCount() {
@@ -63,6 +78,7 @@ class SettingsViewModel @Inject constructor(
     private fun loadSavedState() {
         viewModelScope.launch {
             val existingToken = tokenProvider.getToken()
+            val existingCopilotToken = copilotTokenProvider.getToken()
             val budgetId = userPreferencesManager.getBudgetId()
             val defaultAccountId = userPreferencesManager.getDefaultAccountId()
 
@@ -73,6 +89,10 @@ class SettingsViewModel @Inject constructor(
                         "••••" + existingToken.takeLast(4)
                     else "",
                     isTokenSaved = !existingToken.isNullOrBlank(),
+                    copilotToken = if (!existingCopilotToken.isNullOrBlank())
+                        "••••" + existingCopilotToken.takeLast(4)
+                    else "",
+                    isCopilotTokenSaved = !existingCopilotToken.isNullOrBlank(),
                     selectedBudgetId = budgetId,
                     defaultAccountId = defaultAccountId,
                 )
@@ -107,6 +127,36 @@ class SettingsViewModel @Inject constructor(
             )
         }
         loadBudgets()
+    }
+
+    fun updateOcrMode(mode: OcrMode) {
+        if (mode == OcrMode.CLOUD && !_uiState.value.isCopilotTokenSaved) {
+            _uiState.update { it.copy(error = "Please save a GitHub token first") }
+            return
+        }
+        viewModelScope.launch {
+            userPreferencesManager.saveOcrMode(mode)
+        }
+    }
+
+    fun updateCopilotToken(token: String) {
+        _uiState.update { it.copy(copilotToken = token) }
+    }
+
+    fun saveCopilotToken() {
+        val token = _uiState.value.copilotToken.trim()
+        if (token.isBlank() || token.startsWith("••••")) {
+            _uiState.update { it.copy(error = "Please enter a GitHub token") }
+            return
+        }
+        copilotTokenProvider.setToken(token)
+        _uiState.update {
+            it.copy(
+                copilotToken = "••••" + token.takeLast(4),
+                isCopilotTokenSaved = true,
+                successMessage = "GitHub token saved",
+            )
+        }
     }
 
     fun loadBudgets() {
@@ -187,6 +237,7 @@ class SettingsViewModel @Inject constructor(
     fun clearCache() {
         viewModelScope.launch {
             tokenProvider.setToken(null)
+            copilotTokenProvider.setToken(null)
             userPreferencesManager.clearAll()
             _uiState.value = UiState()
         }
