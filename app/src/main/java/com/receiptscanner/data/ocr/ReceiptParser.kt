@@ -48,7 +48,7 @@ class ReceiptParser @Inject constructor() {
     )
     private val taxOnlyLabelPattern = Regex("""(?i)^(?:total\s+)?(?:(?:sales\s+)?tax|vat|gst|hst)$""")
     private val storeMetadataPattern = Regex(
-        """(?i)(cashier|date\b|time\b|reg\b|trans\b|transaction|subtotal|total\b|tax\b|sale\b|purchase|auth\b|invoice|member#?|entry method|trace number|signature|approved|debit\b|credit\b|visa\b|mastercard\b|amex\b|discover\b)"""
+        """(?i)(cashier|date\b|time\b|reg\b|trans\b|transaction|subtotal|total\b|tax\b|sale\b|purchase|auth\b|invoice|member#?|entry method|trace number|signature|approved|debit\b|credit\b|visa\b|mastercard\b|amex\b|discover\b|tender\b|tend\b|payment\b)"""
     )
     private val storeBannerPattern = Regex(
         """(?i)(feedback|survey|respond\s+by|expir(?:es|ing)|points?\s+expir|chance|to\s+win|see\s+back|save\s+money|live\s+better|thank\s+you|tell\s+us|what\s+you\s+think|join\s+us|bottomless|brunch|happy\s+hour|special\s+offer|free\s+wifi|scan\s+(?:this|here|to)|download\s+our\s+app)"""
@@ -135,7 +135,7 @@ class ReceiptParser @Inject constructor() {
         if (ocrResult.blocks.isEmpty()) return null
 
         val candidateLines = ocrResult.blocks
-            .take(6)
+            .take(8)
             .flatMap { it.lines }
             .mapIndexedNotNull { index, line ->
                 val text = line.text.trim()
@@ -175,6 +175,10 @@ class ReceiptParser @Inject constructor() {
         if (Regex("""(?i)^\s*e[- ]?mail\s*[:\s]""").containsMatchIn(text)) return false
         // Filter email addresses (handles cases even without a label prefix)
         if (Regex("""[\w.+-]+@[\w.-]+\.\w{2,}""").containsMatchIn(text)) return false
+        // Filter lines containing web domains (e.g. "walmart.com", "TractorSupply.com")
+        if (Regex("""(?i)\b\w{3,}\.(?:com|net|org|co|io|gov)\b""").containsMatchIn(text)) return false
+        // Filter shopping-center name lines (e.g. "THE BRICKYARD SHOP. CNTR")
+        if (Regex("""(?i)\bshop(?:ping)?\s*\.?\s*(?:ctr|cntr|center|centre)\b""").containsMatchIn(text)) return false
         // Filter line items: lines with dollar amounts (e.g., "KIRKLAND DETERGENT $18.99")
         if (amountPattern.containsMatchIn(text)) return false
         // Filter lines that start with a quantity + item (menu lines like "1 Onion Naan")
@@ -217,10 +221,12 @@ class ReceiptParser @Inject constructor() {
             else -> 0
         }
 
-        // Word count: store names are typically 1-4 words
+        // Word count: use meaningful words (3+ chars) so OCR noise fragments like "ky", "otl"
+        // don't inflate the count and penalise a real store name ("Walmart ky 2, otl" → 1 real word)
+        val meaningfulWords = words.filter { w -> w.any { it.isLetter() } && w.count { it.isLetter() } >= 3 }
         score += when {
-            words.size in 1..3 -> 15
-            words.size in 4..5 -> 8
+            meaningfulWords.size in 1..3 -> 15
+            meaningfulWords.size in 4..5 -> 8
             else -> -15
         }
 
@@ -304,6 +310,7 @@ class ReceiptParser @Inject constructor() {
             val sameLineMatch = amountPattern.find(totalLine.text)
             if (sameLineMatch != null) {
                 val amount = parseMilliunits(sameLineMatch.groupValues[1]) ?: continue
+                if (amount == 0L) continue // $0.00 is a column header or change-due, not a total
                 if (totalLine.text.contains("$")) confidence += 0.05f
                 return ScoredAmount(amount, confidence.coerceAtMost(1f))
             }
@@ -312,14 +319,21 @@ class ReceiptParser @Inject constructor() {
             val totalMidY = (totalBox.top + totalBox.bottom) / 2
             val lineHeight = totalBox.height().coerceAtLeast(1)
 
+            // Card-brand / tender labels (Visa, Debit, etc.) only pair with amounts on the same row.
+            // Allowing isBelow would pick up CHANGE DUE amounts that sit below a tender row.
+            val labelNorm = normalizedLabelText(totalLine.text)
+            val isTenderLabel = providerBrandLabelPattern.matches(labelNorm) ||
+                guardedTenderLabelPattern.matches(labelNorm)
+
             val nearbyAmount = allLines
                 .filter { candidate ->
                     val box = candidate.boundingBox ?: return@filter false
                     val candidateMidY = (box.top + box.bottom) / 2
                     // Same row: right of the label, vertically aligned
                     val isRightOf = box.left > totalBox.right && kotlin.math.abs(candidateMidY - totalMidY) < lineHeight
-                    // Below: within 2 line-heights
-                    val isBelow = box.top >= totalBox.bottom && box.top <= totalBox.bottom + lineHeight * 2
+                    // Below: within 2 line-heights (not allowed for tender/card-brand labels)
+                    val isBelow = !isTenderLabel &&
+                        box.top >= totalBox.bottom && box.top <= totalBox.bottom + lineHeight * 2
                     if (!(isRightOf || isBelow)) return@filter false
                     if (!amountPattern.containsMatchIn(candidate.text)) return@filter false
                     // When the amount is directly below the label, verify no tender/negative-keyword
@@ -349,6 +363,7 @@ class ReceiptParser @Inject constructor() {
                 val match = amountPattern.find(nearbyAmount.text)
                 if (match != null) {
                     val amount = parseMilliunits(match.groupValues[1]) ?: continue
+                    if (amount == 0L) continue // $0.00 is not a real total
                     confidence += 0.15f // spatial alignment bonus
                     if (nearbyAmount.text.contains("$")) confidence += 0.05f
                     return ScoredAmount(amount, confidence.coerceAtMost(1f))
