@@ -6,6 +6,7 @@ import com.receiptscanner.data.ocr.MlKitTextRecognizer
 import com.receiptscanner.data.ocr.ReceiptParser
 import com.receiptscanner.data.ocr.ImagePreprocessor
 import com.receiptscanner.domain.model.ExtractedReceiptData
+import java.time.LocalDate
 import javax.inject.Inject
 
 internal fun mergeParsedAndEntityData(
@@ -14,8 +15,13 @@ internal fun mergeParsedAndEntityData(
 ): ExtractedReceiptData {
     val useEntityTotal = parsed.totalAmount == null && entities.totalAmount != null
 
+    // ML Kit entity extraction sometimes returns today's date as a fallback when it cannot
+    // resolve a date entity (e.g. numeric codes that loosely resemble dates). Reject any
+    // entity-extracted date that is in the future — receipt dates are always in the past.
+    val safeEntityDate = entities.date?.takeIf { it.isBefore(LocalDate.now()) }
+
     return parsed.copy(
-        date = parsed.date ?: entities.date,
+        date = parsed.date ?: safeEntityDate,
         totalAmount = if (useEntityTotal) entities.totalAmount ?: parsed.totalAmount else parsed.totalAmount,
         totalConfidence = if (useEntityTotal) 0.25f else parsed.totalConfidence,
         cardLastFour = parsed.cardLastFour ?: entities.cardLastFour,

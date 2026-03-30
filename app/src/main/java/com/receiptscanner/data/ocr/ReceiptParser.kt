@@ -648,7 +648,7 @@ class ReceiptParser @Inject constructor() {
             Regex("(?i)ending\\s+in\\s+(\\d{4})"),
             Regex("(?i)card\\s*:?\\s*\\*{0,4}\\s*(\\d{4})"),
             Regex("(?i)(?:VISA|MASTERCARD|MC|AMEX|DISCOVER|DEBIT|CREDIT)\\s+\\*{0,4}\\s*(\\d{4})"),
-            Regex("(?i)account\\s*:?\\s*[xX*]*\\s*(\\d{4})"),
+            Regex("(?i)account\\s*[:#]?\\s*[xX*]*\\s*(\\d{4})"),
         )
 
         for (pattern in patterns) {
