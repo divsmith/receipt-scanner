@@ -63,39 +63,40 @@ Camera Capture
   Image File
       │
       ▼
- ML Kit OCR ──────────► Raw Text
-                            │
-                            ▼
-                     Receipt Parser
-                            │
-                            ▼
-                  ExtractedReceiptData
-                   (store, total, date,
-                    card last four)
-                            │
-              ┌─────────────┼─────────────┐
-              ▼             ▼             ▼
-        Fuzzy Payee    Category      Account
-         Match        Suggestion    Detection
-              └─────────────┼─────────────┘
-                            ▼
-                Transaction Review Screen
-                     (user edits)
-                            │
-                            ▼
-                   Submit Transaction
-                      /          \
-                     /            \
-                    ▼              ▼
-              YNAB API        Offline Queue
-             (success)        (no network)
-                                   │
-                                   ▼
-                              WorkManager
-                            (retry w/ backoff)
-                                   │
-                                   ▼
-                              YNAB API
+ OCR Mode Check
+   (DataStore)
+      │
+      ├── LOCAL ──────────────► ML Kit OCR ──► Receipt Parser ──► Entity Extraction
+      │                                                                  │
+      │                                                                  ▼
+      │                                                        ExtractedReceiptData
+      │                                                                  │
+      └── CLOUD ──────────────► GitHub Models API (GPT-5-mini) ─────────┘
+                                  (vision-based extraction)
+                                                                         │
+                                                           ┌─────────────┼─────────────┐
+                                                           ▼             ▼             ▼
+                                                     Fuzzy Payee    Category      Account
+                                                      Match        Suggestion    Detection
+                                                           └─────────────┼─────────────┘
+                                                                         ▼
+                                                             Transaction Review Screen
+                                                                  (user edits)
+                                                                         │
+                                                                         ▼
+                                                                Submit Transaction
+                                                                   /          \
+                                                                  /            \
+                                                                 ▼              ▼
+                                                           YNAB API        Offline Queue
+                                                          (success)        (no network)
+                                                                                │
+                                                                                ▼
+                                                                           WorkManager
+                                                                         (retry w/ backoff)
+                                                                                │
+                                                                                ▼
+                                                                           YNAB API
 ```
 
 ### Step-by-Step
@@ -120,13 +121,14 @@ All source code lives under `app/src/main/java/com/receiptscanner/`.
 | `data/local` | Local persistence (Room, DataStore, encrypted storage) | `AppDatabase`, `TokenProvider`/`TokenProviderImpl`, `UserPreferencesManager` |
 | `data/local/dao` | Room Data Access Objects | `AccountCacheDao`, `CategoryCacheDao`, `PayeeCacheDao`, `PendingTransactionDao`, `ReceiptDao`, `SyncMetadataDao` |
 | `data/local/entity` | Room entity definitions | `AccountCacheEntity`, `CategoryCacheEntity`, `PayeeCacheEntity`, `PendingTransactionEntity`, `ReceiptEntity`, `SyncMetadataEntity` |
-| `data/ocr` | On-device text recognition | `MlKitTextRecognizer`, `ReceiptParser` |
+| `data/ocr` | On-device text recognition and OCR providers | `MlKitTextRecognizer`, `ReceiptParser`, `LocalOcrProvider`, `CloudOcrProvider` |
 | `data/remote` | YNAB API networking | `YnabApi` (Retrofit interface) |
+| `data/remote/copilot` | GitHub Models API integration for cloud OCR | `CopilotApiService`, `CopilotTokenProvider`, `CopilotApiModels` |
 | `data/remote/dto` | API data transfer objects | `AccountDto`, `BudgetDto`, `CategoryDto`, `PayeeDto`, `TransactionDto`, `YnabResponse` |
 | `data/remote/interceptor` | OkHttp interceptors | `AuthInterceptor` (Bearer token injection) |
 | `data/repository` | Repository implementations | `YnabRepositoryImpl`, `ReceiptRepositoryImpl`, `TransactionQueueRepositoryImpl` |
 | `di` | Hilt dependency injection modules | `AppModule`, `DatabaseModule`, `NetworkModule`, `OcrModule` |
-| `domain/model` | Business models | `Account`, `Budget`, `Category`, `CategoryGroup`, `MatchResult`, `Payee`, `PendingTransaction`, `Receipt`, `ExtractedReceiptData`, `Transaction` |
+| `domain/model` | Business models | `Account`, `Budget`, `Category`, `CategoryGroup`, `MatchResult`, `OcrMode`, `Payee`, `PendingTransaction`, `Receipt`, `ExtractedReceiptData`, `Transaction` |
 | `domain/repository` | Repository interfaces (ports) | `YnabRepository`, `ReceiptRepository`, `TransactionQueueRepository` |
 | `domain/usecase` | Business logic use cases | `ExtractReceiptDataUseCase`, `MatchPayeeUseCase`, `MatchAccountUseCase`, `SuggestCategoryUseCase`, `SubmitTransactionUseCase`, `ProcessOfflineQueueUseCase`, `SyncPayeeCacheUseCase` |
 | `domain/util` | Shared domain utilities | `FuzzyMatcher`, `MilliunitConverter` |
@@ -147,6 +149,15 @@ All source code lives under `app/src/main/java/com/receiptscanner/`.
 - Google ML Kit Text Recognition runs entirely on-device using the device's neural engine.
 - `MlKitTextRecognizer` wraps the ML Kit API and returns raw text blocks.
 - `ReceiptParser` applies regex-based heuristics to extract structured fields (store name, total, date, card last four) from the raw OCR output.
+
+### 1b. Cloud OCR (GitHub Copilot AI) — Optional
+
+- Uses the **GitHub Models API** with a vision-capable model (GPT-5-mini) for higher-accuracy receipt extraction.
+- Sends the receipt image as base64 JPEG to a chat completions endpoint with a structured extraction prompt.
+- The model returns JSON with store name, total, date, card last four, and a confidence score — no regex parsing needed.
+- Requires a GitHub Personal Access Token stored in `EncryptedSharedPreferences`.
+- User selects OCR mode (Local/Cloud) in Settings; defaults to Local for existing users.
+- `CopilotApiService` handles request construction, response parsing, and error mapping (auth, rate limit, network).
 
 ### 2. Fuzzy Matching over AI Classification
 

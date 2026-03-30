@@ -1,44 +1,23 @@
 package com.receiptscanner.domain.usecase
 
 import android.graphics.Bitmap
-import com.receiptscanner.data.ocr.EntityExtractionHelper
-import com.receiptscanner.data.ocr.MlKitTextRecognizer
-import com.receiptscanner.data.ocr.ReceiptParser
-import com.receiptscanner.data.ocr.ImagePreprocessor
+import com.receiptscanner.data.local.UserPreferencesManager
+import com.receiptscanner.data.ocr.CloudOcrProvider
+import com.receiptscanner.data.ocr.LocalOcrProvider
 import com.receiptscanner.domain.model.ExtractedReceiptData
+import com.receiptscanner.domain.model.OcrMode
+import kotlinx.coroutines.flow.first
 import javax.inject.Inject
 
 class ExtractReceiptDataUseCase @Inject constructor(
-    private val textRecognizer: MlKitTextRecognizer,
-    private val receiptParser: ReceiptParser,
-    private val entityExtractor: EntityExtractionHelper,
-    private val imagePreprocessor: ImagePreprocessor,
+    private val localOcrProvider: LocalOcrProvider,
+    private val cloudOcrProvider: CloudOcrProvider,
+    private val userPreferencesManager: UserPreferencesManager,
 ) {
     suspend operator fun invoke(bitmap: Bitmap, rotationDegrees: Int = 0): Result<ExtractedReceiptData> {
-        return try {
-            val processed = imagePreprocessor.preprocess(bitmap)
-            try {
-                val ocrResult = textRecognizer.recognizeText(processed, rotationDegrees)
-                val parsed = receiptParser.parse(ocrResult)
-
-                val entities = entityExtractor.extract(ocrResult.fullText)
-
-                val useEntityTotal = parsed.totalAmount == null ||
-                    (parsed.totalConfidence < 0.3f && entities.totalAmount != null)
-
-                val merged = parsed.copy(
-                    date = parsed.date ?: entities.date,
-                    totalAmount = if (useEntityTotal) entities.totalAmount ?: parsed.totalAmount else parsed.totalAmount,
-                    totalConfidence = if (useEntityTotal && entities.totalAmount != null) 0.25f else parsed.totalConfidence,
-                    cardLastFour = parsed.cardLastFour ?: entities.cardLastFour,
-                )
-
-                Result.success(merged)
-            } finally {
-                processed.recycle()
-            }
-        } catch (e: Exception) {
-            Result.failure(e)
+        return when (userPreferencesManager.ocrMode.first()) {
+            OcrMode.LOCAL -> localOcrProvider.extract(bitmap, rotationDegrees)
+            OcrMode.CLOUD -> cloudOcrProvider.extract(bitmap, rotationDegrees)
         }
     }
 }

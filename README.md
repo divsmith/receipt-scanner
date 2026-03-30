@@ -9,6 +9,7 @@
 
 - 📷 **Camera capture & gallery import** — Take a photo or pick from gallery
 - 🔍 **On-device OCR via Google ML Kit** — No cloud dependency; all text recognition happens locally
+- 🤖 **Cloud OCR via GitHub Copilot AI** — Optional vision AI-powered extraction using GPT-5-mini for higher accuracy
 - 🏪 **Fuzzy payee matching** — Uses Levenshtein distance to match extracted merchant names to YNAB payees
 - 📂 **Smart category suggestions** — Suggests categories based on payee transaction history
 - 💳 **Automatic account detection** — Identifies the payment account via card last-4 digits on the receipt
