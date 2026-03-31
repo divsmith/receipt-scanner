@@ -39,4 +39,6 @@ open class FakeYnabRepository : YnabRepository {
     override suspend fun syncCategories(budgetId: String): Result<Unit> = syncCategoriesResult
 
     override suspend fun syncAccounts(budgetId: String): Result<Unit> = syncAccountsResult
+
+    override suspend fun clearAllCaches(): Result<Unit> = Result.success(Unit)
 }

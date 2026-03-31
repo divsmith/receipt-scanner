@@ -16,4 +16,5 @@ interface YnabRepository {
     suspend fun syncPayees(budgetId: String): Result<Unit>
     suspend fun syncCategories(budgetId: String): Result<Unit>
     suspend fun syncAccounts(budgetId: String): Result<Unit>
+    suspend fun clearAllCaches(): Result<Unit>
 }

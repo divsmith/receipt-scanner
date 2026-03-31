@@ -12,4 +12,7 @@ interface SyncMetadataDao {
 
     @Upsert
     suspend fun upsert(entity: SyncMetadataEntity)
+
+    @Query("DELETE FROM sync_metadata")
+    suspend fun clearAll()
 }

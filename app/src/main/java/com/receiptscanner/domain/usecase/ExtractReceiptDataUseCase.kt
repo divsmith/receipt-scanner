@@ -3,6 +3,7 @@ package com.receiptscanner.domain.usecase
 import android.graphics.Bitmap
 import com.receiptscanner.data.local.UserPreferencesManager
 import com.receiptscanner.data.ocr.CloudOcrProvider
+import com.receiptscanner.data.ocr.DebugOcrData
 import com.receiptscanner.data.ocr.LocalOcrProvider
 import com.receiptscanner.domain.model.ExtractedReceiptData
 import com.receiptscanner.data.ocr.EntityExtractionHelper
@@ -30,6 +31,11 @@ internal fun mergeParsedAndEntityData(
     )
 }
 
+data class ExtractionResult(
+    val data: ExtractedReceiptData,
+    val debugOcrData: DebugOcrData? = null,
+)
+
 class ExtractReceiptDataUseCase @Inject constructor(
     private val localOcrProvider: LocalOcrProvider,
     private val cloudOcrProvider: CloudOcrProvider,
@@ -39,6 +45,19 @@ class ExtractReceiptDataUseCase @Inject constructor(
         return when (userPreferencesManager.ocrMode.first()) {
             OcrMode.LOCAL -> localOcrProvider.extract(bitmap, rotationDegrees)
             OcrMode.CLOUD -> cloudOcrProvider.extract(bitmap, rotationDegrees)
+        }
+    }
+
+    suspend fun invokeWithDebugInfo(
+        bitmap: Bitmap,
+        rotationDegrees: Int = 0,
+        imagePath: String,
+    ): Result<ExtractionResult> {
+        return when (userPreferencesManager.ocrMode.first()) {
+            OcrMode.LOCAL -> localOcrProvider.extractWithDebugInfo(bitmap, rotationDegrees, imagePath)
+                .map { (data, debug) -> ExtractionResult(data, debug) }
+            OcrMode.CLOUD -> cloudOcrProvider.extract(bitmap, rotationDegrees)
+                .map { data -> ExtractionResult(data, null) }
         }
     }
 }

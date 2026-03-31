@@ -162,6 +162,13 @@ class YnabRepositoryImpl @Inject constructor(
             ),
         )
     }
+
+    override suspend fun clearAllCaches(): Result<Unit> = runCatching {
+        accountCacheDao.clearAll()
+        payeeCacheDao.clearAll()
+        categoryCacheDao.clearAll()
+        syncMetadataDao.clearAll()
+    }
 }
 
 private fun BudgetDto.toDomain() = Budget(id = id, name = name)

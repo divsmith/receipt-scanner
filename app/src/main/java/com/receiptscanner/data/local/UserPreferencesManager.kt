@@ -3,6 +3,7 @@ package com.receiptscanner.data.local
 import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
@@ -65,6 +66,16 @@ class UserPreferencesManager @Inject constructor(
         }
     }
 
+    val debugModeEnabled: Flow<Boolean> = dataStore.data.map { prefs ->
+        prefs[KEY_DEBUG_MODE] ?: false
+    }
+
+    suspend fun saveDebugMode(enabled: Boolean) {
+        dataStore.edit { prefs ->
+            prefs[KEY_DEBUG_MODE] = enabled
+        }
+    }
+
     suspend fun clearAll() {
         dataStore.edit { it.clear() }
     }
@@ -74,5 +85,6 @@ class UserPreferencesManager @Inject constructor(
         private val KEY_BUDGET_NAME = stringPreferencesKey("selected_budget_name")
         private val KEY_DEFAULT_ACCOUNT_ID = stringPreferencesKey("default_account_id")
         private val KEY_OCR_MODE = stringPreferencesKey("ocr_mode")
+        private val KEY_DEBUG_MODE = booleanPreferencesKey("debug_mode_enabled")
     }
 }

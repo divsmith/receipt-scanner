@@ -114,6 +114,19 @@ fun CameraScreen(
                 .fillMaxSize()
                 .padding(paddingValues),
         ) {
+            // Debug overlay takes over the full screen when present
+            if (uiState.debugOcrData != null) {
+                DebugOcrOverlay(
+                    debugData = uiState.debugOcrData!!,
+                    onContinue = { viewModel.dismissDebugOverlay() },
+                    onRetake = {
+                        viewModel.dismissDebugOverlay()
+                        // Don't navigate — user stays on camera screen for a retake
+                    },
+                )
+                return@Scaffold
+            }
+
             // Camera preview
             if (hasCameraPermission) {
                 val previewView = remember { PreviewView(context) }

@@ -35,6 +35,7 @@ import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
@@ -364,7 +365,7 @@ fun SettingsScreen(
                 Card(modifier = Modifier.fillMaxWidth()) {
                     Column(modifier = Modifier.padding(16.dp)) {
                         Text(
-                            "Data Management",
+                            "YNAB Data",
                             style = MaterialTheme.typography.titleMedium,
                         )
                         Spacer(modifier = Modifier.height(8.dp))
@@ -380,7 +381,7 @@ fun SettingsScreen(
                                     strokeWidth = 2.dp,
                                 )
                             } else {
-                                Text("Sync YNAB Data")
+                                Text("Import YNAB Data")
                             }
                         }
                         Spacer(modifier = Modifier.height(8.dp))
@@ -399,6 +400,38 @@ fun SettingsScreen(
 
             // App info
             HorizontalDivider()
+
+            // Developer section
+            Card(modifier = Modifier.fillMaxWidth()) {
+                Column(modifier = Modifier.padding(16.dp)) {
+                    Text(
+                        "Developer",
+                        style = MaterialTheme.typography.titleMedium,
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clickable { viewModel.toggleDebugMode() }
+                            .padding(vertical = 4.dp),
+                    ) {
+                        Switch(
+                            checked = uiState.debugModeEnabled,
+                            onCheckedChange = { viewModel.toggleDebugMode() },
+                        )
+                        Column(modifier = Modifier.padding(start = 12.dp)) {
+                            Text("Debug OCR Overlay", style = MaterialTheme.typography.bodyLarge)
+                            Text(
+                                "Shows detected text regions and field matches on captured receipts",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            )
+                        }
+                    }
+                }
+            }
+
             Text(
                 text = "Receipt Scanner v1.0.0",
                 style = MaterialTheme.typography.bodySmall,

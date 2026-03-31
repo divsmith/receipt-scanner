@@ -13,6 +13,17 @@ class LocalOcrProvider @Inject constructor(
     private val imagePreprocessor: ImagePreprocessor,
 ) {
     suspend fun extract(bitmap: Bitmap, rotationDegrees: Int): Result<ExtractedReceiptData> {
+        return extractInternal(bitmap, rotationDegrees).map { it.first }
+    }
+
+    suspend fun extractWithDebugInfo(bitmap: Bitmap, rotationDegrees: Int, imagePath: String): Result<Pair<ExtractedReceiptData, DebugOcrData>> {
+        return extractInternal(bitmap, rotationDegrees).map { (data, ocrResult) ->
+            val fieldSources = FieldSourceMapper.mapFieldSources(ocrResult, data)
+            data to DebugOcrData(ocrResult, fieldSources, imagePath)
+        }
+    }
+
+    private suspend fun extractInternal(bitmap: Bitmap, rotationDegrees: Int): Result<Pair<ExtractedReceiptData, TextRecognitionResult>> {
         return try {
             val processed = imagePreprocessor.preprocess(bitmap)
             try {
@@ -31,7 +42,7 @@ class LocalOcrProvider @Inject constructor(
                     cardLastFour = parsed.cardLastFour ?: entities.cardLastFour,
                 )
 
-                Result.success(merged)
+                Result.success(merged to ocrResult)
             } finally {
                 processed.recycle()
             }

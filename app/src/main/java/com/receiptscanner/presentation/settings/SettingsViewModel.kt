@@ -47,6 +47,7 @@ class SettingsViewModel @Inject constructor(
         val isCopilotTokenSaved: Boolean = false,
         val error: String? = null,
         val successMessage: String? = null,
+        val debugModeEnabled: Boolean = false,
     )
 
     private val _uiState = MutableStateFlow(UiState())
@@ -56,12 +57,21 @@ class SettingsViewModel @Inject constructor(
         loadSavedState()
         observePendingCount()
         observeOcrMode()
+        observeDebugMode()
     }
 
     private fun observeOcrMode() {
         viewModelScope.launch {
             userPreferencesManager.ocrMode.collect { mode ->
                 _uiState.update { it.copy(ocrMode = mode) }
+            }
+        }
+    }
+
+    private fun observeDebugMode() {
+        viewModelScope.launch {
+            userPreferencesManager.debugModeEnabled.collect { enabled ->
+                _uiState.update { it.copy(debugModeEnabled = enabled) }
             }
         }
     }
@@ -175,6 +185,8 @@ class SettingsViewModel @Inject constructor(
     fun selectBudget(budget: Budget) {
         viewModelScope.launch {
             userPreferencesManager.saveBudget(budget.id, budget.name)
+            // Clear stale data from any previously selected budget
+            ynabRepository.clearAllCaches()
             _uiState.update {
                 it.copy(
                     selectedBudgetId = budget.id,
@@ -217,10 +229,10 @@ class SettingsViewModel @Inject constructor(
             _uiState.update { it.copy(isSyncing = true, error = null) }
             syncPayeeCacheUseCase(budgetId).fold(
                 onSuccess = {
-                    _uiState.update { it.copy(isSyncing = false, successMessage = "YNAB data synced successfully") }
+                    _uiState.update { it.copy(isSyncing = false, successMessage = "YNAB data imported successfully") }
                 },
                 onFailure = { e ->
-                    _uiState.update { it.copy(isSyncing = false, error = e.message ?: "Sync failed") }
+                    _uiState.update { it.copy(isSyncing = false, error = e.message ?: "Import failed") }
                 },
             )
         }
@@ -236,10 +248,18 @@ class SettingsViewModel @Inject constructor(
 
     fun clearCache() {
         viewModelScope.launch {
+            ynabRepository.clearAllCaches()
             tokenProvider.setToken(null)
             copilotTokenProvider.setToken(null)
             userPreferencesManager.clearAll()
             _uiState.value = UiState()
+        }
+    }
+
+    fun toggleDebugMode() {
+        viewModelScope.launch {
+            val current = _uiState.value.debugModeEnabled
+            userPreferencesManager.saveDebugMode(!current)
         }
     }
 

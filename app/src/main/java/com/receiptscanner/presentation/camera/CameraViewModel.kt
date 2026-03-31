@@ -6,6 +6,8 @@ import android.net.Uri
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.receiptscanner.data.camera.CameraManager
+import com.receiptscanner.data.local.UserPreferencesManager
+import com.receiptscanner.data.ocr.DebugOcrData
 import com.receiptscanner.domain.model.ExtractedReceiptData
 import com.receiptscanner.domain.model.Receipt
 import com.receiptscanner.domain.repository.ReceiptRepository
@@ -16,6 +18,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import java.io.File
@@ -27,12 +30,15 @@ class CameraViewModel @Inject constructor(
     private val extractReceiptDataUseCase: ExtractReceiptDataUseCase,
     private val receiptRepository: ReceiptRepository,
     private val cameraManager: CameraManager,
+    private val userPreferencesManager: UserPreferencesManager,
 ) : ViewModel() {
 
     data class UiState(
         val isProcessing: Boolean = false,
         val error: String? = null,
         val isTorchEnabled: Boolean = false,
+        val debugOcrData: DebugOcrData? = null,
+        val pendingReceiptId: String? = null,
     )
 
     private val _uiState = MutableStateFlow(UiState())
@@ -84,28 +90,69 @@ class CameraViewModel @Inject constructor(
     }
 
     private suspend fun processImage(bitmap: Bitmap, imagePath: String, rotationDegrees: Int = 0) {
-        val result = extractReceiptDataUseCase(bitmap, rotationDegrees)
-        result.fold(
-            onSuccess = { extractedData ->
-                val receipt = Receipt(
-                    id = UUID.randomUUID().toString(),
-                    imagePath = imagePath,
-                    extractedData = extractedData,
-                )
-                receiptRepository.saveReceipt(receipt).fold(
-                    onSuccess = { receiptId ->
-                        _uiState.update { it.copy(isProcessing = false) }
-                        _navigateToReview.emit(receiptId)
-                    },
-                    onFailure = { e ->
-                        _uiState.update { it.copy(isProcessing = false, error = e.message ?: "Failed to save receipt") }
-                    },
-                )
+        val debugMode = userPreferencesManager.debugModeEnabled.first()
+
+        if (debugMode) {
+            extractReceiptDataUseCase.invokeWithDebugInfo(bitmap, rotationDegrees, imagePath).fold(
+                onSuccess = { result ->
+                    saveAndNavigateOrShowDebug(result.data, imagePath, result.debugOcrData)
+                },
+                onFailure = { e ->
+                    _uiState.update { it.copy(isProcessing = false, error = e.message ?: "OCR failed") }
+                },
+            )
+        } else {
+            extractReceiptDataUseCase(bitmap, rotationDegrees).fold(
+                onSuccess = { extractedData ->
+                    saveAndNavigateOrShowDebug(extractedData, imagePath, null)
+                },
+                onFailure = { e ->
+                    _uiState.update { it.copy(isProcessing = false, error = e.message ?: "OCR failed") }
+                },
+            )
+        }
+    }
+
+    private suspend fun saveAndNavigateOrShowDebug(
+        extractedData: ExtractedReceiptData,
+        imagePath: String,
+        debugOcrData: DebugOcrData?,
+    ) {
+        val receipt = Receipt(
+            id = UUID.randomUUID().toString(),
+            imagePath = imagePath,
+            extractedData = extractedData,
+        )
+        receiptRepository.saveReceipt(receipt).fold(
+            onSuccess = { receiptId ->
+                if (debugOcrData != null) {
+                    // Show debug overlay; user will tap "Continue" to proceed
+                    _uiState.update {
+                        it.copy(
+                            isProcessing = false,
+                            debugOcrData = debugOcrData,
+                            pendingReceiptId = receiptId,
+                        )
+                    }
+                } else {
+                    _uiState.update { it.copy(isProcessing = false) }
+                    _navigateToReview.emit(receiptId)
+                }
             },
             onFailure = { e ->
-                _uiState.update { it.copy(isProcessing = false, error = e.message ?: "OCR failed") }
+                _uiState.update { it.copy(isProcessing = false, error = e.message ?: "Failed to save receipt") }
             },
         )
+    }
+
+    fun dismissDebugOverlay() {
+        val receiptId = _uiState.value.pendingReceiptId
+        _uiState.update { it.copy(debugOcrData = null, pendingReceiptId = null) }
+        if (receiptId != null) {
+            viewModelScope.launch {
+                _navigateToReview.emit(receiptId)
+            }
+        }
     }
 
     fun clearError() {
