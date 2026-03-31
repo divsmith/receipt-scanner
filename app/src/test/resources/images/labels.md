@@ -220,7 +220,7 @@ Metadata extracted via OCR from each receipt image. All 450 images were successf
 | Store | Costco Wholesale |
 | Total | $190.32 |
 | Date | 11/16/2022 |
-| Card Last 4 | N/A |
+| Card Last 4 | 0784 |
 
 ---
 
@@ -294,7 +294,7 @@ Metadata extracted via OCR from each receipt image. All 450 images were successf
 
 | Field | Value |
 |---|---|
-| Store | Walmart |
+| Store | Harmons |
 | Total | $46.17 |
 | Date | 11/23/2022 |
 | Card Last 4 | N/A |
@@ -338,10 +338,10 @@ Metadata extracted via OCR from each receipt image. All 450 images were successf
 
 | Field | Value |
 |---|---|
-| Store | Walmart |
-| Total | $31.07 |
+| Store | Costco Wholesale |
+| Total | $85.35 |
 | Date | 11/26/2022 |
-| Card Last 4 | 9999 |
+| Card Last 4 | 0784 |
 
 ---
 
@@ -374,7 +374,7 @@ Metadata extracted via OCR from each receipt image. All 450 images were successf
 | Store | Costco Wholesale |
 | Total | $4.33 |
 | Date | 12/17/2022 |
-| Card Last 4 | N/A |
+| Card Last 4 | 0784 |
 
 ## receipt1_jpg.rf.91386a3225104d5c45f7e5e00238aeb4.jpg
 | Field | Value |

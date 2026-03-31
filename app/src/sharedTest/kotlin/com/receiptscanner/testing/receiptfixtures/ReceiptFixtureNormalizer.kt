@@ -58,17 +58,21 @@ object ReceiptFixtureNormalizer {
             ?: return null
 
         return canonicalizeStore(normalized)
+            .replace(Regex("""\s+#?\d{3,}\s*$"""), "")
+            .trim()
     }
 
     private fun canonicalizeStore(normalized: String): String {
         return when {
-            normalized.contains("wal mart") || normalized.contains("walmart") -> "walmart"
-            normalized.contains("costco") || normalized.contains("costgo") -> "costco wholesale"
+            normalized.contains("wal mart") || normalized.contains("walmart") ||
+                normalized.contains("great value") || normalized.replace(" ", "").contains("greatvalue") -> "walmart"
+            normalized.contains("costco") || normalized.contains("costgo") || normalized.contains("cotco") -> "costco wholesale"
             normalized.startsWith("whole foods") || normalized == "whole" -> "whole foods market"
+            normalized.contains("trader joe") -> "trader joe s"
             normalized.contains("winco") -> "winco foods"
             normalized.startsWith("spar") -> "spar"
             normalized.contains("ulta") -> "ulta beauty"
-            normalized.contains("soelberg") || normalized.contains("soelberb") -> "soelbergs market"
+            normalized.contains("soelberg") || normalized.contains("soelberb") || normalized.contains("sdelberg") -> "soelbergs market"
             normalized.contains("beans and brew") || normalized.contains("beans and brev") -> "beans and brews"
             normalized.contains("tractor") -> "tractor supply co"
             normalized.contains("tj maxx") || normalized.contains("homegoods") -> "tj maxx homegoods"

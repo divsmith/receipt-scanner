@@ -37,7 +37,7 @@ class ReceiptParser @Inject constructor() {
         """(?i)(?<!\w)(?:grand\s*)?total(?!\w)|amount\s*due|balance\s*due|net\s*(?:total|amount|due)|pay\s*this\s*amount"""
     )
 
-    private val amountPattern = Regex("""\$?\s*([\d,]+\.\d{2})""")
+    private val amountPattern = Regex("""\$?\s*([\d,]+\.\s*\d{2}|\d+,\d{2})(?!\d)""")
     private val payableTotalLabelPattern = Regex(
         """(?i)^(?:grand\s+total|total(?:\s+(?:amount|due|purchase|sale))?|amount\s+due|balance(?:\s+due)?|net\s+(?:total|amount|due)|pay\s+this\s+amount)(?:\s*\(?(?:incl(?:uded|\.?)?|including)\s+(?:(?:sales\s+)?tax|vat|gst|hst)\)?)?$"""
     )
@@ -58,7 +58,7 @@ class ReceiptParser @Inject constructor() {
         """(?i)^(receipt|transaction|welcome|thank\s*you|thanks|store\s*#\d*|address|phone|tel\s*:|fax\s*:|www\.|http)"""
     )
     private val storeStaffPattern = Regex(
-        """(?i)(^server\b|^guest\s*:?\s*\d|^guests?\s*:?\s*\d|^table\b|^ticket\b|^order\s*:?\s*#?\d|^host\b|^entered\s+by|^reprint|^paid\b|^check\s*#|^cashier\s*:|^mgr\s*:|^manager\b|^items?\s+sold|^see\s+back\s+of\s+receipt|^your\s+chance|^to\s+win\b|^ID\s*[\$#:]|^welcome\b|^join\s+us\b)"""
+        """(?i)(^server\b|^guest\s*:?\s*\d|^guests?\s*:?\s*\d|^table\b|^ticket\b|^order\s*:?\s*#?\d|^order\s*#\s*:|^customer\s+name\b|^host\b|^entered\s+by|^reprint|^paid\b|^check\s*#|^cashier\s*:|^mgr\s*:|^manager\b|^items?\s+sold|^see\s+back\s+of\s+receipt|^your\s+chance|^to\s+win\b|^ID\s*[\$#:]|^welcome\b|^join\s+us\b)"""
     )
     private val streetAddressPattern = Regex(
         """(?i)\b\d+\s+(?:[a-z0-9.'-]+\s+){0,4}(?:st|street|ave|avenida|avenue|rd|road|blvd|boulevard|dr|drive|ln|lane|way|hwy|highway|pkwy|parkway|center|centre|ctr|plaza|plz)\b"""
@@ -73,11 +73,17 @@ class ReceiptParser @Inject constructor() {
     private val numericDateWithYearPattern = Regex("""(\d{1,2})[/\-.](\d{1,2})[/\-.](\d{4})""")
     private val numericDateWithShortYearPattern = Regex("""(\d{1,2})[/\-.](\d{1,2})[/\-.](\d{2})(?!\d)""")
     private val isoDatePattern = Regex("""(\d{4})-(\d{2})-(\d{2})""")
+    // Separators are optional between month-name and day (handles "Jun22 18"),
+    // and between the optional comma and year (handles "JANUARY 30,2018").
+    // (?!\d) after day prevents "January 2014" from matching day=20, year=14.
+    // Year accepts 2–4 digits; 2-digit years are normalized to 20xx in parseMonthNameDate.
     private val monthNameDatePattern = Regex(
-        """(?i)(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)[/\-\s]+(\d{1,2}),?[/\-\s]+(\d{4})"""
+        """(?i)(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)[/\-\s]*(\d{1,2})(?!\d),?[/\-\s]*(\d{2,4})(?!\d)"""
     )
+    // Separator between day and month-name is optional (handles "16Feb 19", "25AUG 17").
+    // Year accepts 2–4 digits; 2-digit years are normalized in parseDayFirstMonthNameDate.
     private val dayFirstMonthNamePattern = Regex(
-        """(?i)(\d{1,2})[/\-\s]+(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)[/\-\s]+(\d{4})"""
+        """(?i)\b(\d{1,2})[/\-\s]*(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)[/\-\s]+(\d{2,4})(?!\d)"""
     )
     // Compact format: "Jul15'17" or "Jul 15'17" — abbreviated month, day, apostrophe + 2-digit year
     private val compactMonthDatePattern = Regex(
@@ -325,7 +331,7 @@ class ReceiptParser @Inject constructor() {
             val isTenderLabel = providerBrandLabelPattern.matches(labelNorm) ||
                 guardedTenderLabelPattern.matches(labelNorm)
 
-            val nearbyAmount = allLines
+            val candidateLines = allLines
                 .filter { candidate ->
                     val box = candidate.boundingBox ?: return@filter false
                     val candidateMidY = (box.top + box.bottom) / 2
@@ -352,6 +358,15 @@ class ReceiptParser @Inject constructor() {
                     }
                     true
                 }
+
+            // Prefer same-row (right-of) candidates over below candidates: "TOTAL: $X" is more
+            // reliable than a label above a column of tip suggestions.
+            val sameRowCandidates = candidateLines.filter { candidate ->
+                val box = candidate.boundingBox!!
+                val candidateMidY = (box.top + box.bottom) / 2
+                box.left > totalBox.right && kotlin.math.abs(candidateMidY - totalMidY) < lineHeight
+            }
+            val nearbyAmount = (sameRowCandidates.ifEmpty { candidateLines })
                 .minByOrNull { candidate ->
                     val box = candidate.boundingBox!!
                     val dx = maxOf(0, box.left - totalBox.right)
@@ -376,9 +391,23 @@ class ReceiptParser @Inject constructor() {
 
     private fun parseMilliunits(amountStr: String): Long? {
         return try {
-            MilliunitConverter.dollarsToMilliunits(BigDecimal(amountStr.replace(",", "")))
+            MilliunitConverter.dollarsToMilliunits(BigDecimal(normalizeDecimalSeparator(amountStr)))
         } catch (e: NumberFormatException) {
             null
+        }
+    }
+
+    /** Converts an extracted amount string to a normalized decimal string.
+     *  Handles US thousands-comma ("1,234.56" → "1234.56"),
+     *  European comma-decimal ("146,73" → "146.73"), and
+     *  OCR-split decimals ("80. 45" → "80.45"). */
+    private fun normalizeDecimalSeparator(amountStr: String): String {
+        val trimmed = amountStr.trim().replace(Regex("\\s+"), "")
+        return if ('.' in trimmed) {
+            trimmed.replace(",", "")
+        } else {
+            // Treat trailing NNN,DD as European decimal when no period is present
+            trimmed.replace(",", ".")
         }
     }
 
@@ -417,7 +446,7 @@ class ReceiptParser @Inject constructor() {
             val amountLine = line
             val amountMatch = match
 
-            val amountStr = amountMatch.groupValues[1].replace(",", "")
+            val amountStr = normalizeDecimalSeparator(amountMatch.groupValues[1])
             val amount = try {
                 MilliunitConverter.dollarsToMilliunits(BigDecimal(amountStr))
             } catch (e: NumberFormatException) {
@@ -594,7 +623,8 @@ class ReceiptParser @Inject constructor() {
         return try {
             val monthStr = match.groupValues[1]
             val day = match.groupValues[2].toInt()
-            val year = match.groupValues[3].toInt()
+            val rawYear = match.groupValues[3].toInt()
+            val year = if (rawYear < 100) 2000 + rawYear else rawYear
             val month = parseMonthName(monthStr) ?: return null
             LocalDate.of(year, month, day)
         } catch (_: Exception) {
@@ -606,7 +636,8 @@ class ReceiptParser @Inject constructor() {
         return try {
             val day = match.groupValues[1].toInt()
             val monthStr = match.groupValues[2]
-            val year = match.groupValues[3].toInt()
+            val rawYear = match.groupValues[3].toInt()
+            val year = if (rawYear < 100) 2000 + rawYear else rawYear
             val month = parseMonthName(monthStr) ?: return null
             LocalDate.of(year, month, day)
         } catch (_: Exception) {
@@ -662,8 +693,8 @@ class ReceiptParser @Inject constructor() {
             Regex("[-]{4,}\\s*(\\d{4})"),
             Regex("(?i)ending\\s+in\\s+(\\d{4})"),
             Regex("(?i)card\\s*:?\\s*\\*{0,4}\\s*(\\d{4})"),
-            Regex("(?i)(?:VISA|MASTERCARD|MC|AMEX|DISCOVER|DEBIT|CREDIT)\\s+\\*{0,4}\\s*(\\d{4})"),
-            Regex("(?i)account\\s*[:#]?\\s*[xX*]*\\s*(\\d{4})"),
+            Regex("(?i)(?:VISA|MASTERCARD|MC|AMEX|DISCOVER|DEBIT|CREDIT)(?:\\s+(?:CREDIT|DEBIT))?[-\\s]+\\*{0,4}\\s*(\\d{4})"),
+            Regex("(?i)account\\s*[:#]?\\s*[xX*]*\\s*(\\d{4})(?!\\d)"),
         )
 
         for (pattern in patterns) {
