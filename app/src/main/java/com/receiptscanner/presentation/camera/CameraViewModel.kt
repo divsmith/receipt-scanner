@@ -1,6 +1,9 @@
 package com.receiptscanner.presentation.camera
 
+import android.app.Activity
 import android.content.Context
+import android.content.Intent
+import android.content.IntentSender
 import android.graphics.Bitmap
 import android.net.Uri
 import androidx.lifecycle.ViewModel
@@ -8,6 +11,7 @@ import androidx.lifecycle.viewModelScope
 import com.receiptscanner.data.camera.CameraManager
 import com.receiptscanner.data.local.UserPreferencesManager
 import com.receiptscanner.data.ocr.DebugOcrData
+import com.receiptscanner.data.ocr.DocumentScannerHelper
 import com.receiptscanner.data.ocr.LocalOcrProvider
 import com.receiptscanner.domain.model.ExtractedReceiptData
 import com.receiptscanner.domain.model.Receipt
@@ -33,6 +37,7 @@ class CameraViewModel @Inject constructor(
     private val receiptRepository: ReceiptRepository,
     private val cameraManager: CameraManager,
     private val userPreferencesManager: UserPreferencesManager,
+    private val documentScannerHelper: DocumentScannerHelper,
 ) : ViewModel() {
 
     data class UiState(
@@ -48,6 +53,9 @@ class CameraViewModel @Inject constructor(
 
     private val _navigateToReview = MutableSharedFlow<String>()
     val navigateToReview = _navigateToReview.asSharedFlow()
+
+    private val _launchDocumentScanner = MutableSharedFlow<IntentSender>()
+    val launchDocumentScanner = _launchDocumentScanner.asSharedFlow()
 
     fun capturePhoto(context: Context) {
         viewModelScope.launch {
@@ -159,6 +167,41 @@ class CameraViewModel @Inject constructor(
 
     fun retakeFromDebugOverlay() {
         _uiState.update { it.copy(debugOcrData = null, pendingReceiptId = null) }
+    }
+
+    fun startDocumentScan(activity: Activity) {
+        viewModelScope.launch {
+            try {
+                val intentSender = documentScannerHelper.getScanIntent(activity)
+                _launchDocumentScanner.emit(intentSender)
+            } catch (e: Exception) {
+                _uiState.update { it.copy(error = e.message ?: "Document scanner unavailable") }
+            }
+        }
+    }
+
+    fun handleDocumentScanResult(context: Context, resultCode: Int, data: Intent?) {
+        val imageUri = documentScannerHelper.parseResult(resultCode, data) ?: return
+        viewModelScope.launch {
+            _uiState.update { it.copy(isProcessing = true, error = null) }
+            try {
+                val bitmap = cameraManager.loadBitmapFromUri(context, imageUri)
+                if (bitmap != null) {
+                    val storageDir = File(context.filesDir, "receipts")
+                    if (!storageDir.exists()) storageDir.mkdirs()
+                    val file = File(storageDir, "receipt_${System.currentTimeMillis()}.jpg")
+                    file.outputStream().use { out ->
+                        bitmap.compress(Bitmap.CompressFormat.JPEG, 95, out)
+                    }
+                    // Scanner output is already corrected; no rotation needed
+                    processImage(bitmap, file.absolutePath, 0)
+                } else {
+                    _uiState.update { it.copy(isProcessing = false, error = "Failed to load scanned image") }
+                }
+            } catch (e: Exception) {
+                _uiState.update { it.copy(isProcessing = false, error = e.message ?: "Scan processing failed") }
+            }
+        }
     }
 
     fun clearError() {

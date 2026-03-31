@@ -35,7 +35,8 @@ camerax = "1.4.1"
 
 # ML Kit
 mlkitTextRecognition = "16.0.1"
-mlkitEntityExtraction = "16.0.0-beta5"
+mlkitEntityExtraction = "16.0.0-beta6"
+mlkitDocumentScanner = "16.0.0"
 
 # Image Loading
 coil = "3.1.0"
@@ -122,6 +123,7 @@ camerax-view = { group = "androidx.camera", name = "camera-view", version.ref = 
 # ML Kit
 mlkit-text-recognition = { group = "com.google.mlkit", name = "text-recognition", version.ref = "mlkitTextRecognition" }
 mlkit-entity-extraction = { group = "com.google.mlkit", name = "entity-extraction", version.ref = "mlkitEntityExtraction" }
+mlkit-document-scanner = { group = "com.google.android.gms", name = "play-services-mlkit-document-scanner", version.ref = "mlkitDocumentScanner" }
 
 # Coil
 coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }

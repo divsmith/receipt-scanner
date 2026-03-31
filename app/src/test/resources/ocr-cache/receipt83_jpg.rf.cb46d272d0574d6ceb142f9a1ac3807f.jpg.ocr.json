@@ -12,7 +12,19 @@
             "right": 107,
             "bottom": 816
           },
-          "confidence": 0.69921875
+          "confidence": 0.69921875,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 93,
+                "top": 792,
+                "right": 107,
+                "bottom": 816
+              },
+              "confidence": 0.69921875
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -33,7 +45,29 @@
             "right": 1084,
             "bottom": 399
           },
-          "confidence": 0.69140625
+          "confidence": 0.69140625,
+          "elements": [
+            {
+              "text": "BRASAS",
+              "boundingBox": {
+                "left": 346,
+                "top": 375,
+                "right": 615,
+                "bottom": 399
+              },
+              "confidence": 0.7630208
+            },
+            {
+              "text": "RESTAURANT",
+              "boundingBox": {
+                "left": 639,
+                "top": 370,
+                "right": 1084,
+                "bottom": 396
+              },
+              "confidence": 0.6484375
+            }
+          ]
         },
         {
           "text": "G011 W ROOSEVEL RO",
@@ -43,7 +77,49 @@
             "right": 1021,
             "bottom": 428
           },
-          "confidence": 0.58177084
+          "confidence": 0.58177084,
+          "elements": [
+            {
+              "text": "G011",
+              "boundingBox": {
+                "left": 431,
+                "top": 400,
+                "right": 549,
+                "bottom": 428
+              },
+              "confidence": 0.45507812
+            },
+            {
+              "text": "W",
+              "boundingBox": {
+                "left": 603,
+                "top": 400,
+                "right": 609,
+                "bottom": 426
+              },
+              "confidence": 0.65234375
+            },
+            {
+              "text": "ROOSEVEL",
+              "boundingBox": {
+                "left": 650,
+                "top": 397,
+                "right": 917,
+                "bottom": 426
+              },
+              "confidence": 0.6557617
+            },
+            {
+              "text": "RO",
+              "boundingBox": {
+                "left": 955,
+                "top": 396,
+                "right": 1021,
+                "bottom": 423
+              },
+              "confidence": 0.50390625
+            }
+          ]
         },
         {
           "text": "CICERO, 60B0A",
@@ -53,7 +129,29 @@
             "right": 943,
             "bottom": 455
           },
-          "confidence": 0.57161456
+          "confidence": 0.57161456,
+          "elements": [
+            {
+              "text": "CICERO,",
+              "boundingBox": {
+                "left": 523,
+                "top": 426,
+                "right": 699,
+                "bottom": 455
+              },
+              "confidence": 0.71651787
+            },
+            {
+              "text": "60B0A",
+              "boundingBox": {
+                "left": 779,
+                "top": 424,
+                "right": 943,
+                "bottom": 452
+              },
+              "confidence": 0.36875
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -74,7 +172,29 @@
             "right": 453,
             "bottom": 547
           },
-          "confidence": 0.7467448
+          "confidence": 0.7467448,
+          "elements": [
+            {
+              "text": "Cashier:",
+              "boundingBox": {
+                "left": 123,
+                "top": 505,
+                "right": 323,
+                "bottom": 545
+              },
+              "confidence": 0.72558594
+            },
+            {
+              "text": "Tany",
+              "boundingBox": {
+                "left": 344,
+                "top": 507,
+                "right": 453,
+                "bottom": 547
+              },
+              "confidence": 0.7890625
+            }
+          ]
         },
         {
           "text": "02Mar 2019 12:53:4Bp",
@@ -84,7 +204,39 @@
             "right": 724,
             "bottom": 581
           },
-          "confidence": 0.7302517
+          "confidence": 0.7302517,
+          "elements": [
+            {
+              "text": "02Mar",
+              "boundingBox": {
+                "left": 118,
+                "top": 541,
+                "right": 291,
+                "bottom": 581
+              },
+              "confidence": 0.7757813
+            },
+            {
+              "text": "2019",
+              "boundingBox": {
+                "left": 303,
+                "top": 539,
+                "right": 436,
+                "bottom": 578
+              },
+              "confidence": 0.80371094
+            },
+            {
+              "text": "12:53:4Bp",
+              "boundingBox": {
+                "left": 465,
+                "top": 535,
+                "right": 724,
+                "bottom": 576
+              },
+              "confidence": 0.67230904
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -105,7 +257,29 @@
             "right": 539,
             "bottom": 658
           },
-          "confidence": 0.7141335
+          "confidence": 0.7141335,
+          "elements": [
+            {
+              "text": "Chicken",
+              "boundingBox": {
+                "left": 194,
+                "top": 618,
+                "right": 414,
+                "bottom": 658
+              },
+              "confidence": 0.8348214
+            },
+            {
+              "text": "Tort",
+              "boundingBox": {
+                "left": 456,
+                "top": 618,
+                "right": 539,
+                "bottom": 658
+              },
+              "confidence": 0.5029297
+            }
+          ]
         },
         {
           "text": "Horchata",
@@ -115,7 +289,19 @@
             "right": 441,
             "bottom": 693
           },
-          "confidence": 0.86816406
+          "confidence": 0.86816406,
+          "elements": [
+            {
+              "text": "Horchata",
+              "boundingBox": {
+                "left": 193,
+                "top": 665,
+                "right": 441,
+                "bottom": 693
+              },
+              "confidence": 0.86816406
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -136,7 +322,29 @@
             "right": 553,
             "bottom": 816
           },
-          "confidence": 0.7140625
+          "confidence": 0.7140625,
+          "elements": [
+            {
+              "text": "Custom",
+              "boundingBox": {
+                "left": 196,
+                "top": 789,
+                "right": 412,
+                "bottom": 816
+              },
+              "confidence": 0.6901042
+            },
+            {
+              "text": "Item",
+              "boundingBox": {
+                "left": 433,
+                "top": 789,
+                "right": 553,
+                "bottom": 816
+              },
+              "confidence": 0.75
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -157,7 +365,19 @@
             "right": 325,
             "bottom": 900
           },
-          "confidence": 0.8256836
+          "confidence": 0.8256836,
+          "elements": [
+            {
+              "text": "Subtotal",
+              "boundingBox": {
+                "left": 94,
+                "top": 870,
+                "right": 325,
+                "bottom": 900
+              },
+              "confidence": 0.8256836
+            }
+          ]
         },
         {
           "text": "Tax",
@@ -167,7 +387,19 @@
             "right": 191,
             "bottom": 940
           },
-          "confidence": 0.8671875
+          "confidence": 0.8671875,
+          "elements": [
+            {
+              "text": "Tax",
+              "boundingBox": {
+                "left": 97,
+                "top": 914,
+                "right": 191,
+                "bottom": 940
+              },
+              "confidence": 0.8671875
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -188,7 +420,19 @@
             "right": 258,
             "bottom": 1031
           },
-          "confidence": 0.8
+          "confidence": 0.8,
+          "elements": [
+            {
+              "text": "Total",
+              "boundingBox": {
+                "left": 119,
+                "top": 979,
+                "right": 258,
+                "bottom": 1031
+              },
+              "confidence": 0.8
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -209,7 +453,19 @@
             "right": 870,
             "bottom": 483
           },
-          "confidence": 0.6140625
+          "confidence": 0.6140625,
+          "elements": [
+            {
+              "text": "7087127173",
+              "boundingBox": {
+                "left": 554,
+                "top": 457,
+                "right": 870,
+                "bottom": 483
+              },
+              "confidence": 0.6140625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -230,7 +486,29 @@
             "right": 742,
             "bottom": 1099
           },
-          "confidence": 0.6503906
+          "confidence": 0.6503906,
+          "elements": [
+            {
+              "text": "Order",
+              "boundingBox": {
+                "left": 112,
+                "top": 1066,
+                "right": 256,
+                "bottom": 1099
+              },
+              "confidence": 0.68671876
+            },
+            {
+              "text": "T237THOQ0TZRC",
+              "boundingBox": {
+                "left": 285,
+                "top": 1060,
+                "right": 742,
+                "bottom": 1097
+              },
+              "confidence": 0.6364183
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -251,7 +529,19 @@
             "right": 1360,
             "bottom": 644
           },
-          "confidence": 0.5859375
+          "confidence": 0.5859375,
+          "elements": [
+            {
+              "text": "S6.5O",
+              "boundingBox": {
+                "left": 1206,
+                "top": 612,
+                "right": 1360,
+                "bottom": 644
+              },
+              "confidence": 0.5859375
+            }
+          ]
         },
         {
           "text": "$O.00",
@@ -261,7 +551,19 @@
             "right": 1359,
             "bottom": 685
           },
-          "confidence": 0.546875
+          "confidence": 0.546875,
+          "elements": [
+            {
+              "text": "$O.00",
+              "boundingBox": {
+                "left": 1203,
+                "top": 648,
+                "right": 1359,
+                "bottom": 685
+              },
+              "confidence": 0.546875
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -282,7 +584,29 @@
             "right": 1361,
             "bottom": 727
           },
-          "confidence": 0.70591515
+          "confidence": 0.70591515,
+          "elements": [
+            {
+              "text": "MD",
+              "boundingBox": {
+                "left": 1100,
+                "top": 692,
+                "right": 1185,
+                "bottom": 727
+              },
+              "confidence": 0.8144531
+            },
+            {
+              "text": "S2.00",
+              "boundingBox": {
+                "left": 1209,
+                "top": 688,
+                "right": 1361,
+                "bottom": 725
+              },
+              "confidence": 0.6625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -303,7 +627,19 @@
             "right": 1367,
             "bottom": 809
           },
-          "confidence": 0.5625
+          "confidence": 0.5625,
+          "elements": [
+            {
+              "text": "So.50",
+              "boundingBox": {
+                "left": 1210,
+                "top": 775,
+                "right": 1367,
+                "bottom": 809
+              },
+              "confidence": 0.5625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -324,7 +660,19 @@
             "right": 1368,
             "bottom": 890
           },
-          "confidence": 0.7554687
+          "confidence": 0.7554687,
+          "elements": [
+            {
+              "text": "$9.00",
+              "boundingBox": {
+                "left": 1221,
+                "top": 855,
+                "right": 1368,
+                "bottom": 890
+              },
+              "confidence": 0.7554687
+            }
+          ]
         },
         {
           "text": "So.97",
@@ -334,7 +682,19 @@
             "right": 1369,
             "bottom": 931
           },
-          "confidence": 0.6203125
+          "confidence": 0.6203125,
+          "elements": [
+            {
+              "text": "So.97",
+              "boundingBox": {
+                "left": 1220,
+                "top": 899,
+                "right": 1369,
+                "bottom": 931
+              },
+              "confidence": 0.6203125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -355,7 +715,19 @@
             "right": 1366,
             "bottom": 1010
           },
-          "confidence": 0.6617187
+          "confidence": 0.6617187,
+          "elements": [
+            {
+              "text": "$9.97",
+              "boundingBox": {
+                "left": 1218,
+                "top": 980,
+                "right": 1366,
+                "bottom": 1010
+              },
+              "confidence": 0.6617187
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -376,7 +748,39 @@
             "right": 1365,
             "bottom": 1178
           },
-          "confidence": 0.593471
+          "confidence": 0.593471,
+          "elements": [
+            {
+              "text": "Online:",
+              "boundingBox": {
+                "left": 156,
+                "top": 1134,
+                "right": 322,
+                "bottom": 1178
+              },
+              "confidence": 0.65959823
+            },
+            {
+              "text": "https://clover.com/r/T237THHOQ0T",
+              "boundingBox": {
+                "left": 345,
+                "top": 1123,
+                "right": 1253,
+                "bottom": 1176
+              },
+              "confidence": 0.5810547
+            },
+            {
+              "text": "ZRC",
+              "boundingBox": {
+                "left": 1260,
+                "top": 1121,
+                "right": 1365,
+                "bottom": 1164
+              },
+              "confidence": 0.57161456
+            }
+          ]
         }
       ],
       "boundingBox": {

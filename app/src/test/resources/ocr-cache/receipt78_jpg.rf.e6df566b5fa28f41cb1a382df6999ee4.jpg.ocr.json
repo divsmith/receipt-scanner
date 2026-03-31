@@ -12,7 +12,29 @@
             "right": 1076,
             "bottom": 364
           },
-          "confidence": 0.8552517
+          "confidence": 0.8552517,
+          "elements": [
+            {
+              "text": "Paradise",
+              "boundingBox": {
+                "left": 370,
+                "top": 300,
+                "right": 671,
+                "bottom": 364
+              },
+              "confidence": 0.8671875
+            },
+            {
+              "text": "Restaurant",
+              "boundingBox": {
+                "left": 712,
+                "top": 300,
+                "right": 1076,
+                "bottom": 364
+              },
+              "confidence": 0.8457031
+            }
+          ]
         },
         {
           "text": "889 W. 190th Street",
@@ -22,7 +44,49 @@
             "right": 1076,
             "bottom": 428
           },
-          "confidence": 0.87158203
+          "confidence": 0.87158203,
+          "elements": [
+            {
+              "text": "889",
+              "boundingBox": {
+                "left": 410,
+                "top": 366,
+                "right": 495,
+                "bottom": 428
+              },
+              "confidence": 0.9114583
+            },
+            {
+              "text": "W.",
+              "boundingBox": {
+                "left": 526,
+                "top": 366,
+                "right": 588,
+                "bottom": 428
+              },
+              "confidence": 0.765625
+            },
+            {
+              "text": "190th",
+              "boundingBox": {
+                "left": 644,
+                "top": 366,
+                "right": 820,
+                "bottom": 428
+              },
+              "confidence": 0.9007813
+            },
+            {
+              "text": "Street",
+              "boundingBox": {
+                "left": 862,
+                "top": 366,
+                "right": 1076,
+                "bottom": 428
+              },
+              "confidence": 0.8626302
+            }
+          ]
         },
         {
           "text": "Los Ange les, CA 90248",
@@ -32,7 +96,59 @@
             "right": 1156,
             "bottom": 498
           },
-          "confidence": 0.80533856
+          "confidence": 0.80533856,
+          "elements": [
+            {
+              "text": "Los",
+              "boundingBox": {
+                "left": 363,
+                "top": 436,
+                "right": 462,
+                "bottom": 498
+              },
+              "confidence": 0.64713544
+            },
+            {
+              "text": "Ange",
+              "boundingBox": {
+                "left": 507,
+                "top": 436,
+                "right": 637,
+                "bottom": 498
+              },
+              "confidence": 0.84375
+            },
+            {
+              "text": "les,",
+              "boundingBox": {
+                "left": 674,
+                "top": 436,
+                "right": 776,
+                "bottom": 498
+              },
+              "confidence": 0.7792969
+            },
+            {
+              "text": "CA",
+              "boundingBox": {
+                "left": 824,
+                "top": 436,
+                "right": 894,
+                "bottom": 498
+              },
+              "confidence": 0.7441406
+            },
+            {
+              "text": "90248",
+              "boundingBox": {
+                "left": 974,
+                "top": 436,
+                "right": 1156,
+                "bottom": 498
+              },
+              "confidence": 0.91484374
+            }
+          ]
         },
         {
           "text": "ph 310-324-4800",
@@ -42,7 +158,29 @@
             "right": 1009,
             "bottom": 564
           },
-          "confidence": 0.81696427
+          "confidence": 0.81696427,
+          "elements": [
+            {
+              "text": "ph",
+              "boundingBox": {
+                "left": 467,
+                "top": 500,
+                "right": 539,
+                "bottom": 564
+              },
+              "confidence": 0.8046875
+            },
+            {
+              "text": "310-324-4800",
+              "boundingBox": {
+                "left": 586,
+                "top": 500,
+                "right": 1009,
+                "bottom": 564
+              },
+              "confidence": 0.81901044
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -63,7 +201,59 @@
             "right": 1099,
             "bottom": 774
           },
-          "confidence": 0.6590074
+          "confidence": 0.6590074,
+          "elements": [
+            {
+              "text": "Our",
+              "boundingBox": {
+                "left": 296,
+                "top": 709,
+                "right": 434,
+                "bottom": 774
+              },
+              "confidence": 0.68619794
+            },
+            {
+              "text": "Fani",
+              "boundingBox": {
+                "left": 477,
+                "top": 707,
+                "right": 605,
+                "bottom": 772
+              },
+              "confidence": 0.6660156
+            },
+            {
+              "text": "iy",
+              "boundingBox": {
+                "left": 636,
+                "top": 706,
+                "right": 671,
+                "bottom": 771
+              },
+              "confidence": 0.5449219
+            },
+            {
+              "text": "hanks",
+              "boundingBox": {
+                "left": 760,
+                "top": 704,
+                "right": 959,
+                "bottom": 770
+              },
+              "confidence": 0.78984374
+            },
+            {
+              "text": "You",
+              "boundingBox": {
+                "left": 988,
+                "top": 703,
+                "right": 1099,
+                "bottom": 768
+              },
+              "confidence": 0.48046875
+            }
+          ]
         },
         {
           "text": "Travel Safely",
@@ -73,7 +263,29 @@
             "right": 970,
             "bottom": 836
           },
-          "confidence": 0.8183594
+          "confidence": 0.8183594,
+          "elements": [
+            {
+              "text": "Travel",
+              "boundingBox": {
+                "left": 490,
+                "top": 776,
+                "right": 700,
+                "bottom": 836
+              },
+              "confidence": 0.80598956
+            },
+            {
+              "text": "Safely",
+              "boundingBox": {
+                "left": 734,
+                "top": 776,
+                "right": 970,
+                "bottom": 836
+              },
+              "confidence": 0.8307292
+            }
+          ]
         },
         {
           "text": "Www.paradisedine.com",
@@ -83,7 +295,19 @@
             "right": 1125,
             "bottom": 913
           },
-          "confidence": 0.76640624
+          "confidence": 0.76640624,
+          "elements": [
+            {
+              "text": "Www.paradisedine.com",
+              "boundingBox": {
+                "left": 380,
+                "top": 842,
+                "right": 1125,
+                "bottom": 913
+              },
+              "confidence": 0.76640624
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -104,7 +328,69 @@
             "right": 1196,
             "bottom": 1053
           },
-          "confidence": 0.7404297
+          "confidence": 0.7404297,
+          "elements": [
+            {
+              "text": "TABL",
+              "boundingBox": {
+                "left": 280,
+                "top": 988,
+                "right": 396,
+                "bottom": 1053
+              },
+              "confidence": 0.7548828
+            },
+            {
+              "text": "E:",
+              "boundingBox": {
+                "left": 429,
+                "top": 987,
+                "right": 480,
+                "bottom": 1051
+              },
+              "confidence": 0.7324219
+            },
+            {
+              "text": "Kaei",
+              "boundingBox": {
+                "left": 548,
+                "top": 985,
+                "right": 691,
+                "bottom": 1050
+              },
+              "confidence": 0.60058594
+            },
+            {
+              "text": "#31-",
+              "boundingBox": {
+                "left": 719,
+                "top": 983,
+                "right": 898,
+                "bottom": 1048
+              },
+              "confidence": 0.74902344
+            },
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 968,
+                "top": 982,
+                "right": 985,
+                "bottom": 1045
+              },
+              "confidence": 0.8046875
+            },
+            {
+              "text": "Guest",
+              "boundingBox": {
+                "left": 1017,
+                "top": 980,
+                "right": 1196,
+                "bottom": 1045
+              },
+              "confidence": 0.82421875
+            }
+          ]
         },
         {
           "text": "Your Server was Kael",
@@ -114,7 +400,49 @@
             "right": 1118,
             "bottom": 1119
           },
-          "confidence": 0.8304228
+          "confidence": 0.8304228,
+          "elements": [
+            {
+              "text": "Your",
+              "boundingBox": {
+                "left": 372,
+                "top": 1062,
+                "right": 518,
+                "bottom": 1119
+              },
+              "confidence": 0.8378906
+            },
+            {
+              "text": "Server",
+              "boundingBox": {
+                "left": 564,
+                "top": 1058,
+                "right": 786,
+                "bottom": 1116
+              },
+              "confidence": 0.85807294
+            },
+            {
+              "text": "was",
+              "boundingBox": {
+                "left": 829,
+                "top": 1056,
+                "right": 938,
+                "bottom": 1112
+              },
+              "confidence": 0.86848956
+            },
+            {
+              "text": "Kael",
+              "boundingBox": {
+                "left": 979,
+                "top": 1053,
+                "right": 1118,
+                "bottom": 1110
+              },
+              "confidence": 0.7529297
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -135,7 +463,79 @@
             "right": 1428,
             "bottom": 1197
           },
-          "confidence": 0.8214466
+          "confidence": 0.8214466,
+          "elements": [
+            {
+              "text": "7/21/2018",
+              "boundingBox": {
+                "left": 84,
+                "top": 1126,
+                "right": 391,
+                "bottom": 1197
+              },
+              "confidence": 0.7899306
+            },
+            {
+              "text": "10:03:14",
+              "boundingBox": {
+                "left": 442,
+                "top": 1122,
+                "right": 733,
+                "bottom": 1193
+              },
+              "confidence": 0.8798828
+            },
+            {
+              "text": "PM",
+              "boundingBox": {
+                "left": 755,
+                "top": 1122,
+                "right": 826,
+                "bottom": 1189
+              },
+              "confidence": 0.78515625
+            },
+            {
+              "text": "-",
+              "boundingBox": {
+                "left": 869,
+                "top": 1121,
+                "right": 898,
+                "bottom": 1188
+              },
+              "confidence": 0.4296875
+            },
+            {
+              "text": "ID",
+              "boundingBox": {
+                "left": 965,
+                "top": 1120,
+                "right": 1040,
+                "bottom": 1187
+              },
+              "confidence": 0.8378906
+            },
+            {
+              "text": "#:",
+              "boundingBox": {
+                "left": 1059,
+                "top": 1119,
+                "right": 1118,
+                "bottom": 1186
+              },
+              "confidence": 0.7089844
+            },
+            {
+              "text": "0375509",
+              "boundingBox": {
+                "left": 1171,
+                "top": 1115,
+                "right": 1428,
+                "bottom": 1185
+              },
+              "confidence": 0.8889509
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -156,7 +556,19 @@
             "right": 846,
             "bottom": 1262
           },
-          "confidence": 0.8769531
+          "confidence": 0.8769531,
+          "elements": [
+            {
+              "text": "Subtotal",
+              "boundingBox": {
+                "left": 553,
+                "top": 1188,
+                "right": 846,
+                "bottom": 1262
+              },
+              "confidence": 0.8769531
+            }
+          ]
         },
         {
           "text": "Total Taxes",
@@ -166,7 +578,29 @@
             "right": 938,
             "bottom": 1327
           },
-          "confidence": 0.8765625
+          "confidence": 0.8765625,
+          "elements": [
+            {
+              "text": "Total",
+              "boundingBox": {
+                "left": 552,
+                "top": 1259,
+                "right": 731,
+                "bottom": 1327
+              },
+              "confidence": 0.8671875
+            },
+            {
+              "text": "Taxes",
+              "boundingBox": {
+                "left": 759,
+                "top": 1256,
+                "right": 938,
+                "bottom": 1324
+              },
+              "confidence": 0.8859375
+            }
+          ]
         },
         {
           "text": "Automat ic Gratuity",
@@ -176,7 +610,39 @@
             "right": 1014,
             "bottom": 1397
           },
-          "confidence": 0.88074446
+          "confidence": 0.88074446,
+          "elements": [
+            {
+              "text": "Automat",
+              "boundingBox": {
+                "left": 362,
+                "top": 1330,
+                "right": 619,
+                "bottom": 1397
+              },
+              "confidence": 0.874442
+            },
+            {
+              "text": "ic",
+              "boundingBox": {
+                "left": 630,
+                "top": 1329,
+                "right": 699,
+                "bottom": 1393
+              },
+              "confidence": 0.90234375
+            },
+            {
+              "text": "Gratuity",
+              "boundingBox": {
+                "left": 721,
+                "top": 1324,
+                "right": 1014,
+                "bottom": 1392
+              },
+              "confidence": 0.8808594
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -197,7 +663,29 @@
             "right": 532,
             "bottom": 1591
           },
-          "confidence": 0.84598213
+          "confidence": 0.84598213,
+          "elements": [
+            {
+              "text": "Credit",
+              "boundingBox": {
+                "left": 0,
+                "top": 1535,
+                "right": 196,
+                "bottom": 1591
+              },
+              "confidence": 0.80403644
+            },
+            {
+              "text": "Purchase",
+              "boundingBox": {
+                "left": 239,
+                "top": 1530,
+                "right": 532,
+                "bottom": 1587
+              },
+              "confidence": 0.8774414
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -218,7 +706,29 @@
             "right": 934,
             "bottom": 1522
           },
-          "confidence": 0.8421875
+          "confidence": 0.8421875,
+          "elements": [
+            {
+              "text": "Grand",
+              "boundingBox": {
+                "left": 536,
+                "top": 1466,
+                "right": 720,
+                "bottom": 1522
+              },
+              "confidence": 0.88671875
+            },
+            {
+              "text": "Total",
+              "boundingBox": {
+                "left": 762,
+                "top": 1466,
+                "right": 934,
+                "bottom": 1522
+              },
+              "confidence": 0.79765624
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -239,7 +749,19 @@
             "right": 1543,
             "bottom": 1248
           },
-          "confidence": 0.89713544
+          "confidence": 0.89713544,
+          "elements": [
+            {
+              "text": "$20.00",
+              "boundingBox": {
+                "left": 1320,
+                "top": 1190,
+                "right": 1543,
+                "bottom": 1248
+              },
+              "confidence": 0.89713544
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -260,7 +782,19 @@
             "right": 1548,
             "bottom": 1318
           },
-          "confidence": 0.83984375
+          "confidence": 0.83984375,
+          "elements": [
+            {
+              "text": "$2.18",
+              "boundingBox": {
+                "left": 1361,
+                "top": 1260,
+                "right": 1548,
+                "bottom": 1318
+              },
+              "confidence": 0.83984375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -281,7 +815,19 @@
             "right": 1554,
             "bottom": 1392
           },
-          "confidence": 0.8695313
+          "confidence": 0.8695313,
+          "elements": [
+            {
+              "text": "$3.60",
+              "boundingBox": {
+                "left": 1362,
+                "top": 1334,
+                "right": 1554,
+                "bottom": 1392
+              },
+              "confidence": 0.8695313
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -302,7 +848,19 @@
             "right": 1563,
             "bottom": 1540
           },
-          "confidence": 0.8313802
+          "confidence": 0.8313802,
+          "elements": [
+            {
+              "text": "$25.78",
+              "boundingBox": {
+                "left": 1328,
+                "top": 1477,
+                "right": 1563,
+                "bottom": 1540
+              },
+              "confidence": 0.8313802
+            }
+          ]
         }
       ],
       "boundingBox": {

@@ -1,9 +1,11 @@
 package com.receiptscanner.presentation.camera
 
 import android.Manifest
+import android.app.Activity
 import android.content.pm.PackageManager
 import com.receiptscanner.data.camera.ShutterSoundPlayer
 import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.camera.view.PreviewView
 import androidx.compose.foundation.background
@@ -16,6 +18,7 @@ import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.CameraAlt
+import androidx.compose.material.icons.filled.DocumentScanner
 import androidx.compose.material.icons.filled.FlashOff
 import androidx.compose.material.icons.filled.FlashOn
 import androidx.compose.material.icons.filled.History
@@ -82,6 +85,21 @@ fun CameraScreen(
         contract = ActivityResultContracts.GetContent()
     ) { uri ->
         uri?.let { viewModel.loadFromGallery(context, it) }
+    }
+
+    val documentScannerLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.StartIntentSenderForResult()
+    ) { result ->
+        viewModel.handleDocumentScanResult(context, result.resultCode, result.data)
+    }
+
+    // Launch document scanner when requested
+    LaunchedEffect(Unit) {
+        viewModel.launchDocumentScanner.collectLatest { intentSender ->
+            documentScannerLauncher.launch(
+                IntentSenderRequest.Builder(intentSender).build()
+            )
+        }
     }
 
     // Navigate to review on successful capture
@@ -230,6 +248,24 @@ fun CameraScreen(
                             contentDescription = "Capture",
                             modifier = Modifier.size(32.dp),
                         )
+                    }
+
+                    // Document scanner button (right)
+                    IconButton(
+                        onClick = {
+                            (context as? Activity)?.let { activity ->
+                                viewModel.startDocumentScan(activity)
+                            }
+                        },
+                        modifier = Modifier
+                            .align(Alignment.CenterEnd)
+                            .padding(start = 120.dp),
+                        colors = IconButtonDefaults.iconButtonColors(
+                            containerColor = Color.Black.copy(alpha = 0.4f),
+                            contentColor = Color.White,
+                        ),
+                    ) {
+                        Icon(Icons.Default.DocumentScanner, contentDescription = "Scan document")
                     }
                 }
             }

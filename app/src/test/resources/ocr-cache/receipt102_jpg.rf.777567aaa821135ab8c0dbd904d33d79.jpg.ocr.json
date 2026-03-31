@@ -12,7 +12,39 @@
             "right": 699,
             "bottom": 79
           },
-          "confidence": 0.5190972
+          "confidence": 0.5190972,
+          "elements": [
+            {
+              "text": "*",
+              "boundingBox": {
+                "left": 509,
+                "top": 45,
+                "right": 517,
+                "bottom": 74
+              },
+              "confidence": 0.27734375
+            },
+            {
+              "text": "ouA",
+              "boundingBox": {
+                "left": 580,
+                "top": 47,
+                "right": 630,
+                "bottom": 77
+              },
+              "confidence": 0.23567708
+            },
+            {
+              "text": "ICATE",
+              "boundingBox": {
+                "left": 636,
+                "top": 48,
+                "right": 699,
+                "bottom": 78
+              },
+              "confidence": 0.7375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -33,7 +65,29 @@
             "right": 510,
             "bottom": 611
           },
-          "confidence": 0.61035156
+          "confidence": 0.61035156,
+          "elements": [
+            {
+              "text": "KS#",
+              "boundingBox": {
+                "left": 440,
+                "top": 592,
+                "right": 484,
+                "bottom": 611
+              },
+              "confidence": 0.73828125
+            },
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 504,
+                "top": 592,
+                "right": 510,
+                "bottom": 611
+              },
+              "confidence": 0.2265625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -54,7 +108,29 @@
             "right": 738,
             "bottom": 140
           },
-          "confidence": 0.4732143
+          "confidence": 0.4732143,
+          "elements": [
+            {
+              "text": "F*",
+              "boundingBox": {
+                "left": 550,
+                "top": 100,
+                "right": 582,
+                "bottom": 137
+              },
+              "confidence": 0.140625
+            },
+            {
+              "text": "BILLA",
+              "boundingBox": {
+                "left": 612,
+                "top": 101,
+                "right": 738,
+                "bottom": 140
+              },
+              "confidence": 0.60625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -75,7 +151,29 @@
             "right": 550,
             "bottom": 660
           },
-          "confidence": 0.6333705
+          "confidence": 0.6333705,
+          "elements": [
+            {
+              "text": "QTY",
+              "boundingBox": {
+                "left": 432,
+                "top": 642,
+                "right": 476,
+                "bottom": 659
+              },
+              "confidence": 0.44140625
+            },
+            {
+              "text": "ITEM",
+              "boundingBox": {
+                "left": 493,
+                "top": 642,
+                "right": 550,
+                "bottom": 660
+              },
+              "confidence": 0.77734375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -96,7 +194,59 @@
             "right": 960,
             "bottom": 285
           },
-          "confidence": 0.6376953
+          "confidence": 0.6376953,
+          "elements": [
+            {
+              "text": "Store#",
+              "boundingBox": {
+                "left": 521,
+                "top": 252,
+                "right": 603,
+                "bottom": 275
+              },
+              "confidence": 0.7220052
+            },
+            {
+              "text": ":",
+              "boundingBox": {
+                "left": 609,
+                "top": 255,
+                "right": 614,
+                "bottom": 275
+              },
+              "confidence": 0.41796875
+            },
+            {
+              "text": "3859",
+              "boundingBox": {
+                "left": 632,
+                "top": 255,
+                "right": 687,
+                "bottom": 277
+              },
+              "confidence": 0.65234375
+            },
+            {
+              "text": "Tel#:",
+              "boundingBox": {
+                "left": 717,
+                "top": 258,
+                "right": 779,
+                "bottom": 279
+              },
+              "confidence": 0.49453124
+            },
+            {
+              "text": "780-414-8362",
+              "boundingBox": {
+                "left": 797,
+                "top": 260,
+                "right": 960,
+                "bottom": 285
+              },
+              "confidence": 0.6686198
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -117,7 +267,49 @@
             "right": 881,
             "bottom": 235
           },
-          "confidence": 0.7143842
+          "confidence": 0.7143842,
+          "elements": [
+            {
+              "text": "16725",
+              "boundingBox": {
+                "left": 611,
+                "top": 206,
+                "right": 678,
+                "bottom": 230
+              },
+              "confidence": 0.75
+            },
+            {
+              "text": "Stany",
+              "boundingBox": {
+                "left": 689,
+                "top": 208,
+                "right": 757,
+                "bottom": 232
+              },
+              "confidence": 0.65234375
+            },
+            {
+              "text": "Plain",
+              "boundingBox": {
+                "left": 770,
+                "top": 210,
+                "right": 840,
+                "bottom": 233
+              },
+              "confidence": 0.7734375
+            },
+            {
+              "text": "Rd",
+              "boundingBox": {
+                "left": 852,
+                "top": 212,
+                "right": 881,
+                "bottom": 234
+              },
+              "confidence": 0.6328125
+            }
+          ]
         },
         {
           "text": "Edaonton AB T5P 4A9",
@@ -127,7 +319,49 @@
             "right": 878,
             "bottom": 258
           },
-          "confidence": 0.6633301
+          "confidence": 0.6633301,
+          "elements": [
+            {
+              "text": "Edaonton",
+              "boundingBox": {
+                "left": 605,
+                "top": 230,
+                "right": 717,
+                "bottom": 253
+              },
+              "confidence": 0.64501953
+            },
+            {
+              "text": "AB",
+              "boundingBox": {
+                "left": 729,
+                "top": 233,
+                "right": 756,
+                "bottom": 254
+              },
+              "confidence": 0.5917969
+            },
+            {
+              "text": "T5P",
+              "boundingBox": {
+                "left": 786,
+                "top": 235,
+                "right": 825,
+                "bottom": 256
+              },
+              "confidence": 0.69140625
+            },
+            {
+              "text": "4A9",
+              "boundingBox": {
+                "left": 838,
+                "top": 236,
+                "right": 878,
+                "bottom": 258
+              },
+              "confidence": 0.7317708
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -148,7 +382,39 @@
             "right": 608,
             "bottom": 690
           },
-          "confidence": 0.6041667
+          "confidence": 0.6041667,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 475,
+                "top": 664,
+                "right": 481,
+                "bottom": 687
+              },
+              "confidence": 0.2421875
+            },
+            {
+              "text": "DeI1",
+              "boundingBox": {
+                "left": 499,
+                "top": 664,
+                "right": 545,
+                "bottom": 688
+              },
+              "confidence": 0.49609375
+            },
+            {
+              "text": "very",
+              "boundingBox": {
+                "left": 555,
+                "top": 665,
+                "right": 608,
+                "bottom": 690
+              },
+              "confidence": 0.8027344
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -169,7 +435,19 @@
             "right": 743,
             "bottom": 207
           },
-          "confidence": 0.75
+          "confidence": 0.75,
+          "elements": [
+            {
+              "text": "Story",
+              "boundingBox": {
+                "left": 677,
+                "top": 186,
+                "right": 743,
+                "bottom": 207
+              },
+              "confidence": 0.75
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -190,7 +468,69 @@
             "right": 930,
             "bottom": 338
           },
-          "confidence": 0.7326766
+          "confidence": 0.7326766,
+          "elements": [
+            {
+              "text": "e",
+              "boundingBox": {
+                "left": 569,
+                "top": 301,
+                "right": 576,
+                "bottom": 327
+              },
+              "confidence": 0.21484375
+            },
+            {
+              "text": "lcone",
+              "boundingBox": {
+                "left": 579,
+                "top": 301,
+                "right": 645,
+                "bottom": 329
+              },
+              "confidence": 0.565625
+            },
+            {
+              "text": "to",
+              "boundingBox": {
+                "left": 656,
+                "top": 303,
+                "right": 684,
+                "bottom": 329
+              },
+              "confidence": 0.84375
+            },
+            {
+              "text": "all",
+              "boundingBox": {
+                "left": 702,
+                "top": 304,
+                "right": 745,
+                "bottom": 332
+              },
+              "confidence": 0.74609375
+            },
+            {
+              "text": "day",
+              "boundingBox": {
+                "left": 751,
+                "top": 306,
+                "right": 793,
+                "bottom": 333
+              },
+              "confidence": 0.82942706
+            },
+            {
+              "text": "breakfast",
+              "boundingBox": {
+                "left": 806,
+                "top": 307,
+                "right": 930,
+                "bottom": 337
+              },
+              "confidence": 0.82161456
+            }
+          ]
         },
         {
           "text": "Nc Dona ld's",
@@ -200,7 +540,39 @@
             "right": 833,
             "bottom": 361
           },
-          "confidence": 0.6296875
+          "confidence": 0.6296875,
+          "elements": [
+            {
+              "text": "Nc",
+              "boundingBox": {
+                "left": 680,
+                "top": 331,
+                "right": 708,
+                "bottom": 358
+              },
+              "confidence": 0.30078125
+            },
+            {
+              "text": "Dona",
+              "boundingBox": {
+                "left": 729,
+                "top": 332,
+                "right": 777,
+                "bottom": 360
+              },
+              "confidence": 0.74121094
+            },
+            {
+              "text": "ld's",
+              "boundingBox": {
+                "left": 786,
+                "top": 334,
+                "right": 833,
+                "bottom": 361
+              },
+              "confidence": 0.6826172
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -221,7 +593,49 @@
             "right": 725,
             "bottom": 719
           },
-          "confidence": 0.5371094
+          "confidence": 0.5371094,
+          "elements": [
+            {
+              "text": "L10.",
+              "boundingBox": {
+                "left": 460,
+                "top": 691,
+                "right": 523,
+                "bottom": 719
+              },
+              "confidence": 0.4248047
+            },
+            {
+              "text": "McNugge",
+              "boundingBox": {
+                "left": 543,
+                "top": 691,
+                "right": 634,
+                "bottom": 719
+              },
+              "confidence": 0.54408485
+            },
+            {
+              "text": "ts",
+              "boundingBox": {
+                "left": 637,
+                "top": 691,
+                "right": 670,
+                "bottom": 719
+              },
+              "confidence": 0.7363281
+            },
+            {
+              "text": "EVM",
+              "boundingBox": {
+                "left": 670,
+                "top": 691,
+                "right": 725,
+                "bottom": 719
+              },
+              "confidence": 0.53776044
+            }
+          ]
         },
         {
           "text": "1 Barbegue Sauce",
@@ -231,7 +645,39 @@
             "right": 723,
             "bottom": 746
           },
-          "confidence": 0.6810826
+          "confidence": 0.6810826,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 497,
+                "top": 719,
+                "right": 504,
+                "bottom": 744
+              },
+              "confidence": 0.890625
+            },
+            {
+              "text": "Barbegue",
+              "boundingBox": {
+                "left": 513,
+                "top": 718,
+                "right": 633,
+                "bottom": 745
+              },
+              "confidence": 0.65722656
+            },
+            {
+              "text": "Sauce",
+              "boundingBox": {
+                "left": 647,
+                "top": 720,
+                "right": 723,
+                "bottom": 747
+              },
+              "confidence": 0.6773437
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -252,7 +698,39 @@
             "right": 617,
             "bottom": 951
           },
-          "confidence": 0.7135417
+          "confidence": 0.7135417,
+          "elements": [
+            {
+              "text": "16",
+              "boundingBox": {
+                "left": 455,
+                "top": 921,
+                "right": 497,
+                "bottom": 951
+              },
+              "confidence": 0.6816406
+            },
+            {
+              "text": "Cook",
+              "boundingBox": {
+                "left": 523,
+                "top": 921,
+                "right": 567,
+                "bottom": 951
+              },
+              "confidence": 0.7441406
+            },
+            {
+              "text": "1es",
+              "boundingBox": {
+                "left": 575,
+                "top": 921,
+                "right": 617,
+                "bottom": 951
+              },
+              "confidence": 0.69401044
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -273,7 +751,19 @@
             "right": 493,
             "bottom": 1286
           },
-          "confidence": 0.87565106
+          "confidence": 0.87565106,
+          "elements": [
+            {
+              "text": "Change",
+              "boundingBox": {
+                "left": 398,
+                "top": 1260,
+                "right": 493,
+                "bottom": 1286
+              },
+              "confidence": 0.87565106
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -294,7 +784,19 @@
             "right": 876,
             "bottom": 546
           },
-          "confidence": 0.81640625
+          "confidence": 0.81640625,
+          "elements": [
+            {
+              "text": "192",
+              "boundingBox": {
+                "left": 685,
+                "top": 410,
+                "right": 876,
+                "bottom": 546
+              },
+              "confidence": 0.81640625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -315,7 +817,39 @@
             "right": 722,
             "bottom": 776
           },
-          "confidence": 0.7207031
+          "confidence": 0.7207031,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 496,
+                "top": 748,
+                "right": 504,
+                "bottom": 774
+              },
+              "confidence": 0.765625
+            },
+            {
+              "text": "Barbegue",
+              "boundingBox": {
+                "left": 514,
+                "top": 747,
+                "right": 634,
+                "bottom": 775
+              },
+              "confidence": 0.6933594
+            },
+            {
+              "text": "Sauce",
+              "boundingBox": {
+                "left": 648,
+                "top": 749,
+                "right": 722,
+                "bottom": 776
+              },
+              "confidence": 0.7554687
+            }
+          ]
         },
         {
           "text": "1 L Coke",
@@ -325,7 +859,39 @@
             "right": 605,
             "bottom": 804
           },
-          "confidence": 0.74934894
+          "confidence": 0.74934894,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 500,
+                "top": 777,
+                "right": 508,
+                "bottom": 804
+              },
+              "confidence": 0.78125
+            },
+            {
+              "text": "L",
+              "boundingBox": {
+                "left": 515,
+                "top": 777,
+                "right": 529,
+                "bottom": 804
+              },
+              "confidence": 0.7421875
+            },
+            {
+              "text": "Coke",
+              "boundingBox": {
+                "left": 544,
+                "top": 777,
+                "right": 605,
+                "bottom": 804
+              },
+              "confidence": 0.74316406
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -346,7 +912,49 @@
             "right": 723,
             "bottom": 833
           },
-          "confidence": 0.7229567
+          "confidence": 0.7229567,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 499,
+                "top": 806,
+                "right": 506,
+                "bottom": 831
+              },
+              "confidence": 0.55078125
+            },
+            {
+              "text": "M",
+              "boundingBox": {
+                "left": 514,
+                "top": 806,
+                "right": 529,
+                "bottom": 831
+              },
+              "confidence": 0.71875
+            },
+            {
+              "text": "French",
+              "boundingBox": {
+                "left": 544,
+                "top": 806,
+                "right": 634,
+                "bottom": 831
+              },
+              "confidence": 0.8151042
+            },
+            {
+              "text": "Fries",
+              "boundingBox": {
+                "left": 647,
+                "top": 807,
+                "right": 723,
+                "bottom": 832
+              },
+              "confidence": 0.64765626
+            }
+          ]
         },
         {
           "text": "1 HM GrChs S-Fry Yog",
@@ -356,7 +964,59 @@
             "right": 753,
             "bottom": 863
           },
-          "confidence": 0.69433594
+          "confidence": 0.69433594,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 467,
+                "top": 834,
+                "right": 475,
+                "bottom": 860
+              },
+              "confidence": 0.46484375
+            },
+            {
+              "text": "HM",
+              "boundingBox": {
+                "left": 484,
+                "top": 834,
+                "right": 514,
+                "bottom": 860
+              },
+              "confidence": 0.44921875
+            },
+            {
+              "text": "GrChs",
+              "boundingBox": {
+                "left": 529,
+                "top": 834,
+                "right": 604,
+                "bottom": 861
+              },
+              "confidence": 0.74375
+            },
+            {
+              "text": "S-Fry",
+              "boundingBox": {
+                "left": 618,
+                "top": 835,
+                "right": 694,
+                "bottom": 862
+              },
+              "confidence": 0.78046876
+            },
+            {
+              "text": "Yog",
+              "boundingBox": {
+                "left": 708,
+                "top": 836,
+                "right": 753,
+                "bottom": 863
+              },
+              "confidence": 0.7083333
+            }
+          ]
         },
         {
           "text": "1 Snoopy",
@@ -366,7 +1026,29 @@
             "right": 602,
             "bottom": 892
           },
-          "confidence": 0.719308
+          "confidence": 0.719308,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 496,
+                "top": 863,
+                "right": 504,
+                "bottom": 889
+              },
+              "confidence": 0.6328125
+            },
+            {
+              "text": "Snoopy",
+              "boundingBox": {
+                "left": 513,
+                "top": 863,
+                "right": 602,
+                "bottom": 891
+              },
+              "confidence": 0.73372394
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -387,7 +1069,19 @@
             "right": 531,
             "bottom": 1126
           },
-          "confidence": 0.8046875
+          "confidence": 0.8046875,
+          "elements": [
+            {
+              "text": "Subtotal",
+              "boundingBox": {
+                "left": 409,
+                "top": 1101,
+                "right": 531,
+                "bottom": 1126
+              },
+              "confidence": 0.8046875
+            }
+          ]
         },
         {
           "text": "GST",
@@ -397,7 +1091,19 @@
             "right": 453,
             "bottom": 1159
           },
-          "confidence": 0.6171875
+          "confidence": 0.6171875,
+          "elements": [
+            {
+              "text": "GST",
+              "boundingBox": {
+                "left": 406,
+                "top": 1131,
+                "right": 453,
+                "bottom": 1159
+              },
+              "confidence": 0.6171875
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -418,7 +1124,39 @@
             "right": 1009,
             "bottom": 620
           },
-          "confidence": 0.64277345
+          "confidence": 0.64277345,
+          "elements": [
+            {
+              "text": "03/10/2018",
+              "boundingBox": {
+                "left": 688,
+                "top": 597,
+                "right": 833,
+                "bottom": 618
+              },
+              "confidence": 0.66679686
+            },
+            {
+              "text": "o7:39:12",
+              "boundingBox": {
+                "left": 847,
+                "top": 599,
+                "right": 967,
+                "bottom": 619
+              },
+              "confidence": 0.64990234
+            },
+            {
+              "text": "PH",
+              "boundingBox": {
+                "left": 978,
+                "top": 600,
+                "right": 1009,
+                "bottom": 620
+              },
+              "confidence": 0.49414062
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -439,7 +1177,59 @@
             "right": 722,
             "bottom": 921
           },
-          "confidence": 0.6313101
+          "confidence": 0.6313101,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 498,
+                "top": 892,
+                "right": 506,
+                "bottom": 921
+              },
+              "confidence": 0.5
+            },
+            {
+              "text": "HM",
+              "boundingBox": {
+                "left": 512,
+                "top": 892,
+                "right": 544,
+                "bottom": 921
+              },
+              "confidence": 0.43359375
+            },
+            {
+              "text": "App",
+              "boundingBox": {
+                "left": 557,
+                "top": 892,
+                "right": 603,
+                "bottom": 921
+              },
+              "confidence": 0.7630208
+            },
+            {
+              "text": "le",
+              "boundingBox": {
+                "left": 609,
+                "top": 892,
+                "right": 633,
+                "bottom": 921
+              },
+              "confidence": 0.7089844
+            },
+            {
+              "text": "Juice",
+              "boundingBox": {
+                "left": 647,
+                "top": 892,
+                "right": 722,
+                "bottom": 921
+              },
+              "confidence": 0.6265625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -460,7 +1250,59 @@
             "right": 752,
             "bottom": 977
           },
-          "confidence": 0.7450521
+          "confidence": 0.7450521,
+          "elements": [
+            {
+              "text": "6",
+              "boundingBox": {
+                "left": 480,
+                "top": 953,
+                "right": 495,
+                "bottom": 977
+              },
+              "confidence": 0.75
+            },
+            {
+              "text": "Choc",
+              "boundingBox": {
+                "left": 510,
+                "top": 953,
+                "right": 571,
+                "bottom": 977
+              },
+              "confidence": 0.7998047
+            },
+            {
+              "text": "Chip",
+              "boundingBox": {
+                "left": 585,
+                "top": 953,
+                "right": 646,
+                "bottom": 977
+              },
+              "confidence": 0.66015625
+            },
+            {
+              "text": "Cook",
+              "boundingBox": {
+                "left": 660,
+                "top": 953,
+                "right": 720,
+                "bottom": 977
+              },
+              "confidence": 0.80371094
+            },
+            {
+              "text": "1e",
+              "boundingBox": {
+                "left": 725,
+                "top": 953,
+                "right": 752,
+                "bottom": 977
+              },
+              "confidence": 0.6855469
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -481,7 +1323,49 @@
             "right": 705,
             "bottom": 1008
           },
-          "confidence": 0.73856026
+          "confidence": 0.73856026,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 463,
+                "top": 979,
+                "right": 471,
+                "bottom": 1006
+              },
+              "confidence": 0.3984375
+            },
+            {
+              "text": "Baked",
+              "boundingBox": {
+                "left": 478,
+                "top": 978,
+                "right": 554,
+                "bottom": 1006
+              },
+              "confidence": 0.8335937
+            },
+            {
+              "text": "Apple",
+              "boundingBox": {
+                "left": 569,
+                "top": 979,
+                "right": 645,
+                "bottom": 1007
+              },
+              "confidence": 0.78125
+            },
+            {
+              "text": "Pie",
+              "boundingBox": {
+                "left": 659,
+                "top": 981,
+                "right": 705,
+                "bottom": 1008
+              },
+              "confidence": 0.6223958
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -502,7 +1386,29 @@
             "right": 618,
             "bottom": 1190
           },
-          "confidence": 0.7863582
+          "confidence": 0.7863582,
+          "elements": [
+            {
+              "text": "Take-Dut",
+              "boundingBox": {
+                "left": 408,
+                "top": 1162,
+                "right": 525,
+                "bottom": 1190
+              },
+              "confidence": 0.7685547
+            },
+            {
+              "text": "Total",
+              "boundingBox": {
+                "left": 548,
+                "top": 1162,
+                "right": 618,
+                "bottom": 1188
+              },
+              "confidence": 0.8148438
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -523,7 +1429,49 @@
             "right": 690,
             "bottom": 1041
           },
-          "confidence": 0.78155047
+          "confidence": 0.78155047,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 460,
+                "top": 1009,
+                "right": 469,
+                "bottom": 1041
+              },
+              "confidence": 0.58984375
+            },
+            {
+              "text": "L",
+              "boundingBox": {
+                "left": 477,
+                "top": 1009,
+                "right": 490,
+                "bottom": 1041
+              },
+              "confidence": 0.58203125
+            },
+            {
+              "text": "French",
+              "boundingBox": {
+                "left": 507,
+                "top": 1009,
+                "right": 598,
+                "bottom": 1041
+              },
+              "confidence": 0.8613281
+            },
+            {
+              "text": "Fries",
+              "boundingBox": {
+                "left": 614,
+                "top": 1009,
+                "right": 690,
+                "bottom": 1041
+              },
+              "confidence": 0.7640625
+            }
+          ]
         },
         {
           "text": "1L Iced Tea",
@@ -533,7 +1481,39 @@
             "right": 628,
             "bottom": 1070
           },
-          "confidence": 0.7118056
+          "confidence": 0.7118056,
+          "elements": [
+            {
+              "text": "1L",
+              "boundingBox": {
+                "left": 447,
+                "top": 1037,
+                "right": 488,
+                "bottom": 1066
+              },
+              "confidence": 0.5175781
+            },
+            {
+              "text": "Iced",
+              "boundingBox": {
+                "left": 518,
+                "top": 1039,
+                "right": 569,
+                "bottom": 1068
+              },
+              "confidence": 0.765625
+            },
+            {
+              "text": "Tea",
+              "boundingBox": {
+                "left": 590,
+                "top": 1040,
+                "right": 628,
+                "bottom": 1069
+              },
+              "confidence": 0.76953125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -554,7 +1534,59 @@
             "right": 792,
             "bottom": 1258
           },
-          "confidence": 0.7542783
+          "confidence": 0.7542783,
+          "elements": [
+            {
+              "text": "CREDIT",
+              "boundingBox": {
+                "left": 400,
+                "top": 1223,
+                "right": 494,
+                "bottom": 1258
+              },
+              "confidence": 0.8496094
+            },
+            {
+              "text": "SALES",
+              "boundingBox": {
+                "left": 511,
+                "top": 1223,
+                "right": 590,
+                "bottom": 1258
+              },
+              "confidence": 0.8695313
+            },
+            {
+              "text": "McDe",
+              "boundingBox": {
+                "left": 648,
+                "top": 1223,
+                "right": 705,
+                "bottom": 1258
+              },
+              "confidence": 0.6269531
+            },
+            {
+              "text": "I",
+              "boundingBox": {
+                "left": 713,
+                "top": 1223,
+                "right": 723,
+                "bottom": 1258
+              },
+              "confidence": 0.21875
+            },
+            {
+              "text": "1very",
+              "boundingBox": {
+                "left": 721,
+                "top": 1223,
+                "right": 792,
+                "bottom": 1258
+              },
+              "confidence": 0.73359376
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -575,7 +1607,39 @@
             "right": 824,
             "bottom": 1384
           },
-          "confidence": 0.7717634
+          "confidence": 0.7717634,
+          "elements": [
+            {
+              "text": "GST",
+              "boundingBox": {
+                "left": 568,
+                "top": 1360,
+                "right": 617,
+                "bottom": 1384
+              },
+              "confidence": 0.70963544
+            },
+            {
+              "text": "#:",
+              "boundingBox": {
+                "left": 632,
+                "top": 1360,
+                "right": 660,
+                "bottom": 1384
+              },
+              "confidence": 0.6484375
+            },
+            {
+              "text": "120907092",
+              "boundingBox": {
+                "left": 684,
+                "top": 1360,
+                "right": 824,
+                "bottom": 1384
+              },
+              "confidence": 0.81987846
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -596,7 +1660,29 @@
             "right": 823,
             "bottom": 1521
           },
-          "confidence": 0.7528646
+          "confidence": 0.7528646,
+          "elements": [
+            {
+              "text": "SALE",
+              "boundingBox": {
+                "left": 563,
+                "top": 1492,
+                "right": 626,
+                "bottom": 1521
+              },
+              "confidence": 0.85546875
+            },
+            {
+              "text": "#04kdfwg532",
+              "boundingBox": {
+                "left": 645,
+                "top": 1492,
+                "right": 823,
+                "bottom": 1521
+              },
+              "confidence": 0.715554
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -617,7 +1703,19 @@
             "right": 1008,
             "bottom": 669
           },
-          "confidence": 0.80546874
+          "confidence": 0.80546874,
+          "elements": [
+            {
+              "text": "TOTAL",
+              "boundingBox": {
+                "left": 937,
+                "top": 647,
+                "right": 1008,
+                "bottom": 669
+              },
+              "confidence": 0.80546874
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -638,7 +1736,19 @@
             "right": 1012,
             "bottom": 693
           },
-          "confidence": 0.61328125
+          "confidence": 0.61328125,
+          "elements": [
+            {
+              "text": "0.00",
+              "boundingBox": {
+                "left": 951,
+                "top": 674,
+                "right": 1012,
+                "bottom": 693
+              },
+              "confidence": 0.61328125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -659,7 +1769,19 @@
             "right": 1012,
             "bottom": 718
           },
-          "confidence": 0.8570312
+          "confidence": 0.8570312,
+          "elements": [
+            {
+              "text": "10.29",
+              "boundingBox": {
+                "left": 940,
+                "top": 697,
+                "right": 1012,
+                "bottom": 718
+              },
+              "confidence": 0.8570312
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -680,7 +1802,19 @@
             "right": 1010,
             "bottom": 805
           },
-          "confidence": 0.7783203
+          "confidence": 0.7783203,
+          "elements": [
+            {
+              "text": "0.40",
+              "boundingBox": {
+                "left": 949,
+                "top": 782,
+                "right": 1010,
+                "bottom": 805
+              },
+              "confidence": 0.7783203
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -701,7 +1835,19 @@
             "right": 1006,
             "bottom": 862
           },
-          "confidence": 0.8251953
+          "confidence": 0.8251953,
+          "elements": [
+            {
+              "text": "3.99",
+              "boundingBox": {
+                "left": 949,
+                "top": 840,
+                "right": 1006,
+                "bottom": 862
+              },
+              "confidence": 0.8251953
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -722,7 +1868,19 @@
             "right": 1007,
             "bottom": 949
           },
-          "confidence": 0.7861328
+          "confidence": 0.7861328,
+          "elements": [
+            {
+              "text": "2.89",
+              "boundingBox": {
+                "left": 947,
+                "top": 927,
+                "right": 1007,
+                "bottom": 949
+              },
+              "confidence": 0.7861328
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -743,7 +1901,19 @@
             "right": 1006,
             "bottom": 1008
           },
-          "confidence": 0.70410156
+          "confidence": 0.70410156,
+          "elements": [
+            {
+              "text": "1.19",
+              "boundingBox": {
+                "left": 949,
+                "top": 985,
+                "right": 1006,
+                "bottom": 1008
+              },
+              "confidence": 0.70410156
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -764,7 +1934,19 @@
             "right": 1006,
             "bottom": 1038
           },
-          "confidence": 0.8203125
+          "confidence": 0.8203125,
+          "elements": [
+            {
+              "text": "3.29",
+              "boundingBox": {
+                "left": 947,
+                "top": 1015,
+                "right": 1006,
+                "bottom": 1038
+              },
+              "confidence": 0.8203125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -785,7 +1967,19 @@
             "right": 1005,
             "bottom": 1068
           },
-          "confidence": 0.8964844
+          "confidence": 0.8964844,
+          "elements": [
+            {
+              "text": "2.99",
+              "boundingBox": {
+                "left": 947,
+                "top": 1042,
+                "right": 1005,
+                "bottom": 1068
+              },
+              "confidence": 0.8964844
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -806,7 +2000,19 @@
             "right": 1006,
             "bottom": 1131
           },
-          "confidence": 0.8929688
+          "confidence": 0.8929688,
+          "elements": [
+            {
+              "text": "25.04",
+              "boundingBox": {
+                "left": 933,
+                "top": 1101,
+                "right": 1006,
+                "bottom": 1131
+              },
+              "confidence": 0.8929688
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -827,7 +2033,19 @@
             "right": 1005,
             "bottom": 1160
           },
-          "confidence": 0.7158203
+          "confidence": 0.7158203,
+          "elements": [
+            {
+              "text": "1.11",
+              "boundingBox": {
+                "left": 952,
+                "top": 1138,
+                "right": 1005,
+                "bottom": 1160
+              },
+              "confidence": 0.7158203
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -848,7 +2066,19 @@
             "right": 1011,
             "bottom": 1191
           },
-          "confidence": 0.7914063
+          "confidence": 0.7914063,
+          "elements": [
+            {
+              "text": "26.15",
+              "boundingBox": {
+                "left": 934,
+                "top": 1168,
+                "right": 1011,
+                "bottom": 1191
+              },
+              "confidence": 0.7914063
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -869,7 +2099,19 @@
             "right": 1012,
             "bottom": 1254
           },
-          "confidence": 0.82109374
+          "confidence": 0.82109374,
+          "elements": [
+            {
+              "text": "26.15",
+              "boundingBox": {
+                "left": 934,
+                "top": 1229,
+                "right": 1012,
+                "bottom": 1254
+              },
+              "confidence": 0.82109374
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -890,7 +2132,19 @@
             "right": 1012,
             "bottom": 1286
           },
-          "confidence": 0.8417969
+          "confidence": 0.8417969,
+          "elements": [
+            {
+              "text": "0.00",
+              "boundingBox": {
+                "left": 950,
+                "top": 1259,
+                "right": 1012,
+                "bottom": 1286
+              },
+              "confidence": 0.8417969
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -911,7 +2165,109 @@
             "right": 1075,
             "bottom": 926
           },
-          "confidence": 0.42907476
+          "confidence": 0.42907476,
+          "elements": [
+            {
+              "text": "RtASE",
+              "boundingBox": {
+                "left": 1048,
+                "top": 199,
+                "right": 1075,
+                "bottom": 242
+              },
+              "confidence": 0.246875
+            },
+            {
+              "text": "TU",
+              "boundingBox": {
+                "left": 1048,
+                "top": 247,
+                "right": 1075,
+                "bottom": 269
+              },
+              "confidence": 0.60546875
+            },
+            {
+              "text": "TeSoVERAREASE",
+              "boundingBox": {
+                "left": 1048,
+                "top": 299,
+                "right": 1075,
+                "bottom": 511
+              },
+              "confidence": 0.31490386
+            },
+            {
+              "text": "TSRK",
+              "boundingBox": {
+                "left": 1048,
+                "top": 517,
+                "right": 1075,
+                "bottom": 553
+              },
+              "confidence": 0.35546875
+            },
+            {
+              "text": "THIS",
+              "boundingBox": {
+                "left": 1048,
+                "top": 560,
+                "right": 1075,
+                "bottom": 592
+              },
+              "confidence": 0.66796875
+            },
+            {
+              "text": "0VER",
+              "boundingBox": {
+                "left": 1048,
+                "top": 597,
+                "right": 1075,
+                "bottom": 635
+              },
+              "confidence": 0.30273438
+            },
+            {
+              "text": "APLEASE",
+              "boundingBox": {
+                "left": 1048,
+                "top": 658,
+                "right": 1075,
+                "bottom": 770
+              },
+              "confidence": 0.45870537
+            },
+            {
+              "text": "TURN",
+              "boundingBox": {
+                "left": 1048,
+                "top": 774,
+                "right": 1075,
+                "bottom": 828
+              },
+              "confidence": 0.51660156
+            },
+            {
+              "text": "THIS",
+              "boundingBox": {
+                "left": 1048,
+                "top": 823,
+                "right": 1075,
+                "bottom": 870
+              },
+              "confidence": 0.7480469
+            },
+            {
+              "text": "OVER",
+              "boundingBox": {
+                "left": 1048,
+                "top": 870,
+                "right": 1075,
+                "bottom": 926
+              },
+              "confidence": 0.4423828
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -932,7 +2288,109 @@
             "right": 1093,
             "bottom": 1591
           },
-          "confidence": 0.6108774
+          "confidence": 0.6108774,
+          "elements": [
+            {
+              "text": "A",
+              "boundingBox": {
+                "left": 1043,
+                "top": 957,
+                "right": 1075,
+                "bottom": 973
+              },
+              "confidence": 0.55078125
+            },
+            {
+              "text": "PLEASE",
+              "boundingBox": {
+                "left": 1043,
+                "top": 997,
+                "right": 1078,
+                "bottom": 1069
+              },
+              "confidence": 0.5957031
+            },
+            {
+              "text": "TURN",
+              "boundingBox": {
+                "left": 1046,
+                "top": 1081,
+                "right": 1079,
+                "bottom": 1130
+              },
+              "confidence": 0.5205078
+            },
+            {
+              "text": "THES",
+              "boundingBox": {
+                "left": 1047,
+                "top": 1137,
+                "right": 1081,
+                "bottom": 1180
+              },
+              "confidence": 0.6611328
+            },
+            {
+              "text": "OVER!",
+              "boundingBox": {
+                "left": 1049,
+                "top": 1190,
+                "right": 1083,
+                "bottom": 1256
+              },
+              "confidence": 0.384375
+            },
+            {
+              "text": "A",
+              "boundingBox": {
+                "left": 1052,
+                "top": 1273,
+                "right": 1084,
+                "bottom": 1295
+              },
+              "confidence": 0.5078125
+            },
+            {
+              "text": "PLEASE",
+              "boundingBox": {
+                "left": 1053,
+                "top": 1323,
+                "right": 1087,
+                "bottom": 1405
+              },
+              "confidence": 0.79296875
+            },
+            {
+              "text": "TURN",
+              "boundingBox": {
+                "left": 1055,
+                "top": 1409,
+                "right": 1089,
+                "bottom": 1469
+              },
+              "confidence": 0.64160156
+            },
+            {
+              "text": "THIS",
+              "boundingBox": {
+                "left": 1057,
+                "top": 1475,
+                "right": 1091,
+                "bottom": 1525
+              },
+              "confidence": 0.73339844
+            },
+            {
+              "text": "OYER",
+              "boundingBox": {
+                "left": 1059,
+                "top": 1529,
+                "right": 1092,
+                "bottom": 1591
+              },
+              "confidence": 0.57128906
+            }
+          ]
         }
       ],
       "boundingBox": {

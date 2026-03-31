@@ -12,7 +12,49 @@
             "right": 1066,
             "bottom": 327
           },
-          "confidence": 0.66449654
+          "confidence": 0.66449654,
+          "elements": [
+            {
+              "text": "3OLDEN",
+              "boundingBox": {
+                "left": 366,
+                "top": 279,
+                "right": 586,
+                "bottom": 327
+              },
+              "confidence": 0.5807292
+            },
+            {
+              "text": "BOWL",
+              "boundingBox": {
+                "left": 621,
+                "top": 276,
+                "right": 756,
+                "bottom": 322
+              },
+              "confidence": 0.59277344
+            },
+            {
+              "text": "TERIYAK",
+              "boundingBox": {
+                "left": 805,
+                "top": 270,
+                "right": 1036,
+                "bottom": 318
+              },
+              "confidence": 0.7907366
+            },
+            {
+              "text": "I",
+              "boundingBox": {
+                "left": 1057,
+                "top": 270,
+                "right": 1066,
+                "bottom": 313
+              },
+              "confidence": 0.5703125
+            }
+          ]
         },
         {
           "text": "88 10 GARF IELO AVE.",
@@ -22,7 +64,59 @@
             "right": 1027,
             "bottom": 376
           },
-          "confidence": 0.63256836
+          "confidence": 0.63256836,
+          "elements": [
+            {
+              "text": "88",
+              "boundingBox": {
+                "left": 424,
+                "top": 326,
+                "right": 489,
+                "bottom": 376
+              },
+              "confidence": 0.4765625
+            },
+            {
+              "text": "10",
+              "boundingBox": {
+                "left": 491,
+                "top": 325,
+                "right": 572,
+                "bottom": 374
+              },
+              "confidence": 0.7050781
+            },
+            {
+              "text": "GARF",
+              "boundingBox": {
+                "left": 585,
+                "top": 320,
+                "right": 723,
+                "bottom": 372
+              },
+              "confidence": 0.65722656
+            },
+            {
+              "text": "IELO",
+              "boundingBox": {
+                "left": 753,
+                "top": 316,
+                "right": 892,
+                "bottom": 368
+              },
+              "confidence": 0.62890625
+            },
+            {
+              "text": "AVE.",
+              "boundingBox": {
+                "left": 909,
+                "top": 314,
+                "right": 1027,
+                "bottom": 364
+              },
+              "confidence": 0.6533203
+            }
+          ]
         },
         {
           "text": "SOUTH GArE, CA. 90280",
@@ -32,7 +126,49 @@
             "right": 1087,
             "bottom": 427
           },
-          "confidence": 0.6169705
+          "confidence": 0.6169705,
+          "elements": [
+            {
+              "text": "SOUTH",
+              "boundingBox": {
+                "left": 322,
+                "top": 372,
+                "right": 511,
+                "bottom": 427
+              },
+              "confidence": 0.5492188
+            },
+            {
+              "text": "GArE,",
+              "boundingBox": {
+                "left": 567,
+                "top": 366,
+                "right": 728,
+                "bottom": 420
+              },
+              "confidence": 0.63359374
+            },
+            {
+              "text": "CA.",
+              "boundingBox": {
+                "left": 798,
+                "top": 362,
+                "right": 875,
+                "bottom": 413
+              },
+              "confidence": 0.72005206
+            },
+            {
+              "text": "90280",
+              "boundingBox": {
+                "left": 911,
+                "top": 357,
+                "right": 1087,
+                "bottom": 410
+              },
+              "confidence": 0.60625
+            }
+          ]
         },
         {
           "text": "TEL: (E32 ) g28-8g99",
@@ -42,7 +178,49 @@
             "right": 1059,
             "bottom": 476
           },
-          "confidence": 0.5521599
+          "confidence": 0.5521599,
+          "elements": [
+            {
+              "text": "TEL:",
+              "boundingBox": {
+                "left": 386,
+                "top": 420,
+                "right": 519,
+                "bottom": 476
+              },
+              "confidence": 0.69140625
+            },
+            {
+              "text": "(E32",
+              "boundingBox": {
+                "left": 551,
+                "top": 413,
+                "right": 693,
+                "bottom": 469
+              },
+              "confidence": 0.5605469
+            },
+            {
+              "text": ")",
+              "boundingBox": {
+                "left": 711,
+                "top": 413,
+                "right": 731,
+                "bottom": 464
+              },
+              "confidence": 0.7421875
+            },
+            {
+              "text": "g28-8g99",
+              "boundingBox": {
+                "left": 767,
+                "top": 400,
+                "right": 1059,
+                "bottom": 462
+              },
+              "confidence": 0.45458984
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -63,7 +241,19 @@
             "right": 273,
             "bottom": 580
           },
-          "confidence": 0.8046875
+          "confidence": 0.8046875,
+          "elements": [
+            {
+              "text": "REG",
+              "boundingBox": {
+                "left": 152,
+                "top": 538,
+                "right": 273,
+                "bottom": 580
+              },
+              "confidence": 0.8046875
+            }
+          ]
         },
         {
           "text": "Manesarr 1 MC #01",
@@ -73,7 +263,49 @@
             "right": 765,
             "bottom": 645
           },
-          "confidence": 0.65959823
+          "confidence": 0.65959823,
+          "elements": [
+            {
+              "text": "Manesarr",
+              "boundingBox": {
+                "left": 150,
+                "top": 580,
+                "right": 426,
+                "bottom": 645
+              },
+              "confidence": 0.6142578
+            },
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 461,
+                "top": 578,
+                "right": 477,
+                "bottom": 631
+              },
+              "confidence": 0.625
+            },
+            {
+              "text": "MC",
+              "boundingBox": {
+                "left": 566,
+                "top": 571,
+                "right": 642,
+                "bottom": 627
+              },
+              "confidence": 0.7363281
+            },
+            {
+              "text": "#01",
+              "boundingBox": {
+                "left": 662,
+                "top": 565,
+                "right": 765,
+                "bottom": 623
+              },
+              "confidence": 0.74088544
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -94,7 +326,49 @@
             "right": 1258,
             "bottom": 576
           },
-          "confidence": 0.7534467
+          "confidence": 0.7534467,
+          "elements": [
+            {
+              "text": "OE-18-2019",
+              "boundingBox": {
+                "left": 544,
+                "top": 500,
+                "right": 922,
+                "bottom": 576
+              },
+              "confidence": 0.70390624
+            },
+            {
+              "text": "11:",
+              "boundingBox": {
+                "left": 980,
+                "top": 491,
+                "right": 1078,
+                "bottom": 549
+              },
+              "confidence": 0.85807294
+            },
+            {
+              "text": "19",
+              "boundingBox": {
+                "left": 1089,
+                "top": 485,
+                "right": 1165,
+                "bottom": 541
+              },
+              "confidence": 0.7480469
+            },
+            {
+              "text": "AM",
+              "boundingBox": {
+                "left": 1184,
+                "top": 479,
+                "right": 1258,
+                "bottom": 535
+              },
+              "confidence": 0.8496094
+            }
+          ]
         },
         {
           "text": "O00141",
@@ -104,7 +378,19 @@
             "right": 1281,
             "bottom": 597
           },
-          "confidence": 0.5442708
+          "confidence": 0.5442708,
+          "elements": [
+            {
+              "text": "O00141",
+              "boundingBox": {
+                "left": 1066,
+                "top": 528,
+                "right": 1281,
+                "bottom": 597
+              },
+              "confidence": 0.5442708
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -125,7 +411,19 @@
             "right": 651,
             "bottom": 746
           },
-          "confidence": 0.58463544
+          "confidence": 0.58463544,
+          "elements": [
+            {
+              "text": "ORDER#",
+              "boundingBox": {
+                "left": 180,
+                "top": 684,
+                "right": 651,
+                "bottom": 746
+              },
+              "confidence": 0.58463544
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -146,7 +444,49 @@
             "right": 776,
             "bottom": 869
           },
-          "confidence": 0.7890625
+          "confidence": 0.7890625,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 212,
+                "top": 808,
+                "right": 232,
+                "bottom": 869
+              },
+              "confidence": 0.66796875
+            },
+            {
+              "text": "#1",
+              "boundingBox": {
+                "left": 282,
+                "top": 800,
+                "right": 352,
+                "bottom": 865
+              },
+              "confidence": 0.7519531
+            },
+            {
+              "text": "CHKN",
+              "boundingBox": {
+                "left": 377,
+                "top": 790,
+                "right": 543,
+                "bottom": 860
+              },
+              "confidence": 0.8935547
+            },
+            {
+              "text": "PLATE",
+              "boundingBox": {
+                "left": 581,
+                "top": 777,
+                "right": 775,
+                "bottom": 849
+              },
+              "confidence": 0.7445313
+            }
+          ]
         },
         {
           "text": "1 AVOCADCO",
@@ -156,7 +496,29 @@
             "right": 614,
             "bottom": 925
           },
-          "confidence": 0.68185765
+          "confidence": 0.68185765,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 183,
+                "top": 869,
+                "right": 205,
+                "bottom": 925
+              },
+              "confidence": 0.640625
+            },
+            {
+              "text": "AVOCADCO",
+              "boundingBox": {
+                "left": 360,
+                "top": 846,
+                "right": 614,
+                "bottom": 915
+              },
+              "confidence": 0.6870117
+            }
+          ]
         },
         {
           "text": "1 MO. DRINK",
@@ -166,7 +528,39 @@
             "right": 612,
             "bottom": 988
           },
-          "confidence": 0.7491319
+          "confidence": 0.7491319,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 176,
+                "top": 926,
+                "right": 203,
+                "bottom": 988
+              },
+              "confidence": 0.64453125
+            },
+            {
+              "text": "MO.",
+              "boundingBox": {
+                "left": 277,
+                "top": 917,
+                "right": 373,
+                "bottom": 983
+              },
+              "confidence": 0.671875
+            },
+            {
+              "text": "DRINK",
+              "boundingBox": {
+                "left": 419,
+                "top": 905,
+                "right": 612,
+                "bottom": 976
+              },
+              "confidence": 0.81640625
+            }
+          ]
         },
         {
           "text": "kHERE",
@@ -176,7 +570,19 @@
             "right": 658,
             "bottom": 1038
           },
-          "confidence": 0.64453125
+          "confidence": 0.64453125,
+          "elements": [
+            {
+              "text": "kHERE",
+              "boundingBox": {
+                "left": 252,
+                "top": 966,
+                "right": 658,
+                "bottom": 1038
+              },
+              "confidence": 0.64453125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -197,7 +603,19 @@
             "right": 373,
             "bottom": 1101
           },
-          "confidence": 0.70703125
+          "confidence": 0.70703125,
+          "elements": [
+            {
+              "text": "TAX",
+              "boundingBox": {
+                "left": 250,
+                "top": 1044,
+                "right": 373,
+                "bottom": 1101
+              },
+              "confidence": 0.70703125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -218,7 +636,19 @@
             "right": 676,
             "bottom": 1175
           },
-          "confidence": 0.66341144
+          "confidence": 0.66341144,
+          "elements": [
+            {
+              "text": "TOTAL.",
+              "boundingBox": {
+                "left": 268,
+                "top": 1081,
+                "right": 676,
+                "bottom": 1175
+              },
+              "confidence": 0.66341144
+            }
+          ]
         },
         {
           "text": "CASH",
@@ -228,7 +658,19 @@
             "right": 411,
             "bottom": 1232
           },
-          "confidence": 0.85058594
+          "confidence": 0.85058594,
+          "elements": [
+            {
+              "text": "CASH",
+              "boundingBox": {
+                "left": 234,
+                "top": 1168,
+                "right": 411,
+                "bottom": 1232
+              },
+              "confidence": 0.85058594
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -249,7 +691,19 @@
             "right": 322,
             "bottom": 1296
           },
-          "confidence": 0.6542969
+          "confidence": 0.6542969,
+          "elements": [
+            {
+              "text": "CG",
+              "boundingBox": {
+                "left": 234,
+                "top": 1244,
+                "right": 322,
+                "bottom": 1296
+              },
+              "confidence": 0.6542969
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -270,7 +724,29 @@
             "right": 1275,
             "bottom": 720
           },
-          "confidence": 0.41731772
+          "confidence": 0.41731772,
+          "elements": [
+            {
+              "text": "OO0",
+              "boundingBox": {
+                "left": 864,
+                "top": 645,
+                "right": 1055,
+                "bottom": 720
+              },
+              "confidence": 0.21875
+            },
+            {
+              "text": "141",
+              "boundingBox": {
+                "left": 1082,
+                "top": 628,
+                "right": 1275,
+                "bottom": 704
+              },
+              "confidence": 0.61588544
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -291,7 +767,19 @@
             "right": 1297,
             "bottom": 808
           },
-          "confidence": 0.59296876
+          "confidence": 0.59296876,
+          "elements": [
+            {
+              "text": "$9.39",
+              "boundingBox": {
+                "left": 1094,
+                "top": 742,
+                "right": 1297,
+                "bottom": 808
+              },
+              "confidence": 0.59296876
+            }
+          ]
         },
         {
           "text": "$1.95",
@@ -301,7 +789,19 @@
             "right": 1301,
             "bottom": 864
           },
-          "confidence": 0.85859376
+          "confidence": 0.85859376,
+          "elements": [
+            {
+              "text": "$1.95",
+              "boundingBox": {
+                "left": 1102,
+                "top": 799,
+                "right": 1301,
+                "bottom": 864
+              },
+              "confidence": 0.85859376
+            }
+          ]
         },
         {
           "text": "$2. 29",
@@ -311,7 +811,29 @@
             "right": 1304,
             "bottom": 920
           },
-          "confidence": 0.8359375
+          "confidence": 0.8359375,
+          "elements": [
+            {
+              "text": "$2.",
+              "boundingBox": {
+                "left": 1106,
+                "top": 866,
+                "right": 1208,
+                "bottom": 920
+              },
+              "confidence": 0.85026044
+            },
+            {
+              "text": "29",
+              "boundingBox": {
+                "left": 1227,
+                "top": 862,
+                "right": 1304,
+                "bottom": 914
+              },
+              "confidence": 0.8144531
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -332,7 +854,19 @@
             "right": 1315,
             "bottom": 1044
           },
-          "confidence": 0.74140626
+          "confidence": 0.74140626,
+          "elements": [
+            {
+              "text": "$1.40",
+              "boundingBox": {
+                "left": 1112,
+                "top": 975,
+                "right": 1315,
+                "bottom": 1044
+              },
+              "confidence": 0.74140626
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -353,7 +887,39 @@
             "right": 1309,
             "bottom": 1128
           },
-          "confidence": 0.48893228
+          "confidence": 0.48893228,
+          "elements": [
+            {
+              "text": "$",
+              "boundingBox": {
+                "left": 832,
+                "top": 1066,
+                "right": 907,
+                "bottom": 1128
+              },
+              "confidence": 0.33203125
+            },
+            {
+              "text": "15.",
+              "boundingBox": {
+                "left": 929,
+                "top": 1050,
+                "right": 1112,
+                "bottom": 1120
+              },
+              "confidence": 0.67838544
+            },
+            {
+              "text": "03",
+              "boundingBox": {
+                "left": 1155,
+                "top": 1034,
+                "right": 1309,
+                "bottom": 1103
+              },
+              "confidence": 0.28320312
+            }
+          ]
         },
         {
           "text": "$20. 00",
@@ -363,7 +929,29 @@
             "right": 1320,
             "bottom": 1166
           },
-          "confidence": 0.7578125
+          "confidence": 0.7578125,
+          "elements": [
+            {
+              "text": "$20.",
+              "boundingBox": {
+                "left": 1078,
+                "top": 1107,
+                "right": 1220,
+                "bottom": 1166
+              },
+              "confidence": 0.8359375
+            },
+            {
+              "text": "00",
+              "boundingBox": {
+                "left": 1241,
+                "top": 1102,
+                "right": 1320,
+                "bottom": 1159
+              },
+              "confidence": 0.6015625
+            }
+          ]
         },
         {
           "text": "$4.97",
@@ -373,7 +961,19 @@
             "right": 1325,
             "bottom": 1227
           },
-          "confidence": 0.871875
+          "confidence": 0.871875,
+          "elements": [
+            {
+              "text": "$4.97",
+              "boundingBox": {
+                "left": 1122,
+                "top": 1157,
+                "right": 1325,
+                "bottom": 1227
+              },
+              "confidence": 0.871875
+            }
+          ]
         }
       ],
       "boundingBox": {

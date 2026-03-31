@@ -32,6 +32,13 @@ class MlKitTextRecognizer @Inject constructor() {
                                         text = line.text,
                                         boundingBox = line.boundingBox?.toBoundingBox(),
                                         confidence = line.confidence,
+                                        elements = line.elements.map { element ->
+                                            TextElement(
+                                                text = element.text,
+                                                boundingBox = element.boundingBox?.toBoundingBox(),
+                                                confidence = element.confidence,
+                                            )
+                                        },
                                     )
                                 },
                                 boundingBox = block.boundingBox?.toBoundingBox(),
@@ -75,6 +82,14 @@ data class TextBlock(
 
 @com.squareup.moshi.JsonClass(generateAdapter = true)
 data class TextLine(
+    val text: String,
+    val boundingBox: BoundingBox?,
+    val confidence: Float?,
+    val elements: List<TextElement> = emptyList(),
+)
+
+@com.squareup.moshi.JsonClass(generateAdapter = true)
+data class TextElement(
     val text: String,
     val boundingBox: BoundingBox?,
     val confidence: Float?,

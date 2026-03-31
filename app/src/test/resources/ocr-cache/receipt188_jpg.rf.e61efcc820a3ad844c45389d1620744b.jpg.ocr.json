@@ -12,7 +12,29 @@
             "right": 459,
             "bottom": 468
           },
-          "confidence": 0.8625
+          "confidence": 0.8625,
+          "elements": [
+            {
+              "text": "Real",
+              "boundingBox": {
+                "left": 199,
+                "top": 422,
+                "right": 286,
+                "bottom": 462
+              },
+              "confidence": 0.8857422
+            },
+            {
+              "text": "Smooth",
+              "boundingBox": {
+                "left": 306,
+                "top": 426,
+                "right": 459,
+                "bottom": 468
+              },
+              "confidence": 0.8470052
+            }
+          ]
         },
         {
           "text": "Short Stack",
@@ -22,7 +44,29 @@
             "right": 455,
             "bottom": 504
           },
-          "confidence": 0.88125
+          "confidence": 0.88125,
+          "elements": [
+            {
+              "text": "Short",
+              "boundingBox": {
+                "left": 169,
+                "top": 463,
+                "right": 296,
+                "bottom": 498
+              },
+              "confidence": 0.903125
+            },
+            {
+              "text": "Stack",
+              "boundingBox": {
+                "left": 328,
+                "top": 469,
+                "right": 455,
+                "bottom": 503
+              },
+              "confidence": 0.859375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -43,7 +87,19 @@
             "right": 320,
             "bottom": 542
           },
-          "confidence": 0.88216144
+          "confidence": 0.88216144,
+          "elements": [
+            {
+              "text": "Coffee",
+              "boundingBox": {
+                "left": 162,
+                "top": 501,
+                "right": 320,
+                "bottom": 542
+              },
+              "confidence": 0.88216144
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -64,7 +120,49 @@
             "right": 944,
             "bottom": 141
           },
-          "confidence": 0.7743056
+          "confidence": 0.7743056,
+          "elements": [
+            {
+              "text": "Spira1",
+              "boundingBox": {
+                "left": 498,
+                "top": 93,
+                "right": 624,
+                "bottom": 131
+              },
+              "confidence": 0.6901042
+            },
+            {
+              "text": "Diner",
+              "boundingBox": {
+                "left": 640,
+                "top": 98,
+                "right": 748,
+                "bottom": 135
+              },
+              "confidence": 0.71171874
+            },
+            {
+              "text": "&",
+              "boundingBox": {
+                "left": 772,
+                "top": 103,
+                "right": 793,
+                "bottom": 136
+              },
+              "confidence": 0.8828125
+            },
+            {
+              "text": "Bakery",
+              "boundingBox": {
+                "left": 814,
+                "top": 104,
+                "right": 944,
+                "bottom": 141
+              },
+              "confidence": 0.8925781
+            }
+          ]
         },
         {
           "text": "608 E Hickory St",
@@ -74,7 +172,49 @@
             "right": 880,
             "bottom": 166
           },
-          "confidence": 0.78846157
+          "confidence": 0.78846157,
+          "elements": [
+            {
+              "text": "608",
+              "boundingBox": {
+                "left": 529,
+                "top": 129,
+                "right": 594,
+                "bottom": 158
+              },
+              "confidence": 0.83203125
+            },
+            {
+              "text": "E",
+              "boundingBox": {
+                "left": 620,
+                "top": 132,
+                "right": 637,
+                "bottom": 158
+              },
+              "confidence": 0.71875
+            },
+            {
+              "text": "Hickory",
+              "boundingBox": {
+                "left": 662,
+                "top": 133,
+                "right": 816,
+                "bottom": 164
+              },
+              "confidence": 0.7907366
+            },
+            {
+              "text": "St",
+              "boundingBox": {
+                "left": 840,
+                "top": 139,
+                "right": 880,
+                "bottom": 166
+              },
+              "confidence": 0.75
+            }
+          ]
         },
         {
           "text": "Denton, TX 76205",
@@ -84,7 +224,39 @@
             "right": 886,
             "bottom": 195
           },
-          "confidence": 0.8356585
+          "confidence": 0.8356585,
+          "elements": [
+            {
+              "text": "Denton,",
+              "boundingBox": {
+                "left": 526,
+                "top": 156,
+                "right": 680,
+                "bottom": 190
+              },
+              "confidence": 0.85435265
+            },
+            {
+              "text": "TX",
+              "boundingBox": {
+                "left": 709,
+                "top": 161,
+                "right": 751,
+                "bottom": 192
+              },
+              "confidence": 0.67578125
+            },
+            {
+              "text": "76205",
+              "boundingBox": {
+                "left": 776,
+                "top": 163,
+                "right": 886,
+                "bottom": 195
+              },
+              "confidence": 0.8734375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -105,7 +277,29 @@
             "right": 687,
             "bottom": 596
           },
-          "confidence": 0.7763158
+          "confidence": 0.7763158,
+          "elements": [
+            {
+              "text": "Breakfast",
+              "boundingBox": {
+                "left": 154,
+                "top": 544,
+                "right": 395,
+                "bottom": 586
+              },
+              "confidence": 0.9140625
+            },
+            {
+              "text": "Quesadilla",
+              "boundingBox": {
+                "left": 426,
+                "top": 553,
+                "right": 687,
+                "bottom": 596
+              },
+              "confidence": 0.65234375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -126,7 +320,29 @@
             "right": 502,
             "bottom": 634
           },
-          "confidence": 0.81640625
+          "confidence": 0.81640625,
+          "elements": [
+            {
+              "text": "NO",
+              "boundingBox": {
+                "left": 232,
+                "top": 589,
+                "right": 284,
+                "bottom": 622
+              },
+              "confidence": 0.71875
+            },
+            {
+              "text": "Sausage",
+              "boundingBox": {
+                "left": 313,
+                "top": 592,
+                "right": 502,
+                "bottom": 633
+              },
+              "confidence": 0.844308
+            }
+          ]
         },
         {
           "text": "Grilled Spinach",
@@ -136,7 +352,29 @@
             "right": 635,
             "bottom": 676
           },
-          "confidence": 0.83984375
+          "confidence": 0.83984375,
+          "elements": [
+            {
+              "text": "Grilled",
+              "boundingBox": {
+                "left": 223,
+                "top": 631,
+                "right": 417,
+                "bottom": 671
+              },
+              "confidence": 0.81584823
+            },
+            {
+              "text": "Spinach",
+              "boundingBox": {
+                "left": 449,
+                "top": 636,
+                "right": 635,
+                "bottom": 676
+              },
+              "confidence": 0.86383927
+            }
+          ]
         },
         {
           "text": "Southern Comfort",
@@ -146,7 +384,29 @@
             "right": 577,
             "bottom": 715
           },
-          "confidence": 0.8794271
+          "confidence": 0.8794271,
+          "elements": [
+            {
+              "text": "Southern",
+              "boundingBox": {
+                "left": 129,
+                "top": 671,
+                "right": 357,
+                "bottom": 711
+              },
+              "confidence": 0.859375
+            },
+            {
+              "text": "Comfort",
+              "boundingBox": {
+                "left": 389,
+                "top": 676,
+                "right": 577,
+                "bottom": 715
+              },
+              "confidence": 0.90234375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -167,7 +427,19 @@
             "right": 369,
             "bottom": 804
           },
-          "confidence": 0.890625
+          "confidence": 0.890625,
+          "elements": [
+            {
+              "text": "Subtotal:",
+              "boundingBox": {
+                "left": 110,
+                "top": 755,
+                "right": 369,
+                "bottom": 804
+              },
+              "confidence": 0.890625
+            }
+          ]
         },
         {
           "text": "Total Tax:",
@@ -177,7 +449,29 @@
             "right": 394,
             "bottom": 848
           },
-          "confidence": 0.80338544
+          "confidence": 0.80338544,
+          "elements": [
+            {
+              "text": "Total",
+              "boundingBox": {
+                "left": 106,
+                "top": 808,
+                "right": 246,
+                "bottom": 848
+              },
+              "confidence": 0.778125
+            },
+            {
+              "text": "Tax:",
+              "boundingBox": {
+                "left": 288,
+                "top": 808,
+                "right": 394,
+                "bottom": 848
+              },
+              "confidence": 0.83496094
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -198,7 +492,19 @@
             "right": 260,
             "bottom": 950
           },
-          "confidence": 0.83984375
+          "confidence": 0.83984375,
+          "elements": [
+            {
+              "text": "Total:",
+              "boundingBox": {
+                "left": 86,
+                "top": 908,
+                "right": 260,
+                "bottom": 950
+              },
+              "confidence": 0.83984375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -219,7 +525,39 @@
             "right": 624,
             "bottom": 1123
           },
-          "confidence": 0.84399414
+          "confidence": 0.84399414,
+          "elements": [
+            {
+              "text": "Order",
+              "boundingBox": {
+                "left": 54,
+                "top": 1073,
+                "right": 212,
+                "bottom": 1123
+              },
+              "confidence": 0.7921875
+            },
+            {
+              "text": "Balance",
+              "boundingBox": {
+                "left": 249,
+                "top": 1071,
+                "right": 472,
+                "bottom": 1120
+              },
+              "confidence": 0.90345985
+            },
+            {
+              "text": "due:",
+              "boundingBox": {
+                "left": 509,
+                "top": 1068,
+                "right": 624,
+                "bottom": 1117
+              },
+              "confidence": 0.8046875
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -240,7 +578,29 @@
             "right": 1181,
             "bottom": 275
           },
-          "confidence": 0.79264325
+          "confidence": 0.79264325,
+          "elements": [
+            {
+              "text": "Order#",
+              "boundingBox": {
+                "left": 890,
+                "top": 235,
+                "right": 1024,
+                "bottom": 269
+              },
+              "confidence": 0.75
+            },
+            {
+              "text": "185736",
+              "boundingBox": {
+                "left": 1051,
+                "top": 241,
+                "right": 1181,
+                "bottom": 274
+              },
+              "confidence": 0.83528644
+            }
+          ]
         },
         {
           "text": "Eat In Order",
@@ -250,7 +610,39 @@
             "right": 1183,
             "bottom": 313
           },
-          "confidence": 0.80507815
+          "confidence": 0.80507815,
+          "elements": [
+            {
+              "text": "Eat",
+              "boundingBox": {
+                "left": 918,
+                "top": 270,
+                "right": 980,
+                "bottom": 308
+              },
+              "confidence": 0.8255208
+            },
+            {
+              "text": "In",
+              "boundingBox": {
+                "left": 1009,
+                "top": 272,
+                "right": 1052,
+                "bottom": 310
+              },
+              "confidence": 0.890625
+            },
+            {
+              "text": "Order",
+              "boundingBox": {
+                "left": 1074,
+                "top": 274,
+                "right": 1183,
+                "bottom": 313
+              },
+              "confidence": 0.75859374
+            }
+          ]
         },
         {
           "text": "Server : Sarah A",
@@ -260,7 +652,49 @@
             "right": 1195,
             "bottom": 348
           },
-          "confidence": 0.82121396
+          "confidence": 0.82121396,
+          "elements": [
+            {
+              "text": "Server",
+              "boundingBox": {
+                "left": 850,
+                "top": 302,
+                "right": 984,
+                "bottom": 343
+              },
+              "confidence": 0.87630206
+            },
+            {
+              "text": ":",
+              "boundingBox": {
+                "left": 995,
+                "top": 306,
+                "right": 1004,
+                "bottom": 343
+              },
+              "confidence": 0.55859375
+            },
+            {
+              "text": "Sarah",
+              "boundingBox": {
+                "left": 1033,
+                "top": 307,
+                "right": 1148,
+                "bottom": 347
+              },
+              "confidence": 0.85546875
+            },
+            {
+              "text": "A",
+              "boundingBox": {
+                "left": 1173,
+                "top": 311,
+                "right": 1195,
+                "bottom": 348
+              },
+              "confidence": 0.58203125
+            }
+          ]
         },
         {
           "text": "Table: 9",
@@ -270,7 +704,29 @@
             "right": 1201,
             "bottom": 375
           },
-          "confidence": 0.77734375
+          "confidence": 0.77734375,
+          "elements": [
+            {
+              "text": "Table:",
+              "boundingBox": {
+                "left": 1016,
+                "top": 345,
+                "right": 1150,
+                "bottom": 375
+              },
+              "confidence": 0.8229167
+            },
+            {
+              "text": "9",
+              "boundingBox": {
+                "left": 1177,
+                "top": 345,
+                "right": 1201,
+                "bottom": 375
+              },
+              "confidence": 0.50390625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -291,7 +747,49 @@
             "right": 1207,
             "bottom": 416
           },
-          "confidence": 0.85722655
+          "confidence": 0.85722655,
+          "elements": [
+            {
+              "text": "Date:",
+              "boundingBox": {
+                "left": 661,
+                "top": 365,
+                "right": 775,
+                "bottom": 405
+              },
+              "confidence": 0.86015624
+            },
+            {
+              "text": "6/16/19,",
+              "boundingBox": {
+                "left": 807,
+                "top": 369,
+                "right": 988,
+                "bottom": 410
+              },
+              "confidence": 0.8286133
+            },
+            {
+              "text": "10:04",
+              "boundingBox": {
+                "left": 1023,
+                "top": 374,
+                "right": 1137,
+                "bottom": 414
+              },
+              "confidence": 0.9046875
+            },
+            {
+              "text": "AM",
+              "boundingBox": {
+                "left": 1160,
+                "top": 377,
+                "right": 1207,
+                "bottom": 416
+              },
+              "confidence": 0.8457031
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -312,7 +810,19 @@
             "right": 1216,
             "bottom": 488
           },
-          "confidence": 0.88359374
+          "confidence": 0.88359374,
+          "elements": [
+            {
+              "text": "$7.99",
+              "boundingBox": {
+                "left": 1100,
+                "top": 451,
+                "right": 1216,
+                "bottom": 488
+              },
+              "confidence": 0.88359374
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -333,7 +843,19 @@
             "right": 1224,
             "bottom": 528
           },
-          "confidence": 0.8539063
+          "confidence": 0.8539063,
+          "elements": [
+            {
+              "text": "$8.59",
+              "boundingBox": {
+                "left": 1104,
+                "top": 494,
+                "right": 1224,
+                "bottom": 528
+              },
+              "confidence": 0.8539063
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -354,7 +876,19 @@
             "right": 1228,
             "bottom": 569
           },
-          "confidence": 0.890625
+          "confidence": 0.890625,
+          "elements": [
+            {
+              "text": "$2.99",
+              "boundingBox": {
+                "left": 1109,
+                "top": 532,
+                "right": 1228,
+                "bottom": 569
+              },
+              "confidence": 0.890625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -375,7 +909,19 @@
             "right": 1236,
             "bottom": 606
           },
-          "confidence": 0.78190106
+          "confidence": 0.78190106,
+          "elements": [
+            {
+              "text": "$13.99",
+              "boundingBox": {
+                "left": 1090,
+                "top": 574,
+                "right": 1236,
+                "bottom": 606
+              },
+              "confidence": 0.78190106
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -396,7 +942,19 @@
             "right": 1247,
             "bottom": 646
           },
-          "confidence": 0.71158856
+          "confidence": 0.71158856,
+          "elements": [
+            {
+              "text": "+$0.00",
+              "boundingBox": {
+                "left": 1100,
+                "top": 614,
+                "right": 1247,
+                "bottom": 646
+              },
+              "confidence": 0.71158856
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -417,7 +975,19 @@
             "right": 1258,
             "bottom": 685
           },
-          "confidence": 0.78841144
+          "confidence": 0.78841144,
+          "elements": [
+            {
+              "text": "+$1.99",
+              "boundingBox": {
+                "left": 1108,
+                "top": 653,
+                "right": 1258,
+                "bottom": 685
+              },
+              "confidence": 0.78841144
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -438,7 +1008,19 @@
             "right": 1266,
             "bottom": 725
           },
-          "confidence": 0.7552083
+          "confidence": 0.7552083,
+          "elements": [
+            {
+              "text": "$10.99",
+              "boundingBox": {
+                "left": 1114,
+                "top": 686,
+                "right": 1266,
+                "bottom": 725
+              },
+              "confidence": 0.7552083
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -459,7 +1041,19 @@
             "right": 1294,
             "bottom": 807
           },
-          "confidence": 0.7949219
+          "confidence": 0.7949219,
+          "elements": [
+            {
+              "text": "$46.54",
+              "boundingBox": {
+                "left": 1132,
+                "top": 768,
+                "right": 1294,
+                "bottom": 807
+              },
+              "confidence": 0.7949219
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -480,7 +1074,39 @@
             "right": 1053,
             "bottom": 1253
           },
-          "confidence": 0.8155839
+          "confidence": 0.8155839,
+          "elements": [
+            {
+              "text": "Www.sp",
+              "boundingBox": {
+                "left": 460,
+                "top": 1191,
+                "right": 639,
+                "bottom": 1253
+              },
+              "confidence": 0.7135417
+            },
+            {
+              "text": "i",
+              "boundingBox": {
+                "left": 659,
+                "top": 1191,
+                "right": 675,
+                "bottom": 1248
+              },
+              "confidence": 0.640625
+            },
+            {
+              "text": "raldiner.com",
+              "boundingBox": {
+                "left": 676,
+                "top": 1182,
+                "right": 1053,
+                "bottom": 1248
+              },
+              "confidence": 0.8811849
+            }
+          ]
         },
         {
           "text": "Follow Us On",
@@ -490,7 +1116,39 @@
             "right": 928,
             "bottom": 1305
           },
-          "confidence": 0.75625
+          "confidence": 0.75625,
+          "elements": [
+            {
+              "text": "Follow",
+              "boundingBox": {
+                "left": 541,
+                "top": 1251,
+                "right": 733,
+                "bottom": 1305
+              },
+              "confidence": 0.84309894
+            },
+            {
+              "text": "Us",
+              "boundingBox": {
+                "left": 768,
+                "top": 1249,
+                "right": 831,
+                "bottom": 1300
+              },
+              "confidence": 0.6777344
+            },
+            {
+              "text": "On",
+              "boundingBox": {
+                "left": 866,
+                "top": 1247,
+                "right": 928,
+                "bottom": 1298
+              },
+              "confidence": 0.57421875
+            }
+          ]
         },
         {
           "text": "facebook .com/spiraldiner",
@@ -500,7 +1158,29 @@
             "right": 1125,
             "bottom": 1381
           },
-          "confidence": 0.8541667
+          "confidence": 0.8541667,
+          "elements": [
+            {
+              "text": "facebook",
+              "boundingBox": {
+                "left": 351,
+                "top": 1311,
+                "right": 605,
+                "bottom": 1381
+              },
+              "confidence": 0.8408203
+            },
+            {
+              "text": ".com/spiraldiner",
+              "boundingBox": {
+                "left": 608,
+                "top": 1301,
+                "right": 1125,
+                "bottom": 1375
+              },
+              "confidence": 0.86083984
+            }
+          ]
         },
         {
           "text": "instagram .com/spiraldiner",
@@ -510,7 +1190,29 @@
             "right": 1150,
             "bottom": 1439
           },
-          "confidence": 0.8603125
+          "confidence": 0.8603125,
+          "elements": [
+            {
+              "text": "instagram",
+              "boundingBox": {
+                "left": 364,
+                "top": 1373,
+                "right": 653,
+                "bottom": 1439
+              },
+              "confidence": 0.8637153
+            },
+            {
+              "text": ".com/spiraldiner",
+              "boundingBox": {
+                "left": 653,
+                "top": 1361,
+                "right": 1150,
+                "bottom": 1432
+              },
+              "confidence": 0.85839844
+            }
+          ]
         },
         {
           "text": "Thanks for your bus iness!",
@@ -520,7 +1222,59 @@
             "right": 1154,
             "bottom": 1485
           },
-          "confidence": 0.8371804
+          "confidence": 0.8371804,
+          "elements": [
+            {
+              "text": "Thanks",
+              "boundingBox": {
+                "left": 346,
+                "top": 1432,
+                "right": 540,
+                "bottom": 1485
+              },
+              "confidence": 0.85026044
+            },
+            {
+              "text": "for",
+              "boundingBox": {
+                "left": 577,
+                "top": 1431,
+                "right": 668,
+                "bottom": 1481
+              },
+              "confidence": 0.92578125
+            },
+            {
+              "text": "your",
+              "boundingBox": {
+                "left": 707,
+                "top": 1429,
+                "right": 830,
+                "bottom": 1479
+              },
+              "confidence": 0.79589844
+            },
+            {
+              "text": "bus",
+              "boundingBox": {
+                "left": 890,
+                "top": 1426,
+                "right": 976,
+                "bottom": 1476
+              },
+              "confidence": 0.77994794
+            },
+            {
+              "text": "iness!",
+              "boundingBox": {
+                "left": 982,
+                "top": 1423,
+                "right": 1154,
+                "bottom": 1475
+              },
+              "confidence": 0.8359375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -541,7 +1295,19 @@
             "right": 1307,
             "bottom": 850
           },
-          "confidence": 0.87421876
+          "confidence": 0.87421876,
+          "elements": [
+            {
+              "text": "$3.84",
+              "boundingBox": {
+                "left": 1172,
+                "top": 809,
+                "right": 1307,
+                "bottom": 850
+              },
+              "confidence": 0.87421876
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -562,7 +1328,19 @@
             "right": 1337,
             "bottom": 947
           },
-          "confidence": 0.76953125
+          "confidence": 0.76953125,
+          "elements": [
+            {
+              "text": "$50.38",
+              "boundingBox": {
+                "left": 1164,
+                "top": 904,
+                "right": 1337,
+                "bottom": 947
+              },
+              "confidence": 0.76953125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -583,7 +1361,19 @@
             "right": 1375,
             "bottom": 1111
           },
-          "confidence": 0.8391927
+          "confidence": 0.8391927,
+          "elements": [
+            {
+              "text": "$50.38",
+              "boundingBox": {
+                "left": 1196,
+                "top": 1059,
+                "right": 1375,
+                "bottom": 1111
+              },
+              "confidence": 0.8391927
+            }
+          ]
         }
       ],
       "boundingBox": {

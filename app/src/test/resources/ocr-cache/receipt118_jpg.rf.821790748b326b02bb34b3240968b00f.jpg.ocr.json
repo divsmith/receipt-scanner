@@ -12,7 +12,19 @@
             "right": 1281,
             "bottom": 205
           },
-          "confidence": 0.43203124
+          "confidence": 0.43203124,
+          "elements": [
+            {
+              "text": "aggio",
+              "boundingBox": {
+                "left": 681,
+                "top": 25,
+                "right": 1281,
+                "bottom": 205
+              },
+              "confidence": 0.43203124
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -33,7 +45,29 @@
             "right": 502,
             "bottom": 618
           },
-          "confidence": 0.7395833
+          "confidence": 0.7395833,
+          "elements": [
+            {
+              "text": "prder",
+              "boundingBox": {
+                "left": 220,
+                "top": 568,
+                "right": 358,
+                "bottom": 618
+              },
+              "confidence": 0.7765625
+            },
+            {
+              "text": "9862",
+              "boundingBox": {
+                "left": 390,
+                "top": 568,
+                "right": 502,
+                "bottom": 618
+              },
+              "confidence": 0.6933594
+            }
+          ]
         },
         {
           "text": "fable 14",
@@ -43,7 +77,29 @@
             "right": 440,
             "bottom": 664
           },
-          "confidence": 0.77622765
+          "confidence": 0.77622765,
+          "elements": [
+            {
+              "text": "fable",
+              "boundingBox": {
+                "left": 226,
+                "top": 618,
+                "right": 356,
+                "bottom": 664
+              },
+              "confidence": 0.8015625
+            },
+            {
+              "text": "14",
+              "boundingBox": {
+                "left": 396,
+                "top": 618,
+                "right": 440,
+                "bottom": 664
+              },
+              "confidence": 0.7128906
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -64,7 +120,29 @@
             "right": 1149,
             "bottom": 253
           },
-          "confidence": 0.7246094
+          "confidence": 0.7246094,
+          "elements": [
+            {
+              "text": "GRI",
+              "boundingBox": {
+                "left": 574,
+                "top": 182,
+                "right": 841,
+                "bottom": 253
+              },
+              "confidence": 0.7682292
+            },
+            {
+              "text": "LLE",
+              "boundingBox": {
+                "left": 867,
+                "top": 177,
+                "right": 1149,
+                "bottom": 247
+              },
+              "confidence": 0.68098956
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -85,7 +163,29 @@
             "right": 1010,
             "bottom": 369
           },
-          "confidence": 0.7158854
+          "confidence": 0.7158854,
+          "elements": [
+            {
+              "text": "Villaggio",
+              "boundingBox": {
+                "left": 574,
+                "top": 327,
+                "right": 814,
+                "bottom": 369
+              },
+              "confidence": 0.71657985
+            },
+            {
+              "text": "Grille",
+              "boundingBox": {
+                "left": 848,
+                "top": 324,
+                "right": 1010,
+                "bottom": 365
+              },
+              "confidence": 0.71484375
+            }
+          ]
         },
         {
           "text": "4780 Wharf Parkway",
@@ -95,7 +195,39 @@
             "right": 1038,
             "bottom": 419
           },
-          "confidence": 0.9025879
+          "confidence": 0.9025879,
+          "elements": [
+            {
+              "text": "4780",
+              "boundingBox": {
+                "left": 542,
+                "top": 374,
+                "right": 651,
+                "bottom": 419
+              },
+              "confidence": 0.92285156
+            },
+            {
+              "text": "Wharf",
+              "boundingBox": {
+                "left": 681,
+                "top": 373,
+                "right": 812,
+                "bottom": 417
+              },
+              "confidence": 0.8625
+            },
+            {
+              "text": "Parkway",
+              "boundingBox": {
+                "left": 847,
+                "top": 371,
+                "right": 1038,
+                "bottom": 416
+              },
+              "confidence": 0.91964287
+            }
+          ]
         },
         {
           "text": "Orange Beach, AL 36561",
@@ -105,7 +237,49 @@
             "right": 1092,
             "bottom": 467
           },
-          "confidence": 0.84457237
+          "confidence": 0.84457237,
+          "elements": [
+            {
+              "text": "Orange",
+              "boundingBox": {
+                "left": 484,
+                "top": 421,
+                "right": 646,
+                "bottom": 467
+              },
+              "confidence": 0.8125
+            },
+            {
+              "text": "Beach,",
+              "boundingBox": {
+                "left": 677,
+                "top": 418,
+                "right": 834,
+                "bottom": 464
+              },
+              "confidence": 0.90494794
+            },
+            {
+              "text": "AL",
+              "boundingBox": {
+                "left": 873,
+                "top": 417,
+                "right": 926,
+                "bottom": 460
+              },
+              "confidence": 0.859375
+            },
+            {
+              "text": "36561",
+              "boundingBox": {
+                "left": 959,
+                "top": 413,
+                "right": 1092,
+                "bottom": 458
+              },
+              "confidence": 0.8046875
+            }
+          ]
         },
         {
           "text": "PHONE: 251-224-6510",
@@ -115,7 +289,29 @@
             "right": 1042,
             "bottom": 511
           },
-          "confidence": 0.81727433
+          "confidence": 0.81727433,
+          "elements": [
+            {
+              "text": "PHONE:",
+              "boundingBox": {
+                "left": 508,
+                "top": 471,
+                "right": 666,
+                "bottom": 511
+              },
+              "confidence": 0.79036456
+            },
+            {
+              "text": "251-224-6510",
+              "boundingBox": {
+                "left": 705,
+                "top": 466,
+                "right": 1042,
+                "bottom": 508
+              },
+              "confidence": 0.8307292
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -136,7 +332,39 @@
             "right": 1076,
             "bottom": 618
           },
-          "confidence": 0.73333335
+          "confidence": 0.73333335,
+          "elements": [
+            {
+              "text": "06/08/19",
+              "boundingBox": {
+                "left": 562,
+                "top": 568,
+                "right": 786,
+                "bottom": 618
+              },
+              "confidence": 0.7651367
+            },
+            {
+              "text": "11:45",
+              "boundingBox": {
+                "left": 854,
+                "top": 568,
+                "right": 988,
+                "bottom": 618
+              },
+              "confidence": 0.64140624
+            },
+            {
+              "text": "AM",
+              "boundingBox": {
+                "left": 1020,
+                "top": 568,
+                "right": 1076,
+                "bottom": 618
+              },
+              "confidence": 0.8359375
+            }
+          ]
         },
         {
           "text": "Cust 3 Server 156 JAMIE",
@@ -146,7 +374,59 @@
             "right": 1196,
             "bottom": 664
           },
-          "confidence": 0.8875411
+          "confidence": 0.8875411,
+          "elements": [
+            {
+              "text": "Cust",
+              "boundingBox": {
+                "left": 502,
+                "top": 618,
+                "right": 610,
+                "bottom": 664
+              },
+              "confidence": 0.89160156
+            },
+            {
+              "text": "3",
+              "boundingBox": {
+                "left": 646,
+                "top": 618,
+                "right": 670,
+                "bottom": 664
+              },
+              "confidence": 0.85546875
+            },
+            {
+              "text": "Server",
+              "boundingBox": {
+                "left": 732,
+                "top": 619,
+                "right": 898,
+                "bottom": 659
+              },
+              "confidence": 0.9029948
+            },
+            {
+              "text": "156",
+              "boundingBox": {
+                "left": 941,
+                "top": 617,
+                "right": 1016,
+                "bottom": 656
+              },
+              "confidence": 0.9010417
+            },
+            {
+              "text": "JAMIE",
+              "boundingBox": {
+                "left": 1051,
+                "top": 615,
+                "right": 1196,
+                "bottom": 654
+              },
+              "confidence": 0.8640625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -167,7 +447,39 @@
             "right": 749,
             "bottom": 873
           },
-          "confidence": 0.7734375
+          "confidence": 0.7734375,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 211,
+                "top": 823,
+                "right": 224,
+                "bottom": 868
+              },
+              "confidence": 0.4140625
+            },
+            {
+              "text": "P-VILLAGIO",
+              "boundingBox": {
+                "left": 237,
+                "top": 822,
+                "right": 541,
+                "bottom": 870
+              },
+              "confidence": 0.77421874
+            },
+            {
+              "text": "BREEZE",
+              "boundingBox": {
+                "left": 575,
+                "top": 826,
+                "right": 749,
+                "bottom": 873
+              },
+              "confidence": 0.83203125
+            }
+          ]
         },
         {
           "text": "1 ADD SALAD",
@@ -177,7 +489,39 @@
             "right": 505,
             "bottom": 929
           },
-          "confidence": 0.8177083
+          "confidence": 0.8177083,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 193,
+                "top": 878,
+                "right": 206,
+                "bottom": 924
+              },
+              "confidence": 0.4921875
+            },
+            {
+              "text": "ADD",
+              "boundingBox": {
+                "left": 248,
+                "top": 878,
+                "right": 342,
+                "bottom": 926
+              },
+              "confidence": 0.83463544
+            },
+            {
+              "text": "SALAD",
+              "boundingBox": {
+                "left": 355,
+                "top": 880,
+                "right": 505,
+                "bottom": 929
+              },
+              "confidence": 0.8726562
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -198,7 +542,49 @@
             "right": 810,
             "bottom": 988
           },
-          "confidence": 0.77473956
+          "confidence": 0.77473956,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 192,
+                "top": 934,
+                "right": 208,
+                "bottom": 988
+              },
+              "confidence": 0.390625
+            },
+            {
+              "text": "LUNCH",
+              "boundingBox": {
+                "left": 222,
+                "top": 934,
+                "right": 378,
+                "bottom": 988
+              },
+              "confidence": 0.7859375
+            },
+            {
+              "text": "SEAFOOD",
+              "boundingBox": {
+                "left": 410,
+                "top": 934,
+                "right": 626,
+                "bottom": 988
+              },
+              "confidence": 0.7566964
+            },
+            {
+              "text": "PASTA",
+              "boundingBox": {
+                "left": 658,
+                "top": 934,
+                "right": 810,
+                "bottom": 988
+              },
+              "confidence": 0.865625
+            }
+          ]
         },
         {
           "text": "1 KID PEPERONI PIZZA",
@@ -208,7 +594,49 @@
             "right": 776,
             "bottom": 1046
           },
-          "confidence": 0.81985295
+          "confidence": 0.81985295,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 178,
+                "top": 990,
+                "right": 194,
+                "bottom": 1046
+              },
+              "confidence": 0.25
+            },
+            {
+              "text": "KID",
+              "boundingBox": {
+                "left": 225,
+                "top": 990,
+                "right": 326,
+                "bottom": 1046
+              },
+              "confidence": 0.828125
+            },
+            {
+              "text": "PEPERONI",
+              "boundingBox": {
+                "left": 358,
+                "top": 990,
+                "right": 605,
+                "bottom": 1046
+              },
+              "confidence": 0.86328125
+            },
+            {
+              "text": "PIZZA",
+              "boundingBox": {
+                "left": 624,
+                "top": 990,
+                "right": 776,
+                "bottom": 1046
+              },
+              "confidence": 0.859375
+            }
+          ]
         },
         {
           "text": "1 KID ALFREDO",
@@ -218,7 +646,39 @@
             "right": 553,
             "bottom": 1108
           },
-          "confidence": 0.77059656
+          "confidence": 0.77059656,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 175,
+                "top": 1049,
+                "right": 191,
+                "bottom": 1100
+              },
+              "confidence": 0.16015625
+            },
+            {
+              "text": "KID",
+              "boundingBox": {
+                "left": 202,
+                "top": 1049,
+                "right": 300,
+                "bottom": 1102
+              },
+              "confidence": 0.83723956
+            },
+            {
+              "text": "ALFREDO",
+              "boundingBox": {
+                "left": 332,
+                "top": 1052,
+                "right": 553,
+                "bottom": 1107
+              },
+              "confidence": 0.8292411
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -239,7 +699,19 @@
             "right": 993,
             "bottom": 1295
           },
-          "confidence": 0.8269531
+          "confidence": 0.8269531,
+          "elements": [
+            {
+              "text": "Sub-total:",
+              "boundingBox": {
+                "left": 673,
+                "top": 1243,
+                "right": 993,
+                "bottom": 1295
+              },
+              "confidence": 0.8269531
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -260,7 +732,19 @@
             "right": 998,
             "bottom": 1360
           },
-          "confidence": 0.78222656
+          "confidence": 0.78222656,
+          "elements": [
+            {
+              "text": "Tax:",
+              "boundingBox": {
+                "left": 874,
+                "top": 1314,
+                "right": 998,
+                "bottom": 1360
+              },
+              "confidence": 0.78222656
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -281,7 +765,19 @@
             "right": 1330,
             "bottom": 870
           },
-          "confidence": 0.8027344
+          "confidence": 0.8027344,
+          "elements": [
+            {
+              "text": "0.01",
+              "boundingBox": {
+                "left": 1214,
+                "top": 832,
+                "right": 1330,
+                "bottom": 870
+              },
+              "confidence": 0.8027344
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -302,7 +798,19 @@
             "right": 1340,
             "bottom": 928
           },
-          "confidence": 0.9042969
+          "confidence": 0.9042969,
+          "elements": [
+            {
+              "text": "3.00",
+              "boundingBox": {
+                "left": 1218,
+                "top": 890,
+                "right": 1340,
+                "bottom": 928
+              },
+              "confidence": 0.9042969
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -323,7 +831,19 @@
             "right": 1346,
             "bottom": 989
           },
-          "confidence": 0.85078126
+          "confidence": 0.85078126,
+          "elements": [
+            {
+              "text": "14.00",
+              "boundingBox": {
+                "left": 1200,
+                "top": 943,
+                "right": 1346,
+                "bottom": 989
+              },
+              "confidence": 0.85078126
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -344,7 +864,19 @@
             "right": 1352,
             "bottom": 1046
           },
-          "confidence": 0.8652344
+          "confidence": 0.8652344,
+          "elements": [
+            {
+              "text": "7.00",
+              "boundingBox": {
+                "left": 1228,
+                "top": 1006,
+                "right": 1352,
+                "bottom": 1046
+              },
+              "confidence": 0.8652344
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -365,7 +897,19 @@
             "right": 1358,
             "bottom": 1106
           },
-          "confidence": 0.8613281
+          "confidence": 0.8613281,
+          "elements": [
+            {
+              "text": "7.00",
+              "boundingBox": {
+                "left": 1232,
+                "top": 1064,
+                "right": 1358,
+                "bottom": 1106
+              },
+              "confidence": 0.8613281
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -386,7 +930,19 @@
             "right": 1366,
             "bottom": 1297
           },
-          "confidence": 0.8382813
+          "confidence": 0.8382813,
+          "elements": [
+            {
+              "text": "31.01",
+              "boundingBox": {
+                "left": 1209,
+                "top": 1252,
+                "right": 1366,
+                "bottom": 1297
+              },
+              "confidence": 0.8382813
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -407,7 +963,19 @@
             "right": 1372,
             "bottom": 1364
           },
-          "confidence": 0.7861328
+          "confidence": 0.7861328,
+          "elements": [
+            {
+              "text": "3.11",
+              "boundingBox": {
+                "left": 1246,
+                "top": 1318,
+                "right": 1372,
+                "bottom": 1364
+              },
+              "confidence": 0.7861328
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -428,7 +996,69 @@
             "right": 1461,
             "bottom": 1520
           },
-          "confidence": 0.7015625
+          "confidence": 0.7015625,
+          "elements": [
+            {
+              "text": "Tota",
+              "boundingBox": {
+                "left": 377,
+                "top": 1427,
+                "right": 651,
+                "bottom": 1504
+              },
+              "confidence": 0.87109375
+            },
+            {
+              "text": "|",
+              "boundingBox": {
+                "left": 676,
+                "top": 1432,
+                "right": 698,
+                "bottom": 1504
+              },
+              "confidence": 0.2578125
+            },
+            {
+              "text": "Due:",
+              "boundingBox": {
+                "left": 768,
+                "top": 1434,
+                "right": 1017,
+                "bottom": 1510
+              },
+              "confidence": 0.7451172
+            },
+            {
+              "text": ":",
+              "boundingBox": {
+                "left": 1016,
+                "top": 1440,
+                "right": 1037,
+                "bottom": 1509
+              },
+              "confidence": 0.32421875
+            },
+            {
+              "text": "34-",
+              "boundingBox": {
+                "left": 1113,
+                "top": 1441,
+                "right": 1299,
+                "bottom": 1514
+              },
+              "confidence": 0.69661456
+            },
+            {
+              "text": "12",
+              "boundingBox": {
+                "left": 1341,
+                "top": 1447,
+                "right": 1461,
+                "bottom": 1518
+              },
+              "confidence": 0.6933594
+            }
+          ]
         }
       ],
       "boundingBox": {

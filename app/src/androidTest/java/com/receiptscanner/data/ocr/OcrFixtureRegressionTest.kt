@@ -86,10 +86,10 @@ class OcrFixtureRegressionTest {
 
         val dumpOcrResults = arguments.getString("ocrFixture.dumpOcrResults") == "true"
         if (dumpOcrResults) {
-            // Write to /sdcard/Download/ so files survive app uninstall (getExternalFilesDir
-            // is scoped and deleted on uninstall, which connectedAndroidTest triggers).
-            val dumpDir = File(android.os.Environment.getExternalStoragePublicDirectory(
-                android.os.Environment.DIRECTORY_DOWNLOADS), "ocr-cache").apply { mkdirs() }
+            // Write to app-specific external storage. Pull BEFORE Gradle uninstalls:
+            //   adb pull /sdcard/Android/data/com.receiptscanner/files/ocr-cache/
+            // Or run via `adb shell am instrument` instead of connectedAndroidTest to avoid uninstall.
+            val dumpDir = File(targetContext.getExternalFilesDir(null), "ocr-cache").apply { mkdirs() }
             runs.forEach { run ->
                 val json = OcrResultSerializer.toJson(run.trace.ocrResult)
                 File(dumpDir, "${run.fixture.imageName}.ocr.json").writeText(json)

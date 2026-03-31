@@ -57,7 +57,11 @@ class ReceiptParser @Inject constructor() {
     )
     private val phonePattern = Regex("""\b\d{3}[-.\s]?\d{3}[-.\s]?\d{4}\b""")
     private val storeHeaderNoisePattern = Regex(
-        """(?i)^(receipt|transaction|welcome|thank\s*you|thanks|store\s*#\d*|address|phone|tel\s*:|fax\s*:|www\.|http|printed\s+by|college\s+of|university\s+of|institute\s+of)"""
+        """(?i)^(receipt|received|transaction|welcome|thank\s*you|thanks|store\s*#?\s*\d+|address|phone|tel\s*:|fax\s*:|www\.|http|printed\s+by|college\s+of|university\s+of|institute\s+of|card\s+here|insert\s+card|swipe\s+card|united\s+states?|suggested\s+gratuity|gratuity)"""
+    )
+    // Exact-match column headers that appear in receipt item grids
+    private val columnHeaderPattern = Regex(
+        """(?i)^\s*(item|amount|description|quantity|price|cost|discount|oty|unit|taxable\s*:?)\s*$"""
     )
     private val storeStaffPattern = Regex(
         """(?i)(^server\b|^guest\s*:?\s*\d|^guests?\s*:?\s*\d|^guest\s+check\b|^table\b|^tab\s+le\b|^ticket\b|^order\s*:?\s*#?\d|^order\s*#\s*:|^customer\s+name\b|^host\b|^entered\s+by|^reprint|^paid\b|^check\s*#|^cashier\s*:|^mgr\s*:|^manager\b|^items?\s+sold|^see\s+back\s+of\s+receipt|^your\s+chance|^to\s+win\b|^ID\s*[\$#:]|^welcome\b|^join\s+us\b|^qty\b)"""
@@ -67,6 +71,18 @@ class ReceiptParser @Inject constructor() {
     )
     private val cityStateZipPattern = Regex(
         """(?i)\b[A-Z][A-Z\s.'-]*,\s*[A-Z]{2}\s+\d{5}(?:-\d{4})?\b"""
+    )
+    // Matches "City, ST" without zip (e.g. "Salt Lake City, UT", "Denver, CO")
+    private val cityStatePattern = Regex(
+        """(?i)^[A-Z][A-Za-z\s.'-]+,\s*[A-Z]{2}\s*$"""
+    )
+    // Common food/menu-item words that should never be a store name
+    private val menuItemPattern = Regex(
+        """(?i)\b(chicken|fish|steak|burger|sandwich|salad|soup|pasta|pizza|tacos?|nachos|wings?|ribs|shrimp|crab|fingers|strips|tenders|fries|naan|biryani|quesadilla|appetizer|entree|dessert|beverages?|latte|espresso|cappuccino|smoothie|bacardi|smirnoff|hennessy|margarita|mojito|martini|daiquiri|whiskey|vodka|tequila|cocktail)\b"""
+    )
+    // Service/layout descriptors that aren't store names
+    private val serviceDescriptorPattern = Regex(
+        """(?i)^(dine[\s_]*in|take[\s_]*out|drive[\s_]*thru|carry[\s_]*out|delivery|pick[\s_]*up|separate\s+checks?|split\s+checks?|bar\s+tab|to[\s_]*go|for[\s_]*here|eat[\s_]*in|curbside)\b"""
     )
     private val storeStopWords = setOf(
         "a", "an", "and", "back", "for", "of", "on", "or", "our", "please",
@@ -186,11 +202,20 @@ class ReceiptParser @Inject constructor() {
         if (text.all { it.isDigit() || it == '-' || it == '/' || it == ' ' }) return false
         if (streetAddressPattern.containsMatchIn(text)) return false
         if (cityStateZipPattern.containsMatchIn(text)) return false
+        // "City, ST" without zip (e.g. "Salt Lake City, UT")
+        if (cityStatePattern.containsMatchIn(text)) return false
         if (phonePattern.containsMatchIn(text)) return false
         if (storeHeaderNoisePattern.containsMatchIn(text)) return false
+        if (columnHeaderPattern.matches(text)) return false
         if (storeStaffPattern.containsMatchIn(text)) return false
         if (storeMetadataPattern.containsMatchIn(text)) return false
         if (storeBannerPattern.containsMatchIn(text)) return false
+        // Filter service/layout descriptors (e.g. "Dine In", "Separate Checks", "Drive Thru")
+        if (serviceDescriptorPattern.containsMatchIn(text)) return false
+        // Filter standalone city/locality names (e.g. "Salt Lake City", "Levittown", "Beverly Hills")
+        if (Regex("""(?i)(city|town|village|heights|hills|springs|county|township)\s*(?:i{1,3})?\s*$""").containsMatchIn(text)) return false
+        // Filter lines ending with a full US state name (e.g. "Sandy Springs Georgia")
+        if (Regex("""(?i)\b(alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new\s+hampshire|new\s+jersey|new\s+mexico|new\s+york|north\s+carolina|north\s+dakota|ohio|oklahoma|oregon|pennsylvania|rhode\s+island|south\s+carolina|south\s+dakota|tennessee|texas|utah|vermont|virginia|washington|west\s+virginia|wisconsin|wyoming)\s*$""").containsMatchIn(text)) return false
         // Filter lines that start with "email" or "e-mail" label (e.g. "email : bergspar@telkomsa.net")
         if (Regex("""(?i)^\s*e[- ]?mail\s*[:\s]""").containsMatchIn(text)) return false
         // Filter email addresses (handles cases even without a label prefix)
@@ -264,12 +289,17 @@ class ReceiptParser @Inject constructor() {
         if (candidate.confidence < 0.40f) score -= 20
         else if (candidate.confidence >= 0.75f) score += 5
 
-        // Penalize very short text (likely OCR fragments)
-        if (letters <= 3) score -= 15
+        // Penalize very short text (likely OCR fragments, but some real names like BOA, CVS, KFC)
+        if (letters <= 2) score -= 15
+        else if (letters == 3) score -= 5
 
         // Penalize lines that look like they contain a date/time
         if (Regex("""\d{1,2}[/\-.]\d{1,2}[/\-.]\d{2,4}""").containsMatchIn(candidate.text)) score -= 20
         if (Regex("""\d{1,2}:\d{2}""").containsMatchIn(candidate.text)) score -= 15
+
+        // Penalize lines containing food/drink menu item words (but not as hard filter
+        // because restaurant names like "Kobe Japanese Steak" contain food words)
+        if (menuItemPattern.containsMatchIn(candidate.text)) score -= 12
 
         return score
     }
@@ -287,6 +317,8 @@ class ReceiptParser @Inject constructor() {
             // Only strip "STORE" when it's followed by a number/hash (e.g., "STORE #123")
             .replace(Regex("\\bSTORE\\s*#?\\d+", RegexOption.IGNORE_CASE), "")
             .replace(Regex("\\bLOC(ATION)?\\s*#?\\d+", RegexOption.IGNORE_CASE), "")
+            // Strip trailing receipt metadata: "Check 822819", "Ticket #28B4", "Order 375"
+            .replace(Regex("\\b(?:check|ticket|order)\\s*#?\\s*[A-Z0-9]+\\s*$", RegexOption.IGNORE_CASE), "")
             .trim()
             .replace(Regex("\\s+"), " ")
         return cleaned.ifEmpty { raw.trim() }
@@ -325,21 +357,35 @@ class ReceiptParser @Inject constructor() {
                 confidence += 0.10f
             }
 
-            // OCR confidence bonus
-            if ((totalLine.confidence ?: 0f) >= 0.85f) {
+            // OCR confidence bonus — prefer word-level confidence on the label if available,
+            // falling back to line-level confidence.
+            val labelConfidence = totalLine.elements
+                .filter { totalKeyword.containsMatchIn(it.text) }
+                .mapNotNull { it.confidence }
+                .maxOrNull()
+                ?: totalLine.confidence
+                ?: 0f
+            if (labelConfidence >= 0.85f) {
                 confidence += 0.10f
             }
 
-            val sameLineMatch = amountPattern.find(totalLine.text)
+            val sameLineText = normalizeOcrAmountText(totalLine.text)
+            val sameLineMatch = amountPattern.find(sameLineText)
             if (sameLineMatch != null) {
                 // Only accept same-line amounts that appear AFTER the label keyword.
                 // If the amount precedes the keyword ("1.19 Total Due:"), fall through
                 // to the spatial search so we find the correct column value nearby.
-                val keywordStart = totalKeyword.find(totalLine.text)?.range?.first ?: 0
+                val keywordStart = totalKeyword.find(sameLineText)?.range?.first ?: 0
                 if (sameLineMatch.range.first >= keywordStart) {
                     val amount = parseMilliunits(sameLineMatch.groupValues[1]) ?: continue
                     if (amount == 0L) continue // $0.00 is a column header or change-due, not a total
-                    if (totalLine.text.contains("$")) confidence += 0.05f
+                    if (sameLineText.contains("$")) confidence += 0.05f
+                    // Word-level confidence penalty: if the amount element has low OCR confidence,
+                    // reduce the overall score to prefer other candidates.
+                    val amountElementConfidence = findAmountElementConfidence(totalLine, sameLineMatch.value)
+                    if (amountElementConfidence != null && amountElementConfidence < 0.5f) {
+                        confidence -= 0.10f
+                    }
                     return ScoredAmount(amount, confidence.coerceAtMost(1f))
                 }
             }
@@ -368,7 +414,7 @@ class ReceiptParser @Inject constructor() {
                     val isBelow = !isTenderLabel &&
                         box.top >= totalBox.bottom && box.top <= totalBox.bottom + lineHeight * 2
                     if (!(isRightOf || isBelow)) return@filter false
-                    if (!amountPattern.containsMatchIn(candidate.text)) return@filter false
+                    if (!amountPattern.containsMatchIn(normalizeOcrAmountText(candidate.text))) return@filter false
                     // Exclude amounts where a tender/payment label sits in the same row to the
                     // left of the amount (e.g. "CASH $40.00", "VISA TEND $12.68" rows).
                     // Uses bounding box vertical overlap (>50% of the smaller box) instead of
@@ -422,12 +468,17 @@ class ReceiptParser @Inject constructor() {
             }
 
             if (nearbyAmount != null) {
-                val match = amountPattern.find(nearbyAmount.text)
+                val normalizedText = normalizeOcrAmountText(nearbyAmount.text)
+                val match = amountPattern.find(normalizedText)
                 if (match != null) {
                     val amount = parseMilliunits(match.groupValues[1]) ?: continue
                     if (amount == 0L) continue // $0.00 is not a real total
                     confidence += 0.15f // spatial alignment bonus
-                    if (nearbyAmount.text.contains("$")) confidence += 0.05f
+                    if (normalizedText.contains("$")) confidence += 0.05f
+                    val amountElementConfidence = findAmountElementConfidence(nearbyAmount, match.value)
+                    if (amountElementConfidence != null && amountElementConfidence < 0.5f) {
+                        confidence -= 0.10f
+                    }
                     return ScoredAmount(amount, confidence.coerceAtMost(1f))
                 }
             }
@@ -442,6 +493,44 @@ class ReceiptParser @Inject constructor() {
         } catch (e: NumberFormatException) {
             null
         }
+    }
+
+    /**
+     * Finds the ML Kit element (word) whose text contains the matched amount string and
+     * returns its OCR confidence score. Returns null if no element-level data is available
+     * (e.g., cached OCR JSON from before element support was added).
+     */
+    private fun findAmountElementConfidence(line: TextLine, amountText: String): Float? {
+        if (line.elements.isEmpty()) return null
+        val normalizedAmount = amountText.replace(Regex("\\s+"), "")
+        return line.elements
+            .filter { element ->
+                val normalized = element.text.replace(Regex("\\s+"), "")
+                normalized.contains(normalizedAmount) || normalizedAmount.contains(normalized)
+            }
+            .mapNotNull { it.confidence }
+            .minOrNull()
+    }
+
+    /**
+     * Normalize common OCR character-substitution and spacing errors in text that should
+     * contain a dollar amount. Only used in spatial extraction where we already know a
+     * TOTAL label is nearby, so false-positive risk is low.
+     *
+     * Fixes: S→$ before digits, o/O→0 after digits, space-as-decimal ("439 86"→"439.86"),
+     * dash-as-decimal ("34- 12"→"34.12"), Ł→L in labels.
+     */
+    private fun normalizeOcrAmountText(text: String): String {
+        var result = text
+        // S/s immediately before a digit → $ (e.g. "S19.10" → "$19.10")
+        result = result.replace(Regex("""(?<![A-Za-z])[Ss](?=\d)"""), "\\$")
+        // o/O at end of digit sequence → 0 (e.g. "$19.1o" → "$19.10")
+        result = result.replace(Regex("""(?<=\d)[oO](?!\w)"""), "0")
+        // Space between digit groups resembling amount: "439 86" → "439.86"
+        result = result.replace(Regex("""(\d+)\s+(\d{2})(?!\d)"""), "$1.$2")
+        // Dash between digit groups: "34- 12" → "34.12"
+        result = result.replace(Regex("""(\d+)-\s*(\d{2})(?!\d)"""), "$1.$2")
+        return result
     }
 
     /** Converts an extracted amount string to a normalized decimal string.
@@ -592,6 +681,15 @@ class ReceiptParser @Inject constructor() {
      */
     private fun normalizeDateLine(line: String): String {
         return line
+            // Fix OCR month abbreviation errors before other normalizations
+            // "Dct" → "Oct" (common O→D confusion)
+            .replace(Regex("""(?i)\bDct(?=\d)"""), "Oct")
+            // "Seo" → "Sep" (common p→o confusion)
+            .replace(Regex("""(?i)\bSeo(?=\d)"""), "Sep")
+            // "Aor" → "Apr" (common p→o confusion)
+            .replace(Regex("""(?i)\bAor(?=\d)"""), "Apr")
+            // "Mav" → "May" (common y→v confusion)
+            .replace(Regex("""(?i)\bMav(?=\d)"""), "May")
             // 'O' after a 3-uppercase-letter month abbreviation before a digit (e.g. "APRO4" → "APR04")
             .replace(Regex("""(\b[A-Z]{3})O(?=\d)"""), "$10")
             // 'O' at a non-letter boundary before a digit (e.g. "O3" → "03")
@@ -756,12 +854,15 @@ class ReceiptParser @Inject constructor() {
         val prevLine = if (lineIndex > 0) lines[lineIndex - 1] else ""
         val nextLine = if (lineIndex < lines.size - 1) lines[lineIndex + 1] else ""
         if (dateLabelPattern.containsMatchIn(prevLine) || dateLabelPattern.containsMatchIn(nextLine)) score += 60
-        // Mild preference for dates near top of receipt (header) or bottom (footer)
+        // Prefer dates in the top half of the receipt. Footer dates are often system log
+        // timestamps or EFT transaction dates that differ from the purchase date.
         val totalLines = lines.size.coerceAtLeast(1)
         val lineFromBottom = totalLines - lineIndex
         score += when {
-            lineIndex < 5 || lineFromBottom <= 5 -> 15
-            lineIndex < 15 || lineFromBottom <= 15 -> 5
+            lineIndex < 5 -> 20
+            lineIndex < 15 -> 10
+            lineFromBottom <= 5 -> -5
+            lineFromBottom <= 15 -> 3
             else -> 3
         }
         return score

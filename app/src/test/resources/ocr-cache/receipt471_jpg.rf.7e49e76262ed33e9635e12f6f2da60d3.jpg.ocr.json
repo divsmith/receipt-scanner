@@ -12,7 +12,29 @@
             "right": 969,
             "bottom": 180
           },
-          "confidence": 0.6282169
+          "confidence": 0.6282169,
+          "elements": [
+            {
+              "text": "CHRISTS",
+              "boundingBox": {
+                "left": 408,
+                "top": 109,
+                "right": 621,
+                "bottom": 168
+              },
+              "confidence": 0.64341515
+            },
+            {
+              "text": "HAMDURGERS",
+              "boundingBox": {
+                "left": 680,
+                "top": 118,
+                "right": 969,
+                "bottom": 180
+              },
+              "confidence": 0.61757815
+            }
+          ]
         },
         {
           "text": "7701 ATLANTIC AVE.",
@@ -22,7 +44,39 @@
             "right": 935,
             "bottom": 233
           },
-          "confidence": 0.5473633
+          "confidence": 0.5473633,
+          "elements": [
+            {
+              "text": "7701",
+              "boundingBox": {
+                "left": 408,
+                "top": 163,
+                "right": 522,
+                "bottom": 219
+              },
+              "confidence": 0.70996094
+            },
+            {
+              "text": "ATLANTIC",
+              "boundingBox": {
+                "left": 586,
+                "top": 169,
+                "right": 810,
+                "bottom": 229
+              },
+              "confidence": 0.5073242
+            },
+            {
+              "text": "AVE.",
+              "boundingBox": {
+                "left": 828,
+                "top": 178,
+                "right": 935,
+                "bottom": 233
+              },
+              "confidence": 0.46484375
+            }
+          ]
         },
         {
           "text": "CUDAHY CA. 90201",
@@ -32,7 +86,39 @@
             "right": 943,
             "bottom": 287
           },
-          "confidence": 0.63699776
+          "confidence": 0.63699776,
+          "elements": [
+            {
+              "text": "CUDAHY",
+              "boundingBox": {
+                "left": 474,
+                "top": 217,
+                "right": 653,
+                "bottom": 280
+              },
+              "confidence": 0.59375
+            },
+            {
+              "text": "CA.",
+              "boundingBox": {
+                "left": 702,
+                "top": 223,
+                "right": 782,
+                "bottom": 283
+              },
+              "confidence": 0.484375
+            },
+            {
+              "text": "90201",
+              "boundingBox": {
+                "left": 802,
+                "top": 225,
+                "right": 943,
+                "bottom": 287
+              },
+              "confidence": 0.78046876
+            }
+          ]
         },
         {
           "text": "Ph3237562-4125",
@@ -42,7 +128,19 @@
             "right": 887,
             "bottom": 339
           },
-          "confidence": 0.6319755
+          "confidence": 0.6319755,
+          "elements": [
+            {
+              "text": "Ph3237562-4125",
+              "boundingBox": {
+                "left": 442,
+                "top": 269,
+                "right": 887,
+                "bottom": 339
+              },
+              "confidence": 0.6319755
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -63,7 +161,19 @@
             "right": 707,
             "bottom": 929
           },
-          "confidence": 0.39019096
+          "confidence": 0.39019096,
+          "elements": [
+            {
+              "text": "TAXARIETI",
+              "boundingBox": {
+                "left": 414,
+                "top": 880,
+                "right": 707,
+                "bottom": 929
+              },
+              "confidence": 0.39019096
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -84,7 +194,19 @@
             "right": 622,
             "bottom": 773
           },
-          "confidence": 0.43359375
+          "confidence": 0.43359375,
+          "elements": [
+            {
+              "text": "E",
+              "boundingBox": {
+                "left": 606,
+                "top": 718,
+                "right": 622,
+                "bottom": 773
+              },
+              "confidence": 0.43359375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -105,7 +227,29 @@
             "right": 719,
             "bottom": 1093
           },
-          "confidence": 0.32763672
+          "confidence": 0.32763672,
+          "elements": [
+            {
+              "text": "1AXRKE",
+              "boundingBox": {
+                "left": 435,
+                "top": 1044,
+                "right": 639,
+                "bottom": 1093
+              },
+              "confidence": 0.30989584
+            },
+            {
+              "text": "TL",
+              "boundingBox": {
+                "left": 664,
+                "top": 1044,
+                "right": 719,
+                "bottom": 1093
+              },
+              "confidence": 0.38085938
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -126,7 +270,29 @@
             "right": 717,
             "bottom": 1157
           },
-          "confidence": 0.45399305
+          "confidence": 0.45399305,
+          "elements": [
+            {
+              "text": "TAXADLE",
+              "boundingBox": {
+                "left": 433,
+                "top": 1099,
+                "right": 632,
+                "bottom": 1157
+              },
+              "confidence": 0.5
+            },
+            {
+              "text": "TI",
+              "boundingBox": {
+                "left": 667,
+                "top": 1098,
+                "right": 717,
+                "bottom": 1152
+              },
+              "confidence": 0.29296875
+            }
+          ]
         },
         {
           "text": "TaxABLE TL",
@@ -136,7 +302,29 @@
             "right": 718,
             "bottom": 1205
           },
-          "confidence": 0.51779515
+          "confidence": 0.51779515,
+          "elements": [
+            {
+              "text": "TaxABLE",
+              "boundingBox": {
+                "left": 433,
+                "top": 1152,
+                "right": 635,
+                "bottom": 1205
+              },
+              "confidence": 0.5385045
+            },
+            {
+              "text": "TL",
+              "boundingBox": {
+                "left": 670,
+                "top": 1152,
+                "right": 718,
+                "bottom": 1201
+              },
+              "confidence": 0.4453125
+            }
+          ]
         },
         {
           "text": "TAXABLE T1",
@@ -146,7 +334,29 @@
             "right": 734,
             "bottom": 1269
           },
-          "confidence": 0.48046875
+          "confidence": 0.48046875,
+          "elements": [
+            {
+              "text": "TAXABLE",
+              "boundingBox": {
+                "left": 438,
+                "top": 1205,
+                "right": 635,
+                "bottom": 1269
+              },
+              "confidence": 0.5145089
+            },
+            {
+              "text": "T1",
+              "boundingBox": {
+                "left": 683,
+                "top": 1202,
+                "right": 734,
+                "bottom": 1263
+              },
+              "confidence": 0.36132812
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -167,7 +377,19 @@
             "right": 549,
             "bottom": 1314
           },
-          "confidence": 0.4423828
+          "confidence": 0.4423828,
+          "elements": [
+            {
+              "text": "TAXI",
+              "boundingBox": {
+                "left": 431,
+                "top": 1264,
+                "right": 549,
+                "bottom": 1314
+              },
+              "confidence": 0.4423828
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -188,7 +410,19 @@
             "right": 579,
             "bottom": 1374
           },
-          "confidence": 0.56953126
+          "confidence": 0.56953126,
+          "elements": [
+            {
+              "text": "TOTAL",
+              "boundingBox": {
+                "left": 435,
+                "top": 1318,
+                "right": 579,
+                "bottom": 1374
+              },
+              "confidence": 0.56953126
+            }
+          ]
         },
         {
           "text": "CASH",
@@ -198,7 +432,19 @@
             "right": 558,
             "bottom": 1422
           },
-          "confidence": 0.7441406
+          "confidence": 0.7441406,
+          "elements": [
+            {
+              "text": "CASH",
+              "boundingBox": {
+                "left": 432,
+                "top": 1365,
+                "right": 558,
+                "bottom": 1422
+              },
+              "confidence": 0.7441406
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -219,7 +465,39 @@
             "right": 688,
             "bottom": 1485
           },
-          "confidence": 0.5239258
+          "confidence": 0.5239258,
+          "elements": [
+            {
+              "text": "CLERK",
+              "boundingBox": {
+                "left": 440,
+                "top": 1421,
+                "right": 582,
+                "bottom": 1485
+              },
+              "confidence": 0.6765625
+            },
+            {
+              "text": "O",
+              "boundingBox": {
+                "left": 634,
+                "top": 1420,
+                "right": 651,
+                "bottom": 1481
+              },
+              "confidence": 0.2890625
+            },
+            {
+              "text": "O1",
+              "boundingBox": {
+                "left": 638,
+                "top": 1420,
+                "right": 687,
+                "bottom": 1479
+              },
+              "confidence": 0.25976562
+            }
+          ]
         },
         {
           "text": "TIME 1924",
@@ -229,7 +507,29 @@
             "right": 739,
             "bottom": 1538
           },
-          "confidence": 0.56933594
+          "confidence": 0.56933594,
+          "elements": [
+            {
+              "text": "TIME",
+              "boundingBox": {
+                "left": 449,
+                "top": 1482,
+                "right": 561,
+                "bottom": 1538
+              },
+              "confidence": 0.43066406
+            },
+            {
+              "text": "1924",
+              "boundingBox": {
+                "left": 600,
+                "top": 1478,
+                "right": 739,
+                "bottom": 1534
+              },
+              "confidence": 0.7080078
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -250,7 +550,19 @@
             "right": 1050,
             "bottom": 1046
           },
-          "confidence": 0.45703125
+          "confidence": 0.45703125,
+          "elements": [
+            {
+              "text": "13.0",
+              "boundingBox": {
+                "left": 891,
+                "top": 992,
+                "right": 1044,
+                "bottom": 1046
+              },
+              "confidence": 0.45703125
+            }
+          ]
         },
         {
           "text": "0.49-",
@@ -260,7 +572,19 @@
             "right": 1060,
             "bottom": 1096
           },
-          "confidence": 0.41875
+          "confidence": 0.41875,
+          "elements": [
+            {
+              "text": "0.49",
+              "boundingBox": {
+                "left": 936,
+                "top": 1047,
+                "right": 1040,
+                "bottom": 1096
+              },
+              "confidence": 0.41875
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -281,7 +605,19 @@
             "right": 1034,
             "bottom": 1148
           },
-          "confidence": 0.3453125
+          "confidence": 0.3453125,
+          "elements": [
+            {
+              "text": "63.49",
+              "boundingBox": {
+                "left": 902,
+                "top": 1104,
+                "right": 1034,
+                "bottom": 1148
+              },
+              "confidence": 0.3453125
+            }
+          ]
         },
         {
           "text": "S0.99--",
@@ -291,7 +627,19 @@
             "right": 1096,
             "bottom": 1208
           },
-          "confidence": 0.4029018
+          "confidence": 0.4029018,
+          "elements": [
+            {
+              "text": "S0.99-",
+              "boundingBox": {
+                "left": 902,
+                "top": 1154,
+                "right": 1096,
+                "bottom": 1208
+              },
+              "confidence": 0.4029018
+            }
+          ]
         },
         {
           "text": "50.9Y-",
@@ -301,7 +649,19 @@
             "right": 1103,
             "bottom": 1278
           },
-          "confidence": 0.46679688
+          "confidence": 0.46679688,
+          "elements": [
+            {
+              "text": "50.9Y",
+              "boundingBox": {
+                "left": 911,
+                "top": 1198,
+                "right": 1052,
+                "bottom": 1272
+              },
+              "confidence": 0.46679688
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -322,7 +682,19 @@
             "right": 1072,
             "bottom": 1310
           },
-          "confidence": 0.43359375
+          "confidence": 0.43359375,
+          "elements": [
+            {
+              "text": "$4.39",
+              "boundingBox": {
+                "left": 904,
+                "top": 1258,
+                "right": 1047,
+                "bottom": 1310
+              },
+              "confidence": 0.43359375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -343,7 +715,19 @@
             "right": 1049,
             "bottom": 1363
           },
-          "confidence": 0.67838544
+          "confidence": 0.67838544,
+          "elements": [
+            {
+              "text": "S51.82",
+              "boundingBox": {
+                "left": 875,
+                "top": 1311,
+                "right": 1049,
+                "bottom": 1363
+              },
+              "confidence": 0.67838544
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -364,7 +748,19 @@
             "right": 1052,
             "bottom": 1416
           },
-          "confidence": 0.44726562
+          "confidence": 0.44726562,
+          "elements": [
+            {
+              "text": "S52.82",
+              "boundingBox": {
+                "left": 879,
+                "top": 1367,
+                "right": 1052,
+                "bottom": 1416
+              },
+              "confidence": 0.44726562
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -385,7 +781,19 @@
             "right": 1050,
             "bottom": 1479
           },
-          "confidence": 0.62053573
+          "confidence": 0.62053573,
+          "elements": [
+            {
+              "text": "Ho00154",
+              "boundingBox": {
+                "left": 821,
+                "top": 1414,
+                "right": 1050,
+                "bottom": 1479
+              },
+              "confidence": 0.62053573
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -406,7 +814,19 @@
             "right": 1058,
             "bottom": 1524
           },
-          "confidence": 0.5996094
+          "confidence": 0.5996094,
+          "elements": [
+            {
+              "text": "00",
+              "boundingBox": {
+                "left": 1002,
+                "top": 1477,
+                "right": 1058,
+                "bottom": 1524
+              },
+              "confidence": 0.5996094
+            }
+          ]
         }
       ],
       "boundingBox": {

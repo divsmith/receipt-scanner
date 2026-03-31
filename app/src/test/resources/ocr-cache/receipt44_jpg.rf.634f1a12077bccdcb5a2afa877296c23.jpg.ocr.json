@@ -12,7 +12,39 @@
             "right": 917,
             "bottom": 222
           },
-          "confidence": 0.76904297
+          "confidence": 0.76904297,
+          "elements": [
+            {
+              "text": "FAIRVIEW,",
+              "boundingBox": {
+                "left": 521,
+                "top": 175,
+                "right": 709,
+                "bottom": 222
+              },
+              "confidence": 0.7803819
+            },
+            {
+              "text": "NJ",
+              "boundingBox": {
+                "left": 741,
+                "top": 170,
+                "right": 781,
+                "bottom": 205
+              },
+              "confidence": 0.6738281
+            },
+            {
+              "text": "07022",
+              "boundingBox": {
+                "left": 805,
+                "top": 159,
+                "right": 917,
+                "bottom": 201
+              },
+              "confidence": 0.7867187
+            }
+          ]
         },
         {
           "text": "Phone: (201) 840-8428",
@@ -22,7 +54,39 @@
             "right": 968,
             "bottom": 254
           },
-          "confidence": 0.8622533
+          "confidence": 0.8622533,
+          "elements": [
+            {
+              "text": "Phone:",
+              "boundingBox": {
+                "left": 491,
+                "top": 210,
+                "right": 640,
+                "bottom": 254
+              },
+              "confidence": 0.8027344
+            },
+            {
+              "text": "(201)",
+              "boundingBox": {
+                "left": 669,
+                "top": 205,
+                "right": 766,
+                "bottom": 245
+              },
+              "confidence": 0.87421876
+            },
+            {
+              "text": "840-8428",
+              "boundingBox": {
+                "left": 803,
+                "top": 195,
+                "right": 968,
+                "bottom": 239
+              },
+              "confidence": 0.89941406
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -43,7 +107,29 @@
             "right": 511,
             "bottom": 335
           },
-          "confidence": 0.8925781
+          "confidence": 0.8925781,
+          "elements": [
+            {
+              "text": "Check",
+              "boundingBox": {
+                "left": 246,
+                "top": 298,
+                "right": 351,
+                "bottom": 335
+              },
+              "confidence": 0.92109376
+            },
+            {
+              "text": ":832869",
+              "boundingBox": {
+                "left": 362,
+                "top": 289,
+                "right": 511,
+                "bottom": 328
+              },
+              "confidence": 0.87220985
+            }
+          ]
         },
         {
           "text": "Date:02/11/19",
@@ -53,7 +139,19 @@
             "right": 534,
             "bottom": 371
           },
-          "confidence": 0.85246396
+          "confidence": 0.85246396,
+          "elements": [
+            {
+              "text": "Date:02/11/19",
+              "boundingBox": {
+                "left": 240,
+                "top": 323,
+                "right": 534,
+                "bottom": 371
+              },
+              "confidence": 0.85246396
+            }
+          ]
         },
         {
           "text": "Table:23",
@@ -63,7 +161,19 @@
             "right": 418,
             "bottom": 403
           },
-          "confidence": 0.86279297
+          "confidence": 0.86279297,
+          "elements": [
+            {
+              "text": "Table:23",
+              "boundingBox": {
+                "left": 243,
+                "top": 370,
+                "right": 418,
+                "bottom": 403
+              },
+              "confidence": 0.86279297
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -84,7 +194,19 @@
             "right": 299,
             "bottom": 527
           },
-          "confidence": 0.828125
+          "confidence": 0.828125,
+          "elements": [
+            {
+              "text": "2",
+              "boundingBox": {
+                "left": 282,
+                "top": 494,
+                "right": 299,
+                "bottom": 527
+              },
+              "confidence": 0.828125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -105,7 +227,39 @@
             "right": 696,
             "bottom": 487
           },
-          "confidence": 0.88134766
+          "confidence": 0.88134766,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 298,
+                "top": 450,
+                "right": 307,
+                "bottom": 487
+              },
+              "confidence": 0.75
+            },
+            {
+              "text": "Guaca",
+              "boundingBox": {
+                "left": 327,
+                "top": 448,
+                "right": 440,
+                "bottom": 486
+              },
+              "confidence": 0.8773438
+            },
+            {
+              "text": "Chicharron",
+              "boundingBox": {
+                "left": 469,
+                "top": 444,
+                "right": 696,
+                "bottom": 484
+              },
+              "confidence": 0.8964844
+            }
+          ]
         },
         {
           "text": "EMPANADA",
@@ -115,7 +269,19 @@
             "right": 512,
             "bottom": 526
           },
-          "confidence": 0.86376953
+          "confidence": 0.86376953,
+          "elements": [
+            {
+              "text": "EMPANADA",
+              "boundingBox": {
+                "left": 329,
+                "top": 489,
+                "right": 512,
+                "bottom": 526
+              },
+              "confidence": 0.86376953
+            }
+          ]
         },
         {
           "text": "1 PARGO FRITO",
@@ -125,7 +291,39 @@
             "right": 586,
             "bottom": 570
           },
-          "confidence": 0.8504972
+          "confidence": 0.8504972,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 300,
+                "top": 528,
+                "right": 312,
+                "bottom": 570
+              },
+              "confidence": 0.8359375
+            },
+            {
+              "text": "PARGO",
+              "boundingBox": {
+                "left": 328,
+                "top": 528,
+                "right": 446,
+                "bottom": 570
+              },
+              "confidence": 0.8703125
+            },
+            {
+              "text": "FRITO",
+              "boundingBox": {
+                "left": 472,
+                "top": 528,
+                "right": 586,
+                "bottom": 570
+              },
+              "confidence": 0.8335937
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -146,7 +344,19 @@
             "right": 540,
             "bottom": 610
           },
-          "confidence": 0.86328125
+          "confidence": 0.86328125,
+          "elements": [
+            {
+              "text": "Ensalada",
+              "boundingBox": {
+                "left": 356,
+                "top": 576,
+                "right": 540,
+                "bottom": 610
+              },
+              "confidence": 0.86328125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -167,7 +377,19 @@
             "right": 542,
             "bottom": 656
           },
-          "confidence": 0.9111328
+          "confidence": 0.9111328,
+          "elements": [
+            {
+              "text": "Aguacate",
+              "boundingBox": {
+                "left": 354,
+                "top": 620,
+                "right": 542,
+                "bottom": 656
+              },
+              "confidence": 0.9111328
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -188,7 +410,29 @@
             "right": 590,
             "bottom": 694
           },
-          "confidence": 0.8116319
+          "confidence": 0.8116319,
+          "elements": [
+            {
+              "text": "No",
+              "boundingBox": {
+                "left": 356,
+                "top": 660,
+                "right": 402,
+                "bottom": 694
+              },
+              "confidence": 0.78515625
+            },
+            {
+              "text": "Cebolla",
+              "boundingBox": {
+                "left": 426,
+                "top": 660,
+                "right": 590,
+                "bottom": 694
+              },
+              "confidence": 0.8191964
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -209,7 +453,39 @@
             "right": 708,
             "bottom": 738
           },
-          "confidence": 0.79507214
+          "confidence": 0.79507214,
+          "elements": [
+            {
+              "text": "No",
+              "boundingBox": {
+                "left": 356,
+                "top": 702,
+                "right": 402,
+                "bottom": 738
+              },
+              "confidence": 0.81640625
+            },
+            {
+              "text": "Cebolla",
+              "boundingBox": {
+                "left": 428,
+                "top": 702,
+                "right": 592,
+                "bottom": 738
+              },
+              "confidence": 0.8058036
+            },
+            {
+              "text": "Roja",
+              "boundingBox": {
+                "left": 616,
+                "top": 702,
+                "right": 708,
+                "bottom": 738
+              },
+              "confidence": 0.765625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -230,7 +506,29 @@
             "right": 862,
             "bottom": 320
           },
-          "confidence": 0.8310547
+          "confidence": 0.8310547,
+          "elements": [
+            {
+              "text": "Guests:",
+              "boundingBox": {
+                "left": 628,
+                "top": 284,
+                "right": 782,
+                "bottom": 320
+              },
+              "confidence": 0.84877235
+            },
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 852,
+                "top": 284,
+                "right": 862,
+                "bottom": 320
+              },
+              "confidence": 0.70703125
+            }
+          ]
         },
         {
           "text": "Time:07:46pm",
@@ -240,7 +538,19 @@
             "right": 880,
             "bottom": 356
           },
-          "confidence": 0.7679036
+          "confidence": 0.7679036,
+          "elements": [
+            {
+              "text": "Time:07:46pm",
+              "boundingBox": {
+                "left": 607,
+                "top": 324,
+                "right": 880,
+                "bottom": 356
+              },
+              "confidence": 0.7679036
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -261,7 +571,49 @@
             "right": 636,
             "bottom": 785
           },
-          "confidence": 0.8375651
+          "confidence": 0.8375651,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 302,
+                "top": 745,
+                "right": 313,
+                "bottom": 785
+              },
+              "confidence": 0.765625
+            },
+            {
+              "text": "MAR",
+              "boundingBox": {
+                "left": 329,
+                "top": 744,
+                "right": 398,
+                "bottom": 784
+              },
+              "confidence": 0.8567708
+            },
+            {
+              "text": "Y",
+              "boundingBox": {
+                "left": 427,
+                "top": 743,
+                "right": 445,
+                "bottom": 783
+              },
+              "confidence": 0.6171875
+            },
+            {
+              "text": "CHICKEN",
+              "boundingBox": {
+                "left": 474,
+                "top": 741,
+                "right": 636,
+                "bottom": 783
+              },
+              "confidence": 0.87109375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -282,7 +634,19 @@
             "right": 546,
             "bottom": 824
           },
-          "confidence": 0.83740234
+          "confidence": 0.83740234,
+          "elements": [
+            {
+              "text": "Tostones",
+              "boundingBox": {
+                "left": 356,
+                "top": 792,
+                "right": 546,
+                "bottom": 824
+              },
+              "confidence": 0.83740234
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -303,7 +667,19 @@
             "right": 544,
             "bottom": 866
           },
-          "confidence": 0.87890625
+          "confidence": 0.87890625,
+          "elements": [
+            {
+              "text": "Tostones",
+              "boundingBox": {
+                "left": 356,
+                "top": 836,
+                "right": 544,
+                "bottom": 866
+              },
+              "confidence": 0.87890625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -324,7 +700,19 @@
             "right": 546,
             "bottom": 999
           },
-          "confidence": 0.8745117
+          "confidence": 0.8745117,
+          "elements": [
+            {
+              "text": "Ensalada",
+              "boundingBox": {
+                "left": 358,
+                "top": 959,
+                "right": 546,
+                "bottom": 999
+              },
+              "confidence": 0.8745117
+            }
+          ]
         },
         {
           "text": "Ensalada",
@@ -334,7 +722,19 @@
             "right": 547,
             "bottom": 1043
           },
-          "confidence": 0.8959961
+          "confidence": 0.8959961,
+          "elements": [
+            {
+              "text": "Ensalada",
+              "boundingBox": {
+                "left": 358,
+                "top": 1004,
+                "right": 547,
+                "bottom": 1043
+              },
+              "confidence": 0.8959961
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -355,7 +755,59 @@
             "right": 780,
             "bottom": 958
           },
-          "confidence": 0.83547795
+          "confidence": 0.83547795,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 302,
+                "top": 920,
+                "right": 312,
+                "bottom": 958
+              },
+              "confidence": 0.92578125
+            },
+            {
+              "text": "SALMON",
+              "boundingBox": {
+                "left": 331,
+                "top": 916,
+                "right": 474,
+                "bottom": 957
+              },
+              "confidence": 0.83658856
+            },
+            {
+              "text": "A",
+              "boundingBox": {
+                "left": 499,
+                "top": 915,
+                "right": 520,
+                "bottom": 953
+              },
+              "confidence": 0.703125
+            },
+            {
+              "text": "LA",
+              "boundingBox": {
+                "left": 549,
+                "top": 913,
+                "right": 592,
+                "bottom": 952
+              },
+              "confidence": 0.7558594
+            },
+            {
+              "text": "PLANCHA",
+              "boundingBox": {
+                "left": 619,
+                "top": 909,
+                "right": 780,
+                "bottom": 951
+              },
+              "confidence": 0.86328125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -376,7 +828,19 @@
             "right": 1042,
             "bottom": 395
           },
-          "confidence": 0.8264509
+          "confidence": 0.8264509,
+          "elements": [
+            {
+              "text": "Server:DANIELA",
+              "boundingBox": {
+                "left": 722,
+                "top": 355,
+                "right": 1042,
+                "bottom": 395
+              },
+              "confidence": 0.8264509
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -397,7 +861,19 @@
             "right": 683,
             "bottom": 1129
           },
-          "confidence": 0.8784722
+          "confidence": 0.8784722,
+          "elements": [
+            {
+              "text": "Subtotal:",
+              "boundingBox": {
+                "left": 478,
+                "top": 1091,
+                "right": 683,
+                "bottom": 1129
+              },
+              "confidence": 0.8784722
+            }
+          ]
         },
         {
           "text": "Void:",
@@ -407,7 +883,19 @@
             "right": 672,
             "bottom": 1175
           },
-          "confidence": 0.6296875
+          "confidence": 0.6296875,
+          "elements": [
+            {
+              "text": "Void:",
+              "boundingBox": {
+                "left": 456,
+                "top": 1137,
+                "right": 672,
+                "bottom": 1175
+              },
+              "confidence": 0.6296875
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -428,7 +916,49 @@
             "right": 1241,
             "bottom": 913
           },
-          "confidence": 0.37444195
+          "confidence": 0.37444195,
+          "elements": [
+            {
+              "text": "««",
+              "boundingBox": {
+                "left": 236,
+                "top": 880,
+                "right": 277,
+                "bottom": 913
+              },
+              "confidence": 0.3359375
+            },
+            {
+              "text": "ToGo",
+              "boundingBox": {
+                "left": 307,
+                "top": 878,
+                "right": 401,
+                "bottom": 911
+              },
+              "confidence": 0.69921875
+            },
+            {
+              "text": "2",
+              "boundingBox": {
+                "left": 428,
+                "top": 877,
+                "right": 450,
+                "bottom": 909
+              },
+              "confidence": 0.7109375
+            },
+            {
+              "text": "»»»»»»»»»»»»»»»»»»»»»»»»»»»»",
+              "boundingBox": {
+                "left": 479,
+                "top": 861,
+                "right": 1241,
+                "bottom": 908
+              },
+              "confidence": 0.3187779
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -449,7 +979,19 @@
             "right": 686,
             "bottom": 1219
           },
-          "confidence": 0.72578126
+          "confidence": 0.72578126,
+          "elements": [
+            {
+              "text": "Tax::",
+              "boundingBox": {
+                "left": 573,
+                "top": 1184,
+                "right": 686,
+                "bottom": 1219
+              },
+              "confidence": 0.72578126
+            }
+          ]
         },
         {
           "text": "Sbtl w/Tax:",
@@ -459,7 +1001,29 @@
             "right": 686,
             "bottom": 1270
           },
-          "confidence": 0.7878906
+          "confidence": 0.7878906,
+          "elements": [
+            {
+              "text": "Sbtl",
+              "boundingBox": {
+                "left": 447,
+                "top": 1230,
+                "right": 538,
+                "bottom": 1270
+              },
+              "confidence": 0.7451172
+            },
+            {
+              "text": "w/Tax:",
+              "boundingBox": {
+                "left": 552,
+                "top": 1230,
+                "right": 686,
+                "bottom": 1270
+              },
+              "confidence": 0.81640625
+            }
+          ]
         },
         {
           "text": "Amt Due:",
@@ -469,7 +1033,29 @@
             "right": 688,
             "bottom": 1312
           },
-          "confidence": 0.81808037
+          "confidence": 0.81808037,
+          "elements": [
+            {
+              "text": "Amt",
+              "boundingBox": {
+                "left": 504,
+                "top": 1278,
+                "right": 570,
+                "bottom": 1312
+              },
+              "confidence": 0.8802083
+            },
+            {
+              "text": "Due:",
+              "boundingBox": {
+                "left": 600,
+                "top": 1278,
+                "right": 688,
+                "bottom": 1312
+              },
+              "confidence": 0.7714844
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -490,7 +1076,19 @@
             "right": 1213,
             "bottom": 469
           },
-          "confidence": 0.9264323
+          "confidence": 0.9264323,
+          "elements": [
+            {
+              "text": "$13.95",
+              "boundingBox": {
+                "left": 1072,
+                "top": 426,
+                "right": 1213,
+                "bottom": 469
+              },
+              "confidence": 0.9264323
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -511,7 +1109,19 @@
             "right": 1218,
             "bottom": 517
           },
-          "confidence": 0.85234374
+          "confidence": 0.85234374,
+          "elements": [
+            {
+              "text": "$3.00",
+              "boundingBox": {
+                "left": 1096,
+                "top": 460,
+                "right": 1218,
+                "bottom": 517
+              },
+              "confidence": 0.85234374
+            }
+          ]
         },
         {
           "text": "$19.95",
@@ -521,7 +1131,19 @@
             "right": 1220,
             "bottom": 559
           },
-          "confidence": 0.92317706
+          "confidence": 0.92317706,
+          "elements": [
+            {
+              "text": "$19.95",
+              "boundingBox": {
+                "left": 1076,
+                "top": 505,
+                "right": 1220,
+                "bottom": 559
+              },
+              "confidence": 0.92317706
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -542,7 +1164,19 @@
             "right": 1232,
             "bottom": 765
           },
-          "confidence": 0.87109375
+          "confidence": 0.87109375,
+          "elements": [
+            {
+              "text": "$17.00",
+              "boundingBox": {
+                "left": 1086,
+                "top": 726,
+                "right": 1232,
+                "bottom": 765
+              },
+              "confidence": 0.87109375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -563,7 +1197,19 @@
             "right": 1243,
             "bottom": 941
           },
-          "confidence": 0.89192706
+          "confidence": 0.89192706,
+          "elements": [
+            {
+              "text": "$16.00",
+              "boundingBox": {
+                "left": 1096,
+                "top": 901,
+                "right": 1243,
+                "bottom": 941
+              },
+              "confidence": 0.89192706
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -584,7 +1230,19 @@
             "right": 1241,
             "bottom": 1127
           },
-          "confidence": 0.8802083
+          "confidence": 0.8802083,
+          "elements": [
+            {
+              "text": "$69.90",
+              "boundingBox": {
+                "left": 1097,
+                "top": 1082,
+                "right": 1241,
+                "bottom": 1127
+              },
+              "confidence": 0.8802083
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -605,7 +1263,19 @@
             "right": 1228,
             "bottom": 1172
           },
-          "confidence": 0.5876116
+          "confidence": 0.5876116,
+          "elements": [
+            {
+              "text": "-$17.95",
+              "boundingBox": {
+                "left": 892,
+                "top": 1134,
+                "right": 1228,
+                "bottom": 1172
+              },
+              "confidence": 0.5876116
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -626,7 +1296,19 @@
             "right": 1235,
             "bottom": 1217
           },
-          "confidence": 0.89921874
+          "confidence": 0.89921874,
+          "elements": [
+            {
+              "text": "$3.44",
+              "boundingBox": {
+                "left": 1112,
+                "top": 1177,
+                "right": 1235,
+                "bottom": 1217
+              },
+              "confidence": 0.89921874
+            }
+          ]
         },
         {
           "text": "$73.34",
@@ -636,7 +1318,19 @@
             "right": 1237,
             "bottom": 1265
           },
-          "confidence": 0.8932292
+          "confidence": 0.8932292,
+          "elements": [
+            {
+              "text": "$73.34",
+              "boundingBox": {
+                "left": 1090,
+                "top": 1223,
+                "right": 1237,
+                "bottom": 1265
+              },
+              "confidence": 0.8932292
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -657,7 +1351,19 @@
             "right": 1236,
             "bottom": 1313
           },
-          "confidence": 0.71223956
+          "confidence": 0.71223956,
+          "elements": [
+            {
+              "text": "$55.39",
+              "boundingBox": {
+                "left": 942,
+                "top": 1272,
+                "right": 1236,
+                "bottom": 1313
+              },
+              "confidence": 0.71223956
+            }
+          ]
         }
       ],
       "boundingBox": {

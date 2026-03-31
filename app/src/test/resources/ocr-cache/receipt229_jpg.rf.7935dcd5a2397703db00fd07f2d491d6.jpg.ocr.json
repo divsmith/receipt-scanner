@@ -12,7 +12,29 @@
             "right": 1503,
             "bottom": 426
           },
-          "confidence": 0.4041193
+          "confidence": 0.4041193,
+          "elements": [
+            {
+              "text": "GRAND",
+              "boundingBox": {
+                "left": 462,
+                "top": 12,
+                "right": 897,
+                "bottom": 216
+              },
+              "confidence": 0.59296876
+            },
+            {
+              "text": "LLKCFE",
+              "boundingBox": {
+                "left": 919,
+                "top": 170,
+                "right": 1503,
+                "bottom": 425
+              },
+              "confidence": 0.2467448
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -33,7 +55,59 @@
             "right": 1157,
             "bottom": 442
           },
-          "confidence": 0.54123265
+          "confidence": 0.54123265,
+          "elements": [
+            {
+              "text": "04BO",
+              "boundingBox": {
+                "left": 381,
+                "top": 156,
+                "right": 582,
+                "bottom": 258
+              },
+              "confidence": 0.39453125
+            },
+            {
+              "text": "tABLE",
+              "boundingBox": {
+                "left": 612,
+                "top": 230,
+                "right": 757,
+                "bottom": 314
+              },
+              "confidence": 0.43828124
+            },
+            {
+              "text": "101",
+              "boundingBox": {
+                "left": 776,
+                "top": 283,
+                "right": 863,
+                "bottom": 348
+              },
+              "confidence": 0.63932294
+            },
+            {
+              "text": "Party",
+              "boundingBox": {
+                "left": 905,
+                "top": 324,
+                "right": 1078,
+                "bottom": 417
+              },
+              "confidence": 0.7734375
+            },
+            {
+              "text": "3",
+              "boundingBox": {
+                "left": 1090,
+                "top": 383,
+                "right": 1157,
+                "bottom": 442
+              },
+              "confidence": 0.1875
+            }
+          ]
         },
         {
           "text": "SvrCkt 4 16:43 04/25/15",
@@ -43,7 +117,49 @@
             "right": 1308,
             "bottom": 530
           },
-          "confidence": 0.5767578
+          "confidence": 0.5767578,
+          "elements": [
+            {
+              "text": "SvrCkt",
+              "boundingBox": {
+                "left": 654,
+                "top": 288,
+                "right": 822,
+                "bottom": 378
+              },
+              "confidence": 0.51953125
+            },
+            {
+              "text": "4",
+              "boundingBox": {
+                "left": 867,
+                "top": 355,
+                "right": 910,
+                "bottom": 405
+              },
+              "confidence": 0.64453125
+            },
+            {
+              "text": "16:43",
+              "boundingBox": {
+                "left": 925,
+                "top": 373,
+                "right": 1068,
+                "bottom": 455
+              },
+              "confidence": 0.6234375
+            },
+            {
+              "text": "04/25/15",
+              "boundingBox": {
+                "left": 1077,
+                "top": 421,
+                "right": 1308,
+                "bottom": 530
+              },
+              "confidence": 0.58203125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -64,7 +180,29 @@
             "right": 588,
             "bottom": 304
           },
-          "confidence": 0.69921875
+          "confidence": 0.69921875,
+          "elements": [
+            {
+              "text": "STEPHEN",
+              "boundingBox": {
+                "left": 333,
+                "top": 187,
+                "right": 536,
+                "bottom": 288
+              },
+              "confidence": 0.7042411
+            },
+            {
+              "text": "R",
+              "boundingBox": {
+                "left": 544,
+                "top": 254,
+                "right": 588,
+                "bottom": 304
+              },
+              "confidence": 0.6640625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -85,7 +223,19 @@
             "right": 486,
             "bottom": 364
           },
-          "confidence": 0.6614583
+          "confidence": 0.6614583,
+          "elements": [
+            {
+              "text": "Coffee",
+              "boundingBox": {
+                "left": 318,
+                "top": 279,
+                "right": 486,
+                "bottom": 364
+              },
+              "confidence": 0.6614583
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -106,7 +256,29 @@
             "right": 742,
             "bottom": 491
           },
-          "confidence": 0.5773926
+          "confidence": 0.5773926,
+          "elements": [
+            {
+              "text": "Chickers",
+              "boundingBox": {
+                "left": 307,
+                "top": 320,
+                "right": 510,
+                "bottom": 417
+              },
+              "confidence": 0.47998047
+            },
+            {
+              "text": "Parsesan",
+              "boundingBox": {
+                "left": 517,
+                "top": 388,
+                "right": 742,
+                "bottom": 491
+              },
+              "confidence": 0.6748047
+            }
+          ]
         },
         {
           "text": "Prine Top Sirlein",
@@ -116,7 +288,39 @@
             "right": 759,
             "bottom": 541
           },
-          "confidence": 0.5841146
+          "confidence": 0.5841146,
+          "elements": [
+            {
+              "text": "Prine",
+              "boundingBox": {
+                "left": 299,
+                "top": 359,
+                "right": 444,
+                "bottom": 439
+              },
+              "confidence": 0.5734375
+            },
+            {
+              "text": "Top",
+              "boundingBox": {
+                "left": 459,
+                "top": 411,
+                "right": 550,
+                "bottom": 474
+              },
+              "confidence": 0.70703125
+            },
+            {
+              "text": "Sirlein",
+              "boundingBox": {
+                "left": 561,
+                "top": 444,
+                "right": 759,
+                "bottom": 541
+              },
+              "confidence": 0.5390625
+            }
+          ]
         },
         {
           "text": "The Bacon-Cheese Burger",
@@ -126,7 +330,39 @@
             "right": 895,
             "bottom": 625
           },
-          "confidence": 0.5396205
+          "confidence": 0.5396205,
+          "elements": [
+            {
+              "text": "The",
+              "boundingBox": {
+                "left": 294,
+                "top": 405,
+                "right": 383,
+                "bottom": 468
+              },
+              "confidence": 0.6822917
+            },
+            {
+              "text": "Bacon-Cheese",
+              "boundingBox": {
+                "left": 395,
+                "top": 436,
+                "right": 719,
+                "bottom": 571
+              },
+              "confidence": 0.5335286
+            },
+            {
+              "text": "Burger",
+              "boundingBox": {
+                "left": 732,
+                "top": 540,
+                "right": 896,
+                "bottom": 625
+              },
+              "confidence": 0.48046875
+            }
+          ]
         },
         {
           "text": "Coffee",
@@ -136,7 +372,19 @@
             "right": 451,
             "bottom": 530
           },
-          "confidence": 0.6126302
+          "confidence": 0.6126302,
+          "elements": [
+            {
+              "text": "Coffee",
+              "boundingBox": {
+                "left": 286,
+                "top": 445,
+                "right": 451,
+                "bottom": 530
+              },
+              "confidence": 0.6126302
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -157,7 +405,39 @@
             "right": 1104,
             "bottom": 382
           },
-          "confidence": 0.40904018
+          "confidence": 0.40904018,
+          "elements": [
+            {
+              "text": "RoosevelL",
+              "boundingBox": {
+                "left": 681,
+                "top": 208,
+                "right": 944,
+                "bottom": 331
+              },
+              "confidence": 0.4470486
+            },
+            {
+              "text": "F1e",
+              "boundingBox": {
+                "left": 956,
+                "top": 297,
+                "right": 1048,
+                "bottom": 364
+              },
+              "confidence": 0.40885416
+            },
+            {
+              "text": "ld",
+              "boundingBox": {
+                "left": 1041,
+                "top": 324,
+                "right": 1104,
+                "bottom": 382
+              },
+              "confidence": 0.23828125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -178,7 +458,39 @@
             "right": 851,
             "bottom": 841
           },
-          "confidence": 0.53333336
+          "confidence": 0.53333336,
+          "elements": [
+            {
+              "text": "04/25",
+              "boundingBox": {
+                "left": 244,
+                "top": 639,
+                "right": 384,
+                "bottom": 721
+              },
+              "confidence": 0.68359375
+            },
+            {
+              "text": "17i42",
+              "boundingBox": {
+                "left": 409,
+                "top": 682,
+                "right": 538,
+                "bottom": 760
+              },
+              "confidence": 0.36953124
+            },
+            {
+              "text": "ToTAL",
+              "boundingBox": {
+                "left": 562,
+                "top": 721,
+                "right": 851,
+                "bottom": 842
+              },
+              "confidence": 0.546875
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -199,7 +511,19 @@
             "right": 498,
             "bottom": 918
           },
-          "confidence": 0.5078125
+          "confidence": 0.5078125,
+          "elements": [
+            {
+              "text": "20x",
+              "boundingBox": {
+                "left": 411,
+                "top": 864,
+                "right": 498,
+                "bottom": 918
+              },
+              "confidence": 0.5078125
+            }
+          ]
         },
         {
           "text": "1ex",
@@ -209,7 +533,19 @@
             "right": 487,
             "bottom": 959
           },
-          "confidence": 0.38020834
+          "confidence": 0.38020834,
+          "elements": [
+            {
+              "text": "1ex",
+              "boundingBox": {
+                "left": 406,
+                "top": 906,
+                "right": 487,
+                "bottom": 959
+              },
+              "confidence": 0.38020834
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -230,7 +566,19 @@
             "right": 478,
             "bottom": 1005
           },
-          "confidence": 0.53515625
+          "confidence": 0.53515625,
+          "elements": [
+            {
+              "text": "158",
+              "boundingBox": {
+                "left": 396,
+                "top": 948,
+                "right": 478,
+                "bottom": 1005
+              },
+              "confidence": 0.53515625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -251,7 +599,39 @@
             "right": 775,
             "bottom": 909
           },
-          "confidence": 0.6056858
+          "confidence": 0.6056858,
+          "elements": [
+            {
+              "text": "Gratutty",
+              "boundingBox": {
+                "left": 222,
+                "top": 723,
+                "right": 435,
+                "bottom": 814
+              },
+              "confidence": 0.7885742
+            },
+            {
+              "text": "Not",
+              "boundingBox": {
+                "left": 458,
+                "top": 789,
+                "right": 538,
+                "bottom": 842
+              },
+              "confidence": 0.70963544
+            },
+            {
+              "text": "Inclued",
+              "boundingBox": {
+                "left": 564,
+                "top": 819,
+                "right": 776,
+                "bottom": 909
+              },
+              "confidence": 0.35212055
+            }
+          ]
         },
         {
           "text": "SuOested Gratuity:",
@@ -261,7 +641,29 @@
             "right": 727,
             "bottom": 945
           },
-          "confidence": 0.5581342
+          "confidence": 0.5581342,
+          "elements": [
+            {
+              "text": "SuOested",
+              "boundingBox": {
+                "left": 208,
+                "top": 760,
+                "right": 459,
+                "bottom": 870
+              },
+              "confidence": 0.45410156
+            },
+            {
+              "text": "Gratuity:",
+              "boundingBox": {
+                "left": 490,
+                "top": 840,
+                "right": 727,
+                "bottom": 946
+              },
+              "confidence": 0.65060765
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -282,7 +684,19 @@
             "right": 760,
             "bottom": 993
           },
-          "confidence": 0.6148437
+          "confidence": 0.6148437,
+          "elements": [
+            {
+              "text": "13.85",
+              "boundingBox": {
+                "left": 625,
+                "top": 923,
+                "right": 760,
+                "bottom": 993
+              },
+              "confidence": 0.6148437
+            }
+          ]
         },
         {
           "text": "12.47",
@@ -292,7 +706,19 @@
             "right": 747,
             "bottom": 1031
           },
-          "confidence": 0.67578125
+          "confidence": 0.67578125,
+          "elements": [
+            {
+              "text": "12.47",
+              "boundingBox": {
+                "left": 616,
+                "top": 966,
+                "right": 747,
+                "bottom": 1031
+              },
+              "confidence": 0.67578125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -313,7 +739,29 @@
             "right": 1036,
             "bottom": 794
           },
-          "confidence": 0.48535156
+          "confidence": 0.48535156,
+          "elements": [
+            {
+              "text": "Su",
+              "boundingBox": {
+                "left": 781,
+                "top": 680,
+                "right": 869,
+                "bottom": 742
+              },
+              "confidence": 0.32226562
+            },
+            {
+              "text": "Totals",
+              "boundingBox": {
+                "left": 887,
+                "top": 713,
+                "right": 1036,
+                "bottom": 793
+              },
+              "confidence": 0.53971356
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -334,7 +782,19 @@
             "right": 742,
             "bottom": 1076
           },
-          "confidence": 0.51484376
+          "confidence": 0.51484376,
+          "elements": [
+            {
+              "text": "10.39",
+              "boundingBox": {
+                "left": 607,
+                "top": 1009,
+                "right": 742,
+                "bottom": 1076
+              },
+              "confidence": 0.51484376
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -355,7 +815,29 @@
             "right": 996,
             "bottom": 854
           },
-          "confidence": 0.43805805
+          "confidence": 0.43805805,
+          "elements": [
+            {
+              "text": "Sn",
+              "boundingBox": {
+                "left": 760,
+                "top": 752,
+                "right": 848,
+                "bottom": 812
+              },
+              "confidence": 0.2265625
+            },
+            {
+              "text": "Totat",
+              "boundingBox": {
+                "left": 876,
+                "top": 784,
+                "right": 996,
+                "bottom": 853
+              },
+              "confidence": 0.52265626
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -376,7 +858,19 @@
             "right": 1075,
             "bottom": 841
           },
-          "confidence": 0.3251953
+          "confidence": 0.3251953,
+          "elements": [
+            {
+              "text": "Taxs",
+              "boundingBox": {
+                "left": 975,
+                "top": 779,
+                "right": 1075,
+                "bottom": 841
+              },
+              "confidence": 0.3251953
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -397,7 +891,19 @@
             "right": 1154,
             "bottom": 938
           },
-          "confidence": 0.33203125
+          "confidence": 0.33203125,
+          "elements": [
+            {
+              "text": "59",
+              "boundingBox": {
+                "left": 1029,
+                "top": 865,
+                "right": 1126,
+                "bottom": 930
+              },
+              "confidence": 0.33203125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -418,7 +924,79 @@
             "right": 1122,
             "bottom": 1284
           },
-          "confidence": 0.6686663
+          "confidence": 0.6686663,
+          "elements": [
+            {
+              "text": "It's",
+              "boundingBox": {
+                "left": 234,
+                "top": 992,
+                "right": 348,
+                "bottom": 1065
+              },
+              "confidence": 0.4970703
+            },
+            {
+              "text": "been",
+              "boundingBox": {
+                "left": 363,
+                "top": 1029,
+                "right": 483,
+                "bottom": 1103
+              },
+              "confidence": 0.70703125
+            },
+            {
+              "text": "a",
+              "boundingBox": {
+                "left": 498,
+                "top": 1067,
+                "right": 536,
+                "bottom": 1118
+              },
+              "confidence": 0.80859375
+            },
+            {
+              "text": "pleasure",
+              "boundingBox": {
+                "left": 563,
+                "top": 1085,
+                "right": 788,
+                "bottom": 1190
+              },
+              "confidence": 0.73339844
+            },
+            {
+              "text": "to",
+              "boundingBox": {
+                "left": 790,
+                "top": 1150,
+                "right": 853,
+                "bottom": 1208
+              },
+              "confidence": 0.7714844
+            },
+            {
+              "text": "serve",
+              "boundingBox": {
+                "left": 865,
+                "top": 1171,
+                "right": 1005,
+                "bottom": 1251
+              },
+              "confidence": 0.70703125
+            },
+            {
+              "text": "you.",
+              "boundingBox": {
+                "left": 1015,
+                "top": 1214,
+                "right": 1122,
+                "bottom": 1284
+              },
+              "confidence": 0.53808594
+            }
+          ]
         },
         {
           "text": "Thark you for dintng with us",
@@ -428,7 +1006,69 @@
             "right": 1048,
             "bottom": 1305
           },
-          "confidence": 0.57557744
+          "confidence": 0.57557744,
+          "elements": [
+            {
+              "text": "Thark",
+              "boundingBox": {
+                "left": 301,
+                "top": 1060,
+                "right": 445,
+                "bottom": 1138
+              },
+              "confidence": 0.7734375
+            },
+            {
+              "text": "you",
+              "boundingBox": {
+                "left": 462,
+                "top": 1105,
+                "right": 559,
+                "bottom": 1169
+              },
+              "confidence": 0.48046875
+            },
+            {
+              "text": "for",
+              "boundingBox": {
+                "left": 569,
+                "top": 1135,
+                "right": 657,
+                "bottom": 1197
+              },
+              "confidence": 0.6067708
+            },
+            {
+              "text": "dintng",
+              "boundingBox": {
+                "left": 673,
+                "top": 1163,
+                "right": 844,
+                "bottom": 1249
+              },
+              "confidence": 0.5279948
+            },
+            {
+              "text": "with",
+              "boundingBox": {
+                "left": 854,
+                "top": 1213,
+                "right": 971,
+                "bottom": 1284
+              },
+              "confidence": 0.55078125
+            },
+            {
+              "text": "us",
+              "boundingBox": {
+                "left": 982,
+                "top": 1249,
+                "right": 1047,
+                "bottom": 1304
+              },
+              "confidence": 0.36914062
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -449,7 +1089,19 @@
             "right": 1289,
             "bottom": 862
           },
-          "confidence": 0.50859374
+          "confidence": 0.50859374,
+          "elements": [
+            {
+              "text": "63.75",
+              "boundingBox": {
+                "left": 1158,
+                "top": 796,
+                "right": 1289,
+                "bottom": 862
+              },
+              "confidence": 0.50859374
+            }
+          ]
         },
         {
           "text": "5.50",
@@ -459,7 +1111,19 @@
             "right": 1281,
             "bottom": 897
           },
-          "confidence": 0.453125
+          "confidence": 0.453125,
+          "elements": [
+            {
+              "text": "5.50",
+              "boundingBox": {
+                "left": 1170,
+                "top": 837,
+                "right": 1281,
+                "bottom": 897
+              },
+              "confidence": 0.453125
+            }
+          ]
         },
         {
           "text": "69.25",
@@ -469,7 +1133,19 @@
             "right": 1266,
             "bottom": 929
           },
-          "confidence": 0.58203125
+          "confidence": 0.58203125,
+          "elements": [
+            {
+              "text": "69.25",
+              "boundingBox": {
+                "left": 1133,
+                "top": 861,
+                "right": 1266,
+                "bottom": 929
+              },
+              "confidence": 0.58203125
+            }
+          ]
         }
       ],
       "boundingBox": {

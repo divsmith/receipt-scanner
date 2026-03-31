@@ -12,7 +12,29 @@
             "right": 521,
             "bottom": 287
           },
-          "confidence": 0.8384233
+          "confidence": 0.8384233,
+          "elements": [
+            {
+              "text": "Server:",
+              "boundingBox": {
+                "left": 188,
+                "top": 236,
+                "right": 373,
+                "bottom": 287
+              },
+              "confidence": 0.80189735
+            },
+            {
+              "text": "Jake",
+              "boundingBox": {
+                "left": 411,
+                "top": 229,
+                "right": 521,
+                "bottom": 277
+              },
+              "confidence": 0.90234375
+            }
+          ]
         },
         {
           "text": "Table 24/1",
@@ -22,7 +44,29 @@
             "right": 460,
             "bottom": 345
           },
-          "confidence": 0.8967014
+          "confidence": 0.8967014,
+          "elements": [
+            {
+              "text": "Table",
+              "boundingBox": {
+                "left": 192,
+                "top": 293,
+                "right": 327,
+                "bottom": 345
+              },
+              "confidence": 0.8828125
+            },
+            {
+              "text": "24/1",
+              "boundingBox": {
+                "left": 357,
+                "top": 288,
+                "right": 460,
+                "bottom": 337
+              },
+              "confidence": 0.9140625
+            }
+          ]
         },
         {
           "text": "Guests : 2",
@@ -32,7 +76,39 @@
             "right": 441,
             "bottom": 394
           },
-          "confidence": 0.8496094
+          "confidence": 0.8496094,
+          "elements": [
+            {
+              "text": "Guests",
+              "boundingBox": {
+                "left": 190,
+                "top": 347,
+                "right": 355,
+                "bottom": 394
+              },
+              "confidence": 0.8619792
+            },
+            {
+              "text": ":",
+              "boundingBox": {
+                "left": 365,
+                "top": 346,
+                "right": 375,
+                "bottom": 384
+              },
+              "confidence": 0.8125
+            },
+            {
+              "text": "2",
+              "boundingBox": {
+                "left": 414,
+                "top": 343,
+                "right": 440,
+                "bottom": 382
+              },
+              "confidence": 0.8125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -53,7 +129,49 @@
             "right": 669,
             "bottom": 502
           },
-          "confidence": 0.76004463
+          "confidence": 0.76004463,
+          "elements": [
+            {
+              "text": "G1",
+              "boundingBox": {
+                "left": 201,
+                "top": 454,
+                "right": 253,
+                "bottom": 502
+              },
+              "confidence": 0.60546875
+            },
+            {
+              "text": "Karma",
+              "boundingBox": {
+                "left": 271,
+                "top": 448,
+                "right": 410,
+                "bottom": 499
+              },
+              "confidence": 0.7625
+            },
+            {
+              "text": "Cab",
+              "boundingBox": {
+                "left": 441,
+                "top": 444,
+                "right": 526,
+                "bottom": 493
+              },
+              "confidence": 0.9010417
+            },
+            {
+              "text": "Sauv",
+              "boundingBox": {
+                "left": 557,
+                "top": 438,
+                "right": 669,
+                "bottom": 488
+              },
+              "confidence": 0.7285156
+            }
+          ]
         },
         {
           "text": "G1 Douglass Green SB",
@@ -63,7 +181,49 @@
             "right": 759,
             "bottom": 552
           },
-          "confidence": 0.82766545
+          "confidence": 0.82766545,
+          "elements": [
+            {
+              "text": "G1",
+              "boundingBox": {
+                "left": 199,
+                "top": 504,
+                "right": 251,
+                "bottom": 552
+              },
+              "confidence": 0.546875
+            },
+            {
+              "text": "Douglass",
+              "boundingBox": {
+                "left": 269,
+                "top": 497,
+                "right": 493,
+                "bottom": 550
+              },
+              "confidence": 0.86083984
+            },
+            {
+              "text": "Green",
+              "boundingBox": {
+                "left": 525,
+                "top": 491,
+                "right": 671,
+                "bottom": 541
+              },
+              "confidence": 0.8859375
+            },
+            {
+              "text": "SB",
+              "boundingBox": {
+                "left": 703,
+                "top": 489,
+                "right": 759,
+                "bottom": 536
+              },
+              "confidence": 0.8300781
+            }
+          ]
         },
         {
           "text": "PKLI Green Curry Scallops",
@@ -73,7 +233,49 @@
             "right": 913,
             "bottom": 605
           },
-          "confidence": 0.8897372
+          "confidence": 0.8897372,
+          "elements": [
+            {
+              "text": "PKLI",
+              "boundingBox": {
+                "left": 196,
+                "top": 553,
+                "right": 306,
+                "bottom": 605
+              },
+              "confidence": 0.8574219
+            },
+            {
+              "text": "Green",
+              "boundingBox": {
+                "left": 323,
+                "top": 549,
+                "right": 465,
+                "bottom": 601
+              },
+              "confidence": 0.9242188
+            },
+            {
+              "text": "Curry",
+              "boundingBox": {
+                "left": 497,
+                "top": 545,
+                "right": 641,
+                "bottom": 597
+              },
+              "confidence": 0.8875
+            },
+            {
+              "text": "Scallops",
+              "boundingBox": {
+                "left": 675,
+                "top": 537,
+                "right": 913,
+                "bottom": 593
+              },
+              "confidence": 0.8857422
+            }
+          ]
         },
         {
           "text": "PKLI Piri Piri Chicken",
@@ -83,7 +285,49 @@
             "right": 822,
             "bottom": 655
           },
-          "confidence": 0.8353207
+          "confidence": 0.8353207,
+          "elements": [
+            {
+              "text": "PKLI",
+              "boundingBox": {
+                "left": 180,
+                "top": 604,
+                "right": 287,
+                "bottom": 655
+              },
+              "confidence": 0.83496094
+            },
+            {
+              "text": "Piri",
+              "boundingBox": {
+                "left": 333,
+                "top": 602,
+                "right": 452,
+                "bottom": 653
+              },
+              "confidence": 0.86035156
+            },
+            {
+              "text": "Piri",
+              "boundingBox": {
+                "left": 485,
+                "top": 600,
+                "right": 597,
+                "bottom": 651
+              },
+              "confidence": 0.83203125
+            },
+            {
+              "text": "Chicken",
+              "boundingBox": {
+                "left": 615,
+                "top": 597,
+                "right": 822,
+                "bottom": 649
+              },
+              "confidence": 0.82310265
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -104,7 +348,29 @@
             "right": 395,
             "bottom": 763
           },
-          "confidence": 0.8232422
+          "confidence": 0.8232422,
+          "elements": [
+            {
+              "text": "Subtota",
+              "boundingBox": {
+                "left": 175,
+                "top": 715,
+                "right": 371,
+                "bottom": 763
+              },
+              "confidence": 0.8816964
+            },
+            {
+              "text": "l",
+              "boundingBox": {
+                "left": 382,
+                "top": 715,
+                "right": 395,
+                "bottom": 757
+              },
+              "confidence": 0.4140625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -125,7 +391,19 @@
             "right": 254,
             "bottom": 816
           },
-          "confidence": 0.7942708
+          "confidence": 0.7942708,
+          "elements": [
+            {
+              "text": "Tax",
+              "boundingBox": {
+                "left": 174,
+                "top": 778,
+                "right": 254,
+                "bottom": 816
+              },
+              "confidence": 0.7942708
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -146,7 +424,39 @@
             "right": 1017,
             "bottom": 159
           },
-          "confidence": 0.8697917
+          "confidence": 0.8697917,
+          "elements": [
+            {
+              "text": "1660",
+              "boundingBox": {
+                "left": 526,
+                "top": 111,
+                "right": 631,
+                "bottom": 159
+              },
+              "confidence": 0.89941406
+            },
+            {
+              "text": "India",
+              "boundingBox": {
+                "left": 667,
+                "top": 103,
+                "right": 808,
+                "bottom": 153
+              },
+              "confidence": 0.8570312
+            },
+            {
+              "text": "Street",
+              "boundingBox": {
+                "left": 841,
+                "top": 95,
+                "right": 1017,
+                "bottom": 145
+              },
+              "confidence": 0.86067706
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -167,7 +477,39 @@
             "right": 730,
             "bottom": 935
           },
-          "confidence": 0.8543199
+          "confidence": 0.8543199,
+          "elements": [
+            {
+              "text": "Surcharge",
+              "boundingBox": {
+                "left": 168,
+                "top": 882,
+                "right": 426,
+                "bottom": 935
+              },
+              "confidence": 0.88064235
+            },
+            {
+              "text": "3.75%",
+              "boundingBox": {
+                "left": 461,
+                "top": 880,
+                "right": 610,
+                "bottom": 931
+              },
+              "confidence": 0.85546875
+            },
+            {
+              "text": "SC*",
+              "boundingBox": {
+                "left": 645,
+                "top": 878,
+                "right": 730,
+                "bottom": 929
+              },
+              "confidence": 0.7734375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -188,7 +530,19 @@
             "right": 300,
             "bottom": 1040
           },
-          "confidence": 0.85
+          "confidence": 0.85,
+          "elements": [
+            {
+              "text": "Total",
+              "boundingBox": {
+                "left": 166,
+                "top": 1000,
+                "right": 300,
+                "bottom": 1040
+              },
+              "confidence": 0.85
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -209,7 +563,29 @@
             "right": 828,
             "bottom": 1160
           },
-          "confidence": 0.84296876
+          "confidence": 0.84296876,
+          "elements": [
+            {
+              "text": "Balance",
+              "boundingBox": {
+                "left": 160,
+                "top": 1114,
+                "right": 574,
+                "bottom": 1160
+              },
+              "confidence": 0.87053573
+            },
+            {
+              "text": "Due",
+              "boundingBox": {
+                "left": 646,
+                "top": 1114,
+                "right": 828,
+                "bottom": 1160
+              },
+              "confidence": 0.7786458
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -230,7 +606,19 @@
             "right": 1419,
             "bottom": 253
           },
-          "confidence": 0.9199219
+          "confidence": 0.9199219,
+          "elements": [
+            {
+              "text": "12/17/2017",
+              "boundingBox": {
+                "left": 1124,
+                "top": 194,
+                "right": 1419,
+                "bottom": 253
+              },
+              "confidence": 0.9199219
+            }
+          ]
         },
         {
           "text": "6:29 PM",
@@ -240,7 +628,29 @@
             "right": 1421,
             "bottom": 300
           },
-          "confidence": 0.87369794
+          "confidence": 0.87369794,
+          "elements": [
+            {
+              "text": "6:29",
+              "boundingBox": {
+                "left": 1210,
+                "top": 255,
+                "right": 1329,
+                "bottom": 300
+              },
+              "confidence": 0.8964844
+            },
+            {
+              "text": "PM",
+              "boundingBox": {
+                "left": 1361,
+                "top": 252,
+                "right": 1421,
+                "bottom": 294
+              },
+              "confidence": 0.828125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -261,7 +671,19 @@
             "right": 1425,
             "bottom": 356
           },
-          "confidence": 0.92109376
+          "confidence": 0.92109376,
+          "elements": [
+            {
+              "text": "20018",
+              "boundingBox": {
+                "left": 1272,
+                "top": 306,
+                "right": 1425,
+                "bottom": 356
+              },
+              "confidence": 0.92109376
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -282,7 +704,59 @@
             "right": 1155,
             "bottom": 1287
           },
-          "confidence": 0.82877606
+          "confidence": 0.82877606,
+          "elements": [
+            {
+              "text": "*3.75%",
+              "boundingBox": {
+                "left": 459,
+                "top": 1230,
+                "right": 643,
+                "bottom": 1282
+              },
+              "confidence": 0.86848956
+            },
+            {
+              "text": "SC",
+              "boundingBox": {
+                "left": 677,
+                "top": 1233,
+                "right": 737,
+                "bottom": 1283
+              },
+              "confidence": 0.76171875
+            },
+            {
+              "text": "-",
+              "boundingBox": {
+                "left": 775,
+                "top": 1234,
+                "right": 801,
+                "bottom": 1284
+              },
+              "confidence": 0.46875
+            },
+            {
+              "text": "In",
+              "boundingBox": {
+                "left": 846,
+                "top": 1234,
+                "right": 918,
+                "bottom": 1285
+              },
+              "confidence": 0.8886719
+            },
+            {
+              "text": "support",
+              "boundingBox": {
+                "left": 935,
+                "top": 1235,
+                "right": 1155,
+                "bottom": 1288
+              },
+              "confidence": 0.84821427
+            }
+          ]
         },
         {
           "text": "of the increases to min wage",
@@ -292,7 +766,69 @@
             "right": 1257,
             "bottom": 1351
           },
-          "confidence": 0.8423913
+          "confidence": 0.8423913,
+          "elements": [
+            {
+              "text": "of",
+              "boundingBox": {
+                "left": 365,
+                "top": 1292,
+                "right": 419,
+                "bottom": 1338
+              },
+              "confidence": 0.8652344
+            },
+            {
+              "text": "the",
+              "boundingBox": {
+                "left": 459,
+                "top": 1293,
+                "right": 549,
+                "bottom": 1340
+              },
+              "confidence": 0.8984375
+            },
+            {
+              "text": "increases",
+              "boundingBox": {
+                "left": 589,
+                "top": 1294,
+                "right": 867,
+                "bottom": 1345
+              },
+              "confidence": 0.88237846
+            },
+            {
+              "text": "to",
+              "boundingBox": {
+                "left": 902,
+                "top": 1300,
+                "right": 965,
+                "bottom": 1346
+              },
+              "confidence": 0.8671875
+            },
+            {
+              "text": "min",
+              "boundingBox": {
+                "left": 1001,
+                "top": 1301,
+                "right": 1095,
+                "bottom": 1348
+              },
+              "confidence": 0.72786456
+            },
+            {
+              "text": "wage",
+              "boundingBox": {
+                "left": 1131,
+                "top": 1303,
+                "right": 1257,
+                "bottom": 1350
+              },
+              "confidence": 0.77246094
+            }
+          ]
         },
         {
           "text": "To find out why, visit",
@@ -302,7 +838,59 @@
             "right": 1159,
             "bottom": 1416
           },
-          "confidence": 0.84136283
+          "confidence": 0.84136283,
+          "elements": [
+            {
+              "text": "To",
+              "boundingBox": {
+                "left": 472,
+                "top": 1349,
+                "right": 535,
+                "bottom": 1405
+              },
+              "confidence": 0.7890625
+            },
+            {
+              "text": "find",
+              "boundingBox": {
+                "left": 550,
+                "top": 1351,
+                "right": 677,
+                "bottom": 1407
+              },
+              "confidence": 0.8515625
+            },
+            {
+              "text": "out",
+              "boundingBox": {
+                "left": 710,
+                "top": 1353,
+                "right": 801,
+                "bottom": 1409
+              },
+              "confidence": 0.87109375
+            },
+            {
+              "text": "why,",
+              "boundingBox": {
+                "left": 838,
+                "top": 1356,
+                "right": 961,
+                "bottom": 1413
+              },
+              "confidence": 0.8515625
+            },
+            {
+              "text": "visit",
+              "boundingBox": {
+                "left": 1000,
+                "top": 1359,
+                "right": 1159,
+                "bottom": 1416
+              },
+              "confidence": 0.828125
+            }
+          ]
         },
         {
           "text": "www.wnlhosp.com/rttd",
@@ -312,7 +900,19 @@
             "right": 1133,
             "bottom": 1474
           },
-          "confidence": 0.7945312
+          "confidence": 0.7945312,
+          "elements": [
+            {
+              "text": "www.wnlhosp.com/rttd",
+              "boundingBox": {
+                "left": 487,
+                "top": 1415,
+                "right": 1133,
+                "bottom": 1474
+              },
+              "confidence": 0.7945312
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -333,7 +933,19 @@
             "right": 1432,
             "bottom": 463
           },
-          "confidence": 0.9171875
+          "confidence": 0.9171875,
+          "elements": [
+            {
+              "text": "12.00",
+              "boundingBox": {
+                "left": 1286,
+                "top": 417,
+                "right": 1432,
+                "bottom": 463
+              },
+              "confidence": 0.9171875
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -354,7 +966,19 @@
             "right": 1435,
             "bottom": 516
           },
-          "confidence": 0.88359374
+          "confidence": 0.88359374,
+          "elements": [
+            {
+              "text": "11.00",
+              "boundingBox": {
+                "left": 1290,
+                "top": 472,
+                "right": 1435,
+                "bottom": 516
+              },
+              "confidence": 0.88359374
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -375,7 +999,19 @@
             "right": 1442,
             "bottom": 573
           },
-          "confidence": 0.909375
+          "confidence": 0.909375,
+          "elements": [
+            {
+              "text": "27.95",
+              "boundingBox": {
+                "left": 1288,
+                "top": 527,
+                "right": 1442,
+                "bottom": 573
+              },
+              "confidence": 0.909375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -396,7 +1032,19 @@
             "right": 1447,
             "bottom": 628
           },
-          "confidence": 0.9007813
+          "confidence": 0.9007813,
+          "elements": [
+            {
+              "text": "23.75",
+              "boundingBox": {
+                "left": 1292,
+                "top": 582,
+                "right": 1447,
+                "bottom": 628
+              },
+              "confidence": 0.9007813
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -417,7 +1065,19 @@
             "right": 1454,
             "bottom": 740
           },
-          "confidence": 0.8453125
+          "confidence": 0.8453125,
+          "elements": [
+            {
+              "text": "74.70",
+              "boundingBox": {
+                "left": 1300,
+                "top": 700,
+                "right": 1454,
+                "bottom": 740
+              },
+              "confidence": 0.8453125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -438,7 +1098,19 @@
             "right": 1457,
             "bottom": 800
           },
-          "confidence": 0.8769531
+          "confidence": 0.8769531,
+          "elements": [
+            {
+              "text": "6.00",
+              "boundingBox": {
+                "left": 1334,
+                "top": 755,
+                "right": 1457,
+                "bottom": 800
+              },
+              "confidence": 0.8769531
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -459,7 +1131,19 @@
             "right": 1464,
             "bottom": 919
           },
-          "confidence": 0.87890625
+          "confidence": 0.87890625,
+          "elements": [
+            {
+              "text": "2.80",
+              "boundingBox": {
+                "left": 1340,
+                "top": 874,
+                "right": 1464,
+                "bottom": 919
+              },
+              "confidence": 0.87890625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -480,7 +1164,19 @@
             "right": 1470,
             "bottom": 1038
           },
-          "confidence": 0.8953125
+          "confidence": 0.8953125,
+          "elements": [
+            {
+              "text": "83.50",
+              "boundingBox": {
+                "left": 1314,
+                "top": 992,
+                "right": 1470,
+                "bottom": 1038
+              },
+              "confidence": 0.8953125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -501,7 +1197,19 @@
             "right": 1472,
             "bottom": 1161
           },
-          "confidence": 0.825
+          "confidence": 0.825,
+          "elements": [
+            {
+              "text": "83.50",
+              "boundingBox": {
+                "left": 1158,
+                "top": 1112,
+                "right": 1472,
+                "bottom": 1161
+              },
+              "confidence": 0.825
+            }
+          ]
         }
       ],
       "boundingBox": {

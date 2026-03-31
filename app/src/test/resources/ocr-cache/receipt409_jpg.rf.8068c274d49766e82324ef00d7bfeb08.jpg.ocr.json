@@ -12,7 +12,29 @@
             "right": 445,
             "bottom": 341
           },
-          "confidence": 0.48984376
+          "confidence": 0.48984376,
+          "elements": [
+            {
+              "text": "Server:",
+              "boundingBox": {
+                "left": 243,
+                "top": 297,
+                "right": 381,
+                "bottom": 340
+              },
+              "confidence": 0.53627235
+            },
+            {
+              "text": "Com",
+              "boundingBox": {
+                "left": 385,
+                "top": 300,
+                "right": 445,
+                "bottom": 341
+              },
+              "confidence": 0.3815104
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -33,7 +55,19 @@
             "right": 325,
             "bottom": 408
           },
-          "confidence": 0.3453125
+          "confidence": 0.3453125,
+          "elements": [
+            {
+              "text": "Order",
+              "boundingBox": {
+                "left": 244,
+                "top": 369,
+                "right": 325,
+                "bottom": 408
+              },
+              "confidence": 0.3453125
+            }
+          ]
         },
         {
           "text": "Tab les 2",
@@ -43,7 +77,39 @@
             "right": 376,
             "bottom": 447
           },
-          "confidence": 0.5373884
+          "confidence": 0.5373884,
+          "elements": [
+            {
+              "text": "Tab",
+              "boundingBox": {
+                "left": 237,
+                "top": 409,
+                "right": 284,
+                "bottom": 447
+              },
+              "confidence": 0.65494794
+            },
+            {
+              "text": "les",
+              "boundingBox": {
+                "left": 295,
+                "top": 408,
+                "right": 344,
+                "bottom": 446
+              },
+              "confidence": 0.41145834
+            },
+            {
+              "text": "2",
+              "boundingBox": {
+                "left": 361,
+                "top": 408,
+                "right": 376,
+                "bottom": 445
+              },
+              "confidence": 0.5625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -64,7 +130,39 @@
             "right": 391,
             "bottom": 525
           },
-          "confidence": 0.39285713
+          "confidence": 0.39285713,
+          "elements": [
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 219,
+                "top": 481,
+                "right": 235,
+                "bottom": 523
+              },
+              "confidence": 0.21875
+            },
+            {
+              "text": "Dal",
+              "boundingBox": {
+                "left": 255,
+                "top": 481,
+                "right": 313,
+                "bottom": 523
+              },
+              "confidence": 0.31640625
+            },
+            {
+              "text": "FrY",
+              "boundingBox": {
+                "left": 335,
+                "top": 482,
+                "right": 391,
+                "bottom": 525
+              },
+              "confidence": 0.52734375
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -85,7 +183,29 @@
             "right": 799,
             "bottom": 220
           },
-          "confidence": 0.35009766
+          "confidence": 0.35009766,
+          "elements": [
+            {
+              "text": "trk",
+              "boundingBox": {
+                "left": 443,
+                "top": 158,
+                "right": 658,
+                "bottom": 210
+              },
+              "confidence": 0.3372396
+            },
+            {
+              "text": "Arene",
+              "boundingBox": {
+                "left": 690,
+                "top": 175,
+                "right": 798,
+                "bottom": 220
+              },
+              "confidence": 0.3578125
+            }
+          ]
         },
         {
           "text": "lersey City Local, N O306",
@@ -95,7 +215,59 @@
             "right": 881,
             "bottom": 249
           },
-          "confidence": 0.47600445
+          "confidence": 0.47600445,
+          "elements": [
+            {
+              "text": "lersey",
+              "boundingBox": {
+                "left": 356,
+                "top": 191,
+                "right": 476,
+                "bottom": 232
+              },
+              "confidence": 0.49609375
+            },
+            {
+              "text": "City",
+              "boundingBox": {
+                "left": 494,
+                "top": 197,
+                "right": 574,
+                "bottom": 237
+              },
+              "confidence": 0.41308594
+            },
+            {
+              "text": "Local,",
+              "boundingBox": {
+                "left": 594,
+                "top": 201,
+                "right": 707,
+                "bottom": 242
+              },
+              "confidence": 0.5598958
+            },
+            {
+              "text": "N",
+              "boundingBox": {
+                "left": 727,
+                "top": 207,
+                "right": 768,
+                "bottom": 244
+              },
+              "confidence": 0.265625
+            },
+            {
+              "text": "O306",
+              "boundingBox": {
+                "left": 785,
+                "top": 209,
+                "right": 881,
+                "bottom": 248
+              },
+              "confidence": 0.43554688
+            }
+          ]
         },
         {
           "text": "(221) 6é-1772",
@@ -105,7 +277,29 @@
             "right": 766,
             "bottom": 285
           },
-          "confidence": 0.4248047
+          "confidence": 0.4248047,
+          "elements": [
+            {
+              "text": "(221)",
+              "boundingBox": {
+                "left": 507,
+                "top": 234,
+                "right": 605,
+                "bottom": 276
+              },
+              "confidence": 0.48359376
+            },
+            {
+              "text": "6é-1772",
+              "boundingBox": {
+                "left": 606,
+                "top": 239,
+                "right": 766,
+                "bottom": 285
+              },
+              "confidence": 0.3828125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -126,7 +320,19 @@
             "right": 322,
             "bottom": 591
           },
-          "confidence": 0.4265625
+          "confidence": 0.4265625,
+          "elements": [
+            {
+              "text": "2rioe",
+              "boundingBox": {
+                "left": 219,
+                "top": 554,
+                "right": 322,
+                "bottom": 591
+              },
+              "confidence": 0.4265625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -147,7 +353,49 @@
             "right": 641,
             "bottom": 561
           },
-          "confidence": 0.4158654
+          "confidence": 0.4158654,
+          "elements": [
+            {
+              "text": "Paer",
+              "boundingBox": {
+                "left": 253,
+                "top": 513,
+                "right": 368,
+                "bottom": 556
+              },
+              "confidence": 0.3857422
+            },
+            {
+              "text": "Bt",
+              "boundingBox": {
+                "left": 374,
+                "top": 516,
+                "right": 445,
+                "bottom": 557
+              },
+              "confidence": 0.296875
+            },
+            {
+              "text": "ter",
+              "boundingBox": {
+                "left": 453,
+                "top": 517,
+                "right": 507,
+                "bottom": 558
+              },
+              "confidence": 0.5651042
+            },
+            {
+              "text": "sala",
+              "boundingBox": {
+                "left": 525,
+                "top": 518,
+                "right": 641,
+                "bottom": 561
+              },
+              "confidence": 0.3935547
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -168,7 +416,29 @@
             "right": 297,
             "bottom": 834
           },
-          "confidence": 0.50390625
+          "confidence": 0.50390625,
+          "elements": [
+            {
+              "text": "Tax",
+              "boundingBox": {
+                "left": 194,
+                "top": 796,
+                "right": 252,
+                "bottom": 834
+              },
+              "confidence": 0.52994794
+            },
+            {
+              "text": "1",
+              "boundingBox": {
+                "left": 276,
+                "top": 796,
+                "right": 297,
+                "bottom": 834
+              },
+              "confidence": 0.42578125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -189,7 +459,19 @@
             "right": 502,
             "bottom": 415
           },
-          "confidence": 0.36328125
+          "confidence": 0.36328125,
+          "elements": [
+            {
+              "text": "B0110",
+              "boundingBox": {
+                "left": 402,
+                "top": 376,
+                "right": 502,
+                "bottom": 415
+              },
+              "confidence": 0.36328125
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -210,7 +492,29 @@
             "right": 433,
             "bottom": 737
           },
-          "confidence": 0.41308594
+          "confidence": 0.41308594,
+          "elements": [
+            {
+              "text": "lre",
+              "boundingBox": {
+                "left": 247,
+                "top": 693,
+                "right": 338,
+                "bottom": 734
+              },
+              "confidence": 0.2734375
+            },
+            {
+              "text": "orfer",
+              "boundingBox": {
+                "left": 335,
+                "top": 695,
+                "right": 433,
+                "bottom": 736
+              },
+              "confidence": 0.496875
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -231,7 +535,19 @@
             "right": 288,
             "bottom": 1036
           },
-          "confidence": 0.5201823
+          "confidence": 0.5201823,
+          "elements": [
+            {
+              "text": "TOTAL:",
+              "boundingBox": {
+                "left": 174,
+                "top": 982,
+                "right": 288,
+                "bottom": 1036
+              },
+              "confidence": 0.5201823
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -252,7 +568,29 @@
             "right": 759,
             "bottom": 174
           },
-          "confidence": 0.57421875
+          "confidence": 0.57421875,
+          "elements": [
+            {
+              "text": "Deccan",
+              "boundingBox": {
+                "left": 534,
+                "top": 104,
+                "right": 638,
+                "bottom": 169
+              },
+              "confidence": 0.5598958
+            },
+            {
+              "text": "Spice",
+              "boundingBox": {
+                "left": 671,
+                "top": 110,
+                "right": 759,
+                "bottom": 173
+              },
+              "confidence": 0.5914062
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -273,7 +611,49 @@
             "right": 742,
             "bottom": 1108
           },
-          "confidence": 0.29073662
+          "confidence": 0.29073662,
+          "elements": [
+            {
+              "text": "TAI9",
+              "boundingBox": {
+                "left": 342,
+                "top": 1070,
+                "right": 517,
+                "bottom": 1108
+              },
+              "confidence": 0.18945312
+            },
+            {
+              "text": "10:56:",
+              "boundingBox": {
+                "left": 552,
+                "top": 1070,
+                "right": 642,
+                "bottom": 1108
+              },
+              "confidence": 0.27734375
+            },
+            {
+              "text": "49",
+              "boundingBox": {
+                "left": 655,
+                "top": 1070,
+                "right": 688,
+                "bottom": 1108
+              },
+              "confidence": 0.40429688
+            },
+            {
+              "text": "PM",
+              "boundingBox": {
+                "left": 702,
+                "top": 1070,
+                "right": 742,
+                "bottom": 1108
+              },
+              "confidence": 0.41992188
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -294,7 +674,29 @@
             "right": 1021,
             "bottom": 369
           },
-          "confidence": 0.61035156
+          "confidence": 0.61035156,
+          "elements": [
+            {
+              "text": "Stat",
+              "boundingBox": {
+                "left": 826,
+                "top": 322,
+                "right": 897,
+                "bottom": 364
+              },
+              "confidence": 0.7050781
+            },
+            {
+              "text": "ion6",
+              "boundingBox": {
+                "left": 904,
+                "top": 326,
+                "right": 1021,
+                "bottom": 369
+              },
+              "confidence": 0.515625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -315,7 +717,19 @@
             "right": 936,
             "bottom": 430
           },
-          "confidence": 0.4638672
+          "confidence": 0.4638672,
+          "elements": [
+            {
+              "text": "Dine",
+              "boundingBox": {
+                "left": 861,
+                "top": 402,
+                "right": 936,
+                "bottom": 430
+              },
+              "confidence": 0.4638672
+            }
+          ]
         },
         {
           "text": "usts&",
@@ -325,7 +739,19 @@
             "right": 989,
             "bottom": 468
           },
-          "confidence": 0.440625
+          "confidence": 0.440625,
+          "elements": [
+            {
+              "text": "usts&",
+              "boundingBox": {
+                "left": 821,
+                "top": 429,
+                "right": 989,
+                "bottom": 468
+              },
+              "confidence": 0.440625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -346,7 +772,19 @@
             "right": 952,
             "bottom": 742
           },
-          "confidence": 0.35625
+          "confidence": 0.35625,
+          "elements": [
+            {
+              "text": "(6.0)",
+              "boundingBox": {
+                "left": 859,
+                "top": 713,
+                "right": 952,
+                "bottom": 742
+              },
+              "confidence": 0.35625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -367,7 +805,19 @@
             "right": 934,
             "bottom": 1038
           },
-          "confidence": 0.44140625
+          "confidence": 0.44140625,
+          "elements": [
+            {
+              "text": "87.02",
+              "boundingBox": {
+                "left": 822,
+                "top": 986,
+                "right": 934,
+                "bottom": 1038
+              },
+              "confidence": 0.44140625
+            }
+          ]
         }
       ],
       "boundingBox": {
@@ -388,7 +838,89 @@
             "right": 1041,
             "bottom": 1213
           },
-          "confidence": 0.4735677
+          "confidence": 0.4735677,
+          "elements": [
+            {
+              "text": "No",
+              "boundingBox": {
+                "left": 156,
+                "top": 1176,
+                "right": 202,
+                "bottom": 1213
+              },
+              "confidence": 0.41210938
+            },
+            {
+              "text": "ratir",
+              "boundingBox": {
+                "left": 215,
+                "top": 1176,
+                "right": 354,
+                "bottom": 1213
+              },
+              "confidence": 0.4890625
+            },
+            {
+              "text": "o",
+              "boundingBox": {
+                "left": 369,
+                "top": 1176,
+                "right": 406,
+                "bottom": 1213
+              },
+              "confidence": 0.17578125
+            },
+            {
+              "text": "eeeflat",
+              "boundingBox": {
+                "left": 424,
+                "top": 1176,
+                "right": 596,
+                "bottom": 1213
+              },
+              "confidence": 0.45200893
+            },
+            {
+              "text": "las",
+              "boundingBox": {
+                "left": 605,
+                "top": 1176,
+                "right": 675,
+                "bottom": 1213
+              },
+              "confidence": 0.33854166
+            },
+            {
+              "text": "acte",
+              "boundingBox": {
+                "left": 692,
+                "top": 1176,
+                "right": 844,
+                "bottom": 1213
+              },
+              "confidence": 0.44921875
+            },
+            {
+              "text": "one",
+              "boundingBox": {
+                "left": 858,
+                "top": 1176,
+                "right": 936,
+                "bottom": 1213
+              },
+              "confidence": 0.5182292
+            },
+            {
+              "text": "arder",
+              "boundingBox": {
+                "left": 952,
+                "top": 1176,
+                "right": 1041,
+                "bottom": 1213
+              },
+              "confidence": 0.6460937
+            }
+          ]
         },
         {
           "text": "s pleced. Echaru onty for fautty tns dY.",
@@ -398,7 +930,89 @@
             "right": 1045,
             "bottom": 1251
           },
-          "confidence": 0.47348484
+          "confidence": 0.47348484,
+          "elements": [
+            {
+              "text": "s",
+              "boundingBox": {
+                "left": 157,
+                "top": 1207,
+                "right": 193,
+                "bottom": 1251
+              },
+              "confidence": 0.2109375
+            },
+            {
+              "text": "pleced.",
+              "boundingBox": {
+                "left": 208,
+                "top": 1207,
+                "right": 352,
+                "bottom": 1251
+              },
+              "confidence": 0.39118305
+            },
+            {
+              "text": "Echaru",
+              "boundingBox": {
+                "left": 367,
+                "top": 1207,
+                "right": 520,
+                "bottom": 1251
+              },
+              "confidence": 0.390625
+            },
+            {
+              "text": "onty",
+              "boundingBox": {
+                "left": 538,
+                "top": 1207,
+                "right": 613,
+                "bottom": 1251
+              },
+              "confidence": 0.58691406
+            },
+            {
+              "text": "for",
+              "boundingBox": {
+                "left": 636,
+                "top": 1207,
+                "right": 686,
+                "bottom": 1251
+              },
+              "confidence": 0.5546875
+            },
+            {
+              "text": "fautty",
+              "boundingBox": {
+                "left": 712,
+                "top": 1207,
+                "right": 819,
+                "bottom": 1251
+              },
+              "confidence": 0.6197917
+            },
+            {
+              "text": "tns",
+              "boundingBox": {
+                "left": 844,
+                "top": 1207,
+                "right": 930,
+                "bottom": 1251
+              },
+              "confidence": 0.4388021
+            },
+            {
+              "text": "dY.",
+              "boundingBox": {
+                "left": 956,
+                "top": 1207,
+                "right": 1045,
+                "bottom": 1251
+              },
+              "confidence": 0.4283854
+            }
+          ]
         }
       ],
       "boundingBox": {
