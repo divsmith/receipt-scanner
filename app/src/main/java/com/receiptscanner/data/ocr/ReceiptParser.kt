@@ -39,7 +39,7 @@ class ReceiptParser @Inject constructor() {
 
     private val amountPattern = Regex("""\$?\s*([\d,]+\.\s*\d{2}|\d+,\d{2})(?!\d)""")
     private val payableTotalLabelPattern = Regex(
-        """(?i)^(?:grand\s+total|total(?:\s+(?:amount|due|purchase|sale))?|amount\s+due|balance(?:\s+due)?|net\s+(?:total|amount|due)|pay\s+this\s+amount)(?:\s*\(?(?:incl(?:uded|\.?)?|including)\s+(?:(?:sales\s+)?tax|vat|gst|hst)\)?)?$"""
+        """(?i)^(?:grand\s+total|total(?:\s+(?:amount|due|purchase|sale))?|amount\s+due|balance(?:\s+due)?|balnee\s+due|balaance\s+due|bil[l1]\s+total|net\s+(?:total|amount|due)|pay\s+this\s+amount)(?:\s*\(?(?:incl(?:uded|\.?)?|including)\s+(?:(?:sales\s+)?tax|vat|gst|hst)\)?)?$"""
     )
     private val providerBrandLabelPattern = Regex("""(?i)^(?:visa|mastercard|mc|amex|discover)$""")
     private val guardedTenderLabelPattern = Regex("""(?i)^(?:debit|credit)$""")
@@ -367,20 +367,20 @@ class ReceiptParser @Inject constructor() {
                         box.top >= totalBox.bottom && box.top <= totalBox.bottom + lineHeight * 2
                     if (!(isRightOf || isBelow)) return@filter false
                     if (!amountPattern.containsMatchIn(candidate.text)) return@filter false
-                    // When the amount is directly below the label, verify no tender/negative-keyword
-                    // label occupies the same row to the left (e.g. "CASH TEND" row in a two-column receipt).
-                    if (isBelow && !isRightOf) {
-                        val candidateMidY2 = (box.top + box.bottom) / 2
-                        val hasTenderLabel = allLines.any { labelLine ->
-                            val labelBox = labelLine.boundingBox ?: return@any false
-                            val labelMidY = (labelBox.top + labelBox.bottom) / 2
-                            labelBox.right <= box.left &&
-                                kotlin.math.abs(labelMidY - candidateMidY2) < lineHeight &&
-                                (tenderLinePattern.containsMatchIn(labelLine.text) ||
-                                    containsNegativeKeyword(labelLine.text))
-                        }
-                        if (hasTenderLabel) return@filter false
+                    // Exclude amounts where a tender/payment label sits in the same row to the
+                    // left of the amount (e.g. "CASH $40.00", "VISA TEND $12.68" rows).
+                    // Applied to both below-candidates and same-row candidates.
+                    val candidateMidY2 = (box.top + box.bottom) / 2
+                    val hasTenderLabel = allLines.any { labelLine ->
+                        if (labelLine === totalLine) return@any false
+                        val labelBox = labelLine.boundingBox ?: return@any false
+                        val labelMidY = (labelBox.top + labelBox.bottom) / 2
+                        labelBox.right <= box.left &&
+                            kotlin.math.abs(labelMidY - candidateMidY2) < lineHeight &&
+                            (tenderLinePattern.containsMatchIn(labelLine.text) ||
+                                containsNegativeKeyword(labelLine.text))
                     }
+                    if (hasTenderLabel) return@filter false
                     true
                 }
 
@@ -392,13 +392,25 @@ class ReceiptParser @Inject constructor() {
                 box.left > totalBox.right &&
                     kotlin.math.abs(candidateMidY - totalMidY) < lineHeight
             }
-            val nearbyAmount = (sameRowCandidates.ifEmpty { candidateLines })
-                .minByOrNull { candidate ->
+            val nearbyAmount = if (sameRowCandidates.isNotEmpty()) {
+                // Among same-row amounts, pick the one vertically closest to the label midpoint.
+                // dx+dy was incorrect: when two amounts are both "right of" the label (equal dx=0),
+                // the one with slightly less horizontal distance would win regardless of whether
+                // it belongs to the correct row (e.g. a tax amount 80px above the label midpoint
+                // could beat the actual total that is 5px away vertically).
+                sameRowCandidates.minByOrNull { candidate ->
+                    val box = candidate.boundingBox!!
+                    val candidateMidY = (box.top + box.bottom) / 2
+                    kotlin.math.abs(candidateMidY - totalMidY)
+                }
+            } else {
+                candidateLines.minByOrNull { candidate ->
                     val box = candidate.boundingBox!!
                     val dx = maxOf(0, box.left - totalBox.right)
                     val dy = maxOf(0, box.top - totalBox.bottom)
                     dx + dy
                 }
+            }
 
             if (nearbyAmount != null) {
                 val match = amountPattern.find(nearbyAmount.text)
@@ -441,6 +453,9 @@ class ReceiptParser @Inject constructor() {
         return amountPattern.replace(text, " ")
             .replace(Regex("""[:\-]"""), " ")
             .replace(Regex("""\s+"""), " ")
+            // Strip single-letter + period prefix common in SE-Asian restaurant receipts
+            // (e.g. "G.Total" → "Total", "S.Total" → "Total")
+            .replace(Regex("""^\s*[A-Za-z]\.\s*"""), "")
             .trim()
     }
 
@@ -452,8 +467,9 @@ class ReceiptParser @Inject constructor() {
         if (taxOnlyLabelPattern.matches(labelText)) return false
         if (payableTotalLabelPattern.matches(labelText)) return true
         if (providerBrandLabelPattern.matches(labelText)) return true
+        if (guardedTenderLabelPattern.matches(labelText) && lineIndex >= totalLineCount / 2) return true
 
-        return guardedTenderLabelPattern.matches(labelText) && lineIndex >= totalLineCount / 2
+        return false
     }
 
     /**
@@ -559,13 +575,35 @@ class ReceiptParser @Inject constructor() {
     }
 
     /**
+     * Normalizes common OCR character confusions in a potential date line before pattern matching.
+     * - Letter 'O' → digit '0' when adjacent to digits or immediately after a 3-letter month
+     *   abbreviation (e.g. "O3/14" → "03/14", "APRO4" → "APR04").
+     * - Lowercase 'l' → '/' when flanked by digit groups (e.g. "14l2015" → "14/2015").
+     */
+    private fun normalizeDateLine(line: String): String {
+        return line
+            // 'O' after a 3-uppercase-letter month abbreviation before a digit (e.g. "APRO4" → "APR04")
+            .replace(Regex("""(\b[A-Z]{3})O(?=\d)"""), "$10")
+            // 'O' at a non-letter boundary before a digit (e.g. "O3" → "03")
+            .replace(Regex("""(?<![A-Za-z])O(?=\d)"""), "0")
+            // 'O' between two digits (e.g. "3O5" → "305")
+            .replace(Regex("""(?<=\d)O(?=\d)"""), "0")
+            // 'l' between digit groups — date separator confusion (e.g. "14l2015" → "14/2015")
+            .replace(Regex("""(?<=\d)l(?=\d)"""), "/")
+    }
+
+    /**
      * Extract date from receipt text. Tries multiple common formats and scores candidates
      * by context (presence of "date" label, proximity to beginning of receipt, noise avoidance).
      */
     internal fun extractDate(text: String): LocalDate? {
         val lines = text.lines()
         val candidates = buildList {
-            lines.forEachIndexed { lineIndex, line ->
+            lines.forEachIndexed { lineIndex, rawLine ->
+                // Apply OCR character-confusion fixes before pattern matching. Also search the
+                // original line so any patterns that don't benefit from normalization still fire.
+                val normalizedLine = normalizeDateLine(rawLine)
+                for (line in listOf(rawLine, normalizedLine).distinct()) {
                 numericDateWithYearPattern.findAll(line).forEach { match ->
                     parseNumericDate(match, yearPattern = "yyyy")?.let { date ->
                         if (isReasonableDate(date)) {
@@ -615,6 +653,7 @@ class ReceiptParser @Inject constructor() {
                         }
                     }
                 }
+                } // end for (line in ...)
             }
         }
 
