@@ -186,7 +186,7 @@ Metadata extracted via OCR from each receipt image. All 450 images were successf
 |---|---|
 | Store | Walmart |
 | Total | $38.68 |
-| Date | 01/15/2017 |
+| Date | 01/16/2017 |
 | Card Last 4 | N/A |
 
 ---

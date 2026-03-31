@@ -58,6 +58,7 @@ object ReceiptFixtureNormalizer {
             ?: return null
 
         return canonicalizeStore(normalized)
+            .replace(Regex("""\s+sdn\s+bhd\s*$"""), "")
             .replace(Regex("""\s+#?\d{3,}\s*$"""), "")
             .trim()
     }

@@ -55,10 +55,10 @@ class ReceiptParser @Inject constructor() {
     )
     private val phonePattern = Regex("""\b\d{3}[-.\s]?\d{3}[-.\s]?\d{4}\b""")
     private val storeHeaderNoisePattern = Regex(
-        """(?i)^(receipt|transaction|welcome|thank\s*you|thanks|store\s*#\d*|address|phone|tel\s*:|fax\s*:|www\.|http)"""
+        """(?i)^(receipt|transaction|welcome|thank\s*you|thanks|store\s*#\d*|address|phone|tel\s*:|fax\s*:|www\.|http|printed\s+by|college\s+of|university\s+of|institute\s+of)"""
     )
     private val storeStaffPattern = Regex(
-        """(?i)(^server\b|^guest\s*:?\s*\d|^guests?\s*:?\s*\d|^table\b|^ticket\b|^order\s*:?\s*#?\d|^order\s*#\s*:|^customer\s+name\b|^host\b|^entered\s+by|^reprint|^paid\b|^check\s*#|^cashier\s*:|^mgr\s*:|^manager\b|^items?\s+sold|^see\s+back\s+of\s+receipt|^your\s+chance|^to\s+win\b|^ID\s*[\$#:]|^welcome\b|^join\s+us\b)"""
+        """(?i)(^server\b|^guest\s*:?\s*\d|^guests?\s*:?\s*\d|^guest\s+check\b|^table\b|^tab\s+le\b|^ticket\b|^order\s*:?\s*#?\d|^order\s*#\s*:|^customer\s+name\b|^host\b|^entered\s+by|^reprint|^paid\b|^check\s*#|^cashier\s*:|^mgr\s*:|^manager\b|^items?\s+sold|^see\s+back\s+of\s+receipt|^your\s+chance|^to\s+win\b|^ID\s*[\$#:]|^welcome\b|^join\s+us\b|^qty\b)"""
     )
     private val streetAddressPattern = Regex(
         """(?i)\b\d+\s+(?:[a-z0-9.'-]+\s+){0,4}(?:st|street|ave|avenida|avenue|rd|road|blvd|boulevard|dr|drive|ln|lane|way|hwy|highway|pkwy|parkway|center|centre|ctr|plaza|plz)\b"""
@@ -76,18 +76,24 @@ class ReceiptParser @Inject constructor() {
     // Separators are optional between month-name and day (handles "Jun22 18"),
     // and between the optional comma and year (handles "JANUARY 30,2018").
     // (?!\d) after day prevents "January 2014" from matching day=20, year=14.
+    // (?![:\d]) after year prevents time digits from being mistaken for a year ("21:31").
     // Year accepts 2–4 digits; 2-digit years are normalized to 20xx in parseMonthNameDate.
     private val monthNameDatePattern = Regex(
-        """(?i)(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)[/\-\s]*(\d{1,2})(?!\d),?[/\-\s]*(\d{2,4})(?!\d)"""
+        """(?i)(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)[/\-\s]*(\d{1,2})(?!\d),?[/\-\s]*(\d{2,4})(?![:\d])"""
     )
     // Separator between day and month-name is optional (handles "16Feb 19", "25AUG 17").
+    // (?![:\d]) after year prevents time digits ("21:31") from being mistaken for a year.
     // Year accepts 2–4 digits; 2-digit years are normalized in parseDayFirstMonthNameDate.
     private val dayFirstMonthNamePattern = Regex(
-        """(?i)\b(\d{1,2})[/\-\s]*(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)[/\-\s]+(\d{2,4})(?!\d)"""
+        """(?i)\b(\d{1,2})[/\-\s]*(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)[/\-\s]+(\d{2,4})(?![:\d])"""
     )
     // Compact format: "Jul15'17" or "Jul 15'17" — abbreviated month, day, apostrophe + 2-digit year
     private val compactMonthDatePattern = Regex(
         """(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s*(\d{1,2})[']\s*(\d{2})(?!\d)"""
+    )
+    // No-separator format: "Feb2319" → Feb 23, 2019 (abbreviated month + 2-digit day + 2-digit year, all run together)
+    private val compactMonthDayYearPattern = Regex(
+        """(?i)\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)(\d{2})(\d{2})(?!\d)"""
     )
     private val dateLabelPattern = Regex("""(?i)\b(?:date|purchase\s+date|transaction\s+date)\b""")
     private val dateNoisePattern = Regex(
@@ -143,16 +149,22 @@ class ReceiptParser @Inject constructor() {
         val candidateLines = ocrResult.blocks
             .take(8)
             .flatMap { it.lines }
-            .mapIndexedNotNull { index, line ->
+            .mapIndexedNotNull { _, line ->
                 val text = line.text.trim()
                 if (!isValidStoreNameLine(text)) return@mapIndexedNotNull null
                 StoreCandidate(
                     text = text,
                     height = line.boundingBox?.height() ?: 0,
                     confidence = line.confidence ?: 0f,
-                    order = index,
+                    order = 0,  // placeholder; re-ranked below by visual position
+                    top = line.boundingBox?.top ?: Int.MAX_VALUE,
                 )
             }
+            // Re-rank by visual (bounding box) position rather than OCR block order.
+            // ML Kit doesn't always emit blocks top-to-bottom; store headers can appear
+            // in later-indexed blocks even when they're visually at the top of the receipt.
+            .sortedBy { it.top }
+            .mapIndexed { visualRank, cand -> cand.copy(order = visualRank) }
 
         val bestCandidate = candidateLines.maxByOrNull(::scoreStoreCandidate)
         if (bestCandidate != null) {
@@ -189,6 +201,9 @@ class ReceiptParser @Inject constructor() {
         if (amountPattern.containsMatchIn(text)) return false
         // Filter lines that start with a quantity + item (menu lines like "1 Onion Naan")
         if (Regex("""^\d+\s+[A-Z]""").containsMatchIn(text) && text.length > 8) return false
+        // Filter OCR-spaced receipt labels (e.g. "SUB TO TAL :", "GRAND TO TAL")
+        val textNoSpaces = text.replace(Regex("""\s+"""), "").lowercase()
+        if (textNoSpaces.startsWith("subtotal") || textNoSpaces.startsWith("grandtotal")) return false
 
         // Filter lines that are mostly dashes/symbols (decorative separators)
         val alphaNum = text.count { it.isLetterOrDigit() }
@@ -315,10 +330,16 @@ class ReceiptParser @Inject constructor() {
 
             val sameLineMatch = amountPattern.find(totalLine.text)
             if (sameLineMatch != null) {
-                val amount = parseMilliunits(sameLineMatch.groupValues[1]) ?: continue
-                if (amount == 0L) continue // $0.00 is a column header or change-due, not a total
-                if (totalLine.text.contains("$")) confidence += 0.05f
-                return ScoredAmount(amount, confidence.coerceAtMost(1f))
+                // Only accept same-line amounts that appear AFTER the label keyword.
+                // If the amount precedes the keyword ("1.19 Total Due:"), fall through
+                // to the spatial search so we find the correct column value nearby.
+                val keywordStart = totalKeyword.find(totalLine.text)?.range?.first ?: 0
+                if (sameLineMatch.range.first >= keywordStart) {
+                    val amount = parseMilliunits(sameLineMatch.groupValues[1]) ?: continue
+                    if (amount == 0L) continue // $0.00 is a column header or change-due, not a total
+                    if (totalLine.text.contains("$")) confidence += 0.05f
+                    return ScoredAmount(amount, confidence.coerceAtMost(1f))
+                }
             }
 
             val totalBox = totalLine.boundingBox ?: continue
@@ -335,8 +356,12 @@ class ReceiptParser @Inject constructor() {
                 .filter { candidate ->
                     val box = candidate.boundingBox ?: return@filter false
                     val candidateMidY = (box.top + box.bottom) / 2
-                    // Same row: right of the label, vertically aligned
-                    val isRightOf = box.left > totalBox.right && kotlin.math.abs(candidateMidY - totalMidY) < lineHeight
+                    // Same row: right of the label, vertically aligned.
+                    // Allow candidateMidY slightly above totalBox.top (by at most lineHeight/4) to
+                    // handle sub-pixel alignment, but block amounts from a row clearly above the label
+                    // (e.g. a Tax row 27px above a Total label with lineHeight=70).
+                    val isRightOf = box.left > totalBox.right &&
+                        kotlin.math.abs(candidateMidY - totalMidY) < lineHeight
                     // Below: within 2 line-heights (not allowed for tender/card-brand labels)
                     val isBelow = !isTenderLabel &&
                         box.top >= totalBox.bottom && box.top <= totalBox.bottom + lineHeight * 2
@@ -364,7 +389,8 @@ class ReceiptParser @Inject constructor() {
             val sameRowCandidates = candidateLines.filter { candidate ->
                 val box = candidate.boundingBox!!
                 val candidateMidY = (box.top + box.bottom) / 2
-                box.left > totalBox.right && kotlin.math.abs(candidateMidY - totalMidY) < lineHeight
+                box.left > totalBox.right &&
+                    kotlin.math.abs(candidateMidY - totalMidY) < lineHeight
             }
             val nearbyAmount = (sameRowCandidates.ifEmpty { candidateLines })
                 .minByOrNull { candidate ->
@@ -441,8 +467,13 @@ class ReceiptParser @Inject constructor() {
         for ((lineIndex, line) in lines.withIndex().toList().reversed()) {
             if (!isPayableTotalLabel(line, lineIndex, totalLineCount)) continue
 
-            // Try same-line amount
+            // Try same-line amount — but only when it appears AFTER the label keyword.
+            // If the amount precedes the keyword (e.g. "1.19 Total Due:"), the layout
+            // has a prior-row value running into this label row; skip to avoid false extraction.
             val match = amountPattern.find(line) ?: continue
+            val keywordStart = totalKeyword.find(line)?.range?.first ?: 0
+            if (match.range.first < keywordStart) continue
+
             val amountLine = line
             val amountMatch = match
 
@@ -577,6 +608,13 @@ class ReceiptParser @Inject constructor() {
                         }
                     }
                 }
+                compactMonthDayYearPattern.findAll(line).forEach { match ->
+                    parseCompactMonthDate(match)?.let { date ->
+                        if (isReasonableDate(date)) {
+                            add(DateCandidate(date, scoreDateCandidate(line, lineIndex, lines)))
+                        }
+                    }
+                }
             }
         }
 
@@ -683,8 +721,12 @@ class ReceiptParser @Inject constructor() {
      * "ending in 1234", "card ...1234", VISA ****1234, etc.
      */
     internal fun extractCardLastFour(text: String): String? {
-        // Normalize spaced digits inside masked account numbers: "XXXX34 26" → "XXXX3426"
-        val normalizedText = text.replace(Regex("""([*xX]{4,}\d+)\s+(\d+)"""), "$1$2")
+        // Normalize spaced digits inside masked account numbers:
+        //   "XXXX34 26" → "XXXX3426"   (4+ mask chars followed by grouped digits)
+        //   "**07 84"   → "**0784"     (2+ mask chars followed by short digit pairs)
+        val normalizedText = text
+            .replace(Regex("""([*xX]{4,}\d+)\s+(\d+)"""), "$1$2")
+            .replace(Regex("""([*xX]{2,})(\d{1,2})\s+(\d{1,2})(?!\d)"""), "$1$2$3")
 
         val patterns = listOf(
             Regex("[*xX]{4}\\s*(\\d{4})"),
@@ -718,6 +760,7 @@ private data class StoreCandidate(
     val height: Int,
     val confidence: Float,
     val order: Int,
+    val top: Int,
 )
 
 private data class DateCandidate(

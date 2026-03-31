@@ -22,8 +22,11 @@ import javax.inject.Singleton
  *    automatically to washed-out thermal prints, shadowed areas, and fluorescent-lit counters
  *    rather than applying a fixed multiplier that may clip or under-enhance.
  *
- * Note: Laplacian sharpening was tested but regressed Date accuracy by ~5 % (ringing artefacts
- * on thin date-separator characters) despite a 1.5 % Total gain — net negative, so omitted.
+ * **Sharpening experiments (both net-negative on 450-fixture corpus):**
+ * - Laplacian sharpening (k = 0.5): Date −5 %, Total +1.5 % — ringing on thin date separators.
+ * - Unsharp mask (σ ≈ 1.2 px, amount = 0.25): Date −3.1 %, Total −0.6 % — same ringing pattern
+ *   at lower severity but still net-negative. The 5×5 Gaussian kernel narrows inter-character
+ *   gaps on dense thermal-printer fonts, confusing ML Kit's line segmentation.
  *
  * The original [Bitmap] is not recycled; callers remain responsible for its lifecycle.
  */
