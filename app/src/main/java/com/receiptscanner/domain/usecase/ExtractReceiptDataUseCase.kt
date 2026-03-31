@@ -5,6 +5,7 @@ import com.receiptscanner.data.local.UserPreferencesManager
 import com.receiptscanner.data.ocr.CloudOcrProvider
 import com.receiptscanner.data.ocr.LocalOcrProvider
 import com.receiptscanner.domain.model.ExtractedReceiptData
+import com.receiptscanner.data.ocr.EntityExtractionHelper
 import com.receiptscanner.domain.model.OcrMode
 import java.time.LocalDate
 import kotlinx.coroutines.flow.first

@@ -1,72 +1,59 @@
 package com.receiptscanner.domain.usecase
 
 import android.graphics.Bitmap
+import com.receiptscanner.data.local.UserPreferencesManager
+import com.receiptscanner.data.ocr.CloudOcrProvider
 import com.receiptscanner.data.ocr.EntityExtractionHelper
-import com.receiptscanner.data.ocr.ImagePreprocessor
-import com.receiptscanner.data.ocr.MlKitTextRecognizer
-import com.receiptscanner.data.ocr.ReceiptParser
-import com.receiptscanner.data.ocr.TextRecognitionResult
+import com.receiptscanner.data.ocr.LocalOcrProvider
 import com.receiptscanner.domain.model.ExtractedReceiptData
+import com.receiptscanner.domain.model.OcrMode
 import io.mockk.coEvery
+import io.mockk.coVerify
 import io.mockk.every
 import io.mockk.mockk
+import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import java.time.LocalDate
 
 class ExtractReceiptDataUseCaseTest {
 
-    private val textRecognizer: MlKitTextRecognizer = mockk()
-    private val receiptParser: ReceiptParser = mockk()
-    private val entityExtractor: EntityExtractionHelper = mockk()
-    private val imagePreprocessor: ImagePreprocessor = mockk()
+    private val localOcrProvider: LocalOcrProvider = mockk()
+    private val cloudOcrProvider: CloudOcrProvider = mockk()
+    private val userPreferencesManager: UserPreferencesManager = mockk()
     private val bitmap: Bitmap = mockk(relaxed = true)
-    private val processedBitmap: Bitmap = mockk(relaxed = true)
 
     private lateinit var useCase: ExtractReceiptDataUseCase
 
     @BeforeEach
     fun setUp() {
         useCase = ExtractReceiptDataUseCase(
-            textRecognizer = textRecognizer,
-            receiptParser = receiptParser,
-            entityExtractor = entityExtractor,
-            imagePreprocessor = imagePreprocessor,
+            localOcrProvider = localOcrProvider,
+            cloudOcrProvider = cloudOcrProvider,
+            userPreferencesManager = userPreferencesManager,
         )
     }
 
     @Test
-    fun `keeps parsed total when entity extractor disagrees`() = runTest {
-        val ocrResult = TextRecognitionResult(
-            fullText = "raw text",
-            blocks = emptyList(),
-        )
-        val parsed = ExtractedReceiptData(
-            storeName = "COSTGO.",
-            totalAmount = 38_270L,
-            totalConfidence = 0.2f,
-            date = LocalDate.of(2022, 11, 16),
-            cardLastFour = null,
-            rawText = ocrResult.fullText,
-        )
-
-        coEvery { imagePreprocessor.preprocess(bitmap) } returns processedBitmap
-        coEvery { textRecognizer.recognizeText(processedBitmap, 90) } returns ocrResult
-        every { receiptParser.parse(ocrResult) } returns parsed
-        coEvery { entityExtractor.extract(ocrResult.fullText) } returns EntityExtractionHelper.ExtractionResult(
-            date = LocalDate.of(2026, 3, 30),
-            totalAmount = 3_819_000L,
-            cardLastFour = null,
+    fun `delegates to local provider when OCR mode is LOCAL`() = runTest {
+        every { userPreferencesManager.ocrMode } returns flowOf(OcrMode.LOCAL)
+        coEvery { localOcrProvider.extract(bitmap, 90) } returns Result.success(
+            ExtractedReceiptData(
+                storeName = "COSTCO",
+                totalAmount = 38_270L,
+                totalConfidence = 0.9f,
+                date = LocalDate.of(2022, 11, 16),
+                cardLastFour = null,
+                rawText = "raw text",
+            )
         )
 
-        val result = useCase(bitmap, rotationDegrees = 90)
+        useCase(bitmap, rotationDegrees = 90)
 
-        assertTrue(result.isSuccess)
-        assertEquals(38_270L, result.getOrThrow().totalAmount)
-        assertEquals(0.2f, result.getOrThrow().totalConfidence)
+        coVerify(exactly = 1) { localOcrProvider.extract(bitmap, 90) }
+        coVerify(exactly = 0) { cloudOcrProvider.extract(any(), any()) }
     }
 
     @Test
