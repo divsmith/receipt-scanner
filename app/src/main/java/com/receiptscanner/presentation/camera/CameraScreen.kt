@@ -118,11 +118,8 @@ fun CameraScreen(
             if (uiState.debugOcrData != null) {
                 DebugOcrOverlay(
                     debugData = uiState.debugOcrData!!,
-                    onContinue = { viewModel.dismissDebugOverlay() },
-                    onRetake = {
-                        viewModel.dismissDebugOverlay()
-                        // Don't navigate — user stays on camera screen for a retake
-                    },
+                    onContinue = { viewModel.continueFromDebugOverlay() },
+                    onRetake = { viewModel.retakeFromDebugOverlay() },
                 )
                 return@Scaffold
             }

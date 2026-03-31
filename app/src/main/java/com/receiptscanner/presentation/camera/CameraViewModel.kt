@@ -8,6 +8,7 @@ import androidx.lifecycle.viewModelScope
 import com.receiptscanner.data.camera.CameraManager
 import com.receiptscanner.data.local.UserPreferencesManager
 import com.receiptscanner.data.ocr.DebugOcrData
+import com.receiptscanner.data.ocr.LocalOcrProvider
 import com.receiptscanner.domain.model.ExtractedReceiptData
 import com.receiptscanner.domain.model.Receipt
 import com.receiptscanner.domain.repository.ReceiptRepository
@@ -28,6 +29,7 @@ import javax.inject.Inject
 @HiltViewModel
 class CameraViewModel @Inject constructor(
     private val extractReceiptDataUseCase: ExtractReceiptDataUseCase,
+    private val localOcrProvider: LocalOcrProvider,
     private val receiptRepository: ReceiptRepository,
     private val cameraManager: CameraManager,
     private val userPreferencesManager: UserPreferencesManager,
@@ -93,9 +95,9 @@ class CameraViewModel @Inject constructor(
         val debugMode = userPreferencesManager.debugModeEnabled.first()
 
         if (debugMode) {
-            extractReceiptDataUseCase.invokeWithDebugInfo(bitmap, rotationDegrees, imagePath).fold(
-                onSuccess = { result ->
-                    saveAndNavigateOrShowDebug(result.data, imagePath, result.debugOcrData)
+            localOcrProvider.extractWithDebugInfo(bitmap, rotationDegrees, imagePath).fold(
+                onSuccess = { (data, debugData) ->
+                    saveAndNavigateOrShowDebug(data, imagePath, debugData)
                 },
                 onFailure = { e ->
                     _uiState.update { it.copy(isProcessing = false, error = e.message ?: "OCR failed") }
@@ -145,7 +147,7 @@ class CameraViewModel @Inject constructor(
         )
     }
 
-    fun dismissDebugOverlay() {
+    fun continueFromDebugOverlay() {
         val receiptId = _uiState.value.pendingReceiptId
         _uiState.update { it.copy(debugOcrData = null, pendingReceiptId = null) }
         if (receiptId != null) {
@@ -153,6 +155,10 @@ class CameraViewModel @Inject constructor(
                 _navigateToReview.emit(receiptId)
             }
         }
+    }
+
+    fun retakeFromDebugOverlay() {
+        _uiState.update { it.copy(debugOcrData = null, pendingReceiptId = null) }
     }
 
     fun clearError() {

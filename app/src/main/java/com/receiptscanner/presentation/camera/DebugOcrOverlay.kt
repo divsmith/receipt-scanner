@@ -22,6 +22,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -40,6 +41,8 @@ import com.receiptscanner.data.ocr.BoundingBox
 import com.receiptscanner.data.ocr.DebugOcrData
 import com.receiptscanner.data.ocr.FieldSource
 import com.receiptscanner.data.ocr.FieldType
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 private val fieldColors = mapOf(
     FieldType.STORE_NAME to Color(0xFF42A5F5),     // blue
@@ -64,9 +67,12 @@ fun DebugOcrOverlay(
     onRetake: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    val imageBitmap = remember(debugData.imagePath) {
-        BitmapFactory.decodeFile(debugData.imagePath)?.asImageBitmap()
+    val imageBitmapState = produceState<ImageBitmap?>(initialValue = null, debugData.imagePath) {
+        value = withContext(Dispatchers.IO) {
+            BitmapFactory.decodeFile(debugData.imagePath)?.asImageBitmap()
+        }
     }
+    val imageBitmap = imageBitmapState.value
 
     Box(
         modifier = modifier

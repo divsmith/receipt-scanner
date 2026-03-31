@@ -186,7 +186,10 @@ class SettingsViewModel @Inject constructor(
         viewModelScope.launch {
             userPreferencesManager.saveBudget(budget.id, budget.name)
             // Clear stale data from any previously selected budget
-            ynabRepository.clearAllCaches()
+            ynabRepository.clearAllCaches().onFailure { e ->
+                _uiState.update { it.copy(error = "Failed to clear cache: ${e.message}") }
+                return@launch
+            }
             _uiState.update {
                 it.copy(
                     selectedBudgetId = budget.id,
