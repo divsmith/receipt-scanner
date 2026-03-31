@@ -17,8 +17,8 @@ internal fun mergeParsedAndEntityData(
 
     // ML Kit entity extraction sometimes returns today's date as a fallback when it cannot
     // resolve a date entity (e.g. numeric codes that loosely resemble dates). Reject any
-    // entity-extracted date that is in the future — receipt dates are always in the past.
-    val safeEntityDate = entities.date?.takeIf { it.isBefore(LocalDate.now()) }
+    // entity-extracted date that is in the future — receipt dates are always today or earlier.
+    val safeEntityDate = entities.date?.takeIf { !it.isAfter(LocalDate.now()) }
 
     return parsed.copy(
         date = parsed.date ?: safeEntityDate,

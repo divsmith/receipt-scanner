@@ -22,11 +22,14 @@ import javax.inject.Singleton
  *    automatically to washed-out thermal prints, shadowed areas, and fluorescent-lit counters
  *    rather than applying a fixed multiplier that may clip or under-enhance.
  *
- * **Sharpening experiments (both net-negative on 450-fixture corpus):**
+ * **Preprocessing experiments (all net-negative on 450-fixture corpus):**
  * - Laplacian sharpening (k = 0.5): Date −5 %, Total +1.5 % — ringing on thin date separators.
  * - Unsharp mask (σ ≈ 1.2 px, amount = 0.25): Date −3.1 %, Total −0.6 % — same ringing pattern
  *   at lower severity but still net-negative. The 5×5 Gaussian kernel narrows inter-character
  *   gaps on dense thermal-printer fonts, confusing ML Kit's line segmentation.
+ * - 3×3 Median filter: Date −4.0 %, Card −1.6 %, Exact −2.7 % — removes fine detail that ML Kit
+ *   relies on for small characters (dates, card digits). Salt-and-pepper noise is rare enough in
+ *   the corpus that the cure is worse than the disease.
  *
  * The original [Bitmap] is not recycled; callers remain responsible for its lifecycle.
  */
@@ -135,4 +138,5 @@ class ImagePreprocessor @Inject constructor() {
         result.setPixels(output, 0, width, 0, 0, width, height)
         return result
     }
+
 }

@@ -37,6 +37,8 @@ class ReceiptParser @Inject constructor() {
         """(?i)(?<!\w)(?:grand\s*)?total(?!\w)|amount\s*due|balance\s*due|net\s*(?:total|amount|due)|pay\s*this\s*amount"""
     )
 
+    // Matches dollar amounts with decimal cents: "$45.67", "1,234.56", "80. 45" (OCR-split),
+    // "146,73" (European comma-decimal). Used for general amount detection and line filtering.
     private val amountPattern = Regex("""\$?\s*([\d,]+\.\s*\d{2}|\d+,\d{2})(?!\d)""")
     private val payableTotalLabelPattern = Regex(
         """(?i)^(?:grand\s+total|total(?:\s+(?:amount|due|purchase|sale))?|amount\s+due|balance(?:\s+due)?|balnee\s+due|balaance\s+due|bil[l1]\s+total|net\s+(?:total|amount|due)|pay\s+this\s+amount)(?:\s*\(?(?:incl(?:uded|\.?)?|including)\s+(?:(?:sales\s+)?tax|vat|gst|hst)\)?)?$"""
@@ -369,14 +371,18 @@ class ReceiptParser @Inject constructor() {
                     if (!amountPattern.containsMatchIn(candidate.text)) return@filter false
                     // Exclude amounts where a tender/payment label sits in the same row to the
                     // left of the amount (e.g. "CASH $40.00", "VISA TEND $12.68" rows).
-                    // Applied to both below-candidates and same-row candidates.
-                    val candidateMidY2 = (box.top + box.bottom) / 2
+                    // Uses bounding box vertical overlap (>50% of the smaller box) instead of
+                    // midY distance so that labels on the next row of a tightly packed receipt
+                    // don't accidentally exclude the real total amount.
                     val hasTenderLabel = allLines.any { labelLine ->
                         if (labelLine === totalLine) return@any false
                         val labelBox = labelLine.boundingBox ?: return@any false
-                        val labelMidY = (labelBox.top + labelBox.bottom) / 2
+                        val overlapTop = maxOf(labelBox.top, box.top)
+                        val overlapBot = minOf(labelBox.bottom, box.bottom)
+                        val overlap = maxOf(0, overlapBot - overlapTop)
+                        val minH = minOf(labelBox.height(), box.height()).coerceAtLeast(1)
                         labelBox.right <= box.left &&
-                            kotlin.math.abs(labelMidY - candidateMidY2) < lineHeight &&
+                            overlap > minH / 2 &&
                             (tenderLinePattern.containsMatchIn(labelLine.text) ||
                                 containsNegativeKeyword(labelLine.text))
                     }
@@ -393,15 +399,18 @@ class ReceiptParser @Inject constructor() {
                     kotlin.math.abs(candidateMidY - totalMidY) < lineHeight
             }
             val nearbyAmount = if (sameRowCandidates.isNotEmpty()) {
-                // Among same-row amounts, pick the one vertically closest to the label midpoint.
-                // dx+dy was incorrect: when two amounts are both "right of" the label (equal dx=0),
-                // the one with slightly less horizontal distance would win regardless of whether
-                // it belongs to the correct row (e.g. a tax amount 80px above the label midpoint
-                // could beat the actual total that is 5px away vertically).
-                sameRowCandidates.minByOrNull { candidate ->
+                // Among same-row amounts, rank by vertical overlap with the label bounding box.
+                // This prevents a tax amount sitting just above the TOTAL label from being picked
+                // over the real total that shares the same vertical band. Fall back to midY
+                // distance when overlaps are equal (e.g. both candidates fully overlap).
+                sameRowCandidates.maxByOrNull { candidate ->
                     val box = candidate.boundingBox!!
+                    val overlapTop = maxOf(box.top, totalBox.top)
+                    val overlapBot = minOf(box.bottom, totalBox.bottom)
+                    val overlap = maxOf(0, overlapBot - overlapTop)
+                    // Primary: maximize overlap; secondary: minimize midY distance (scaled small)
                     val candidateMidY = (box.top + box.bottom) / 2
-                    kotlin.math.abs(candidateMidY - totalMidY)
+                    overlap * 1000 - kotlin.math.abs(candidateMidY - totalMidY)
                 }
             } else {
                 candidateLines.minByOrNull { candidate ->
@@ -491,9 +500,8 @@ class ReceiptParser @Inject constructor() {
             if (match.range.first < keywordStart) continue
 
             val amountLine = line
-            val amountMatch = match
 
-            val amountStr = normalizeDecimalSeparator(amountMatch.groupValues[1])
+            val amountStr = normalizeDecimalSeparator(match.groupValues[1])
             val amount = try {
                 MilliunitConverter.dollarsToMilliunits(BigDecimal(amountStr))
             } catch (e: NumberFormatException) {
@@ -579,6 +587,8 @@ class ReceiptParser @Inject constructor() {
      * - Letter 'O' → digit '0' when adjacent to digits or immediately after a 3-letter month
      *   abbreviation (e.g. "O3/14" → "03/14", "APRO4" → "APR04").
      * - Lowercase 'l' → '/' when flanked by digit groups (e.g. "14l2015" → "14/2015").
+     * - 'I' or '|' between digit groups → '/' (e.g. "14I2015" → "14/2015").
+     * - 'S' at start of digit group → '5' (e.g. "S/21/2019" → "5/21/2019").
      */
     private fun normalizeDateLine(line: String): String {
         return line
@@ -590,6 +600,10 @@ class ReceiptParser @Inject constructor() {
             .replace(Regex("""(?<=\d)O(?=\d)"""), "0")
             // 'l' between digit groups — date separator confusion (e.g. "14l2015" → "14/2015")
             .replace(Regex("""(?<=\d)l(?=\d)"""), "/")
+            // 'I' or '|' between digit groups — separator confusion (e.g. "14I2015" → "14/2015")
+            .replace(Regex("""(?<=\d)[I|](?=\d)"""), "/")
+            // 'S' at word boundary before slash-digit — e.g. "S/21/2019" → "5/21/2019"
+            .replace(Regex("""\bS(?=[/\-.]\d)"""), "5")
     }
 
     /**
@@ -696,12 +710,19 @@ class ReceiptParser @Inject constructor() {
         }
     }
 
+    /** Converts a 2-digit year to a 4-digit year. Years 0-49 → 2000-2049, 50-99 → 1950-1999. */
+    private fun normalize2DigitYear(rawYear: Int): Int = when {
+        rawYear >= 100 -> rawYear
+        rawYear < 50 -> 2000 + rawYear
+        else -> 1900 + rawYear
+    }
+
     private fun parseMonthNameDate(match: MatchResult): LocalDate? {
         return try {
             val monthStr = match.groupValues[1]
             val day = match.groupValues[2].toInt()
             val rawYear = match.groupValues[3].toInt()
-            val year = if (rawYear < 100) 2000 + rawYear else rawYear
+            val year = normalize2DigitYear(rawYear)
             val month = parseMonthName(monthStr) ?: return null
             LocalDate.of(year, month, day)
         } catch (_: Exception) {
@@ -714,7 +735,7 @@ class ReceiptParser @Inject constructor() {
             val day = match.groupValues[1].toInt()
             val monthStr = match.groupValues[2]
             val rawYear = match.groupValues[3].toInt()
-            val year = if (rawYear < 100) 2000 + rawYear else rawYear
+            val year = normalize2DigitYear(rawYear)
             val month = parseMonthName(monthStr) ?: return null
             LocalDate.of(year, month, day)
         } catch (_: Exception) {
@@ -728,15 +749,19 @@ class ReceiptParser @Inject constructor() {
         if (line.contains("time", ignoreCase = true)) score += 10
         // AM/PM clock time on the same line (e.g. "02/10/2021 07:10 PM") is a strong date signal
         if (amPmTimePattern.containsMatchIn(line)) score += 10
+        // 24-hour clock time on the same line (e.g. "14:32", "19:45:02")
+        if (Regex("""\b([01]\d|2[0-3]):[0-5]\d(:[0-5]\d)?\b""").containsMatchIn(line)) score += 8
         if (dateNoisePattern.containsMatchIn(line)) score -= 80
         // Adjacent "Date" label: receipts often print the label on the line before or after the value
         val prevLine = if (lineIndex > 0) lines[lineIndex - 1] else ""
         val nextLine = if (lineIndex < lines.size - 1) lines[lineIndex + 1] else ""
         if (dateLabelPattern.containsMatchIn(prevLine) || dateLabelPattern.containsMatchIn(nextLine)) score += 60
-        // Mild preference for dates near top or bottom of receipt (header/footer)
+        // Mild preference for dates near top of receipt (header) or bottom (footer)
+        val totalLines = lines.size.coerceAtLeast(1)
+        val lineFromBottom = totalLines - lineIndex
         score += when {
-            lineIndex < 5 -> 15
-            lineIndex < 15 -> 5
+            lineIndex < 5 || lineFromBottom <= 5 -> 15
+            lineIndex < 15 || lineFromBottom <= 15 -> 5
             else -> 3
         }
         return score
@@ -747,7 +772,7 @@ class ReceiptParser @Inject constructor() {
             val month = parseMonthName(match.groupValues[1]) ?: return null
             val day = match.groupValues[2].toInt()
             val shortYear = match.groupValues[3].toInt()
-            val year = if (shortYear >= 100) shortYear else 2000 + shortYear
+            val year = normalize2DigitYear(shortYear)
             LocalDate.of(year, month, day)
         } catch (_: Exception) {
             null

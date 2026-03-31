@@ -86,7 +86,10 @@ class OcrFixtureRegressionTest {
 
         val dumpOcrResults = arguments.getString("ocrFixture.dumpOcrResults") == "true"
         if (dumpOcrResults) {
-            val dumpDir = File(targetContext.getExternalFilesDir(null), "ocr-cache").apply { mkdirs() }
+            // Write to /sdcard/Download/ so files survive app uninstall (getExternalFilesDir
+            // is scoped and deleted on uninstall, which connectedAndroidTest triggers).
+            val dumpDir = File(android.os.Environment.getExternalStoragePublicDirectory(
+                android.os.Environment.DIRECTORY_DOWNLOADS), "ocr-cache").apply { mkdirs() }
             runs.forEach { run ->
                 val json = OcrResultSerializer.toJson(run.trace.ocrResult)
                 File(dumpDir, "${run.fixture.imageName}.ocr.json").writeText(json)
