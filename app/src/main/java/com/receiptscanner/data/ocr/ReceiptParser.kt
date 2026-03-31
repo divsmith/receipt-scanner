@@ -12,16 +12,107 @@ import javax.inject.Singleton
 @Singleton
 class ReceiptParser @Inject constructor() {
 
+    /**
+     * Keywords that indicate a line is promotional, informational, or otherwise NOT a transaction
+     * total. Matched case-insensitively anywhere in the line text.
+     */
+    private val negativeKeywords = listOf(
+        "savings", "saved", "you saved", "annual savings",
+        "discount", "coupon", "reward", "loyalty", "points",
+        "change due", "change", "cash back", "cashback",
+        "credit applied", "refund", "void",
+        "tip suggestion", "suggested tip",
+    )
+
+    private val negativePattern = Regex(
+        negativeKeywords.joinToString("|") { Regex.escape(it) },
+        RegexOption.IGNORE_CASE,
+    )
+
+    /**
+     * Total keyword pattern with word boundaries to avoid matching "SUBTOTAL".
+     * Uses negative lookbehind/lookahead to enforce whole-word matching on "total".
+     */
+    private val totalKeyword = Regex(
+        """(?i)(?<!\w)(?:grand\s*)?total(?!\w)|amount\s*due|balance\s*due|net\s*(?:total|amount|due)|pay\s*this\s*amount"""
+    )
+
+    // Matches dollar amounts with decimal cents: "$45.67", "1,234.56", "80. 45" (OCR-split),
+    // "146,73" (European comma-decimal). Used for general amount detection and line filtering.
+    private val amountPattern = Regex("""\$?\s*([\d,]+\.\s*\d{2}|\d+,\d{2})(?!\d)""")
+    private val payableTotalLabelPattern = Regex(
+        """(?i)^(?:grand\s+total|total(?:\s+(?:amount|due|purchase|sale))?|amount\s+due|balance(?:\s+due)?|balnee\s+due|balaance\s+due|bil[l1]\s+total|net\s+(?:total|amount|due)|pay\s+this\s+amount)(?:\s*\(?(?:incl(?:uded|\.?)?|including)\s+(?:(?:sales\s+)?tax|vat|gst|hst)\)?)?$"""
+    )
+    private val providerBrandLabelPattern = Regex("""(?i)^(?:visa|mastercard|mc|amex|discover)$""")
+    private val guardedTenderLabelPattern = Regex("""(?i)^(?:debit|credit)$""")
+    private val tenderLinePattern = Regex(
+        """(?i)\b(cash|visa|mastercard|mc|amex|discover|debit|credit|tender|payment|check\b|auth\s*#?|approval|approved|balance\s+due|amount\s+tend)"""
+    )
+    private val taxOnlyLabelPattern = Regex("""(?i)^(?:total\s+)?(?:(?:sales\s+)?tax|vat|gst|hst)$""")
+    private val storeMetadataPattern = Regex(
+        """(?i)(cashier|date\b|time\b|reg\b|trans\b|transaction|subtotal|total\b|tax\b|sale\b|purchase|auth\b|invoice|member#?|entry method|trace number|signature|approved|debit\b|credit\b|visa\b|mastercard\b|amex\b|discover\b|tender\b|tend\b|payment\b)"""
+    )
+    private val storeBannerPattern = Regex(
+        """(?i)(feedback|survey|respond\s+by|expir(?:es|ing)|points?\s+expir|chance|to\s+win|see\s+back|save\s+money|live\s+better|thank\s+you|tell\s+us|what\s+you\s+think|join\s+us|bottomless|brunch|happy\s+hour|special\s+offer|free\s+wifi|scan\s+(?:this|here|to)|download\s+our\s+app)"""
+    )
+    private val phonePattern = Regex("""\b\d{3}[-.\s]?\d{3}[-.\s]?\d{4}\b""")
+    private val storeHeaderNoisePattern = Regex(
+        """(?i)^(receipt|transaction|welcome|thank\s*you|thanks|store\s*#\d*|address|phone|tel\s*:|fax\s*:|www\.|http|printed\s+by|college\s+of|university\s+of|institute\s+of)"""
+    )
+    private val storeStaffPattern = Regex(
+        """(?i)(^server\b|^guest\s*:?\s*\d|^guests?\s*:?\s*\d|^guest\s+check\b|^table\b|^tab\s+le\b|^ticket\b|^order\s*:?\s*#?\d|^order\s*#\s*:|^customer\s+name\b|^host\b|^entered\s+by|^reprint|^paid\b|^check\s*#|^cashier\s*:|^mgr\s*:|^manager\b|^items?\s+sold|^see\s+back\s+of\s+receipt|^your\s+chance|^to\s+win\b|^ID\s*[\$#:]|^welcome\b|^join\s+us\b|^qty\b)"""
+    )
+    private val streetAddressPattern = Regex(
+        """(?i)\b\d+\s+(?:[a-z0-9.'-]+\s+){0,4}(?:st|street|ave|avenida|avenue|rd|road|blvd|boulevard|dr|drive|ln|lane|way|hwy|highway|pkwy|parkway|center|centre|ctr|plaza|plz)\b"""
+    )
+    private val cityStateZipPattern = Regex(
+        """(?i)\b[A-Z][A-Z\s.'-]*,\s*[A-Z]{2}\s+\d{5}(?:-\d{4})?\b"""
+    )
+    private val storeStopWords = setOf(
+        "a", "an", "and", "back", "for", "of", "on", "or", "our", "please",
+        "receipt", "recelpt", "see", "tell", "the", "think", "to", "us", "what", "win", "you", "your",
+    )
+    private val numericDateWithYearPattern = Regex("""(\d{1,2})[/\-.](\d{1,2})[/\-.](\d{4})""")
+    private val numericDateWithShortYearPattern = Regex("""(\d{1,2})[/\-.](\d{1,2})[/\-.](\d{2})(?!\d)""")
+    private val isoDatePattern = Regex("""(\d{4})-(\d{2})-(\d{2})""")
+    // Separators are optional between month-name and day (handles "Jun22 18"),
+    // and between the optional comma and year (handles "JANUARY 30,2018").
+    // (?!\d) after day prevents "January 2014" from matching day=20, year=14.
+    // (?![:\d]) after year prevents time digits from being mistaken for a year ("21:31").
+    // Year accepts 2–4 digits; 2-digit years are normalized to 20xx in parseMonthNameDate.
+    private val monthNameDatePattern = Regex(
+        """(?i)(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)[/\-\s]*(\d{1,2})(?!\d),?[/\-\s]*(\d{2,4})(?![:\d])"""
+    )
+    // Separator between day and month-name is optional (handles "16Feb 19", "25AUG 17").
+    // (?![:\d]) after year prevents time digits ("21:31") from being mistaken for a year.
+    // Year accepts 2–4 digits; 2-digit years are normalized in parseDayFirstMonthNameDate.
+    private val dayFirstMonthNamePattern = Regex(
+        """(?i)\b(\d{1,2})[/\-\s]*(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)[/\-\s]+(\d{2,4})(?![:\d])"""
+    )
+    // Compact format: "Jul15'17" or "Jul 15'17" — abbreviated month, day, apostrophe + 2-digit year
+    private val compactMonthDatePattern = Regex(
+        """(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s*(\d{1,2})[']\s*(\d{2})(?!\d)"""
+    )
+    // No-separator format: "Feb2319" → Feb 23, 2019 (abbreviated month + 2-digit day + 2-digit year, all run together)
+    private val compactMonthDayYearPattern = Regex(
+        """(?i)\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)(\d{2})(\d{2})(?!\d)"""
+    )
+    private val dateLabelPattern = Regex("""(?i)\b(?:date|purchase\s+date|transaction\s+date)\b""")
+    private val dateNoisePattern = Regex(
+        """(?i)(feedback|survey|respond\s+by|expir(?:es|ing)|points?\s+expir|offer\s+ends|valid\s+through|reward|on\s+or\s+after|purchases?\s+made\s+(?:on|before|after)|returns?\s+(?:only|are|will)|for\s+returns?)"""
+    )
+    private val amPmTimePattern = Regex("""\d{1,2}:\d{2}(?::\d{2})?\s*(?:AM|PM)""", RegexOption.IGNORE_CASE)
+
     fun parse(ocrResult: TextRecognitionResult): ExtractedReceiptData {
         val storeName = extractStoreName(ocrResult)
-        val totalAmount = extractTotalAmountSpatially(ocrResult.blocks)
-            ?: extractTotalAmount(ocrResult.fullText)
+        val totalResult = extractTotalWithConfidence(ocrResult)
         val date = extractDate(ocrResult.fullText)
         val cardLastFour = extractCardLastFour(ocrResult.fullText)
 
         return ExtractedReceiptData(
             storeName = storeName,
-            totalAmount = totalAmount,
+            totalAmount = totalResult?.amount,
+            totalConfidence = totalResult?.confidence ?: 0f,
             date = date,
             cardLastFour = cardLastFour,
             rawText = ocrResult.fullText,
@@ -29,107 +120,316 @@ class ReceiptParser @Inject constructor() {
     }
 
     /**
+     * Master total extraction that tries spatial analysis first, then text-based keyword search,
+     * then a context-aware fallback. Returns the best candidate with a confidence score.
+     */
+    internal fun extractTotalWithConfidence(ocrResult: TextRecognitionResult): ScoredAmount? {
+        val allLines = ocrResult.blocks.flatMap { it.lines }
+        val totalLineCount = allLines.size
+
+        // 1. Try spatial extraction (highest confidence source)
+        val spatialResult = extractTotalAmountSpatially(ocrResult.blocks)
+        if (spatialResult != null) return spatialResult
+
+        // 2. Try keyword-based text extraction
+        val textResult = extractTotalAmountFromText(ocrResult.fullText, totalLineCount)
+        if (textResult != null) return textResult
+
+        // 3. Context-aware fallback (lower confidence)
+        return extractFallbackAmount(ocrResult)
+    }
+
+    /**
      * Extract store name using spatial analysis. Prioritises the line with the tallest bounding
-     * box (largest rendered font) in the first few blocks — that line is almost always the store
-     * header/logo text. Falls back to the first meaningful text line if no bounding boxes are
-     * available (e.g., in unit tests).
+     * box (largest rendered font) in the first several blocks — that line is almost always the
+     * store header/logo text. Falls back to the first meaningful text line if no bounding boxes
+     * are available (e.g., in unit tests).
      */
     internal fun extractStoreName(ocrResult: TextRecognitionResult): String? {
         if (ocrResult.blocks.isEmpty()) return null
 
-        val candidateBlocks = ocrResult.blocks.take(3)
-
-        // Collect all candidate lines with their bounding-box heights.
-        val linesWithHeight = candidateBlocks
+        val candidateLines = ocrResult.blocks
+            .take(8)
             .flatMap { it.lines }
-            .mapNotNull { line ->
+            .mapIndexedNotNull { _, line ->
                 val text = line.text.trim()
-                if (!isValidStoreNameLine(text)) return@mapNotNull null
-                val height = line.boundingBox?.height() ?: 0
-                Pair(text, height)
+                if (!isValidStoreNameLine(text)) return@mapIndexedNotNull null
+                StoreCandidate(
+                    text = text,
+                    height = line.boundingBox?.height() ?: 0,
+                    confidence = line.confidence ?: 0f,
+                    order = 0,  // placeholder; re-ranked below by visual position
+                    top = line.boundingBox?.top ?: Int.MAX_VALUE,
+                )
             }
+            // Re-rank by visual (bounding box) position rather than OCR block order.
+            // ML Kit doesn't always emit blocks top-to-bottom; store headers can appear
+            // in later-indexed blocks even when they're visually at the top of the receipt.
+            .sortedBy { it.top }
+            .mapIndexed { visualRank, cand -> cand.copy(order = visualRank) }
 
-        // Prefer the tallest line (largest font = most prominent text = store name).
-        val byHeight = linesWithHeight.maxByOrNull { it.second }
-        if (byHeight != null && byHeight.second > 0) {
-            return cleanStoreName(byHeight.first)
+        val bestCandidate = candidateLines.maxByOrNull(::scoreStoreCandidate)
+        if (bestCandidate != null) {
+            return cleanStoreName(bestCandidate.text)
         }
 
-        // No bounding boxes — fall back to the first valid line in the first 3 blocks.
-        for (block in candidateBlocks) {
-            val firstLine = block.lines.firstOrNull()?.text?.trim() ?: continue
-            if (!isValidStoreNameLine(firstLine)) continue
-            return cleanStoreName(firstLine)
-        }
-
-        return ocrResult.blocks.firstOrNull()?.lines?.firstOrNull()?.text?.trim()
+        return ocrResult.blocks
+            .asSequence()
+            .flatMap { it.lines.asSequence() }
+            .map { it.text.trim() }
+            .firstOrNull { it.isNotEmpty() && it.length >= 3 }
     }
 
     /** Returns true if the line is a plausible store-name candidate (not noise/header text). */
     private fun isValidStoreNameLine(text: String): Boolean {
         if (text.length < 3) return false
         if (text.all { it.isDigit() || it == '-' || it == '/' || it == ' ' }) return false
-        if (text.matches(Regex("""(?i)(receipt|transaction|welcome|thank\s*you|thanks|store\s*#\d*|address|phone|tel|www\.|http).*"""))) return false
+        if (streetAddressPattern.containsMatchIn(text)) return false
+        if (cityStateZipPattern.containsMatchIn(text)) return false
+        if (phonePattern.containsMatchIn(text)) return false
+        if (storeHeaderNoisePattern.containsMatchIn(text)) return false
+        if (storeStaffPattern.containsMatchIn(text)) return false
+        if (storeMetadataPattern.containsMatchIn(text)) return false
+        if (storeBannerPattern.containsMatchIn(text)) return false
+        // Filter lines that start with "email" or "e-mail" label (e.g. "email : bergspar@telkomsa.net")
+        if (Regex("""(?i)^\s*e[- ]?mail\s*[:\s]""").containsMatchIn(text)) return false
+        // Filter email addresses (handles cases even without a label prefix)
+        if (Regex("""[\w.+-]+@[\w.-]+\.\w{2,}""").containsMatchIn(text)) return false
+        // Filter lines containing web domains (e.g. "walmart.com", "TractorSupply.com")
+        if (Regex("""(?i)\b\w{3,}\.(?:com|net|org|co|io|gov)\b""").containsMatchIn(text)) return false
+        // Filter shopping-center name lines (e.g. "THE BRICKYARD SHOP. CNTR")
+        if (Regex("""(?i)\bshop(?:ping)?\s*\.?\s*(?:ctr|cntr|center|centre)\b""").containsMatchIn(text)) return false
+        // Filter line items: lines with dollar amounts (e.g., "KIRKLAND DETERGENT $18.99")
+        if (amountPattern.containsMatchIn(text)) return false
+        // Filter lines that start with a quantity + item (menu lines like "1 Onion Naan")
+        if (Regex("""^\d+\s+[A-Z]""").containsMatchIn(text) && text.length > 8) return false
+        // Filter OCR-spaced receipt labels (e.g. "SUB TO TAL :", "GRAND TO TAL")
+        val textNoSpaces = text.replace(Regex("""\s+"""), "").lowercase()
+        if (textNoSpaces.startsWith("subtotal") || textNoSpaces.startsWith("grandtotal")) return false
+
+        // Filter lines that are mostly dashes/symbols (decorative separators)
+        val alphaNum = text.count { it.isLetterOrDigit() }
+        if (alphaNum > 0 && text.length > 5 && alphaNum.toFloat() / text.length < 0.4f) return false
+
+        val normalizedText = stripStoreNumberSuffix(text)
+        val words = normalizedText.split(Regex("""\s+""")).filter { it.isNotBlank() }
+        val stopWordCount = words.count { it.lowercase() in storeStopWords }
+        if (words.size >= 4 && stopWordCount * 2 >= words.size) return false
+
+        val letters = normalizedText.count { it.isLetter() }
+        val digits = normalizedText.count { it.isDigit() }
+        if (letters > 0 && digits > 0 && digits * 2 >= letters) return false
         return true
+    }
+
+    private fun scoreStoreCandidate(candidate: StoreCandidate): Int {
+        val normalizedText = stripStoreNumberSuffix(candidate.text)
+        val words = normalizedText.split(Regex("""\s+""")).filter { it.isNotBlank() }
+        val letters = normalizedText.count { it.isLetter() }
+        val digits = normalizedText.count { it.isDigit() }
+        val stopWordCount = words.count { it.lowercase() in storeStopWords }
+
+        var score = 0
+
+        // Height bonus: capped to prevent tall non-store lines from dominating
+        score += minOf(candidate.height, 40)
+
+        // Position is the strongest signal: store names are near the top
+        score += when {
+            candidate.order == 0 -> 30
+            candidate.order == 1 -> 25
+            candidate.order <= 3 -> 18
+            candidate.order <= 6 -> 10
+            candidate.order <= 10 -> 4
+            else -> 0
+        }
+
+        // Word count: use meaningful words (3+ chars) so OCR noise fragments like "ky", "otl"
+        // don't inflate the count and penalise a real store name ("Walmart ky 2, otl" → 1 real word)
+        val meaningfulWords = words.filter { w -> w.any { it.isLetter() } && w.count { it.isLetter() } >= 3 }
+        score += when {
+            meaningfulWords.size in 1..3 -> 15
+            meaningfulWords.size in 4..5 -> 8
+            else -> -15
+        }
+
+        // Penalize digit-heavy content
+        if (digits == 0) score += 10 else score -= digits * 3
+
+        // Meaningful words bonus
+        if (letters > 0 && stopWordCount <= 1) score += 8
+        if (words.size >= 4 && stopWordCount * 2 >= words.size) score -= 25
+
+        // OCR confidence: low confidence lines are less reliable
+        if (candidate.confidence < 0.40f) score -= 20
+        else if (candidate.confidence >= 0.75f) score += 5
+
+        // Penalize very short text (likely OCR fragments)
+        if (letters <= 3) score -= 15
+
+        // Penalize lines that look like they contain a date/time
+        if (Regex("""\d{1,2}[/\-.]\d{1,2}[/\-.]\d{2,4}""").containsMatchIn(candidate.text)) score -= 20
+        if (Regex("""\d{1,2}:\d{2}""").containsMatchIn(candidate.text)) score -= 15
+
+        return score
+    }
+
+    private fun stripStoreNumberSuffix(text: String): String {
+        return text
+            .replace(Regex("""\s*#\s*\d+\b"""), "")
+            .replace(Regex("""\b(?:store|loc(?:ation)?)\s*#?\d+\b""", RegexOption.IGNORE_CASE), "")
+            .trim()
     }
 
     private fun cleanStoreName(raw: String): String {
         val cleaned = raw
-            .replace(Regex("#\\d+"), "")
-            .replace(Regex("\\bSTORE\\b", RegexOption.IGNORE_CASE), "")
-            .replace(Regex("\\bLOC(ATION)?\\b", RegexOption.IGNORE_CASE), "")
+            .replace(Regex("""\s*#\s*\d+\b"""), "")
+            // Only strip "STORE" when it's followed by a number/hash (e.g., "STORE #123")
+            .replace(Regex("\\bSTORE\\s*#?\\d+", RegexOption.IGNORE_CASE), "")
+            .replace(Regex("\\bLOC(ATION)?\\s*#?\\d+", RegexOption.IGNORE_CASE), "")
             .trim()
             .replace(Regex("\\s+"), " ")
         return cleaned.ifEmpty { raw.trim() }
     }
 
+    /** Returns true if the line text contains a negative/promotional keyword. */
+    internal fun containsNegativeKeyword(text: String): Boolean {
+        return negativePattern.containsMatchIn(text)
+    }
+
     /**
-     * Spatial total extraction: finds lines containing a TOTAL keyword, then searches nearby
-     * lines (same row or immediately below, using bounding box coordinates) for a dollar amount.
-     * This avoids picking up sub-totals that appear earlier in the receipt.
-     *
-     * Returns null if no spatial match is found; the caller should then fall back to
-     * [extractTotalAmount].
+     * Spatial total extraction: finds payable-total label lines, then searches nearby lines
+     * (same row or immediately below, using bounding box coordinates) for a dollar amount.
+     * Lines containing negative keywords are excluded.
      */
-    internal fun extractTotalAmountSpatially(blocks: List<TextBlock>): Long? {
+    internal fun extractTotalAmountSpatially(blocks: List<TextBlock>): ScoredAmount? {
         val allLines = blocks.flatMap { it.lines }
         if (allLines.all { it.boundingBox == null }) return null
 
-        val totalKeyword = Regex("""(?i)(?:grand\s*)?total|amount\s*due|balance\s*due""")
-        val amountPattern = Regex("""\$?\s*([\d,]+\.\d{2})""")
+        val totalLineCount = allLines.size
 
-        // Find all lines that contain a total keyword (search from the bottom for the final total).
-        val totalLines = allLines.filter { totalKeyword.containsMatchIn(it.text) }.reversed()
+        for ((lineIndex, totalLine) in allLines.withIndex().toList().reversed()) {
+            if (!isPayableTotalLabel(totalLine.text, lineIndex, totalLineCount)) continue
 
-        for (totalLine in totalLines) {
-            // 1. Check if the total amount is on the same line as the keyword.
-            val sameLineMatch = amountPattern.find(totalLine.text)
-            if (sameLineMatch != null) {
-                return parseMilliunits(sameLineMatch.groupValues[1])
+            var confidence = 0.40f // base keyword match
+
+            // Position bonus: bottom third of receipt
+            if (totalLineCount > 0 && lineIndex >= totalLineCount * 2 / 3) {
+                confidence += 0.15f
+            } else if (totalLineCount > 0 && lineIndex >= totalLineCount / 2) {
+                confidence += 0.05f
             }
 
-            // 2. Look for an amount on a nearby line (to the right or directly below).
+            // "GRAND" prefix bonus
+            if (totalLine.text.contains("grand", ignoreCase = true)) {
+                confidence += 0.10f
+            }
+
+            // OCR confidence bonus
+            if ((totalLine.confidence ?: 0f) >= 0.85f) {
+                confidence += 0.10f
+            }
+
+            val sameLineMatch = amountPattern.find(totalLine.text)
+            if (sameLineMatch != null) {
+                // Only accept same-line amounts that appear AFTER the label keyword.
+                // If the amount precedes the keyword ("1.19 Total Due:"), fall through
+                // to the spatial search so we find the correct column value nearby.
+                val keywordStart = totalKeyword.find(totalLine.text)?.range?.first ?: 0
+                if (sameLineMatch.range.first >= keywordStart) {
+                    val amount = parseMilliunits(sameLineMatch.groupValues[1]) ?: continue
+                    if (amount == 0L) continue // $0.00 is a column header or change-due, not a total
+                    if (totalLine.text.contains("$")) confidence += 0.05f
+                    return ScoredAmount(amount, confidence.coerceAtMost(1f))
+                }
+            }
+
             val totalBox = totalLine.boundingBox ?: continue
             val totalMidY = (totalBox.top + totalBox.bottom) / 2
+            val lineHeight = totalBox.height().coerceAtLeast(1)
 
-            val nearbyAmount = allLines
+            // Card-brand / tender labels (Visa, Debit, etc.) only pair with amounts on the same row.
+            // Allowing isBelow would pick up CHANGE DUE amounts that sit below a tender row.
+            val labelNorm = normalizedLabelText(totalLine.text)
+            val isTenderLabel = providerBrandLabelPattern.matches(labelNorm) ||
+                guardedTenderLabelPattern.matches(labelNorm)
+
+            val candidateLines = allLines
                 .filter { candidate ->
                     val box = candidate.boundingBox ?: return@filter false
                     val candidateMidY = (box.top + box.bottom) / 2
-                    val isRightOf = box.left > totalBox.right && kotlin.math.abs(candidateMidY - totalMidY) < totalBox.height()
-                    val isBelow = box.top >= totalBox.bottom && box.top <= totalBox.bottom + totalBox.height() * 2
-                    (isRightOf || isBelow) && amountPattern.containsMatchIn(candidate.text)
+                    // Same row: right of the label, vertically aligned.
+                    // Allow candidateMidY slightly above totalBox.top (by at most lineHeight/4) to
+                    // handle sub-pixel alignment, but block amounts from a row clearly above the label
+                    // (e.g. a Tax row 27px above a Total label with lineHeight=70).
+                    val isRightOf = box.left > totalBox.right &&
+                        kotlin.math.abs(candidateMidY - totalMidY) < lineHeight
+                    // Below: within 2 line-heights (not allowed for tender/card-brand labels)
+                    val isBelow = !isTenderLabel &&
+                        box.top >= totalBox.bottom && box.top <= totalBox.bottom + lineHeight * 2
+                    if (!(isRightOf || isBelow)) return@filter false
+                    if (!amountPattern.containsMatchIn(candidate.text)) return@filter false
+                    // Exclude amounts where a tender/payment label sits in the same row to the
+                    // left of the amount (e.g. "CASH $40.00", "VISA TEND $12.68" rows).
+                    // Uses bounding box vertical overlap (>50% of the smaller box) instead of
+                    // midY distance so that labels on the next row of a tightly packed receipt
+                    // don't accidentally exclude the real total amount.
+                    val hasTenderLabel = allLines.any { labelLine ->
+                        if (labelLine === totalLine) return@any false
+                        val labelBox = labelLine.boundingBox ?: return@any false
+                        val overlapTop = maxOf(labelBox.top, box.top)
+                        val overlapBot = minOf(labelBox.bottom, box.bottom)
+                        val overlap = maxOf(0, overlapBot - overlapTop)
+                        val minH = minOf(labelBox.height(), box.height()).coerceAtLeast(1)
+                        labelBox.right <= box.left &&
+                            overlap > minH / 2 &&
+                            (tenderLinePattern.containsMatchIn(labelLine.text) ||
+                                containsNegativeKeyword(labelLine.text))
+                    }
+                    if (hasTenderLabel) return@filter false
+                    true
                 }
-                .minByOrNull { candidate ->
+
+            // Prefer same-row (right-of) candidates over below candidates: "TOTAL: $X" is more
+            // reliable than a label above a column of tip suggestions.
+            val sameRowCandidates = candidateLines.filter { candidate ->
+                val box = candidate.boundingBox!!
+                val candidateMidY = (box.top + box.bottom) / 2
+                box.left > totalBox.right &&
+                    kotlin.math.abs(candidateMidY - totalMidY) < lineHeight
+            }
+            val nearbyAmount = if (sameRowCandidates.isNotEmpty()) {
+                // Among same-row amounts, rank by vertical overlap with the label bounding box.
+                // This prevents a tax amount sitting just above the TOTAL label from being picked
+                // over the real total that shares the same vertical band. Fall back to midY
+                // distance when overlaps are equal (e.g. both candidates fully overlap).
+                sameRowCandidates.maxByOrNull { candidate ->
+                    val box = candidate.boundingBox!!
+                    val overlapTop = maxOf(box.top, totalBox.top)
+                    val overlapBot = minOf(box.bottom, totalBox.bottom)
+                    val overlap = maxOf(0, overlapBot - overlapTop)
+                    // Primary: maximize overlap; secondary: minimize midY distance (scaled small)
+                    val candidateMidY = (box.top + box.bottom) / 2
+                    overlap * 1000 - kotlin.math.abs(candidateMidY - totalMidY)
+                }
+            } else {
+                candidateLines.minByOrNull { candidate ->
                     val box = candidate.boundingBox!!
                     val dx = maxOf(0, box.left - totalBox.right)
                     val dy = maxOf(0, box.top - totalBox.bottom)
                     dx + dy
                 }
+            }
 
             if (nearbyAmount != null) {
                 val match = amountPattern.find(nearbyAmount.text)
-                if (match != null) return parseMilliunits(match.groupValues[1])
+                if (match != null) {
+                    val amount = parseMilliunits(match.groupValues[1]) ?: continue
+                    if (amount == 0L) continue // $0.00 is not a real total
+                    confidence += 0.15f // spatial alignment bonus
+                    if (nearbyAmount.text.contains("$")) confidence += 0.05f
+                    return ScoredAmount(amount, confidence.coerceAtMost(1f))
+                }
             }
         }
 
@@ -138,95 +438,246 @@ class ReceiptParser @Inject constructor() {
 
     private fun parseMilliunits(amountStr: String): Long? {
         return try {
-            MilliunitConverter.dollarsToMilliunits(BigDecimal(amountStr.replace(",", "")))
+            MilliunitConverter.dollarsToMilliunits(BigDecimal(normalizeDecimalSeparator(amountStr)))
         } catch (e: NumberFormatException) {
             null
         }
     }
 
-    /**
-     * Extract total amount by looking for keywords like TOTAL, AMOUNT DUE, BALANCE DUE
-     * followed by a dollar amount. Takes the LAST matching "total" to avoid subtotals.
-     */
-    internal fun extractTotalAmount(text: String): Long? {
-        val lines = text.lines()
-
-        val totalPatterns = listOf(
-            Regex("(?i)(?:GRAND\\s*)?TOTAL\\s*:?\\s*\\$?\\s*([\\d,]+\\.\\d{2})"),
-            Regex("(?i)AMOUNT\\s*DUE\\s*:?\\s*\\$?\\s*([\\d,]+\\.\\d{2})"),
-            Regex("(?i)BALANCE\\s*DUE\\s*:?\\s*\\$?\\s*([\\d,]+\\.\\d{2})"),
-            Regex("(?i)TOTAL\\s+\\$?\\s*([\\d,]+\\.\\d{2})"),
-            Regex("(?i)(?:^|\\s)TOTAL\\s*\\$?([\\d,]+\\.\\d{2})"),
-        )
-
-        // Search from bottom up (the final total is usually near the bottom)
-        for (line in lines.reversed()) {
-            for (pattern in totalPatterns) {
-                val match = pattern.find(line)
-                if (match != null) {
-                    val amountStr = match.groupValues[1].replace(",", "")
-                    return try {
-                        val dollars = BigDecimal(amountStr)
-                        MilliunitConverter.dollarsToMilliunits(dollars)
-                    } catch (e: NumberFormatException) {
-                        null
-                    }
-                }
-            }
+    /** Converts an extracted amount string to a normalized decimal string.
+     *  Handles US thousands-comma ("1,234.56" → "1234.56"),
+     *  European comma-decimal ("146,73" → "146.73"), and
+     *  OCR-split decimals ("80. 45" → "80.45"). */
+    private fun normalizeDecimalSeparator(amountStr: String): String {
+        val trimmed = amountStr.trim().replace(Regex("\\s+"), "")
+        return if ('.' in trimmed) {
+            trimmed.replace(",", "")
+        } else {
+            // Treat trailing NNN,DD as European decimal when no period is present
+            trimmed.replace(",", ".")
         }
+    }
 
-        // Fallback: look for the largest dollar amount on the receipt
-        val allAmounts = Regex("\\$\\s*([\\d,]+\\.\\d{2})")
-            .findAll(text)
-            .mapNotNull { match ->
-                try {
-                    BigDecimal(match.groupValues[1].replace(",", ""))
-                } catch (e: NumberFormatException) {
-                    null
-                }
-            }
-            .toList()
+    private fun normalizedLabelText(text: String): String {
+        return amountPattern.replace(text, " ")
+            .replace(Regex("""[:\-]"""), " ")
+            .replace(Regex("""\s+"""), " ")
+            // Strip single-letter + period prefix common in SE-Asian restaurant receipts
+            // (e.g. "G.Total" → "Total", "S.Total" → "Total")
+            .replace(Regex("""^\s*[A-Za-z]\.\s*"""), "")
+            .trim()
+    }
 
-        return allAmounts.maxOrNull()?.let { MilliunitConverter.dollarsToMilliunits(it) }
+    private fun isPayableTotalLabel(text: String, lineIndex: Int, totalLineCount: Int): Boolean {
+        if (containsNegativeKeyword(text)) return false
+
+        val labelText = normalizedLabelText(text)
+        if (labelText.isBlank()) return false
+        if (taxOnlyLabelPattern.matches(labelText)) return false
+        if (payableTotalLabelPattern.matches(labelText)) return true
+        if (providerBrandLabelPattern.matches(labelText)) return true
+        if (guardedTenderLabelPattern.matches(labelText) && lineIndex >= totalLineCount / 2) return true
+
+        return false
     }
 
     /**
-     * Extract date from receipt text. Tries multiple common formats.
+     * Extract total amount by looking for payable-total labels like TOTAL, AMOUNT DUE,
+     * BALANCE, or provider/tender rows followed by a dollar amount.
+     * Takes the LAST matching label to avoid subtotals.
      */
-    internal fun extractDate(text: String): LocalDate? {
-        val datePatterns = listOf(
-            // MM/DD/YYYY or MM-DD-YYYY
-            Regex("(\\d{1,2})[/\\-](\\d{1,2})[/\\-](\\d{4})") to "M/d/yyyy",
-            // MM/DD/YY or MM-DD-YY
-            Regex("(\\d{1,2})[/\\-](\\d{1,2})[/\\-](\\d{2})(?!\\d)") to "M/d/yy",
-            // YYYY-MM-DD (ISO format)
-            Regex("(\\d{4})-(\\d{2})-(\\d{2})") to "yyyy-MM-dd",
-            // Month DD, YYYY (e.g., "Jan 15, 2024" or "January 15, 2024")
-            Regex("(?i)(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\\s+(\\d{1,2}),?\\s+(\\d{4})") to null,
-        )
+    internal fun extractTotalAmountFromText(text: String, totalLineCount: Int): ScoredAmount? {
+        val lines = text.lines()
 
-        for ((pattern, format) in datePatterns) {
-            val match = pattern.find(text) ?: continue
-            try {
-                if (format != null) {
-                    val dateStr = match.value.replace("-", "/")
-                    val formatter = DateTimeFormatter.ofPattern(format.replace("-", "/"))
-                    return LocalDate.parse(dateStr, formatter)
-                } else {
-                    // Handle month name format
-                    val monthStr = match.groupValues[1]
-                    val day = match.groupValues[2].toInt()
-                    val year = match.groupValues[3].toInt()
-                    val month = parseMonthName(monthStr) ?: continue
-                    return LocalDate.of(year, month, day)
-                }
-            } catch (e: DateTimeParseException) {
-                continue
-            } catch (e: Exception) {
+        for ((lineIndex, line) in lines.withIndex().toList().reversed()) {
+            if (!isPayableTotalLabel(line, lineIndex, totalLineCount)) continue
+
+            // Try same-line amount — but only when it appears AFTER the label keyword.
+            // If the amount precedes the keyword (e.g. "1.19 Total Due:"), the layout
+            // has a prior-row value running into this label row; skip to avoid false extraction.
+            val match = amountPattern.find(line) ?: continue
+            val keywordStart = totalKeyword.find(line)?.range?.first ?: 0
+            if (match.range.first < keywordStart) continue
+
+            val amountLine = line
+
+            val amountStr = normalizeDecimalSeparator(match.groupValues[1])
+            val amount = try {
+                MilliunitConverter.dollarsToMilliunits(BigDecimal(amountStr))
+            } catch (e: NumberFormatException) {
                 continue
             }
+
+            var confidence = 0.40f // keyword match
+            if (totalLineCount > 0 && lineIndex >= totalLineCount * 2 / 3) confidence += 0.15f
+            else if (totalLineCount > 0 && lineIndex >= totalLineCount / 2) confidence += 0.05f
+            if (line.contains("grand", ignoreCase = true)) confidence += 0.10f
+            if (amountLine.contains("$")) confidence += 0.05f
+            return ScoredAmount(amount, confidence.coerceAtMost(1f))
         }
+
         return null
+    }
+
+    /**
+     * Kept for backward compatibility. Delegates to the text-based extraction without confidence.
+     */
+    internal fun extractTotalAmount(text: String): Long? {
+        return extractTotalAmountFromText(text, text.lines().size)?.amount
+    }
+
+    /**
+     * Context-aware fallback when no total keyword is found. Instead of blindly taking the
+     * largest amount, applies filtering and position-based scoring.
+     */
+    internal fun extractFallbackAmount(ocrResult: TextRecognitionResult): ScoredAmount? {
+        val allLines = ocrResult.blocks.flatMap { it.lines }
+        val totalLineCount = allLines.size
+
+        data class Candidate(val amount: Long, val lineIndex: Int, val hasDollarSign: Boolean, val lineText: String)
+
+        val candidates = mutableListOf<Candidate>()
+
+        for ((lineIndex, line) in allLines.withIndex()) {
+            // Skip lines with negative/promotional keywords
+            if (containsNegativeKeyword(line.text)) continue
+
+            // Skip lines that look like individual items (long description + small amount)
+            // These typically have significant non-numeric text before the amount
+            val trimmed = line.text.trim()
+            val amountMatch = amountPattern.find(trimmed) ?: continue
+            val textBeforeAmount = trimmed.substring(0, amountMatch.range.first).trim()
+
+            // If there's a long description before the amount and it doesn't look like a total line,
+            // it's probably a line item — skip it for total detection
+            val looksLikeLineItem = textBeforeAmount.length > 10 &&
+                !totalKeyword.containsMatchIn(textBeforeAmount)
+            if (looksLikeLineItem) continue
+
+            val amount = parseMilliunits(amountMatch.groupValues[1]) ?: continue
+            candidates.add(Candidate(amount, lineIndex, trimmed.contains("$"), trimmed))
+        }
+
+        if (candidates.isEmpty()) return null
+
+        // Score each candidate: position + amount magnitude (mild preference for larger)
+        val maxAmount = candidates.maxOf { it.amount }
+        val best = candidates.maxByOrNull { candidate ->
+            var score = 0.0
+            // Position: bottom third gets a big boost
+            if (totalLineCount > 0 && candidate.lineIndex >= totalLineCount * 2 / 3) score += 3.0
+            else if (totalLineCount > 0 && candidate.lineIndex >= totalLineCount / 2) score += 1.0
+            // Mild preference for larger amounts (normalized 0–1)
+            if (maxAmount > 0) score += (candidate.amount.toDouble() / maxAmount) * 1.0
+            // Dollar sign
+            if (candidate.hasDollarSign) score += 0.5
+            score
+        } ?: return null
+
+        // Fallback confidence is always lower since no keyword was found
+        var confidence = 0.15f
+        if (totalLineCount > 0 && best.lineIndex >= totalLineCount * 2 / 3) confidence += 0.10f
+        if (best.hasDollarSign) confidence += 0.05f
+
+        return ScoredAmount(best.amount, confidence.coerceAtMost(1f))
+    }
+
+    /**
+     * Normalizes common OCR character confusions in a potential date line before pattern matching.
+     * - Letter 'O' → digit '0' when adjacent to digits or immediately after a 3-letter month
+     *   abbreviation (e.g. "O3/14" → "03/14", "APRO4" → "APR04").
+     * - Lowercase 'l' → '/' when flanked by digit groups (e.g. "14l2015" → "14/2015").
+     * - 'I' or '|' between digit groups → '/' (e.g. "14I2015" → "14/2015").
+     * - 'S' at start of digit group → '5' (e.g. "S/21/2019" → "5/21/2019").
+     */
+    private fun normalizeDateLine(line: String): String {
+        return line
+            // 'O' after a 3-uppercase-letter month abbreviation before a digit (e.g. "APRO4" → "APR04")
+            .replace(Regex("""(\b[A-Z]{3})O(?=\d)"""), "$10")
+            // 'O' at a non-letter boundary before a digit (e.g. "O3" → "03")
+            .replace(Regex("""(?<![A-Za-z])O(?=\d)"""), "0")
+            // 'O' between two digits (e.g. "3O5" → "305")
+            .replace(Regex("""(?<=\d)O(?=\d)"""), "0")
+            // 'l' between digit groups — date separator confusion (e.g. "14l2015" → "14/2015")
+            .replace(Regex("""(?<=\d)l(?=\d)"""), "/")
+            // 'I' or '|' between digit groups — separator confusion (e.g. "14I2015" → "14/2015")
+            .replace(Regex("""(?<=\d)[I|](?=\d)"""), "/")
+            // 'S' at word boundary before slash-digit — e.g. "S/21/2019" → "5/21/2019"
+            .replace(Regex("""\bS(?=[/\-.]\d)"""), "5")
+    }
+
+    /**
+     * Extract date from receipt text. Tries multiple common formats and scores candidates
+     * by context (presence of "date" label, proximity to beginning of receipt, noise avoidance).
+     */
+    internal fun extractDate(text: String): LocalDate? {
+        val lines = text.lines()
+        val candidates = buildList {
+            lines.forEachIndexed { lineIndex, rawLine ->
+                // Apply OCR character-confusion fixes before pattern matching. Also search the
+                // original line so any patterns that don't benefit from normalization still fire.
+                val normalizedLine = normalizeDateLine(rawLine)
+                for (line in listOf(rawLine, normalizedLine).distinct()) {
+                numericDateWithYearPattern.findAll(line).forEach { match ->
+                    parseNumericDate(match, yearPattern = "yyyy")?.let { date ->
+                        if (isReasonableDate(date)) {
+                            add(DateCandidate(date, scoreDateCandidate(line, lineIndex, lines)))
+                        }
+                    }
+                }
+                numericDateWithShortYearPattern.findAll(line).forEach { match ->
+                    parseNumericDate(match, yearPattern = "yy")?.let { date ->
+                        if (isReasonableDate(date)) {
+                            add(DateCandidate(date, scoreDateCandidate(line, lineIndex, lines)))
+                        }
+                    }
+                }
+                isoDatePattern.findAll(line).forEach { match ->
+                    tryParse(match.value, "yyyy-MM-dd")?.let { date ->
+                        if (isReasonableDate(date)) {
+                            add(DateCandidate(date, scoreDateCandidate(line, lineIndex, lines) + 5))
+                        }
+                    }
+                }
+                monthNameDatePattern.findAll(line).forEach { match ->
+                    parseMonthNameDate(match)?.let { date ->
+                        if (isReasonableDate(date)) {
+                            add(DateCandidate(date, scoreDateCandidate(line, lineIndex, lines)))
+                        }
+                    }
+                }
+                dayFirstMonthNamePattern.findAll(line).forEach { match ->
+                    parseDayFirstMonthNameDate(match)?.let { date ->
+                        if (isReasonableDate(date)) {
+                            add(DateCandidate(date, scoreDateCandidate(line, lineIndex, lines)))
+                        }
+                    }
+                }
+                compactMonthDatePattern.findAll(line).forEach { match ->
+                    parseCompactMonthDate(match)?.let { date ->
+                        if (isReasonableDate(date)) {
+                            add(DateCandidate(date, scoreDateCandidate(line, lineIndex, lines)))
+                        }
+                    }
+                }
+                compactMonthDayYearPattern.findAll(line).forEach { match ->
+                    parseCompactMonthDate(match)?.let { date ->
+                        if (isReasonableDate(date)) {
+                            add(DateCandidate(date, scoreDateCandidate(line, lineIndex, lines)))
+                        }
+                    }
+                }
+                } // end for (line in ...)
+            }
+        }
+
+        return candidates.maxByOrNull { it.score }?.date
+    }
+
+    /** Reject dates that are unreasonably far in the past or in the future. */
+    private fun isReasonableDate(date: LocalDate): Boolean {
+        val now = LocalDate.now()
+        return !date.isAfter(now.plusDays(1)) && date.year >= 2000
     }
 
     private fun parseMonthName(name: String): Int? {
@@ -238,22 +689,122 @@ class ReceiptParser @Inject constructor() {
         }
     }
 
+    private fun tryParse(value: String, pattern: String): LocalDate? {
+        return try {
+            LocalDate.parse(value, DateTimeFormatter.ofPattern(pattern))
+        } catch (_: DateTimeParseException) {
+            null
+        }
+    }
+
+    private fun parseNumericDate(match: MatchResult, yearPattern: String): LocalDate? {
+        val first = match.groupValues[1].toInt()
+        val second = match.groupValues[2].toInt()
+        // Normalize all separators (-, .) to / so DateTimeFormatter pattern "M/d/yy" always works
+        val normalized = match.value.replace(Regex("""[.\-]"""), "/")
+
+        return when {
+            first > 12 -> tryParse(normalized, "d/M/$yearPattern")
+            second > 12 -> tryParse(normalized, "M/d/$yearPattern")
+            else -> tryParse(normalized, "M/d/$yearPattern") ?: tryParse(normalized, "d/M/$yearPattern")
+        }
+    }
+
+    /** Converts a 2-digit year to a 4-digit year. Years 0-49 → 2000-2049, 50-99 → 1950-1999. */
+    private fun normalize2DigitYear(rawYear: Int): Int = when {
+        rawYear >= 100 -> rawYear
+        rawYear < 50 -> 2000 + rawYear
+        else -> 1900 + rawYear
+    }
+
+    private fun parseMonthNameDate(match: MatchResult): LocalDate? {
+        return try {
+            val monthStr = match.groupValues[1]
+            val day = match.groupValues[2].toInt()
+            val rawYear = match.groupValues[3].toInt()
+            val year = normalize2DigitYear(rawYear)
+            val month = parseMonthName(monthStr) ?: return null
+            LocalDate.of(year, month, day)
+        } catch (_: Exception) {
+            null
+        }
+    }
+
+    private fun parseDayFirstMonthNameDate(match: MatchResult): LocalDate? {
+        return try {
+            val day = match.groupValues[1].toInt()
+            val monthStr = match.groupValues[2]
+            val rawYear = match.groupValues[3].toInt()
+            val year = normalize2DigitYear(rawYear)
+            val month = parseMonthName(monthStr) ?: return null
+            LocalDate.of(year, month, day)
+        } catch (_: Exception) {
+            null
+        }
+    }
+
+    private fun scoreDateCandidate(line: String, lineIndex: Int, lines: List<String> = emptyList()): Int {
+        var score = 0
+        if (dateLabelPattern.containsMatchIn(line)) score += 100
+        if (line.contains("time", ignoreCase = true)) score += 10
+        // AM/PM clock time on the same line (e.g. "02/10/2021 07:10 PM") is a strong date signal
+        if (amPmTimePattern.containsMatchIn(line)) score += 10
+        // 24-hour clock time on the same line (e.g. "14:32", "19:45:02")
+        if (Regex("""\b([01]\d|2[0-3]):[0-5]\d(:[0-5]\d)?\b""").containsMatchIn(line)) score += 8
+        if (dateNoisePattern.containsMatchIn(line)) score -= 80
+        // Adjacent "Date" label: receipts often print the label on the line before or after the value
+        val prevLine = if (lineIndex > 0) lines[lineIndex - 1] else ""
+        val nextLine = if (lineIndex < lines.size - 1) lines[lineIndex + 1] else ""
+        if (dateLabelPattern.containsMatchIn(prevLine) || dateLabelPattern.containsMatchIn(nextLine)) score += 60
+        // Mild preference for dates near top of receipt (header) or bottom (footer)
+        val totalLines = lines.size.coerceAtLeast(1)
+        val lineFromBottom = totalLines - lineIndex
+        score += when {
+            lineIndex < 5 || lineFromBottom <= 5 -> 15
+            lineIndex < 15 || lineFromBottom <= 15 -> 5
+            else -> 3
+        }
+        return score
+    }
+
+    private fun parseCompactMonthDate(match: MatchResult): LocalDate? {
+        return try {
+            val month = parseMonthName(match.groupValues[1]) ?: return null
+            val day = match.groupValues[2].toInt()
+            val shortYear = match.groupValues[3].toInt()
+            val year = normalize2DigitYear(shortYear)
+            LocalDate.of(year, month, day)
+        } catch (_: Exception) {
+            null
+        }
+    }
+
     /**
      * Extract the last 4 digits of the payment card number.
      * Receipts typically show these as: ****1234, xxxx1234, XXXX1234,
      * "ending in 1234", "card ...1234", VISA ****1234, etc.
      */
     internal fun extractCardLastFour(text: String): String? {
+        // Normalize spaced digits inside masked account numbers:
+        //   "XXXX34 26" → "XXXX3426"   (4+ mask chars followed by grouped digits)
+        //   "**07 84"   → "**0784"     (2+ mask chars followed by short digit pairs)
+        val normalizedText = text
+            .replace(Regex("""([*xX]{4,}\d+)\s+(\d+)"""), "$1$2")
+            .replace(Regex("""([*xX]{2,})(\d{1,2})\s+(\d{1,2})(?!\d)"""), "$1$2$3")
+
         val patterns = listOf(
             Regex("[*xX]{4}\\s*(\\d{4})"),
+            Regex("[*xX]{2,}\\s*(\\d{4})"),
             Regex("[.…]{2,}\\s*(\\d{4})"),
+            Regex("[-]{4,}\\s*(\\d{4})"),
             Regex("(?i)ending\\s+in\\s+(\\d{4})"),
             Regex("(?i)card\\s*:?\\s*\\*{0,4}\\s*(\\d{4})"),
-            Regex("(?i)(?:VISA|MASTERCARD|MC|AMEX|DISCOVER|DEBIT|CREDIT)\\s+\\*{0,4}\\s*(\\d{4})"),
+            Regex("(?i)(?:VISA|MASTERCARD|MC|AMEX|DISCOVER|DEBIT|CREDIT)(?:\\s+(?:CREDIT|DEBIT))?[-\\s]+\\*{0,4}\\s*(\\d{4})"),
+            Regex("(?i)account\\s*[:#]?\\s*[xX*]*\\s*(\\d{4})(?!\\d)"),
         )
 
         for (pattern in patterns) {
-            val match = pattern.find(text)
+            val match = pattern.find(normalizedText)
             if (match != null) {
                 return match.groupValues[1]
             }
@@ -261,3 +812,22 @@ class ReceiptParser @Inject constructor() {
         return null
     }
 }
+
+/** A dollar amount with an associated confidence score (0.0–1.0). */
+data class ScoredAmount(
+    val amount: Long,
+    val confidence: Float,
+)
+
+private data class StoreCandidate(
+    val text: String,
+    val height: Int,
+    val confidence: Float,
+    val order: Int,
+    val top: Int,
+)
+
+private data class DateCandidate(
+    val date: LocalDate,
+    val score: Int,
+)

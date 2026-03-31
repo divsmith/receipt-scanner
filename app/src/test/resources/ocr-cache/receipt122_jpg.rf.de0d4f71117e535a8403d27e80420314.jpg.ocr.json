@@ -1,0 +1,484 @@
+{
+  "fullText": "RED & HOT II\n3.497AVE. (CORNER OF 10ST)\nBROOKLYN, NY I121s\nTEL(718)309-2577\nTELOI8)309-8897\nDate 10-20-2018 Tme 1237PM\nServer: WAITERI\nTAB#: C2\nNo, of Guest : I\nDine In\n1 Vegetable Roll\nEgg Roll\n2 L35.Sesame chicken\n1 WR\n1 FR\n1 (L)Veg Spare Ribs .BBS\nWR\nAmount:\n# 18\nThank you very much.\n0.00\n13.90\n7.65\n21.55\nTAX(8.875°%):\nTOTAL: 23.46\n1.91",
+  "blocks": [
+    {
+      "text": "RED & HOT II\n3.497AVE. (CORNER OF 10ST)\nBROOKLYN, NY I121s\nTEL(718)309-2577\nTELOI8)309-8897",
+      "lines": [
+        {
+          "text": "RED & HOT II",
+          "boundingBox": {
+            "left": 492,
+            "top": 145,
+            "right": 896,
+            "bottom": 191
+          },
+          "confidence": 0.6397569
+        },
+        {
+          "text": "3.497AVE. (CORNER OF 10ST)",
+          "boundingBox": {
+            "left": 370,
+            "top": 185,
+            "right": 983,
+            "bottom": 236
+          },
+          "confidence": 0.61871606
+        },
+        {
+          "text": "BROOKLYN, NY I121s",
+          "boundingBox": {
+            "left": 450,
+            "top": 228,
+            "right": 895,
+            "bottom": 273
+          },
+          "confidence": 0.64697266
+        },
+        {
+          "text": "TEL(718)309-2577",
+          "boundingBox": {
+            "left": 477,
+            "top": 271,
+            "right": 845,
+            "bottom": 308
+          },
+          "confidence": 0.69140625
+        },
+        {
+          "text": "TELOI8)309-8897",
+          "boundingBox": {
+            "left": 475,
+            "top": 310,
+            "right": 845,
+            "bottom": 345
+          },
+          "confidence": 0.6585938
+        }
+      ],
+      "boundingBox": {
+        "left": 369,
+        "top": 142,
+        "right": 985,
+        "bottom": 347
+      }
+    },
+    {
+      "text": "Date 10-20-2018 Tme 1237PM",
+      "lines": [
+        {
+          "text": "Date 10-20-2018 Tme 1237PM",
+          "boundingBox": {
+            "left": 203,
+            "top": 443,
+            "right": 810,
+            "bottom": 495
+          },
+          "confidence": 0.77768344
+        }
+      ],
+      "boundingBox": {
+        "left": 203,
+        "top": 443,
+        "right": 810,
+        "bottom": 495
+      }
+    },
+    {
+      "text": "Server: WAITERI",
+      "lines": [
+        {
+          "text": "Server: WAITERI",
+          "boundingBox": {
+            "left": 172,
+            "top": 515,
+            "right": 514,
+            "bottom": 551
+          },
+          "confidence": 0.8063616
+        }
+      ],
+      "boundingBox": {
+        "left": 172,
+        "top": 515,
+        "right": 514,
+        "bottom": 551
+      }
+    },
+    {
+      "text": "TAB#: C2",
+      "lines": [
+        {
+          "text": "TAB#: C2",
+          "boundingBox": {
+            "left": 170,
+            "top": 570,
+            "right": 450,
+            "bottom": 608
+          },
+          "confidence": 0.80078125
+        }
+      ],
+      "boundingBox": {
+        "left": 170,
+        "top": 570,
+        "right": 450,
+        "bottom": 608
+      }
+    },
+    {
+      "text": "No, of Guest : I",
+      "lines": [
+        {
+          "text": "No, of Guest : I",
+          "boundingBox": {
+            "left": 188,
+            "top": 618,
+            "right": 470,
+            "bottom": 658
+          },
+          "confidence": 0.7652995
+        }
+      ],
+      "boundingBox": {
+        "left": 188,
+        "top": 618,
+        "right": 470,
+        "bottom": 658
+      }
+    },
+    {
+      "text": "Dine In",
+      "lines": [
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 558,
+            "top": 398,
+            "right": 762,
+            "bottom": 436
+          },
+          "confidence": 0.7558594
+        }
+      ],
+      "boundingBox": {
+        "left": 558,
+        "top": 398,
+        "right": 762,
+        "bottom": 436
+      }
+    },
+    {
+      "text": "1 Vegetable Roll\nEgg Roll",
+      "lines": [
+        {
+          "text": "1 Vegetable Roll",
+          "boundingBox": {
+            "left": 274,
+            "top": 688,
+            "right": 695,
+            "bottom": 745
+          },
+          "confidence": 0.76227677
+        },
+        {
+          "text": "Egg Roll",
+          "boundingBox": {
+            "left": 390,
+            "top": 741,
+            "right": 591,
+            "bottom": 802
+          },
+          "confidence": 0.7578125
+        }
+      ],
+      "boundingBox": {
+        "left": 273,
+        "top": 682,
+        "right": 697,
+        "bottom": 805
+      }
+    },
+    {
+      "text": "2 L35.Sesame chicken\n1 WR",
+      "lines": [
+        {
+          "text": "2 L35.Sesame chicken",
+          "boundingBox": {
+            "left": 264,
+            "top": 818,
+            "right": 828,
+            "bottom": 868
+          },
+          "confidence": 0.80164933
+        },
+        {
+          "text": "1 WR",
+          "boundingBox": {
+            "left": 316,
+            "top": 872,
+            "right": 472,
+            "bottom": 921
+          },
+          "confidence": 0.68619794
+        }
+      ],
+      "boundingBox": {
+        "left": 264,
+        "top": 818,
+        "right": 828,
+        "bottom": 921
+      }
+    },
+    {
+      "text": "1 FR",
+      "lines": [
+        {
+          "text": "1 FR",
+          "boundingBox": {
+            "left": 310,
+            "top": 925,
+            "right": 440,
+            "bottom": 976
+          },
+          "confidence": 0.74088544
+        }
+      ],
+      "boundingBox": {
+        "left": 310,
+        "top": 925,
+        "right": 440,
+        "bottom": 976
+      }
+    },
+    {
+      "text": "1 (L)Veg Spare Ribs .BBS\nWR",
+      "lines": [
+        {
+          "text": "1 (L)Veg Spare Ribs .BBS",
+          "boundingBox": {
+            "left": 236,
+            "top": 996,
+            "right": 928,
+            "bottom": 1059
+          },
+          "confidence": 0.7458984
+        },
+        {
+          "text": "WR",
+          "boundingBox": {
+            "left": 340,
+            "top": 1066,
+            "right": 456,
+            "bottom": 1106
+          },
+          "confidence": 0.86328125
+        }
+      ],
+      "boundingBox": {
+        "left": 236,
+        "top": 996,
+        "right": 928,
+        "bottom": 1107
+      }
+    },
+    {
+      "text": "Amount:",
+      "lines": [
+        {
+          "text": "Amount:",
+          "boundingBox": {
+            "left": 739,
+            "top": 1151,
+            "right": 991,
+            "bottom": 1192
+          },
+          "confidence": 0.7360491
+        }
+      ],
+      "boundingBox": {
+        "left": 739,
+        "top": 1151,
+        "right": 991,
+        "bottom": 1192
+      }
+    },
+    {
+      "text": "# 18",
+      "lines": [
+        {
+          "text": "# 18",
+          "boundingBox": {
+            "left": 1033,
+            "top": 439,
+            "right": 1150,
+            "bottom": 476
+          },
+          "confidence": 0.87890625
+        }
+      ],
+      "boundingBox": {
+        "left": 1033,
+        "top": 439,
+        "right": 1150,
+        "bottom": 476
+      }
+    },
+    {
+      "text": "Thank you very much.",
+      "lines": [
+        {
+          "text": "Thank you very much.",
+          "boundingBox": {
+            "left": 305,
+            "top": 1382,
+            "right": 946,
+            "bottom": 1455
+          },
+          "confidence": 0.8315717
+        }
+      ],
+      "boundingBox": {
+        "left": 305,
+        "top": 1382,
+        "right": 946,
+        "bottom": 1455
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 1078,
+            "top": 698,
+            "right": 1190,
+            "bottom": 730
+          },
+          "confidence": 0.7675781
+        }
+      ],
+      "boundingBox": {
+        "left": 1078,
+        "top": 698,
+        "right": 1190,
+        "bottom": 730
+      }
+    },
+    {
+      "text": "13.90",
+      "lines": [
+        {
+          "text": "13.90",
+          "boundingBox": {
+            "left": 1060,
+            "top": 822,
+            "right": 1203,
+            "bottom": 856
+          },
+          "confidence": 0.825
+        }
+      ],
+      "boundingBox": {
+        "left": 1060,
+        "top": 822,
+        "right": 1203,
+        "bottom": 856
+      }
+    },
+    {
+      "text": "7.65",
+      "lines": [
+        {
+          "text": "7.65",
+          "boundingBox": {
+            "left": 1099,
+            "top": 1006,
+            "right": 1215,
+            "bottom": 1045
+          },
+          "confidence": 0.8378906
+        }
+      ],
+      "boundingBox": {
+        "left": 1099,
+        "top": 1006,
+        "right": 1215,
+        "bottom": 1045
+      }
+    },
+    {
+      "text": "21.55",
+      "lines": [
+        {
+          "text": "21.55",
+          "boundingBox": {
+            "left": 1076,
+            "top": 1151,
+            "right": 1228,
+            "bottom": 1192
+          },
+          "confidence": 0.7757813
+        }
+      ],
+      "boundingBox": {
+        "left": 1076,
+        "top": 1151,
+        "right": 1228,
+        "bottom": 1192
+      }
+    },
+    {
+      "text": "TAX(8.875°%):\nTOTAL: 23.46",
+      "lines": [
+        {
+          "text": "TAX(8.875°%):",
+          "boundingBox": {
+            "left": 572,
+            "top": 1212,
+            "right": 1012,
+            "bottom": 1260
+          },
+          "confidence": 0.67788464
+        },
+        {
+          "text": "TOTAL: 23.46",
+          "boundingBox": {
+            "left": 700,
+            "top": 1272,
+            "right": 1244,
+            "bottom": 1338
+          },
+          "confidence": 0.81107956
+        }
+      ],
+      "boundingBox": {
+        "left": 572,
+        "top": 1212,
+        "right": 1244,
+        "bottom": 1338
+      }
+    },
+    {
+      "text": "1.91",
+      "lines": [
+        {
+          "text": "1.91",
+          "boundingBox": {
+            "left": 1118,
+            "top": 1212,
+            "right": 1230,
+            "bottom": 1260
+          },
+          "confidence": 0.7109375
+        }
+      ],
+      "boundingBox": {
+        "left": 1118,
+        "top": 1212,
+        "right": 1230,
+        "bottom": 1260
+      }
+    }
+  ]
+}

@@ -1,0 +1,444 @@
+{
+  "fullText": "The Shawarma Factory\n14817 S. Western Ave\nGardena, CA 90249\nTicket: #29\nAuthorization 173245\nReceipt 03WE\nVISA DEBIT\nAID AO 00 0O 00 03 10 10\n00\nFlame Broiled Chicken\nSubtotal\nSales Tax\nFOR HERE\nTotal\nApr 10, 2019\n1/2 Chicken, Hummus, House Salad\n12:34 PM\nVince\nVisa 7286\n$11.99\n$11.99\n$1.14\n$13.13",
+  "blocks": [
+    {
+      "text": "The Shawarma Factory",
+      "lines": [
+        {
+          "text": "The Shawarma Factory",
+          "boundingBox": {
+            "left": 332,
+            "top": 386,
+            "right": 998,
+            "bottom": 436
+          },
+          "confidence": 0.88411456
+        }
+      ],
+      "boundingBox": {
+        "left": 332,
+        "top": 386,
+        "right": 998,
+        "bottom": 436
+      }
+    },
+    {
+      "text": "14817 S. Western Ave\nGardena, CA 90249",
+      "lines": [
+        {
+          "text": "14817 S. Western Ave",
+          "boundingBox": {
+            "left": 328,
+            "top": 480,
+            "right": 804,
+            "bottom": 512
+          },
+          "confidence": 0.87339157
+        },
+        {
+          "text": "Gardena, CA 90249",
+          "boundingBox": {
+            "left": 325,
+            "top": 526,
+            "right": 761,
+            "bottom": 566
+          },
+          "confidence": 0.859375
+        }
+      ],
+      "boundingBox": {
+        "left": 325,
+        "top": 477,
+        "right": 803,
+        "bottom": 566
+      }
+    },
+    {
+      "text": "Ticket: #29",
+      "lines": [
+        {
+          "text": "Ticket: #29",
+          "boundingBox": {
+            "left": 320,
+            "top": 702,
+            "right": 570,
+            "bottom": 737
+          },
+          "confidence": 0.8714844
+        }
+      ],
+      "boundingBox": {
+        "left": 320,
+        "top": 702,
+        "right": 570,
+        "bottom": 737
+      }
+    },
+    {
+      "text": "Authorization 173245\nReceipt 03WE",
+      "lines": [
+        {
+          "text": "Authorization 173245",
+          "boundingBox": {
+            "left": 316,
+            "top": 754,
+            "right": 804,
+            "bottom": 794
+          },
+          "confidence": 0.90974504
+        },
+        {
+          "text": "Receipt 03WE",
+          "boundingBox": {
+            "left": 316,
+            "top": 810,
+            "right": 640,
+            "bottom": 853
+          },
+          "confidence": 0.871804
+        }
+      ],
+      "boundingBox": {
+        "left": 315,
+        "top": 753,
+        "right": 805,
+        "bottom": 853
+      }
+    },
+    {
+      "text": "VISA DEBIT",
+      "lines": [
+        {
+          "text": "VISA DEBIT",
+          "boundingBox": {
+            "left": 336,
+            "top": 911,
+            "right": 580,
+            "bottom": 959
+          },
+          "confidence": 0.7786458
+        }
+      ],
+      "boundingBox": {
+        "left": 336,
+        "top": 911,
+        "right": 580,
+        "bottom": 959
+      }
+    },
+    {
+      "text": "AID AO 00 0O 00 03 10 10",
+      "lines": [
+        {
+          "text": "AID AO 00 0O 00 03 10 10",
+          "boundingBox": {
+            "left": 304,
+            "top": 971,
+            "right": 895,
+            "bottom": 1011
+          },
+          "confidence": 0.67325366
+        }
+      ],
+      "boundingBox": {
+        "left": 304,
+        "top": 971,
+        "right": 895,
+        "bottom": 1011
+      }
+    },
+    {
+      "text": "00",
+      "lines": [
+        {
+          "text": "00",
+          "boundingBox": {
+            "left": 557,
+            "top": 966,
+            "right": 632,
+            "bottom": 1022
+          },
+          "confidence": 0.59375
+        }
+      ],
+      "boundingBox": {
+        "left": 557,
+        "top": 966,
+        "right": 632,
+        "bottom": 1022
+      }
+    },
+    {
+      "text": "Flame Broiled Chicken",
+      "lines": [
+        {
+          "text": "Flame Broiled Chicken",
+          "boundingBox": {
+            "left": 296,
+            "top": 1160,
+            "right": 852,
+            "bottom": 1196
+          },
+          "confidence": 0.8791118
+        }
+      ],
+      "boundingBox": {
+        "left": 296,
+        "top": 1160,
+        "right": 852,
+        "bottom": 1196
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 286,
+            "top": 1336,
+            "right": 490,
+            "bottom": 1370
+          },
+          "confidence": 0.84277344
+        }
+      ],
+      "boundingBox": {
+        "left": 286,
+        "top": 1336,
+        "right": 490,
+        "bottom": 1370
+      }
+    },
+    {
+      "text": "Sales Tax",
+      "lines": [
+        {
+          "text": "Sales Tax",
+          "boundingBox": {
+            "left": 284,
+            "top": 1398,
+            "right": 516,
+            "bottom": 1432
+          },
+          "confidence": 0.8823242
+        }
+      ],
+      "boundingBox": {
+        "left": 284,
+        "top": 1398,
+        "right": 516,
+        "bottom": 1432
+      }
+    },
+    {
+      "text": "FOR HERE",
+      "lines": [
+        {
+          "text": "FOR HERE",
+          "boundingBox": {
+            "left": 712,
+            "top": 1059,
+            "right": 930,
+            "bottom": 1091
+          },
+          "confidence": 0.84654015
+        }
+      ],
+      "boundingBox": {
+        "left": 712,
+        "top": 1059,
+        "right": 930,
+        "bottom": 1091
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 282,
+            "top": 1530,
+            "right": 402,
+            "bottom": 1564
+          },
+          "confidence": 0.8375
+        }
+      ],
+      "boundingBox": {
+        "left": 282,
+        "top": 1530,
+        "right": 402,
+        "bottom": 1564
+      }
+    },
+    {
+      "text": "Apr 10, 2019",
+      "lines": [
+        {
+          "text": "Apr 10, 2019",
+          "boundingBox": {
+            "left": 1051,
+            "top": 454,
+            "right": 1301,
+            "bottom": 503
+          },
+          "confidence": 0.8691406
+        }
+      ],
+      "boundingBox": {
+        "left": 1051,
+        "top": 454,
+        "right": 1301,
+        "bottom": 503
+      }
+    },
+    {
+      "text": "1/2 Chicken, Hummus, House Salad",
+      "lines": [
+        {
+          "text": "1/2 Chicken, Hummus, House Salad",
+          "boundingBox": {
+            "left": 292,
+            "top": 1214,
+            "right": 1176,
+            "bottom": 1264
+          },
+          "confidence": 0.8719308
+        }
+      ],
+      "boundingBox": {
+        "left": 292,
+        "top": 1214,
+        "right": 1176,
+        "bottom": 1264
+      }
+    },
+    {
+      "text": "12:34 PM\nVince",
+      "lines": [
+        {
+          "text": "12:34 PM",
+          "boundingBox": {
+            "left": 1096,
+            "top": 513,
+            "right": 1304,
+            "bottom": 551
+          },
+          "confidence": 0.8426339
+        },
+        {
+          "text": "Vince",
+          "boundingBox": {
+            "left": 1183,
+            "top": 568,
+            "right": 1308,
+            "bottom": 600
+          },
+          "confidence": 0.884375
+        }
+      ],
+      "boundingBox": {
+        "left": 1096,
+        "top": 513,
+        "right": 1309,
+        "bottom": 603
+      }
+    },
+    {
+      "text": "Visa 7286",
+      "lines": [
+        {
+          "text": "Visa 7286",
+          "boundingBox": {
+            "left": 1092,
+            "top": 688,
+            "right": 1316,
+            "bottom": 725
+          },
+          "confidence": 0.88134766
+        }
+      ],
+      "boundingBox": {
+        "left": 1092,
+        "top": 688,
+        "right": 1316,
+        "bottom": 725
+      }
+    },
+    {
+      "text": "$11.99",
+      "lines": [
+        {
+          "text": "$11.99",
+          "boundingBox": {
+            "left": 1204,
+            "top": 1149,
+            "right": 1354,
+            "bottom": 1189
+          },
+          "confidence": 0.81640625
+        }
+      ],
+      "boundingBox": {
+        "left": 1204,
+        "top": 1149,
+        "right": 1354,
+        "bottom": 1189
+      }
+    },
+    {
+      "text": "$11.99\n$1.14",
+      "lines": [
+        {
+          "text": "$11.99",
+          "boundingBox": {
+            "left": 1216,
+            "top": 1326,
+            "right": 1368,
+            "bottom": 1364
+          },
+          "confidence": 0.8691406
+        },
+        {
+          "text": "$1.14",
+          "boundingBox": {
+            "left": 1252,
+            "top": 1388,
+            "right": 1372,
+            "bottom": 1426
+          },
+          "confidence": 0.86796874
+        }
+      ],
+      "boundingBox": {
+        "left": 1216,
+        "top": 1326,
+        "right": 1372,
+        "bottom": 1426
+      }
+    },
+    {
+      "text": "$13.13",
+      "lines": [
+        {
+          "text": "$13.13",
+          "boundingBox": {
+            "left": 1202,
+            "top": 1518,
+            "right": 1380,
+            "bottom": 1558
+          },
+          "confidence": 0.83203125
+        }
+      ],
+      "boundingBox": {
+        "left": 1202,
+        "top": 1518,
+        "right": 1380,
+        "bottom": 1558
+      }
+    }
+  ]
+}

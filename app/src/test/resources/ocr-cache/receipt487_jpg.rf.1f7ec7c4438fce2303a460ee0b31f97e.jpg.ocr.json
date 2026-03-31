@@ -1,0 +1,648 @@
+{
+  "fullText": "1\n1\n1\nCashier: LORENZO REYES\no9-May-201771946P\n2\nTax\nRINCON MEXICANG\n99 ROA\nsOMEVILLE, MA 0214\n6179661307\nORDER: 45\nDine In\nArrot\nTaco De Pescado\nTaco Fuesday Pollo\nTace D Carne Asada\nTaco D Chorizo\nTaco Tuesday Pastor\nHorchata\nTaca Tuesday Pollo\nTaco D Cochinita\nSubtotal\nTaco D Canitas\nTotal\nOrder ZITOGT7x6ANRB\nS3.00\n$7.00\n$2.00\n$2.99\n$2.99\n$1.00\n$2.99\n$1.00\n$2.99\n$2.99\nS28.95\n$2.03\n$30.98",
+  "blocks": [
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 180,
+            "top": 926,
+            "right": 198,
+            "bottom": 954
+          },
+          "confidence": 0.48046875
+        }
+      ],
+      "boundingBox": {
+        "left": 180,
+        "top": 926,
+        "right": 198,
+        "bottom": 954
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 180,
+            "top": 972,
+            "right": 189,
+            "bottom": 1004
+          },
+          "confidence": 0.44140625
+        }
+      ],
+      "boundingBox": {
+        "left": 180,
+        "top": 972,
+        "right": 189,
+        "bottom": 1004
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 168,
+            "top": 1022,
+            "right": 186,
+            "bottom": 1054
+          },
+          "confidence": 0.5390625
+        }
+      ],
+      "boundingBox": {
+        "left": 168,
+        "top": 1022,
+        "right": 186,
+        "bottom": 1054
+      }
+    },
+    {
+      "text": "Cashier: LORENZO REYES\no9-May-201771946P",
+      "lines": [
+        {
+          "text": "Cashier: LORENZO REYES",
+          "boundingBox": {
+            "left": 244,
+            "top": 467,
+            "right": 789,
+            "bottom": 546
+          },
+          "confidence": 0.6833984
+        },
+        {
+          "text": "o9-May-201771946P",
+          "boundingBox": {
+            "left": 212,
+            "top": 510,
+            "right": 735,
+            "bottom": 586
+          },
+          "confidence": 0.59375
+        }
+      ],
+      "boundingBox": {
+        "left": 209,
+        "top": 465,
+        "right": 792,
+        "bottom": 586
+      }
+    },
+    {
+      "text": "2",
+      "lines": [
+        {
+          "text": "2",
+          "boundingBox": {
+            "left": 206,
+            "top": 670,
+            "right": 230,
+            "bottom": 698
+          },
+          "confidence": 0.5078125
+        }
+      ],
+      "boundingBox": {
+        "left": 206,
+        "top": 670,
+        "right": 230,
+        "bottom": 698
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 152,
+            "top": 1176,
+            "right": 240,
+            "bottom": 1217
+          },
+          "confidence": 0.70963544
+        }
+      ],
+      "boundingBox": {
+        "left": 152,
+        "top": 1176,
+        "right": 240,
+        "bottom": 1217
+      }
+    },
+    {
+      "text": "RINCON MEXICANG\n99 ROA\nsOMEVILLE, MA 0214\n6179661307\nORDER: 45\nDine In",
+      "lines": [
+        {
+          "text": "RINCON MEXICANG",
+          "boundingBox": {
+            "left": 451,
+            "top": 199,
+            "right": 954,
+            "bottom": 264
+          },
+          "confidence": 0.7120536
+        },
+        {
+          "text": "99 ROA",
+          "boundingBox": {
+            "left": 572,
+            "top": 245,
+            "right": 743,
+            "bottom": 294
+          },
+          "confidence": 0.47421876
+        },
+        {
+          "text": "sOMEVILLE, MA 0214",
+          "boundingBox": {
+            "left": 461,
+            "top": 260,
+            "right": 936,
+            "bottom": 337
+          },
+          "confidence": 0.5024414
+        },
+        {
+          "text": "6179661307",
+          "boundingBox": {
+            "left": 599,
+            "top": 293,
+            "right": 850,
+            "bottom": 360
+          },
+          "confidence": 0.53046876
+        },
+        {
+          "text": "ORDER: 45",
+          "boundingBox": {
+            "left": 564,
+            "top": 346,
+            "right": 889,
+            "bottom": 428
+          },
+          "confidence": 0.85498047
+        },
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 606,
+            "top": 416,
+            "right": 832,
+            "bottom": 474
+          },
+          "confidence": 0.8092448
+        }
+      ],
+      "boundingBox": {
+        "left": 451,
+        "top": 194,
+        "right": 972,
+        "bottom": 491
+      }
+    },
+    {
+      "text": "Arrot\nTaco De Pescado\nTaco Fuesday Pollo\nTace D Carne Asada\nTaco D Chorizo\nTaco Tuesday Pastor\nHorchata",
+      "lines": [
+        {
+          "text": "Arrot",
+          "boundingBox": {
+            "left": 302,
+            "top": 620,
+            "right": 421,
+            "bottom": 652
+          },
+          "confidence": 0.37421876
+        },
+        {
+          "text": "Taco De Pescado",
+          "boundingBox": {
+            "left": 310,
+            "top": 625,
+            "right": 697,
+            "bottom": 695
+          },
+          "confidence": 0.65384614
+        },
+        {
+          "text": "Taco Fuesday Pollo",
+          "boundingBox": {
+            "left": 309,
+            "top": 662,
+            "right": 753,
+            "bottom": 736
+          },
+          "confidence": 0.7072754
+        },
+        {
+          "text": "Tace D Carne Asada",
+          "boundingBox": {
+            "left": 302,
+            "top": 705,
+            "right": 771,
+            "bottom": 772
+          },
+          "confidence": 0.56901044
+        },
+        {
+          "text": "Taco D Chorizo",
+          "boundingBox": {
+            "left": 300,
+            "top": 754,
+            "right": 655,
+            "bottom": 814
+          },
+          "confidence": 0.7366536
+        },
+        {
+          "text": "Taco Tuesday Pastor",
+          "boundingBox": {
+            "left": 295,
+            "top": 780,
+            "right": 793,
+            "bottom": 865
+          },
+          "confidence": 0.75827205
+        },
+        {
+          "text": "Horchata",
+          "boundingBox": {
+            "left": 280,
+            "top": 851,
+            "right": 510,
+            "bottom": 906
+          },
+          "confidence": 0.7714844
+        }
+      ],
+      "boundingBox": {
+        "left": 263,
+        "top": 585,
+        "right": 797,
+        "bottom": 906
+      }
+    },
+    {
+      "text": "Taca Tuesday Pollo\nTaco D Cochinita",
+      "lines": [
+        {
+          "text": "Taca Tuesday Pollo",
+          "boundingBox": {
+            "left": 297,
+            "top": 862,
+            "right": 771,
+            "bottom": 956
+          },
+          "confidence": 0.7348633
+        },
+        {
+          "text": "Taco D Cochinita",
+          "boundingBox": {
+            "left": 282,
+            "top": 921,
+            "right": 709,
+            "bottom": 997
+          },
+          "confidence": 0.7843192
+        }
+      ],
+      "boundingBox": {
+        "left": 277,
+        "top": 862,
+        "right": 775,
+        "bottom": 997
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 153,
+            "top": 1102,
+            "right": 390,
+            "bottom": 1164
+          },
+          "confidence": 0.7792969
+        }
+      ],
+      "boundingBox": {
+        "left": 153,
+        "top": 1102,
+        "right": 390,
+        "bottom": 1164
+      }
+    },
+    {
+      "text": "Taco D Canitas",
+      "lines": [
+        {
+          "text": "Taco D Canitas",
+          "boundingBox": {
+            "left": 278,
+            "top": 973,
+            "right": 690,
+            "bottom": 1046
+          },
+          "confidence": 0.7708333
+        }
+      ],
+      "boundingBox": {
+        "left": 278,
+        "top": 973,
+        "right": 690,
+        "bottom": 1046
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 143,
+            "top": 1276,
+            "right": 285,
+            "bottom": 1333
+          },
+          "confidence": 0.8078125
+        }
+      ],
+      "boundingBox": {
+        "left": 143,
+        "top": 1276,
+        "right": 285,
+        "bottom": 1333
+      }
+    },
+    {
+      "text": "Order ZITOGT7x6ANRB",
+      "lines": [
+        {
+          "text": "Order ZITOGT7x6ANRB",
+          "boundingBox": {
+            "left": 130,
+            "top": 1333,
+            "right": 826,
+            "bottom": 1457
+          },
+          "confidence": 0.61154515
+        }
+      ],
+      "boundingBox": {
+        "left": 130,
+        "top": 1333,
+        "right": 826,
+        "bottom": 1457
+      }
+    },
+    {
+      "text": "S3.00\n$7.00",
+      "lines": [
+        {
+          "text": "S3.00",
+          "boundingBox": {
+            "left": 1109,
+            "top": 542,
+            "right": 1237,
+            "bottom": 586
+          },
+          "confidence": 0.63671875
+        },
+        {
+          "text": "$7.00",
+          "boundingBox": {
+            "left": 1118,
+            "top": 580,
+            "right": 1244,
+            "bottom": 624
+          },
+          "confidence": 0.69921875
+        }
+      ],
+      "boundingBox": {
+        "left": 1109,
+        "top": 540,
+        "right": 1244,
+        "bottom": 625
+      }
+    },
+    {
+      "text": "$2.00",
+      "lines": [
+        {
+          "text": "$2.00",
+          "boundingBox": {
+            "left": 1122,
+            "top": 617,
+            "right": 1253,
+            "bottom": 666
+          },
+          "confidence": 0.56875
+        }
+      ],
+      "boundingBox": {
+        "left": 1122,
+        "top": 617,
+        "right": 1253,
+        "bottom": 666
+      }
+    },
+    {
+      "text": "$2.99\n$2.99",
+      "lines": [
+        {
+          "text": "$2.99",
+          "boundingBox": {
+            "left": 1131,
+            "top": 657,
+            "right": 1260,
+            "bottom": 706
+          },
+          "confidence": 0.7945312
+        },
+        {
+          "text": "$2.99",
+          "boundingBox": {
+            "left": 1141,
+            "top": 696,
+            "right": 1270,
+            "bottom": 742
+          },
+          "confidence": 0.68828124
+        }
+      ],
+      "boundingBox": {
+        "left": 1131,
+        "top": 657,
+        "right": 1269,
+        "bottom": 743
+      }
+    },
+    {
+      "text": "$1.00",
+      "lines": [
+        {
+          "text": "$1.00",
+          "boundingBox": {
+            "left": 1150,
+            "top": 728,
+            "right": 1283,
+            "bottom": 790
+          },
+          "confidence": 0.47890624
+        }
+      ],
+      "boundingBox": {
+        "left": 1150,
+        "top": 728,
+        "right": 1283,
+        "bottom": 790
+      }
+    },
+    {
+      "text": "$2.99\n$1.00",
+      "lines": [
+        {
+          "text": "$2.99",
+          "boundingBox": {
+            "left": 1160,
+            "top": 780,
+            "right": 1293,
+            "bottom": 828
+          },
+          "confidence": 0.6796875
+        },
+        {
+          "text": "$1.00",
+          "boundingBox": {
+            "left": 1169,
+            "top": 821,
+            "right": 1308,
+            "bottom": 870
+          },
+          "confidence": 0.60234374
+        }
+      ],
+      "boundingBox": {
+        "left": 1160,
+        "top": 779,
+        "right": 1308,
+        "bottom": 872
+      }
+    },
+    {
+      "text": "$2.99",
+      "lines": [
+        {
+          "text": "$2.99",
+          "boundingBox": {
+            "left": 1180,
+            "top": 855,
+            "right": 1318,
+            "bottom": 922
+          },
+          "confidence": 0.7476562
+        }
+      ],
+      "boundingBox": {
+        "left": 1180,
+        "top": 855,
+        "right": 1318,
+        "bottom": 922
+      }
+    },
+    {
+      "text": "$2.99",
+      "lines": [
+        {
+          "text": "$2.99",
+          "boundingBox": {
+            "left": 1191,
+            "top": 908,
+            "right": 1330,
+            "bottom": 961
+          },
+          "confidence": 0.63203126
+        }
+      ],
+      "boundingBox": {
+        "left": 1191,
+        "top": 908,
+        "right": 1330,
+        "bottom": 961
+      }
+    },
+    {
+      "text": "S28.95",
+      "lines": [
+        {
+          "text": "S28.95",
+          "boundingBox": {
+            "left": 1180,
+            "top": 1002,
+            "right": 1354,
+            "bottom": 1060
+          },
+          "confidence": 0.7005208
+        }
+      ],
+      "boundingBox": {
+        "left": 1180,
+        "top": 1002,
+        "right": 1354,
+        "bottom": 1060
+      }
+    },
+    {
+      "text": "$2.03",
+      "lines": [
+        {
+          "text": "$2.03",
+          "boundingBox": {
+            "left": 1224,
+            "top": 1045,
+            "right": 1370,
+            "bottom": 1107
+          },
+          "confidence": 0.775
+        }
+      ],
+      "boundingBox": {
+        "left": 1224,
+        "top": 1045,
+        "right": 1370,
+        "bottom": 1107
+      }
+    },
+    {
+      "text": "$30.98",
+      "lines": [
+        {
+          "text": "$30.98",
+          "boundingBox": {
+            "left": 1214,
+            "top": 1148,
+            "right": 1396,
+            "bottom": 1217
+          },
+          "confidence": 0.74153644
+        }
+      ],
+      "boundingBox": {
+        "left": 1214,
+        "top": 1148,
+        "right": 1396,
+        "bottom": 1217
+      }
+    }
+  ]
+}

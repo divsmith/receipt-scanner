@@ -1,0 +1,410 @@
+{
+  "fullText": "KOBE JAPANESE STEAK\n69838 HIGHHAY 111\nRANCHO MIRAGE, CA. 92270-2837\n760-324-1717\nServer ID: 1\nVISA\nXXXXXXXXxxx4757\nSale\nAmount:$\nTip:\nTotal:\nB2/2219\nIny #: 00000061\nAoprvd: Online\nVISA DEBIT\nAID: AD00000031010\nTVR: 80 80 80 80 00\nTSI: 63 00\nEntry Method: Chip\n158.0?\nCustoner Copy\n307\n20:31:12\nAppr Code: B39001",
+  "blocks": [
+    {
+      "text": "KOBE JAPANESE STEAK\n69838 HIGHHAY 111\nRANCHO MIRAGE, CA. 92270-2837\n760-324-1717",
+      "lines": [
+        {
+          "text": "KOBE JAPANESE STEAK",
+          "boundingBox": {
+            "left": 671,
+            "top": 205,
+            "right": 1060,
+            "bottom": 262
+          },
+          "confidence": 0.8290441
+        },
+        {
+          "text": "69838 HIGHHAY 111",
+          "boundingBox": {
+            "left": 673,
+            "top": 233,
+            "right": 1050,
+            "bottom": 292
+          },
+          "confidence": 0.8723958
+        },
+        {
+          "text": "RANCHO MIRAGE, CA. 92270-2837",
+          "boundingBox": {
+            "left": 567,
+            "top": 255,
+            "right": 1175,
+            "bottom": 331
+          },
+          "confidence": 0.7578125
+        },
+        {
+          "text": "760-324-1717",
+          "boundingBox": {
+            "left": 753,
+            "top": 295,
+            "right": 1007,
+            "bottom": 346
+          },
+          "confidence": 0.7705078
+        }
+      ],
+      "boundingBox": {
+        "left": 563,
+        "top": 198,
+        "right": 1176,
+        "bottom": 360
+      }
+    },
+    {
+      "text": "Server ID: 1",
+      "lines": [
+        {
+          "text": "Server ID: 1",
+          "boundingBox": {
+            "left": 429,
+            "top": 379,
+            "right": 686,
+            "bottom": 428
+          },
+          "confidence": 0.7847656
+        }
+      ],
+      "boundingBox": {
+        "left": 429,
+        "top": 379,
+        "right": 686,
+        "bottom": 428
+      }
+    },
+    {
+      "text": "VISA",
+      "lines": [
+        {
+          "text": "VISA",
+          "boundingBox": {
+            "left": 428,
+            "top": 610,
+            "right": 514,
+            "bottom": 664
+          },
+          "confidence": 0.74316406
+        }
+      ],
+      "boundingBox": {
+        "left": 428,
+        "top": 610,
+        "right": 514,
+        "bottom": 664
+      }
+    },
+    {
+      "text": "XXXXXXXXxxx4757",
+      "lines": [
+        {
+          "text": "XXXXXXXXxxx4757",
+          "boundingBox": {
+            "left": 426,
+            "top": 533,
+            "right": 815,
+            "bottom": 609
+          },
+          "confidence": 0.4924479
+        }
+      ],
+      "boundingBox": {
+        "left": 426,
+        "top": 533,
+        "right": 815,
+        "bottom": 609
+      }
+    },
+    {
+      "text": "Sale",
+      "lines": [
+        {
+          "text": "Sale",
+          "boundingBox": {
+            "left": 770,
+            "top": 433,
+            "right": 940,
+            "bottom": 492
+          },
+          "confidence": 0.8671875
+        }
+      ],
+      "boundingBox": {
+        "left": 770,
+        "top": 433,
+        "right": 940,
+        "bottom": 492
+      }
+    },
+    {
+      "text": "Amount:$\nTip:",
+      "lines": [
+        {
+          "text": "Amount:$",
+          "boundingBox": {
+            "left": 426,
+            "top": 697,
+            "right": 774,
+            "bottom": 763
+          },
+          "confidence": 0.74121094
+        },
+        {
+          "text": "Tip:",
+          "boundingBox": {
+            "left": 428,
+            "top": 772,
+            "right": 588,
+            "bottom": 826
+          },
+          "confidence": 0.78222656
+        }
+      ],
+      "boundingBox": {
+        "left": 426,
+        "top": 697,
+        "right": 775,
+        "bottom": 827
+      }
+    },
+    {
+      "text": "Total:",
+      "lines": [
+        {
+          "text": "Total:",
+          "boundingBox": {
+            "left": 422,
+            "top": 862,
+            "right": 672,
+            "bottom": 926
+          },
+          "confidence": 0.7714844
+        }
+      ],
+      "boundingBox": {
+        "left": 422,
+        "top": 862,
+        "right": 672,
+        "bottom": 926
+      }
+    },
+    {
+      "text": "B2/2219\nIny #: 00000061\nAoprvd: Online",
+      "lines": [
+        {
+          "text": "B2/2219",
+          "boundingBox": {
+            "left": 438,
+            "top": 980,
+            "right": 608,
+            "bottom": 1045
+          },
+          "confidence": 0.46261162
+        },
+        {
+          "text": "Iny #: 00000061",
+          "boundingBox": {
+            "left": 446,
+            "top": 1047,
+            "right": 781,
+            "bottom": 1117
+          },
+          "confidence": 0.57872593
+        },
+        {
+          "text": "Aoprvd: Online",
+          "boundingBox": {
+            "left": 421,
+            "top": 1117,
+            "right": 719,
+            "bottom": 1184
+          },
+          "confidence": 0.6003606
+        }
+      ],
+      "boundingBox": {
+        "left": 420,
+        "top": 979,
+        "right": 782,
+        "bottom": 1186
+      }
+    },
+    {
+      "text": "VISA DEBIT\nAID: AD00000031010\nTVR: 80 80 80 80 00\nTSI: 63 00",
+      "lines": [
+        {
+          "text": "VISA DEBIT",
+          "boundingBox": {
+            "left": 449,
+            "top": 1213,
+            "right": 662,
+            "bottom": 1287
+          },
+          "confidence": 0.6467014
+        },
+        {
+          "text": "AID: AD00000031010",
+          "boundingBox": {
+            "left": 440,
+            "top": 1279,
+            "right": 844,
+            "bottom": 1354
+          },
+          "confidence": 0.5618107
+        },
+        {
+          "text": "TVR: 80 80 80 80 00",
+          "boundingBox": {
+            "left": 440,
+            "top": 1347,
+            "right": 855,
+            "bottom": 1422
+          },
+          "confidence": 0.5638951
+        },
+        {
+          "text": "TSI: 63 00",
+          "boundingBox": {
+            "left": 425,
+            "top": 1415,
+            "right": 649,
+            "bottom": 1488
+          },
+          "confidence": 0.4790039
+        }
+      ],
+      "boundingBox": {
+        "left": 424,
+        "top": 1211,
+        "right": 856,
+        "bottom": 1490
+      }
+    },
+    {
+      "text": "Entry Method: Chip",
+      "lines": [
+        {
+          "text": "Entry Method: Chip",
+          "boundingBox": {
+            "left": 948,
+            "top": 585,
+            "right": 1351,
+            "bottom": 654
+          },
+          "confidence": 0.8183594
+        }
+      ],
+      "boundingBox": {
+        "left": 948,
+        "top": 585,
+        "right": 1351,
+        "bottom": 654
+      }
+    },
+    {
+      "text": "158.0?",
+      "lines": [
+        {
+          "text": "158.0?",
+          "boundingBox": {
+            "left": 1082,
+            "top": 685,
+            "right": 1350,
+            "bottom": 750
+          },
+          "confidence": 0.7753906
+        }
+      ],
+      "boundingBox": {
+        "left": 1082,
+        "top": 685,
+        "right": 1350,
+        "bottom": 750
+      }
+    },
+    {
+      "text": "Custoner Copy",
+      "lines": [
+        {
+          "text": "Custoner Copy",
+          "boundingBox": {
+            "left": 737,
+            "top": 1555,
+            "right": 1019,
+            "bottom": 1598
+          },
+          "confidence": 0.6188151
+        }
+      ],
+      "boundingBox": {
+        "left": 737,
+        "top": 1555,
+        "right": 1019,
+        "bottom": 1598
+      }
+    },
+    {
+      "text": "307",
+      "lines": [
+        {
+          "text": "307",
+          "boundingBox": {
+            "left": 1107,
+            "top": 831,
+            "right": 1342,
+            "bottom": 948
+          },
+          "confidence": 0.3450521
+        }
+      ],
+      "boundingBox": {
+        "left": 1107,
+        "top": 831,
+        "right": 1342,
+        "bottom": 948
+      }
+    },
+    {
+      "text": "20:31:12",
+      "lines": [
+        {
+          "text": "20:31:12",
+          "boundingBox": {
+            "left": 1176,
+            "top": 982,
+            "right": 1355,
+            "bottom": 1053
+          },
+          "confidence": 0.7988281
+        }
+      ],
+      "boundingBox": {
+        "left": 1176,
+        "top": 982,
+        "right": 1355,
+        "bottom": 1053
+      }
+    },
+    {
+      "text": "Appr Code: B39001",
+      "lines": [
+        {
+          "text": "Appr Code: B39001",
+          "boundingBox": {
+            "left": 996,
+            "top": 1054,
+            "right": 1354,
+            "bottom": 1120
+          },
+          "confidence": 0.5911458
+        }
+      ],
+      "boundingBox": {
+        "left": 996,
+        "top": 1054,
+        "right": 1354,
+        "bottom": 1120
+      }
+    }
+  ]
+}

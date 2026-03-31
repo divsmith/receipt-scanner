@@ -1,0 +1,978 @@
+{
+  "fullText": "Salt Lake City, UT 84106-3127\n801-466-9129\nSalt Lake City\n1202 Brickyard Road\nCASHIER Miranda\nDATE 11/23/22 TIME 4:32 PM\nREG 2\nTRANS 9832\nSTORE 1056\nAmount\nPrice\n17.50\nItem\n25.00\n(7.50)\nABH BROW WIZ CARAMEL\nOty\n689304860048\n30% 0ff\n17.50\n1.36\n1.36\n7.7500%\n18.86\nSUBTOTAL\nTAX\nTAX TOTAL\nTOTAL\n18.86\nTransaction Type: Sale\nEntry Method: Di pped\nTrace Number: 98320201\nAuth Ti me: 4:32 PM\nX***********0784\nAuth #: 83992D\nVISA\n0.00\nCHANGE\nX*KKXXX*XXX*XXXXkX***X*K*XXX**X**K**XXXXXXX\nMEMBER NUMBER: 2910545917009\nULTAMATE REWARDS\n17\n0\nCURRENT POINTS BALANCE\nBASE POINTS EARNED\nREDEEMABLE POINTS\nXXXXXXXXkXXXkkX**XXXXXXXXXXXXXXXX\nPOINTS EXPIRING 12/31/2022\n09110560298322232750\nSAVINGS\nTOT1.50\n5IONS\nOCCATNE\nULTA.COH\neBEECT FOES AND ON\nGUESr COPY\nPLEASE RETAIN RECEIPT FOR RETURNS\nCHECK US OUT ON-LINE AT\nREDEEMABLE AT ULLTA STO\nFT CARDS\nSOLD ITEM COUNT = 1",
+  "blocks": [
+    {
+      "text": "Salt Lake City, UT 84106-3127\n801-466-9129",
+      "lines": [
+        {
+          "text": "Salt Lake City, UT 84106-3127",
+          "boundingBox": {
+            "left": 482,
+            "top": 313,
+            "right": 763,
+            "bottom": 340
+          },
+          "confidence": 0.82125
+        },
+        {
+          "text": "801-466-9129",
+          "boundingBox": {
+            "left": 563,
+            "top": 336,
+            "right": 676,
+            "bottom": 357
+          },
+          "confidence": 0.92285156
+        }
+      ],
+      "boundingBox": {
+        "left": 482,
+        "top": 313,
+        "right": 763,
+        "bottom": 360
+      }
+    },
+    {
+      "text": "Salt Lake City\n1202 Brickyard Road",
+      "lines": [
+        {
+          "text": "Salt Lake City",
+          "boundingBox": {
+            "left": 553,
+            "top": 275,
+            "right": 686,
+            "bottom": 301
+          },
+          "confidence": 0.81380206
+        },
+        {
+          "text": "1202 Brickyard Road",
+          "boundingBox": {
+            "left": 522,
+            "top": 295,
+            "right": 705,
+            "bottom": 321
+          },
+          "confidence": 0.8274357
+        }
+      ],
+      "boundingBox": {
+        "left": 521,
+        "top": 273,
+        "right": 706,
+        "bottom": 323
+      }
+    },
+    {
+      "text": "CASHIER Miranda\nDATE 11/23/22 TIME 4:32 PM\nREG 2",
+      "lines": [
+        {
+          "text": "CASHIER Miranda",
+          "boundingBox": {
+            "left": 679,
+            "top": 395,
+            "right": 814,
+            "bottom": 417
+          },
+          "confidence": 0.8027344
+        },
+        {
+          "text": "DATE 11/23/22 TIME 4:32 PM",
+          "boundingBox": {
+            "left": 533,
+            "top": 373,
+            "right": 791,
+            "bottom": 398
+          },
+          "confidence": 0.82670456
+        },
+        {
+          "text": "REG 2",
+          "boundingBox": {
+            "left": 535,
+            "top": 397,
+            "right": 589,
+            "bottom": 416
+          },
+          "confidence": 0.8261719
+        }
+      ],
+      "boundingBox": {
+        "left": 533,
+        "top": 373,
+        "right": 814,
+        "bottom": 418
+      }
+    },
+    {
+      "text": "TRANS 9832\nSTORE 1056",
+      "lines": [
+        {
+          "text": "TRANS 9832",
+          "boundingBox": {
+            "left": 396,
+            "top": 370,
+            "right": 497,
+            "bottom": 395
+          },
+          "confidence": 0.8619792
+        },
+        {
+          "text": "STORE 1056",
+          "boundingBox": {
+            "left": 400,
+            "top": 392,
+            "right": 496,
+            "bottom": 414
+          },
+          "confidence": 0.8802083
+        }
+      ],
+      "boundingBox": {
+        "left": 395,
+        "top": 370,
+        "right": 497,
+        "bottom": 415
+      }
+    },
+    {
+      "text": "Amount",
+      "lines": [
+        {
+          "text": "Amount",
+          "boundingBox": {
+            "left": 757,
+            "top": 458,
+            "right": 811,
+            "bottom": 478
+          },
+          "confidence": 0.86783856
+        }
+      ],
+      "boundingBox": {
+        "left": 757,
+        "top": 458,
+        "right": 811,
+        "bottom": 478
+      }
+    },
+    {
+      "text": "Price",
+      "lines": [
+        {
+          "text": "Price",
+          "boundingBox": {
+            "left": 649,
+            "top": 459,
+            "right": 691,
+            "bottom": 478
+          },
+          "confidence": 0.8546875
+        }
+      ],
+      "boundingBox": {
+        "left": 649,
+        "top": 459,
+        "right": 691,
+        "bottom": 478
+      }
+    },
+    {
+      "text": "17.50",
+      "lines": [
+        {
+          "text": "17.50",
+          "boundingBox": {
+            "left": 757,
+            "top": 496,
+            "right": 804,
+            "bottom": 518
+          },
+          "confidence": 0.8929688
+        }
+      ],
+      "boundingBox": {
+        "left": 757,
+        "top": 496,
+        "right": 804,
+        "bottom": 518
+      }
+    },
+    {
+      "text": "Item",
+      "lines": [
+        {
+          "text": "Item",
+          "boundingBox": {
+            "left": 400,
+            "top": 457,
+            "right": 435,
+            "bottom": 476
+          },
+          "confidence": 0.7949219
+        }
+      ],
+      "boundingBox": {
+        "left": 400,
+        "top": 457,
+        "right": 435,
+        "bottom": 476
+      }
+    },
+    {
+      "text": "25.00\n(7.50)",
+      "lines": [
+        {
+          "text": "25.00",
+          "boundingBox": {
+            "left": 635,
+            "top": 498,
+            "right": 683,
+            "bottom": 520
+          },
+          "confidence": 0.89375
+        },
+        {
+          "text": "(7.50)",
+          "boundingBox": {
+            "left": 643,
+            "top": 520,
+            "right": 691,
+            "bottom": 539
+          },
+          "confidence": 0.87109375
+        }
+      ],
+      "boundingBox": {
+        "left": 635,
+        "top": 498,
+        "right": 691,
+        "bottom": 539
+      }
+    },
+    {
+      "text": "ABH BROW WIZ CARAMEL\nOty\n689304860048\n30% 0ff",
+      "lines": [
+        {
+          "text": "ABH BROW WIZ CARAMEL",
+          "boundingBox": {
+            "left": 402,
+            "top": 475,
+            "right": 601,
+            "bottom": 499
+          },
+          "confidence": 0.81204045
+        },
+        {
+          "text": "Oty",
+          "boundingBox": {
+            "left": 518,
+            "top": 459,
+            "right": 542,
+            "bottom": 479
+          },
+          "confidence": 0.68880206
+        },
+        {
+          "text": "689304860048",
+          "boundingBox": {
+            "left": 399,
+            "top": 494,
+            "right": 522,
+            "bottom": 515
+          },
+          "confidence": 0.92057294
+        },
+        {
+          "text": "30% 0ff",
+          "boundingBox": {
+            "left": 398,
+            "top": 519,
+            "right": 468,
+            "bottom": 539
+          },
+          "confidence": 0.7994792
+        }
+      ],
+      "boundingBox": {
+        "left": 398,
+        "top": 458,
+        "right": 601,
+        "bottom": 539
+      }
+    },
+    {
+      "text": "17.50\n1.36",
+      "lines": [
+        {
+          "text": "17.50",
+          "boundingBox": {
+            "left": 763,
+            "top": 599,
+            "right": 807,
+            "bottom": 618
+          },
+          "confidence": 0.89765626
+        },
+        {
+          "text": "1.36",
+          "boundingBox": {
+            "left": 772,
+            "top": 619,
+            "right": 804,
+            "bottom": 638
+          },
+          "confidence": 0.89746094
+        }
+      ],
+      "boundingBox": {
+        "left": 763,
+        "top": 599,
+        "right": 807,
+        "bottom": 638
+      }
+    },
+    {
+      "text": "1.36",
+      "lines": [
+        {
+          "text": "1.36",
+          "boundingBox": {
+            "left": 775,
+            "top": 639,
+            "right": 804,
+            "bottom": 659
+          },
+          "confidence": 0.87402344
+        }
+      ],
+      "boundingBox": {
+        "left": 775,
+        "top": 639,
+        "right": 804,
+        "bottom": 659
+      }
+    },
+    {
+      "text": "7.7500%",
+      "lines": [
+        {
+          "text": "7.7500%",
+          "boundingBox": {
+            "left": 654,
+            "top": 622,
+            "right": 717,
+            "bottom": 641
+          },
+          "confidence": 0.88002235
+        }
+      ],
+      "boundingBox": {
+        "left": 654,
+        "top": 622,
+        "right": 717,
+        "bottom": 641
+      }
+    },
+    {
+      "text": "18.86",
+      "lines": [
+        {
+          "text": "18.86",
+          "boundingBox": {
+            "left": 764,
+            "top": 659,
+            "right": 804,
+            "bottom": 680
+          },
+          "confidence": 0.8773438
+        }
+      ],
+      "boundingBox": {
+        "left": 764,
+        "top": 659,
+        "right": 804,
+        "bottom": 680
+      }
+    },
+    {
+      "text": "SUBTOTAL",
+      "lines": [
+        {
+          "text": "SUBTOTAL",
+          "boundingBox": {
+            "left": 406,
+            "top": 599,
+            "right": 477,
+            "bottom": 625
+          },
+          "confidence": 0.78222656
+        }
+      ],
+      "boundingBox": {
+        "left": 406,
+        "top": 599,
+        "right": 477,
+        "bottom": 625
+      }
+    },
+    {
+      "text": "TAX\nTAX TOTAL\nTOTAL",
+      "lines": [
+        {
+          "text": "TAX",
+          "boundingBox": {
+            "left": 477,
+            "top": 623,
+            "right": 503,
+            "bottom": 644
+          },
+          "confidence": 0.7552083
+        },
+        {
+          "text": "TAX TOTAL",
+          "boundingBox": {
+            "left": 406,
+            "top": 641,
+            "right": 499,
+            "bottom": 668
+          },
+          "confidence": 0.80859375
+        },
+        {
+          "text": "TOTAL",
+          "boundingBox": {
+            "left": 406,
+            "top": 666,
+            "right": 450,
+            "bottom": 688
+          },
+          "confidence": 0.83984375
+        }
+      ],
+      "boundingBox": {
+        "left": 406,
+        "top": 623,
+        "right": 504,
+        "bottom": 687
+      }
+    },
+    {
+      "text": "18.86",
+      "lines": [
+        {
+          "text": "18.86",
+          "boundingBox": {
+            "left": 763,
+            "top": 700,
+            "right": 807,
+            "bottom": 719
+          },
+          "confidence": 0.86640626
+        }
+      ],
+      "boundingBox": {
+        "left": 763,
+        "top": 700,
+        "right": 807,
+        "bottom": 719
+      }
+    },
+    {
+      "text": "Transaction Type: Sale\nEntry Method: Di pped\nTrace Number: 98320201\nAuth Ti me: 4:32 PM\nX***********0784\nAuth #: 83992D",
+      "lines": [
+        {
+          "text": "Transaction Type: Sale",
+          "boundingBox": {
+            "left": 464,
+            "top": 763,
+            "right": 686,
+            "bottom": 792
+          },
+          "confidence": 0.8310547
+        },
+        {
+          "text": "Entry Method: Di pped",
+          "boundingBox": {
+            "left": 462,
+            "top": 785,
+            "right": 665,
+            "bottom": 813
+          },
+          "confidence": 0.87608504
+        },
+        {
+          "text": "Trace Number: 98320201",
+          "boundingBox": {
+            "left": 461,
+            "top": 823,
+            "right": 685,
+            "bottom": 852
+          },
+          "confidence": 0.85410154
+        },
+        {
+          "text": "Auth Ti me: 4:32 PM",
+          "boundingBox": {
+            "left": 461,
+            "top": 806,
+            "right": 644,
+            "bottom": 831
+          },
+          "confidence": 0.82109374
+        },
+        {
+          "text": "X***********0784",
+          "boundingBox": {
+            "left": 461,
+            "top": 724,
+            "right": 623,
+            "bottom": 748
+          },
+          "confidence": 0.7023926
+        },
+        {
+          "text": "Auth #: 83992D",
+          "boundingBox": {
+            "left": 458,
+            "top": 744,
+            "right": 605,
+            "bottom": 770
+          },
+          "confidence": 0.8613281
+        }
+      ],
+      "boundingBox": {
+        "left": 457,
+        "top": 722,
+        "right": 689,
+        "bottom": 852
+      }
+    },
+    {
+      "text": "VISA",
+      "lines": [
+        {
+          "text": "VISA",
+          "boundingBox": {
+            "left": 406,
+            "top": 708,
+            "right": 445,
+            "bottom": 727
+          },
+          "confidence": 0.87402344
+        }
+      ],
+      "boundingBox": {
+        "left": 406,
+        "top": 708,
+        "right": 445,
+        "bottom": 727
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 777,
+            "top": 856,
+            "right": 812,
+            "bottom": 878
+          },
+          "confidence": 0.87890625
+        }
+      ],
+      "boundingBox": {
+        "left": 777,
+        "top": 856,
+        "right": 812,
+        "bottom": 878
+      }
+    },
+    {
+      "text": "CHANGE",
+      "lines": [
+        {
+          "text": "CHANGE",
+          "boundingBox": {
+            "left": 411,
+            "top": 871,
+            "right": 468,
+            "bottom": 898
+          },
+          "confidence": 0.8795573
+        }
+      ],
+      "boundingBox": {
+        "left": 411,
+        "top": 871,
+        "right": 468,
+        "bottom": 898
+      }
+    },
+    {
+      "text": "X*KKXXX*XXX*XXXXkX***X*K*XXX**X**K**XXXXXXX",
+      "lines": [
+        {
+          "text": "X*KKXXX*XXX*XXXXkX***X*K*XXX**X**K**XXXXXXX",
+          "boundingBox": {
+            "left": 412,
+            "top": 919,
+            "right": 851,
+            "bottom": 957
+          },
+          "confidence": 0.2932413
+        }
+      ],
+      "boundingBox": {
+        "left": 412,
+        "top": 919,
+        "right": 851,
+        "bottom": 957
+      }
+    },
+    {
+      "text": "MEMBER NUMBER: 2910545917009",
+      "lines": [
+        {
+          "text": "MEMBER NUMBER: 2910545917009",
+          "boundingBox": {
+            "left": 499,
+            "top": 959,
+            "right": 776,
+            "bottom": 995
+          },
+          "confidence": 0.89858776
+        }
+      ],
+      "boundingBox": {
+        "left": 499,
+        "top": 959,
+        "right": 776,
+        "bottom": 995
+      }
+    },
+    {
+      "text": "ULTAMATE REWARDS",
+      "lines": [
+        {
+          "text": "ULTAMATE REWARDS",
+          "boundingBox": {
+            "left": 564,
+            "top": 943,
+            "right": 718,
+            "bottom": 970
+          },
+          "confidence": 0.759375
+        }
+      ],
+      "boundingBox": {
+        "left": 564,
+        "top": 943,
+        "right": 718,
+        "bottom": 970
+      }
+    },
+    {
+      "text": "17",
+      "lines": [
+        {
+          "text": "17",
+          "boundingBox": {
+            "left": 807,
+            "top": 998,
+            "right": 817,
+            "bottom": 1015
+          },
+          "confidence": 0.796875
+        }
+      ],
+      "boundingBox": {
+        "left": 807,
+        "top": 998,
+        "right": 817,
+        "bottom": 1015
+      }
+    },
+    {
+      "text": "0",
+      "lines": [
+        {
+          "text": "0",
+          "boundingBox": {
+            "left": 811,
+            "top": 1036,
+            "right": 819,
+            "bottom": 1050
+          },
+          "confidence": 0.68359375
+        }
+      ],
+      "boundingBox": {
+        "left": 811,
+        "top": 1036,
+        "right": 819,
+        "bottom": 1050
+      }
+    },
+    {
+      "text": "CURRENT POINTS BALANCE\nBASE POINTS EARNED\nREDEEMABLE POINTS",
+      "lines": [
+        {
+          "text": "CURRENT POINTS BALANCE",
+          "boundingBox": {
+            "left": 413,
+            "top": 1026,
+            "right": 638,
+            "bottom": 1063
+          },
+          "confidence": 0.8613281
+        },
+        {
+          "text": "BASE POINTS EARNED",
+          "boundingBox": {
+            "left": 414,
+            "top": 1009,
+            "right": 599,
+            "bottom": 1043
+          },
+          "confidence": 0.86450195
+        },
+        {
+          "text": "REDEEMABLE POINTS",
+          "boundingBox": {
+            "left": 415,
+            "top": 1049,
+            "right": 590,
+            "bottom": 1086
+          },
+          "confidence": 0.8527832
+        }
+      ],
+      "boundingBox": {
+        "left": 411,
+        "top": 1005,
+        "right": 639,
+        "bottom": 1086
+      }
+    },
+    {
+      "text": "XXXXXXXXkXXXkkX**XXXXXXXXXXXXXXXX",
+      "lines": [
+        {
+          "text": "XXXXXXXXkXXXkkX**XXXXXXXXXXXXXXXX",
+          "boundingBox": {
+            "left": 418,
+            "top": 1103,
+            "right": 749,
+            "bottom": 1147
+          },
+          "confidence": 0.3001894
+        }
+      ],
+      "boundingBox": {
+        "left": 418,
+        "top": 1103,
+        "right": 749,
+        "bottom": 1147
+      }
+    },
+    {
+      "text": "POINTS EXPIRING 12/31/2022",
+      "lines": [
+        {
+          "text": "POINTS EXPIRING 12/31/2022",
+          "boundingBox": {
+            "left": 420,
+            "top": 1082,
+            "right": 690,
+            "bottom": 1128
+          },
+          "confidence": 0.9067383
+        }
+      ],
+      "boundingBox": {
+        "left": 420,
+        "top": 1082,
+        "right": 690,
+        "bottom": 1128
+      }
+    },
+    {
+      "text": "09110560298322232750",
+      "lines": [
+        {
+          "text": "09110560298322232750",
+          "boundingBox": {
+            "left": 545,
+            "top": 1230,
+            "right": 744,
+            "bottom": 1275
+          },
+          "confidence": 0.8769531
+        }
+      ],
+      "boundingBox": {
+        "left": 545,
+        "top": 1230,
+        "right": 744,
+        "bottom": 1275
+      }
+    },
+    {
+      "text": "SAVINGS\nTOT1.50",
+      "lines": [
+        {
+          "text": "SAVINGS",
+          "boundingBox": {
+            "left": 640,
+            "top": 1297,
+            "right": 703,
+            "bottom": 1325
+          },
+          "confidence": 0.88058037
+        },
+        {
+          "text": "TOT1.50",
+          "boundingBox": {
+            "left": 576,
+            "top": 1310,
+            "right": 666,
+            "bottom": 1345
+          },
+          "confidence": 0.46763393
+        }
+      ],
+      "boundingBox": {
+        "left": 576,
+        "top": 1296,
+        "right": 703,
+        "bottom": 1346
+      }
+    },
+    {
+      "text": "5IONS\nOCCATNE\nULTA.COH\neBEECT FOES AND ON\nGUESr COPY\nPLEASE RETAIN RECEIPT FOR RETURNS\nCHECK US OUT ON-LINE AT\nREDEEMABLE AT ULLTA STO\nFT CARDS",
+      "lines": [
+        {
+          "text": "5IONS",
+          "boundingBox": {
+            "left": 764,
+            "top": 1412,
+            "right": 806,
+            "bottom": 1430
+          },
+          "confidence": 0.5414063
+        },
+        {
+          "text": "OCCATNE",
+          "boundingBox": {
+            "left": 729,
+            "top": 1420,
+            "right": 803,
+            "bottom": 1437
+          },
+          "confidence": 0.51227677
+        },
+        {
+          "text": "ULTA.COH",
+          "boundingBox": {
+            "left": 627,
+            "top": 1419,
+            "right": 698,
+            "bottom": 1439
+          },
+          "confidence": 0.5834961
+        },
+        {
+          "text": "eBEECT FOES AND ON",
+          "boundingBox": {
+            "left": 586,
+            "top": 1435,
+            "right": 761,
+            "bottom": 1453
+          },
+          "confidence": 0.43645832
+        },
+        {
+          "text": "GUESr COPY",
+          "boundingBox": {
+            "left": 591,
+            "top": 1466,
+            "right": 682,
+            "bottom": 1488
+          },
+          "confidence": 0.55251735
+        },
+        {
+          "text": "PLEASE RETAIN RECEIPT FOR RETURNS",
+          "boundingBox": {
+            "left": 477,
+            "top": 1367,
+            "right": 797,
+            "bottom": 1436
+          },
+          "confidence": 0.82421875
+        },
+        {
+          "text": "CHECK US OUT ON-LINE AT",
+          "boundingBox": {
+            "left": 527,
+            "top": 1390,
+            "right": 750,
+            "bottom": 1445
+          },
+          "confidence": 0.7771382
+        },
+        {
+          "text": "REDEEMABLE AT ULLTA STO",
+          "boundingBox": {
+            "left": 454,
+            "top": 1444,
+            "right": 668,
+            "bottom": 1490
+          },
+          "confidence": 0.6681641
+        },
+        {
+          "text": "FT CARDS",
+          "boundingBox": {
+            "left": 479,
+            "top": 1450,
+            "right": 556,
+            "bottom": 1478
+          },
+          "confidence": 0.61439735
+        }
+      ],
+      "boundingBox": {
+        "left": 446,
+        "top": 1366,
+        "right": 810,
+        "bottom": 1505
+      }
+    },
+    {
+      "text": "SOLD ITEM COUNT = 1",
+      "lines": [
+        {
+          "text": "SOLD ITEM COUNT = 1",
+          "boundingBox": {
+            "left": 426,
+            "top": 1364,
+            "right": 615,
+            "bottom": 1411
+          },
+          "confidence": 0.7627604
+        }
+      ],
+      "boundingBox": {
+        "left": 426,
+        "top": 1364,
+        "right": 615,
+        "bottom": 1411
+      }
+    }
+  ]
+}

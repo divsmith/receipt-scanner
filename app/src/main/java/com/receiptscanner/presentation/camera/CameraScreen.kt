@@ -2,7 +2,7 @@ package com.receiptscanner.presentation.camera
 
 import android.Manifest
 import android.content.pm.PackageManager
-import android.media.MediaActionSound
+import com.receiptscanner.data.camera.ShutterSoundPlayer
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.camera.view.PreviewView
@@ -63,7 +63,7 @@ fun CameraScreen(
     val lifecycleOwner = LocalLifecycleOwner.current
     val snackbarHostState = remember { SnackbarHostState() }
     val hapticFeedback = LocalHapticFeedback.current
-    val mediaActionSound = remember { MediaActionSound() }
+    val shutterSound = remember { ShutterSoundPlayer() }
 
     var hasCameraPermission by remember {
         mutableStateOf(
@@ -130,7 +130,7 @@ fun CameraScreen(
                 DisposableEffect(Unit) {
                     onDispose {
                         viewModel.getCameraManager().shutdown()
-                        mediaActionSound.release()
+                        shutterSound.release()
                     }
                 }
             }
@@ -206,7 +206,7 @@ fun CameraScreen(
                     FloatingActionButton(
                         onClick = {
                             hapticFeedback.performHapticFeedback(HapticFeedbackType.LongPress)
-                            mediaActionSound.play(MediaActionSound.SHUTTER_CLICK)
+                            shutterSound.play()
                             viewModel.capturePhoto(context)
                         },
                         modifier = Modifier

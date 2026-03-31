@@ -1,0 +1,517 @@
+{
+  "fullText": "Invoice#2143\nManoj\nOM)\nOM INDIAN FOOD\n204 Spring St\nNew York, NY 10012\n(646) 756-400o\n(646) 657-0514 (Fax)\n1 Malai Kofta\n1 Onion Naan\nTABLE T1\nORDER #2\n2 Guests\n1 Vegetable Biryani\n445h6 12:03:14 PM\nSUBTOTAL :\nLUNCH DISCOUNT 50% OFF :\nTAX:\nTOTAL:\nYou have saved: $14-93\n$12.95\n$12.95\n$3-95\n$29.85\n-$14.93\n$1.32\n$16.24",
+  "blocks": [
+    {
+      "text": "Invoice#2143\nManoj",
+      "lines": [
+        {
+          "text": "Invoice#2143",
+          "boundingBox": {
+            "left": 251,
+            "top": 825,
+            "right": 462,
+            "bottom": 853
+          },
+          "confidence": 0.7421875
+        },
+        {
+          "text": "Manoj",
+          "boundingBox": {
+            "left": 249,
+            "top": 858,
+            "right": 349,
+            "bottom": 886
+          },
+          "confidence": 0.8539063
+        }
+      ],
+      "boundingBox": {
+        "left": 250,
+        "top": 824,
+        "right": 462,
+        "bottom": 888
+      }
+    },
+    {
+      "text": "OM)",
+      "lines": [
+        {
+          "text": "OM)",
+          "boundingBox": {
+            "left": 568,
+            "top": 162,
+            "right": 865,
+            "bottom": 308
+          },
+          "confidence": 0.69401044
+        }
+      ],
+      "boundingBox": {
+        "left": 568,
+        "top": 162,
+        "right": 865,
+        "bottom": 308
+      }
+    },
+    {
+      "text": "OM INDIAN FOOD",
+      "lines": [
+        {
+          "text": "OM INDIAN FOOD",
+          "boundingBox": {
+            "left": 560,
+            "top": 405,
+            "right": 901,
+            "bottom": 429
+          },
+          "confidence": 0.78125
+        }
+      ],
+      "boundingBox": {
+        "left": 560,
+        "top": 405,
+        "right": 901,
+        "bottom": 429
+      }
+    },
+    {
+      "text": "204 Spring St\nNew York, NY 10012\n(646) 756-400o\n(646) 657-0514 (Fax)",
+      "lines": [
+        {
+          "text": "204 Spring St",
+          "boundingBox": {
+            "left": 590,
+            "top": 446,
+            "right": 874,
+            "bottom": 482
+          },
+          "confidence": 0.8494318
+        },
+        {
+          "text": "New York, NY 10012",
+          "boundingBox": {
+            "left": 525,
+            "top": 489,
+            "right": 935,
+            "bottom": 527
+          },
+          "confidence": 0.8484375
+        },
+        {
+          "text": "(646) 756-400o",
+          "boundingBox": {
+            "left": 570,
+            "top": 538,
+            "right": 888,
+            "bottom": 574
+          },
+          "confidence": 0.83653843
+        },
+        {
+          "text": "(646) 657-0514 (Fax)",
+          "boundingBox": {
+            "left": 515,
+            "top": 584,
+            "right": 948,
+            "bottom": 621
+          },
+          "confidence": 0.8559028
+        }
+      ],
+      "boundingBox": {
+        "left": 514,
+        "top": 445,
+        "right": 947,
+        "bottom": 621
+      }
+    },
+    {
+      "text": "1 Malai Kofta\n1 Onion Naan",
+      "lines": [
+        {
+          "text": "1 Malai Kofta",
+          "boundingBox": {
+            "left": 255,
+            "top": 975,
+            "right": 564,
+            "bottom": 1020
+          },
+          "confidence": 0.824929
+        },
+        {
+          "text": "1 Onion Naan",
+          "boundingBox": {
+            "left": 250,
+            "top": 1026,
+            "right": 567,
+            "bottom": 1072
+          },
+          "confidence": 0.7867187
+        }
+      ],
+      "boundingBox": {
+        "left": 250,
+        "top": 975,
+        "right": 567,
+        "bottom": 1072
+      }
+    },
+    {
+      "text": "TABLE T1",
+      "lines": [
+        {
+          "text": "TABLE T1",
+          "boundingBox": {
+            "left": 647,
+            "top": 663,
+            "right": 815,
+            "bottom": 686
+          },
+          "confidence": 0.73995537
+        }
+      ],
+      "boundingBox": {
+        "left": 647,
+        "top": 663,
+        "right": 815,
+        "bottom": 686
+      }
+    },
+    {
+      "text": "ORDER #2",
+      "lines": [
+        {
+          "text": "ORDER #2",
+          "boundingBox": {
+            "left": 622,
+            "top": 698,
+            "right": 847,
+            "bottom": 740
+          },
+          "confidence": 0.733817
+        }
+      ],
+      "boundingBox": {
+        "left": 622,
+        "top": 698,
+        "right": 847,
+        "bottom": 740
+      }
+    },
+    {
+      "text": "2 Guests",
+      "lines": [
+        {
+          "text": "2 Guests",
+          "boundingBox": {
+            "left": 642,
+            "top": 753,
+            "right": 821,
+            "bottom": 780
+          },
+          "confidence": 0.8370536
+        }
+      ],
+      "boundingBox": {
+        "left": 642,
+        "top": 753,
+        "right": 821,
+        "bottom": 780
+      }
+    },
+    {
+      "text": "1 Vegetable Biryani",
+      "lines": [
+        {
+          "text": "1 Vegetable Biryani",
+          "boundingBox": {
+            "left": 260,
+            "top": 922,
+            "right": 700,
+            "bottom": 974
+          },
+          "confidence": 0.87362134
+        }
+      ],
+      "boundingBox": {
+        "left": 260,
+        "top": 922,
+        "right": 700,
+        "bottom": 974
+      }
+    },
+    {
+      "text": "445h6 12:03:14 PM",
+      "lines": [
+        {
+          "text": "445h6 12:03:14 PM",
+          "boundingBox": {
+            "left": 910,
+            "top": 827,
+            "right": 1201,
+            "bottom": 853
+          },
+          "confidence": 0.6013021
+        }
+      ],
+      "boundingBox": {
+        "left": 910,
+        "top": 827,
+        "right": 1201,
+        "bottom": 853
+      }
+    },
+    {
+      "text": "SUBTOTAL :",
+      "lines": [
+        {
+          "text": "SUBTOTAL :",
+          "boundingBox": {
+            "left": 650,
+            "top": 1116,
+            "right": 930,
+            "bottom": 1148
+          },
+          "confidence": 0.7673611
+        }
+      ],
+      "boundingBox": {
+        "left": 650,
+        "top": 1116,
+        "right": 930,
+        "bottom": 1148
+      }
+    },
+    {
+      "text": "LUNCH DISCOUNT 50% OFF :",
+      "lines": [
+        {
+          "text": "LUNCH DISCOUNT 50% OFF :",
+          "boundingBox": {
+            "left": 272,
+            "top": 1170,
+            "right": 931,
+            "bottom": 1214
+          },
+          "confidence": 0.7757813
+        }
+      ],
+      "boundingBox": {
+        "left": 272,
+        "top": 1170,
+        "right": 931,
+        "bottom": 1214
+      }
+    },
+    {
+      "text": "TAX:",
+      "lines": [
+        {
+          "text": "TAX:",
+          "boundingBox": {
+            "left": 810,
+            "top": 1224,
+            "right": 932,
+            "bottom": 1256
+          },
+          "confidence": 0.7734375
+        }
+      ],
+      "boundingBox": {
+        "left": 810,
+        "top": 1224,
+        "right": 932,
+        "bottom": 1256
+      }
+    },
+    {
+      "text": "TOTAL:",
+      "lines": [
+        {
+          "text": "TOTAL:",
+          "boundingBox": {
+            "left": 730,
+            "top": 1282,
+            "right": 932,
+            "bottom": 1316
+          },
+          "confidence": 0.75390625
+        }
+      ],
+      "boundingBox": {
+        "left": 730,
+        "top": 1282,
+        "right": 932,
+        "bottom": 1316
+      }
+    },
+    {
+      "text": "You have saved: $14-93",
+      "lines": [
+        {
+          "text": "You have saved: $14-93",
+          "boundingBox": {
+            "left": 447,
+            "top": 1389,
+            "right": 1005,
+            "bottom": 1441
+          },
+          "confidence": 0.85320723
+        }
+      ],
+      "boundingBox": {
+        "left": 447,
+        "top": 1389,
+        "right": 1005,
+        "bottom": 1441
+      }
+    },
+    {
+      "text": "$12.95",
+      "lines": [
+        {
+          "text": "$12.95",
+          "boundingBox": {
+            "left": 1082,
+            "top": 930,
+            "right": 1208,
+            "bottom": 966
+          },
+          "confidence": 0.79036456
+        }
+      ],
+      "boundingBox": {
+        "left": 1082,
+        "top": 930,
+        "right": 1208,
+        "bottom": 966
+      }
+    },
+    {
+      "text": "$12.95",
+      "lines": [
+        {
+          "text": "$12.95",
+          "boundingBox": {
+            "left": 1084,
+            "top": 980,
+            "right": 1212,
+            "bottom": 1016
+          },
+          "confidence": 0.828125
+        }
+      ],
+      "boundingBox": {
+        "left": 1084,
+        "top": 980,
+        "right": 1212,
+        "bottom": 1016
+      }
+    },
+    {
+      "text": "$3-95",
+      "lines": [
+        {
+          "text": "$3-95",
+          "boundingBox": {
+            "left": 1104,
+            "top": 1032,
+            "right": 1218,
+            "bottom": 1068
+          },
+          "confidence": 0.8414062
+        }
+      ],
+      "boundingBox": {
+        "left": 1104,
+        "top": 1032,
+        "right": 1218,
+        "bottom": 1068
+      }
+    },
+    {
+      "text": "$29.85",
+      "lines": [
+        {
+          "text": "$29.85",
+          "boundingBox": {
+            "left": 1078,
+            "top": 1116,
+            "right": 1222,
+            "bottom": 1154
+          },
+          "confidence": 0.88997394
+        }
+      ],
+      "boundingBox": {
+        "left": 1078,
+        "top": 1116,
+        "right": 1222,
+        "bottom": 1154
+      }
+    },
+    {
+      "text": "-$14.93",
+      "lines": [
+        {
+          "text": "-$14.93",
+          "boundingBox": {
+            "left": 1073,
+            "top": 1171,
+            "right": 1227,
+            "bottom": 1209
+          },
+          "confidence": 0.7248884
+        }
+      ],
+      "boundingBox": {
+        "left": 1073,
+        "top": 1171,
+        "right": 1227,
+        "bottom": 1209
+      }
+    },
+    {
+      "text": "$1.32",
+      "lines": [
+        {
+          "text": "$1.32",
+          "boundingBox": {
+            "left": 1126,
+            "top": 1226,
+            "right": 1230,
+            "bottom": 1264
+          },
+          "confidence": 0.73125
+        }
+      ],
+      "boundingBox": {
+        "left": 1126,
+        "top": 1226,
+        "right": 1230,
+        "bottom": 1264
+      }
+    },
+    {
+      "text": "$16.24",
+      "lines": [
+        {
+          "text": "$16.24",
+          "boundingBox": {
+            "left": 1083,
+            "top": 1279,
+            "right": 1235,
+            "bottom": 1322
+          },
+          "confidence": 0.81119794
+        }
+      ],
+      "boundingBox": {
+        "left": 1083,
+        "top": 1279,
+        "right": 1235,
+        "bottom": 1322
+      }
+    }
+  ]
+}

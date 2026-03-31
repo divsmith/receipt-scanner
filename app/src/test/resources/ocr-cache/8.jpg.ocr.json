@@ -1,0 +1,986 @@
+{
+  "fullText": "E\n2X Member 111826278335\n673919 FF BS BREAST\n633561 KS DICED TOM\n967596 JACKORGSALSA\nE\nE\nE\nCOTCO\n3 @ 4.29\nE\nThornton #629\n16375 N. Washington St.\nThornton, C0 80023\nE\n878137 18CT EGGS\n77053 GRAPE TOMATO\n404609 ECO HALF PAN\n55992 GRND TURKEY\n263423 CHPD ONION\n22101 MONT JACK 2#\nSUBTOTAL\nTAX\n**** TOTAL\nCheck/Member Prntd\nCHANGE\nA 8.50% TAX\nE 3.75% TAX\nTOTAL TAX\n23.99 E\nThank You!\n6.49 E\n2.97 E\n12.87 E\nTOTAL NUMBER OF ITEMS SOLD\n720720t 15:00 629 4 172 14\nOP#: 14 Name: PEPPER\n6.29 E\n6.49 A\n18.47 E\n3.59 E\n4.45 E\n85.61\n3.52\n89.k1\n89.13\n0.00\n0.55\n2.97\n3.52\n11\nPlease Come Again\nWhse:629 Trm:4 Trn:172 OP:14",
+  "blocks": [
+    {
+      "text": "E",
+      "lines": [
+        {
+          "text": "E",
+          "boundingBox": {
+            "left": 80,
+            "top": 464,
+            "right": 95,
+            "bottom": 486
+          },
+          "confidence": 0.63671875
+        }
+      ],
+      "boundingBox": {
+        "left": 80,
+        "top": 464,
+        "right": 95,
+        "bottom": 486
+      }
+    },
+    {
+      "text": "2X Member 111826278335\n673919 FF BS BREAST\n633561 KS DICED TOM\n967596 JACKORGSALSA",
+      "lines": [
+        {
+          "text": "2X Member 111826278335",
+          "boundingBox": {
+            "left": 79,
+            "top": 411,
+            "right": 412,
+            "bottom": 455
+          },
+          "confidence": 0.85
+        },
+        {
+          "text": "673919 FF BS BREAST",
+          "boundingBox": {
+            "left": 172,
+            "top": 444,
+            "right": 460,
+            "bottom": 485
+          },
+          "confidence": 0.86206055
+        },
+        {
+          "text": "633561 KS DICED TOM",
+          "boundingBox": {
+            "left": 173,
+            "top": 480,
+            "right": 462,
+            "bottom": 520
+          },
+          "confidence": 0.8635254
+        },
+        {
+          "text": "967596 JACKORGSALSA",
+          "boundingBox": {
+            "left": 174,
+            "top": 516,
+            "right": 463,
+            "bottom": 556
+          },
+          "confidence": 0.8843316
+        }
+      ],
+      "boundingBox": {
+        "left": 79,
+        "top": 409,
+        "right": 464,
+        "bottom": 562
+      }
+    },
+    {
+      "text": "E",
+      "lines": [
+        {
+          "text": "E",
+          "boundingBox": {
+            "left": 81,
+            "top": 499,
+            "right": 95,
+            "bottom": 521
+          },
+          "confidence": 0.61328125
+        }
+      ],
+      "boundingBox": {
+        "left": 81,
+        "top": 499,
+        "right": 95,
+        "bottom": 521
+      }
+    },
+    {
+      "text": "E",
+      "lines": [
+        {
+          "text": "E",
+          "boundingBox": {
+            "left": 82,
+            "top": 535,
+            "right": 96,
+            "bottom": 559
+          },
+          "confidence": 0.546875
+        }
+      ],
+      "boundingBox": {
+        "left": 82,
+        "top": 535,
+        "right": 96,
+        "bottom": 559
+      }
+    },
+    {
+      "text": "E",
+      "lines": [
+        {
+          "text": "E",
+          "boundingBox": {
+            "left": 84,
+            "top": 606,
+            "right": 98,
+            "bottom": 627
+          },
+          "confidence": 0.51171875
+        }
+      ],
+      "boundingBox": {
+        "left": 84,
+        "top": 606,
+        "right": 98,
+        "bottom": 627
+      }
+    },
+    {
+      "text": "COTCO",
+      "lines": [
+        {
+          "text": "COTCO",
+          "boundingBox": {
+            "left": 169,
+            "top": 107,
+            "right": 561,
+            "bottom": 238
+          },
+          "confidence": 0.29140624
+        }
+      ],
+      "boundingBox": {
+        "left": 169,
+        "top": 107,
+        "right": 561,
+        "bottom": 238
+      }
+    },
+    {
+      "text": "3 @ 4.29",
+      "lines": [
+        {
+          "text": "3 @ 4.29",
+          "boundingBox": {
+            "left": 98,
+            "top": 565,
+            "right": 218,
+            "bottom": 593
+          },
+          "confidence": 0.7636719
+        }
+      ],
+      "boundingBox": {
+        "left": 98,
+        "top": 565,
+        "right": 218,
+        "bottom": 593
+      }
+    },
+    {
+      "text": "E",
+      "lines": [
+        {
+          "text": "E",
+          "boundingBox": {
+            "left": 87,
+            "top": 715,
+            "right": 102,
+            "bottom": 739
+          },
+          "confidence": 0.4921875
+        }
+      ],
+      "boundingBox": {
+        "left": 87,
+        "top": 715,
+        "right": 102,
+        "bottom": 739
+      }
+    },
+    {
+      "text": "Thornton #629\n16375 N. Washington St.\nThornton, C0 80023",
+      "lines": [
+        {
+          "text": "Thornton #629",
+          "boundingBox": {
+            "left": 197,
+            "top": 269,
+            "right": 531,
+            "bottom": 314
+          },
+          "confidence": 0.78776044
+        },
+        {
+          "text": "16375 N. Washington St.",
+          "boundingBox": {
+            "left": 194,
+            "top": 300,
+            "right": 535,
+            "bottom": 348
+          },
+          "confidence": 0.8605469
+        },
+        {
+          "text": "Thornton, C0 80023",
+          "boundingBox": {
+            "left": 224,
+            "top": 334,
+            "right": 495,
+            "bottom": 382
+          },
+          "confidence": 0.8144531
+        }
+      ],
+      "boundingBox": {
+        "left": 192,
+        "top": 268,
+        "right": 538,
+        "bottom": 384
+      }
+    },
+    {
+      "text": "E",
+      "lines": [
+        {
+          "text": "E",
+          "boundingBox": {
+            "left": 89,
+            "top": 786,
+            "right": 103,
+            "bottom": 810
+          },
+          "confidence": 0.64453125
+        }
+      ],
+      "boundingBox": {
+        "left": 89,
+        "top": 786,
+        "right": 103,
+        "bottom": 810
+      }
+    },
+    {
+      "text": "878137 18CT EGGS",
+      "lines": [
+        {
+          "text": "878137 18CT EGGS",
+          "boundingBox": {
+            "left": 176,
+            "top": 588,
+            "right": 418,
+            "bottom": 627
+          },
+          "confidence": 0.8825335
+        }
+      ],
+      "boundingBox": {
+        "left": 176,
+        "top": 588,
+        "right": 418,
+        "bottom": 627
+      }
+    },
+    {
+      "text": "77053 GRAPE TOMATO",
+      "lines": [
+        {
+          "text": "77053 GRAPE TOMATO",
+          "boundingBox": {
+            "left": 193,
+            "top": 621,
+            "right": 467,
+            "bottom": 663
+          },
+          "confidence": 0.83618164
+        }
+      ],
+      "boundingBox": {
+        "left": 193,
+        "top": 621,
+        "right": 467,
+        "bottom": 663
+      }
+    },
+    {
+      "text": "404609 ECO HALF PAN",
+      "lines": [
+        {
+          "text": "404609 ECO HALF PAN",
+          "boundingBox": {
+            "left": 179,
+            "top": 657,
+            "right": 467,
+            "bottom": 699
+          },
+          "confidence": 0.84472656
+        }
+      ],
+      "boundingBox": {
+        "left": 179,
+        "top": 657,
+        "right": 467,
+        "bottom": 699
+      }
+    },
+    {
+      "text": "55992 GRND TURKEY\n263423 CHPD ONION",
+      "lines": [
+        {
+          "text": "55992 GRND TURKEY",
+          "boundingBox": {
+            "left": 195,
+            "top": 695,
+            "right": 452,
+            "bottom": 733
+          },
+          "confidence": 0.8846354
+        },
+        {
+          "text": "263423 CHPD ONION",
+          "boundingBox": {
+            "left": 180,
+            "top": 731,
+            "right": 439,
+            "bottom": 770
+          },
+          "confidence": 0.8539063
+        }
+      ],
+      "boundingBox": {
+        "left": 178,
+        "top": 695,
+        "right": 453,
+        "bottom": 770
+      }
+    },
+    {
+      "text": "22101 MONT JACK 2#",
+      "lines": [
+        {
+          "text": "22101 MONT JACK 2#",
+          "boundingBox": {
+            "left": 201,
+            "top": 763,
+            "right": 471,
+            "bottom": 809
+          },
+          "confidence": 0.8356771
+        }
+      ],
+      "boundingBox": {
+        "left": 201,
+        "top": 763,
+        "right": 471,
+        "bottom": 809
+      }
+    },
+    {
+      "text": "SUBTOTAL",
+      "lines": [
+        {
+          "text": "SUBTOTAL",
+          "boundingBox": {
+            "left": 211,
+            "top": 811,
+            "right": 332,
+            "bottom": 842
+          },
+          "confidence": 0.8125
+        }
+      ],
+      "boundingBox": {
+        "left": 211,
+        "top": 811,
+        "right": 332,
+        "bottom": 842
+      }
+    },
+    {
+      "text": "TAX",
+      "lines": [
+        {
+          "text": "TAX",
+          "boundingBox": {
+            "left": 212,
+            "top": 848,
+            "right": 255,
+            "bottom": 877
+          },
+          "confidence": 0.8333333
+        }
+      ],
+      "boundingBox": {
+        "left": 212,
+        "top": 848,
+        "right": 255,
+        "bottom": 877
+      }
+    },
+    {
+      "text": "**** TOTAL",
+      "lines": [
+        {
+          "text": "**** TOTAL",
+          "boundingBox": {
+            "left": 135,
+            "top": 881,
+            "right": 286,
+            "bottom": 918
+          },
+          "confidence": 0.7048611
+        }
+      ],
+      "boundingBox": {
+        "left": 135,
+        "top": 881,
+        "right": 286,
+        "bottom": 918
+      }
+    },
+    {
+      "text": "Check/Member Prntd\nCHANGE",
+      "lines": [
+        {
+          "text": "Check/Member Prntd",
+          "boundingBox": {
+            "left": 213,
+            "top": 909,
+            "right": 493,
+            "bottom": 949
+          },
+          "confidence": 0.86420035
+        },
+        {
+          "text": "CHANGE",
+          "boundingBox": {
+            "left": 213,
+            "top": 953,
+            "right": 305,
+            "bottom": 985
+          },
+          "confidence": 0.9042969
+        }
+      ],
+      "boundingBox": {
+        "left": 212,
+        "top": 909,
+        "right": 494,
+        "bottom": 985
+      }
+    },
+    {
+      "text": "A 8.50% TAX\nE 3.75% TAX\nTOTAL TAX",
+      "lines": [
+        {
+          "text": "A 8.50% TAX",
+          "boundingBox": {
+            "left": 119,
+            "top": 1025,
+            "right": 275,
+            "bottom": 1068
+          },
+          "confidence": 0.81380206
+        },
+        {
+          "text": "E 3.75% TAX",
+          "boundingBox": {
+            "left": 103,
+            "top": 1064,
+            "right": 278,
+            "bottom": 1101
+          },
+          "confidence": 0.84157985
+        },
+        {
+          "text": "TOTAL TAX",
+          "boundingBox": {
+            "left": 104,
+            "top": 1105,
+            "right": 247,
+            "bottom": 1140
+          },
+          "confidence": 0.8256836
+        }
+      ],
+      "boundingBox": {
+        "left": 100,
+        "top": 1026,
+        "right": 280,
+        "bottom": 1141
+      }
+    },
+    {
+      "text": "23.99 E",
+      "lines": [
+        {
+          "text": "23.99 E",
+          "boundingBox": {
+            "left": 537,
+            "top": 431,
+            "right": 646,
+            "bottom": 465
+          },
+          "confidence": 0.890625
+        }
+      ],
+      "boundingBox": {
+        "left": 537,
+        "top": 431,
+        "right": 646,
+        "bottom": 465
+      }
+    },
+    {
+      "text": "Thank You!",
+      "lines": [
+        {
+          "text": "Thank You!",
+          "boundingBox": {
+            "left": 247,
+            "top": 1254,
+            "right": 511,
+            "bottom": 1282
+          },
+          "confidence": 0.82248265
+        }
+      ],
+      "boundingBox": {
+        "left": 247,
+        "top": 1254,
+        "right": 511,
+        "bottom": 1282
+      }
+    },
+    {
+      "text": "6.49 E",
+      "lines": [
+        {
+          "text": "6.49 E",
+          "boundingBox": {
+            "left": 554,
+            "top": 467,
+            "right": 647,
+            "bottom": 501
+          },
+          "confidence": 0.8421875
+        }
+      ],
+      "boundingBox": {
+        "left": 554,
+        "top": 467,
+        "right": 647,
+        "bottom": 501
+      }
+    },
+    {
+      "text": "2.97 E",
+      "lines": [
+        {
+          "text": "2.97 E",
+          "boundingBox": {
+            "left": 556,
+            "top": 502,
+            "right": 649,
+            "bottom": 537
+          },
+          "confidence": 0.8703125
+        }
+      ],
+      "boundingBox": {
+        "left": 556,
+        "top": 502,
+        "right": 649,
+        "bottom": 537
+      }
+    },
+    {
+      "text": "12.87 E",
+      "lines": [
+        {
+          "text": "12.87 E",
+          "boundingBox": {
+            "left": 547,
+            "top": 574,
+            "right": 652,
+            "bottom": 607
+          },
+          "confidence": 0.8561198
+        }
+      ],
+      "boundingBox": {
+        "left": 547,
+        "top": 574,
+        "right": 652,
+        "bottom": 607
+      }
+    },
+    {
+      "text": "TOTAL NUMBER OF ITEMS SOLD\n720720t 15:00 629 4 172 14\nOP#: 14 Name: PEPPER",
+      "lines": [
+        {
+          "text": "TOTAL NUMBER OF ITEMS SOLD",
+          "boundingBox": {
+            "left": 89,
+            "top": 1130,
+            "right": 505,
+            "bottom": 1181
+          },
+          "confidence": 0.8519176
+        },
+        {
+          "text": "720720t 15:00 629 4 172 14",
+          "boundingBox": {
+            "left": 87,
+            "top": 1168,
+            "right": 556,
+            "bottom": 1220
+          },
+          "confidence": 0.6863839
+        },
+        {
+          "text": "OP#: 14 Name: PEPPER",
+          "boundingBox": {
+            "left": 103,
+            "top": 1208,
+            "right": 410,
+            "bottom": 1258
+          },
+          "confidence": 0.81089157
+        }
+      ],
+      "boundingBox": {
+        "left": 85,
+        "top": 1126,
+        "right": 557,
+        "bottom": 1259
+      }
+    },
+    {
+      "text": "6.29 E",
+      "lines": [
+        {
+          "text": "6.29 E",
+          "boundingBox": {
+            "left": 561,
+            "top": 611,
+            "right": 654,
+            "bottom": 644
+          },
+          "confidence": 0.846875
+        }
+      ],
+      "boundingBox": {
+        "left": 561,
+        "top": 611,
+        "right": 654,
+        "bottom": 644
+      }
+    },
+    {
+      "text": "6.49 A",
+      "lines": [
+        {
+          "text": "6.49 A",
+          "boundingBox": {
+            "left": 563,
+            "top": 648,
+            "right": 655,
+            "bottom": 680
+          },
+          "confidence": 0.86015624
+        }
+      ],
+      "boundingBox": {
+        "left": 563,
+        "top": 648,
+        "right": 655,
+        "bottom": 680
+      }
+    },
+    {
+      "text": "18.47 E",
+      "lines": [
+        {
+          "text": "18.47 E",
+          "boundingBox": {
+            "left": 552,
+            "top": 685,
+            "right": 658,
+            "bottom": 716
+          },
+          "confidence": 0.86588544
+        }
+      ],
+      "boundingBox": {
+        "left": 552,
+        "top": 685,
+        "right": 658,
+        "bottom": 716
+      }
+    },
+    {
+      "text": "3.59 E",
+      "lines": [
+        {
+          "text": "3.59 E",
+          "boundingBox": {
+            "left": 567,
+            "top": 721,
+            "right": 660,
+            "bottom": 752
+          },
+          "confidence": 0.8765625
+        }
+      ],
+      "boundingBox": {
+        "left": 567,
+        "top": 721,
+        "right": 660,
+        "bottom": 752
+      }
+    },
+    {
+      "text": "4.45 E",
+      "lines": [
+        {
+          "text": "4.45 E",
+          "boundingBox": {
+            "left": 569,
+            "top": 758,
+            "right": 662,
+            "bottom": 789
+          },
+          "confidence": 0.8304688
+        }
+      ],
+      "boundingBox": {
+        "left": 569,
+        "top": 758,
+        "right": 662,
+        "bottom": 789
+      }
+    },
+    {
+      "text": "85.61",
+      "lines": [
+        {
+          "text": "85.61",
+          "boundingBox": {
+            "left": 555,
+            "top": 797,
+            "right": 627,
+            "bottom": 827
+          },
+          "confidence": 0.8765625
+        }
+      ],
+      "boundingBox": {
+        "left": 555,
+        "top": 797,
+        "right": 627,
+        "bottom": 827
+      }
+    },
+    {
+      "text": "3.52",
+      "lines": [
+        {
+          "text": "3.52",
+          "boundingBox": {
+            "left": 572,
+            "top": 831,
+            "right": 635,
+            "bottom": 863
+          },
+          "confidence": 0.91308594
+        }
+      ],
+      "boundingBox": {
+        "left": 572,
+        "top": 831,
+        "right": 635,
+        "bottom": 863
+      }
+    },
+    {
+      "text": "89.k1",
+      "lines": [
+        {
+          "text": "89.k1",
+          "boundingBox": {
+            "left": 557,
+            "top": 866,
+            "right": 653,
+            "bottom": 901
+          },
+          "confidence": 0.3453125
+        }
+      ],
+      "boundingBox": {
+        "left": 557,
+        "top": 866,
+        "right": 653,
+        "bottom": 901
+      }
+    },
+    {
+      "text": "89.13",
+      "lines": [
+        {
+          "text": "89.13",
+          "boundingBox": {
+            "left": 560,
+            "top": 905,
+            "right": 640,
+            "bottom": 934
+          },
+          "confidence": 0.89921874
+        }
+      ],
+      "boundingBox": {
+        "left": 560,
+        "top": 905,
+        "right": 640,
+        "bottom": 934
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 579,
+            "top": 943,
+            "right": 643,
+            "bottom": 971
+          },
+          "confidence": 0.8066406
+        }
+      ],
+      "boundingBox": {
+        "left": 579,
+        "top": 943,
+        "right": 643,
+        "bottom": 971
+      }
+    },
+    {
+      "text": "0.55",
+      "lines": [
+        {
+          "text": "0.55",
+          "boundingBox": {
+            "left": 583,
+            "top": 1020,
+            "right": 646,
+            "bottom": 1048
+          },
+          "confidence": 0.8310547
+        }
+      ],
+      "boundingBox": {
+        "left": 583,
+        "top": 1020,
+        "right": 646,
+        "bottom": 1048
+      }
+    },
+    {
+      "text": "2.97",
+      "lines": [
+        {
+          "text": "2.97",
+          "boundingBox": {
+            "left": 585,
+            "top": 1055,
+            "right": 648,
+            "bottom": 1086
+          },
+          "confidence": 0.90234375
+        }
+      ],
+      "boundingBox": {
+        "left": 585,
+        "top": 1055,
+        "right": 648,
+        "bottom": 1086
+      }
+    },
+    {
+      "text": "3.52",
+      "lines": [
+        {
+          "text": "3.52",
+          "boundingBox": {
+            "left": 586,
+            "top": 1096,
+            "right": 653,
+            "bottom": 1124
+          },
+          "confidence": 0.890625
+        }
+      ],
+      "boundingBox": {
+        "left": 586,
+        "top": 1096,
+        "right": 653,
+        "bottom": 1124
+      }
+    },
+    {
+      "text": "11",
+      "lines": [
+        {
+          "text": "11",
+          "boundingBox": {
+            "left": 607,
+            "top": 1127,
+            "right": 632,
+            "bottom": 1163
+          },
+          "confidence": 0.78515625
+        }
+      ],
+      "boundingBox": {
+        "left": 607,
+        "top": 1127,
+        "right": 632,
+        "bottom": 1163
+      }
+    },
+    {
+      "text": "Please Come Again\nWhse:629 Trm:4 Trn:172 OP:14",
+      "lines": [
+        {
+          "text": "Please Come Again",
+          "boundingBox": {
+            "left": 191,
+            "top": 1296,
+            "right": 670,
+            "bottom": 1323
+          },
+          "confidence": 0.8015625
+        },
+        {
+          "text": "Whse:629 Trm:4 Trn:172 OP:14",
+          "boundingBox": {
+            "left": 133,
+            "top": 1330,
+            "right": 588,
+            "bottom": 1361
+          },
+          "confidence": 0.7765625
+        }
+      ],
+      "boundingBox": {
+        "left": 133,
+        "top": 1296,
+        "right": 670,
+        "bottom": 1361
+      }
+    }
+  ]
+}

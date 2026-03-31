@@ -1,0 +1,452 @@
+{
+  "fullText": "JALISCO,\n244,Hịghygy299,M\nElgin TX 78621.\n512-285-3940 0r 512-285-3950\nCheck 94\nNOEMI\nGuests 1\nWater\nCaldo de Camaron\nSubtotal\nSales Tax\nProcessing Fee\nTOTAL\nBALANCE DUE\nor\nTable 6\n19\n0.00\nProcessing fee will be removed\nif the check is paid in cash.\n8.99\n8.99\n0.74\n0.27\n10.00\n10.00",
+  "blocks": [
+    {
+      "text": "JALISCO,\n244,Hịghygy299,M\nElgin TX 78621.\n512-285-3940 0r 512-285-3950",
+      "lines": [
+        {
+          "text": "JALISCO,",
+          "boundingBox": {
+            "left": 682,
+            "top": 37,
+            "right": 1042,
+            "bottom": 145
+          },
+          "confidence": 0.6928711
+        },
+        {
+          "text": "244,Hịghygy299,M",
+          "boundingBox": {
+            "left": 349,
+            "top": 105,
+            "right": 1224,
+            "bottom": 231
+          },
+          "confidence": 0.564209
+        },
+        {
+          "text": "Elgin TX 78621.",
+          "boundingBox": {
+            "left": 464,
+            "top": 194,
+            "right": 1198,
+            "bottom": 280
+          },
+          "confidence": 0.6469351
+        },
+        {
+          "text": "512-285-3940 0r 512-285-3950",
+          "boundingBox": {
+            "left": 100,
+            "top": 260,
+            "right": 1524,
+            "bottom": 354
+          },
+          "confidence": 0.78590745
+        }
+      ],
+      "boundingBox": {
+        "left": 99,
+        "top": 34,
+        "right": 1525,
+        "bottom": 360
+      }
+    },
+    {
+      "text": "Check 94\nNOEMI\nGuests 1",
+      "lines": [
+        {
+          "text": "Check 94",
+          "boundingBox": {
+            "left": 80,
+            "top": 418,
+            "right": 490,
+            "bottom": 502
+          },
+          "confidence": 0.828125
+        },
+        {
+          "text": "NOEMI",
+          "boundingBox": {
+            "left": 83,
+            "top": 487,
+            "right": 337,
+            "bottom": 576
+          },
+          "confidence": 0.70625
+        },
+        {
+          "text": "Guests 1",
+          "boundingBox": {
+            "left": 90,
+            "top": 570,
+            "right": 484,
+            "bottom": 640
+          },
+          "confidence": 0.8515625
+        }
+      ],
+      "boundingBox": {
+        "left": 79,
+        "top": 417,
+        "right": 489,
+        "bottom": 640
+      }
+    },
+    {
+      "text": "Water",
+      "lines": [
+        {
+          "text": "Water",
+          "boundingBox": {
+            "left": 187,
+            "top": 713,
+            "right": 359,
+            "bottom": 755
+          },
+          "confidence": 0.890625
+        }
+      ],
+      "boundingBox": {
+        "left": 187,
+        "top": 713,
+        "right": 359,
+        "bottom": 755
+      }
+    },
+    {
+      "text": "Caldo de Camaron",
+      "lines": [
+        {
+          "text": "Caldo de Camaron",
+          "boundingBox": {
+            "left": 180,
+            "top": 770,
+            "right": 744,
+            "bottom": 824
+          },
+          "confidence": 0.87918526
+        }
+      ],
+      "boundingBox": {
+        "left": 180,
+        "top": 770,
+        "right": 744,
+        "bottom": 824
+      }
+    },
+    {
+      "text": "Subtotal\nSales Tax\nProcessing Fee",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 70,
+            "top": 906,
+            "right": 350,
+            "bottom": 960
+          },
+          "confidence": 0.8574219
+        },
+        {
+          "text": "Sales Tax",
+          "boundingBox": {
+            "left": 70,
+            "top": 972,
+            "right": 392,
+            "bottom": 1023
+          },
+          "confidence": 0.8666992
+        },
+        {
+          "text": "Processing Fee",
+          "boundingBox": {
+            "left": 92,
+            "top": 1025,
+            "right": 567,
+            "bottom": 1096
+          },
+          "confidence": 0.89122593
+        }
+      ],
+      "boundingBox": {
+        "left": 69,
+        "top": 900,
+        "right": 568,
+        "bottom": 1096
+      }
+    },
+    {
+      "text": "TOTAL",
+      "lines": [
+        {
+          "text": "TOTAL",
+          "boundingBox": {
+            "left": 70,
+            "top": 1170,
+            "right": 248,
+            "bottom": 1220
+          },
+          "confidence": 0.7875
+        }
+      ],
+      "boundingBox": {
+        "left": 70,
+        "top": 1170,
+        "right": 248,
+        "bottom": 1220
+      }
+    },
+    {
+      "text": "BALANCE DUE",
+      "lines": [
+        {
+          "text": "BALANCE DUE",
+          "boundingBox": {
+            "left": 70,
+            "top": 1285,
+            "right": 645,
+            "bottom": 1376
+          },
+          "confidence": 0.86796874
+        }
+      ],
+      "boundingBox": {
+        "left": 70,
+        "top": 1285,
+        "right": 645,
+        "bottom": 1376
+      }
+    },
+    {
+      "text": "or",
+      "lines": [
+        {
+          "text": "or",
+          "boundingBox": {
+            "left": 756,
+            "top": 267,
+            "right": 907,
+            "bottom": 365
+          },
+          "confidence": 0.7480469
+        }
+      ],
+      "boundingBox": {
+        "left": 756,
+        "top": 267,
+        "right": 907,
+        "bottom": 365
+      }
+    },
+    {
+      "text": "Table 6\n19",
+      "lines": [
+        {
+          "text": "Table 6",
+          "boundingBox": {
+            "left": 1147,
+            "top": 410,
+            "right": 1498,
+            "bottom": 501
+          },
+          "confidence": 0.70247394
+        },
+        {
+          "text": "19",
+          "boundingBox": {
+            "left": 1410,
+            "top": 484,
+            "right": 1500,
+            "bottom": 564
+          },
+          "confidence": 0.86328125
+        }
+      ],
+      "boundingBox": {
+        "left": 1147,
+        "top": 410,
+        "right": 1500,
+        "bottom": 570
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 1348,
+            "top": 708,
+            "right": 1484,
+            "bottom": 754
+          },
+          "confidence": 0.8730469
+        }
+      ],
+      "boundingBox": {
+        "left": 1348,
+        "top": 708,
+        "right": 1484,
+        "bottom": 754
+      }
+    },
+    {
+      "text": "Processing fee will be removed\nif the check is paid in cash.",
+      "lines": [
+        {
+          "text": "Processing fee will be removed",
+          "boundingBox": {
+            "left": 288,
+            "top": 1438,
+            "right": 1336,
+            "bottom": 1500
+          },
+          "confidence": 0.88822114
+        },
+        {
+          "text": "if the check is paid in cash.",
+          "boundingBox": {
+            "left": 332,
+            "top": 1506,
+            "right": 1326,
+            "bottom": 1562
+          },
+          "confidence": 0.88705844
+        }
+      ],
+      "boundingBox": {
+        "left": 288,
+        "top": 1438,
+        "right": 1336,
+        "bottom": 1562
+      }
+    },
+    {
+      "text": "8.99",
+      "lines": [
+        {
+          "text": "8.99",
+          "boundingBox": {
+            "left": 1348,
+            "top": 772,
+            "right": 1486,
+            "bottom": 822
+          },
+          "confidence": 0.8691406
+        }
+      ],
+      "boundingBox": {
+        "left": 1348,
+        "top": 772,
+        "right": 1486,
+        "bottom": 822
+      }
+    },
+    {
+      "text": "8.99",
+      "lines": [
+        {
+          "text": "8.99",
+          "boundingBox": {
+            "left": 1354,
+            "top": 900,
+            "right": 1491,
+            "bottom": 953
+          },
+          "confidence": 0.90625
+        }
+      ],
+      "boundingBox": {
+        "left": 1354,
+        "top": 900,
+        "right": 1491,
+        "bottom": 953
+      }
+    },
+    {
+      "text": "0.74",
+      "lines": [
+        {
+          "text": "0.74",
+          "boundingBox": {
+            "left": 1356,
+            "top": 962,
+            "right": 1496,
+            "bottom": 1018
+          },
+          "confidence": 0.85546875
+        }
+      ],
+      "boundingBox": {
+        "left": 1356,
+        "top": 962,
+        "right": 1496,
+        "bottom": 1018
+      }
+    },
+    {
+      "text": "0.27",
+      "lines": [
+        {
+          "text": "0.27",
+          "boundingBox": {
+            "left": 1362,
+            "top": 1032,
+            "right": 1498,
+            "bottom": 1078
+          },
+          "confidence": 0.8105469
+        }
+      ],
+      "boundingBox": {
+        "left": 1362,
+        "top": 1032,
+        "right": 1498,
+        "bottom": 1078
+      }
+    },
+    {
+      "text": "10.00",
+      "lines": [
+        {
+          "text": "10.00",
+          "boundingBox": {
+            "left": 1344,
+            "top": 1162,
+            "right": 1506,
+            "bottom": 1210
+          },
+          "confidence": 0.884375
+        }
+      ],
+      "boundingBox": {
+        "left": 1344,
+        "top": 1162,
+        "right": 1506,
+        "bottom": 1210
+      }
+    },
+    {
+      "text": "10.00",
+      "lines": [
+        {
+          "text": "10.00",
+          "boundingBox": {
+            "left": 1222,
+            "top": 1292,
+            "right": 1468,
+            "bottom": 1366
+          },
+          "confidence": 0.88984376
+        }
+      ],
+      "boundingBox": {
+        "left": 1222,
+        "top": 1292,
+        "right": 1468,
+        "bottom": 1366
+      }
+    }
+  ]
+}

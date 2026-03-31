@@ -1,0 +1,452 @@
+{
+  "fullText": "Server: Braul io\n102/1\nGuests: 2\nCoffee (2 02.95)\nTwo Eggs Any Style\nWhole-Wheat Pancakes\nHawai ian Sausage\nSubtotal\nJT'S Diner\n37011 Cook Street\n(760) 797-2100\nTax\nTotal\nBaanCe Due\nThank You\n02/12/2016\n10:28 AM\n50022\n5.90\n6.95\n8.95\n4.50\n26.30\n2.10\n28.40\n28.40",
+  "blocks": [
+    {
+      "text": "Server: Braul io\n102/1\nGuests: 2",
+      "lines": [
+        {
+          "text": "Server: Braul io",
+          "boundingBox": {
+            "left": 179,
+            "top": 505,
+            "right": 623,
+            "bottom": 558
+          },
+          "confidence": 0.827846
+        },
+        {
+          "text": "102/1",
+          "boundingBox": {
+            "left": 162,
+            "top": 560,
+            "right": 304,
+            "bottom": 598
+          },
+          "confidence": 0.8515625
+        },
+        {
+          "text": "Guests: 2",
+          "boundingBox": {
+            "left": 175,
+            "top": 602,
+            "right": 440,
+            "bottom": 644
+          },
+          "confidence": 0.86865234
+        }
+      ],
+      "boundingBox": {
+        "left": 162,
+        "top": 505,
+        "right": 624,
+        "bottom": 645
+      }
+    },
+    {
+      "text": "Coffee (2 02.95)\nTwo Eggs Any Style\nWhole-Wheat Pancakes\nHawai ian Sausage",
+      "lines": [
+        {
+          "text": "Coffee (2 02.95)",
+          "boundingBox": {
+            "left": 162,
+            "top": 686,
+            "right": 656,
+            "bottom": 731
+          },
+          "confidence": 0.8328683
+        },
+        {
+          "text": "Two Eggs Any Style",
+          "boundingBox": {
+            "left": 164,
+            "top": 731,
+            "right": 726,
+            "bottom": 777
+          },
+          "confidence": 0.7997396
+        },
+        {
+          "text": "Whole-Wheat Pancakes",
+          "boundingBox": {
+            "left": 164,
+            "top": 774,
+            "right": 788,
+            "bottom": 817
+          },
+          "confidence": 0.8564967
+        },
+        {
+          "text": "Hawai ian Sausage",
+          "boundingBox": {
+            "left": 162,
+            "top": 824,
+            "right": 666,
+            "bottom": 860
+          },
+          "confidence": 0.81875
+        }
+      ],
+      "boundingBox": {
+        "left": 161,
+        "top": 685,
+        "right": 788,
+        "bottom": 864
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 158,
+            "top": 912,
+            "right": 404,
+            "bottom": 950
+          },
+          "confidence": 0.86279297
+        }
+      ],
+      "boundingBox": {
+        "left": 158,
+        "top": 912,
+        "right": 404,
+        "bottom": 950
+      }
+    },
+    {
+      "text": "JT'S Diner\n37011 Cook Street\n(760) 797-2100",
+      "lines": [
+        {
+          "text": "JT'S Diner",
+          "boundingBox": {
+            "left": 652,
+            "top": 330,
+            "right": 964,
+            "bottom": 364
+          },
+          "confidence": 0.70529515
+        },
+        {
+          "text": "37011 Cook Street",
+          "boundingBox": {
+            "left": 526,
+            "top": 370,
+            "right": 1060,
+            "bottom": 410
+          },
+          "confidence": 0.87864584
+        },
+        {
+          "text": "(760) 797-2100",
+          "boundingBox": {
+            "left": 596,
+            "top": 413,
+            "right": 1030,
+            "bottom": 459
+          },
+          "confidence": 0.8737981
+        }
+      ],
+      "boundingBox": {
+        "left": 526,
+        "top": 327,
+        "right": 1059,
+        "bottom": 459
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 158,
+            "top": 964,
+            "right": 248,
+            "bottom": 996
+          },
+          "confidence": 0.7864583
+        }
+      ],
+      "boundingBox": {
+        "left": 158,
+        "top": 964,
+        "right": 248,
+        "bottom": 996
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 152,
+            "top": 1050,
+            "right": 300,
+            "bottom": 1091
+          },
+          "confidence": 0.79765624
+        }
+      ],
+      "boundingBox": {
+        "left": 152,
+        "top": 1050,
+        "right": 300,
+        "bottom": 1091
+      }
+    },
+    {
+      "text": "BaanCe Due",
+      "lines": [
+        {
+          "text": "BaanCe Due",
+          "boundingBox": {
+            "left": 142,
+            "top": 1143,
+            "right": 865,
+            "bottom": 1186
+          },
+          "confidence": 0.7630208
+        }
+      ],
+      "boundingBox": {
+        "left": 142,
+        "top": 1143,
+        "right": 865,
+        "bottom": 1186
+      }
+    },
+    {
+      "text": "Thank You",
+      "lines": [
+        {
+          "text": "Thank You",
+          "boundingBox": {
+            "left": 674,
+            "top": 1240,
+            "right": 976,
+            "bottom": 1280
+          },
+          "confidence": 0.8486328
+        }
+      ],
+      "boundingBox": {
+        "left": 674,
+        "top": 1240,
+        "right": 976,
+        "bottom": 1280
+      }
+    },
+    {
+      "text": "02/12/2016\n10:28 AM\n50022",
+      "lines": [
+        {
+          "text": "02/12/2016",
+          "boundingBox": {
+            "left": 1164,
+            "top": 493,
+            "right": 1480,
+            "bottom": 538
+          },
+          "confidence": 0.80507815
+        },
+        {
+          "text": "10:28 AM",
+          "boundingBox": {
+            "left": 1236,
+            "top": 540,
+            "right": 1482,
+            "bottom": 581
+          },
+          "confidence": 0.8504464
+        },
+        {
+          "text": "50022",
+          "boundingBox": {
+            "left": 1328,
+            "top": 588,
+            "right": 1488,
+            "bottom": 622
+          },
+          "confidence": 0.89140624
+        }
+      ],
+      "boundingBox": {
+        "left": 1164,
+        "top": 493,
+        "right": 1487,
+        "bottom": 625
+      }
+    },
+    {
+      "text": "5.90",
+      "lines": [
+        {
+          "text": "5.90",
+          "boundingBox": {
+            "left": 1365,
+            "top": 675,
+            "right": 1492,
+            "bottom": 710
+          },
+          "confidence": 0.82128906
+        }
+      ],
+      "boundingBox": {
+        "left": 1365,
+        "top": 675,
+        "right": 1492,
+        "bottom": 710
+      }
+    },
+    {
+      "text": "6.95",
+      "lines": [
+        {
+          "text": "6.95",
+          "boundingBox": {
+            "left": 1368,
+            "top": 721,
+            "right": 1493,
+            "bottom": 759
+          },
+          "confidence": 0.89941406
+        }
+      ],
+      "boundingBox": {
+        "left": 1368,
+        "top": 721,
+        "right": 1493,
+        "bottom": 759
+      }
+    },
+    {
+      "text": "8.95",
+      "lines": [
+        {
+          "text": "8.95",
+          "boundingBox": {
+            "left": 1372,
+            "top": 768,
+            "right": 1502,
+            "bottom": 802
+          },
+          "confidence": 0.8964844
+        }
+      ],
+      "boundingBox": {
+        "left": 1372,
+        "top": 768,
+        "right": 1502,
+        "bottom": 802
+      }
+    },
+    {
+      "text": "4.50",
+      "lines": [
+        {
+          "text": "4.50",
+          "boundingBox": {
+            "left": 1376,
+            "top": 812,
+            "right": 1504,
+            "bottom": 846
+          },
+          "confidence": 0.89160156
+        }
+      ],
+      "boundingBox": {
+        "left": 1376,
+        "top": 812,
+        "right": 1504,
+        "bottom": 846
+      }
+    },
+    {
+      "text": "26.30",
+      "lines": [
+        {
+          "text": "26.30",
+          "boundingBox": {
+            "left": 1351,
+            "top": 900,
+            "right": 1513,
+            "bottom": 937
+          },
+          "confidence": 0.871875
+        }
+      ],
+      "boundingBox": {
+        "left": 1351,
+        "top": 900,
+        "right": 1513,
+        "bottom": 937
+      }
+    },
+    {
+      "text": "2.10",
+      "lines": [
+        {
+          "text": "2.10",
+          "boundingBox": {
+            "left": 1388,
+            "top": 947,
+            "right": 1518,
+            "bottom": 984
+          },
+          "confidence": 0.8251953
+        }
+      ],
+      "boundingBox": {
+        "left": 1388,
+        "top": 947,
+        "right": 1518,
+        "bottom": 984
+      }
+    },
+    {
+      "text": "28.40",
+      "lines": [
+        {
+          "text": "28.40",
+          "boundingBox": {
+            "left": 1366,
+            "top": 1044,
+            "right": 1532,
+            "bottom": 1080
+          },
+          "confidence": 0.87421876
+        }
+      ],
+      "boundingBox": {
+        "left": 1366,
+        "top": 1044,
+        "right": 1532,
+        "bottom": 1080
+      }
+    },
+    {
+      "text": "28.40",
+      "lines": [
+        {
+          "text": "28.40",
+          "boundingBox": {
+            "left": 1207,
+            "top": 1140,
+            "right": 1538,
+            "bottom": 1176
+          },
+          "confidence": 0.546875
+        }
+      ],
+      "boundingBox": {
+        "left": 1207,
+        "top": 1140,
+        "right": 1538,
+        "bottom": 1176
+      }
+    }
+  ]
+}

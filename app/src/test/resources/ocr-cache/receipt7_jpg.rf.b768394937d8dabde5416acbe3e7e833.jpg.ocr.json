@@ -1,0 +1,745 @@
+{
+  "fullText": "Server: Sue\nTable 103/1\nGuests: 2\nRepr ft #: 2\nDraft Blackhouse\nSASKA'S\n3768 Missfon Blvd\nSan Diego CA 92109\n(858) 488-7311\n\"Cowboy\" 160z Ribeye\nMake It Blue\nTax\nAdd Lobster\nCK Manhattan (2 G5.00)\nWhistle Pig Rye 10yr (2 820.00)\n\"Duke\" 160z Top Sirloin\nMake It Blue\nSubtota l\n(2)BMOD Up\nTotal\nBalance Due\nSUGGESTED TIP\nBEFORE DISCOUNTS\n18% =$30.06\n20% =$33.40\n08/15/2017\n5:51 PM\n22% =$36.74\n10005\n7.00\n45.00\n5.00\n21.00\n10.00\n40.00\n34.00\n5.00\n167.00\n12.94\n179.94\n179.94",
+  "blocks": [
+    {
+      "text": "Server: Sue\nTable 103/1",
+      "lines": [
+        {
+          "text": "Server: Sue",
+          "boundingBox": {
+            "left": 416,
+            "top": 526,
+            "right": 602,
+            "bottom": 552
+          },
+          "confidence": 0.7515625
+        },
+        {
+          "text": "Table 103/1",
+          "boundingBox": {
+            "left": 415,
+            "top": 553,
+            "right": 597,
+            "bottom": 583
+          },
+          "confidence": 0.8101562
+        }
+      ],
+      "boundingBox": {
+        "left": 415,
+        "top": 525,
+        "right": 602,
+        "bottom": 583
+      }
+    },
+    {
+      "text": "Guests: 2\nRepr ft #: 2",
+      "lines": [
+        {
+          "text": "Guests: 2",
+          "boundingBox": {
+            "left": 410,
+            "top": 583,
+            "right": 565,
+            "bottom": 610
+          },
+          "confidence": 0.6118164
+        },
+        {
+          "text": "Repr ft #: 2",
+          "boundingBox": {
+            "left": 407,
+            "top": 613,
+            "right": 613,
+            "bottom": 642
+          },
+          "confidence": 0.81293404
+        }
+      ],
+      "boundingBox": {
+        "left": 407,
+        "top": 583,
+        "right": 613,
+        "bottom": 642
+      }
+    },
+    {
+      "text": "Draft Blackhouse",
+      "lines": [
+        {
+          "text": "Draft Blackhouse",
+          "boundingBox": {
+            "left": 400,
+            "top": 670,
+            "right": 679,
+            "bottom": 699
+          },
+          "confidence": 0.82109374
+        }
+      ],
+      "boundingBox": {
+        "left": 400,
+        "top": 670,
+        "right": 679,
+        "bottom": 699
+      }
+    },
+    {
+      "text": "SASKA'S\n3768 Missfon Blvd\nSan Diego CA 92109\n(858) 488-7311",
+      "lines": [
+        {
+          "text": "SASKA'S",
+          "boundingBox": {
+            "left": 711,
+            "top": 393,
+            "right": 824,
+            "bottom": 416
+          },
+          "confidence": 0.7198661
+        },
+        {
+          "text": "3768 Missfon Blvd",
+          "boundingBox": {
+            "left": 641,
+            "top": 416,
+            "right": 907,
+            "bottom": 447
+          },
+          "confidence": 0.7317708
+        },
+        {
+          "text": "San Diego CA 92109",
+          "boundingBox": {
+            "left": 607,
+            "top": 445,
+            "right": 940,
+            "bottom": 475
+          },
+          "confidence": 0.7963542
+        },
+        {
+          "text": "(858) 488-7311",
+          "boundingBox": {
+            "left": 660,
+            "top": 475,
+            "right": 888,
+            "bottom": 500
+          },
+          "confidence": 0.78155047
+        }
+      ],
+      "boundingBox": {
+        "left": 606,
+        "top": 393,
+        "right": 939,
+        "bottom": 501
+      }
+    },
+    {
+      "text": "\"Cowboy\" 160z Ribeye",
+      "lines": [
+        {
+          "text": "\"Cowboy\" 160z Ribeye",
+          "boundingBox": {
+            "left": 401,
+            "top": 701,
+            "right": 747,
+            "bottom": 735
+          },
+          "confidence": 0.71831596
+        }
+      ],
+      "boundingBox": {
+        "left": 401,
+        "top": 701,
+        "right": 747,
+        "bottom": 735
+      }
+    },
+    {
+      "text": "Make It Blue",
+      "lines": [
+        {
+          "text": "Make It Blue",
+          "boundingBox": {
+            "left": 429,
+            "top": 735,
+            "right": 640,
+            "bottom": 760
+          },
+          "confidence": 0.81875
+        }
+      ],
+      "boundingBox": {
+        "left": 429,
+        "top": 735,
+        "right": 640,
+        "bottom": 760
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 357,
+            "top": 1027,
+            "right": 411,
+            "bottom": 1057
+          },
+          "confidence": 0.7161458
+        }
+      ],
+      "boundingBox": {
+        "left": 357,
+        "top": 1027,
+        "right": 411,
+        "bottom": 1057
+      }
+    },
+    {
+      "text": "Add Lobster",
+      "lines": [
+        {
+          "text": "Add Lobster",
+          "boundingBox": {
+            "left": 424,
+            "top": 764,
+            "right": 619,
+            "bottom": 792
+          },
+          "confidence": 0.87109375
+        }
+      ],
+      "boundingBox": {
+        "left": 424,
+        "top": 764,
+        "right": 619,
+        "bottom": 792
+      }
+    },
+    {
+      "text": "CK Manhattan (2 G5.00)",
+      "lines": [
+        {
+          "text": "CK Manhattan (2 G5.00)",
+          "boundingBox": {
+            "left": 386,
+            "top": 794,
+            "right": 775,
+            "bottom": 826
+          },
+          "confidence": 0.7565789
+        }
+      ],
+      "boundingBox": {
+        "left": 386,
+        "top": 794,
+        "right": 775,
+        "bottom": 826
+      }
+    },
+    {
+      "text": "Whistle Pig Rye 10yr (2 820.00)",
+      "lines": [
+        {
+          "text": "Whistle Pig Rye 10yr (2 820.00)",
+          "boundingBox": {
+            "left": 419,
+            "top": 827,
+            "right": 971,
+            "bottom": 862
+          },
+          "confidence": 0.7785457
+        }
+      ],
+      "boundingBox": {
+        "left": 419,
+        "top": 827,
+        "right": 971,
+        "bottom": 862
+      }
+    },
+    {
+      "text": "\"Duke\" 160z Top Sirloin\nMake It Blue",
+      "lines": [
+        {
+          "text": "\"Duke\" 160z Top Sirloin",
+          "boundingBox": {
+            "left": 379,
+            "top": 890,
+            "right": 793,
+            "bottom": 924
+          },
+          "confidence": 0.71542966
+        },
+        {
+          "text": "Make It Blue",
+          "boundingBox": {
+            "left": 407,
+            "top": 927,
+            "right": 629,
+            "bottom": 955
+          },
+          "confidence": 0.8335937
+        }
+      ],
+      "boundingBox": {
+        "left": 379,
+        "top": 890,
+        "right": 793,
+        "bottom": 957
+      }
+    },
+    {
+      "text": "Subtota l",
+      "lines": [
+        {
+          "text": "Subtota l",
+          "boundingBox": {
+            "left": 360,
+            "top": 989,
+            "right": 507,
+            "bottom": 1025
+          },
+          "confidence": 0.8432617
+        }
+      ],
+      "boundingBox": {
+        "left": 360,
+        "top": 989,
+        "right": 507,
+        "bottom": 1025
+      }
+    },
+    {
+      "text": "(2)BMOD Up",
+      "lines": [
+        {
+          "text": "(2)BMOD Up",
+          "boundingBox": {
+            "left": 455,
+            "top": 860,
+            "right": 633,
+            "bottom": 890
+          },
+          "confidence": 0.7508681
+        }
+      ],
+      "boundingBox": {
+        "left": 455,
+        "top": 860,
+        "right": 633,
+        "bottom": 890
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 347,
+            "top": 1097,
+            "right": 436,
+            "bottom": 1129
+          },
+          "confidence": 0.85078126
+        }
+      ],
+      "boundingBox": {
+        "left": 347,
+        "top": 1097,
+        "right": 436,
+        "bottom": 1129
+      }
+    },
+    {
+      "text": "Balance Due",
+      "lines": [
+        {
+          "text": "Balance Due",
+          "boundingBox": {
+            "left": 334,
+            "top": 1171,
+            "right": 763,
+            "bottom": 1207
+          },
+          "confidence": 0.77265626
+        }
+      ],
+      "boundingBox": {
+        "left": 334,
+        "top": 1171,
+        "right": 763,
+        "bottom": 1207
+      }
+    },
+    {
+      "text": "SUGGESTED TIP\nBEFORE DISCOUNTS\n18% =$30.06",
+      "lines": [
+        {
+          "text": "SUGGESTED TIP",
+          "boundingBox": {
+            "left": 605,
+            "top": 1247,
+            "right": 865,
+            "bottom": 1289
+          },
+          "confidence": 0.8339844
+        },
+        {
+          "text": "BEFORE DISCOUNTS",
+          "boundingBox": {
+            "left": 582,
+            "top": 1287,
+            "right": 903,
+            "bottom": 1329
+          },
+          "confidence": 0.82161456
+        },
+        {
+          "text": "18% =$30.06",
+          "boundingBox": {
+            "left": 626,
+            "top": 1325,
+            "right": 842,
+            "bottom": 1365
+          },
+          "confidence": 0.72265625
+        }
+      ],
+      "boundingBox": {
+        "left": 582,
+        "top": 1247,
+        "right": 904,
+        "bottom": 1366
+      }
+    },
+    {
+      "text": "20% =$33.40",
+      "lines": [
+        {
+          "text": "20% =$33.40",
+          "boundingBox": {
+            "left": 619,
+            "top": 1368,
+            "right": 842,
+            "bottom": 1405
+          },
+          "confidence": 0.79765624
+        }
+      ],
+      "boundingBox": {
+        "left": 619,
+        "top": 1368,
+        "right": 842,
+        "bottom": 1405
+      }
+    },
+    {
+      "text": "08/15/2017\n5:51 PM",
+      "lines": [
+        {
+          "text": "08/15/2017",
+          "boundingBox": {
+            "left": 957,
+            "top": 534,
+            "right": 1125,
+            "bottom": 559
+          },
+          "confidence": 0.8609375
+        },
+        {
+          "text": "5:51 PM",
+          "boundingBox": {
+            "left": 1009,
+            "top": 563,
+            "right": 1127,
+            "bottom": 586
+          },
+          "confidence": 0.8307292
+        }
+      ],
+      "boundingBox": {
+        "left": 957,
+        "top": 534,
+        "right": 1127,
+        "bottom": 586
+      }
+    },
+    {
+      "text": "22% =$36.74",
+      "lines": [
+        {
+          "text": "22% =$36.74",
+          "boundingBox": {
+            "left": 616,
+            "top": 1408,
+            "right": 842,
+            "bottom": 1446
+          },
+          "confidence": 0.7855469
+        }
+      ],
+      "boundingBox": {
+        "left": 616,
+        "top": 1408,
+        "right": 842,
+        "bottom": 1446
+      }
+    },
+    {
+      "text": "10005",
+      "lines": [
+        {
+          "text": "10005",
+          "boundingBox": {
+            "left": 1046,
+            "top": 590,
+            "right": 1127,
+            "bottom": 616
+          },
+          "confidence": 0.871875
+        }
+      ],
+      "boundingBox": {
+        "left": 1046,
+        "top": 590,
+        "right": 1127,
+        "bottom": 616
+      }
+    },
+    {
+      "text": "7.00\n45.00",
+      "lines": [
+        {
+          "text": "7.00",
+          "boundingBox": {
+            "left": 1062,
+            "top": 680,
+            "right": 1130,
+            "bottom": 705
+          },
+          "confidence": 0.7753906
+        },
+        {
+          "text": "45.00",
+          "boundingBox": {
+            "left": 1045,
+            "top": 710,
+            "right": 1128,
+            "bottom": 736
+          },
+          "confidence": 0.89375
+        }
+      ],
+      "boundingBox": {
+        "left": 1044,
+        "top": 680,
+        "right": 1130,
+        "bottom": 736
+      }
+    },
+    {
+      "text": "5.00",
+      "lines": [
+        {
+          "text": "5.00",
+          "boundingBox": {
+            "left": 1062,
+            "top": 742,
+            "right": 1132,
+            "bottom": 766
+          },
+          "confidence": 0.9082031
+        }
+      ],
+      "boundingBox": {
+        "left": 1062,
+        "top": 742,
+        "right": 1132,
+        "bottom": 766
+      }
+    },
+    {
+      "text": "21.00",
+      "lines": [
+        {
+          "text": "21.00",
+          "boundingBox": {
+            "left": 1046,
+            "top": 774,
+            "right": 1133,
+            "bottom": 798
+          },
+          "confidence": 0.86640626
+        }
+      ],
+      "boundingBox": {
+        "left": 1046,
+        "top": 774,
+        "right": 1133,
+        "bottom": 798
+      }
+    },
+    {
+      "text": "10.00",
+      "lines": [
+        {
+          "text": "10.00",
+          "boundingBox": {
+            "left": 1050,
+            "top": 806,
+            "right": 1135,
+            "bottom": 831
+          },
+          "confidence": 0.80078125
+        }
+      ],
+      "boundingBox": {
+        "left": 1050,
+        "top": 806,
+        "right": 1135,
+        "bottom": 831
+      }
+    },
+    {
+      "text": "40.00",
+      "lines": [
+        {
+          "text": "40.00",
+          "boundingBox": {
+            "left": 1048,
+            "top": 836,
+            "right": 1135,
+            "bottom": 861
+          },
+          "confidence": 0.8617188
+        }
+      ],
+      "boundingBox": {
+        "left": 1048,
+        "top": 836,
+        "right": 1135,
+        "bottom": 861
+      }
+    },
+    {
+      "text": "34.00",
+      "lines": [
+        {
+          "text": "34.00",
+          "boundingBox": {
+            "left": 1049,
+            "top": 898,
+            "right": 1137,
+            "bottom": 929
+          },
+          "confidence": 0.8960937
+        }
+      ],
+      "boundingBox": {
+        "left": 1049,
+        "top": 898,
+        "right": 1137,
+        "bottom": 929
+      }
+    },
+    {
+      "text": "5.00",
+      "lines": [
+        {
+          "text": "5.00",
+          "boundingBox": {
+            "left": 1068,
+            "top": 935,
+            "right": 1141,
+            "bottom": 961
+          },
+          "confidence": 0.86621094
+        }
+      ],
+      "boundingBox": {
+        "left": 1068,
+        "top": 935,
+        "right": 1141,
+        "bottom": 961
+      }
+    },
+    {
+      "text": "167.00\n12.94",
+      "lines": [
+        {
+          "text": "167.00",
+          "boundingBox": {
+            "left": 1037,
+            "top": 1003,
+            "right": 1144,
+            "bottom": 1029
+          },
+          "confidence": 0.82747394
+        },
+        {
+          "text": "12.94",
+          "boundingBox": {
+            "left": 1056,
+            "top": 1037,
+            "right": 1148,
+            "bottom": 1065
+          },
+          "confidence": 0.8539063
+        }
+      ],
+      "boundingBox": {
+        "left": 1037,
+        "top": 1003,
+        "right": 1147,
+        "bottom": 1064
+      }
+    },
+    {
+      "text": "179.94",
+      "lines": [
+        {
+          "text": "179.94",
+          "boundingBox": {
+            "left": 1041,
+            "top": 1108,
+            "right": 1151,
+            "bottom": 1137
+          },
+          "confidence": 0.8098958
+        }
+      ],
+      "boundingBox": {
+        "left": 1041,
+        "top": 1108,
+        "right": 1151,
+        "bottom": 1137
+      }
+    },
+    {
+      "text": "179.94",
+      "lines": [
+        {
+          "text": "179.94",
+          "boundingBox": {
+            "left": 930,
+            "top": 1181,
+            "right": 1153,
+            "bottom": 1212
+          },
+          "confidence": 0.7832031
+        }
+      ],
+      "boundingBox": {
+        "left": 930,
+        "top": 1181,
+        "right": 1153,
+        "bottom": 1212
+      }
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "fullText": "OLDEN BOWL TERIYAKI\nB6 10 GARF IELO AVE\nSUTH GATE, CA. G0280\nTEL: (E92) 928-899s\nREG\nManagar1\nOROER#\nO-18-2019 11:19 AM\nMC #01\n1 #1 CHKN PLATE\n1AVOCADO\n1 MD. DRINK\n*HERE:\nTAX\nTOTAL.\nCASH\nCG\nO00141\nOO0141\n$9.39\n$1.95\n$2. 29\n$1.40\n$15. O3\n$20.00\n$4.97",
+  "blocks": [
+    {
+      "text": "OLDEN BOWL TERIYAKI\nB6 10 GARF IELO AVE\nSUTH GATE, CA. G0280\nTEL: (E92) 928-899s",
+      "lines": [
+        {
+          "text": "OLDEN BOWL TERIYAKI",
+          "boundingBox": {
+            "left": 333,
+            "top": 244,
+            "right": 1058,
+            "bottom": 360
+          },
+          "confidence": 0.6700368
+        },
+        {
+          "text": "B6 10 GARF IELO AVE",
+          "boundingBox": {
+            "left": 389,
+            "top": 304,
+            "right": 982,
+            "bottom": 406
+          },
+          "confidence": 0.6075521
+        },
+        {
+          "text": "SUTH GATE, CA. G0280",
+          "boundingBox": {
+            "left": 292,
+            "top": 332,
+            "right": 1066,
+            "bottom": 465
+          },
+          "confidence": 0.5372243
+        },
+        {
+          "text": "TEL: (E92) 928-899s",
+          "boundingBox": {
+            "left": 342,
+            "top": 382,
+            "right": 1037,
+            "bottom": 510
+          },
+          "confidence": 0.5085018
+        }
+      ],
+      "boundingBox": {
+        "left": 282,
+        "top": 239,
+        "right": 1073,
+        "bottom": 515
+      }
+    },
+    {
+      "text": "REG\nManagar1",
+      "lines": [
+        {
+          "text": "REG",
+          "boundingBox": {
+            "left": 134,
+            "top": 574,
+            "right": 253,
+            "bottom": 623
+          },
+          "confidence": 0.8151042
+        },
+        {
+          "text": "Managar1",
+          "boundingBox": {
+            "left": 135,
+            "top": 608,
+            "right": 451,
+            "bottom": 687
+          },
+          "confidence": 0.6694336
+        }
+      ],
+      "boundingBox": {
+        "left": 130,
+        "top": 555,
+        "right": 452,
+        "bottom": 687
+      }
+    },
+    {
+      "text": "OROER#",
+      "lines": [
+        {
+          "text": "OROER#",
+          "boundingBox": {
+            "left": 221,
+            "top": 676,
+            "right": 683,
+            "bottom": 791
+          },
+          "confidence": 0.5917969
+        }
+      ],
+      "boundingBox": {
+        "left": 221,
+        "top": 676,
+        "right": 683,
+        "bottom": 791
+      }
+    },
+    {
+      "text": "O-18-2019 11:19 AM\nMC #01",
+      "lines": [
+        {
+          "text": "O-18-2019 11:19 AM",
+          "boundingBox": {
+            "left": 526,
+            "top": 449,
+            "right": 1245,
+            "bottom": 597
+          },
+          "confidence": 0.6779785
+        },
+        {
+          "text": "MC #01",
+          "boundingBox": {
+            "left": 532,
+            "top": 577,
+            "right": 753,
+            "bottom": 638
+          },
+          "confidence": 0.53203124
+        }
+      ],
+      "boundingBox": {
+        "left": 523,
+        "top": 448,
+        "right": 1251,
+        "bottom": 642
+      }
+    },
+    {
+      "text": "1 #1 CHKN PLATE\n1AVOCADO\n1 MD. DRINK\n*HERE:",
+      "lines": [
+        {
+          "text": "1 #1 CHKN PLATE",
+          "boundingBox": {
+            "left": 214,
+            "top": 776,
+            "right": 781,
+            "bottom": 908
+          },
+          "confidence": 0.7705078
+        },
+        {
+          "text": "1AVOCADO",
+          "boundingBox": {
+            "left": 192,
+            "top": 857,
+            "right": 629,
+            "bottom": 966
+          },
+          "confidence": 0.6772461
+        },
+        {
+          "text": "1 MD. DRINK",
+          "boundingBox": {
+            "left": 210,
+            "top": 915,
+            "right": 634,
+            "bottom": 1026
+          },
+          "confidence": 0.7300347
+        },
+        {
+          "text": "*HERE:",
+          "boundingBox": {
+            "left": 267,
+            "top": 973,
+            "right": 673,
+            "bottom": 1074
+          },
+          "confidence": 0.6145833
+        }
+      ],
+      "boundingBox": {
+        "left": 183,
+        "top": 775,
+        "right": 804,
+        "bottom": 1085
+      }
+    },
+    {
+      "text": "TAX",
+      "lines": [
+        {
+          "text": "TAX",
+          "boundingBox": {
+            "left": 267,
+            "top": 1075,
+            "right": 397,
+            "bottom": 1137
+          },
+          "confidence": 0.67838544
+        }
+      ],
+      "boundingBox": {
+        "left": 267,
+        "top": 1075,
+        "right": 397,
+        "bottom": 1137
+      }
+    },
+    {
+      "text": "TOTAL.",
+      "lines": [
+        {
+          "text": "TOTAL.",
+          "boundingBox": {
+            "left": 269,
+            "top": 1094,
+            "right": 680,
+            "bottom": 1205
+          },
+          "confidence": 0.60026044
+        }
+      ],
+      "boundingBox": {
+        "left": 269,
+        "top": 1094,
+        "right": 680,
+        "bottom": 1205
+      }
+    },
+    {
+      "text": "CASH\nCG",
+      "lines": [
+        {
+          "text": "CASH",
+          "boundingBox": {
+            "left": 262,
+            "top": 1193,
+            "right": 443,
+            "bottom": 1269
+          },
+          "confidence": 0.8730469
+        },
+        {
+          "text": "CG",
+          "boundingBox": {
+            "left": 266,
+            "top": 1274,
+            "right": 358,
+            "bottom": 1332
+          },
+          "confidence": 0.67578125
+        }
+      ],
+      "boundingBox": {
+        "left": 259,
+        "top": 1193,
+        "right": 447,
+        "bottom": 1336
+      }
+    },
+    {
+      "text": "O00141",
+      "lines": [
+        {
+          "text": "O00141",
+          "boundingBox": {
+            "left": 1021,
+            "top": 502,
+            "right": 1245,
+            "bottom": 577
+          },
+          "confidence": 0.6230469
+        }
+      ],
+      "boundingBox": {
+        "left": 1021,
+        "top": 502,
+        "right": 1245,
+        "bottom": 577
+      }
+    },
+    {
+      "text": "OO0141",
+      "lines": [
+        {
+          "text": "OO0141",
+          "boundingBox": {
+            "left": 806,
+            "top": 607,
+            "right": 1253,
+            "bottom": 716
+          },
+          "confidence": 0.375
+        }
+      ],
+      "boundingBox": {
+        "left": 806,
+        "top": 607,
+        "right": 1253,
+        "bottom": 716
+      }
+    },
+    {
+      "text": "$9.39\n$1.95\n$2. 29",
+      "lines": [
+        {
+          "text": "$9.39",
+          "boundingBox": {
+            "left": 1094,
+            "top": 706,
+            "right": 1297,
+            "bottom": 787
+          },
+          "confidence": 0.5203125
+        },
+        {
+          "text": "$1.95",
+          "boundingBox": {
+            "left": 1104,
+            "top": 765,
+            "right": 1307,
+            "bottom": 840
+          },
+          "confidence": 0.68671876
+        },
+        {
+          "text": "$2. 29",
+          "boundingBox": {
+            "left": 1114,
+            "top": 822,
+            "right": 1316,
+            "bottom": 901
+          },
+          "confidence": 0.825
+        }
+      ],
+      "boundingBox": {
+        "left": 1094,
+        "top": 706,
+        "right": 1317,
+        "bottom": 902
+      }
+    },
+    {
+      "text": "$1.40",
+      "lines": [
+        {
+          "text": "$1.40",
+          "boundingBox": {
+            "left": 1128,
+            "top": 935,
+            "right": 1332,
+            "bottom": 1020
+          },
+          "confidence": 0.8046875
+        }
+      ],
+      "boundingBox": {
+        "left": 1128,
+        "top": 935,
+        "right": 1332,
+        "bottom": 1020
+      }
+    },
+    {
+      "text": "$15. O3\n$20.00\n$4.97",
+      "lines": [
+        {
+          "text": "$15. O3",
+          "boundingBox": {
+            "left": 898,
+            "top": 993,
+            "right": 1334,
+            "bottom": 1122
+          },
+          "confidence": 0.39257812
+        },
+        {
+          "text": "$20.00",
+          "boundingBox": {
+            "left": 1103,
+            "top": 1061,
+            "right": 1350,
+            "bottom": 1146
+          },
+          "confidence": 0.5989583
+        },
+        {
+          "text": "$4.97",
+          "boundingBox": {
+            "left": 1153,
+            "top": 1121,
+            "right": 1357,
+            "bottom": 1202
+          },
+          "confidence": 0.8882812
+        }
+      ],
+      "boundingBox": {
+        "left": 898,
+        "top": 992,
+        "right": 1359,
+        "bottom": 1235
+      }
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "fullText": "E. BALDI\n375 North Canon Drive\nBeverly Hills, CA 90210\nTUE JANUARY 30,2018\n37CHECK #278470-1\nTABLE #6\n1 ICED TEA\n1 ROMBO CARCIOFI FUNGH\n1 SPARKLING WATER LARG\n1 BRANZINO GRIGL IAT0\n1 CARPACCIO RED SNAPPE\nFOOD\nSUB-TOTAL\nTAX\nTOTAL\nTime: 14:22\n$4.50\n$48.00\n$8.50\n$40.00\n$33.00\n$134.00\n$134.00\n$12.73\n$146,73\n2 CUSTOMEp",
+  "blocks": [
+    {
+      "text": "E. BALDI",
+      "lines": [
+        {
+          "text": "E. BALDI",
+          "boundingBox": {
+            "left": 489,
+            "top": 82,
+            "right": 969,
+            "bottom": 172
+          },
+          "confidence": 0.7427455
+        }
+      ],
+      "boundingBox": {
+        "left": 489,
+        "top": 82,
+        "right": 969,
+        "bottom": 172
+      }
+    },
+    {
+      "text": "375 North Canon Drive\nBeverly Hills, CA 90210",
+      "lines": [
+        {
+          "text": "375 North Canon Drive",
+          "boundingBox": {
+            "left": 62,
+            "top": 113,
+            "right": 1493,
+            "bottom": 251
+          },
+          "confidence": 0.7988281
+        },
+        {
+          "text": "Beverly Hills, CA 90210",
+          "boundingBox": {
+            "left": 348,
+            "top": 201,
+            "right": 1118,
+            "bottom": 306
+          },
+          "confidence": 0.8451172
+        }
+      ],
+      "boundingBox": {
+        "left": 62,
+        "top": 110,
+        "right": 1497,
+        "bottom": 323
+      }
+    },
+    {
+      "text": "TUE JANUARY 30,2018\n37CHECK #278470-1\nTABLE #6",
+      "lines": [
+        {
+          "text": "TUE JANUARY 30,2018",
+          "boundingBox": {
+            "left": 417,
+            "top": 387,
+            "right": 1042,
+            "bottom": 475
+          },
+          "confidence": 0.87017465
+        },
+        {
+          "text": "37CHECK #278470-1",
+          "boundingBox": {
+            "left": 122,
+            "top": 444,
+            "right": 1281,
+            "bottom": 546
+          },
+          "confidence": 0.67211914
+        },
+        {
+          "text": "TABLE #6",
+          "boundingBox": {
+            "left": 600,
+            "top": 528,
+            "right": 860,
+            "bottom": 590
+          },
+          "confidence": 0.81529015
+        }
+      ],
+      "boundingBox": {
+        "left": 118,
+        "top": 376,
+        "right": 1283,
+        "bottom": 613
+      }
+    },
+    {
+      "text": "1 ICED TEA",
+      "lines": [
+        {
+          "text": "1 ICED TEA",
+          "boundingBox": {
+            "left": 250,
+            "top": 664,
+            "right": 524,
+            "bottom": 726
+          },
+          "confidence": 0.7685547
+        }
+      ],
+      "boundingBox": {
+        "left": 250,
+        "top": 664,
+        "right": 524,
+        "bottom": 726
+      }
+    },
+    {
+      "text": "1 ROMBO CARCIOFI FUNGH\n1 SPARKLING WATER LARG\n1 BRANZINO GRIGL IAT0\n1 CARPACCIO RED SNAPPE",
+      "lines": [
+        {
+          "text": "1 ROMBO CARCIOFI FUNGH",
+          "boundingBox": {
+            "left": 248,
+            "top": 722,
+            "right": 930,
+            "bottom": 789
+          },
+          "confidence": 0.8125
+        },
+        {
+          "text": "1 SPARKLING WATER LARG",
+          "boundingBox": {
+            "left": 252,
+            "top": 793,
+            "right": 931,
+            "bottom": 854
+          },
+          "confidence": 0.85053456
+        },
+        {
+          "text": "1 BRANZINO GRIGL IAT0",
+          "boundingBox": {
+            "left": 243,
+            "top": 852,
+            "right": 859,
+            "bottom": 917
+          },
+          "confidence": 0.7994792
+        },
+        {
+          "text": "1 CARPACCIO RED SNAPPE",
+          "boundingBox": {
+            "left": 243,
+            "top": 915,
+            "right": 931,
+            "bottom": 984
+          },
+          "confidence": 0.8178454
+        }
+      ],
+      "boundingBox": {
+        "left": 243,
+        "top": 720,
+        "right": 932,
+        "bottom": 984
+      }
+    },
+    {
+      "text": "FOOD\nSUB-TOTAL",
+      "lines": [
+        {
+          "text": "FOOD",
+          "boundingBox": {
+            "left": 268,
+            "top": 1048,
+            "right": 386,
+            "bottom": 1098
+          },
+          "confidence": 0.7480469
+        },
+        {
+          "text": "SUB-TOTAL",
+          "boundingBox": {
+            "left": 260,
+            "top": 1110,
+            "right": 542,
+            "bottom": 1170
+          },
+          "confidence": 0.73828125
+        }
+      ],
+      "boundingBox": {
+        "left": 259,
+        "top": 1046,
+        "right": 543,
+        "bottom": 1170
+      }
+    },
+    {
+      "text": "TAX\nTOTAL",
+      "lines": [
+        {
+          "text": "TAX",
+          "boundingBox": {
+            "left": 264,
+            "top": 1238,
+            "right": 356,
+            "bottom": 1286
+          },
+          "confidence": 0.7578125
+        },
+        {
+          "text": "TOTAL",
+          "boundingBox": {
+            "left": 177,
+            "top": 1292,
+            "right": 484,
+            "bottom": 1349
+          },
+          "confidence": 0.7242187
+        }
+      ],
+      "boundingBox": {
+        "left": 177,
+        "top": 1234,
+        "right": 485,
+        "bottom": 1349
+      }
+    },
+    {
+      "text": "Time: 14:22",
+      "lines": [
+        {
+          "text": "Time: 14:22",
+          "boundingBox": {
+            "left": 299,
+            "top": 1512,
+            "right": 647,
+            "bottom": 1576
+          },
+          "confidence": 0.790625
+        }
+      ],
+      "boundingBox": {
+        "left": 299,
+        "top": 1512,
+        "right": 647,
+        "bottom": 1576
+      }
+    },
+    {
+      "text": "$4.50\n$48.00",
+      "lines": [
+        {
+          "text": "$4.50",
+          "boundingBox": {
+            "left": 1120,
+            "top": 654,
+            "right": 1305,
+            "bottom": 714
+          },
+          "confidence": 0.9234375
+        },
+        {
+          "text": "$48.00",
+          "boundingBox": {
+            "left": 1082,
+            "top": 725,
+            "right": 1305,
+            "bottom": 783
+          },
+          "confidence": 0.9088542
+        }
+      ],
+      "boundingBox": {
+        "left": 1080,
+        "top": 654,
+        "right": 1307,
+        "bottom": 783
+      }
+    },
+    {
+      "text": "$8.50",
+      "lines": [
+        {
+          "text": "$8.50",
+          "boundingBox": {
+            "left": 1120,
+            "top": 791,
+            "right": 1305,
+            "bottom": 850
+          },
+          "confidence": 0.9351562
+        }
+      ],
+      "boundingBox": {
+        "left": 1120,
+        "top": 791,
+        "right": 1305,
+        "bottom": 850
+      }
+    },
+    {
+      "text": "$40.00",
+      "lines": [
+        {
+          "text": "$40.00",
+          "boundingBox": {
+            "left": 1084,
+            "top": 866,
+            "right": 1306,
+            "bottom": 918
+          },
+          "confidence": 0.8964844
+        }
+      ],
+      "boundingBox": {
+        "left": 1084,
+        "top": 866,
+        "right": 1306,
+        "bottom": 918
+      }
+    },
+    {
+      "text": "$33.00",
+      "lines": [
+        {
+          "text": "$33.00",
+          "boundingBox": {
+            "left": 1084,
+            "top": 929,
+            "right": 1302,
+            "bottom": 985
+          },
+          "confidence": 0.8847656
+        }
+      ],
+      "boundingBox": {
+        "left": 1084,
+        "top": 929,
+        "right": 1302,
+        "bottom": 985
+      }
+    },
+    {
+      "text": "$134.00\n$134.00",
+      "lines": [
+        {
+          "text": "$134.00",
+          "boundingBox": {
+            "left": 1046,
+            "top": 1056,
+            "right": 1295,
+            "bottom": 1113
+          },
+          "confidence": 0.8426339
+        },
+        {
+          "text": "$134.00",
+          "boundingBox": {
+            "left": 1048,
+            "top": 1128,
+            "right": 1302,
+            "bottom": 1184
+          },
+          "confidence": 0.8978795
+        }
+      ],
+      "boundingBox": {
+        "left": 1046,
+        "top": 1056,
+        "right": 1301,
+        "bottom": 1187
+      }
+    },
+    {
+      "text": "$12.73\n$146,73",
+      "lines": [
+        {
+          "text": "$12.73",
+          "boundingBox": {
+            "left": 1089,
+            "top": 1265,
+            "right": 1305,
+            "bottom": 1318
+          },
+          "confidence": 0.89713544
+        },
+        {
+          "text": "$146,73",
+          "boundingBox": {
+            "left": 803,
+            "top": 1312,
+            "right": 1298,
+            "bottom": 1394
+          },
+          "confidence": 0.6177455
+        }
+      ],
+      "boundingBox": {
+        "left": 803,
+        "top": 1261,
+        "right": 1306,
+        "bottom": 1394
+      }
+    },
+    {
+      "text": "2 CUSTOMEp",
+      "lines": [
+        {
+          "text": "2 CUSTOMEp",
+          "boundingBox": {
+            "left": 815,
+            "top": 1552,
+            "right": 1169,
+            "bottom": 1599
+          },
+          "confidence": 0.6475694
+        }
+      ],
+      "boundingBox": {
+        "left": 815,
+        "top": 1552,
+        "right": 1169,
+        "bottom": 1599
+      }
+    }
+  ]
+}

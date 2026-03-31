@@ -1,0 +1,556 @@
+{
+  "fullText": "1\n1\nTax\nKPLAVERAS\nCashier: BAR PM\n30 Aug 2019 3:24:10P\nSubtotal\nMEXICAN CUISINE & BAR\nKALAVERAS - BELLFLOWER\n16530 BELLFLOWER BLVD\nBELLFLoWER, CA 90706\nTotal\n5624610599\nhttp://www.kalaveras.com/\nORDER: Bar B11\nClassic Michelada\nClassic Michelada\nDon Julio Anejo\nClassic Michelada\nBalam Madurado\nThank you for your visit!\n83V4QQC31PPMT\nOrder 83V40QC31PPMT\n$12.00\n$12.0\n.00\n$15.00\n$12.00\n$12.00\n$63.00\n$5.99\n$68.99",
+  "blocks": [
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 269,
+            "top": 879,
+            "right": 281,
+            "bottom": 904
+          },
+          "confidence": 0.62109375
+        }
+      ],
+      "boundingBox": {
+        "left": 269,
+        "top": 879,
+        "right": 281,
+        "bottom": 904
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 268,
+            "top": 922,
+            "right": 280,
+            "bottom": 948
+          },
+          "confidence": 0.6328125
+        }
+      ],
+      "boundingBox": {
+        "left": 268,
+        "top": 922,
+        "right": 280,
+        "bottom": 948
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 262,
+            "top": 1102,
+            "right": 340,
+            "bottom": 1130
+          },
+          "confidence": 0.86328125
+        }
+      ],
+      "boundingBox": {
+        "left": 262,
+        "top": 1102,
+        "right": 340,
+        "bottom": 1130
+      }
+    },
+    {
+      "text": "KPLAVERAS",
+      "lines": [
+        {
+          "text": "KPLAVERAS",
+          "boundingBox": {
+            "left": 532,
+            "top": 105,
+            "right": 978,
+            "bottom": 189
+          },
+          "confidence": 0.60112846
+        }
+      ],
+      "boundingBox": {
+        "left": 532,
+        "top": 105,
+        "right": 978,
+        "bottom": 189
+      }
+    },
+    {
+      "text": "Cashier: BAR PM\n30 Aug 2019 3:24:10P",
+      "lines": [
+        {
+          "text": "Cashier: BAR PM",
+          "boundingBox": {
+            "left": 270,
+            "top": 658,
+            "right": 632,
+            "bottom": 700
+          },
+          "confidence": 0.8467548
+        },
+        {
+          "text": "30 Aug 2019 3:24:10P",
+          "boundingBox": {
+            "left": 270,
+            "top": 708,
+            "right": 752,
+            "bottom": 742
+          },
+          "confidence": 0.8235294
+        }
+      ],
+      "boundingBox": {
+        "left": 270,
+        "top": 658,
+        "right": 752,
+        "bottom": 742
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 260,
+            "top": 1048,
+            "right": 450,
+            "bottom": 1085
+          },
+          "confidence": 0.8647461
+        }
+      ],
+      "boundingBox": {
+        "left": 260,
+        "top": 1048,
+        "right": 450,
+        "bottom": 1085
+      }
+    },
+    {
+      "text": "MEXICAN CUISINE & BAR",
+      "lines": [
+        {
+          "text": "MEXICAN CUISINE & BAR",
+          "boundingBox": {
+            "left": 556,
+            "top": 188,
+            "right": 973,
+            "bottom": 219
+          },
+          "confidence": 0.6582031
+        }
+      ],
+      "boundingBox": {
+        "left": 556,
+        "top": 188,
+        "right": 973,
+        "bottom": 219
+      }
+    },
+    {
+      "text": "KALAVERAS - BELLFLOWER\n16530 BELLFLOWER BLVD\nBELLFLoWER, CA 90706",
+      "lines": [
+        {
+          "text": "KALAVERAS - BELLFLOWER",
+          "boundingBox": {
+            "left": 392,
+            "top": 356,
+            "right": 1118,
+            "bottom": 390
+          },
+          "confidence": 0.82128906
+        },
+        {
+          "text": "16530 BELLFLOWER BLVD",
+          "boundingBox": {
+            "left": 494,
+            "top": 404,
+            "right": 1029,
+            "bottom": 432
+          },
+          "confidence": 0.8435444
+        },
+        {
+          "text": "BELLFLoWER, CA 90706",
+          "boundingBox": {
+            "left": 510,
+            "top": 437,
+            "right": 1007,
+            "bottom": 478
+          },
+          "confidence": 0.796875
+        }
+      ],
+      "boundingBox": {
+        "left": 392,
+        "top": 356,
+        "right": 1118,
+        "bottom": 478
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 260,
+            "top": 1186,
+            "right": 376,
+            "bottom": 1222
+          },
+          "confidence": 0.8539063
+        }
+      ],
+      "boundingBox": {
+        "left": 260,
+        "top": 1186,
+        "right": 376,
+        "bottom": 1222
+      }
+    },
+    {
+      "text": "5624610599\nhttp://www.kalaveras.com/",
+      "lines": [
+        {
+          "text": "5624610599",
+          "boundingBox": {
+            "left": 636,
+            "top": 484,
+            "right": 890,
+            "bottom": 510
+          },
+          "confidence": 0.88320315
+        },
+        {
+          "text": "http://www.kalaveras.com/",
+          "boundingBox": {
+            "left": 480,
+            "top": 522,
+            "right": 1040,
+            "bottom": 558
+          },
+          "confidence": 0.86859375
+        }
+      ],
+      "boundingBox": {
+        "left": 480,
+        "top": 484,
+        "right": 1040,
+        "bottom": 558
+      }
+    },
+    {
+      "text": "ORDER: Bar B11",
+      "lines": [
+        {
+          "text": "ORDER: Bar B11",
+          "boundingBox": {
+            "left": 525,
+            "top": 596,
+            "right": 1014,
+            "bottom": 654
+          },
+          "confidence": 0.8613281
+        }
+      ],
+      "boundingBox": {
+        "left": 525,
+        "top": 596,
+        "right": 1014,
+        "bottom": 654
+      }
+    },
+    {
+      "text": "Classic Michelada\nClassic Michelada\nDon Julio Anejo\nClassic Michelada\nBalam Madurado",
+      "lines": [
+        {
+          "text": "Classic Michelada",
+          "boundingBox": {
+            "left": 356,
+            "top": 788,
+            "right": 748,
+            "bottom": 818
+          },
+          "confidence": 0.8625488
+        },
+        {
+          "text": "Classic Michelada",
+          "boundingBox": {
+            "left": 356,
+            "top": 827,
+            "right": 746,
+            "bottom": 861
+          },
+          "confidence": 0.8613281
+        },
+        {
+          "text": "Don Julio Anejo",
+          "boundingBox": {
+            "left": 354,
+            "top": 872,
+            "right": 696,
+            "bottom": 908
+          },
+          "confidence": 0.8067909
+        },
+        {
+          "text": "Classic Michelada",
+          "boundingBox": {
+            "left": 354,
+            "top": 910,
+            "right": 748,
+            "bottom": 948
+          },
+          "confidence": 0.88964844
+        },
+        {
+          "text": "Balam Madurado",
+          "boundingBox": {
+            "left": 352,
+            "top": 954,
+            "right": 725,
+            "bottom": 992
+          },
+          "confidence": 0.88221157
+        }
+      ],
+      "boundingBox": {
+        "left": 350,
+        "top": 784,
+        "right": 748,
+        "bottom": 992
+      }
+    },
+    {
+      "text": "Thank you for your visit!",
+      "lines": [
+        {
+          "text": "Thank you for your visit!",
+          "boundingBox": {
+            "left": 256,
+            "top": 1238,
+            "right": 801,
+            "bottom": 1299
+          },
+          "confidence": 0.8390997
+        }
+      ],
+      "boundingBox": {
+        "left": 256,
+        "top": 1238,
+        "right": 801,
+        "bottom": 1299
+      }
+    },
+    {
+      "text": "83V4QQC31PPMT",
+      "lines": [
+        {
+          "text": "83V4QQC31PPMT",
+          "boundingBox": {
+            "left": 601,
+            "top": 1412,
+            "right": 1002,
+            "bottom": 1464
+          },
+          "confidence": 0.71935093
+        }
+      ],
+      "boundingBox": {
+        "left": 601,
+        "top": 1412,
+        "right": 1002,
+        "bottom": 1464
+      }
+    },
+    {
+      "text": "Order 83V40QC31PPMT",
+      "lines": [
+        {
+          "text": "Order 83V40QC31PPMT",
+          "boundingBox": {
+            "left": 247,
+            "top": 1528,
+            "right": 813,
+            "bottom": 1598
+          },
+          "confidence": 0.7402344
+        }
+      ],
+      "boundingBox": {
+        "left": 247,
+        "top": 1528,
+        "right": 813,
+        "bottom": 1598
+      }
+    },
+    {
+      "text": "$12.00\n$12.0\n.00\n$15.00",
+      "lines": [
+        {
+          "text": "$12.00",
+          "boundingBox": {
+            "left": 1110,
+            "top": 774,
+            "right": 1252,
+            "bottom": 813
+          },
+          "confidence": 0.84309894
+        },
+        {
+          "text": "$12.0",
+          "boundingBox": {
+            "left": 1134,
+            "top": 813,
+            "right": 1219,
+            "bottom": 856
+          },
+          "confidence": 0.7054688
+        },
+        {
+          "text": ".00",
+          "boundingBox": {
+            "left": 1197,
+            "top": 822,
+            "right": 1258,
+            "bottom": 848
+          },
+          "confidence": 0.60546875
+        },
+        {
+          "text": "$15.00",
+          "boundingBox": {
+            "left": 1116,
+            "top": 853,
+            "right": 1261,
+            "bottom": 892
+          },
+          "confidence": 0.7682292
+        }
+      ],
+      "boundingBox": {
+        "left": 1110,
+        "top": 774,
+        "right": 1261,
+        "bottom": 892
+      }
+    },
+    {
+      "text": "$12.00",
+      "lines": [
+        {
+          "text": "$12.00",
+          "boundingBox": {
+            "left": 1120,
+            "top": 896,
+            "right": 1267,
+            "bottom": 936
+          },
+          "confidence": 0.75911456
+        }
+      ],
+      "boundingBox": {
+        "left": 1120,
+        "top": 896,
+        "right": 1267,
+        "bottom": 936
+      }
+    },
+    {
+      "text": "$12.00",
+      "lines": [
+        {
+          "text": "$12.00",
+          "boundingBox": {
+            "left": 1126,
+            "top": 946,
+            "right": 1274,
+            "bottom": 980
+          },
+          "confidence": 0.8300781
+        }
+      ],
+      "boundingBox": {
+        "left": 1126,
+        "top": 946,
+        "right": 1274,
+        "bottom": 980
+      }
+    },
+    {
+      "text": "$63.00",
+      "lines": [
+        {
+          "text": "$63.00",
+          "boundingBox": {
+            "left": 1136,
+            "top": 1032,
+            "right": 1286,
+            "bottom": 1066
+          },
+          "confidence": 0.7141927
+        }
+      ],
+      "boundingBox": {
+        "left": 1136,
+        "top": 1032,
+        "right": 1286,
+        "bottom": 1066
+      }
+    },
+    {
+      "text": "$5.99",
+      "lines": [
+        {
+          "text": "$5.99",
+          "boundingBox": {
+            "left": 1168,
+            "top": 1067,
+            "right": 1289,
+            "bottom": 1110
+          },
+          "confidence": 0.8539063
+        }
+      ],
+      "boundingBox": {
+        "left": 1168,
+        "top": 1067,
+        "right": 1289,
+        "bottom": 1110
+      }
+    },
+    {
+      "text": "$68.99",
+      "lines": [
+        {
+          "text": "$68.99",
+          "boundingBox": {
+            "left": 1150,
+            "top": 1163,
+            "right": 1294,
+            "bottom": 1201
+          },
+          "confidence": 0.75
+        }
+      ],
+      "boundingBox": {
+        "left": 1150,
+        "top": 1163,
+        "right": 1294,
+        "bottom": 1201
+      }
+    }
+  ]
+}

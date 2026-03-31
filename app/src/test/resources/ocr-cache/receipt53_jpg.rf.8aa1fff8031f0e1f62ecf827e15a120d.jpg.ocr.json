@@ -1,0 +1,442 @@
+{
+  "fullText": "GENERALPOOR s\nTAVERN\n45 MAIN STREET\nHACKENSACK, NJ 07601\n(201 )487-5882\nCheck# :555149\nTable:\nDate:04/10/16\nServer:VERONIQUE\nGuests: 0\nTime:12:30pm\n40 BONELESS WINGS SPEC\nSubtotal:\nTax::\nSbtl w/ Tax :\nAmt Due:\nTHANK YOU\nTIM\n$10.00\n$10.00\n$0.70\n$10.70\n$10.70\nFOR CHO0SING\nGENERAL POORS! !",
+  "blocks": [
+    {
+      "text": "GENERALPOOR s\nTAVERN",
+      "lines": [
+        {
+          "text": "GENERALPOOR s",
+          "boundingBox": {
+            "left": 479,
+            "top": 149,
+            "right": 1210,
+            "bottom": 204
+          },
+          "confidence": 0.7138672
+        },
+        {
+          "text": "TAVERN",
+          "boundingBox": {
+            "left": 714,
+            "top": 198,
+            "right": 875,
+            "bottom": 236
+          },
+          "confidence": 0.8001302
+        }
+      ],
+      "boundingBox": {
+        "left": 479,
+        "top": 146,
+        "right": 1211,
+        "bottom": 240
+      }
+    },
+    {
+      "text": "45 MAIN STREET\nHACKENSACK, NJ 07601\n(201 )487-5882",
+      "lines": [
+        {
+          "text": "45 MAIN STREET",
+          "boundingBox": {
+            "left": 600,
+            "top": 242,
+            "right": 986,
+            "bottom": 289
+          },
+          "confidence": 0.86067706
+        },
+        {
+          "text": "HACKENSACK, NJ 07601",
+          "boundingBox": {
+            "left": 540,
+            "top": 286,
+            "right": 1067,
+            "bottom": 347
+          },
+          "confidence": 0.86501735
+        },
+        {
+          "text": "(201 )487-5882",
+          "boundingBox": {
+            "left": 448,
+            "top": 342,
+            "right": 1154,
+            "bottom": 401
+          },
+          "confidence": 0.74909854
+        }
+      ],
+      "boundingBox": {
+        "left": 446,
+        "top": 238,
+        "right": 1155,
+        "bottom": 402
+      }
+    },
+    {
+      "text": "Check# :555149",
+      "lines": [
+        {
+          "text": "Check# :555149",
+          "boundingBox": {
+            "left": 250,
+            "top": 511,
+            "right": 598,
+            "bottom": 554
+          },
+          "confidence": 0.9344952
+        }
+      ],
+      "boundingBox": {
+        "left": 250,
+        "top": 511,
+        "right": 598,
+        "bottom": 554
+      }
+    },
+    {
+      "text": "Table:",
+      "lines": [
+        {
+          "text": "Table:",
+          "boundingBox": {
+            "left": 274,
+            "top": 612,
+            "right": 426,
+            "bottom": 656
+          },
+          "confidence": 0.8391927
+        }
+      ],
+      "boundingBox": {
+        "left": 274,
+        "top": 612,
+        "right": 426,
+        "bottom": 656
+      }
+    },
+    {
+      "text": "Date:04/10/16",
+      "lines": [
+        {
+          "text": "Date:04/10/16",
+          "boundingBox": {
+            "left": 302,
+            "top": 564,
+            "right": 654,
+            "bottom": 606
+          },
+          "confidence": 0.8951322
+        }
+      ],
+      "boundingBox": {
+        "left": 302,
+        "top": 564,
+        "right": 654,
+        "bottom": 606
+      }
+    },
+    {
+      "text": "Server:VERONIQUE",
+      "lines": [
+        {
+          "text": "Server:VERONIQUE",
+          "boundingBox": {
+            "left": 602,
+            "top": 606,
+            "right": 1040,
+            "bottom": 655
+          },
+          "confidence": 0.8479004
+        }
+      ],
+      "boundingBox": {
+        "left": 602,
+        "top": 606,
+        "right": 1040,
+        "bottom": 655
+      }
+    },
+    {
+      "text": "Guests: 0\nTime:12:30pm",
+      "lines": [
+        {
+          "text": "Guests: 0",
+          "boundingBox": {
+            "left": 766,
+            "top": 506,
+            "right": 1043,
+            "bottom": 547
+          },
+          "confidence": 0.8364258
+        },
+        {
+          "text": "Time:12:30pm",
+          "boundingBox": {
+            "left": 795,
+            "top": 555,
+            "right": 1129,
+            "bottom": 603
+          },
+          "confidence": 0.80826825
+        }
+      ],
+      "boundingBox": {
+        "left": 766,
+        "top": 504,
+        "right": 1129,
+        "bottom": 604
+      }
+    },
+    {
+      "text": "40 BONELESS WINGS SPEC",
+      "lines": [
+        {
+          "text": "40 BONELESS WINGS SPEC",
+          "boundingBox": {
+            "left": 248,
+            "top": 716,
+            "right": 846,
+            "bottom": 754
+          },
+          "confidence": 0.8597862
+        }
+      ],
+      "boundingBox": {
+        "left": 248,
+        "top": 716,
+        "right": 846,
+        "bottom": 754
+      }
+    },
+    {
+      "text": "Subtotal:\nTax::",
+      "lines": [
+        {
+          "text": "Subtotal:",
+          "boundingBox": {
+            "left": 490,
+            "top": 811,
+            "right": 727,
+            "bottom": 859
+          },
+          "confidence": 0.87456596
+        },
+        {
+          "text": "Tax::",
+          "boundingBox": {
+            "left": 600,
+            "top": 868,
+            "right": 727,
+            "bottom": 907
+          },
+          "confidence": 0.7390625
+        }
+      ],
+      "boundingBox": {
+        "left": 489,
+        "top": 811,
+        "right": 728,
+        "bottom": 907
+      }
+    },
+    {
+      "text": "Sbtl w/ Tax :\nAmt Due:",
+      "lines": [
+        {
+          "text": "Sbtl w/ Tax :",
+          "boundingBox": {
+            "left": 456,
+            "top": 912,
+            "right": 727,
+            "bottom": 968
+          },
+          "confidence": 0.76289064
+        },
+        {
+          "text": "Amt Due:",
+          "boundingBox": {
+            "left": 518,
+            "top": 972,
+            "right": 726,
+            "bottom": 1012
+          },
+          "confidence": 0.8270089
+        }
+      ],
+      "boundingBox": {
+        "left": 455,
+        "top": 912,
+        "right": 727,
+        "bottom": 1013
+      }
+    },
+    {
+      "text": "THANK YOU",
+      "lines": [
+        {
+          "text": "THANK YOU",
+          "boundingBox": {
+            "left": 545,
+            "top": 1067,
+            "right": 1066,
+            "bottom": 1126
+          },
+          "confidence": 0.7426758
+        }
+      ],
+      "boundingBox": {
+        "left": 545,
+        "top": 1067,
+        "right": 1066,
+        "bottom": 1126
+      }
+    },
+    {
+      "text": "TIM",
+      "lines": [
+        {
+          "text": "TIM",
+          "boundingBox": {
+            "left": 702,
+            "top": 1295,
+            "right": 865,
+            "bottom": 1340
+          },
+          "confidence": 0.7552083
+        }
+      ],
+      "boundingBox": {
+        "left": 702,
+        "top": 1295,
+        "right": 865,
+        "bottom": 1340
+      }
+    },
+    {
+      "text": "$10.00",
+      "lines": [
+        {
+          "text": "$10.00",
+          "boundingBox": {
+            "left": 1222,
+            "top": 707,
+            "right": 1399,
+            "bottom": 753
+          },
+          "confidence": 0.8359375
+        }
+      ],
+      "boundingBox": {
+        "left": 1222,
+        "top": 707,
+        "right": 1399,
+        "bottom": 753
+      }
+    },
+    {
+      "text": "$10.00\n$0.70",
+      "lines": [
+        {
+          "text": "$10.00",
+          "boundingBox": {
+            "left": 1194,
+            "top": 818,
+            "right": 1368,
+            "bottom": 858
+          },
+          "confidence": 0.80338544
+        },
+        {
+          "text": "$0.70",
+          "boundingBox": {
+            "left": 1224,
+            "top": 867,
+            "right": 1370,
+            "bottom": 911
+          },
+          "confidence": 0.88203126
+        }
+      ],
+      "boundingBox": {
+        "left": 1194,
+        "top": 816,
+        "right": 1370,
+        "bottom": 911
+      }
+    },
+    {
+      "text": "$10.70",
+      "lines": [
+        {
+          "text": "$10.70",
+          "boundingBox": {
+            "left": 1194,
+            "top": 922,
+            "right": 1370,
+            "bottom": 967
+          },
+          "confidence": 0.8235677
+        }
+      ],
+      "boundingBox": {
+        "left": 1194,
+        "top": 922,
+        "right": 1370,
+        "bottom": 967
+      }
+    },
+    {
+      "text": "$10.70",
+      "lines": [
+        {
+          "text": "$10.70",
+          "boundingBox": {
+            "left": 1019,
+            "top": 975,
+            "right": 1369,
+            "bottom": 1022
+          },
+          "confidence": 0.6217448
+        }
+      ],
+      "boundingBox": {
+        "left": 1019,
+        "top": 975,
+        "right": 1369,
+        "bottom": 1022
+      }
+    },
+    {
+      "text": "FOR CHO0SING\nGENERAL POORS! !",
+      "lines": [
+        {
+          "text": "FOR CHO0SING",
+          "boundingBox": {
+            "left": 435,
+            "top": 1123,
+            "right": 1099,
+            "bottom": 1180
+          },
+          "confidence": 0.78764206
+        },
+        {
+          "text": "GENERAL POORS! !",
+          "boundingBox": {
+            "left": 324,
+            "top": 1165,
+            "right": 1204,
+            "bottom": 1245
+          },
+          "confidence": 0.7486049
+        }
+      ],
+      "boundingBox": {
+        "left": 324,
+        "top": 1118,
+        "right": 1205,
+        "bottom": 1244
+      }
+    }
+  ]
+}

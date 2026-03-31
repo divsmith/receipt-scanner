@@ -1,0 +1,564 @@
+{
+  "fullText": "KS# 2\nS1de\n1 Dbi Otr Chees\nSpec ta l Reauet\nADO Leaf Lett C\nADD ac Seuca\nS.btot al\nTax\nTake-0st Total\nCash less\nChange\n1617 N ESI\nLOS ANGELI E C ST53\nMER# 439206\nCARD ISSUER\nAsEN.E\nsLrst 3100\n213 03:08 PM\nGrcer 97\nBOW DE9IT CARD # s\nTRANSACTION AMO\nCHIP READ\nAUTHORIZATICN CEE 154\nSEQ# 039988\nAID: A000000042E\nMCDona ld's now a ot : nb\n5.99\n0.25\n0.40\n6.64\n0.63\n7.27\n7.27\n0.00\n1.27",
+  "blocks": [
+    {
+      "text": "KS# 2\nS1de",
+      "lines": [
+        {
+          "text": "KS# 2",
+          "boundingBox": {
+            "left": 306,
+            "top": 199,
+            "right": 436,
+            "bottom": 242
+          },
+          "confidence": 0.375
+        },
+        {
+          "text": "S1de",
+          "boundingBox": {
+            "left": 316,
+            "top": 244,
+            "right": 413,
+            "bottom": 292
+          },
+          "confidence": 0.3935547
+        }
+      ],
+      "boundingBox": {
+        "left": 305,
+        "top": 199,
+        "right": 436,
+        "bottom": 294
+      }
+    },
+    {
+      "text": "1 Dbi Otr Chees\nSpec ta l Reauet\nADO Leaf Lett C\nADD ac Seuca",
+      "lines": [
+        {
+          "text": "1 Dbi Otr Chees",
+          "boundingBox": {
+            "left": 301,
+            "top": 334,
+            "right": 670,
+            "bottom": 418
+          },
+          "confidence": 0.5172526
+        },
+        {
+          "text": "Spec ta l Reauet",
+          "boundingBox": {
+            "left": 341,
+            "top": 393,
+            "right": 726,
+            "bottom": 469
+          },
+          "confidence": 0.57722354
+        },
+        {
+          "text": "ADO Leaf Lett C",
+          "boundingBox": {
+            "left": 326,
+            "top": 439,
+            "right": 717,
+            "bottom": 522
+          },
+          "confidence": 0.7164714
+        },
+        {
+          "text": "ADD ac Seuca",
+          "boundingBox": {
+            "left": 324,
+            "top": 489,
+            "right": 645,
+            "bottom": 561
+          },
+          "confidence": 0.6546875
+        }
+      ],
+      "boundingBox": {
+        "left": 288,
+        "top": 334,
+        "right": 731,
+        "bottom": 568
+      }
+    },
+    {
+      "text": "S.btot al\nTax\nTake-0st Total",
+      "lines": [
+        {
+          "text": "S.btot al",
+          "boundingBox": {
+            "left": 260,
+            "top": 586,
+            "right": 449,
+            "bottom": 649
+          },
+          "confidence": 0.52246094
+        },
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 281,
+            "top": 642,
+            "right": 359,
+            "bottom": 692
+          },
+          "confidence": 0.6692708
+        },
+        {
+          "text": "Take-0st Total",
+          "boundingBox": {
+            "left": 220,
+            "top": 690,
+            "right": 583,
+            "bottom": 759
+          },
+          "confidence": 0.5688101
+        }
+      ],
+      "boundingBox": {
+        "left": 218,
+        "top": 577,
+        "right": 594,
+        "bottom": 774
+      }
+    },
+    {
+      "text": "Cash less\nChange",
+      "lines": [
+        {
+          "text": "Cash less",
+          "boundingBox": {
+            "left": 192,
+            "top": 793,
+            "right": 410,
+            "bottom": 858
+          },
+          "confidence": 0.68847656
+        },
+        {
+          "text": "Change",
+          "boundingBox": {
+            "left": 182,
+            "top": 852,
+            "right": 346,
+            "bottom": 907
+          },
+          "confidence": 0.6282552
+        }
+      ],
+      "boundingBox": {
+        "left": 182,
+        "top": 793,
+        "right": 410,
+        "bottom": 915
+      }
+    },
+    {
+      "text": "1617 N ESI\nLOS ANGELI E C ST53",
+      "lines": [
+        {
+          "text": "1617 N ESI",
+          "boundingBox": {
+            "left": 577,
+            "top": 26,
+            "right": 851,
+            "bottom": 96
+          },
+          "confidence": 0.5917969
+        },
+        {
+          "text": "LOS ANGELI E C ST53",
+          "boundingBox": {
+            "left": 496,
+            "top": 65,
+            "right": 1129,
+            "bottom": 168
+          },
+          "confidence": 0.58463544
+        }
+      ],
+      "boundingBox": {
+        "left": 496,
+        "top": 19,
+        "right": 1133,
+        "bottom": 169
+      }
+    },
+    {
+      "text": "MER# 439206\nCARD ISSUER",
+      "lines": [
+        {
+          "text": "MER# 439206",
+          "boundingBox": {
+            "left": 164,
+            "top": 958,
+            "right": 463,
+            "bottom": 1024
+          },
+          "confidence": 0.70234376
+        },
+        {
+          "text": "CARD ISSUER",
+          "boundingBox": {
+            "left": 182,
+            "top": 1012,
+            "right": 454,
+            "bottom": 1082
+          },
+          "confidence": 0.6539062
+        }
+      ],
+      "boundingBox": {
+        "left": 160,
+        "top": 958,
+        "right": 463,
+        "bottom": 1083
+      }
+    },
+    {
+      "text": "AsEN.E\nsLrst 3100",
+      "lines": [
+        {
+          "text": "AsEN.E",
+          "boundingBox": {
+            "left": 955,
+            "top": 63,
+            "right": 1100,
+            "bottom": 120
+          },
+          "confidence": 0.2903646
+        },
+        {
+          "text": "sLrst 3100",
+          "boundingBox": {
+            "left": 819,
+            "top": 11,
+            "right": 1161,
+            "bottom": 75
+          },
+          "confidence": 0.33376735
+        }
+      ],
+      "boundingBox": {
+        "left": 814,
+        "top": 7,
+        "right": 1160,
+        "bottom": 125
+      }
+    },
+    {
+      "text": "213 03:08 PM\nGrcer 97",
+      "lines": [
+        {
+          "text": "213 03:08 PM",
+          "boundingBox": {
+            "left": 808,
+            "top": 237,
+            "right": 1283,
+            "bottom": 319
+          },
+          "confidence": 0.39921874
+        },
+        {
+          "text": "Grcer 97",
+          "boundingBox": {
+            "left": 1074,
+            "top": 309,
+            "right": 1277,
+            "bottom": 359
+          },
+          "confidence": 0.50223213
+        }
+      ],
+      "boundingBox": {
+        "left": 806,
+        "top": 237,
+        "right": 1284,
+        "bottom": 363
+      }
+    },
+    {
+      "text": "BOW DE9IT CARD # s\nTRANSACTION AMO\nCHIP READ\nAUTHORIZATICN CEE 154\nSEQ# 039988\nAID: A000000042E",
+      "lines": [
+        {
+          "text": "BOW DE9IT CARD # s",
+          "boundingBox": {
+            "left": 161,
+            "top": 1065,
+            "right": 889,
+            "bottom": 1166
+          },
+          "confidence": 0.5862165
+        },
+        {
+          "text": "TRANSACTION AMO",
+          "boundingBox": {
+            "left": 144,
+            "top": 1120,
+            "right": 558,
+            "bottom": 1203
+          },
+          "confidence": 0.6785714
+        },
+        {
+          "text": "CHIP READ",
+          "boundingBox": {
+            "left": 124,
+            "top": 1180,
+            "right": 377,
+            "bottom": 1244
+          },
+          "confidence": 0.69970703
+        },
+        {
+          "text": "AUTHORIZATICN CEE 154",
+          "boundingBox": {
+            "left": 131,
+            "top": 1233,
+            "right": 835,
+            "bottom": 1338
+          },
+          "confidence": 0.6145148
+        },
+        {
+          "text": "SEQ# 039988",
+          "boundingBox": {
+            "left": 107,
+            "top": 1292,
+            "right": 415,
+            "bottom": 1360
+          },
+          "confidence": 0.50273436
+        },
+        {
+          "text": "AID: A000000042E",
+          "boundingBox": {
+            "left": 118,
+            "top": 1345,
+            "right": 650,
+            "bottom": 1438
+          },
+          "confidence": 0.6856771
+        }
+      ],
+      "boundingBox": {
+        "left": 103,
+        "top": 1062,
+        "right": 889,
+        "bottom": 1454
+      }
+    },
+    {
+      "text": "MCDona ld's now a ot : nb",
+      "lines": [
+        {
+          "text": "MCDona ld's now a ot : nb",
+          "boundingBox": {
+            "left": 126,
+            "top": 1462,
+            "right": 952,
+            "bottom": 1578
+          },
+          "confidence": 0.48992598
+        }
+      ],
+      "boundingBox": {
+        "left": 126,
+        "top": 1462,
+        "right": 952,
+        "bottom": 1578
+      }
+    },
+    {
+      "text": "5.99",
+      "lines": [
+        {
+          "text": "5.99",
+          "boundingBox": {
+            "left": 1168,
+            "top": 414,
+            "right": 1272,
+            "bottom": 458
+          },
+          "confidence": 0.8339844
+        }
+      ],
+      "boundingBox": {
+        "left": 1168,
+        "top": 414,
+        "right": 1272,
+        "bottom": 458
+      }
+    },
+    {
+      "text": "0.25",
+      "lines": [
+        {
+          "text": "0.25",
+          "boundingBox": {
+            "left": 1156,
+            "top": 511,
+            "right": 1262,
+            "bottom": 555
+          },
+          "confidence": 0.7109375
+        }
+      ],
+      "boundingBox": {
+        "left": 1156,
+        "top": 511,
+        "right": 1262,
+        "bottom": 555
+      }
+    },
+    {
+      "text": "0.40",
+      "lines": [
+        {
+          "text": "0.40",
+          "boundingBox": {
+            "left": 1152,
+            "top": 564,
+            "right": 1256,
+            "bottom": 604
+          },
+          "confidence": 0.6464844
+        }
+      ],
+      "boundingBox": {
+        "left": 1152,
+        "top": 564,
+        "right": 1256,
+        "bottom": 604
+      }
+    },
+    {
+      "text": "6.64",
+      "lines": [
+        {
+          "text": "6.64",
+          "boundingBox": {
+            "left": 1142,
+            "top": 662,
+            "right": 1246,
+            "bottom": 704
+          },
+          "confidence": 0.80859375
+        }
+      ],
+      "boundingBox": {
+        "left": 1142,
+        "top": 662,
+        "right": 1246,
+        "bottom": 704
+      }
+    },
+    {
+      "text": "0.63",
+      "lines": [
+        {
+          "text": "0.63",
+          "boundingBox": {
+            "left": 1135,
+            "top": 710,
+            "right": 1243,
+            "bottom": 760
+          },
+          "confidence": 0.6582031
+        }
+      ],
+      "boundingBox": {
+        "left": 1135,
+        "top": 710,
+        "right": 1243,
+        "bottom": 760
+      }
+    },
+    {
+      "text": "7.27",
+      "lines": [
+        {
+          "text": "7.27",
+          "boundingBox": {
+            "left": 1136,
+            "top": 758,
+            "right": 1240,
+            "bottom": 810
+          },
+          "confidence": 0.69921875
+        }
+      ],
+      "boundingBox": {
+        "left": 1136,
+        "top": 758,
+        "right": 1240,
+        "bottom": 810
+      }
+    },
+    {
+      "text": "7.27",
+      "lines": [
+        {
+          "text": "7.27",
+          "boundingBox": {
+            "left": 1128,
+            "top": 870,
+            "right": 1230,
+            "bottom": 916
+          },
+          "confidence": 0.53222656
+        }
+      ],
+      "boundingBox": {
+        "left": 1128,
+        "top": 870,
+        "right": 1230,
+        "bottom": 916
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 1116,
+            "top": 924,
+            "right": 1224,
+            "bottom": 974
+          },
+          "confidence": 0.70703125
+        }
+      ],
+      "boundingBox": {
+        "left": 1116,
+        "top": 924,
+        "right": 1224,
+        "bottom": 974
+      }
+    },
+    {
+      "text": "1.27",
+      "lines": [
+        {
+          "text": "1.27",
+          "boundingBox": {
+            "left": 1088,
+            "top": 1193,
+            "right": 1205,
+            "bottom": 1262
+          },
+          "confidence": 0.6425781
+        }
+      ],
+      "boundingBox": {
+        "left": 1088,
+        "top": 1193,
+        "right": 1205,
+        "bottom": 1262
+      }
+    }
+  ]
+}

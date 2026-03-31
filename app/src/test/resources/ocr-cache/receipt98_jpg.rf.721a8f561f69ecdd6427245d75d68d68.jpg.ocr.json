@@ -1,0 +1,440 @@
+{
+  "fullText": "OE\nCheck:208774\nTable:BAR9\nServer:Ryan\n09/25/ 18\n[Seat 1]-\n2 Bohem ia\nTall\n1 Albondigas\n1 Mole\n223 N. Citrus Ave\nCovina, CA 91723\n(626) 339-9496\nSubtotal:\nTax::\nSub w/Tax:\nTotal:\n\"Thank-You!\n08:44pm\n$16.00\n$9.95\n$16.95\n$42.90\n$4.08\n$46.98\n$46.98\nWe look forward to seeing you aga in.\"",
+  "blocks": [
+    {
+      "text": "OE",
+      "lines": [
+        {
+          "text": "OE",
+          "boundingBox": {
+            "left": 100,
+            "top": 266,
+            "right": 156,
+            "bottom": 296
+          },
+          "confidence": 0.49414062
+        }
+      ],
+      "boundingBox": {
+        "left": 100,
+        "top": 266,
+        "right": 156,
+        "bottom": 296
+      }
+    },
+    {
+      "text": "Check:208774\nTable:BAR9\nServer:Ryan\n09/25/ 18",
+      "lines": [
+        {
+          "text": "Check:208774",
+          "boundingBox": {
+            "left": 60,
+            "top": 438,
+            "right": 434,
+            "bottom": 485
+          },
+          "confidence": 0.90266925
+        },
+        {
+          "text": "Table:BAR9",
+          "boundingBox": {
+            "left": 64,
+            "top": 491,
+            "right": 370,
+            "bottom": 538
+          },
+          "confidence": 0.82539064
+        },
+        {
+          "text": "Server:Ryan",
+          "boundingBox": {
+            "left": 48,
+            "top": 547,
+            "right": 398,
+            "bottom": 594
+          },
+          "confidence": 0.8441051
+        },
+        {
+          "text": "09/25/ 18",
+          "boundingBox": {
+            "left": 40,
+            "top": 598,
+            "right": 299,
+            "bottom": 655
+          },
+          "confidence": 0.85009766
+        }
+      ],
+      "boundingBox": {
+        "left": 37,
+        "top": 438,
+        "right": 438,
+        "bottom": 655
+      }
+    },
+    {
+      "text": "[Seat 1]-\n2 Bohem ia\nTall\n1 Albondigas\n1 Mole",
+      "lines": [
+        {
+          "text": "[Seat 1]-",
+          "boundingBox": {
+            "left": 102,
+            "top": 711,
+            "right": 377,
+            "bottom": 776
+          },
+          "confidence": 0.72753906
+        },
+        {
+          "text": "2 Bohem ia",
+          "boundingBox": {
+            "left": 92,
+            "top": 778,
+            "right": 390,
+            "bottom": 826
+          },
+          "confidence": 0.8540039
+        },
+        {
+          "text": "Tall",
+          "boundingBox": {
+            "left": 194,
+            "top": 838,
+            "right": 314,
+            "bottom": 884
+          },
+          "confidence": 0.75097656
+        },
+        {
+          "text": "1 Albondigas",
+          "boundingBox": {
+            "left": 108,
+            "top": 887,
+            "right": 488,
+            "bottom": 956
+          },
+          "confidence": 0.8043324
+        },
+        {
+          "text": "1 Mole",
+          "boundingBox": {
+            "left": 109,
+            "top": 956,
+            "right": 278,
+            "bottom": 1018
+          },
+          "confidence": 0.734375
+        }
+      ],
+      "boundingBox": {
+        "left": 91,
+        "top": 710,
+        "right": 488,
+        "bottom": 1018
+      }
+    },
+    {
+      "text": "223 N. Citrus Ave\nCovina, CA 91723\n(626) 339-9496",
+      "lines": [
+        {
+          "text": "223 N. Citrus Ave",
+          "boundingBox": {
+            "left": 604,
+            "top": 236,
+            "right": 1113,
+            "bottom": 285
+          },
+          "confidence": 0.83258927
+        },
+        {
+          "text": "Covina, CA 91723",
+          "boundingBox": {
+            "left": 499,
+            "top": 278,
+            "right": 965,
+            "bottom": 335
+          },
+          "confidence": 0.8423549
+        },
+        {
+          "text": "(626) 339-9496",
+          "boundingBox": {
+            "left": 514,
+            "top": 327,
+            "right": 937,
+            "bottom": 379
+          },
+          "confidence": 0.87469953
+        }
+      ],
+      "boundingBox": {
+        "left": 498,
+        "top": 237,
+        "right": 1115,
+        "bottom": 379
+      }
+    },
+    {
+      "text": "Subtotal:\nTax::",
+      "lines": [
+        {
+          "text": "Subtotal:",
+          "boundingBox": {
+            "left": 348,
+            "top": 1084,
+            "right": 648,
+            "bottom": 1139
+          },
+          "confidence": 0.88064235
+        },
+        {
+          "text": "Tax::",
+          "boundingBox": {
+            "left": 490,
+            "top": 1158,
+            "right": 650,
+            "bottom": 1206
+          },
+          "confidence": 0.76640624
+        }
+      ],
+      "boundingBox": {
+        "left": 348,
+        "top": 1084,
+        "right": 649,
+        "bottom": 1207
+      }
+    },
+    {
+      "text": "Sub w/Tax:\nTotal:",
+      "lines": [
+        {
+          "text": "Sub w/Tax:",
+          "boundingBox": {
+            "left": 304,
+            "top": 1226,
+            "right": 648,
+            "bottom": 1282
+          },
+          "confidence": 0.79296875
+        },
+        {
+          "text": "Total:",
+          "boundingBox": {
+            "left": 446,
+            "top": 1290,
+            "right": 646,
+            "bottom": 1349
+          },
+          "confidence": 0.8561198
+        }
+      ],
+      "boundingBox": {
+        "left": 304,
+        "top": 1223,
+        "right": 648,
+        "bottom": 1350
+      }
+    },
+    {
+      "text": "\"Thank-You!",
+      "lines": [
+        {
+          "text": "\"Thank-You!",
+          "boundingBox": {
+            "left": 510,
+            "top": 1440,
+            "right": 908,
+            "bottom": 1506
+          },
+          "confidence": 0.77201706
+        }
+      ],
+      "boundingBox": {
+        "left": 510,
+        "top": 1440,
+        "right": 908,
+        "bottom": 1506
+      }
+    },
+    {
+      "text": "08:44pm",
+      "lines": [
+        {
+          "text": "08:44pm",
+          "boundingBox": {
+            "left": 1150,
+            "top": 588,
+            "right": 1382,
+            "bottom": 632
+          },
+          "confidence": 0.7751116
+        }
+      ],
+      "boundingBox": {
+        "left": 1150,
+        "top": 588,
+        "right": 1382,
+        "bottom": 632
+      }
+    },
+    {
+      "text": "$16.00",
+      "lines": [
+        {
+          "text": "$16.00",
+          "boundingBox": {
+            "left": 1230,
+            "top": 758,
+            "right": 1432,
+            "bottom": 809
+          },
+          "confidence": 0.7526042
+        }
+      ],
+      "boundingBox": {
+        "left": 1230,
+        "top": 758,
+        "right": 1432,
+        "bottom": 809
+      }
+    },
+    {
+      "text": "$9.95\n$16.95",
+      "lines": [
+        {
+          "text": "$9.95",
+          "boundingBox": {
+            "left": 1274,
+            "top": 881,
+            "right": 1448,
+            "bottom": 935
+          },
+          "confidence": 0.86640626
+        },
+        {
+          "text": "$16.95",
+          "boundingBox": {
+            "left": 1246,
+            "top": 944,
+            "right": 1456,
+            "bottom": 999
+          },
+          "confidence": 0.87630206
+        }
+      ],
+      "boundingBox": {
+        "left": 1245,
+        "top": 880,
+        "right": 1456,
+        "bottom": 999
+      }
+    },
+    {
+      "text": "$42.90",
+      "lines": [
+        {
+          "text": "$42.90",
+          "boundingBox": {
+            "left": 1224,
+            "top": 1082,
+            "right": 1440,
+            "bottom": 1134
+          },
+          "confidence": 0.81901044
+        }
+      ],
+      "boundingBox": {
+        "left": 1224,
+        "top": 1082,
+        "right": 1440,
+        "bottom": 1134
+      }
+    },
+    {
+      "text": "$4.08",
+      "lines": [
+        {
+          "text": "$4.08",
+          "boundingBox": {
+            "left": 1268,
+            "top": 1142,
+            "right": 1447,
+            "bottom": 1204
+          },
+          "confidence": 0.8859375
+        }
+      ],
+      "boundingBox": {
+        "left": 1268,
+        "top": 1142,
+        "right": 1447,
+        "bottom": 1204
+      }
+    },
+    {
+      "text": "$46.98",
+      "lines": [
+        {
+          "text": "$46.98",
+          "boundingBox": {
+            "left": 1238,
+            "top": 1212,
+            "right": 1455,
+            "bottom": 1275
+          },
+          "confidence": 0.89127606
+        }
+      ],
+      "boundingBox": {
+        "left": 1238,
+        "top": 1212,
+        "right": 1455,
+        "bottom": 1275
+      }
+    },
+    {
+      "text": "$46.98",
+      "lines": [
+        {
+          "text": "$46.98",
+          "boundingBox": {
+            "left": 1024,
+            "top": 1284,
+            "right": 1462,
+            "bottom": 1347
+          },
+          "confidence": 0.7871094
+        }
+      ],
+      "boundingBox": {
+        "left": 1024,
+        "top": 1284,
+        "right": 1462,
+        "bottom": 1347
+      }
+    },
+    {
+      "text": "We look forward to seeing you aga in.\"",
+      "lines": [
+        {
+          "text": "We look forward to seeing you aga in.\"",
+          "boundingBox": {
+            "left": 39,
+            "top": 1512,
+            "right": 1419,
+            "bottom": 1586
+          },
+          "confidence": 0.8262349
+        }
+      ],
+      "boundingBox": {
+        "left": 39,
+        "top": 1512,
+        "right": 1419,
+        "bottom": 1586
+      }
+    }
+  ]
+}

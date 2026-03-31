@@ -1,6 +1,7 @@
 package com.receiptscanner.presentation.review
 
 import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -20,6 +21,7 @@ import androidx.compose.material.icons.filled.CalendarToday
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.CreditCard
 import androidx.compose.material.icons.filled.Category
+import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.DatePicker
@@ -190,6 +192,35 @@ fun TransactionReviewScreen(
                         payeeMatches = uiState.payeeMatches,
                         onPayeeSelected = viewModel::selectPayee,
                     )
+
+                    // Amount confidence indicator
+                    if (uiState.amount.isNotBlank() && uiState.totalConfidence > 0f) {
+                        if (uiState.totalConfidence < 0.5f) {
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .background(
+                                        MaterialTheme.colorScheme.errorContainer,
+                                        shape = MaterialTheme.shapes.small,
+                                    )
+                                    .padding(horizontal = 12.dp, vertical = 8.dp),
+                            ) {
+                                Icon(
+                                    Icons.Default.Warning,
+                                    contentDescription = null,
+                                    tint = MaterialTheme.colorScheme.onErrorContainer,
+                                    modifier = Modifier.size(18.dp),
+                                )
+                                Spacer(modifier = Modifier.size(8.dp))
+                                Text(
+                                    text = "Amount may need correction — please verify",
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onErrorContainer,
+                                )
+                            }
+                        }
+                    }
 
                     // Amount
                     AmountInput(

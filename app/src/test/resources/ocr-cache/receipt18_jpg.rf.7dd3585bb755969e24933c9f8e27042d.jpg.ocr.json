@@ -1,0 +1,527 @@
+{
+  "fullText": "Dine n\n2\n1902 Jericho Tumpike\nNew Hyde Park NY 1I 040\nTel : 516.354.2858 Fax : 516.776.0587\nSorver: lily\nChef Wang\nPerson\n[ AS\nScallion Pancake\nLitle .Juicy Pork Bun\nBoef w Bak Choy (L)\nHunan Boef (L)\n02:14 PM - 03:03 PM\nSubTotal\nSales Tax\nTotal\n# 1022\nThank You\nHave A Nice Day\n02/02/19\n$5.25\nS9.95\nS8.75\nS8.75\nS32,70\n$2.82\n$35.52",
+  "blocks": [
+    {
+      "text": "Dine n",
+      "lines": [
+        {
+          "text": "Dine n",
+          "boundingBox": {
+            "left": 318,
+            "top": 549,
+            "right": 519,
+            "bottom": 596
+          },
+          "confidence": 0.8492187
+        }
+      ],
+      "boundingBox": {
+        "left": 318,
+        "top": 549,
+        "right": 519,
+        "bottom": 596
+      }
+    },
+    {
+      "text": "2",
+      "lines": [
+        {
+          "text": "2",
+          "boundingBox": {
+            "left": 315,
+            "top": 647,
+            "right": 338,
+            "bottom": 674
+          },
+          "confidence": 0.66796875
+        }
+      ],
+      "boundingBox": {
+        "left": 315,
+        "top": 647,
+        "right": 338,
+        "bottom": 674
+      }
+    },
+    {
+      "text": "1902 Jericho Tumpike\nNew Hyde Park NY 1I 040",
+      "lines": [
+        {
+          "text": "1902 Jericho Tumpike",
+          "boundingBox": {
+            "left": 553,
+            "top": 346,
+            "right": 1009,
+            "bottom": 407
+          },
+          "confidence": 0.7424045
+        },
+        {
+          "text": "New Hyde Park NY 1I 040",
+          "boundingBox": {
+            "left": 516,
+            "top": 385,
+            "right": 1066,
+            "bottom": 454
+          },
+          "confidence": 0.73502606
+        }
+      ],
+      "boundingBox": {
+        "left": 516,
+        "top": 344,
+        "right": 1068,
+        "bottom": 455
+      }
+    },
+    {
+      "text": "Tel : 516.354.2858 Fax : 516.776.0587",
+      "lines": [
+        {
+          "text": "Tel : 516.354.2858 Fax : 516.776.0587",
+          "boundingBox": {
+            "left": 365,
+            "top": 421,
+            "right": 1178,
+            "bottom": 503
+          },
+          "confidence": 0.8157959
+        }
+      ],
+      "boundingBox": {
+        "left": 365,
+        "top": 421,
+        "right": 1178,
+        "bottom": 503
+      }
+    },
+    {
+      "text": "Sorver: lily",
+      "lines": [
+        {
+          "text": "Sorver: lily",
+          "boundingBox": {
+            "left": 303,
+            "top": 600,
+            "right": 564,
+            "bottom": 650
+          },
+          "confidence": 0.76065344
+        }
+      ],
+      "boundingBox": {
+        "left": 303,
+        "top": 600,
+        "right": 564,
+        "bottom": 650
+      }
+    },
+    {
+      "text": "Chef Wang",
+      "lines": [
+        {
+          "text": "Chef Wang",
+          "boundingBox": {
+            "left": 608,
+            "top": 286,
+            "right": 960,
+            "bottom": 361
+          },
+          "confidence": 0.8959961
+        }
+      ],
+      "boundingBox": {
+        "left": 608,
+        "top": 286,
+        "right": 960,
+        "bottom": 361
+      }
+    },
+    {
+      "text": "Person",
+      "lines": [
+        {
+          "text": "Person",
+          "boundingBox": {
+            "left": 403,
+            "top": 652,
+            "right": 530,
+            "bottom": 685
+          },
+          "confidence": 0.7421875
+        }
+      ],
+      "boundingBox": {
+        "left": 403,
+        "top": 652,
+        "right": 530,
+        "bottom": 685
+      }
+    },
+    {
+      "text": "[ AS",
+      "lines": [
+        {
+          "text": "[ AS",
+          "boundingBox": {
+            "left": 689,
+            "top": 489,
+            "right": 822,
+            "bottom": 555
+          },
+          "confidence": 0.4596354
+        }
+      ],
+      "boundingBox": {
+        "left": 689,
+        "top": 489,
+        "right": 822,
+        "bottom": 555
+      }
+    },
+    {
+      "text": "Scallion Pancake\nLitle .Juicy Pork Bun\nBoef w Bak Choy (L)\nHunan Boef (L)",
+      "lines": [
+        {
+          "text": "Scallion Pancake",
+          "boundingBox": {
+            "left": 396,
+            "top": 735,
+            "right": 770,
+            "bottom": 782
+          },
+          "confidence": 0.8354167
+        },
+        {
+          "text": "Litle .Juicy Pork Bun",
+          "boundingBox": {
+            "left": 392,
+            "top": 777,
+            "right": 862,
+            "bottom": 836
+          },
+          "confidence": 0.765408
+        },
+        {
+          "text": "Boef w Bak Choy (L)",
+          "boundingBox": {
+            "left": 411,
+            "top": 822,
+            "right": 869,
+            "bottom": 884
+          },
+          "confidence": 0.8463542
+        },
+        {
+          "text": "Hunan Boef (L)",
+          "boundingBox": {
+            "left": 379,
+            "top": 870,
+            "right": 738,
+            "bottom": 926
+          },
+          "confidence": 0.7360026
+        }
+      ],
+      "boundingBox": {
+        "left": 378,
+        "top": 734,
+        "right": 872,
+        "bottom": 933
+      }
+    },
+    {
+      "text": "02:14 PM - 03:03 PM",
+      "lines": [
+        {
+          "text": "02:14 PM - 03:03 PM",
+          "boundingBox": {
+            "left": 711,
+            "top": 665,
+            "right": 1203,
+            "bottom": 714
+          },
+          "confidence": 0.84244794
+        }
+      ],
+      "boundingBox": {
+        "left": 711,
+        "top": 665,
+        "right": 1203,
+        "bottom": 714
+      }
+    },
+    {
+      "text": "SubTotal",
+      "lines": [
+        {
+          "text": "SubTotal",
+          "boundingBox": {
+            "left": 748,
+            "top": 978,
+            "right": 944,
+            "bottom": 1023
+          },
+          "confidence": 0.8022461
+        }
+      ],
+      "boundingBox": {
+        "left": 748,
+        "top": 978,
+        "right": 944,
+        "bottom": 1023
+      }
+    },
+    {
+      "text": "Sales Tax",
+      "lines": [
+        {
+          "text": "Sales Tax",
+          "boundingBox": {
+            "left": 730,
+            "top": 1028,
+            "right": 945,
+            "bottom": 1070
+          },
+          "confidence": 0.8652344
+        }
+      ],
+      "boundingBox": {
+        "left": 730,
+        "top": 1028,
+        "right": 945,
+        "bottom": 1070
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 618,
+            "top": 1130,
+            "right": 790,
+            "bottom": 1184
+          },
+          "confidence": 0.89140624
+        }
+      ],
+      "boundingBox": {
+        "left": 618,
+        "top": 1130,
+        "right": 790,
+        "bottom": 1184
+      }
+    },
+    {
+      "text": "# 1022",
+      "lines": [
+        {
+          "text": "# 1022",
+          "boundingBox": {
+            "left": 995,
+            "top": 584,
+            "right": 1202,
+            "bottom": 628
+          },
+          "confidence": 0.78515625
+        }
+      ],
+      "boundingBox": {
+        "left": 995,
+        "top": 584,
+        "right": 1202,
+        "bottom": 628
+      }
+    },
+    {
+      "text": "Thank You\nHave A Nice Day",
+      "lines": [
+        {
+          "text": "Thank You",
+          "boundingBox": {
+            "left": 566,
+            "top": 1285,
+            "right": 872,
+            "bottom": 1335
+          },
+          "confidence": 0.88378906
+        },
+        {
+          "text": "Have A Nice Day",
+          "boundingBox": {
+            "left": 498,
+            "top": 1344,
+            "right": 957,
+            "bottom": 1409
+          },
+          "confidence": 0.8499349
+        }
+      ],
+      "boundingBox": {
+        "left": 498,
+        "top": 1282,
+        "right": 959,
+        "bottom": 1409
+      }
+    },
+    {
+      "text": "02/02/19",
+      "lines": [
+        {
+          "text": "02/02/19",
+          "boundingBox": {
+            "left": 1021,
+            "top": 639,
+            "right": 1207,
+            "bottom": 670
+          },
+          "confidence": 0.73535156
+        }
+      ],
+      "boundingBox": {
+        "left": 1021,
+        "top": 639,
+        "right": 1207,
+        "bottom": 670
+      }
+    },
+    {
+      "text": "$5.25",
+      "lines": [
+        {
+          "text": "$5.25",
+          "boundingBox": {
+            "left": 1090,
+            "top": 770,
+            "right": 1206,
+            "bottom": 800
+          },
+          "confidence": 0.6390625
+        }
+      ],
+      "boundingBox": {
+        "left": 1090,
+        "top": 770,
+        "right": 1206,
+        "bottom": 800
+      }
+    },
+    {
+      "text": "S9.95",
+      "lines": [
+        {
+          "text": "S9.95",
+          "boundingBox": {
+            "left": 1089,
+            "top": 811,
+            "right": 1207,
+            "bottom": 843
+          },
+          "confidence": 0.665625
+        }
+      ],
+      "boundingBox": {
+        "left": 1089,
+        "top": 811,
+        "right": 1207,
+        "bottom": 843
+      }
+    },
+    {
+      "text": "S8.75",
+      "lines": [
+        {
+          "text": "S8.75",
+          "boundingBox": {
+            "left": 1090,
+            "top": 858,
+            "right": 1208,
+            "bottom": 890
+          },
+          "confidence": 0.7867187
+        }
+      ],
+      "boundingBox": {
+        "left": 1090,
+        "top": 858,
+        "right": 1208,
+        "bottom": 890
+      }
+    },
+    {
+      "text": "S8.75",
+      "lines": [
+        {
+          "text": "S8.75",
+          "boundingBox": {
+            "left": 1090,
+            "top": 902,
+            "right": 1208,
+            "bottom": 936
+          },
+          "confidence": 0.821875
+        }
+      ],
+      "boundingBox": {
+        "left": 1090,
+        "top": 902,
+        "right": 1208,
+        "bottom": 936
+      }
+    },
+    {
+      "text": "S32,70\n$2.82",
+      "lines": [
+        {
+          "text": "S32,70",
+          "boundingBox": {
+            "left": 1060,
+            "top": 991,
+            "right": 1210,
+            "bottom": 1033
+          },
+          "confidence": 0.7473958
+        },
+        {
+          "text": "$2.82",
+          "boundingBox": {
+            "left": 1092,
+            "top": 1042,
+            "right": 1214,
+            "bottom": 1078
+          },
+          "confidence": 0.7109375
+        }
+      ],
+      "boundingBox": {
+        "left": 1058,
+        "top": 991,
+        "right": 1215,
+        "bottom": 1079
+      }
+    },
+    {
+      "text": "$35.52",
+      "lines": [
+        {
+          "text": "$35.52",
+          "boundingBox": {
+            "left": 981,
+            "top": 1139,
+            "right": 1213,
+            "bottom": 1196
+          },
+          "confidence": 0.8639323
+        }
+      ],
+      "boundingBox": {
+        "left": 981,
+        "top": 1139,
+        "right": 1213,
+        "bottom": 1196
+      }
+    }
+  ]
+}

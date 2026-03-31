@@ -1,0 +1,548 @@
+{
+  "fullText": "Order #004-864\nDine In\nSeat: 1\nAnjappar Chettinad Artesia\nSeat #1\nServer: Deepthi R\n1 Ghee Dosa\n18128 Pioneer Blvd\nArtes1a, Ca 90701\n(562) 991-1801\nwww.anjapparla.com\nAnjappar - Artesia\nKid is waiting\n1 Anjappar Mutton Meals\n1 Kaldosa\n1 Plain Dosa\nSub Total:\nTax 1:\nTotal:\nTicket #35\nTable #C16\nDevice #1\n7.95\n14.95\n6.95\n6.95\n36.80\n3.50\n40.30",
+  "blocks": [
+    {
+      "text": "Order #004-864",
+      "lines": [
+        {
+          "text": "Order #004-864",
+          "boundingBox": {
+            "left": 92,
+            "top": 426,
+            "right": 504,
+            "bottom": 464
+          },
+          "confidence": 0.8404447
+        }
+      ],
+      "boundingBox": {
+        "left": 92,
+        "top": 426,
+        "right": 504,
+        "bottom": 464
+      }
+    },
+    {
+      "text": "Dine In",
+      "lines": [
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 77,
+            "top": 538,
+            "right": 292,
+            "bottom": 610
+          },
+          "confidence": 0.7916667
+        }
+      ],
+      "boundingBox": {
+        "left": 77,
+        "top": 538,
+        "right": 292,
+        "bottom": 610
+      }
+    },
+    {
+      "text": "Seat: 1",
+      "lines": [
+        {
+          "text": "Seat: 1",
+          "boundingBox": {
+            "left": 72,
+            "top": 618,
+            "right": 282,
+            "bottom": 656
+          },
+          "confidence": 0.8548177
+        }
+      ],
+      "boundingBox": {
+        "left": 72,
+        "top": 618,
+        "right": 282,
+        "bottom": 656
+      }
+    },
+    {
+      "text": "Anjappar Chettinad Artesia",
+      "lines": [
+        {
+          "text": "Anjappar Chettinad Artesia",
+          "boundingBox": {
+            "left": 428,
+            "top": -8,
+            "right": 1131,
+            "bottom": 74
+          },
+          "confidence": 0.80875653
+        }
+      ],
+      "boundingBox": {
+        "left": 428,
+        "top": -8,
+        "right": 1131,
+        "bottom": 74
+      }
+    },
+    {
+      "text": "Seat #1",
+      "lines": [
+        {
+          "text": "Seat #1",
+          "boundingBox": {
+            "left": 40,
+            "top": 854,
+            "right": 268,
+            "bottom": 894
+          },
+          "confidence": 0.7402344
+        }
+      ],
+      "boundingBox": {
+        "left": 40,
+        "top": 854,
+        "right": 268,
+        "bottom": 894
+      }
+    },
+    {
+      "text": "Server: Deepthi R",
+      "lines": [
+        {
+          "text": "Server: Deepthi R",
+          "boundingBox": {
+            "left": 79,
+            "top": 722,
+            "right": 588,
+            "bottom": 779
+          },
+          "confidence": 0.88645834
+        }
+      ],
+      "boundingBox": {
+        "left": 79,
+        "top": 722,
+        "right": 588,
+        "bottom": 779
+      }
+    },
+    {
+      "text": "1 Ghee Dosa",
+      "lines": [
+        {
+          "text": "1 Ghee Dosa",
+          "boundingBox": {
+            "left": 96,
+            "top": 910,
+            "right": 428,
+            "bottom": 962
+          },
+          "confidence": 0.85460067
+        }
+      ],
+      "boundingBox": {
+        "left": 96,
+        "top": 910,
+        "right": 428,
+        "bottom": 962
+      }
+    },
+    {
+      "text": "18128 Pioneer Blvd\nArtes1a, Ca 90701\n(562) 991-1801\nwww.anjapparla.com\nAnjappar - Artesia",
+      "lines": [
+        {
+          "text": "18128 Pioneer Blvd",
+          "boundingBox": {
+            "left": 542,
+            "top": 105,
+            "right": 1032,
+            "bottom": 151
+          },
+          "confidence": 0.8527832
+        },
+        {
+          "text": "Artes1a, Ca 90701",
+          "boundingBox": {
+            "left": 550,
+            "top": 152,
+            "right": 1014,
+            "bottom": 197
+          },
+          "confidence": 0.8497396
+        },
+        {
+          "text": "(562) 991-1801",
+          "boundingBox": {
+            "left": 614,
+            "top": 200,
+            "right": 976,
+            "bottom": 249
+          },
+          "confidence": 0.84765625
+        },
+        {
+          "text": "www.anjapparla.com",
+          "boundingBox": {
+            "left": 534,
+            "top": 258,
+            "right": 1046,
+            "bottom": 298
+          },
+          "confidence": 0.8062066
+        },
+        {
+          "text": "Anjappar - Artesia",
+          "boundingBox": {
+            "left": 534,
+            "top": 301,
+            "right": 1045,
+            "bottom": 354
+          },
+          "confidence": 0.8359375
+        }
+      ],
+      "boundingBox": {
+        "left": 531,
+        "top": 104,
+        "right": 1046,
+        "bottom": 354
+      }
+    },
+    {
+      "text": "Kid is waiting",
+      "lines": [
+        {
+          "text": "Kid is waiting",
+          "boundingBox": {
+            "left": 90,
+            "top": 971,
+            "right": 556,
+            "bottom": 1028
+          },
+          "confidence": 0.82877606
+        }
+      ],
+      "boundingBox": {
+        "left": 90,
+        "top": 971,
+        "right": 556,
+        "bottom": 1028
+      }
+    },
+    {
+      "text": "1 Anjappar Mutton Meals",
+      "lines": [
+        {
+          "text": "1 Anjappar Mutton Meals",
+          "boundingBox": {
+            "left": 94,
+            "top": 1026,
+            "right": 815,
+            "bottom": 1104
+          },
+          "confidence": 0.8408203
+        }
+      ],
+      "boundingBox": {
+        "left": 94,
+        "top": 1026,
+        "right": 815,
+        "bottom": 1104
+      }
+    },
+    {
+      "text": "1 Kaldosa\n1 Plain Dosa",
+      "lines": [
+        {
+          "text": "1 Kaldosa",
+          "boundingBox": {
+            "left": 94,
+            "top": 1108,
+            "right": 352,
+            "bottom": 1166
+          },
+          "confidence": 0.7998047
+        },
+        {
+          "text": "1 Plain Dosa",
+          "boundingBox": {
+            "left": 94,
+            "top": 1174,
+            "right": 452,
+            "bottom": 1237
+          },
+          "confidence": 0.86757815
+        }
+      ],
+      "boundingBox": {
+        "left": 94,
+        "top": 1106,
+        "right": 452,
+        "bottom": 1237
+      }
+    },
+    {
+      "text": "Sub Total:\nTax 1:",
+      "lines": [
+        {
+          "text": "Sub Total:",
+          "boundingBox": {
+            "left": 898,
+            "top": 1291,
+            "right": 1203,
+            "bottom": 1359
+          },
+          "confidence": 0.8689236
+        },
+        {
+          "text": "Tax 1:",
+          "boundingBox": {
+            "left": 1034,
+            "top": 1365,
+            "right": 1203,
+            "bottom": 1416
+          },
+          "confidence": 0.7601563
+        }
+      ],
+      "boundingBox": {
+        "left": 898,
+        "top": 1291,
+        "right": 1207,
+        "bottom": 1425
+      }
+    },
+    {
+      "text": "Total:",
+      "lines": [
+        {
+          "text": "Total:",
+          "boundingBox": {
+            "left": 1028,
+            "top": 1483,
+            "right": 1200,
+            "bottom": 1590
+          },
+          "confidence": 0.48632812
+        }
+      ],
+      "boundingBox": {
+        "left": 1028,
+        "top": 1483,
+        "right": 1200,
+        "bottom": 1590
+      }
+    },
+    {
+      "text": "Ticket #35",
+      "lines": [
+        {
+          "text": "Ticket #35",
+          "boundingBox": {
+            "left": 1208,
+            "top": 400,
+            "right": 1492,
+            "bottom": 443
+          },
+          "confidence": 0.7907986
+        }
+      ],
+      "boundingBox": {
+        "left": 1208,
+        "top": 400,
+        "right": 1492,
+        "bottom": 443
+      }
+    },
+    {
+      "text": "Table #C16",
+      "lines": [
+        {
+          "text": "Table #C16",
+          "boundingBox": {
+            "left": 1218,
+            "top": 509,
+            "right": 1511,
+            "bottom": 592
+          },
+          "confidence": 0.7230903
+        }
+      ],
+      "boundingBox": {
+        "left": 1218,
+        "top": 509,
+        "right": 1511,
+        "bottom": 592
+      }
+    },
+    {
+      "text": "Device #1",
+      "lines": [
+        {
+          "text": "Device #1",
+          "boundingBox": {
+            "left": 1263,
+            "top": 715,
+            "right": 1513,
+            "bottom": 758
+          },
+          "confidence": 0.8798828
+        }
+      ],
+      "boundingBox": {
+        "left": 1263,
+        "top": 715,
+        "right": 1513,
+        "bottom": 758
+      }
+    },
+    {
+      "text": "7.95",
+      "lines": [
+        {
+          "text": "7.95",
+          "boundingBox": {
+            "left": 1422,
+            "top": 900,
+            "right": 1534,
+            "bottom": 940
+          },
+          "confidence": 0.8574219
+        }
+      ],
+      "boundingBox": {
+        "left": 1422,
+        "top": 900,
+        "right": 1534,
+        "bottom": 940
+      }
+    },
+    {
+      "text": "14.95",
+      "lines": [
+        {
+          "text": "14.95",
+          "boundingBox": {
+            "left": 1406,
+            "top": 1022,
+            "right": 1542,
+            "bottom": 1066
+          },
+          "confidence": 0.91796875
+        }
+      ],
+      "boundingBox": {
+        "left": 1406,
+        "top": 1022,
+        "right": 1542,
+        "bottom": 1066
+      }
+    },
+    {
+      "text": "6.95",
+      "lines": [
+        {
+          "text": "6.95",
+          "boundingBox": {
+            "left": 1436,
+            "top": 1084,
+            "right": 1546,
+            "bottom": 1128
+          },
+          "confidence": 0.92871094
+        }
+      ],
+      "boundingBox": {
+        "left": 1436,
+        "top": 1084,
+        "right": 1546,
+        "bottom": 1128
+      }
+    },
+    {
+      "text": "6.95",
+      "lines": [
+        {
+          "text": "6.95",
+          "boundingBox": {
+            "left": 1440,
+            "top": 1148,
+            "right": 1550,
+            "bottom": 1194
+          },
+          "confidence": 0.9267578
+        }
+      ],
+      "boundingBox": {
+        "left": 1440,
+        "top": 1148,
+        "right": 1550,
+        "bottom": 1194
+      }
+    },
+    {
+      "text": "36.80",
+      "lines": [
+        {
+          "text": "36.80",
+          "boundingBox": {
+            "left": 1416,
+            "top": 1274,
+            "right": 1546,
+            "bottom": 1322
+          },
+          "confidence": 0.88984376
+        }
+      ],
+      "boundingBox": {
+        "left": 1416,
+        "top": 1274,
+        "right": 1546,
+        "bottom": 1322
+      }
+    },
+    {
+      "text": "3.50",
+      "lines": [
+        {
+          "text": "3.50",
+          "boundingBox": {
+            "left": 1436,
+            "top": 1332,
+            "right": 1540,
+            "bottom": 1378
+          },
+          "confidence": 0.9189453
+        }
+      ],
+      "boundingBox": {
+        "left": 1436,
+        "top": 1332,
+        "right": 1540,
+        "bottom": 1378
+      }
+    },
+    {
+      "text": "40.30",
+      "lines": [
+        {
+          "text": "40.30",
+          "boundingBox": {
+            "left": 1386,
+            "top": 1437,
+            "right": 1516,
+            "bottom": 1530
+          },
+          "confidence": 0.51171875
+        }
+      ],
+      "boundingBox": {
+        "left": 1386,
+        "top": 1437,
+        "right": 1516,
+        "bottom": 1530
+      }
+    }
+  ]
+}

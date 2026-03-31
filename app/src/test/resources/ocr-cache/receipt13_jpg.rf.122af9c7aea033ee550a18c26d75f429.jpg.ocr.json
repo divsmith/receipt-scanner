@@ -1,0 +1,797 @@
+{
+  "fullText": "1\nQuick 73\nServer: Rebecca B\nPrinted By Rebecca B\nID 234673 # 1\n1\nSmoke City Market\n5242 Van Nuys BLVD\nSherman Oaks, CA 91401\n818.855. 128O\nBeef Ribs\nWeight 1.89 Ibs $19.50Abs\nPulled Pork Sand\n*Reg\nCreamed Corn[Smal]\nonghorn Mac & Cheese[sm]\nChocolate Cake[Sice]\nFountain Soda\nSubtotal\nCA Sales Tax\nTotal\nWells Fargo\nJun 26, 15 04.65 PM\nChange\nThank You for Visiting\nS1\nS36.86\nPlease rate us on Zagat\n$8.50\n$O.00\nPlease visit our website:\nwww. smokecitymarket.com\n$3.35\nEnjoy our BBQ?'Like' us on\nfacebook and Yelp\n$4.20\n$3.95\n$59.11\n$64.43\n$64.43\nS2.25\n$5.32\n$0.00\nww.zagat com/r/smoke-city-market-van-nuy",
+  "blocks": [
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 305,
+            "top": 478,
+            "right": 320,
+            "bottom": 505
+          },
+          "confidence": 0.80859375
+        }
+      ],
+      "boundingBox": {
+        "left": 305,
+        "top": 478,
+        "right": 320,
+        "bottom": 505
+      }
+    },
+    {
+      "text": "Quick 73",
+      "lines": [
+        {
+          "text": "Quick 73",
+          "boundingBox": {
+            "left": 419,
+            "top": 99,
+            "right": 707,
+            "bottom": 149
+          },
+          "confidence": 0.6467634
+        }
+      ],
+      "boundingBox": {
+        "left": 419,
+        "top": 99,
+        "right": 707,
+        "bottom": 149
+      }
+    },
+    {
+      "text": "Server: Rebecca B\nPrinted By Rebecca B\nID 234673 # 1",
+      "lines": [
+        {
+          "text": "Server: Rebecca B",
+          "boundingBox": {
+            "left": 349,
+            "top": 280,
+            "right": 641,
+            "bottom": 318
+          },
+          "confidence": 0.7708333
+        },
+        {
+          "text": "Printed By Rebecca B",
+          "boundingBox": {
+            "left": 325,
+            "top": 309,
+            "right": 696,
+            "bottom": 349
+          },
+          "confidence": 0.8391544
+        },
+        {
+          "text": "ID 234673 # 1",
+          "boundingBox": {
+            "left": 321,
+            "top": 337,
+            "right": 550,
+            "bottom": 380
+          },
+          "confidence": 0.759375
+        }
+      ],
+      "boundingBox": {
+        "left": 319,
+        "top": 276,
+        "right": 698,
+        "bottom": 380
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 310,
+            "top": 559,
+            "right": 324,
+            "bottom": 585
+          },
+          "confidence": 0.73828125
+        }
+      ],
+      "boundingBox": {
+        "left": 310,
+        "top": 559,
+        "right": 324,
+        "bottom": 585
+      }
+    },
+    {
+      "text": "Smoke City Market\n5242 Van Nuys BLVD\nSherman Oaks, CA 91401\n818.855. 128O",
+      "lines": [
+        {
+          "text": "Smoke City Market",
+          "boundingBox": {
+            "left": 595,
+            "top": 122,
+            "right": 978,
+            "bottom": 166
+          },
+          "confidence": 0.7239583
+        },
+        {
+          "text": "5242 Van Nuys BLVD",
+          "boundingBox": {
+            "left": 555,
+            "top": 152,
+            "right": 1012,
+            "bottom": 198
+          },
+          "confidence": 0.7945312
+        },
+        {
+          "text": "Sherman Oaks, CA 91401",
+          "boundingBox": {
+            "left": 526,
+            "top": 180,
+            "right": 1052,
+            "bottom": 234
+          },
+          "confidence": 0.79337996
+        },
+        {
+          "text": "818.855. 128O",
+          "boundingBox": {
+            "left": 648,
+            "top": 221,
+            "right": 924,
+            "bottom": 266
+          },
+          "confidence": 0.805013
+        }
+      ],
+      "boundingBox": {
+        "left": 524,
+        "top": 119,
+        "right": 1053,
+        "bottom": 271
+      }
+    },
+    {
+      "text": "Beef Ribs",
+      "lines": [
+        {
+          "text": "Beef Ribs",
+          "boundingBox": {
+            "left": 444,
+            "top": 395,
+            "right": 623,
+            "bottom": 429
+          },
+          "confidence": 0.85498047
+        }
+      ],
+      "boundingBox": {
+        "left": 444,
+        "top": 395,
+        "right": 623,
+        "bottom": 429
+      }
+    },
+    {
+      "text": "Weight 1.89 Ibs $19.50Abs\nPulled Pork Sand",
+      "lines": [
+        {
+          "text": "Weight 1.89 Ibs $19.50Abs",
+          "boundingBox": {
+            "left": 439,
+            "top": 409,
+            "right": 957,
+            "bottom": 467
+          },
+          "confidence": 0.6761364
+        },
+        {
+          "text": "Pulled Pork Sand",
+          "boundingBox": {
+            "left": 435,
+            "top": 450,
+            "right": 765,
+            "bottom": 494
+          },
+          "confidence": 0.8579799
+        }
+      ],
+      "boundingBox": {
+        "left": 434,
+        "top": 410,
+        "right": 958,
+        "bottom": 495
+      }
+    },
+    {
+      "text": "*Reg",
+      "lines": [
+        {
+          "text": "*Reg",
+          "boundingBox": {
+            "left": 480,
+            "top": 508,
+            "right": 568,
+            "bottom": 538
+          },
+          "confidence": 0.73046875
+        }
+      ],
+      "boundingBox": {
+        "left": 480,
+        "top": 508,
+        "right": 568,
+        "bottom": 538
+      }
+    },
+    {
+      "text": "Creamed Corn[Smal]",
+      "lines": [
+        {
+          "text": "Creamed Corn[Smal]",
+          "boundingBox": {
+            "left": 442,
+            "top": 531,
+            "right": 855,
+            "bottom": 585
+          },
+          "confidence": 0.76953125
+        }
+      ],
+      "boundingBox": {
+        "left": 442,
+        "top": 531,
+        "right": 855,
+        "bottom": 585
+      }
+    },
+    {
+      "text": "onghorn Mac & Cheese[sm]\nChocolate Cake[Sice]\nFountain Soda",
+      "lines": [
+        {
+          "text": "onghorn Mac & Cheese[sm]",
+          "boundingBox": {
+            "left": 463,
+            "top": 568,
+            "right": 1009,
+            "bottom": 625
+          },
+          "confidence": 0.8201265
+        },
+        {
+          "text": "Chocolate Cake[Sice]",
+          "boundingBox": {
+            "left": 439,
+            "top": 620,
+            "right": 872,
+            "bottom": 655
+          },
+          "confidence": 0.7728207
+        },
+        {
+          "text": "Fountain Soda",
+          "boundingBox": {
+            "left": 438,
+            "top": 661,
+            "right": 716,
+            "bottom": 696
+          },
+          "confidence": 0.8779297
+        }
+      ],
+      "boundingBox": {
+        "left": 436,
+        "top": 567,
+        "right": 1011,
+        "bottom": 696
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 658,
+            "top": 738,
+            "right": 837,
+            "bottom": 768
+          },
+          "confidence": 0.82128906
+        }
+      ],
+      "boundingBox": {
+        "left": 658,
+        "top": 738,
+        "right": 837,
+        "bottom": 768
+      }
+    },
+    {
+      "text": "CA Sales Tax",
+      "lines": [
+        {
+          "text": "CA Sales Tax",
+          "boundingBox": {
+            "left": 537,
+            "top": 779,
+            "right": 840,
+            "bottom": 808
+          },
+          "confidence": 0.8480469
+        }
+      ],
+      "boundingBox": {
+        "left": 537,
+        "top": 779,
+        "right": 840,
+        "bottom": 808
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 646,
+            "top": 825,
+            "right": 835,
+            "bottom": 868
+          },
+          "confidence": 0.8875
+        }
+      ],
+      "boundingBox": {
+        "left": 646,
+        "top": 825,
+        "right": 835,
+        "bottom": 868
+      }
+    },
+    {
+      "text": "Wells Fargo",
+      "lines": [
+        {
+          "text": "Wells Fargo",
+          "boundingBox": {
+            "left": 448,
+            "top": 882,
+            "right": 836,
+            "bottom": 938
+          },
+          "confidence": 0.8734375
+        }
+      ],
+      "boundingBox": {
+        "left": 448,
+        "top": 882,
+        "right": 836,
+        "bottom": 938
+      }
+    },
+    {
+      "text": "Jun 26, 15 04.65 PM",
+      "lines": [
+        {
+          "text": "Jun 26, 15 04.65 PM",
+          "boundingBox": {
+            "left": 875,
+            "top": 318,
+            "right": 1248,
+            "bottom": 350
+          },
+          "confidence": 0.7270833
+        }
+      ],
+      "boundingBox": {
+        "left": 875,
+        "top": 318,
+        "right": 1248,
+        "bottom": 350
+      }
+    },
+    {
+      "text": "Change",
+      "lines": [
+        {
+          "text": "Change",
+          "boundingBox": {
+            "left": 579,
+            "top": 990,
+            "right": 837,
+            "bottom": 1045
+          },
+          "confidence": 0.8782552
+        }
+      ],
+      "boundingBox": {
+        "left": 579,
+        "top": 990,
+        "right": 837,
+        "bottom": 1045
+      }
+    },
+    {
+      "text": "Thank You for Visiting",
+      "lines": [
+        {
+          "text": "Thank You for Visiting",
+          "boundingBox": {
+            "left": 501,
+            "top": 1099,
+            "right": 1030,
+            "bottom": 1141
+          },
+          "confidence": 0.86924344
+        }
+      ],
+      "boundingBox": {
+        "left": 501,
+        "top": 1099,
+        "right": 1030,
+        "bottom": 1141
+      }
+    },
+    {
+      "text": "S1",
+      "lines": [
+        {
+          "text": "S1",
+          "boundingBox": {
+            "left": 1202,
+            "top": 293,
+            "right": 1246,
+            "bottom": 315
+          },
+          "confidence": 0.6152344
+        }
+      ],
+      "boundingBox": {
+        "left": 1202,
+        "top": 293,
+        "right": 1246,
+        "bottom": 315
+      }
+    },
+    {
+      "text": "S36.86",
+      "lines": [
+        {
+          "text": "S36.86",
+          "boundingBox": {
+            "left": 1092,
+            "top": 371,
+            "right": 1252,
+            "bottom": 405
+          },
+          "confidence": 0.75716144
+        }
+      ],
+      "boundingBox": {
+        "left": 1092,
+        "top": 371,
+        "right": 1252,
+        "bottom": 405
+      }
+    },
+    {
+      "text": "Please rate us on Zagat",
+      "lines": [
+        {
+          "text": "Please rate us on Zagat",
+          "boundingBox": {
+            "left": 422,
+            "top": 1434,
+            "right": 1079,
+            "bottom": 1503
+          },
+          "confidence": 0.8721217
+        }
+      ],
+      "boundingBox": {
+        "left": 422,
+        "top": 1434,
+        "right": 1079,
+        "bottom": 1503
+      }
+    },
+    {
+      "text": "$8.50\n$O.00",
+      "lines": [
+        {
+          "text": "$8.50",
+          "boundingBox": {
+            "left": 1122,
+            "top": 433,
+            "right": 1256,
+            "bottom": 468
+          },
+          "confidence": 0.665625
+        },
+        {
+          "text": "$O.00",
+          "boundingBox": {
+            "left": 1122,
+            "top": 474,
+            "right": 1258,
+            "bottom": 512
+          },
+          "confidence": 0.584375
+        }
+      ],
+      "boundingBox": {
+        "left": 1120,
+        "top": 433,
+        "right": 1257,
+        "bottom": 514
+      }
+    },
+    {
+      "text": "Please visit our website:\nwww. smokecitymarket.com",
+      "lines": [
+        {
+          "text": "Please visit our website:",
+          "boundingBox": {
+            "left": 466,
+            "top": 1190,
+            "right": 1056,
+            "bottom": 1231
+          },
+          "confidence": 0.8442827
+        },
+        {
+          "text": "www. smokecitymarket.com",
+          "boundingBox": {
+            "left": 438,
+            "top": 1239,
+            "right": 1103,
+            "bottom": 1293
+          },
+          "confidence": 0.7795516
+        }
+      ],
+      "boundingBox": {
+        "left": 437,
+        "top": 1190,
+        "right": 1102,
+        "bottom": 1295
+      }
+    },
+    {
+      "text": "$3.35",
+      "lines": [
+        {
+          "text": "$3.35",
+          "boundingBox": {
+            "left": 1123,
+            "top": 515,
+            "right": 1257,
+            "bottom": 557
+          },
+          "confidence": 0.8773438
+        }
+      ],
+      "boundingBox": {
+        "left": 1123,
+        "top": 515,
+        "right": 1257,
+        "bottom": 557
+      }
+    },
+    {
+      "text": "Enjoy our BBQ?'Like' us on\nfacebook and Yelp",
+      "lines": [
+        {
+          "text": "Enjoy our BBQ?'Like' us on",
+          "boundingBox": {
+            "left": 413,
+            "top": 1330,
+            "right": 1121,
+            "bottom": 1394
+          },
+          "confidence": 0.77521306
+        },
+        {
+          "text": "facebook and Yelp",
+          "boundingBox": {
+            "left": 504,
+            "top": 1385,
+            "right": 1001,
+            "bottom": 1447
+          },
+          "confidence": 0.8388021
+        }
+      ],
+      "boundingBox": {
+        "left": 412,
+        "top": 1327,
+        "right": 1121,
+        "bottom": 1450
+      }
+    },
+    {
+      "text": "$4.20",
+      "lines": [
+        {
+          "text": "$4.20",
+          "boundingBox": {
+            "left": 1125,
+            "top": 561,
+            "right": 1258,
+            "bottom": 599
+          },
+          "confidence": 0.83203125
+        }
+      ],
+      "boundingBox": {
+        "left": 1125,
+        "top": 561,
+        "right": 1258,
+        "bottom": 599
+      }
+    },
+    {
+      "text": "$3.95",
+      "lines": [
+        {
+          "text": "$3.95",
+          "boundingBox": {
+            "left": 1126,
+            "top": 608,
+            "right": 1260,
+            "bottom": 642
+          },
+          "confidence": 0.7859375
+        }
+      ],
+      "boundingBox": {
+        "left": 1126,
+        "top": 608,
+        "right": 1260,
+        "bottom": 642
+      }
+    },
+    {
+      "text": "$59.11",
+      "lines": [
+        {
+          "text": "$59.11",
+          "boundingBox": {
+            "left": 1103,
+            "top": 725,
+            "right": 1257,
+            "bottom": 760
+          },
+          "confidence": 0.828125
+        }
+      ],
+      "boundingBox": {
+        "left": 1103,
+        "top": 725,
+        "right": 1257,
+        "bottom": 760
+      }
+    },
+    {
+      "text": "$64.43\n$64.43",
+      "lines": [
+        {
+          "text": "$64.43",
+          "boundingBox": {
+            "left": 1017,
+            "top": 815,
+            "right": 1268,
+            "bottom": 871
+          },
+          "confidence": 0.86783856
+        },
+        {
+          "text": "$64.43",
+          "boundingBox": {
+            "left": 1051,
+            "top": 885,
+            "right": 1278,
+            "bottom": 930
+          },
+          "confidence": 0.8359375
+        }
+      ],
+      "boundingBox": {
+        "left": 1017,
+        "top": 815,
+        "right": 1277,
+        "bottom": 931
+      }
+    },
+    {
+      "text": "S2.25",
+      "lines": [
+        {
+          "text": "S2.25",
+          "boundingBox": {
+            "left": 1129,
+            "top": 648,
+            "right": 1257,
+            "bottom": 683
+          },
+          "confidence": 0.71875
+        }
+      ],
+      "boundingBox": {
+        "left": 1129,
+        "top": 648,
+        "right": 1257,
+        "bottom": 683
+      }
+    },
+    {
+      "text": "$5.32",
+      "lines": [
+        {
+          "text": "$5.32",
+          "boundingBox": {
+            "left": 1135,
+            "top": 768,
+            "right": 1266,
+            "bottom": 803
+          },
+          "confidence": 0.8328125
+        }
+      ],
+      "boundingBox": {
+        "left": 1135,
+        "top": 768,
+        "right": 1266,
+        "bottom": 803
+      }
+    },
+    {
+      "text": "$0.00",
+      "lines": [
+        {
+          "text": "$0.00",
+          "boundingBox": {
+            "left": 1101,
+            "top": 986,
+            "right": 1293,
+            "bottom": 1036
+          },
+          "confidence": 0.75
+        }
+      ],
+      "boundingBox": {
+        "left": 1101,
+        "top": 986,
+        "right": 1293,
+        "bottom": 1036
+      }
+    },
+    {
+      "text": "ww.zagat com/r/smoke-city-market-van-nuy",
+      "lines": [
+        {
+          "text": "ww.zagat com/r/smoke-city-market-van-nuy",
+          "boundingBox": {
+            "left": 140,
+            "top": 1487,
+            "right": 1353,
+            "bottom": 1569
+          },
+          "confidence": 0.74959934
+        }
+      ],
+      "boundingBox": {
+        "left": 140,
+        "top": 1487,
+        "right": 1353,
+        "bottom": 1569
+      }
+    }
+  ]
+}

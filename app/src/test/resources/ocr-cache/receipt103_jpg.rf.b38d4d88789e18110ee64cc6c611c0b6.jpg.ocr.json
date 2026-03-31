@@ -1,0 +1,453 @@
+{
+  "fullText": "Guest1\n1\nKAZ RAMEN\n22413 BARTON ROAD\nCashier: Mickey\n04-Nov-2018 9.07:13P\nSubtotal\nTax\nGRAND TERRACE, CA 92313\n9094229532\nTotal\nORDER: T4G1\nTonkotsu\nDINE IN\n$9.50\nTofu S0.00\nEgg S1.30\nOrder 4AWA65DFNMVRT\nCorn $0.50\nBamboo shoots $1.00\nNaruto $0.75\nSpicy $0.00\n$13.05\n$1.01\n$14.06",
+  "blocks": [
+    {
+      "text": "Guest1",
+      "lines": [
+        {
+          "text": "Guest1",
+          "boundingBox": {
+            "left": 376,
+            "top": 777,
+            "right": 505,
+            "bottom": 803
+          },
+          "confidence": 0.828125
+        }
+      ],
+      "boundingBox": {
+        "left": 376,
+        "top": 777,
+        "right": 505,
+        "bottom": 803
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 378,
+            "top": 814,
+            "right": 390,
+            "bottom": 837
+          },
+          "confidence": 0.4453125
+        }
+      ],
+      "boundingBox": {
+        "left": 378,
+        "top": 814,
+        "right": 390,
+        "bottom": 837
+      }
+    },
+    {
+      "text": "KAZ RAMEN\n22413 BARTON ROAD",
+      "lines": [
+        {
+          "text": "KAZ RAMEN",
+          "boundingBox": {
+            "left": 639,
+            "top": 439,
+            "right": 892,
+            "bottom": 476
+          },
+          "confidence": 0.8510742
+        },
+        {
+          "text": "22413 BARTON ROAD",
+          "boundingBox": {
+            "left": 597,
+            "top": 468,
+            "right": 949,
+            "bottom": 513
+          },
+          "confidence": 0.8328125
+        }
+      ],
+      "boundingBox": {
+        "left": 596,
+        "top": 437,
+        "right": 949,
+        "bottom": 513
+      }
+    },
+    {
+      "text": "Cashier: Mickey\n04-Nov-2018 9.07:13P",
+      "lines": [
+        {
+          "text": "Cashier: Mickey",
+          "boundingBox": {
+            "left": 379,
+            "top": 707,
+            "right": 650,
+            "bottom": 741
+          },
+          "confidence": 0.8738839
+        },
+        {
+          "text": "04-Nov-2018 9.07:13P",
+          "boundingBox": {
+            "left": 378,
+            "top": 733,
+            "right": 773,
+            "bottom": 770
+          },
+          "confidence": 0.8307977
+        }
+      ],
+      "boundingBox": {
+        "left": 377,
+        "top": 704,
+        "right": 773,
+        "bottom": 770
+      }
+    },
+    {
+      "text": "Subtotal\nTax",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 360,
+            "top": 1130,
+            "right": 518,
+            "bottom": 1160
+          },
+          "confidence": 0.859375
+        },
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 359,
+            "top": 1171,
+            "right": 420,
+            "bottom": 1197
+          },
+          "confidence": 0.82682294
+        }
+      ],
+      "boundingBox": {
+        "left": 358,
+        "top": 1128,
+        "right": 517,
+        "bottom": 1199
+      }
+    },
+    {
+      "text": "GRAND TERRACE, CA 92313\n9094229532",
+      "lines": [
+        {
+          "text": "GRAND TERRACE, CA 92313",
+          "boundingBox": {
+            "left": 532,
+            "top": 501,
+            "right": 1008,
+            "bottom": 544
+          },
+          "confidence": 0.84589845
+        },
+        {
+          "text": "9094229532",
+          "boundingBox": {
+            "left": 663,
+            "top": 536,
+            "right": 874,
+            "bottom": 571
+          },
+          "confidence": 0.8773438
+        }
+      ],
+      "boundingBox": {
+        "left": 532,
+        "top": 498,
+        "right": 1010,
+        "bottom": 577
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 355,
+            "top": 1247,
+            "right": 448,
+            "bottom": 1276
+          },
+          "confidence": 0.85078126
+        }
+      ],
+      "boundingBox": {
+        "left": 355,
+        "top": 1247,
+        "right": 448,
+        "bottom": 1276
+      }
+    },
+    {
+      "text": "ORDER: T4G1",
+      "lines": [
+        {
+          "text": "ORDER: T4G1",
+          "boundingBox": {
+            "left": 594,
+            "top": 597,
+            "right": 941,
+            "bottom": 648
+          },
+          "confidence": 0.8234375
+        }
+      ],
+      "boundingBox": {
+        "left": 594,
+        "top": 597,
+        "right": 941,
+        "bottom": 648
+      }
+    },
+    {
+      "text": "Tonkotsu",
+      "lines": [
+        {
+          "text": "Tonkotsu",
+          "boundingBox": {
+            "left": 448,
+            "top": 807,
+            "right": 608,
+            "bottom": 835
+          },
+          "confidence": 0.8569336
+        }
+      ],
+      "boundingBox": {
+        "left": 448,
+        "top": 807,
+        "right": 608,
+        "bottom": 835
+      }
+    },
+    {
+      "text": "DINE IN",
+      "lines": [
+        {
+          "text": "DINE IN",
+          "boundingBox": {
+            "left": 674,
+            "top": 652,
+            "right": 873,
+            "bottom": 696
+          },
+          "confidence": 0.8157552
+        }
+      ],
+      "boundingBox": {
+        "left": 674,
+        "top": 652,
+        "right": 873,
+        "bottom": 696
+      }
+    },
+    {
+      "text": "$9.50\nTofu S0.00\nEgg S1.30",
+      "lines": [
+        {
+          "text": "$9.50",
+          "boundingBox": {
+            "left": 1086,
+            "top": 788,
+            "right": 1187,
+            "bottom": 821
+          },
+          "confidence": 0.8304688
+        },
+        {
+          "text": "Tofu S0.00",
+          "boundingBox": {
+            "left": 1009,
+            "top": 821,
+            "right": 1190,
+            "bottom": 858
+          },
+          "confidence": 0.71137154
+        },
+        {
+          "text": "Egg S1.30",
+          "boundingBox": {
+            "left": 1010,
+            "top": 856,
+            "right": 1194,
+            "bottom": 897
+          },
+          "confidence": 0.6870117
+        }
+      ],
+      "boundingBox": {
+        "left": 1007,
+        "top": 788,
+        "right": 1193,
+        "bottom": 897
+      }
+    },
+    {
+      "text": "Order 4AWA65DFNMVRT",
+      "lines": [
+        {
+          "text": "Order 4AWA65DFNMVRT",
+          "boundingBox": {
+            "left": 377,
+            "top": 1312,
+            "right": 832,
+            "bottom": 1362
+          },
+          "confidence": 0.6981337
+        }
+      ],
+      "boundingBox": {
+        "left": 377,
+        "top": 1312,
+        "right": 832,
+        "bottom": 1362
+      }
+    },
+    {
+      "text": "Corn $0.50",
+      "lines": [
+        {
+          "text": "Corn $0.50",
+          "boundingBox": {
+            "left": 997,
+            "top": 894,
+            "right": 1196,
+            "bottom": 927
+          },
+          "confidence": 0.74262154
+        }
+      ],
+      "boundingBox": {
+        "left": 997,
+        "top": 894,
+        "right": 1196,
+        "bottom": 927
+      }
+    },
+    {
+      "text": "Bamboo shoots $1.00",
+      "lines": [
+        {
+          "text": "Bamboo shoots $1.00",
+          "boundingBox": {
+            "left": 795,
+            "top": 928,
+            "right": 1201,
+            "bottom": 967
+          },
+          "confidence": 0.83754593
+        }
+      ],
+      "boundingBox": {
+        "left": 795,
+        "top": 928,
+        "right": 1201,
+        "bottom": 967
+      }
+    },
+    {
+      "text": "Naruto $0.75",
+      "lines": [
+        {
+          "text": "Naruto $0.75",
+          "boundingBox": {
+            "left": 964,
+            "top": 965,
+            "right": 1203,
+            "bottom": 999
+          },
+          "confidence": 0.7947443
+        }
+      ],
+      "boundingBox": {
+        "left": 964,
+        "top": 965,
+        "right": 1203,
+        "bottom": 999
+      }
+    },
+    {
+      "text": "Spicy $0.00",
+      "lines": [
+        {
+          "text": "Spicy $0.00",
+          "boundingBox": {
+            "left": 987,
+            "top": 1003,
+            "right": 1209,
+            "bottom": 1042
+          },
+          "confidence": 0.7625
+        }
+      ],
+      "boundingBox": {
+        "left": 987,
+        "top": 1003,
+        "right": 1209,
+        "bottom": 1042
+      }
+    },
+    {
+      "text": "$13.05\n$1.01",
+      "lines": [
+        {
+          "text": "$13.05",
+          "boundingBox": {
+            "left": 1089,
+            "top": 1114,
+            "right": 1221,
+            "bottom": 1148
+          },
+          "confidence": 0.76171875
+        },
+        {
+          "text": "$1.01",
+          "boundingBox": {
+            "left": 1118,
+            "top": 1157,
+            "right": 1223,
+            "bottom": 1188
+          },
+          "confidence": 0.6203125
+        }
+      ],
+      "boundingBox": {
+        "left": 1089,
+        "top": 1114,
+        "right": 1222,
+        "bottom": 1188
+      }
+    },
+    {
+      "text": "$14.06",
+      "lines": [
+        {
+          "text": "$14.06",
+          "boundingBox": {
+            "left": 1100,
+            "top": 1232,
+            "right": 1234,
+            "bottom": 1269
+          },
+          "confidence": 0.7623698
+        }
+      ],
+      "boundingBox": {
+        "left": 1100,
+        "top": 1232,
+        "right": 1234,
+        "bottom": 1269
+      }
+    }
+  ]
+}

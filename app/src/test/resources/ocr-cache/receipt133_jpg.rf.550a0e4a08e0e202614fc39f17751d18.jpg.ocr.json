@@ -1,0 +1,420 @@
+{
+  "fullText": "3880 Hempstead Turnpike\nLevittown\n(516)735-3508\n2016-07-08\nRestaurant CT50014\nTicket #28B4\nKEC\nCashier: TIANA\nTax\nDRIVE THRU\nC160014 2 117 2884\nFamily Fill Up\nLrg Coleslaw\nLrg Mash/ Gvy\nLrg Mash Only\n4 Biscuit\nETender Credit\nChange\nCHARGE DETAIL:SALE\n9:16 PM\n20.00\n1.73\n$21.73\n$21.73\n$0.00",
+  "blocks": [
+    {
+      "text": "3880 Hempstead Turnpike\nLevittown\n(516)735-3508",
+      "lines": [
+        {
+          "text": "3880 Hempstead Turnpike",
+          "boundingBox": {
+            "left": 500,
+            "top": 631,
+            "right": 916,
+            "bottom": 655
+          },
+          "confidence": 0.7795759
+        },
+        {
+          "text": "Levittown",
+          "boundingBox": {
+            "left": 625,
+            "top": 660,
+            "right": 790,
+            "bottom": 682
+          },
+          "confidence": 0.77560765
+        },
+        {
+          "text": "(516)735-3508",
+          "boundingBox": {
+            "left": 589,
+            "top": 690,
+            "right": 827,
+            "bottom": 717
+          },
+          "confidence": 0.8608774
+        }
+      ],
+      "boundingBox": {
+        "left": 500,
+        "top": 631,
+        "right": 916,
+        "bottom": 717
+      }
+    },
+    {
+      "text": "2016-07-08",
+      "lines": [
+        {
+          "text": "2016-07-08",
+          "boundingBox": {
+            "left": 332,
+            "top": 783,
+            "right": 527,
+            "bottom": 819
+          },
+          "confidence": 0.8394531
+        }
+      ],
+      "boundingBox": {
+        "left": 332,
+        "top": 783,
+        "right": 527,
+        "bottom": 819
+      }
+    },
+    {
+      "text": "Restaurant CT50014",
+      "lines": [
+        {
+          "text": "Restaurant CT50014",
+          "boundingBox": {
+            "left": 540,
+            "top": 582,
+            "right": 875,
+            "bottom": 600
+          },
+          "confidence": 0.6633732
+        }
+      ],
+      "boundingBox": {
+        "left": 540,
+        "top": 582,
+        "right": 875,
+        "bottom": 600
+      }
+    },
+    {
+      "text": "Ticket #28B4",
+      "lines": [
+        {
+          "text": "Ticket #28B4",
+          "boundingBox": {
+            "left": 510,
+            "top": 741,
+            "right": 933,
+            "bottom": 786
+          },
+          "confidence": 0.64985794
+        }
+      ],
+      "boundingBox": {
+        "left": 510,
+        "top": 741,
+        "right": 933,
+        "bottom": 786
+      }
+    },
+    {
+      "text": "KEC",
+      "lines": [
+        {
+          "text": "KEC",
+          "boundingBox": {
+            "left": 652,
+            "top": 537,
+            "right": 750,
+            "bottom": 552
+          },
+          "confidence": 0.46614584
+        }
+      ],
+      "boundingBox": {
+        "left": 652,
+        "top": 537,
+        "right": 750,
+        "bottom": 552
+      }
+    },
+    {
+      "text": "Cashier: TIANA",
+      "lines": [
+        {
+          "text": "Cashier: TIANA",
+          "boundingBox": {
+            "left": 343,
+            "top": 885,
+            "right": 598,
+            "bottom": 925
+          },
+          "confidence": 0.7442909
+        }
+      ],
+      "boundingBox": {
+        "left": 343,
+        "top": 885,
+        "right": 598,
+        "bottom": 925
+      }
+    },
+    {
+      "text": "Tax\nDRIVE THRU",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 323,
+            "top": 1190,
+            "right": 372,
+            "bottom": 1225
+          },
+          "confidence": 0.67578125
+        },
+        {
+          "text": "DRIVE THRU",
+          "boundingBox": {
+            "left": 317,
+            "top": 1222,
+            "right": 523,
+            "bottom": 1268
+          },
+          "confidence": 0.8298611
+        }
+      ],
+      "boundingBox": {
+        "left": 317,
+        "top": 1187,
+        "right": 523,
+        "bottom": 1268
+      }
+    },
+    {
+      "text": "C160014 2 117 2884",
+      "lines": [
+        {
+          "text": "C160014 2 117 2884",
+          "boundingBox": {
+            "left": 542,
+            "top": 809,
+            "right": 883,
+            "bottom": 845
+          },
+          "confidence": 0.82395834
+        }
+      ],
+      "boundingBox": {
+        "left": 542,
+        "top": 809,
+        "right": 883,
+        "bottom": 845
+      }
+    },
+    {
+      "text": "Family Fill Up\nLrg Coleslaw\nLrg Mash/ Gvy\nLrg Mash Only\n4 Biscuit",
+      "lines": [
+        {
+          "text": "Family Fill Up",
+          "boundingBox": {
+            "left": 380,
+            "top": 953,
+            "right": 658,
+            "bottom": 996
+          },
+          "confidence": 0.7138672
+        },
+        {
+          "text": "Lrg Coleslaw",
+          "boundingBox": {
+            "left": 400,
+            "top": 990,
+            "right": 639,
+            "bottom": 1032
+          },
+          "confidence": 0.8384233
+        },
+        {
+          "text": "Lrg Mash/ Gvy",
+          "boundingBox": {
+            "left": 397,
+            "top": 1029,
+            "right": 658,
+            "bottom": 1071
+          },
+          "confidence": 0.8043324
+        },
+        {
+          "text": "Lrg Mash Only",
+          "boundingBox": {
+            "left": 394,
+            "top": 1066,
+            "right": 658,
+            "bottom": 1106
+          },
+          "confidence": 0.8540483
+        },
+        {
+          "text": "4 Biscuit",
+          "boundingBox": {
+            "left": 417,
+            "top": 1108,
+            "right": 598,
+            "bottom": 1139
+          },
+          "confidence": 0.8222656
+        }
+      ],
+      "boundingBox": {
+        "left": 380,
+        "top": 953,
+        "right": 661,
+        "bottom": 1142
+      }
+    },
+    {
+      "text": "ETender Credit\nChange",
+      "lines": [
+        {
+          "text": "ETender Credit",
+          "boundingBox": {
+            "left": 293,
+            "top": 1304,
+            "right": 594,
+            "bottom": 1351
+          },
+          "confidence": 0.76953125
+        },
+        {
+          "text": "Change",
+          "boundingBox": {
+            "left": 293,
+            "top": 1355,
+            "right": 423,
+            "bottom": 1393
+          },
+          "confidence": 0.8828125
+        }
+      ],
+      "boundingBox": {
+        "left": 292,
+        "top": 1303,
+        "right": 595,
+        "bottom": 1394
+      }
+    },
+    {
+      "text": "CHARGE DETAIL:SALE",
+      "lines": [
+        {
+          "text": "CHARGE DETAIL:SALE",
+          "boundingBox": {
+            "left": 294,
+            "top": 1432,
+            "right": 681,
+            "bottom": 1472
+          },
+          "confidence": 0.83639705
+        }
+      ],
+      "boundingBox": {
+        "left": 294,
+        "top": 1432,
+        "right": 681,
+        "bottom": 1472
+      }
+    },
+    {
+      "text": "9:16 PM",
+      "lines": [
+        {
+          "text": "9:16 PM",
+          "boundingBox": {
+            "left": 963,
+            "top": 775,
+            "right": 1098,
+            "bottom": 803
+          },
+          "confidence": 0.7610677
+        }
+      ],
+      "boundingBox": {
+        "left": 963,
+        "top": 775,
+        "right": 1098,
+        "bottom": 803
+      }
+    },
+    {
+      "text": "20.00",
+      "lines": [
+        {
+          "text": "20.00",
+          "boundingBox": {
+            "left": 1015,
+            "top": 946,
+            "right": 1113,
+            "bottom": 980
+          },
+          "confidence": 0.859375
+        }
+      ],
+      "boundingBox": {
+        "left": 1015,
+        "top": 946,
+        "right": 1113,
+        "bottom": 980
+      }
+    },
+    {
+      "text": "1.73\n$21.73",
+      "lines": [
+        {
+          "text": "1.73",
+          "boundingBox": {
+            "left": 1061,
+            "top": 1176,
+            "right": 1136,
+            "bottom": 1207
+          },
+          "confidence": 0.7246094
+        },
+        {
+          "text": "$21.73",
+          "boundingBox": {
+            "left": 1017,
+            "top": 1214,
+            "right": 1141,
+            "bottom": 1251
+          },
+          "confidence": 0.82747394
+        }
+      ],
+      "boundingBox": {
+        "left": 1016,
+        "top": 1175,
+        "right": 1140,
+        "bottom": 1251
+      }
+    },
+    {
+      "text": "$21.73\n$0.00",
+      "lines": [
+        {
+          "text": "$21.73",
+          "boundingBox": {
+            "left": 1025,
+            "top": 1298,
+            "right": 1148,
+            "bottom": 1334
+          },
+          "confidence": 0.86588544
+        },
+        {
+          "text": "$0.00",
+          "boundingBox": {
+            "left": 1048,
+            "top": 1342,
+            "right": 1154,
+            "bottom": 1376
+          },
+          "confidence": 0.8265625
+        }
+      ],
+      "boundingBox": {
+        "left": 1025,
+        "top": 1298,
+        "right": 1153,
+        "bottom": 1376
+      }
+    }
+  ]
+}

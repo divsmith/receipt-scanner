@@ -1,0 +1,442 @@
+{
+  "fullText": "Mr M's Hot Wings & Things Ino\nB86 N. Garfield AVe\nMontebello, CA 90640\n(323) 477-1345\nServer: Jose\nTable: 1\n1 Ribeye Steak Lunch 10\n> med-rare\nSUB TOTAL:\nTax:\nTOTAL:\nDine In\n> Ticket #: 32 <<\n6/28/2019 2:16:34 PM\nk***************\nStat ion: 8\n10% Gratuity = $1.00\n15% Gratuity = $1.50\n20% Gratuity = $2.00\nGuests: 1\n10.00\n10.00\n0.95\n$10.95\n***",
+  "blocks": [
+    {
+      "text": "Mr M's Hot Wings & Things Ino\nB86 N. Garfield AVe\nMontebello, CA 90640\n(323) 477-1345",
+      "lines": [
+        {
+          "text": "Mr M's Hot Wings & Things Ino",
+          "boundingBox": {
+            "left": 350,
+            "top": 109,
+            "right": 1054,
+            "bottom": 157
+          },
+          "confidence": 0.7122962
+        },
+        {
+          "text": "B86 N. Garfield AVe",
+          "boundingBox": {
+            "left": 430,
+            "top": 149,
+            "right": 915,
+            "bottom": 184
+          },
+          "confidence": 0.76904297
+        },
+        {
+          "text": "Montebello, CA 90640",
+          "boundingBox": {
+            "left": 438,
+            "top": 181,
+            "right": 917,
+            "bottom": 216
+          },
+          "confidence": 0.7638889
+        },
+        {
+          "text": "(323) 477-1345",
+          "boundingBox": {
+            "left": 505,
+            "top": 212,
+            "right": 842,
+            "bottom": 245
+          },
+          "confidence": 0.8692909
+        }
+      ],
+      "boundingBox": {
+        "left": 350,
+        "top": 109,
+        "right": 1055,
+        "bottom": 246
+      }
+    },
+    {
+      "text": "Server: Jose",
+      "lines": [
+        {
+          "text": "Server: Jose",
+          "boundingBox": {
+            "left": 177,
+            "top": 286,
+            "right": 475,
+            "bottom": 313
+          },
+          "confidence": 0.8615057
+        }
+      ],
+      "boundingBox": {
+        "left": 177,
+        "top": 286,
+        "right": 475,
+        "bottom": 313
+      }
+    },
+    {
+      "text": "Table: 1",
+      "lines": [
+        {
+          "text": "Table: 1",
+          "boundingBox": {
+            "left": 174,
+            "top": 385,
+            "right": 373,
+            "bottom": 424
+          },
+          "confidence": 0.8058036
+        }
+      ],
+      "boundingBox": {
+        "left": 174,
+        "top": 385,
+        "right": 373,
+        "bottom": 424
+      }
+    },
+    {
+      "text": "1 Ribeye Steak Lunch 10\n> med-rare",
+      "lines": [
+        {
+          "text": "1 Ribeye Steak Lunch 10",
+          "boundingBox": {
+            "left": 188,
+            "top": 457,
+            "right": 748,
+            "bottom": 497
+          },
+          "confidence": 0.8599918
+        },
+        {
+          "text": "> med-rare",
+          "boundingBox": {
+            "left": 219,
+            "top": 500,
+            "right": 467,
+            "bottom": 528
+          },
+          "confidence": 0.7751736
+        }
+      ],
+      "boundingBox": {
+        "left": 187,
+        "top": 454,
+        "right": 747,
+        "bottom": 529
+      }
+    },
+    {
+      "text": "SUB TOTAL:\nTax:",
+      "lines": [
+        {
+          "text": "SUB TOTAL:",
+          "boundingBox": {
+            "left": 161,
+            "top": 572,
+            "right": 408,
+            "bottom": 600
+          },
+          "confidence": 0.765625
+        },
+        {
+          "text": "Tax:",
+          "boundingBox": {
+            "left": 161,
+            "top": 609,
+            "right": 253,
+            "bottom": 637
+          },
+          "confidence": 0.7558594
+        }
+      ],
+      "boundingBox": {
+        "left": 161,
+        "top": 572,
+        "right": 408,
+        "bottom": 637
+      }
+    },
+    {
+      "text": "TOTAL:",
+      "lines": [
+        {
+          "text": "TOTAL:",
+          "boundingBox": {
+            "left": 156,
+            "top": 684,
+            "right": 303,
+            "bottom": 736
+          },
+          "confidence": 0.78190106
+        }
+      ],
+      "boundingBox": {
+        "left": 156,
+        "top": 684,
+        "right": 303,
+        "bottom": 736
+      }
+    },
+    {
+      "text": "Dine In",
+      "lines": [
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 573,
+            "top": 349,
+            "right": 744,
+            "bottom": 382
+          },
+          "confidence": 0.8046875
+        }
+      ],
+      "boundingBox": {
+        "left": 573,
+        "top": 349,
+        "right": 744,
+        "bottom": 382
+      }
+    },
+    {
+      "text": "> Ticket #: 32 <<",
+      "lines": [
+        {
+          "text": "> Ticket #: 32 <<",
+          "boundingBox": {
+            "left": 476,
+            "top": 775,
+            "right": 911,
+            "bottom": 842
+          },
+          "confidence": 0.72596157
+        }
+      ],
+      "boundingBox": {
+        "left": 476,
+        "top": 775,
+        "right": 911,
+        "bottom": 842
+      }
+    },
+    {
+      "text": "6/28/2019 2:16:34 PM",
+      "lines": [
+        {
+          "text": "6/28/2019 2:16:34 PM",
+          "boundingBox": {
+            "left": 407,
+            "top": 833,
+            "right": 937,
+            "bottom": 873
+          },
+          "confidence": 0.8721788
+        }
+      ],
+      "boundingBox": {
+        "left": 407,
+        "top": 833,
+        "right": 937,
+        "bottom": 873
+      }
+    },
+    {
+      "text": "k***************",
+      "lines": [
+        {
+          "text": "k***************",
+          "boundingBox": {
+            "left": 375,
+            "top": 882,
+            "right": 776,
+            "bottom": 905
+          },
+          "confidence": 0.7080078
+        }
+      ],
+      "boundingBox": {
+        "left": 375,
+        "top": 882,
+        "right": 776,
+        "bottom": 905
+      }
+    },
+    {
+      "text": "Stat ion: 8",
+      "lines": [
+        {
+          "text": "Stat ion: 8",
+          "boundingBox": {
+            "left": 922,
+            "top": 250,
+            "right": 1166,
+            "bottom": 312
+          },
+          "confidence": 0.8020833
+        }
+      ],
+      "boundingBox": {
+        "left": 922,
+        "top": 250,
+        "right": 1166,
+        "bottom": 312
+      }
+    },
+    {
+      "text": "10% Gratuity = $1.00\n15% Gratuity = $1.50\n20% Gratuity = $2.00",
+      "lines": [
+        {
+          "text": "10% Gratuity = $1.00",
+          "boundingBox": {
+            "left": 143,
+            "top": 918,
+            "right": 670,
+            "bottom": 952
+          },
+          "confidence": 0.81640625
+        },
+        {
+          "text": "15% Gratuity = $1.50",
+          "boundingBox": {
+            "left": 140,
+            "top": 958,
+            "right": 670,
+            "bottom": 992
+          },
+          "confidence": 0.8591452
+        },
+        {
+          "text": "20% Gratuity = $2.00",
+          "boundingBox": {
+            "left": 130,
+            "top": 999,
+            "right": 670,
+            "bottom": 1032
+          },
+          "confidence": 0.84168196
+        }
+      ],
+      "boundingBox": {
+        "left": 130,
+        "top": 918,
+        "right": 670,
+        "bottom": 1032
+      }
+    },
+    {
+      "text": "Guests: 1",
+      "lines": [
+        {
+          "text": "Guests: 1",
+          "boundingBox": {
+            "left": 949,
+            "top": 357,
+            "right": 1167,
+            "bottom": 412
+          },
+          "confidence": 0.8178711
+        }
+      ],
+      "boundingBox": {
+        "left": 949,
+        "top": 357,
+        "right": 1167,
+        "bottom": 412
+      }
+    },
+    {
+      "text": "10.00",
+      "lines": [
+        {
+          "text": "10.00",
+          "boundingBox": {
+            "left": 1057,
+            "top": 428,
+            "right": 1179,
+            "bottom": 470
+          },
+          "confidence": 0.825
+        }
+      ],
+      "boundingBox": {
+        "left": 1057,
+        "top": 428,
+        "right": 1179,
+        "bottom": 470
+      }
+    },
+    {
+      "text": "10.00\n0.95",
+      "lines": [
+        {
+          "text": "10.00",
+          "boundingBox": {
+            "left": 1062,
+            "top": 537,
+            "right": 1185,
+            "bottom": 583
+          },
+          "confidence": 0.85234374
+        },
+        {
+          "text": "0.95",
+          "boundingBox": {
+            "left": 1084,
+            "top": 575,
+            "right": 1189,
+            "bottom": 617
+          },
+          "confidence": 0.79589844
+        }
+      ],
+      "boundingBox": {
+        "left": 1062,
+        "top": 537,
+        "right": 1189,
+        "bottom": 619
+      }
+    },
+    {
+      "text": "$10.95",
+      "lines": [
+        {
+          "text": "$10.95",
+          "boundingBox": {
+            "left": 1035,
+            "top": 653,
+            "right": 1199,
+            "bottom": 728
+          },
+          "confidence": 0.8014323
+        }
+      ],
+      "boundingBox": {
+        "left": 1035,
+        "top": 653,
+        "right": 1199,
+        "bottom": 728
+      }
+    },
+    {
+      "text": "***",
+      "lines": [
+        {
+          "text": "***",
+          "boundingBox": {
+            "left": 1143,
+            "top": 1070,
+            "right": 1216,
+            "bottom": 1095
+          },
+          "confidence": 0.74348956
+        }
+      ],
+      "boundingBox": {
+        "left": 1143,
+        "top": 1070,
+        "right": 1216,
+        "bottom": 1095
+      }
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "fullText": "Server: Jasmine G\nCheck #7\nRiver VI1lage Fami1 Restaurant\n22825 Huron RIver Dr\nRockwood,MI 49173\n(734)236-4033\nReg alg\nApple French Toast\nCoffee\nSubtotal\nTax\nTotal\nDB/12/19 8:02 AM\nTable 23\n$7.99\nSunday-Thursday 7:00am-8:00pm\nFriday/Saturday 7:00am-9:00pm\nPay at the cash register\nThank you!!\n2.99 early bird breakfast special\nMonday- Friday 7am- Bam\nRiver village kayaking now open\n$2.29\n$10.28\n$0.62\n$10.90",
+  "blocks": [
+    {
+      "text": "Server: Jasmine G\nCheck #7",
+      "lines": [
+        {
+          "text": "Server: Jasmine G",
+          "boundingBox": {
+            "left": 441,
+            "top": 862,
+            "right": 701,
+            "bottom": 892
+          },
+          "confidence": 0.70677084
+        },
+        {
+          "text": "Check #7",
+          "boundingBox": {
+            "left": 440,
+            "top": 892,
+            "right": 562,
+            "bottom": 921
+          },
+          "confidence": 0.766183
+        }
+      ],
+      "boundingBox": {
+        "left": 439,
+        "top": 861,
+        "right": 702,
+        "bottom": 921
+      }
+    },
+    {
+      "text": "River VI1lage Fami1 Restaurant\n22825 Huron RIver Dr\nRockwood,MI 49173\n(734)236-4033",
+      "lines": [
+        {
+          "text": "River VI1lage Fami1 Restaurant",
+          "boundingBox": {
+            "left": 549,
+            "top": 717,
+            "right": 985,
+            "bottom": 759
+          },
+          "confidence": 0.7390046
+        },
+        {
+          "text": "22825 Huron RIver Dr",
+          "boundingBox": {
+            "left": 640,
+            "top": 749,
+            "right": 924,
+            "bottom": 779
+          },
+          "confidence": 0.7630974
+        },
+        {
+          "text": "Rockwood,MI 49173",
+          "boundingBox": {
+            "left": 662,
+            "top": 775,
+            "right": 905,
+            "bottom": 807
+          },
+          "confidence": 0.6879883
+        },
+        {
+          "text": "(734)236-4033",
+          "boundingBox": {
+            "left": 697,
+            "top": 803,
+            "right": 879,
+            "bottom": 834
+          },
+          "confidence": 0.8515625
+        }
+      ],
+      "boundingBox": {
+        "left": 549,
+        "top": 717,
+        "right": 987,
+        "bottom": 838
+      }
+    },
+    {
+      "text": "Reg alg",
+      "lines": [
+        {
+          "text": "Reg alg",
+          "boundingBox": {
+            "left": 712,
+            "top": 479,
+            "right": 993,
+            "bottom": 594
+          },
+          "confidence": 0.34375
+        }
+      ],
+      "boundingBox": {
+        "left": 712,
+        "top": 479,
+        "right": 993,
+        "bottom": 594
+      }
+    },
+    {
+      "text": "Apple French Toast\nCoffee",
+      "lines": [
+        {
+          "text": "Apple French Toast",
+          "boundingBox": {
+            "left": 439,
+            "top": 945,
+            "right": 717,
+            "bottom": 980
+          },
+          "confidence": 0.84643555
+        },
+        {
+          "text": "Coffee",
+          "boundingBox": {
+            "left": 439,
+            "top": 980,
+            "right": 533,
+            "bottom": 1008
+          },
+          "confidence": 0.88151044
+        }
+      ],
+      "boundingBox": {
+        "left": 438,
+        "top": 945,
+        "right": 718,
+        "bottom": 1009
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 439,
+            "top": 1040,
+            "right": 561,
+            "bottom": 1069
+          },
+          "confidence": 0.7939453
+        }
+      ],
+      "boundingBox": {
+        "left": 439,
+        "top": 1040,
+        "right": 561,
+        "bottom": 1069
+      }
+    },
+    {
+      "text": "Tax\nTotal",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 439,
+            "top": 1075,
+            "right": 483,
+            "bottom": 1099
+          },
+          "confidence": 0.7734375
+        },
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 440,
+            "top": 1103,
+            "right": 515,
+            "bottom": 1130
+          },
+          "confidence": 0.7734375
+        }
+      ],
+      "boundingBox": {
+        "left": 439,
+        "top": 1074,
+        "right": 515,
+        "bottom": 1130
+      }
+    },
+    {
+      "text": "DB/12/19 8:02 AM\nTable 23",
+      "lines": [
+        {
+          "text": "DB/12/19 8:02 AM",
+          "boundingBox": {
+            "left": 892,
+            "top": 842,
+            "right": 1129,
+            "bottom": 886
+          },
+          "confidence": 0.7530692
+        },
+        {
+          "text": "Table 23",
+          "boundingBox": {
+            "left": 1011,
+            "top": 872,
+            "right": 1131,
+            "bottom": 903
+          },
+          "confidence": 0.83091515
+        }
+      ],
+      "boundingBox": {
+        "left": 892,
+        "top": 842,
+        "right": 1132,
+        "bottom": 911
+      }
+    },
+    {
+      "text": "$7.99",
+      "lines": [
+        {
+          "text": "$7.99",
+          "boundingBox": {
+            "left": 1063,
+            "top": 929,
+            "right": 1140,
+            "bottom": 959
+          },
+          "confidence": 0.8625
+        }
+      ],
+      "boundingBox": {
+        "left": 1063,
+        "top": 929,
+        "right": 1140,
+        "bottom": 959
+      }
+    },
+    {
+      "text": "Sunday-Thursday 7:00am-8:00pm\nFriday/Saturday 7:00am-9:00pm\nPay at the cash register\nThank you!!",
+      "lines": [
+        {
+          "text": "Sunday-Thursday 7:00am-8:00pm",
+          "boundingBox": {
+            "left": 580,
+            "top": 1302,
+            "right": 1051,
+            "bottom": 1354
+          },
+          "confidence": 0.81208146
+        },
+        {
+          "text": "Friday/Saturday 7:00am-9:00pm",
+          "boundingBox": {
+            "left": 582,
+            "top": 1335,
+            "right": 1055,
+            "bottom": 1386
+          },
+          "confidence": 0.80050224
+        },
+        {
+          "text": "Pay at the cash register",
+          "boundingBox": {
+            "left": 615,
+            "top": 1371,
+            "right": 1010,
+            "bottom": 1417
+          },
+          "confidence": 0.86328125
+        },
+        {
+          "text": "Thank you!!",
+          "boundingBox": {
+            "left": 735,
+            "top": 1408,
+            "right": 911,
+            "bottom": 1442
+          },
+          "confidence": 0.6820313
+        }
+      ],
+      "boundingBox": {
+        "left": 580,
+        "top": 1302,
+        "right": 1058,
+        "bottom": 1450
+      }
+    },
+    {
+      "text": "2.99 early bird breakfast special\nMonday- Friday 7am- Bam\nRiver village kayaking now open",
+      "lines": [
+        {
+          "text": "2.99 early bird breakfast special",
+          "boundingBox": {
+            "left": 536,
+            "top": 1173,
+            "right": 1058,
+            "bottom": 1225
+          },
+          "confidence": 0.84886855
+        },
+        {
+          "text": "Monday- Friday 7am- Bam",
+          "boundingBox": {
+            "left": 618,
+            "top": 1205,
+            "right": 1003,
+            "bottom": 1257
+          },
+          "confidence": 0.71835935
+        },
+        {
+          "text": "River village kayaking now open",
+          "boundingBox": {
+            "left": 561,
+            "top": 1238,
+            "right": 1067,
+            "bottom": 1290
+          },
+          "confidence": 0.80135995
+        }
+      ],
+      "boundingBox": {
+        "left": 536,
+        "top": 1171,
+        "right": 1067,
+        "bottom": 1292
+      }
+    },
+    {
+      "text": "$2.29",
+      "lines": [
+        {
+          "text": "$2.29",
+          "boundingBox": {
+            "left": 1067,
+            "top": 960,
+            "right": 1144,
+            "bottom": 990
+          },
+          "confidence": 0.83671874
+        }
+      ],
+      "boundingBox": {
+        "left": 1067,
+        "top": 960,
+        "right": 1144,
+        "bottom": 990
+      }
+    },
+    {
+      "text": "$10.28\n$0.62",
+      "lines": [
+        {
+          "text": "$10.28",
+          "boundingBox": {
+            "left": 1060,
+            "top": 1020,
+            "right": 1152,
+            "bottom": 1049
+          },
+          "confidence": 0.79622394
+        },
+        {
+          "text": "$0.62",
+          "boundingBox": {
+            "left": 1079,
+            "top": 1051,
+            "right": 1155,
+            "bottom": 1080
+          },
+          "confidence": 0.6898438
+        }
+      ],
+      "boundingBox": {
+        "left": 1060,
+        "top": 1020,
+        "right": 1156,
+        "bottom": 1081
+      }
+    },
+    {
+      "text": "$10.90",
+      "lines": [
+        {
+          "text": "$10.90",
+          "boundingBox": {
+            "left": 1067,
+            "top": 1080,
+            "right": 1161,
+            "bottom": 1110
+          },
+          "confidence": 0.8359375
+        }
+      ],
+      "boundingBox": {
+        "left": 1067,
+        "top": 1080,
+        "right": 1161,
+        "bottom": 1110
+      }
+    }
+  ]
+}

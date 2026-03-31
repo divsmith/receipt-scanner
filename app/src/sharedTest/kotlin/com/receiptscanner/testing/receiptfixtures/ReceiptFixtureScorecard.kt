@@ -1,0 +1,112 @@
+package com.receiptscanner.testing.receiptfixtures
+
+import com.receiptscanner.domain.model.ExtractedReceiptData
+
+data class ReceiptFixtureDiff(
+    val imageName: String,
+    val expected: NormalizedReceiptData,
+    val actual: NormalizedReceiptData,
+    val mismatchedFields: List<String>,
+) {
+    val isExactMatch: Boolean
+        get() = mismatchedFields.isEmpty()
+}
+
+data class ReceiptFixtureSummary(
+    val diffs: List<ReceiptFixtureDiff>,
+    val storeAccuracy: Double,
+    val totalAccuracy: Double,
+    val dateAccuracy: Double,
+    val cardLastFourAccuracy: Double,
+    val exactRecordAccuracy: Double,
+)
+
+object ReceiptFixtureScorecard {
+
+    fun compare(fixture: ReceiptFixture, actual: ExtractedReceiptData): ReceiptFixtureDiff {
+        val normalizedExpected = ReceiptFixtureNormalizer.normalizeExpected(fixture.expected)
+        val normalizedActual = ReceiptFixtureNormalizer.normalizeActual(actual)
+
+        return ReceiptFixtureDiff(
+            imageName = fixture.imageName,
+            expected = normalizedExpected,
+            actual = normalizedActual,
+            mismatchedFields = buildList {
+                if (!storeKeysMatch(normalizedExpected.storeKey, normalizedActual.storeKey)) add("store")
+                if (normalizedExpected.totalMilliunits != normalizedActual.totalMilliunits) add("total")
+                if (normalizedExpected.date != normalizedActual.date) add("date")
+                if (normalizedExpected.cardLastFour != normalizedActual.cardLastFour) add("cardLastFour")
+            },
+        )
+    }
+
+    /**
+     * Compares two store keys with tolerance for OCR-induced spacing artifacts.
+     *
+     * Two keys match when any of the following hold:
+     * 1. Exact string equality (or both null).
+     * 2. Space-free equality — handles OCR-spaced words like "ros ebu d" == "rosebud".
+     * 3. Prefix match (≥6 chars) — handles truncated store names like "miguels" matching
+     *    "miguels mexican", or legal suffixes like "sdn bhd" still attached to one key.
+     */
+    private fun storeKeysMatch(expected: String?, actual: String?): Boolean {
+        if (expected == actual) return true
+        if (expected == null || actual == null) return false
+        val expNoSpace = expected.replace(" ", "")
+        val actNoSpace = actual.replace(" ", "")
+        if (expNoSpace == actNoSpace) return true
+        val (shorter, longer) = if (expNoSpace.length <= actNoSpace.length)
+            Pair(expNoSpace, actNoSpace) else Pair(actNoSpace, expNoSpace)
+        return shorter.length >= 6 && longer.startsWith(shorter)
+    }
+
+    fun summarize(diffs: List<ReceiptFixtureDiff>): ReceiptFixtureSummary {
+        require(diffs.isNotEmpty()) { "Cannot summarize an empty diff set." }
+
+        val totalCount = diffs.size.toDouble()
+        fun accuracyFor(fieldName: String): Double {
+            return diffs.count { fieldName !in it.mismatchedFields } / totalCount
+        }
+
+        return ReceiptFixtureSummary(
+            diffs = diffs,
+            storeAccuracy = accuracyFor("store"),
+            totalAccuracy = accuracyFor("total"),
+            dateAccuracy = accuracyFor("date"),
+            cardLastFourAccuracy = accuracyFor("cardLastFour"),
+            exactRecordAccuracy = diffs.count { it.isExactMatch } / totalCount,
+        )
+    }
+
+    fun render(summary: ReceiptFixtureSummary, maxDiffs: Int = 25): String {
+        val mismatches = summary.diffs.filterNot { it.isExactMatch }
+        val lines = mutableListOf(
+            "OCR fixture summary",
+            "store=${formatPercent(summary.storeAccuracy)} total=${formatPercent(summary.totalAccuracy)} date=${formatPercent(summary.dateAccuracy)} card=${formatPercent(summary.cardLastFourAccuracy)} exact=${formatPercent(summary.exactRecordAccuracy)}",
+            "mismatch-counts store=${summary.diffs.count { "store" in it.mismatchedFields }} total=${summary.diffs.count { "total" in it.mismatchedFields }} date=${summary.diffs.count { "date" in it.mismatchedFields }} card=${summary.diffs.count { "cardLastFour" in it.mismatchedFields }} records=${mismatches.size}",
+        )
+
+        mismatches
+            .take(maxDiffs)
+            .forEach { diff ->
+                lines += buildString {
+                    append(diff.imageName)
+                    append(" mismatched: ")
+                    append(diff.mismatchedFields.joinToString(", "))
+                    append(" | expected=")
+                    append(diff.expected)
+                    append(" | actual=")
+                    append(diff.actual)
+                }
+            }
+
+        val omittedCount = mismatches.size - maxDiffs
+        if (omittedCount > 0) {
+            lines += "... $omittedCount more mismatched receipts omitted"
+        }
+
+        return lines.joinToString("\n")
+    }
+
+    private fun formatPercent(value: Double): String = "%.1f%%".format(value * 100)
+}

@@ -1,0 +1,598 @@
+{
+  "fullText": "Server: Harry M\nCheck #140\nEREEL\nMalbec Trivento\nBlood Orange Marg\nCup Italian Wedding Soup\nSpaghett1 Marinara\nAdd One Meatbal1\nAdd TWo Meatball\nFettuccine A1fredo\nAdd Steak\nFirefly American Bistro\n5525 New Albany Road West\nNew Albany, OH 43054\nBaileys\nSmall Wedge Salad (Dinner)\nCreme Brulee\nSubtotal\nTax\nTotal\n12/28/18 7:54 PM\nTable 24\nCome See Us Again!\n$8.00\n$9.00\n$2.95\n$17.95\n$23.95\n$4.95\n$4.00\n$7.00\n$77.80\n$5.84\n$83.64",
+  "blocks": [
+    {
+      "text": "Server: Harry M\nCheck #140",
+      "lines": [
+        {
+          "text": "Server: Harry M",
+          "boundingBox": {
+            "left": 136,
+            "top": 475,
+            "right": 514,
+            "bottom": 525
+          },
+          "confidence": 0.8581731
+        },
+        {
+          "text": "Check #140",
+          "boundingBox": {
+            "left": 112,
+            "top": 526,
+            "right": 380,
+            "bottom": 568
+          },
+          "confidence": 0.9184028
+        }
+      ],
+      "boundingBox": {
+        "left": 112,
+        "top": 475,
+        "right": 514,
+        "bottom": 568
+      }
+    },
+    {
+      "text": "EREEL",
+      "lines": [
+        {
+          "text": "EREEL",
+          "boundingBox": {
+            "left": 366,
+            "top": 113,
+            "right": 976,
+            "bottom": 245
+          },
+          "confidence": 0.46640626
+        }
+      ],
+      "boundingBox": {
+        "left": 366,
+        "top": 113,
+        "right": 976,
+        "bottom": 245
+      }
+    },
+    {
+      "text": "Malbec Trivento\nBlood Orange Marg",
+      "lines": [
+        {
+          "text": "Malbec Trivento",
+          "boundingBox": {
+            "left": 118,
+            "top": 621,
+            "right": 524,
+            "bottom": 663
+          },
+          "confidence": 0.8373326
+        },
+        {
+          "text": "Blood Orange Marg",
+          "boundingBox": {
+            "left": 126,
+            "top": 669,
+            "right": 582,
+            "bottom": 713
+          },
+          "confidence": 0.8148438
+        }
+      ],
+      "boundingBox": {
+        "left": 118,
+        "top": 621,
+        "right": 582,
+        "bottom": 713
+      }
+    },
+    {
+      "text": "Cup Italian Wedding Soup\nSpaghett1 Marinara\nAdd One Meatbal1\nAdd TWo Meatball\nFettuccine A1fredo",
+      "lines": [
+        {
+          "text": "Cup Italian Wedding Soup",
+          "boundingBox": {
+            "left": 157,
+            "top": 711,
+            "right": 774,
+            "bottom": 755
+          },
+          "confidence": 0.7916667
+        },
+        {
+          "text": "Spaghett1 Marinara",
+          "boundingBox": {
+            "left": 142,
+            "top": 752,
+            "right": 604,
+            "bottom": 797
+          },
+          "confidence": 0.8483456
+        },
+        {
+          "text": "Add One Meatbal1",
+          "boundingBox": {
+            "left": 140,
+            "top": 798,
+            "right": 570,
+            "bottom": 832
+          },
+          "confidence": 0.79157364
+        },
+        {
+          "text": "Add TWo Meatball",
+          "boundingBox": {
+            "left": 132,
+            "top": 842,
+            "right": 569,
+            "bottom": 878
+          },
+          "confidence": 0.75446427
+        },
+        {
+          "text": "Fettuccine A1fredo",
+          "boundingBox": {
+            "left": 100,
+            "top": 888,
+            "right": 596,
+            "bottom": 924
+          },
+          "confidence": 0.82513785
+        }
+      ],
+      "boundingBox": {
+        "left": 99,
+        "top": 712,
+        "right": 774,
+        "bottom": 925
+      }
+    },
+    {
+      "text": "Add Steak",
+      "lines": [
+        {
+          "text": "Add Steak",
+          "boundingBox": {
+            "left": 119,
+            "top": 933,
+            "right": 366,
+            "bottom": 974
+          },
+          "confidence": 0.87646484
+        }
+      ],
+      "boundingBox": {
+        "left": 119,
+        "top": 933,
+        "right": 366,
+        "bottom": 974
+      }
+    },
+    {
+      "text": "Firefly American Bistro\n5525 New Albany Road West\nNew Albany, OH 43054",
+      "lines": [
+        {
+          "text": "Firefly American Bistro",
+          "boundingBox": {
+            "left": 430,
+            "top": 300,
+            "right": 1046,
+            "bottom": 336
+          },
+          "confidence": 0.8870908
+        },
+        {
+          "text": "5525 New Albany Road West",
+          "boundingBox": {
+            "left": 400,
+            "top": 342,
+            "right": 1072,
+            "bottom": 378
+          },
+          "confidence": 0.8578869
+        },
+        {
+          "text": "New Albany, OH 43054",
+          "boundingBox": {
+            "left": 466,
+            "top": 386,
+            "right": 1010,
+            "bottom": 422
+          },
+          "confidence": 0.8471967
+        }
+      ],
+      "boundingBox": {
+        "left": 400,
+        "top": 300,
+        "right": 1072,
+        "bottom": 422
+      }
+    },
+    {
+      "text": "Baileys",
+      "lines": [
+        {
+          "text": "Baileys",
+          "boundingBox": {
+            "left": 72,
+            "top": 1084,
+            "right": 270,
+            "bottom": 1130
+          },
+          "confidence": 0.83984375
+        }
+      ],
+      "boundingBox": {
+        "left": 72,
+        "top": 1084,
+        "right": 270,
+        "bottom": 1130
+      }
+    },
+    {
+      "text": "Small Wedge Salad (Dinner)\nCreme Brulee",
+      "lines": [
+        {
+          "text": "Small Wedge Salad (Dinner)",
+          "boundingBox": {
+            "left": 84,
+            "top": 984,
+            "right": 812,
+            "bottom": 1028
+          },
+          "confidence": 0.81827444
+        },
+        {
+          "text": "Creme Brulee",
+          "boundingBox": {
+            "left": 78,
+            "top": 1034,
+            "right": 416,
+            "bottom": 1072
+          },
+          "confidence": 0.90482956
+        }
+      ],
+      "boundingBox": {
+        "left": 78,
+        "top": 984,
+        "right": 812,
+        "bottom": 1072
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 61,
+            "top": 1185,
+            "right": 284,
+            "bottom": 1229
+          },
+          "confidence": 0.87890625
+        }
+      ],
+      "boundingBox": {
+        "left": 61,
+        "top": 1185,
+        "right": 284,
+        "bottom": 1229
+      }
+    },
+    {
+      "text": "Tax\nTotal",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 62,
+            "top": 1242,
+            "right": 142,
+            "bottom": 1280
+          },
+          "confidence": 0.8098958
+        },
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 59,
+            "top": 1291,
+            "right": 192,
+            "bottom": 1336
+          },
+          "confidence": 0.8382813
+        }
+      ],
+      "boundingBox": {
+        "left": 59,
+        "top": 1241,
+        "right": 192,
+        "bottom": 1336
+      }
+    },
+    {
+      "text": "12/28/18 7:54 PM\nTable 24",
+      "lines": [
+        {
+          "text": "12/28/18 7:54 PM",
+          "boundingBox": {
+            "left": 943,
+            "top": 461,
+            "right": 1366,
+            "bottom": 515
+          },
+          "confidence": 0.8671875
+        },
+        {
+          "text": "Table 24",
+          "boundingBox": {
+            "left": 1150,
+            "top": 518,
+            "right": 1368,
+            "bottom": 556
+          },
+          "confidence": 0.90959823
+        }
+      ],
+      "boundingBox": {
+        "left": 943,
+        "top": 461,
+        "right": 1367,
+        "bottom": 558
+      }
+    },
+    {
+      "text": "Come See Us Again!",
+      "lines": [
+        {
+          "text": "Come See Us Again!",
+          "boundingBox": {
+            "left": 456,
+            "top": 1406,
+            "right": 978,
+            "bottom": 1454
+          },
+          "confidence": 0.85026044
+        }
+      ],
+      "boundingBox": {
+        "left": 456,
+        "top": 1406,
+        "right": 978,
+        "bottom": 1454
+      }
+    },
+    {
+      "text": "$8.00",
+      "lines": [
+        {
+          "text": "$8.00",
+          "boundingBox": {
+            "left": 1228,
+            "top": 612,
+            "right": 1362,
+            "bottom": 653
+          },
+          "confidence": 0.90234375
+        }
+      ],
+      "boundingBox": {
+        "left": 1228,
+        "top": 612,
+        "right": 1362,
+        "bottom": 653
+      }
+    },
+    {
+      "text": "$9.00",
+      "lines": [
+        {
+          "text": "$9.00",
+          "boundingBox": {
+            "left": 1226,
+            "top": 655,
+            "right": 1361,
+            "bottom": 700
+          },
+          "confidence": 0.87578124
+        }
+      ],
+      "boundingBox": {
+        "left": 1226,
+        "top": 655,
+        "right": 1361,
+        "bottom": 700
+      }
+    },
+    {
+      "text": "$2.95",
+      "lines": [
+        {
+          "text": "$2.95",
+          "boundingBox": {
+            "left": 1230,
+            "top": 704,
+            "right": 1363,
+            "bottom": 743
+          },
+          "confidence": 0.8453125
+        }
+      ],
+      "boundingBox": {
+        "left": 1230,
+        "top": 704,
+        "right": 1363,
+        "bottom": 743
+      }
+    },
+    {
+      "text": "$17.95",
+      "lines": [
+        {
+          "text": "$17.95",
+          "boundingBox": {
+            "left": 1206,
+            "top": 748,
+            "right": 1366,
+            "bottom": 787
+          },
+          "confidence": 0.9277344
+        }
+      ],
+      "boundingBox": {
+        "left": 1206,
+        "top": 748,
+        "right": 1366,
+        "bottom": 787
+      }
+    },
+    {
+      "text": "$23.95",
+      "lines": [
+        {
+          "text": "$23.95",
+          "boundingBox": {
+            "left": 1210,
+            "top": 889,
+            "right": 1374,
+            "bottom": 931
+          },
+          "confidence": 0.9264323
+        }
+      ],
+      "boundingBox": {
+        "left": 1210,
+        "top": 889,
+        "right": 1374,
+        "bottom": 931
+      }
+    },
+    {
+      "text": "$4.95",
+      "lines": [
+        {
+          "text": "$4.95",
+          "boundingBox": {
+            "left": 1242,
+            "top": 992,
+            "right": 1380,
+            "bottom": 1030
+          },
+          "confidence": 0.91484374
+        }
+      ],
+      "boundingBox": {
+        "left": 1242,
+        "top": 992,
+        "right": 1380,
+        "bottom": 1030
+      }
+    },
+    {
+      "text": "$4.00",
+      "lines": [
+        {
+          "text": "$4.00",
+          "boundingBox": {
+            "left": 1244,
+            "top": 1040,
+            "right": 1382,
+            "bottom": 1080
+          },
+          "confidence": 0.9164063
+        }
+      ],
+      "boundingBox": {
+        "left": 1244,
+        "top": 1040,
+        "right": 1382,
+        "bottom": 1080
+      }
+    },
+    {
+      "text": "$7.00",
+      "lines": [
+        {
+          "text": "$7.00",
+          "boundingBox": {
+            "left": 1246,
+            "top": 1092,
+            "right": 1386,
+            "bottom": 1132
+          },
+          "confidence": 0.91484374
+        }
+      ],
+      "boundingBox": {
+        "left": 1246,
+        "top": 1092,
+        "right": 1386,
+        "bottom": 1132
+      }
+    },
+    {
+      "text": "$77.80",
+      "lines": [
+        {
+          "text": "$77.80",
+          "boundingBox": {
+            "left": 1218,
+            "top": 1189,
+            "right": 1385,
+            "bottom": 1241
+          },
+          "confidence": 0.84244794
+        }
+      ],
+      "boundingBox": {
+        "left": 1218,
+        "top": 1189,
+        "right": 1385,
+        "bottom": 1241
+      }
+    },
+    {
+      "text": "$5.84",
+      "lines": [
+        {
+          "text": "$5.84",
+          "boundingBox": {
+            "left": 1250,
+            "top": 1250,
+            "right": 1394,
+            "bottom": 1290
+          },
+          "confidence": 0.91484374
+        }
+      ],
+      "boundingBox": {
+        "left": 1250,
+        "top": 1250,
+        "right": 1394,
+        "bottom": 1290
+      }
+    },
+    {
+      "text": "$83.64",
+      "lines": [
+        {
+          "text": "$83.64",
+          "boundingBox": {
+            "left": 1222,
+            "top": 1297,
+            "right": 1397,
+            "bottom": 1348
+          },
+          "confidence": 0.83984375
+        }
+      ],
+      "boundingBox": {
+        "left": 1222,
+        "top": 1297,
+        "right": 1397,
+        "bottom": 1348
+      }
+    }
+  ]
+}

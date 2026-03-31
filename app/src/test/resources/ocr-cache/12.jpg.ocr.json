@@ -1,0 +1,690 @@
+{
+  "fullText": "WAL·MART\nSave money. Live better.\nWE SELL FOR LESS\nALWAYS\nMANAGER DAPHNE SESSION\n( 636 ) 536 - 4601\nCHESTERFIELD, MO 63005\nST# 2600 OP# 00001855 TE# 17 TR# 03359\nSW FIGURES 065356920144\nTOOTHBRUSH 003500055500\nSUBTOTAL\nWOMEN SLIPPE 009725614790\nTAX 1\nTAX 3\nACCOUNT #3546\nAPPROVAL #007190\nTRANS ID -\nVALIDATION-\nSUBTOTAL\n3.100 %\n4.350 %\nTOTAL\nMCARD TEND\nPAYMENT SERVICE -A\nCHANGE DUE\n6.63 X\n0.96 X\n7.59\n9.86 X\n***CUSTOMER COPY***\n17.45\n0.54\n0.76\n18.75\n18.75\n# ITEMS SOLD 3\nTC# 9489 7094 6487 3073 3651\n0.00\nWal-Mart excluslve Eagles CD\nayailable Dctober 30th!\n10/20/07 13:48:43",
+  "blocks": [
+    {
+      "text": "WAL·MART",
+      "lines": [
+        {
+          "text": "WAL·MART",
+          "boundingBox": {
+            "left": 346,
+            "top": 348,
+            "right": 845,
+            "bottom": 428
+          },
+          "confidence": 0.73339844
+        }
+      ],
+      "boundingBox": {
+        "left": 346,
+        "top": 348,
+        "right": 845,
+        "bottom": 428
+      }
+    },
+    {
+      "text": "Save money. Live better.",
+      "lines": [
+        {
+          "text": "Save money. Live better.",
+          "boundingBox": {
+            "left": 372,
+            "top": 451,
+            "right": 816,
+            "bottom": 495
+          },
+          "confidence": 0.9014137
+        }
+      ],
+      "boundingBox": {
+        "left": 372,
+        "top": 451,
+        "right": 816,
+        "bottom": 495
+      }
+    },
+    {
+      "text": "WE SELL FOR LESS\nALWAYS",
+      "lines": [
+        {
+          "text": "WE SELL FOR LESS",
+          "boundingBox": {
+            "left": 452,
+            "top": 525,
+            "right": 683,
+            "bottom": 547
+          },
+          "confidence": 0.8317308
+        },
+        {
+          "text": "ALWAYS",
+          "boundingBox": {
+            "left": 525,
+            "top": 548,
+            "right": 608,
+            "bottom": 572
+          },
+          "confidence": 0.8183594
+        }
+      ],
+      "boundingBox": {
+        "left": 452,
+        "top": 523,
+        "right": 682,
+        "bottom": 573
+      }
+    },
+    {
+      "text": "MANAGER DAPHNE SESSION\n( 636 ) 536 - 4601\nCHESTERFIELD, MO 63005\nST# 2600 OP# 00001855 TE# 17 TR# 03359\nSW FIGURES 065356920144\nTOOTHBRUSH 003500055500",
+      "lines": [
+        {
+          "text": "MANAGER DAPHNE SESSION",
+          "boundingBox": {
+            "left": 407,
+            "top": 567,
+            "right": 726,
+            "bottom": 598
+          },
+          "confidence": 0.8496094
+        },
+        {
+          "text": "( 636 ) 536 - 4601",
+          "boundingBox": {
+            "left": 448,
+            "top": 595,
+            "right": 693,
+            "bottom": 623
+          },
+          "confidence": 0.81790864
+        },
+        {
+          "text": "CHESTERFIELD, MO 63005",
+          "boundingBox": {
+            "left": 406,
+            "top": 621,
+            "right": 714,
+            "bottom": 650
+          },
+          "confidence": 0.81816405
+        },
+        {
+          "text": "ST# 2600 OP# 00001855 TE# 17 TR# 03359",
+          "boundingBox": {
+            "left": 287,
+            "top": 641,
+            "right": 841,
+            "bottom": 676
+          },
+          "confidence": 0.8297631
+        },
+        {
+          "text": "SW FIGURES 065356920144",
+          "boundingBox": {
+            "left": 286,
+            "top": 676,
+            "right": 656,
+            "bottom": 701
+          },
+          "confidence": 0.86272323
+        },
+        {
+          "text": "TOOTHBRUSH 003500055500",
+          "boundingBox": {
+            "left": 285,
+            "top": 702,
+            "right": 656,
+            "bottom": 729
+          },
+          "confidence": 0.83575994
+        }
+      ],
+      "boundingBox": {
+        "left": 284,
+        "top": 566,
+        "right": 841,
+        "bottom": 730
+      }
+    },
+    {
+      "text": "SUBTOTAL\nWOMEN SLIPPE 009725614790",
+      "lines": [
+        {
+          "text": "SUBTOTAL",
+          "boundingBox": {
+            "left": 553,
+            "top": 724,
+            "right": 667,
+            "bottom": 751
+          },
+          "confidence": 0.7988281
+        },
+        {
+          "text": "WOMEN SLIPPE 009725614790",
+          "boundingBox": {
+            "left": 280,
+            "top": 750,
+            "right": 659,
+            "bottom": 780
+          },
+          "confidence": 0.8216712
+        }
+      ],
+      "boundingBox": {
+        "left": 280,
+        "top": 723,
+        "right": 667,
+        "bottom": 785
+      }
+    },
+    {
+      "text": "TAX 1\nTAX 3",
+      "lines": [
+        {
+          "text": "TAX 1",
+          "boundingBox": {
+            "left": 415,
+            "top": 805,
+            "right": 486,
+            "bottom": 829
+          },
+          "confidence": 0.75878906
+        },
+        {
+          "text": "TAX 3",
+          "boundingBox": {
+            "left": 416,
+            "top": 823,
+            "right": 488,
+            "bottom": 854
+          },
+          "confidence": 0.82128906
+        }
+      ],
+      "boundingBox": {
+        "left": 415,
+        "top": 803,
+        "right": 488,
+        "bottom": 854
+      }
+    },
+    {
+      "text": "ACCOUNT #3546\nAPPROVAL #007190\nTRANS ID -\nVALIDATION-",
+      "lines": [
+        {
+          "text": "ACCOUNT #3546",
+          "boundingBox": {
+            "left": 271,
+            "top": 939,
+            "right": 472,
+            "bottom": 964
+          },
+          "confidence": 0.82389325
+        },
+        {
+          "text": "APPROVAL #007190",
+          "boundingBox": {
+            "left": 270,
+            "top": 967,
+            "right": 518,
+            "bottom": 993
+          },
+          "confidence": 0.8421875
+        },
+        {
+          "text": "TRANS ID -",
+          "boundingBox": {
+            "left": 270,
+            "top": 996,
+            "right": 425,
+            "bottom": 1026
+          },
+          "confidence": 0.82128906
+        },
+        {
+          "text": "VALIDATION-",
+          "boundingBox": {
+            "left": 269,
+            "top": 1020,
+            "right": 459,
+            "bottom": 1054
+          },
+          "confidence": 0.7702415
+        }
+      ],
+      "boundingBox": {
+        "left": 269,
+        "top": 939,
+        "right": 518,
+        "bottom": 1054
+      }
+    },
+    {
+      "text": "SUBTOTAL\n3.100 %",
+      "lines": [
+        {
+          "text": "SUBTOTAL",
+          "boundingBox": {
+            "left": 553,
+            "top": 774,
+            "right": 666,
+            "bottom": 804
+          },
+          "confidence": 0.7324219
+        },
+        {
+          "text": "3.100 %",
+          "boundingBox": {
+            "left": 539,
+            "top": 803,
+            "right": 638,
+            "bottom": 827
+          },
+          "confidence": 0.7610677
+        }
+      ],
+      "boundingBox": {
+        "left": 538,
+        "top": 774,
+        "right": 667,
+        "bottom": 828
+      }
+    },
+    {
+      "text": "4.350 %",
+      "lines": [
+        {
+          "text": "4.350 %",
+          "boundingBox": {
+            "left": 539,
+            "top": 831,
+            "right": 642,
+            "bottom": 855
+          },
+          "confidence": 0.7988281
+        }
+      ],
+      "boundingBox": {
+        "left": 539,
+        "top": 831,
+        "right": 642,
+        "bottom": 855
+      }
+    },
+    {
+      "text": "TOTAL",
+      "lines": [
+        {
+          "text": "TOTAL",
+          "boundingBox": {
+            "left": 597,
+            "top": 856,
+            "right": 668,
+            "bottom": 880
+          },
+          "confidence": 0.846875
+        }
+      ],
+      "boundingBox": {
+        "left": 597,
+        "top": 856,
+        "right": 668,
+        "bottom": 880
+      }
+    },
+    {
+      "text": "MCARD TEND",
+      "lines": [
+        {
+          "text": "MCARD TEND",
+          "boundingBox": {
+            "left": 520,
+            "top": 883,
+            "right": 671,
+            "bottom": 908
+          },
+          "confidence": 0.85373265
+        }
+      ],
+      "boundingBox": {
+        "left": 520,
+        "top": 883,
+        "right": 671,
+        "bottom": 908
+      }
+    },
+    {
+      "text": "PAYMENT SERVICE -A",
+      "lines": [
+        {
+          "text": "PAYMENT SERVICE -A",
+          "boundingBox": {
+            "left": 268,
+            "top": 1050,
+            "right": 562,
+            "bottom": 1080
+          },
+          "confidence": 0.79296875
+        }
+      ],
+      "boundingBox": {
+        "left": 268,
+        "top": 1050,
+        "right": 562,
+        "bottom": 1080
+      }
+    },
+    {
+      "text": "CHANGE DUE",
+      "lines": [
+        {
+          "text": "CHANGE DUE",
+          "boundingBox": {
+            "left": 520,
+            "top": 1080,
+            "right": 671,
+            "bottom": 1107
+          },
+          "confidence": 0.88237846
+        }
+      ],
+      "boundingBox": {
+        "left": 520,
+        "top": 1080,
+        "right": 671,
+        "bottom": 1107
+      }
+    },
+    {
+      "text": "6.63 X\n0.96 X",
+      "lines": [
+        {
+          "text": "6.63 X",
+          "boundingBox": {
+            "left": 762,
+            "top": 672,
+            "right": 844,
+            "bottom": 696
+          },
+          "confidence": 0.8617188
+        },
+        {
+          "text": "0.96 X",
+          "boundingBox": {
+            "left": 760,
+            "top": 694,
+            "right": 842,
+            "bottom": 726
+          },
+          "confidence": 0.7992188
+        }
+      ],
+      "boundingBox": {
+        "left": 760,
+        "top": 670,
+        "right": 843,
+        "bottom": 726
+      }
+    },
+    {
+      "text": "7.59",
+      "lines": [
+        {
+          "text": "7.59",
+          "boundingBox": {
+            "left": 761,
+            "top": 727,
+            "right": 815,
+            "bottom": 750
+          },
+          "confidence": 0.8769531
+        }
+      ],
+      "boundingBox": {
+        "left": 761,
+        "top": 727,
+        "right": 815,
+        "bottom": 750
+      }
+    },
+    {
+      "text": "9.86 X",
+      "lines": [
+        {
+          "text": "9.86 X",
+          "boundingBox": {
+            "left": 759,
+            "top": 749,
+            "right": 843,
+            "bottom": 776
+          },
+          "confidence": 0.81953126
+        }
+      ],
+      "boundingBox": {
+        "left": 759,
+        "top": 749,
+        "right": 843,
+        "bottom": 776
+      }
+    },
+    {
+      "text": "***CUSTOMER COPY***",
+      "lines": [
+        {
+          "text": "***CUSTOMER COPY***",
+          "boundingBox": {
+            "left": 406,
+            "top": 1457,
+            "right": 708,
+            "bottom": 1489
+          },
+          "confidence": 0.72894967
+        }
+      ],
+      "boundingBox": {
+        "left": 406,
+        "top": 1457,
+        "right": 708,
+        "bottom": 1489
+      }
+    },
+    {
+      "text": "17.45",
+      "lines": [
+        {
+          "text": "17.45",
+          "boundingBox": {
+            "left": 748,
+            "top": 780,
+            "right": 814,
+            "bottom": 802
+          },
+          "confidence": 0.85859376
+        }
+      ],
+      "boundingBox": {
+        "left": 748,
+        "top": 780,
+        "right": 814,
+        "bottom": 802
+      }
+    },
+    {
+      "text": "0.54",
+      "lines": [
+        {
+          "text": "0.54",
+          "boundingBox": {
+            "left": 758,
+            "top": 806,
+            "right": 817,
+            "bottom": 829
+          },
+          "confidence": 0.82714844
+        }
+      ],
+      "boundingBox": {
+        "left": 758,
+        "top": 806,
+        "right": 817,
+        "bottom": 829
+      }
+    },
+    {
+      "text": "0.76",
+      "lines": [
+        {
+          "text": "0.76",
+          "boundingBox": {
+            "left": 759,
+            "top": 834,
+            "right": 817,
+            "bottom": 855
+          },
+          "confidence": 0.8466797
+        }
+      ],
+      "boundingBox": {
+        "left": 759,
+        "top": 834,
+        "right": 817,
+        "bottom": 855
+      }
+    },
+    {
+      "text": "18.75\n18.75",
+      "lines": [
+        {
+          "text": "18.75",
+          "boundingBox": {
+            "left": 747,
+            "top": 859,
+            "right": 819,
+            "bottom": 887
+          },
+          "confidence": 0.86640626
+        },
+        {
+          "text": "18.75",
+          "boundingBox": {
+            "left": 748,
+            "top": 886,
+            "right": 820,
+            "bottom": 909
+          },
+          "confidence": 0.8929688
+        }
+      ],
+      "boundingBox": {
+        "left": 747,
+        "top": 859,
+        "right": 820,
+        "bottom": 909
+      }
+    },
+    {
+      "text": "# ITEMS SOLD 3",
+      "lines": [
+        {
+          "text": "# ITEMS SOLD 3",
+          "boundingBox": {
+            "left": 330,
+            "top": 1140,
+            "right": 767,
+            "bottom": 1191
+          },
+          "confidence": 0.8178267
+        }
+      ],
+      "boundingBox": {
+        "left": 330,
+        "top": 1140,
+        "right": 767,
+        "bottom": 1191
+      }
+    },
+    {
+      "text": "TC# 9489 7094 6487 3073 3651",
+      "lines": [
+        {
+          "text": "TC# 9489 7094 6487 3073 3651",
+          "boundingBox": {
+            "left": 328,
+            "top": 1218,
+            "right": 764,
+            "bottom": 1249
+          },
+          "confidence": 0.89470106
+        }
+      ],
+      "boundingBox": {
+        "left": 328,
+        "top": 1218,
+        "right": 764,
+        "bottom": 1249
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 769,
+            "top": 1081,
+            "right": 830,
+            "bottom": 1105
+          },
+          "confidence": 0.8359375
+        }
+      ],
+      "boundingBox": {
+        "left": 769,
+        "top": 1081,
+        "right": 830,
+        "bottom": 1105
+      }
+    },
+    {
+      "text": "Wal-Mart excluslve Eagles CD\nayailable Dctober 30th!\n10/20/07 13:48:43",
+      "lines": [
+        {
+          "text": "Wal-Mart excluslve Eagles CD",
+          "boundingBox": {
+            "left": 342,
+            "top": 1334,
+            "right": 786,
+            "bottom": 1367
+          },
+          "confidence": 0.75453126
+        },
+        {
+          "text": "ayailable Dctober 30th!",
+          "boundingBox": {
+            "left": 374,
+            "top": 1362,
+            "right": 732,
+            "bottom": 1403
+          },
+          "confidence": 0.7572545
+        },
+        {
+          "text": "10/20/07 13:48:43",
+          "boundingBox": {
+            "left": 391,
+            "top": 1394,
+            "right": 725,
+            "bottom": 1429
+          },
+          "confidence": 0.8605957
+        }
+      ],
+      "boundingBox": {
+        "left": 342,
+        "top": 1332,
+        "right": 787,
+        "bottom": 1430
+      }
+    }
+  ]
+}

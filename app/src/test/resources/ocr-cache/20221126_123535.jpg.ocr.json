@@ -1,0 +1,1271 @@
+{
+  "fullText": "COSTCo\nVHOLESALE\nMurray #764\n5201 S Intermountaln/ Dr lve\nMurray, UT 84107\nSELF-CHECKOUT\n2\n14.99 A\n3.00-A\n14.99 A\n3.00-A\n15.99 A\n1528281 MOND LEGGING\nG6 Member 111953216403\n0000288800 /1528281\n1528281 MOND LEGGING\n0000288800 /1528281\n15.99 A\n5.00-A\n1528466 32D PANT 2PK\n0000289585 /1528466\n5.00-A\n1307817 32D HEAT TEE\n0000288573 /TEE\n5.00-A\n15.99 A\n15.99 A\n5.42\n11.99 E\n79.93\n85.35\n1307810 32D TEE\n0000288582 /TEE\n5.00-A\n1307790 32DLDSHEATPT\n0000288587 /TEE\n8691 EGGS 5 DOZ.\nSUBTOTAL\nTAX\n**** TOTAL\nCHIP Read\nApp#: 59163D\nXXXXXXXXXXXX0784\nResp: APPROVED\nAID: A0000000031010\nSeqt 205002\nTran ID#: 233000205002. ...\nCostco Visa\n11/26/2022 12:29 764 205 76 705\nPurchase\nAMOUNT: S85.35\nAPPROVED\n0.00\n85.35\nCostco Visa\nCHANGE\n5.06\n0.36\n5.42\nI72672022 12:29 764 205 76 705\nTOTAL NUMBER OF ITEMS SOLD\nINSTANT SAVINGS\nA 7.45% TAX\nE 3.0% TAX\n$\n26.00\nTOTAL TAX\n21076420500762211261229\nAgain\nCome\nThank You!\nPlease\nWhse:764 Trm:205 Trn:76 0P :705\nOP#: 705 Name: SCO\nG6 11/26/2022 12:29\nItems Sold: 7",
+  "blocks": [
+    {
+      "text": "COSTCo",
+      "lines": [
+        {
+          "text": "COSTCo",
+          "boundingBox": {
+            "left": 366,
+            "top": 127,
+            "right": 664,
+            "bottom": 186
+          },
+          "confidence": 0.5442708
+        }
+      ],
+      "boundingBox": {
+        "left": 366,
+        "top": 127,
+        "right": 664,
+        "bottom": 186
+      }
+    },
+    {
+      "text": "VHOLESALE",
+      "lines": [
+        {
+          "text": "VHOLESALE",
+          "boundingBox": {
+            "left": 481,
+            "top": 178,
+            "right": 659,
+            "bottom": 208
+          },
+          "confidence": 0.67404515
+        }
+      ],
+      "boundingBox": {
+        "left": 481,
+        "top": 178,
+        "right": 659,
+        "bottom": 208
+      }
+    },
+    {
+      "text": "Murray #764\n5201 S Intermountaln/ Dr lve\nMurray, UT 84107",
+      "lines": [
+        {
+          "text": "Murray #764",
+          "boundingBox": {
+            "left": 438,
+            "top": 223,
+            "right": 620,
+            "bottom": 255
+          },
+          "confidence": 0.65664065
+        },
+        {
+          "text": "5201 S Intermountaln/ Dr lve",
+          "boundingBox": {
+            "left": 397,
+            "top": 245,
+            "right": 646,
+            "bottom": 279
+          },
+          "confidence": 0.74820966
+        },
+        {
+          "text": "Murray, UT 84107",
+          "boundingBox": {
+            "left": 450,
+            "top": 263,
+            "right": 603,
+            "bottom": 297
+          },
+          "confidence": 0.7578125
+        }
+      ],
+      "boundingBox": {
+        "left": 396,
+        "top": 220,
+        "right": 648,
+        "bottom": 300
+      }
+    },
+    {
+      "text": "SELF-CHECKOUT",
+      "lines": [
+        {
+          "text": "SELF-CHECKOUT",
+          "boundingBox": {
+            "left": 429,
+            "top": 307,
+            "right": 650,
+            "bottom": 358
+          },
+          "confidence": 0.7767428
+        }
+      ],
+      "boundingBox": {
+        "left": 429,
+        "top": 307,
+        "right": 650,
+        "bottom": 358
+      }
+    },
+    {
+      "text": "2",
+      "lines": [
+        {
+          "text": "2",
+          "boundingBox": {
+            "left": 888,
+            "top": 419,
+            "right": 900,
+            "bottom": 432
+          },
+          "confidence": 0.63671875
+        }
+      ],
+      "boundingBox": {
+        "left": 888,
+        "top": 419,
+        "right": 900,
+        "bottom": 432
+      }
+    },
+    {
+      "text": "14.99 A",
+      "lines": [
+        {
+          "text": "14.99 A",
+          "boundingBox": {
+            "left": 654,
+            "top": 426,
+            "right": 718,
+            "bottom": 452
+          },
+          "confidence": 0.8717448
+        }
+      ],
+      "boundingBox": {
+        "left": 654,
+        "top": 426,
+        "right": 718,
+        "bottom": 452
+      }
+    },
+    {
+      "text": "3.00-A\n14.99 A",
+      "lines": [
+        {
+          "text": "3.00-A",
+          "boundingBox": {
+            "left": 660,
+            "top": 408,
+            "right": 715,
+            "bottom": 429
+          },
+          "confidence": 0.8222656
+        },
+        {
+          "text": "14.99 A",
+          "boundingBox": {
+            "left": 652,
+            "top": 384,
+            "right": 716,
+            "bottom": 409
+          },
+          "confidence": 0.8457031
+        }
+      ],
+      "boundingBox": {
+        "left": 652,
+        "top": 385,
+        "right": 717,
+        "bottom": 430
+      }
+    },
+    {
+      "text": "3.00-A\n15.99 A",
+      "lines": [
+        {
+          "text": "3.00-A",
+          "boundingBox": {
+            "left": 668,
+            "top": 451,
+            "right": 717,
+            "bottom": 472
+          },
+          "confidence": 0.8333333
+        },
+        {
+          "text": "15.99 A",
+          "boundingBox": {
+            "left": 655,
+            "top": 473,
+            "right": 721,
+            "bottom": 495
+          },
+          "confidence": 0.8776042
+        }
+      ],
+      "boundingBox": {
+        "left": 655,
+        "top": 451,
+        "right": 722,
+        "bottom": 495
+      }
+    },
+    {
+      "text": "1528281 MOND LEGGING\nG6 Member 111953216403\n0000288800 /1528281",
+      "lines": [
+        {
+          "text": "1528281 MOND LEGGING",
+          "boundingBox": {
+            "left": 405,
+            "top": 389,
+            "right": 599,
+            "bottom": 428
+          },
+          "confidence": 0.88151044
+        },
+        {
+          "text": "G6 Member 111953216403",
+          "boundingBox": {
+            "left": 355,
+            "top": 370,
+            "right": 568,
+            "bottom": 412
+          },
+          "confidence": 0.83320314
+        },
+        {
+          "text": "0000288800 /1528281",
+          "boundingBox": {
+            "left": 380,
+            "top": 415,
+            "right": 557,
+            "bottom": 453
+          },
+          "confidence": 0.85373265
+        }
+      ],
+      "boundingBox": {
+        "left": 354,
+        "top": 367,
+        "right": 601,
+        "bottom": 455
+      }
+    },
+    {
+      "text": "1528281 MOND LEGGING\n0000288800 /1528281",
+      "lines": [
+        {
+          "text": "1528281 MOND LEGGING",
+          "boundingBox": {
+            "left": 408,
+            "top": 434,
+            "right": 602,
+            "bottom": 474
+          },
+          "confidence": 0.84375
+        },
+        {
+          "text": "0000288800 /1528281",
+          "boundingBox": {
+            "left": 384,
+            "top": 458,
+            "right": 559,
+            "bottom": 497
+          },
+          "confidence": 0.874783
+        }
+      ],
+      "boundingBox": {
+        "left": 382,
+        "top": 433,
+        "right": 604,
+        "bottom": 497
+      }
+    },
+    {
+      "text": "15.99 A",
+      "lines": [
+        {
+          "text": "15.99 A",
+          "boundingBox": {
+            "left": 662,
+            "top": 515,
+            "right": 725,
+            "bottom": 537
+          },
+          "confidence": 0.84375
+        }
+      ],
+      "boundingBox": {
+        "left": 662,
+        "top": 515,
+        "right": 725,
+        "bottom": 537
+      }
+    },
+    {
+      "text": "5.00-A",
+      "lines": [
+        {
+          "text": "5.00-A",
+          "boundingBox": {
+            "left": 667,
+            "top": 496,
+            "right": 722,
+            "bottom": 516
+          },
+          "confidence": 0.828125
+        }
+      ],
+      "boundingBox": {
+        "left": 667,
+        "top": 496,
+        "right": 722,
+        "bottom": 516
+      }
+    },
+    {
+      "text": "1528466 32D PANT 2PK\n0000289585 /1528466",
+      "lines": [
+        {
+          "text": "1528466 32D PANT 2PK",
+          "boundingBox": {
+            "left": 414,
+            "top": 479,
+            "right": 608,
+            "bottom": 515
+          },
+          "confidence": 0.8249081
+        },
+        {
+          "text": "0000289585 /1528466",
+          "boundingBox": {
+            "left": 388,
+            "top": 502,
+            "right": 570,
+            "bottom": 541
+          },
+          "confidence": 0.87434894
+        }
+      ],
+      "boundingBox": {
+        "left": 386,
+        "top": 477,
+        "right": 610,
+        "bottom": 541
+      }
+    },
+    {
+      "text": "5.00-A",
+      "lines": [
+        {
+          "text": "5.00-A",
+          "boundingBox": {
+            "left": 673,
+            "top": 538,
+            "right": 727,
+            "bottom": 559
+          },
+          "confidence": 0.7858073
+        }
+      ],
+      "boundingBox": {
+        "left": 673,
+        "top": 538,
+        "right": 727,
+        "bottom": 559
+      }
+    },
+    {
+      "text": "1307817 32D HEAT TEE\n0000288573 /TEE",
+      "lines": [
+        {
+          "text": "1307817 32D HEAT TEE",
+          "boundingBox": {
+            "left": 418,
+            "top": 522,
+            "right": 611,
+            "bottom": 559
+          },
+          "confidence": 0.8382353
+        },
+        {
+          "text": "0000288573 /TEE",
+          "boundingBox": {
+            "left": 395,
+            "top": 548,
+            "right": 536,
+            "bottom": 583
+          },
+          "confidence": 0.8370536
+        }
+      ],
+      "boundingBox": {
+        "left": 393,
+        "top": 521,
+        "right": 613,
+        "bottom": 584
+      }
+    },
+    {
+      "text": "5.00-A\n15.99 A",
+      "lines": [
+        {
+          "text": "5.00-A",
+          "boundingBox": {
+            "left": 676,
+            "top": 583,
+            "right": 730,
+            "bottom": 602
+          },
+          "confidence": 0.8046875
+        },
+        {
+          "text": "15.99 A",
+          "boundingBox": {
+            "left": 667,
+            "top": 599,
+            "right": 733,
+            "bottom": 625
+          },
+          "confidence": 0.8339844
+        }
+      ],
+      "boundingBox": {
+        "left": 666,
+        "top": 580,
+        "right": 733,
+        "bottom": 625
+      }
+    },
+    {
+      "text": "15.99 A",
+      "lines": [
+        {
+          "text": "15.99 A",
+          "boundingBox": {
+            "left": 662,
+            "top": 561,
+            "right": 727,
+            "bottom": 581
+          },
+          "confidence": 0.85546875
+        }
+      ],
+      "boundingBox": {
+        "left": 662,
+        "top": 561,
+        "right": 727,
+        "bottom": 581
+      }
+    },
+    {
+      "text": "5.42\n11.99 E\n79.93\n85.35",
+      "lines": [
+        {
+          "text": "5.42",
+          "boundingBox": {
+            "left": 686,
+            "top": 687,
+            "right": 719,
+            "bottom": 708
+          },
+          "confidence": 0.85546875
+        },
+        {
+          "text": "11.99 E",
+          "boundingBox": {
+            "left": 671,
+            "top": 641,
+            "right": 736,
+            "bottom": 667
+          },
+          "confidence": 0.82747394
+        },
+        {
+          "text": "79.93",
+          "boundingBox": {
+            "left": 674,
+            "top": 666,
+            "right": 715,
+            "bottom": 687
+          },
+          "confidence": 0.8296875
+        },
+        {
+          "text": "85.35",
+          "boundingBox": {
+            "left": 673,
+            "top": 706,
+            "right": 734,
+            "bottom": 733
+          },
+          "confidence": 0.68125
+        }
+      ],
+      "boundingBox": {
+        "left": 669,
+        "top": 641,
+        "right": 740,
+        "bottom": 733
+      }
+    },
+    {
+      "text": "1307810 32D TEE\n0000288582 /TEE",
+      "lines": [
+        {
+          "text": "1307810 32D TEE",
+          "boundingBox": {
+            "left": 423,
+            "top": 569,
+            "right": 566,
+            "bottom": 603
+          },
+          "confidence": 0.8840144
+        },
+        {
+          "text": "0000288582 /TEE",
+          "boundingBox": {
+            "left": 398,
+            "top": 593,
+            "right": 533,
+            "bottom": 627
+          },
+          "confidence": 0.827288
+        }
+      ],
+      "boundingBox": {
+        "left": 396,
+        "top": 570,
+        "right": 568,
+        "bottom": 628
+      }
+    },
+    {
+      "text": "5.00-A",
+      "lines": [
+        {
+          "text": "5.00-A",
+          "boundingBox": {
+            "left": 679,
+            "top": 625,
+            "right": 733,
+            "bottom": 644
+          },
+          "confidence": 0.7949219
+        }
+      ],
+      "boundingBox": {
+        "left": 679,
+        "top": 625,
+        "right": 733,
+        "bottom": 644
+      }
+    },
+    {
+      "text": "1307790 32DLDSHEATPT\n0000288587 /TEE",
+      "lines": [
+        {
+          "text": "1307790 32DLDSHEATPT",
+          "boundingBox": {
+            "left": 428,
+            "top": 608,
+            "right": 616,
+            "bottom": 648
+          },
+          "confidence": 0.7752878
+        },
+        {
+          "text": "0000288587 /TEE",
+          "boundingBox": {
+            "left": 401,
+            "top": 636,
+            "right": 543,
+            "bottom": 671
+          },
+          "confidence": 0.8523995
+        }
+      ],
+      "boundingBox": {
+        "left": 399,
+        "top": 609,
+        "right": 617,
+        "bottom": 672
+      }
+    },
+    {
+      "text": "8691 EGGS 5 DOZ.\nSUBTOTAL",
+      "lines": [
+        {
+          "text": "8691 EGGS 5 DOZ.",
+          "boundingBox": {
+            "left": 463,
+            "top": 653,
+            "right": 609,
+            "bottom": 684
+          },
+          "confidence": 0.80378604
+        },
+        {
+          "text": "SUBTOTAL",
+          "boundingBox": {
+            "left": 460,
+            "top": 683,
+            "right": 532,
+            "bottom": 705
+          },
+          "confidence": 0.7524414
+        }
+      ],
+      "boundingBox": {
+        "left": 458,
+        "top": 652,
+        "right": 610,
+        "bottom": 707
+      }
+    },
+    {
+      "text": "TAX\n**** TOTAL",
+      "lines": [
+        {
+          "text": "TAX",
+          "boundingBox": {
+            "left": 465,
+            "top": 707,
+            "right": 489,
+            "bottom": 726
+          },
+          "confidence": 0.8255208
+        },
+        {
+          "text": "**** TOTAL",
+          "boundingBox": {
+            "left": 420,
+            "top": 727,
+            "right": 508,
+            "bottom": 752
+          },
+          "confidence": 0.7118056
+        }
+      ],
+      "boundingBox": {
+        "left": 419,
+        "top": 705,
+        "right": 508,
+        "bottom": 752
+      }
+    },
+    {
+      "text": "CHIP Read",
+      "lines": [
+        {
+          "text": "CHIP Read",
+          "boundingBox": {
+            "left": 645,
+            "top": 751,
+            "right": 728,
+            "bottom": 775
+          },
+          "confidence": 0.83154297
+        }
+      ],
+      "boundingBox": {
+        "left": 645,
+        "top": 751,
+        "right": 728,
+        "bottom": 775
+      }
+    },
+    {
+      "text": "App#: 59163D",
+      "lines": [
+        {
+          "text": "App#: 59163D",
+          "boundingBox": {
+            "left": 572,
+            "top": 794,
+            "right": 680,
+            "bottom": 826
+          },
+          "confidence": 0.68572444
+        }
+      ],
+      "boundingBox": {
+        "left": 572,
+        "top": 794,
+        "right": 680,
+        "bottom": 826
+      }
+    },
+    {
+      "text": "XXXXXXXXXXXX0784",
+      "lines": [
+        {
+          "text": "XXXXXXXXXXXX0784",
+          "boundingBox": {
+            "left": 395,
+            "top": 765,
+            "right": 543,
+            "bottom": 799
+          },
+          "confidence": 0.795166
+        }
+      ],
+      "boundingBox": {
+        "left": 395,
+        "top": 765,
+        "right": 543,
+        "bottom": 799
+      }
+    },
+    {
+      "text": "Resp: APPROVED",
+      "lines": [
+        {
+          "text": "Resp: APPROVED",
+          "boundingBox": {
+            "left": 555,
+            "top": 815,
+            "right": 679,
+            "bottom": 848
+          },
+          "confidence": 0.8061899
+        }
+      ],
+      "boundingBox": {
+        "left": 555,
+        "top": 815,
+        "right": 679,
+        "bottom": 848
+      }
+    },
+    {
+      "text": "AID: A0000000031010\nSeqt 205002",
+      "lines": [
+        {
+          "text": "AID: A0000000031010",
+          "boundingBox": {
+            "left": 401,
+            "top": 783,
+            "right": 585,
+            "bottom": 820
+          },
+          "confidence": 0.82269967
+        },
+        {
+          "text": "Seqt 205002",
+          "boundingBox": {
+            "left": 406,
+            "top": 811,
+            "right": 512,
+            "bottom": 835
+          },
+          "confidence": 0.7535156
+        }
+      ],
+      "boundingBox": {
+        "left": 401,
+        "top": 783,
+        "right": 586,
+        "bottom": 836
+      }
+    },
+    {
+      "text": "Tran ID#: 233000205002. ...",
+      "lines": [
+        {
+          "text": "Tran ID#: 233000205002. ...",
+          "boundingBox": {
+            "left": 408,
+            "top": 843,
+            "right": 643,
+            "bottom": 873
+          },
+          "confidence": 0.74560547
+        }
+      ],
+      "boundingBox": {
+        "left": 408,
+        "top": 843,
+        "right": 643,
+        "bottom": 873
+      }
+    },
+    {
+      "text": "Costco Visa",
+      "lines": [
+        {
+          "text": "Costco Visa",
+          "boundingBox": {
+            "left": 407,
+            "top": 832,
+            "right": 503,
+            "bottom": 856
+          },
+          "confidence": 0.8003906
+        }
+      ],
+      "boundingBox": {
+        "left": 407,
+        "top": 832,
+        "right": 503,
+        "bottom": 856
+      }
+    },
+    {
+      "text": "11/26/2022 12:29 764 205 76 705",
+      "lines": [
+        {
+          "text": "11/26/2022 12:29 764 205 76 705",
+          "boundingBox": {
+            "left": 422,
+            "top": 939,
+            "right": 702,
+            "bottom": 973
+          },
+          "confidence": 0.8144531
+        }
+      ],
+      "boundingBox": {
+        "left": 422,
+        "top": 939,
+        "right": 702,
+        "bottom": 973
+      }
+    },
+    {
+      "text": "Purchase\nAMOUNT: S85.35\nAPPROVED",
+      "lines": [
+        {
+          "text": "Purchase",
+          "boundingBox": {
+            "left": 514,
+            "top": 913,
+            "right": 585,
+            "bottom": 930
+          },
+          "confidence": 0.87060547
+        },
+        {
+          "text": "AMOUNT: S85.35",
+          "boundingBox": {
+            "left": 415,
+            "top": 929,
+            "right": 543,
+            "bottom": 952
+          },
+          "confidence": 0.78515625
+        },
+        {
+          "text": "APPROVED",
+          "boundingBox": {
+            "left": 416,
+            "top": 912,
+            "right": 486,
+            "bottom": 932
+          },
+          "confidence": 0.8066406
+        }
+      ],
+      "boundingBox": {
+        "left": 415,
+        "top": 911,
+        "right": 586,
+        "bottom": 952
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 708,
+            "top": 992,
+            "right": 739,
+            "bottom": 1011
+          },
+          "confidence": 0.84277344
+        }
+      ],
+      "boundingBox": {
+        "left": 708,
+        "top": 992,
+        "right": 739,
+        "bottom": 1011
+      }
+    },
+    {
+      "text": "85.35",
+      "lines": [
+        {
+          "text": "85.35",
+          "boundingBox": {
+            "left": 700,
+            "top": 975,
+            "right": 738,
+            "bottom": 993
+          },
+          "confidence": 0.8390625
+        }
+      ],
+      "boundingBox": {
+        "left": 700,
+        "top": 975,
+        "right": 738,
+        "bottom": 993
+      }
+    },
+    {
+      "text": "Costco Visa\nCHANGE",
+      "lines": [
+        {
+          "text": "Costco Visa",
+          "boundingBox": {
+            "left": 500,
+            "top": 989,
+            "right": 595,
+            "bottom": 1007
+          },
+          "confidence": 0.77070314
+        },
+        {
+          "text": "CHANGE",
+          "boundingBox": {
+            "left": 498,
+            "top": 1008,
+            "right": 543,
+            "bottom": 1027
+          },
+          "confidence": 0.8808594
+        }
+      ],
+      "boundingBox": {
+        "left": 498,
+        "top": 988,
+        "right": 595,
+        "bottom": 1026
+      }
+    },
+    {
+      "text": "5.06",
+      "lines": [
+        {
+          "text": "5.06",
+          "boundingBox": {
+            "left": 711,
+            "top": 1033,
+            "right": 740,
+            "bottom": 1051
+          },
+          "confidence": 0.9433594
+        }
+      ],
+      "boundingBox": {
+        "left": 711,
+        "top": 1033,
+        "right": 740,
+        "bottom": 1051
+      }
+    },
+    {
+      "text": "0.36",
+      "lines": [
+        {
+          "text": "0.36",
+          "boundingBox": {
+            "left": 714,
+            "top": 1052,
+            "right": 742,
+            "bottom": 1071
+          },
+          "confidence": 0.71777344
+        }
+      ],
+      "boundingBox": {
+        "left": 714,
+        "top": 1052,
+        "right": 742,
+        "bottom": 1071
+      }
+    },
+    {
+      "text": "5.42",
+      "lines": [
+        {
+          "text": "5.42",
+          "boundingBox": {
+            "left": 714,
+            "top": 1072,
+            "right": 747,
+            "bottom": 1091
+          },
+          "confidence": 0.8652344
+        }
+      ],
+      "boundingBox": {
+        "left": 714,
+        "top": 1072,
+        "right": 747,
+        "bottom": 1091
+      }
+    },
+    {
+      "text": "I72672022 12:29 764 205 76 705\nTOTAL NUMBER OF ITEMS SOLD\nINSTANT SAVINGS",
+      "lines": [
+        {
+          "text": "I72672022 12:29 764 205 76 705",
+          "boundingBox": {
+            "left": 430,
+            "top": 1129,
+            "right": 717,
+            "bottom": 1174
+          },
+          "confidence": 0.8098438
+        },
+        {
+          "text": "TOTAL NUMBER OF ITEMS SOLD",
+          "boundingBox": {
+            "left": 432,
+            "top": 1093,
+            "right": 669,
+            "bottom": 1129
+          },
+          "confidence": 0.8307884
+        },
+        {
+          "text": "INSTANT SAVINGS",
+          "boundingBox": {
+            "left": 434,
+            "top": 1119,
+            "right": 568,
+            "bottom": 1153
+          },
+          "confidence": 0.8652344
+        }
+      ],
+      "boundingBox": {
+        "left": 426,
+        "top": 1085,
+        "right": 718,
+        "bottom": 1174
+      }
+    },
+    {
+      "text": "A 7.45% TAX\nE 3.0% TAX",
+      "lines": [
+        {
+          "text": "A 7.45% TAX",
+          "boundingBox": {
+            "left": 441,
+            "top": 1046,
+            "right": 535,
+            "bottom": 1067
+          },
+          "confidence": 0.73220485
+        },
+        {
+          "text": "E 3.0% TAX",
+          "boundingBox": {
+            "left": 445,
+            "top": 1064,
+            "right": 531,
+            "bottom": 1088
+          },
+          "confidence": 0.8256836
+        }
+      ],
+      "boundingBox": {
+        "left": 441,
+        "top": 1045,
+        "right": 536,
+        "bottom": 1088
+      }
+    },
+    {
+      "text": "$\n26.00",
+      "lines": [
+        {
+          "text": "$",
+          "boundingBox": {
+            "left": 683,
+            "top": 1115,
+            "right": 687,
+            "bottom": 1131
+          },
+          "confidence": 0.3984375
+        },
+        {
+          "text": "26.00",
+          "boundingBox": {
+            "left": 699,
+            "top": 1114,
+            "right": 740,
+            "bottom": 1130
+          },
+          "confidence": 0.9140625
+        }
+      ],
+      "boundingBox": {
+        "left": 683,
+        "top": 1114,
+        "right": 740,
+        "bottom": 1131
+      }
+    },
+    {
+      "text": "TOTAL TAX",
+      "lines": [
+        {
+          "text": "TOTAL TAX",
+          "boundingBox": {
+            "left": 440,
+            "top": 1088,
+            "right": 520,
+            "bottom": 1107
+          },
+          "confidence": 0.7426758
+        }
+      ],
+      "boundingBox": {
+        "left": 440,
+        "top": 1088,
+        "right": 520,
+        "bottom": 1107
+      }
+    },
+    {
+      "text": "21076420500762211261229",
+      "lines": [
+        {
+          "text": "21076420500762211261229",
+          "boundingBox": {
+            "left": 522,
+            "top": 1205,
+            "right": 702,
+            "bottom": 1238
+          },
+          "confidence": 0.90132475
+        }
+      ],
+      "boundingBox": {
+        "left": 522,
+        "top": 1205,
+        "right": 702,
+        "bottom": 1238
+      }
+    },
+    {
+      "text": "Again\nCome\nThank You!\nPlease\nWhse:764 Trm:205 Trn:76 0P :705",
+      "lines": [
+        {
+          "text": "Again",
+          "boundingBox": {
+            "left": 697,
+            "top": 1266,
+            "right": 772,
+            "bottom": 1288
+          },
+          "confidence": 0.48515624
+        },
+        {
+          "text": "Come",
+          "boundingBox": {
+            "left": 618,
+            "top": 1279,
+            "right": 669,
+            "bottom": 1295
+          },
+          "confidence": 0.7548828
+        },
+        {
+          "text": "Thank You!",
+          "boundingBox": {
+            "left": 534,
+            "top": 1249,
+            "right": 685,
+            "bottom": 1281
+          },
+          "confidence": 0.7864583
+        },
+        {
+          "text": "Please",
+          "boundingBox": {
+            "left": 503,
+            "top": 1285,
+            "right": 594,
+            "bottom": 1300
+          },
+          "confidence": 0.7376302
+        },
+        {
+          "text": "Whse:764 Trm:205 Trn:76 0P :705",
+          "boundingBox": {
+            "left": 451,
+            "top": 1293,
+            "right": 718,
+            "bottom": 1323
+          },
+          "confidence": 0.68706596
+        }
+      ],
+      "boundingBox": {
+        "left": 449,
+        "top": 1246,
+        "right": 773,
+        "bottom": 1324
+      }
+    },
+    {
+      "text": "OP#: 705 Name: SCO",
+      "lines": [
+        {
+          "text": "OP#: 705 Name: SCO",
+          "boundingBox": {
+            "left": 447,
+            "top": 1235,
+            "right": 605,
+            "bottom": 1261
+          },
+          "confidence": 0.6815104
+        }
+      ],
+      "boundingBox": {
+        "left": 447,
+        "top": 1235,
+        "right": 605,
+        "bottom": 1261
+      }
+    },
+    {
+      "text": "G6 11/26/2022 12:29\nItems Sold: 7",
+      "lines": [
+        {
+          "text": "G6 11/26/2022 12:29",
+          "boundingBox": {
+            "left": 482,
+            "top": 1389,
+            "right": 779,
+            "bottom": 1445
+          },
+          "confidence": 0.8469669
+        },
+        {
+          "text": "Items Sold: 7",
+          "boundingBox": {
+            "left": 477,
+            "top": 1365,
+            "right": 680,
+            "bottom": 1407
+          },
+          "confidence": 0.7631392
+        }
+      ],
+      "boundingBox": {
+        "left": 477,
+        "top": 1356,
+        "right": 781,
+        "bottom": 1445
+      }
+    }
+  ]
+}

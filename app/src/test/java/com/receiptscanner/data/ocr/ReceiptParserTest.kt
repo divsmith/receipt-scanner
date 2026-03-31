@@ -1,9 +1,6 @@
 package com.receiptscanner.data.ocr
 
-import android.graphics.Rect
 import com.receiptscanner.domain.util.MilliunitConverter
-import io.mockk.every
-import io.mockk.mockk
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Nested
@@ -18,19 +15,6 @@ class ReceiptParserTest {
     @BeforeEach
     fun setUp() {
         parser = ReceiptParser()
-    }
-
-    /**
-     * Creates a MockK-backed [Rect] with the given coordinates. Using mockk because
-     * [android.graphics.Rect] is an Android SDK class unavailable in pure JVM unit tests.
-     */
-    private fun mockRect(left: Int, top: Int, right: Int, bottom: Int): Rect = mockk {
-        every { this@mockk.left } returns left
-        every { this@mockk.top } returns top
-        every { this@mockk.right } returns right
-        every { this@mockk.bottom } returns bottom
-        every { height() } returns (bottom - top)
-        every { width() } returns (right - left)
     }
 
     /**
@@ -60,7 +44,7 @@ class ReceiptParserTest {
     private fun makeOcrResultWithBounds(vararg items: Pair<String, Int>): TextRecognitionResult {
         var currentY = 0
         val lines = items.map { (text, height) ->
-            val box = mockRect(0, currentY, 400, currentY + height)
+            val box = BoundingBox(0, currentY, 400, currentY + height)
             currentY += height + 4 // 4px gap between lines
             TextLine(text = text, boundingBox = box, confidence = 0.95f)
         }
@@ -159,6 +143,69 @@ class ReceiptParserTest {
             )
             assertEquals("SAFEWAY", parser.extractStoreName(result))
         }
+
+        @Test
+        fun `spatial - ignores promotional sweepstakes banner lines`() {
+            val result = makeOcrResultWithBounds(
+                "TO WIN $1000" to 42,
+                "WALMART" to 30,
+                "Save money. Live better." to 12,
+            )
+            assertEquals("WALMART", parser.extractStoreName(result))
+        }
+
+        @Test
+        fun `spatial - ignores receipt chance banner lines`() {
+            val result = makeOcrResultWithBounds(
+                "SEE BACK OF RECEIPT FOR YOUR CHANCE" to 42,
+                "WALMART" to 30,
+                "123 Main St" to 12,
+            )
+            assertEquals("WALMART", parser.extractStoreName(result))
+        }
+
+        @Test
+        fun `spatial - ignores phone manager lines`() {
+            val result = makeOcrResultWithBounds(
+                "863-676-9425 MGR: EURIELDA" to 38,
+                "WALMART" to 30,
+                "123 Main St" to 12,
+            )
+            assertEquals("WALMART", parser.extractStoreName(result))
+        }
+
+        @Test
+        fun `spatial - prefers merchant name over taller address line`() {
+            val result = makeOcrResultWithBounds(
+                "951 AVENIDA PICO" to 42,
+                "Walmart" to 28,
+                "SAN CLEMENTE CA 92673" to 24,
+            )
+
+            assertEquals("Walmart", parser.extractStoreName(result))
+        }
+
+        @Test
+        fun `spatial - prefers merchant name over survey banner noise`() {
+            val result = makeOcrResultWithBounds(
+                "tback of recelpt for your" to 42,
+                "Walmart" to 28,
+                "Save money. Live better." to 12,
+            )
+
+            assertEquals("Walmart", parser.extractStoreName(result))
+        }
+
+        @Test
+        fun `spatial - prefers brand line over city state zip`() {
+            val result = makeOcrResultWithBounds(
+                "HorneGoods" to 28,
+                "THE BRICKYARD SHOP CNTR" to 20,
+                "SALT LAKE CITY, UT 84106" to 42,
+            )
+
+            assertEquals("HorneGoods", parser.extractStoreName(result))
+        }
     }
 
     @Nested
@@ -199,6 +246,27 @@ class ReceiptParserTest {
         }
 
         @Test
+        fun `extracts balance without due suffix`() {
+            val text = "TOTAL TAX $0.80\nBALANCE $43.20"
+            val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("43.20"))
+            assertEquals(expected, parser.extractTotalAmount(text))
+        }
+
+        @Test
+        fun `extracts provider label total line`() {
+            val text = "TOTAL TAX $0.80\nVISA $10.80"
+            val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("10.80"))
+            assertEquals(expected, parser.extractTotalAmount(text))
+        }
+
+        @Test
+        fun `extracts total that notes included tax`() {
+            val text = "SUBTOTAL $10.00\nTOTAL (incl. GST) $10.80"
+            val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("10.80"))
+            assertEquals(expected, parser.extractTotalAmount(text))
+        }
+
+        @Test
         fun `handles comma-separated amounts`() {
             val text = "TOTAL $1,234.56"
             val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("1234.56"))
@@ -213,15 +281,66 @@ class ReceiptParserTest {
         }
 
         @Test
-        fun `falls back to largest dollar amount`() {
-            val text = "Item 1 $5.00\nItem 2 $8.00\nItem 3 $12.50\n$25.50"
-            val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("25.50"))
+        fun `returns null for no amounts`() {
+            assertNull(parser.extractTotalAmount("No amounts here"))
+        }
+
+        @Test
+        fun `does not match SUBTOTAL as TOTAL`() {
+            // Only "SUBTOTAL $40.00" present — should NOT match via TOTAL keyword
+            val text = "SUBTOTAL $40.00\nTax $3.20"
+            // The word-boundary regex should not match "TOTAL" inside "SUBTOTAL"
+            assertNull(parser.extractTotalAmount(text))
+        }
+
+        @Test
+        fun `skips savings lines in keyword search`() {
+            val text = "SUBTOTAL $20.00\nANNUAL SAVINGS $127.54\nTOTAL $22.00"
+            val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("22.00"))
             assertEquals(expected, parser.extractTotalAmount(text))
         }
 
         @Test
-        fun `returns null for no amounts`() {
-            assertNull(parser.extractTotalAmount("No amounts here"))
+        fun `does not treat masked provider metadata as total`() {
+            assertNull(parser.extractTotalAmount("VISA ****4532"))
+        }
+    }
+
+    @Nested
+    inner class NegativeKeywordFiltering {
+        @Test
+        fun `detects savings keyword`() {
+            assertTrue(parser.containsNegativeKeyword("ANNUAL SAVINGS $127.54"))
+        }
+
+        @Test
+        fun `detects you saved keyword`() {
+            assertTrue(parser.containsNegativeKeyword("YOU SAVED $42.00"))
+        }
+
+        @Test
+        fun `detects discount keyword`() {
+            assertTrue(parser.containsNegativeKeyword("DISCOUNT -$5.00"))
+        }
+
+        @Test
+        fun `detects change due keyword`() {
+            assertTrue(parser.containsNegativeKeyword("CHANGE DUE $7.53"))
+        }
+
+        @Test
+        fun `does not flag total line`() {
+            assertFalse(parser.containsNegativeKeyword("TOTAL $43.20"))
+        }
+
+        @Test
+        fun `does not flag regular item`() {
+            assertFalse(parser.containsNegativeKeyword("MILK 2% $3.99"))
+        }
+
+        @Test
+        fun `case insensitive`() {
+            assertTrue(parser.containsNegativeKeyword("Annual Savings $50.00"))
         }
     }
 
@@ -232,43 +351,43 @@ class ReceiptParserTest {
         fun `spatial - finds amount on same line as TOTAL keyword`() {
             val totalLine = TextLine(
                 text = "TOTAL $54.32",
-                boundingBox = mockRect(0, 200, 400, 220),
+                boundingBox = BoundingBox(0, 200, 400, 220),
                 confidence = 0.95f,
             )
             val block = TextBlock(text = "TOTAL $54.32", lines = listOf(totalLine), boundingBox = null)
             val result = TextRecognitionResult(fullText = "TOTAL $54.32", blocks = listOf(block))
             val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("54.32"))
-            assertEquals(expected, parser.extractTotalAmountSpatially(result.blocks))
+            assertEquals(expected, parser.extractTotalAmountSpatially(result.blocks)?.amount)
         }
 
         @Test
         fun `spatial - finds amount to the right of TOTAL label in two-column layout`() {
             val labelLine = TextLine(
                 text = "TOTAL",
-                boundingBox = mockRect(0, 300, 150, 320),
+                boundingBox = BoundingBox(0, 300, 150, 320),
                 confidence = 0.95f,
             )
             val amountLine = TextLine(
                 text = "$78.90",
-                boundingBox = mockRect(250, 300, 400, 320),
+                boundingBox = BoundingBox(250, 300, 400, 320),
                 confidence = 0.95f,
             )
             val rows = listOf(labelLine to amountLine)
             val ocrResult = makeTwoColumnOcrResult(rows)
             val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("78.90"))
-            assertEquals(expected, parser.extractTotalAmountSpatially(ocrResult.blocks))
+            assertEquals(expected, parser.extractTotalAmountSpatially(ocrResult.blocks)?.amount)
         }
 
         @Test
         fun `spatial - finds amount directly below TOTAL label`() {
             val labelLine = TextLine(
                 text = "TOTAL",
-                boundingBox = mockRect(0, 300, 150, 320),
+                boundingBox = BoundingBox(0, 300, 150, 320),
                 confidence = 0.95f,
             )
             val amountLine = TextLine(
                 text = "$99.99",
-                boundingBox = mockRect(0, 325, 150, 345),
+                boundingBox = BoundingBox(0, 325, 150, 345),
                 confidence = 0.95f,
             )
             val block = TextBlock(
@@ -278,7 +397,7 @@ class ReceiptParserTest {
             )
             val ocrResult = TextRecognitionResult(fullText = "TOTAL\n$99.99", blocks = listOf(block))
             val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("99.99"))
-            assertEquals(expected, parser.extractTotalAmountSpatially(ocrResult.blocks))
+            assertEquals(expected, parser.extractTotalAmountSpatially(ocrResult.blocks)?.amount)
         }
 
         @Test
@@ -290,10 +409,10 @@ class ReceiptParserTest {
 
         @Test
         fun `spatial - prefers final TOTAL over subtotal when multiple exist`() {
-            val subtotalLabel = TextLine("SUBTOTAL", mockRect(0, 200, 150, 220), 0.95f)
-            val subtotalAmount = TextLine("$40.00", mockRect(250, 200, 400, 220), 0.95f)
-            val totalLabel = TextLine("TOTAL", mockRect(0, 260, 150, 280), 0.95f)
-            val totalAmount = TextLine("$43.20", mockRect(250, 260, 400, 280), 0.95f)
+            val subtotalLabel = TextLine("SUBTOTAL", BoundingBox(0, 200, 150, 220), 0.95f)
+            val subtotalAmount = TextLine("$40.00", BoundingBox(250, 200, 400, 220), 0.95f)
+            val totalLabel = TextLine("TOTAL", BoundingBox(0, 260, 150, 280), 0.95f)
+            val totalAmount = TextLine("$43.20", BoundingBox(250, 260, 400, 280), 0.95f)
 
             val block = TextBlock(
                 text = "SUBTOTAL\n$40.00\nTOTAL\n$43.20",
@@ -305,7 +424,185 @@ class ReceiptParserTest {
                 blocks = listOf(block),
             )
             val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("43.20"))
-            assertEquals(expected, parser.extractTotalAmountSpatially(ocrResult.blocks))
+            assertEquals(expected, parser.extractTotalAmountSpatially(ocrResult.blocks)?.amount)
+        }
+
+        @Test
+        fun `spatial - skips savings line even when it contains total-like text`() {
+            val savingsLine = TextLine("TOTAL SAVINGS", BoundingBox(0, 300, 200, 320), 0.95f)
+            val savingsAmount = TextLine("$50.00", BoundingBox(250, 300, 400, 320), 0.95f)
+            val totalLine = TextLine("TOTAL $25.50", BoundingBox(0, 340, 400, 360), 0.95f)
+
+            val block = TextBlock(
+                text = "TOTAL SAVINGS\n$50.00\nTOTAL $25.50",
+                lines = listOf(savingsLine, savingsAmount, totalLine),
+                boundingBox = null,
+            )
+            val ocrResult = TextRecognitionResult(
+                fullText = "TOTAL SAVINGS $50.00\nTOTAL $25.50",
+                blocks = listOf(block),
+            )
+            val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("25.50"))
+            assertEquals(expected, parser.extractTotalAmountSpatially(ocrResult.blocks)?.amount)
+        }
+
+        @Test
+        fun `spatial - ignores TOTAL TAX when VISA row contains payable total`() {
+            val subtotalLabel = TextLine("SUBTOTAL", BoundingBox(0, 220, 150, 240), 0.95f)
+            val subtotalAmount = TextLine("$10.00", BoundingBox(250, 220, 400, 240), 0.95f)
+            val taxLabel = TextLine("TOTAL TAX", BoundingBox(0, 260, 180, 280), 0.95f)
+            val taxAmount = TextLine("$0.80", BoundingBox(250, 260, 400, 280), 0.95f)
+            val visaLabel = TextLine("VISA", BoundingBox(0, 300, 150, 320), 0.95f)
+            val visaAmount = TextLine("$10.80", BoundingBox(250, 300, 400, 320), 0.95f)
+
+            val ocrResult = makeTwoColumnOcrResult(
+                listOf(
+                    subtotalLabel to subtotalAmount,
+                    taxLabel to taxAmount,
+                    visaLabel to visaAmount,
+                )
+            )
+
+            val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("10.80"))
+            assertEquals(expected, parser.extractTotalWithConfidence(ocrResult)?.amount)
+        }
+
+        @Test
+        fun `spatial - extracts balance label without due suffix`() {
+            val subtotalLabel = TextLine("SUBTOTAL", BoundingBox(0, 220, 150, 240), 0.95f)
+            val subtotalAmount = TextLine("$10.00", BoundingBox(250, 220, 400, 240), 0.95f)
+            val taxLabel = TextLine("TOTAL TAX", BoundingBox(0, 260, 180, 280), 0.95f)
+            val taxAmount = TextLine("$0.80", BoundingBox(250, 260, 400, 280), 0.95f)
+            val balanceLabel = TextLine("BALANCE", BoundingBox(0, 300, 180, 320), 0.95f)
+            val balanceAmount = TextLine("$10.80", BoundingBox(250, 300, 400, 320), 0.95f)
+
+            val ocrResult = makeTwoColumnOcrResult(
+                listOf(
+                    subtotalLabel to subtotalAmount,
+                    taxLabel to taxAmount,
+                    balanceLabel to balanceAmount,
+                )
+            )
+
+            val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("10.80"))
+            assertEquals(expected, parser.extractTotalAmountSpatially(ocrResult.blocks)?.amount)
+        }
+
+        @Test
+        fun `spatial - prefers amount bearing provider row over masked provider metadata`() {
+            val taxLabel = TextLine("TOTAL TAX", BoundingBox(0, 260, 180, 280), 0.95f)
+            val taxAmount = TextLine("$0.80", BoundingBox(250, 260, 400, 280), 0.95f)
+            val visaLabel = TextLine("VISA", BoundingBox(0, 300, 150, 320), 0.95f)
+            val visaAmount = TextLine("$10.80", BoundingBox(250, 300, 400, 320), 0.95f)
+            val maskedVisa = TextLine("VISA ****4532", BoundingBox(0, 340, 300, 360), 0.95f)
+
+            val block = TextBlock(
+                text = "TOTAL TAX\n$0.80\nVISA\n$10.80\nVISA ****4532",
+                lines = listOf(taxLabel, taxAmount, visaLabel, visaAmount, maskedVisa),
+                boundingBox = null,
+            )
+            val ocrResult = TextRecognitionResult(fullText = block.text, blocks = listOf(block))
+
+            val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("10.80"))
+            assertEquals(expected, parser.extractTotalWithConfidence(ocrResult)?.amount)
+        }
+
+        @Test
+        fun `spatial - accepts total line that notes included tax`() {
+            val totalLine = TextLine(
+                text = "GRAND TOTAL (incl. GST) $54.32",
+                boundingBox = BoundingBox(0, 300, 400, 320),
+                confidence = 0.95f,
+            )
+            val block = TextBlock(text = totalLine.text, lines = listOf(totalLine), boundingBox = null)
+            val result = TextRecognitionResult(fullText = totalLine.text, blocks = listOf(block))
+            val expected = MilliunitConverter.dollarsToMilliunits(BigDecimal("54.32"))
+            assertEquals(expected, parser.extractTotalAmountSpatially(result.blocks)?.amount)
+        }
+    }
+
+    @Nested
+    inner class ConfidenceScoring {
+        @Test
+        fun `keyword match with bottom position gets high confidence`() {
+            val result = makeOcrResultWithBounds(
+                "MILK $3.99" to 14,
+                "EGGS $4.29" to 14,
+                "SUBTOTAL $8.28" to 14,
+                "TAX $0.66" to 14,
+                "TOTAL $8.94" to 14,
+            )
+            val scored = parser.extractTotalWithConfidence(result)
+            assertNotNull(scored)
+            assertTrue(scored!!.confidence >= 0.50f, "Expected confidence >= 0.50 but was ${scored.confidence}")
+        }
+
+        @Test
+        fun `grand total gets higher confidence than plain total`() {
+            val plainResult = makeOcrResult("TOTAL $43.20")
+            val grandResult = makeOcrResult("GRAND TOTAL $43.20")
+            val plain = parser.extractTotalWithConfidence(plainResult)
+            val grand = parser.extractTotalWithConfidence(grandResult)
+            assertNotNull(plain)
+            assertNotNull(grand)
+            assertTrue(
+                grand!!.confidence > plain!!.confidence,
+                "GRAND TOTAL (${grand.confidence}) should have higher confidence than TOTAL (${plain.confidence})"
+            )
+        }
+
+        @Test
+        fun `fallback amount gets low confidence`() {
+            // No TOTAL keyword, just bare amounts
+            val result = makeOcrResult("$5.00", "$8.00", "$12.50")
+            val scored = parser.extractTotalWithConfidence(result)
+            assertNotNull(scored)
+            assertTrue(scored!!.confidence < 0.40f, "Fallback confidence should be < 0.40 but was ${scored.confidence}")
+        }
+
+        @Test
+        fun `returns null when only promotional amounts present`() {
+            val result = makeOcrResult("YOU SAVED $42.00", "ANNUAL SAVINGS $127.54")
+            val scored = parser.extractTotalWithConfidence(result)
+            // Should return null because all amounts are on negative keyword lines
+            assertNull(scored)
+        }
+    }
+
+    @Nested
+    inner class FallbackStrategy {
+        @Test
+        fun `fallback excludes savings amounts`() {
+            val result = makeOcrResult(
+                "ITEM A $5.00",
+                "ANNUAL SAVINGS $127.54",
+                "$25.50",
+            )
+            val scored = parser.extractFallbackAmount(result)
+            assertNotNull(scored)
+            // Should NOT be $127.54 (savings), should be $25.50 (last bare amount)
+            assertNotEquals(
+                MilliunitConverter.dollarsToMilliunits(BigDecimal("127.54")),
+                scored!!.amount,
+            )
+        }
+
+        @Test
+        fun `fallback prefers bottom of receipt`() {
+            // Two bare amounts — bottom one should be preferred
+            val result = makeOcrResultWithBounds(
+                "$15.00" to 14,
+                "Some text" to 14,
+                "More text" to 14,
+                "Even more" to 14,
+                "$18.00" to 14,
+            )
+            val scored = parser.extractFallbackAmount(result)
+            assertNotNull(scored)
+            assertEquals(
+                MilliunitConverter.dollarsToMilliunits(BigDecimal("18.00")),
+                scored!!.amount,
+            )
         }
     }
 
@@ -350,6 +647,18 @@ class ReceiptParserTest {
         fun `extracts date with dashes`() {
             val text = "Date: 03-15-2024"
             assertEquals(LocalDate.of(2024, 3, 15), parser.extractDate(text))
+        }
+
+        @Test
+        fun `prefers labeled receipt date over later expiry date`() {
+            val text = """
+                DATE 11/23/22 TIME 4:32 PM
+                REG 2
+                TRANS 9832
+                POINTS EXPIRING 12/31/2022
+            """.trimIndent()
+
+            assertEquals(LocalDate.of(2022, 11, 23), parser.extractDate(text))
         }
     }
 
@@ -423,6 +732,7 @@ class ReceiptParserTest {
             assertEquals(LocalDate.of(2024, 3, 15), data.date)
             assertEquals("4532", data.cardLastFour)
             assertTrue(data.rawText.contains("WALMART"))
+            assertTrue(data.totalConfidence > 0f, "Should have non-zero confidence")
         }
 
         @Test
@@ -523,6 +833,76 @@ class ReceiptParserTest {
             )
             assertEquals("3344", data.cardLastFour)
             assertEquals(LocalDate.of(2025, 2, 5), data.date)
+        }
+
+        @Test
+        fun `receipt with savings as largest amount picks correct total`() {
+            val result = makeOcrResult(
+                "GROCERY MART",
+                "",
+                "ITEM A $5.00",
+                "ITEM B $8.00",
+                "",
+                "SUBTOTAL $13.00",
+                "TAX $1.04",
+                "TOTAL $14.04",
+                "",
+                "ANNUAL SAVINGS $127.54",
+                "THANK YOU FOR SHOPPING",
+            )
+
+            val data = parser.parse(result)
+
+            assertEquals(
+                MilliunitConverter.dollarsToMilliunits(BigDecimal("14.04")),
+                data.totalAmount,
+                "Should pick TOTAL $14.04, not ANNUAL SAVINGS $127.54",
+            )
+        }
+
+        @Test
+        fun `receipt with you saved line does not affect total`() {
+            val result = makeOcrResult(
+                "SUPERSTORE",
+                "",
+                "PRODUCE $7.99",
+                "DAIRY $4.50",
+                "",
+                "TOTAL $12.49",
+                "YOU SAVED $3.00 TODAY",
+            )
+
+            val data = parser.parse(result)
+
+            assertEquals(
+                MilliunitConverter.dollarsToMilliunits(BigDecimal("12.49")),
+                data.totalAmount,
+            )
+        }
+
+        @Test
+        fun `parses receipt where tender row holds final total`() {
+            val result = makeOcrResultWithBounds(
+                "TARGET" to 40,
+                "Retail Store" to 14,
+                "SUBTOTAL" to 14,
+                "$10.00" to 14,
+                "TOTAL TAX" to 14,
+                "$0.80" to 14,
+                "VISA" to 14,
+                "$10.80" to 18,
+                "VISA ****4532" to 14,
+                "03/15/2024 14:30" to 14,
+            )
+
+            val data = parser.parse(result)
+
+            assertEquals(
+                MilliunitConverter.dollarsToMilliunits(BigDecimal("10.80")),
+                data.totalAmount,
+            )
+            assertEquals("4532", data.cardLastFour)
+            assertTrue(data.totalConfidence > 0f, "Should have non-zero confidence")
         }
     }
 }

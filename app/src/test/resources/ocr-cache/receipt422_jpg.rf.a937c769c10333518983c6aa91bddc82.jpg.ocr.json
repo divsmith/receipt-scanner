@@ -1,0 +1,422 @@
+{
+  "fullText": "Tax\nTotal\nCashier: Mosa\n13-Jul-2018 8.53,47P\nGuest 1\nHAWWI ETHIOPIAN RESTAU\n1125 OUEEMSE\nALEXANDRIA VA 22314\nTO37179740\nTransaction 000016\nSubtotal\nORDER: Table 2\nDine In\n1 26 Fish Goulash\n1 30 Dullet\n1 34. Vegetarian Dish\nCREDITADE\n$1995\n$20.95\n$21.95\n$62.85\nS6.91\n$69",
+  "blocks": [
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 172,
+            "top": 1207,
+            "right": 248,
+            "bottom": 1272
+          },
+          "confidence": 0.77213544
+        }
+      ],
+      "boundingBox": {
+        "left": 172,
+        "top": 1207,
+        "right": 248,
+        "bottom": 1272
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 120,
+            "top": 1363,
+            "right": 243,
+            "bottom": 1448
+          },
+          "confidence": 0.7992188
+        }
+      ],
+      "boundingBox": {
+        "left": 120,
+        "top": 1363,
+        "right": 243,
+        "bottom": 1448
+      }
+    },
+    {
+      "text": "Cashier: Mosa\n13-Jul-2018 8.53,47P",
+      "lines": [
+        {
+          "text": "Cashier: Mosa",
+          "boundingBox": {
+            "left": 368,
+            "top": 584,
+            "right": 647,
+            "bottom": 664
+          },
+          "confidence": 0.7552083
+        },
+        {
+          "text": "13-Jul-2018 8.53,47P",
+          "boundingBox": {
+            "left": 357,
+            "top": 642,
+            "right": 784,
+            "bottom": 739
+          },
+          "confidence": 0.6862664
+        }
+      ],
+      "boundingBox": {
+        "left": 357,
+        "top": 583,
+        "right": 792,
+        "bottom": 741
+      }
+    },
+    {
+      "text": "Guest 1",
+      "lines": [
+        {
+          "text": "Guest 1",
+          "boundingBox": {
+            "left": 303,
+            "top": 787,
+            "right": 463,
+            "bottom": 852
+          },
+          "confidence": 0.7291667
+        }
+      ],
+      "boundingBox": {
+        "left": 303,
+        "top": 787,
+        "right": 463,
+        "bottom": 852
+      }
+    },
+    {
+      "text": "HAWWI ETHIOPIAN RESTAU\n1125 OUEEMSE\nALEXANDRIA VA 22314\nTO37179740",
+      "lines": [
+        {
+          "text": "HAWWI ETHIOPIAN RESTAU",
+          "boundingBox": {
+            "left": 572,
+            "top": 235,
+            "right": 1184,
+            "bottom": 342
+          },
+          "confidence": 0.76777345
+        },
+        {
+          "text": "1125 OUEEMSE",
+          "boundingBox": {
+            "left": 731,
+            "top": 297,
+            "right": 1008,
+            "bottom": 367
+          },
+          "confidence": 0.3721591
+        },
+        {
+          "text": "ALEXANDRIA VA 22314",
+          "boundingBox": {
+            "left": 647,
+            "top": 329,
+            "right": 1077,
+            "bottom": 421
+          },
+          "confidence": 0.6555607
+        },
+        {
+          "text": "TO37179740",
+          "boundingBox": {
+            "left": 739,
+            "top": 390,
+            "right": 969,
+            "bottom": 452
+          },
+          "confidence": 0.4546875
+        }
+      ],
+      "boundingBox": {
+        "left": 556,
+        "top": 233,
+        "right": 1184,
+        "bottom": 477
+      }
+    },
+    {
+      "text": "Transaction 000016",
+      "lines": [
+        {
+          "text": "Transaction 000016",
+          "boundingBox": {
+            "left": 330,
+            "top": 725,
+            "right": 733,
+            "bottom": 822
+          },
+          "confidence": 0.79733455
+        }
+      ],
+      "boundingBox": {
+        "left": 330,
+        "top": 725,
+        "right": 733,
+        "bottom": 822
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 188,
+            "top": 1120,
+            "right": 392,
+            "bottom": 1216
+          },
+          "confidence": 0.70947266
+        }
+      ],
+      "boundingBox": {
+        "left": 188,
+        "top": 1120,
+        "right": 392,
+        "bottom": 1216
+      }
+    },
+    {
+      "text": "ORDER: Table 2\nDine In",
+      "lines": [
+        {
+          "text": "ORDER: Table 2",
+          "boundingBox": {
+            "left": 643,
+            "top": 444,
+            "right": 1069,
+            "bottom": 572
+          },
+          "confidence": 0.866862
+        },
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 719,
+            "top": 547,
+            "right": 927,
+            "bottom": 629
+          },
+          "confidence": 0.8151042
+        }
+      ],
+      "boundingBox": {
+        "left": 635,
+        "top": 444,
+        "right": 1069,
+        "bottom": 645
+      }
+    },
+    {
+      "text": "1 26 Fish Goulash\n1 30 Dullet",
+      "lines": [
+        {
+          "text": "1 26 Fish Goulash",
+          "boundingBox": {
+            "left": 308,
+            "top": 847,
+            "right": 712,
+            "bottom": 955
+          },
+          "confidence": 0.7907366
+        },
+        {
+          "text": "1 30 Dullet",
+          "boundingBox": {
+            "left": 287,
+            "top": 909,
+            "right": 544,
+            "bottom": 1002
+          },
+          "confidence": 0.75998265
+        }
+      ],
+      "boundingBox": {
+        "left": 287,
+        "top": 844,
+        "right": 712,
+        "bottom": 1022
+      }
+    },
+    {
+      "text": "1 34. Vegetarian Dish",
+      "lines": [
+        {
+          "text": "1 34. Vegetarian Dish",
+          "boundingBox": {
+            "left": 268,
+            "top": 980,
+            "right": 761,
+            "bottom": 1110
+          },
+          "confidence": 0.78602433
+        }
+      ],
+      "boundingBox": {
+        "left": 268,
+        "top": 980,
+        "right": 761,
+        "bottom": 1110
+      }
+    },
+    {
+      "text": "CREDITADE",
+      "lines": [
+        {
+          "text": "CREDITADE",
+          "boundingBox": {
+            "left": 114,
+            "top": 1491,
+            "right": 414,
+            "bottom": 1596
+          },
+          "confidence": 0.25520834
+        }
+      ],
+      "boundingBox": {
+        "left": 114,
+        "top": 1491,
+        "right": 414,
+        "bottom": 1596
+      }
+    },
+    {
+      "text": "$1995",
+      "lines": [
+        {
+          "text": "$1995",
+          "boundingBox": {
+            "left": 1107,
+            "top": 958,
+            "right": 1271,
+            "bottom": 1034
+          },
+          "confidence": 0.7445313
+        }
+      ],
+      "boundingBox": {
+        "left": 1107,
+        "top": 958,
+        "right": 1271,
+        "bottom": 1034
+      }
+    },
+    {
+      "text": "$20.95",
+      "lines": [
+        {
+          "text": "$20.95",
+          "boundingBox": {
+            "left": 1105,
+            "top": 1029,
+            "right": 1273,
+            "bottom": 1106
+          },
+          "confidence": 0.74869794
+        }
+      ],
+      "boundingBox": {
+        "left": 1105,
+        "top": 1029,
+        "right": 1273,
+        "bottom": 1106
+      }
+    },
+    {
+      "text": "$21.95",
+      "lines": [
+        {
+          "text": "$21.95",
+          "boundingBox": {
+            "left": 1101,
+            "top": 1102,
+            "right": 1270,
+            "bottom": 1182
+          },
+          "confidence": 0.73567706
+        }
+      ],
+      "boundingBox": {
+        "left": 1101,
+        "top": 1102,
+        "right": 1270,
+        "bottom": 1182
+      }
+    },
+    {
+      "text": "$62.85",
+      "lines": [
+        {
+          "text": "$62.85",
+          "boundingBox": {
+            "left": 1090,
+            "top": 1259,
+            "right": 1269,
+            "bottom": 1352
+          },
+          "confidence": 0.67057294
+        }
+      ],
+      "boundingBox": {
+        "left": 1090,
+        "top": 1259,
+        "right": 1269,
+        "bottom": 1352
+      }
+    },
+    {
+      "text": "S6.91",
+      "lines": [
+        {
+          "text": "S6.91",
+          "boundingBox": {
+            "left": 1114,
+            "top": 1350,
+            "right": 1263,
+            "bottom": 1440
+          },
+          "confidence": 0.64375
+        }
+      ],
+      "boundingBox": {
+        "left": 1114,
+        "top": 1350,
+        "right": 1263,
+        "bottom": 1440
+      }
+    },
+    {
+      "text": "$69",
+      "lines": [
+        {
+          "text": "$69",
+          "boundingBox": {
+            "left": 1097,
+            "top": 1522,
+            "right": 1188,
+            "bottom": 1605
+          },
+          "confidence": 0.6119792
+        }
+      ],
+      "boundingBox": {
+        "left": 1097,
+        "top": 1522,
+        "right": 1188,
+        "bottom": 1605
+      }
+    }
+  ]
+}

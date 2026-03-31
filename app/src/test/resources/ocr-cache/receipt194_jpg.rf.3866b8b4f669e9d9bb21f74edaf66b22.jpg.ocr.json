@@ -1,0 +1,524 @@
+{
+  "fullText": "Marie Cal lender's Restaurant\nStore #0134\n2131 Price St.\nPismo Beach, CA 93449\n(805) 773-0606\nwew.ncpfes.com\n111590 Becky\nTbl 2/1\nChk 1878\nNov30'14 06:35PM\n1 **CORNBREAD SVC\n2 TRIO- POT PIE 9.99\n2 C- PIE SLICE\n1 NO BEVERAGE\n1 SOFT DRINK\n8DAY CLUB $5\nSubtotal\nTax\n07:10PM Total\nGst 2\n0.00\n19.98\n0.00\n0.00\n2.79\n5.00-\n17.77\n1.42\n19.19\n***************\nIndul ge.. Take home a whole piel",
+  "blocks": [
+    {
+      "text": "Marie Cal lender's Restaurant\nStore #0134\n2131 Price St.\nPismo Beach, CA 93449\n(805) 773-0606\nwew.ncpfes.com",
+      "lines": [
+        {
+          "text": "Marie Cal lender's Restaurant",
+          "boundingBox": {
+            "left": 418,
+            "top": 159,
+            "right": 1138,
+            "bottom": 215
+          },
+          "confidence": 0.7926683
+        },
+        {
+          "text": "Store #0134",
+          "boundingBox": {
+            "left": 626,
+            "top": 212,
+            "right": 908,
+            "bottom": 260
+          },
+          "confidence": 0.7824219
+        },
+        {
+          "text": "2131 Price St.",
+          "boundingBox": {
+            "left": 598,
+            "top": 257,
+            "right": 946,
+            "bottom": 315
+          },
+          "confidence": 0.819987
+        },
+        {
+          "text": "Pismo Beach, CA 93449",
+          "boundingBox": {
+            "left": 508,
+            "top": 305,
+            "right": 1042,
+            "bottom": 367
+          },
+          "confidence": 0.8161892
+        },
+        {
+          "text": "(805) 773-0606",
+          "boundingBox": {
+            "left": 621,
+            "top": 356,
+            "right": 964,
+            "bottom": 417
+          },
+          "confidence": 0.7917668
+        },
+        {
+          "text": "wew.ncpfes.com",
+          "boundingBox": {
+            "left": 600,
+            "top": 413,
+            "right": 964,
+            "bottom": 469
+          },
+          "confidence": 0.6702009
+        }
+      ],
+      "boundingBox": {
+        "left": 418,
+        "top": 158,
+        "right": 1142,
+        "bottom": 472
+      }
+    },
+    {
+      "text": "111590 Becky",
+      "lines": [
+        {
+          "text": "111590 Becky",
+          "boundingBox": {
+            "left": 286,
+            "top": 523,
+            "right": 600,
+            "bottom": 570
+          },
+          "confidence": 0.9026989
+        }
+      ],
+      "boundingBox": {
+        "left": 286,
+        "top": 523,
+        "right": 600,
+        "bottom": 570
+      }
+    },
+    {
+      "text": "Tbl 2/1",
+      "lines": [
+        {
+          "text": "Tbl 2/1",
+          "boundingBox": {
+            "left": 257,
+            "top": 629,
+            "right": 438,
+            "bottom": 673
+          },
+          "confidence": 0.7421875
+        }
+      ],
+      "boundingBox": {
+        "left": 257,
+        "top": 629,
+        "right": 438,
+        "bottom": 673
+      }
+    },
+    {
+      "text": "Chk 1878\nNov30'14 06:35PM",
+      "lines": [
+        {
+          "text": "Chk 1878",
+          "boundingBox": {
+            "left": 680,
+            "top": 621,
+            "right": 890,
+            "bottom": 670
+          },
+          "confidence": 0.8683036
+        },
+        {
+          "text": "Nov30'14 06:35PM",
+          "boundingBox": {
+            "left": 574,
+            "top": 671,
+            "right": 998,
+            "bottom": 723
+          },
+          "confidence": 0.8299479
+        }
+      ],
+      "boundingBox": {
+        "left": 573,
+        "top": 619,
+        "right": 998,
+        "bottom": 724
+      }
+    },
+    {
+      "text": "1 **CORNBREAD SVC\n2 TRIO- POT PIE 9.99\n2 C- PIE SLICE\n1 NO BEVERAGE\n1 SOFT DRINK\n8DAY CLUB $5",
+      "lines": [
+        {
+          "text": "1 **CORNBREAD SVC",
+          "boundingBox": {
+            "left": 330,
+            "top": 774,
+            "right": 763,
+            "bottom": 838
+          },
+          "confidence": 0.6557292
+        },
+        {
+          "text": "2 TRIO- POT PIE 9.99",
+          "boundingBox": {
+            "left": 310,
+            "top": 823,
+            "right": 893,
+            "bottom": 891
+          },
+          "confidence": 0.79296875
+        },
+        {
+          "text": "2 C- PIE SLICE",
+          "boundingBox": {
+            "left": 338,
+            "top": 881,
+            "right": 680,
+            "bottom": 940
+          },
+          "confidence": 0.76846594
+        },
+        {
+          "text": "1 NO BEVERAGE",
+          "boundingBox": {
+            "left": 331,
+            "top": 934,
+            "right": 655,
+            "bottom": 998
+          },
+          "confidence": 0.77982956
+        },
+        {
+          "text": "1 SOFT DRINK",
+          "boundingBox": {
+            "left": 334,
+            "top": 988,
+            "right": 628,
+            "bottom": 1046
+          },
+          "confidence": 0.8160156
+        },
+        {
+          "text": "8DAY CLUB $5",
+          "boundingBox": {
+            "left": 362,
+            "top": 1044,
+            "right": 682,
+            "bottom": 1097
+          },
+          "confidence": 0.7355469
+        }
+      ],
+      "boundingBox": {
+        "left": 309,
+        "top": 769,
+        "right": 895,
+        "bottom": 1099
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 362,
+            "top": 1153,
+            "right": 566,
+            "bottom": 1203
+          },
+          "confidence": 0.80078125
+        }
+      ],
+      "boundingBox": {
+        "left": 362,
+        "top": 1153,
+        "right": 566,
+        "bottom": 1203
+      }
+    },
+    {
+      "text": "Tax\n07:10PM Total",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 363,
+            "top": 1213,
+            "right": 442,
+            "bottom": 1260
+          },
+          "confidence": 0.7838542
+        },
+        {
+          "text": "07:10PM Total",
+          "boundingBox": {
+            "left": 246,
+            "top": 1261,
+            "right": 593,
+            "bottom": 1321
+          },
+          "confidence": 0.8076172
+        }
+      ],
+      "boundingBox": {
+        "left": 245,
+        "top": 1210,
+        "right": 593,
+        "bottom": 1321
+      }
+    },
+    {
+      "text": "Gst 2",
+      "lines": [
+        {
+          "text": "Gst 2",
+          "boundingBox": {
+            "left": 1185,
+            "top": 619,
+            "right": 1320,
+            "bottom": 662
+          },
+          "confidence": 0.7480469
+        }
+      ],
+      "boundingBox": {
+        "left": 1185,
+        "top": 619,
+        "right": 1320,
+        "bottom": 662
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 1136,
+            "top": 776,
+            "right": 1246,
+            "bottom": 822
+          },
+          "confidence": 0.7402344
+        }
+      ],
+      "boundingBox": {
+        "left": 1136,
+        "top": 776,
+        "right": 1246,
+        "bottom": 822
+      }
+    },
+    {
+      "text": "19.98",
+      "lines": [
+        {
+          "text": "19.98",
+          "boundingBox": {
+            "left": 1114,
+            "top": 828,
+            "right": 1244,
+            "bottom": 876
+          },
+          "confidence": 0.90703124
+        }
+      ],
+      "boundingBox": {
+        "left": 1114,
+        "top": 828,
+        "right": 1244,
+        "bottom": 876
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 1138,
+            "top": 874,
+            "right": 1248,
+            "bottom": 933
+          },
+          "confidence": 0.7236328
+        }
+      ],
+      "boundingBox": {
+        "left": 1138,
+        "top": 874,
+        "right": 1248,
+        "bottom": 933
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 1140,
+            "top": 934,
+            "right": 1248,
+            "bottom": 980
+          },
+          "confidence": 0.8066406
+        }
+      ],
+      "boundingBox": {
+        "left": 1140,
+        "top": 934,
+        "right": 1248,
+        "bottom": 980
+      }
+    },
+    {
+      "text": "2.79",
+      "lines": [
+        {
+          "text": "2.79",
+          "boundingBox": {
+            "left": 1140,
+            "top": 988,
+            "right": 1252,
+            "bottom": 1036
+          },
+          "confidence": 0.85058594
+        }
+      ],
+      "boundingBox": {
+        "left": 1140,
+        "top": 988,
+        "right": 1252,
+        "bottom": 1036
+      }
+    },
+    {
+      "text": "5.00-",
+      "lines": [
+        {
+          "text": "5.00-",
+          "boundingBox": {
+            "left": 1141,
+            "top": 1036,
+            "right": 1281,
+            "bottom": 1098
+          },
+          "confidence": 0.80625
+        }
+      ],
+      "boundingBox": {
+        "left": 1141,
+        "top": 1036,
+        "right": 1281,
+        "bottom": 1098
+      }
+    },
+    {
+      "text": "17.77",
+      "lines": [
+        {
+          "text": "17.77",
+          "boundingBox": {
+            "left": 1122,
+            "top": 1152,
+            "right": 1256,
+            "bottom": 1200
+          },
+          "confidence": 0.8804687
+        }
+      ],
+      "boundingBox": {
+        "left": 1122,
+        "top": 1152,
+        "right": 1256,
+        "bottom": 1200
+      }
+    },
+    {
+      "text": "1.42",
+      "lines": [
+        {
+          "text": "1.42",
+          "boundingBox": {
+            "left": 1150,
+            "top": 1208,
+            "right": 1256,
+            "bottom": 1256
+          },
+          "confidence": 0.84277344
+        }
+      ],
+      "boundingBox": {
+        "left": 1150,
+        "top": 1208,
+        "right": 1256,
+        "bottom": 1256
+      }
+    },
+    {
+      "text": "19.19",
+      "lines": [
+        {
+          "text": "19.19",
+          "boundingBox": {
+            "left": 993,
+            "top": 1264,
+            "right": 1257,
+            "bottom": 1309
+          },
+          "confidence": 0.8140625
+        }
+      ],
+      "boundingBox": {
+        "left": 993,
+        "top": 1264,
+        "right": 1257,
+        "bottom": 1309
+      }
+    },
+    {
+      "text": "***************",
+      "lines": [
+        {
+          "text": "***************",
+          "boundingBox": {
+            "left": 360,
+            "top": 1385,
+            "right": 1167,
+            "bottom": 1427
+          },
+          "confidence": 0.5393229
+        }
+      ],
+      "boundingBox": {
+        "left": 360,
+        "top": 1385,
+        "right": 1167,
+        "bottom": 1427
+      }
+    },
+    {
+      "text": "Indul ge.. Take home a whole piel",
+      "lines": [
+        {
+          "text": "Indul ge.. Take home a whole piel",
+          "boundingBox": {
+            "left": 379,
+            "top": 1473,
+            "right": 1225,
+            "bottom": 1552
+          },
+          "confidence": 0.6921296
+        }
+      ],
+      "boundingBox": {
+        "left": 379,
+        "top": 1473,
+        "right": 1225,
+        "bottom": 1552
+      }
+    }
+  ]
+}

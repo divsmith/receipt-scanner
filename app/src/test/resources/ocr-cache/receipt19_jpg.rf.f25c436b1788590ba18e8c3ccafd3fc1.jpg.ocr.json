@@ -1,0 +1,706 @@
+{
+  "fullText": "Ticket #215406\nStation:1\nItem\n4/24/2016 6:30:31 PM\n100027\nDescr iption\nPARIS\n100026\nSubtotal\nLE CLASSIQUE\nTax\n4327 N. Expressway 77/83\n956-350-8686\nTotal\nBrownsville, TX 78521\n956-543-5089\nTender :\nCASH\nUMIX\nChange (CASH)\nQty Price\n1\nUser : KRIST\nSales Rep KRIST\n1\n5.25\n4.95\nNumber of items purchased:2\nTotal\n5. 25\n4.95\n10. 20\n0.84\n11.04\n20. 00\n-8.96",
+  "blocks": [
+    {
+      "text": "Ticket #215406\nStation:1",
+      "lines": [
+        {
+          "text": "Ticket #215406",
+          "boundingBox": {
+            "left": 306,
+            "top": 349,
+            "right": 652,
+            "bottom": 395
+          },
+          "confidence": 0.8215144
+        },
+        {
+          "text": "Station:1",
+          "boundingBox": {
+            "left": 302,
+            "top": 402,
+            "right": 522,
+            "bottom": 436
+          },
+          "confidence": 0.78342015
+        }
+      ],
+      "boundingBox": {
+        "left": 301,
+        "top": 349,
+        "right": 653,
+        "bottom": 438
+      }
+    },
+    {
+      "text": "Item",
+      "lines": [
+        {
+          "text": "Item",
+          "boundingBox": {
+            "left": 302,
+            "top": 536,
+            "right": 398,
+            "bottom": 568
+          },
+          "confidence": 0.7841797
+        }
+      ],
+      "boundingBox": {
+        "left": 302,
+        "top": 536,
+        "right": 398,
+        "bottom": 568
+      }
+    },
+    {
+      "text": "4/24/2016 6:30:31 PM",
+      "lines": [
+        {
+          "text": "4/24/2016 6:30:31 PM",
+          "boundingBox": {
+            "left": 298,
+            "top": 436,
+            "right": 804,
+            "bottom": 481
+          },
+          "confidence": 0.87543404
+        }
+      ],
+      "boundingBox": {
+        "left": 298,
+        "top": 436,
+        "right": 804,
+        "bottom": 481
+      }
+    },
+    {
+      "text": "100027",
+      "lines": [
+        {
+          "text": "100027",
+          "boundingBox": {
+            "left": 296,
+            "top": 670,
+            "right": 446,
+            "bottom": 704
+          },
+          "confidence": 0.9088542
+        }
+      ],
+      "boundingBox": {
+        "left": 296,
+        "top": 670,
+        "right": 446,
+        "bottom": 704
+      }
+    },
+    {
+      "text": "Descr iption",
+      "lines": [
+        {
+          "text": "Descr iption",
+          "boundingBox": {
+            "left": 343,
+            "top": 575,
+            "right": 600,
+            "bottom": 617
+          },
+          "confidence": 0.85546875
+        }
+      ],
+      "boundingBox": {
+        "left": 343,
+        "top": 575,
+        "right": 600,
+        "bottom": 617
+      }
+    },
+    {
+      "text": "PARIS\n100026",
+      "lines": [
+        {
+          "text": "PARIS",
+          "boundingBox": {
+            "left": 312,
+            "top": 714,
+            "right": 444,
+            "bottom": 754
+          },
+          "confidence": 0.8460938
+        },
+        {
+          "text": "100026",
+          "boundingBox": {
+            "left": 290,
+            "top": 756,
+            "right": 442,
+            "bottom": 804
+          },
+          "confidence": 0.88346356
+        }
+      ],
+      "boundingBox": {
+        "left": 289,
+        "top": 711,
+        "right": 445,
+        "bottom": 804
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 276,
+            "top": 908,
+            "right": 482,
+            "bottom": 944
+          },
+          "confidence": 0.86816406
+        }
+      ],
+      "boundingBox": {
+        "left": 276,
+        "top": 908,
+        "right": 482,
+        "bottom": 944
+      }
+    },
+    {
+      "text": "LE CLASSIQUE",
+      "lines": [
+        {
+          "text": "LE CLASSIQUE",
+          "boundingBox": {
+            "left": 308,
+            "top": 806,
+            "right": 622,
+            "bottom": 849
+          },
+          "confidence": 0.7922585
+        }
+      ],
+      "boundingBox": {
+        "left": 308,
+        "top": 806,
+        "right": 622,
+        "bottom": 849
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 274,
+            "top": 956,
+            "right": 352,
+            "bottom": 994
+          },
+          "confidence": 0.7942708
+        }
+      ],
+      "boundingBox": {
+        "left": 274,
+        "top": 956,
+        "right": 352,
+        "bottom": 994
+      }
+    },
+    {
+      "text": "4327 N. Expressway 77/83\n956-350-8686",
+      "lines": [
+        {
+          "text": "4327 N. Expressway 77/83",
+          "boundingBox": {
+            "left": 505,
+            "top": 174,
+            "right": 1101,
+            "bottom": 217
+          },
+          "confidence": 0.8515625
+        },
+        {
+          "text": "956-350-8686",
+          "boundingBox": {
+            "left": 655,
+            "top": 215,
+            "right": 953,
+            "bottom": 256
+          },
+          "confidence": 0.83723956
+        }
+      ],
+      "boundingBox": {
+        "left": 505,
+        "top": 174,
+        "right": 1102,
+        "bottom": 258
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 266,
+            "top": 1056,
+            "right": 394,
+            "bottom": 1096
+          },
+          "confidence": 0.84375
+        }
+      ],
+      "boundingBox": {
+        "left": 266,
+        "top": 1056,
+        "right": 394,
+        "bottom": 1096
+      }
+    },
+    {
+      "text": "Brownsville, TX 78521\n956-543-5089",
+      "lines": [
+        {
+          "text": "Brownsville, TX 78521",
+          "boundingBox": {
+            "left": 554,
+            "top": 253,
+            "right": 1074,
+            "bottom": 303
+          },
+          "confidence": 0.7942023
+        },
+        {
+          "text": "956-543-5089",
+          "boundingBox": {
+            "left": 656,
+            "top": 301,
+            "right": 955,
+            "bottom": 347
+          },
+          "confidence": 0.867513
+        }
+      ],
+      "boundingBox": {
+        "left": 554,
+        "top": 251,
+        "right": 1076,
+        "bottom": 350
+      }
+    },
+    {
+      "text": "Tender :",
+      "lines": [
+        {
+          "text": "Tender :",
+          "boundingBox": {
+            "left": 260,
+            "top": 1160,
+            "right": 442,
+            "bottom": 1200
+          },
+          "confidence": 0.81696427
+        }
+      ],
+      "boundingBox": {
+        "left": 260,
+        "top": 1160,
+        "right": 442,
+        "bottom": 1200
+      }
+    },
+    {
+      "text": "CASH",
+      "lines": [
+        {
+          "text": "CASH",
+          "boundingBox": {
+            "left": 250,
+            "top": 1214,
+            "right": 364,
+            "bottom": 1256
+          },
+          "confidence": 0.7783203
+        }
+      ],
+      "boundingBox": {
+        "left": 250,
+        "top": 1214,
+        "right": 364,
+        "bottom": 1256
+      }
+    },
+    {
+      "text": "UMIX",
+      "lines": [
+        {
+          "text": "UMIX",
+          "boundingBox": {
+            "left": 778,
+            "top": 98,
+            "right": 873,
+            "bottom": 130
+          },
+          "confidence": 0.8496094
+        }
+      ],
+      "boundingBox": {
+        "left": 778,
+        "top": 98,
+        "right": 873,
+        "bottom": 130
+      }
+    },
+    {
+      "text": "Change (CASH)",
+      "lines": [
+        {
+          "text": "Change (CASH)",
+          "boundingBox": {
+            "left": 242,
+            "top": 1322,
+            "right": 604,
+            "bottom": 1368
+          },
+          "confidence": 0.8466797
+        }
+      ],
+      "boundingBox": {
+        "left": 242,
+        "top": 1322,
+        "right": 604,
+        "bottom": 1368
+      }
+    },
+    {
+      "text": "Qty Price",
+      "lines": [
+        {
+          "text": "Qty Price",
+          "boundingBox": {
+            "left": 809,
+            "top": 530,
+            "right": 1090,
+            "bottom": 565
+          },
+          "confidence": 0.7841797
+        }
+      ],
+      "boundingBox": {
+        "left": 809,
+        "top": 530,
+        "right": 1090,
+        "bottom": 565
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 867,
+            "top": 668,
+            "right": 881,
+            "bottom": 701
+          },
+          "confidence": 0.5859375
+        }
+      ],
+      "boundingBox": {
+        "left": 867,
+        "top": 668,
+        "right": 881,
+        "bottom": 701
+      }
+    },
+    {
+      "text": "User : KRIST\nSales Rep KRIST",
+      "lines": [
+        {
+          "text": "User : KRIST",
+          "boundingBox": {
+            "left": 1112,
+            "top": 344,
+            "right": 1358,
+            "bottom": 382
+          },
+          "confidence": 0.79609376
+        },
+        {
+          "text": "Sales Rep KRIST",
+          "boundingBox": {
+            "left": 984,
+            "top": 388,
+            "right": 1362,
+            "bottom": 433
+          },
+          "confidence": 0.77373797
+        }
+      ],
+      "boundingBox": {
+        "left": 983,
+        "top": 343,
+        "right": 1362,
+        "bottom": 433
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 869,
+            "top": 762,
+            "right": 883,
+            "bottom": 795
+          },
+          "confidence": 0.7578125
+        }
+      ],
+      "boundingBox": {
+        "left": 869,
+        "top": 762,
+        "right": 883,
+        "bottom": 795
+      }
+    },
+    {
+      "text": "5.25",
+      "lines": [
+        {
+          "text": "5.25",
+          "boundingBox": {
+            "left": 992,
+            "top": 668,
+            "right": 1096,
+            "bottom": 700
+          },
+          "confidence": 0.86621094
+        }
+      ],
+      "boundingBox": {
+        "left": 992,
+        "top": 668,
+        "right": 1096,
+        "bottom": 700
+      }
+    },
+    {
+      "text": "4.95",
+      "lines": [
+        {
+          "text": "4.95",
+          "boundingBox": {
+            "left": 993,
+            "top": 757,
+            "right": 1098,
+            "bottom": 796
+          },
+          "confidence": 0.8925781
+        }
+      ],
+      "boundingBox": {
+        "left": 993,
+        "top": 757,
+        "right": 1098,
+        "bottom": 796
+      }
+    },
+    {
+      "text": "Number of items purchased:2",
+      "lines": [
+        {
+          "text": "Number of items purchased:2",
+          "boundingBox": {
+            "left": 230,
+            "top": 1548,
+            "right": 1032,
+            "bottom": 1600
+          },
+          "confidence": 0.78434247
+        }
+      ],
+      "boundingBox": {
+        "left": 230,
+        "top": 1548,
+        "right": 1032,
+        "bottom": 1600
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 1248,
+            "top": 530,
+            "right": 1366,
+            "bottom": 562
+          },
+          "confidence": 0.7796875
+        }
+      ],
+      "boundingBox": {
+        "left": 1248,
+        "top": 530,
+        "right": 1366,
+        "bottom": 562
+      }
+    },
+    {
+      "text": "5. 25",
+      "lines": [
+        {
+          "text": "5. 25",
+          "boundingBox": {
+            "left": 1280,
+            "top": 666,
+            "right": 1384,
+            "bottom": 700
+          },
+          "confidence": 0.90527344
+        }
+      ],
+      "boundingBox": {
+        "left": 1280,
+        "top": 666,
+        "right": 1384,
+        "bottom": 700
+      }
+    },
+    {
+      "text": "4.95",
+      "lines": [
+        {
+          "text": "4.95",
+          "boundingBox": {
+            "left": 1285,
+            "top": 757,
+            "right": 1390,
+            "bottom": 794
+          },
+          "confidence": 0.92089844
+        }
+      ],
+      "boundingBox": {
+        "left": 1285,
+        "top": 757,
+        "right": 1390,
+        "bottom": 794
+      }
+    },
+    {
+      "text": "10. 20",
+      "lines": [
+        {
+          "text": "10. 20",
+          "boundingBox": {
+            "left": 1274,
+            "top": 902,
+            "right": 1406,
+            "bottom": 938
+          },
+          "confidence": 0.8703125
+        }
+      ],
+      "boundingBox": {
+        "left": 1274,
+        "top": 902,
+        "right": 1406,
+        "bottom": 938
+      }
+    },
+    {
+      "text": "0.84",
+      "lines": [
+        {
+          "text": "0.84",
+          "boundingBox": {
+            "left": 1300,
+            "top": 952,
+            "right": 1408,
+            "bottom": 988
+          },
+          "confidence": 0.8769531
+        }
+      ],
+      "boundingBox": {
+        "left": 1300,
+        "top": 952,
+        "right": 1408,
+        "bottom": 988
+      }
+    },
+    {
+      "text": "11.04",
+      "lines": [
+        {
+          "text": "11.04",
+          "boundingBox": {
+            "left": 1285,
+            "top": 1051,
+            "right": 1418,
+            "bottom": 1089
+          },
+          "confidence": 0.8726562
+        }
+      ],
+      "boundingBox": {
+        "left": 1285,
+        "top": 1051,
+        "right": 1418,
+        "bottom": 1089
+      }
+    },
+    {
+      "text": "20. 00",
+      "lines": [
+        {
+          "text": "20. 00",
+          "boundingBox": {
+            "left": 1298,
+            "top": 1205,
+            "right": 1436,
+            "bottom": 1247
+          },
+          "confidence": 0.8953125
+        }
+      ],
+      "boundingBox": {
+        "left": 1298,
+        "top": 1205,
+        "right": 1436,
+        "bottom": 1247
+      }
+    },
+    {
+      "text": "-8.96",
+      "lines": [
+        {
+          "text": "-8.96",
+          "boundingBox": {
+            "left": 1312,
+            "top": 1318,
+            "right": 1452,
+            "bottom": 1358
+          },
+          "confidence": 0.8140625
+        }
+      ],
+      "boundingBox": {
+        "left": 1312,
+        "top": 1318,
+        "right": 1452,
+        "bottom": 1358
+      }
+    }
+  ]
+}

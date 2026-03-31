@@ -1,0 +1,391 @@
+{
+  "fullText": "94-450 Ukee St\nWaipahu, HI 96797\n(808) 846-0802\nServer: Charito\nOrder #: 6879\nBBQ\nGolden Coin\n1 Plt Lunch 2 Choices\nPINAPAITAN\nBar Subtotal:\nFood Subtotal:\nTax\n1:\nCash Tendere\nStatin: 1\nTake Out\n9.79\n0.00\n9.79\n0.46\n15.00",
+  "blocks": [
+    {
+      "text": "94-450 Ukee St\nWaipahu, HI 96797\n(808) 846-0802",
+      "lines": [
+        {
+          "text": "94-450 Ukee St",
+          "boundingBox": {
+            "left": 738,
+            "top": 206,
+            "right": 1034,
+            "bottom": 266
+          },
+          "confidence": 0.81152344
+        },
+        {
+          "text": "Waipahu, HI 96797",
+          "boundingBox": {
+            "left": 692,
+            "top": 261,
+            "right": 1060,
+            "bottom": 338
+          },
+          "confidence": 0.7528646
+        },
+        {
+          "text": "(808) 846-0802",
+          "boundingBox": {
+            "left": 736,
+            "top": 329,
+            "right": 1041,
+            "bottom": 405
+          },
+          "confidence": 0.7364784
+        }
+      ],
+      "boundingBox": {
+        "left": 688,
+        "top": 202,
+        "right": 1063,
+        "bottom": 408
+      }
+    },
+    {
+      "text": "Server: Charito",
+      "lines": [
+        {
+          "text": "Server: Charito",
+          "boundingBox": {
+            "left": 458,
+            "top": 481,
+            "right": 777,
+            "bottom": 555
+          },
+          "confidence": 0.81612724
+        }
+      ],
+      "boundingBox": {
+        "left": 458,
+        "top": 481,
+        "right": 777,
+        "bottom": 555
+      }
+    },
+    {
+      "text": "Order #: 6879",
+      "lines": [
+        {
+          "text": "Order #: 6879",
+          "boundingBox": {
+            "left": 458,
+            "top": 628,
+            "right": 730,
+            "bottom": 694
+          },
+          "confidence": 0.809304
+        }
+      ],
+      "boundingBox": {
+        "left": 458,
+        "top": 628,
+        "right": 730,
+        "bottom": 694
+      }
+    },
+    {
+      "text": "BBQ",
+      "lines": [
+        {
+          "text": "BBQ",
+          "boundingBox": {
+            "left": 508,
+            "top": 964,
+            "right": 568,
+            "bottom": 1016
+          },
+          "confidence": 0.70963544
+        }
+      ],
+      "boundingBox": {
+        "left": 508,
+        "top": 964,
+        "right": 568,
+        "bottom": 1016
+      }
+    },
+    {
+      "text": "Golden Coin",
+      "lines": [
+        {
+          "text": "Golden Coin",
+          "boundingBox": {
+            "left": 760,
+            "top": 122,
+            "right": 1002,
+            "bottom": 220
+          },
+          "confidence": 0.61679685
+        }
+      ],
+      "boundingBox": {
+        "left": 760,
+        "top": 122,
+        "right": 1002,
+        "bottom": 220
+      }
+    },
+    {
+      "text": "1 Plt Lunch 2 Choices",
+      "lines": [
+        {
+          "text": "1 Plt Lunch 2 Choices",
+          "boundingBox": {
+            "left": 492,
+            "top": 883,
+            "right": 908,
+            "bottom": 951
+          },
+          "confidence": 0.7734375
+        }
+      ],
+      "boundingBox": {
+        "left": 492,
+        "top": 883,
+        "right": 908,
+        "bottom": 951
+      }
+    },
+    {
+      "text": "PINAPAITAN",
+      "lines": [
+        {
+          "text": "PINAPAITAN",
+          "boundingBox": {
+            "left": 510,
+            "top": 1034,
+            "right": 718,
+            "bottom": 1084
+          },
+          "confidence": 0.79648435
+        }
+      ],
+      "boundingBox": {
+        "left": 510,
+        "top": 1034,
+        "right": 718,
+        "bottom": 1084
+      }
+    },
+    {
+      "text": "Bar Subtotal:\nFood Subtotal:\nTax\n1:",
+      "lines": [
+        {
+          "text": "Bar Subtotal:",
+          "boundingBox": {
+            "left": 473,
+            "top": 1159,
+            "right": 739,
+            "bottom": 1219
+          },
+          "confidence": 0.80859375
+        },
+        {
+          "text": "Food Subtotal:",
+          "boundingBox": {
+            "left": 483,
+            "top": 1221,
+            "right": 766,
+            "bottom": 1279
+          },
+          "confidence": 0.81640625
+        },
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 502,
+            "top": 1284,
+            "right": 551,
+            "bottom": 1328
+          },
+          "confidence": 0.7942708
+        },
+        {
+          "text": "1:",
+          "boundingBox": {
+            "left": 534,
+            "top": 1284,
+            "right": 610,
+            "bottom": 1328
+          },
+          "confidence": 0.7519531
+        }
+      ],
+      "boundingBox": {
+        "left": 471,
+        "top": 1159,
+        "right": 766,
+        "bottom": 1328
+      }
+    },
+    {
+      "text": "Cash Tendere",
+      "lines": [
+        {
+          "text": "Cash Tendere",
+          "boundingBox": {
+            "left": 529,
+            "top": 1513,
+            "right": 746,
+            "bottom": 1576
+          },
+          "confidence": 0.70916194
+        }
+      ],
+      "boundingBox": {
+        "left": 529,
+        "top": 1513,
+        "right": 746,
+        "bottom": 1576
+      }
+    },
+    {
+      "text": "Statin: 1",
+      "lines": [
+        {
+          "text": "Statin: 1",
+          "boundingBox": {
+            "left": 1112,
+            "top": 455,
+            "right": 1345,
+            "bottom": 520
+          },
+          "confidence": 0.79345703
+        }
+      ],
+      "boundingBox": {
+        "left": 1112,
+        "top": 455,
+        "right": 1345,
+        "bottom": 520
+      }
+    },
+    {
+      "text": "Take Out",
+      "lines": [
+        {
+          "text": "Take Out",
+          "boundingBox": {
+            "left": 1162,
+            "top": 606,
+            "right": 1348,
+            "bottom": 667
+          },
+          "confidence": 0.7126116
+        }
+      ],
+      "boundingBox": {
+        "left": 1162,
+        "top": 606,
+        "right": 1348,
+        "bottom": 667
+      }
+    },
+    {
+      "text": "9.79",
+      "lines": [
+        {
+          "text": "9.79",
+          "boundingBox": {
+            "left": 1258,
+            "top": 882,
+            "right": 1352,
+            "bottom": 936
+          },
+          "confidence": 0.87109375
+        }
+      ],
+      "boundingBox": {
+        "left": 1258,
+        "top": 882,
+        "right": 1352,
+        "bottom": 936
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 1248,
+            "top": 1160,
+            "right": 1336,
+            "bottom": 1209
+          },
+          "confidence": 0.7597656
+        }
+      ],
+      "boundingBox": {
+        "left": 1248,
+        "top": 1160,
+        "right": 1336,
+        "bottom": 1209
+      }
+    },
+    {
+      "text": "9.79",
+      "lines": [
+        {
+          "text": "9.79",
+          "boundingBox": {
+            "left": 1246,
+            "top": 1222,
+            "right": 1332,
+            "bottom": 1270
+          },
+          "confidence": 0.9199219
+        }
+      ],
+      "boundingBox": {
+        "left": 1246,
+        "top": 1222,
+        "right": 1332,
+        "bottom": 1270
+      }
+    },
+    {
+      "text": "0.46",
+      "lines": [
+        {
+          "text": "0.46",
+          "boundingBox": {
+            "left": 1239,
+            "top": 1280,
+            "right": 1326,
+            "bottom": 1329
+          },
+          "confidence": 0.6738281
+        }
+      ],
+      "boundingBox": {
+        "left": 1239,
+        "top": 1280,
+        "right": 1326,
+        "bottom": 1329
+      }
+    },
+    {
+      "text": "15.00",
+      "lines": [
+        {
+          "text": "15.00",
+          "boundingBox": {
+            "left": 1212,
+            "top": 1532,
+            "right": 1309,
+            "bottom": 1581
+          },
+          "confidence": 0.88125
+        }
+      ],
+      "boundingBox": {
+        "left": 1212,
+        "top": 1532,
+        "right": 1309,
+        "bottom": 1581
+      }
+    }
+  ]
+}

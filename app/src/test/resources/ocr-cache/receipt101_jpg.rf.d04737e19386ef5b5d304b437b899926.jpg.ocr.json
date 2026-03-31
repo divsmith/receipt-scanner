@@ -1,0 +1,712 @@
+{
+  "fullText": "Server: Pablo\nTable 40/1\nGuests: 3\nReprint #: 1\nCoffee\nEnmoladas with Meat\npollo\nMexican Restaurant & Bar\n25 West San Fernando St.\nSan Jose, CA 95113\n(408) 283-9595\nChicken Tenders\nFlautas Chicken\nColoradito\nSubtotal\nTax\nTotal\nGratuity 18.00%\nTotal\nBalance Due\n12/29/2017\n1:17 PM\n30001\n3.25\n14.95\n!! Become a friend of us on\nFACEBO0K to receive news of\nevents & special offers !!\n!! THANK YOU FOR COMING !!\n5.95\n9.95\n15.95\n50.05\n5.46\n55.51\n64.52\n9.01\n64.52\n0\nT\nM",
+  "blocks": [
+    {
+      "text": "Server: Pablo\nTable 40/1\nGuests: 3\nReprint #: 1",
+      "lines": [
+        {
+          "text": "Server: Pablo",
+          "boundingBox": {
+            "left": 105,
+            "top": 254,
+            "right": 415,
+            "bottom": 304
+          },
+          "confidence": 0.8671875
+        },
+        {
+          "text": "Table 40/1",
+          "boundingBox": {
+            "left": 86,
+            "top": 304,
+            "right": 334,
+            "bottom": 349
+          },
+          "confidence": 0.88671875
+        },
+        {
+          "text": "Guests: 3",
+          "boundingBox": {
+            "left": 88,
+            "top": 350,
+            "right": 317,
+            "bottom": 397
+          },
+          "confidence": 0.8676758
+        },
+        {
+          "text": "Reprint #: 1",
+          "boundingBox": {
+            "left": 90,
+            "top": 394,
+            "right": 389,
+            "bottom": 447
+          },
+          "confidence": 0.8449219
+        }
+      ],
+      "boundingBox": {
+        "left": 85,
+        "top": 252,
+        "right": 419,
+        "bottom": 447
+      }
+    },
+    {
+      "text": "Coffee",
+      "lines": [
+        {
+          "text": "Coffee",
+          "boundingBox": {
+            "left": 94,
+            "top": 494,
+            "right": 244,
+            "bottom": 534
+          },
+          "confidence": 0.9277344
+        }
+      ],
+      "boundingBox": {
+        "left": 94,
+        "top": 494,
+        "right": 244,
+        "bottom": 534
+      }
+    },
+    {
+      "text": "Enmoladas with Meat\npollo",
+      "lines": [
+        {
+          "text": "Enmoladas with Meat",
+          "boundingBox": {
+            "left": 98,
+            "top": 531,
+            "right": 580,
+            "bottom": 579
+          },
+          "confidence": 0.87454045
+        },
+        {
+          "text": "pollo",
+          "boundingBox": {
+            "left": 146,
+            "top": 583,
+            "right": 275,
+            "bottom": 630
+          },
+          "confidence": 0.7953125
+        }
+      ],
+      "boundingBox": {
+        "left": 97,
+        "top": 518,
+        "right": 584,
+        "bottom": 632
+      }
+    },
+    {
+      "text": "Mexican Restaurant & Bar\n25 West San Fernando St.\nSan Jose, CA 95113\n(408) 283-9595",
+      "lines": [
+        {
+          "text": "Mexican Restaurant & Bar",
+          "boundingBox": {
+            "left": 304,
+            "top": 12,
+            "right": 908,
+            "bottom": 65
+          },
+          "confidence": 0.89769346
+        },
+        {
+          "text": "25 West San Fernando St.",
+          "boundingBox": {
+            "left": 306,
+            "top": 60,
+            "right": 901,
+            "bottom": 110
+          },
+          "confidence": 0.8570312
+        },
+        {
+          "text": "San Jose, CA 95113",
+          "boundingBox": {
+            "left": 386,
+            "top": 106,
+            "right": 839,
+            "bottom": 159
+          },
+          "confidence": 0.8544271
+        },
+        {
+          "text": "(408) 283-9595",
+          "boundingBox": {
+            "left": 457,
+            "top": 151,
+            "right": 791,
+            "bottom": 205
+          },
+          "confidence": 0.8951322
+        }
+      ],
+      "boundingBox": {
+        "left": 304,
+        "top": 12,
+        "right": 912,
+        "bottom": 209
+      }
+    },
+    {
+      "text": "Chicken Tenders\nFlautas Chicken\nColoradito",
+      "lines": [
+        {
+          "text": "Chicken Tenders",
+          "boundingBox": {
+            "left": 96,
+            "top": 628,
+            "right": 485,
+            "bottom": 675
+          },
+          "confidence": 0.8604911
+        },
+        {
+          "text": "Flautas Chicken",
+          "boundingBox": {
+            "left": 120,
+            "top": 673,
+            "right": 487,
+            "bottom": 727
+          },
+          "confidence": 0.88643974
+        },
+        {
+          "text": "Coloradito",
+          "boundingBox": {
+            "left": 98,
+            "top": 725,
+            "right": 357,
+            "bottom": 771
+          },
+          "confidence": 0.8691406
+        }
+      ],
+      "boundingBox": {
+        "left": 95,
+        "top": 626,
+        "right": 488,
+        "bottom": 771
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 114,
+            "top": 818,
+            "right": 317,
+            "bottom": 872
+          },
+          "confidence": 0.9008789
+        }
+      ],
+      "boundingBox": {
+        "left": 114,
+        "top": 818,
+        "right": 317,
+        "bottom": 872
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 99,
+            "top": 877,
+            "right": 175,
+            "bottom": 912
+          },
+          "confidence": 0.78515625
+        }
+      ],
+      "boundingBox": {
+        "left": 99,
+        "top": 877,
+        "right": 175,
+        "bottom": 912
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 100,
+            "top": 971,
+            "right": 224,
+            "bottom": 1013
+          },
+          "confidence": 0.815625
+        }
+      ],
+      "boundingBox": {
+        "left": 100,
+        "top": 971,
+        "right": 224,
+        "bottom": 1013
+      }
+    },
+    {
+      "text": "Gratuity 18.00%",
+      "lines": [
+        {
+          "text": "Gratuity 18.00%",
+          "boundingBox": {
+            "left": 98,
+            "top": 1009,
+            "right": 499,
+            "bottom": 1069
+          },
+          "confidence": 0.8825335
+        }
+      ],
+      "boundingBox": {
+        "left": 98,
+        "top": 1009,
+        "right": 499,
+        "bottom": 1069
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 102,
+            "top": 1072,
+            "right": 220,
+            "bottom": 1112
+          },
+          "confidence": 0.803125
+        }
+      ],
+      "boundingBox": {
+        "left": 102,
+        "top": 1072,
+        "right": 220,
+        "bottom": 1112
+      }
+    },
+    {
+      "text": "Balance Due",
+      "lines": [
+        {
+          "text": "Balance Due",
+          "boundingBox": {
+            "left": 100,
+            "top": 1209,
+            "right": 689,
+            "bottom": 1265
+          },
+          "confidence": 0.7902344
+        }
+      ],
+      "boundingBox": {
+        "left": 100,
+        "top": 1209,
+        "right": 689,
+        "bottom": 1265
+      }
+    },
+    {
+      "text": "12/29/2017\n1:17 PM\n30001",
+      "lines": [
+        {
+          "text": "12/29/2017",
+          "boundingBox": {
+            "left": 904,
+            "top": 240,
+            "right": 1145,
+            "bottom": 287
+          },
+          "confidence": 0.9175781
+        },
+        {
+          "text": "1:17 PM",
+          "boundingBox": {
+            "left": 982,
+            "top": 292,
+            "right": 1150,
+            "bottom": 326
+          },
+          "confidence": 0.82161456
+        },
+        {
+          "text": "30001",
+          "boundingBox": {
+            "left": 1031,
+            "top": 333,
+            "right": 1147,
+            "bottom": 371
+          },
+          "confidence": 0.8882812
+        }
+      ],
+      "boundingBox": {
+        "left": 904,
+        "top": 240,
+        "right": 1149,
+        "bottom": 373
+      }
+    },
+    {
+      "text": "3.25",
+      "lines": [
+        {
+          "text": "3.25",
+          "boundingBox": {
+            "left": 1066,
+            "top": 472,
+            "right": 1164,
+            "bottom": 508
+          },
+          "confidence": 0.87402344
+        }
+      ],
+      "boundingBox": {
+        "left": 1066,
+        "top": 472,
+        "right": 1164,
+        "bottom": 508
+      }
+    },
+    {
+      "text": "14.95",
+      "lines": [
+        {
+          "text": "14.95",
+          "boundingBox": {
+            "left": 1047,
+            "top": 515,
+            "right": 1166,
+            "bottom": 554
+          },
+          "confidence": 0.89140624
+        }
+      ],
+      "boundingBox": {
+        "left": 1047,
+        "top": 515,
+        "right": 1166,
+        "bottom": 554
+      }
+    },
+    {
+      "text": "!! Become a friend of us on\nFACEBO0K to receive news of\nevents & special offers !!",
+      "lines": [
+        {
+          "text": "!! Become a friend of us on",
+          "boundingBox": {
+            "left": 300,
+            "top": 1291,
+            "right": 1047,
+            "bottom": 1363
+          },
+          "confidence": 0.8703497
+        },
+        {
+          "text": "FACEBO0K to receive news of",
+          "boundingBox": {
+            "left": 296,
+            "top": 1344,
+            "right": 1018,
+            "bottom": 1412
+          },
+          "confidence": 0.8279552
+        },
+        {
+          "text": "events & special offers !!",
+          "boundingBox": {
+            "left": 324,
+            "top": 1391,
+            "right": 1019,
+            "bottom": 1467
+          },
+          "confidence": 0.87020594
+        }
+      ],
+      "boundingBox": {
+        "left": 294,
+        "top": 1289,
+        "right": 1052,
+        "bottom": 1468
+      }
+    },
+    {
+      "text": "!! THANK YOU FOR COMING !!",
+      "lines": [
+        {
+          "text": "!! THANK YOU FOR COMING !!",
+          "boundingBox": {
+            "left": 374,
+            "top": 1436,
+            "right": 1047,
+            "bottom": 1517
+          },
+          "confidence": 0.7896205
+        }
+      ],
+      "boundingBox": {
+        "left": 374,
+        "top": 1436,
+        "right": 1047,
+        "bottom": 1517
+      }
+    },
+    {
+      "text": "5.95",
+      "lines": [
+        {
+          "text": "5.95",
+          "boundingBox": {
+            "left": 1074,
+            "top": 609,
+            "right": 1171,
+            "bottom": 646
+          },
+          "confidence": 0.9345703
+        }
+      ],
+      "boundingBox": {
+        "left": 1074,
+        "top": 609,
+        "right": 1171,
+        "bottom": 646
+      }
+    },
+    {
+      "text": "9.95",
+      "lines": [
+        {
+          "text": "9.95",
+          "boundingBox": {
+            "left": 1076,
+            "top": 652,
+            "right": 1176,
+            "bottom": 696
+          },
+          "confidence": 0.9003906
+        }
+      ],
+      "boundingBox": {
+        "left": 1076,
+        "top": 652,
+        "right": 1176,
+        "bottom": 696
+      }
+    },
+    {
+      "text": "15.95",
+      "lines": [
+        {
+          "text": "15.95",
+          "boundingBox": {
+            "left": 1060,
+            "top": 704,
+            "right": 1180,
+            "bottom": 740
+          },
+          "confidence": 0.92265624
+        }
+      ],
+      "boundingBox": {
+        "left": 1060,
+        "top": 704,
+        "right": 1180,
+        "bottom": 740
+      }
+    },
+    {
+      "text": "50.05",
+      "lines": [
+        {
+          "text": "50.05",
+          "boundingBox": {
+            "left": 1062,
+            "top": 798,
+            "right": 1188,
+            "bottom": 834
+          },
+          "confidence": 0.8882812
+        }
+      ],
+      "boundingBox": {
+        "left": 1062,
+        "top": 798,
+        "right": 1188,
+        "bottom": 834
+      }
+    },
+    {
+      "text": "5.46",
+      "lines": [
+        {
+          "text": "5.46",
+          "boundingBox": {
+            "left": 1092,
+            "top": 844,
+            "right": 1192,
+            "bottom": 880
+          },
+          "confidence": 0.8808594
+        }
+      ],
+      "boundingBox": {
+        "left": 1092,
+        "top": 844,
+        "right": 1192,
+        "bottom": 880
+      }
+    },
+    {
+      "text": "55.51",
+      "lines": [
+        {
+          "text": "55.51",
+          "boundingBox": {
+            "left": 1074,
+            "top": 938,
+            "right": 1195,
+            "bottom": 978
+          },
+          "confidence": 0.8890625
+        }
+      ],
+      "boundingBox": {
+        "left": 1074,
+        "top": 938,
+        "right": 1195,
+        "bottom": 978
+      }
+    },
+    {
+      "text": "64.52",
+      "lines": [
+        {
+          "text": "64.52",
+          "boundingBox": {
+            "left": 964,
+            "top": 1186,
+            "right": 1218,
+            "bottom": 1232
+          },
+          "confidence": 0.775
+        }
+      ],
+      "boundingBox": {
+        "left": 964,
+        "top": 1186,
+        "right": 1218,
+        "bottom": 1232
+      }
+    },
+    {
+      "text": "9.01\n64.52",
+      "lines": [
+        {
+          "text": "9.01",
+          "boundingBox": {
+            "left": 1106,
+            "top": 990,
+            "right": 1202,
+            "bottom": 1026
+          },
+          "confidence": 0.87597656
+        },
+        {
+          "text": "64.52",
+          "boundingBox": {
+            "left": 1083,
+            "top": 1034,
+            "right": 1211,
+            "bottom": 1078
+          },
+          "confidence": 0.828125
+        }
+      ],
+      "boundingBox": {
+        "left": 1082,
+        "top": 987,
+        "right": 1211,
+        "bottom": 1078
+      }
+    },
+    {
+      "text": "0",
+      "lines": [
+        {
+          "text": "0",
+          "boundingBox": {
+            "left": 1573,
+            "top": 621,
+            "right": 1593,
+            "bottom": 656
+          },
+          "confidence": 0.46875
+        }
+      ],
+      "boundingBox": {
+        "left": 1573,
+        "top": 621,
+        "right": 1593,
+        "bottom": 656
+      }
+    },
+    {
+      "text": "T",
+      "lines": [
+        {
+          "text": "T",
+          "boundingBox": {
+            "left": 1574,
+            "top": 669,
+            "right": 1592,
+            "bottom": 706
+          },
+          "confidence": 0.5
+        }
+      ],
+      "boundingBox": {
+        "left": 1574,
+        "top": 669,
+        "right": 1592,
+        "bottom": 706
+      }
+    },
+    {
+      "text": "M",
+      "lines": [
+        {
+          "text": "M",
+          "boundingBox": {
+            "left": 1579,
+            "top": 768,
+            "right": 1594,
+            "bottom": 802
+          },
+          "confidence": 0.5234375
+        }
+      ],
+      "boundingBox": {
+        "left": 1579,
+        "top": 768,
+        "right": 1594,
+        "bottom": 802
+      }
+    }
+  ]
+}

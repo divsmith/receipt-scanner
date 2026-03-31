@@ -1,0 +1,409 @@
+{
+  "fullText": "Chef Wang\n1902 Jericho Tumpike\nNew Ilyda ParkNY TI040\nTel:516.354.285N Pax 516.776,0SK7\nDine In\n&arva lils\n02:14 PM 0303 PI\nScallion Pacake\nLime Juicy Pok Euns\nBoefw Bak Choy ()\nHunan Boer (l\nSublotnl\nSelos Tas\n# 1022\n020219\nTotal\nThank You\nHave A Nice Day\n$5.25\nS9L95\nS8.75\nS8.75\nS3270\n$2.82\n$35.52",
+  "blocks": [
+    {
+      "text": "Chef Wang\n1902 Jericho Tumpike\nNew Ilyda ParkNY TI040\nTel:516.354.285N Pax 516.776,0SK7",
+      "lines": [
+        {
+          "text": "Chef Wang",
+          "boundingBox": {
+            "left": 586,
+            "top": 303,
+            "right": 936,
+            "bottom": 363
+          },
+          "confidence": 0.80322266
+        },
+        {
+          "text": "1902 Jericho Tumpike",
+          "boundingBox": {
+            "left": 543,
+            "top": 357,
+            "right": 991,
+            "bottom": 412
+          },
+          "confidence": 0.4908854
+        },
+        {
+          "text": "New Ilyda ParkNY TI040",
+          "boundingBox": {
+            "left": 477,
+            "top": 403,
+            "right": 1044,
+            "bottom": 452
+          },
+          "confidence": 0.50082237
+        },
+        {
+          "text": "Tel:516.354.285N Pax 516.776,0SK7",
+          "boundingBox": {
+            "left": 374,
+            "top": 450,
+            "right": 1168,
+            "bottom": 496
+          },
+          "confidence": 0.5031502
+        }
+      ],
+      "boundingBox": {
+        "left": 372,
+        "top": 299,
+        "right": 1170,
+        "bottom": 508
+      }
+    },
+    {
+      "text": "Dine In\n&arva lils",
+      "lines": [
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 312,
+            "top": 580,
+            "right": 516,
+            "bottom": 620
+          },
+          "confidence": 0.7532552
+        },
+        {
+          "text": "&arva lils",
+          "boundingBox": {
+            "left": 321,
+            "top": 632,
+            "right": 564,
+            "bottom": 671
+          },
+          "confidence": 0.32595485
+        }
+      ],
+      "boundingBox": {
+        "left": 312,
+        "top": 580,
+        "right": 564,
+        "bottom": 671
+      }
+    },
+    {
+      "text": "02:14 PM 0303 PI",
+      "lines": [
+        {
+          "text": "02:14 PM 0303 PI",
+          "boundingBox": {
+            "left": 726,
+            "top": 666,
+            "right": 1216,
+            "bottom": 713
+          },
+          "confidence": 0.5673077
+        }
+      ],
+      "boundingBox": {
+        "left": 726,
+        "top": 666,
+        "right": 1216,
+        "bottom": 713
+      }
+    },
+    {
+      "text": "Scallion Pacake\nLime Juicy Pok Euns\nBoefw Bak Choy ()\nHunan Boer (l",
+      "lines": [
+        {
+          "text": "Scallion Pacake",
+          "boundingBox": {
+            "left": 402,
+            "top": 760,
+            "right": 780,
+            "bottom": 799
+          },
+          "confidence": 0.6339286
+        },
+        {
+          "text": "Lime Juicy Pok Euns",
+          "boundingBox": {
+            "left": 402,
+            "top": 801,
+            "right": 896,
+            "bottom": 846
+          },
+          "confidence": 0.46533203
+        },
+        {
+          "text": "Boefw Bak Choy ()",
+          "boundingBox": {
+            "left": 398,
+            "top": 852,
+            "right": 884,
+            "bottom": 890
+          },
+          "confidence": 0.500279
+        },
+        {
+          "text": "Hunan Boer (l",
+          "boundingBox": {
+            "left": 394,
+            "top": 890,
+            "right": 710,
+            "bottom": 939
+          },
+          "confidence": 0.5266335
+        }
+      ],
+      "boundingBox": {
+        "left": 394,
+        "top": 758,
+        "right": 895,
+        "bottom": 939
+      }
+    },
+    {
+      "text": "Sublotnl\nSelos Tas",
+      "lines": [
+        {
+          "text": "Sublotnl",
+          "boundingBox": {
+            "left": 768,
+            "top": 990,
+            "right": 966,
+            "bottom": 1026
+          },
+          "confidence": 0.46923828
+        },
+        {
+          "text": "Selos Tas",
+          "boundingBox": {
+            "left": 754,
+            "top": 1038,
+            "right": 970,
+            "bottom": 1074
+          },
+          "confidence": 0.5332031
+        }
+      ],
+      "boundingBox": {
+        "left": 754,
+        "top": 990,
+        "right": 970,
+        "bottom": 1074
+      }
+    },
+    {
+      "text": "# 1022\n020219",
+      "lines": [
+        {
+          "text": "# 1022",
+          "boundingBox": {
+            "left": 990,
+            "top": 578,
+            "right": 1194,
+            "bottom": 623
+          },
+          "confidence": 0.621875
+        },
+        {
+          "text": "020219",
+          "boundingBox": {
+            "left": 1018,
+            "top": 632,
+            "right": 1204,
+            "bottom": 665
+          },
+          "confidence": 0.5983073
+        }
+      ],
+      "boundingBox": {
+        "left": 990,
+        "top": 578,
+        "right": 1204,
+        "bottom": 666
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 660,
+            "top": 1140,
+            "right": 818,
+            "bottom": 1195
+          },
+          "confidence": 0.87890625
+        }
+      ],
+      "boundingBox": {
+        "left": 660,
+        "top": 1140,
+        "right": 818,
+        "bottom": 1195
+      }
+    },
+    {
+      "text": "Thank You\nHave A Nice Day",
+      "lines": [
+        {
+          "text": "Thank You",
+          "boundingBox": {
+            "left": 606,
+            "top": 1299,
+            "right": 911,
+            "bottom": 1347
+          },
+          "confidence": 0.8457031
+        },
+        {
+          "text": "Have A Nice Day",
+          "boundingBox": {
+            "left": 510,
+            "top": 1357,
+            "right": 998,
+            "bottom": 1421
+          },
+          "confidence": 0.7682292
+        }
+      ],
+      "boundingBox": {
+        "left": 509,
+        "top": 1297,
+        "right": 998,
+        "bottom": 1421
+      }
+    },
+    {
+      "text": "$5.25",
+      "lines": [
+        {
+          "text": "$5.25",
+          "boundingBox": {
+            "left": 1094,
+            "top": 761,
+            "right": 1214,
+            "bottom": 793
+          },
+          "confidence": 0.5625
+        }
+      ],
+      "boundingBox": {
+        "left": 1094,
+        "top": 761,
+        "right": 1214,
+        "bottom": 793
+      }
+    },
+    {
+      "text": "S9L95",
+      "lines": [
+        {
+          "text": "S9L95",
+          "boundingBox": {
+            "left": 1115,
+            "top": 800,
+            "right": 1227,
+            "bottom": 838
+          },
+          "confidence": 0.49765626
+        }
+      ],
+      "boundingBox": {
+        "left": 1115,
+        "top": 800,
+        "right": 1227,
+        "bottom": 838
+      }
+    },
+    {
+      "text": "S8.75",
+      "lines": [
+        {
+          "text": "S8.75",
+          "boundingBox": {
+            "left": 1119,
+            "top": 844,
+            "right": 1233,
+            "bottom": 886
+          },
+          "confidence": 0.5390625
+        }
+      ],
+      "boundingBox": {
+        "left": 1119,
+        "top": 844,
+        "right": 1233,
+        "bottom": 886
+      }
+    },
+    {
+      "text": "S8.75",
+      "lines": [
+        {
+          "text": "S8.75",
+          "boundingBox": {
+            "left": 1104,
+            "top": 894,
+            "right": 1225,
+            "bottom": 928
+          },
+          "confidence": 0.6195313
+        }
+      ],
+      "boundingBox": {
+        "left": 1104,
+        "top": 894,
+        "right": 1225,
+        "bottom": 928
+      }
+    },
+    {
+      "text": "S3270\n$2.82",
+      "lines": [
+        {
+          "text": "S3270",
+          "boundingBox": {
+            "left": 1079,
+            "top": 985,
+            "right": 1233,
+            "bottom": 1025
+          },
+          "confidence": 0.6265625
+        },
+        {
+          "text": "$2.82",
+          "boundingBox": {
+            "left": 1112,
+            "top": 1036,
+            "right": 1238,
+            "bottom": 1072
+          },
+          "confidence": 0.56328124
+        }
+      ],
+      "boundingBox": {
+        "left": 1079,
+        "top": 985,
+        "right": 1238,
+        "bottom": 1072
+      }
+    },
+    {
+      "text": "$35.52",
+      "lines": [
+        {
+          "text": "$35.52",
+          "boundingBox": {
+            "left": 1010,
+            "top": 1135,
+            "right": 1244,
+            "bottom": 1191
+          },
+          "confidence": 0.7760417
+        }
+      ],
+      "boundingBox": {
+        "left": 1010,
+        "top": 1135,
+        "right": 1244,
+        "bottom": 1191
+      }
+    }
+  ]
+}

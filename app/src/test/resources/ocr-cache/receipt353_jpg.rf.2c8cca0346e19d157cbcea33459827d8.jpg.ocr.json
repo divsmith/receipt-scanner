@@ -1,0 +1,522 @@
+{
+  "fullText": "135 Na thaT fe\nTD 34/t\negCafe\nBlvd\nIOwer, CA 9O706\nChk 2763\nFeb2319 10:23AM\nD1e Ln\n2 Enchi Ome lete\nSHREDDED BEEF\n1 Opern Food\nSHREDDED BEEG\n1 Open Food\n1 Hashbrowns Side\n1 Hashbrowns Side\nCoffee Hot\nTDiet Coke\nSUBTOTAL\nTAX\n10:51AM TOTAL DUE\nTHANK YOU FOR\nGst 2\nVISITING\n25.98\n3.19\n3.19\n2.99\n2.\n.99\n2. 99\n44.32\n4.21\n48.53",
+  "blocks": [
+    {
+      "text": "135 Na thaT fe\nTD 34/t",
+      "lines": [
+        {
+          "text": "135 Na thaT fe",
+          "boundingBox": {
+            "left": 213,
+            "top": 418,
+            "right": 517,
+            "bottom": 467
+          },
+          "confidence": 0.47762784
+        },
+        {
+          "text": "TD 34/t",
+          "boundingBox": {
+            "left": 174,
+            "top": 481,
+            "right": 365,
+            "bottom": 531
+          },
+          "confidence": 0.48763022
+        }
+      ],
+      "boundingBox": {
+        "left": 174,
+        "top": 415,
+        "right": 517,
+        "bottom": 535
+      }
+    },
+    {
+      "text": "egCafe\nBlvd\nIOwer, CA 9O706",
+      "lines": [
+        {
+          "text": "egCafe",
+          "boundingBox": {
+            "left": 691,
+            "top": 314,
+            "right": 857,
+            "bottom": 366
+          },
+          "confidence": 0.48893228
+        },
+        {
+          "text": "Blvd",
+          "boundingBox": {
+            "left": 860,
+            "top": 351,
+            "right": 984,
+            "bottom": 389
+          },
+          "confidence": 0.49804688
+        },
+        {
+          "text": "IOwer, CA 9O706",
+          "boundingBox": {
+            "left": 592,
+            "top": 372,
+            "right": 981,
+            "bottom": 420
+          },
+          "confidence": 0.5042067
+        }
+      ],
+      "boundingBox": {
+        "left": 592,
+        "top": 312,
+        "right": 984,
+        "bottom": 419
+      }
+    },
+    {
+      "text": "Chk 2763\nFeb2319 10:23AM",
+      "lines": [
+        {
+          "text": "Chk 2763",
+          "boundingBox": {
+            "left": 610,
+            "top": 501,
+            "right": 806,
+            "bottom": 548
+          },
+          "confidence": 0.76004463
+        },
+        {
+          "text": "Feb2319 10:23AM",
+          "boundingBox": {
+            "left": 490,
+            "top": 528,
+            "right": 910,
+            "bottom": 594
+          },
+          "confidence": 0.781808
+        }
+      ],
+      "boundingBox": {
+        "left": 490,
+        "top": 494,
+        "right": 911,
+        "bottom": 594
+      }
+    },
+    {
+      "text": "D1e Ln\n2 Enchi Ome lete\nSHREDDED BEEF\n1 Opern Food\nSHREDDED BEEG",
+      "lines": [
+        {
+          "text": "D1e Ln",
+          "boundingBox": {
+            "left": 222,
+            "top": 593,
+            "right": 617,
+            "bottom": 656
+          },
+          "confidence": 0.4375
+        },
+        {
+          "text": "2 Enchi Ome lete",
+          "boundingBox": {
+            "left": 187,
+            "top": 630,
+            "right": 594,
+            "bottom": 695
+          },
+          "confidence": 0.7088341
+        },
+        {
+          "text": "SHREDDED BEEF",
+          "boundingBox": {
+            "left": 201,
+            "top": 673,
+            "right": 579,
+            "bottom": 736
+          },
+          "confidence": 0.8339844
+        },
+        {
+          "text": "1 Opern Food",
+          "boundingBox": {
+            "left": 171,
+            "top": 713,
+            "right": 455,
+            "bottom": 771
+          },
+          "confidence": 0.590625
+        },
+        {
+          "text": "SHREDDED BEEG",
+          "boundingBox": {
+            "left": 202,
+            "top": 758,
+            "right": 571,
+            "bottom": 820
+          },
+          "confidence": 0.820638
+        }
+      ],
+      "boundingBox": {
+        "left": 168,
+        "top": 590,
+        "right": 617,
+        "bottom": 828
+      }
+    },
+    {
+      "text": "1 Open Food\n1 Hashbrowns Side\n1 Hashbrowns Side\nCoffee Hot\nTDiet Coke",
+      "lines": [
+        {
+          "text": "1 Open Food",
+          "boundingBox": {
+            "left": 139,
+            "top": 801,
+            "right": 438,
+            "bottom": 862
+          },
+          "confidence": 0.6293403
+        },
+        {
+          "text": "1 Hashbrowns Side",
+          "boundingBox": {
+            "left": 126,
+            "top": 846,
+            "right": 608,
+            "bottom": 915
+          },
+          "confidence": 0.73072916
+        },
+        {
+          "text": "1 Hashbrowns Side",
+          "boundingBox": {
+            "left": 117,
+            "top": 889,
+            "right": 606,
+            "bottom": 965
+          },
+          "confidence": 0.78333336
+        },
+        {
+          "text": "Coffee Hot",
+          "boundingBox": {
+            "left": 139,
+            "top": 938,
+            "right": 437,
+            "bottom": 1001
+          },
+          "confidence": 0.83463544
+        },
+        {
+          "text": "TDiet Coke",
+          "boundingBox": {
+            "left": 82,
+            "top": 982,
+            "right": 414,
+            "bottom": 1056
+          },
+          "confidence": 0.64800346
+        }
+      ],
+      "boundingBox": {
+        "left": 82,
+        "top": 798,
+        "right": 611,
+        "bottom": 1066
+      }
+    },
+    {
+      "text": "SUBTOTAL\nTAX\n10:51AM TOTAL DUE",
+      "lines": [
+        {
+          "text": "SUBTOTAL",
+          "boundingBox": {
+            "left": 118,
+            "top": 1073,
+            "right": 354,
+            "bottom": 1144
+          },
+          "confidence": 0.7314453
+        },
+        {
+          "text": "TAX",
+          "boundingBox": {
+            "left": 118,
+            "top": 1124,
+            "right": 205,
+            "bottom": 1171
+          },
+          "confidence": 0.83463544
+        },
+        {
+          "text": "10:51AM TOTAL DUE",
+          "boundingBox": {
+            "left": -2,
+            "top": 1156,
+            "right": 511,
+            "bottom": 1248
+          },
+          "confidence": 0.76692706
+        }
+      ],
+      "boundingBox": {
+        "left": -4,
+        "top": 1067,
+        "right": 516,
+        "bottom": 1248
+      }
+    },
+    {
+      "text": "THANK YOU FOR",
+      "lines": [
+        {
+          "text": "THANK YOU FOR",
+          "boundingBox": {
+            "left": 236,
+            "top": 1256,
+            "right": 632,
+            "bottom": 1341
+          },
+          "confidence": 0.73295456
+        }
+      ],
+      "boundingBox": {
+        "left": 236,
+        "top": 1256,
+        "right": 632,
+        "bottom": 1341
+      }
+    },
+    {
+      "text": "Gst 2",
+      "lines": [
+        {
+          "text": "Gst 2",
+          "boundingBox": {
+            "left": 1083,
+            "top": 525,
+            "right": 1254,
+            "bottom": 570
+          },
+          "confidence": 0.6855469
+        }
+      ],
+      "boundingBox": {
+        "left": 1083,
+        "top": 525,
+        "right": 1254,
+        "bottom": 570
+      }
+    },
+    {
+      "text": "VISITING",
+      "lines": [
+        {
+          "text": "VISITING",
+          "boundingBox": {
+            "left": 680,
+            "top": 1291,
+            "right": 923,
+            "bottom": 1363
+          },
+          "confidence": 0.7729492
+        }
+      ],
+      "boundingBox": {
+        "left": 680,
+        "top": 1291,
+        "right": 923,
+        "bottom": 1363
+      }
+    },
+    {
+      "text": "25.98",
+      "lines": [
+        {
+          "text": "25.98",
+          "boundingBox": {
+            "left": 1019,
+            "top": 675,
+            "right": 1164,
+            "bottom": 719
+          },
+          "confidence": 0.8070313
+        }
+      ],
+      "boundingBox": {
+        "left": 1019,
+        "top": 675,
+        "right": 1164,
+        "bottom": 719
+      }
+    },
+    {
+      "text": "3.19",
+      "lines": [
+        {
+          "text": "3.19",
+          "boundingBox": {
+            "left": 1045,
+            "top": 759,
+            "right": 1165,
+            "bottom": 805
+          },
+          "confidence": 0.8955078
+        }
+      ],
+      "boundingBox": {
+        "left": 1045,
+        "top": 759,
+        "right": 1165,
+        "bottom": 805
+      }
+    },
+    {
+      "text": "3.19\n2.99",
+      "lines": [
+        {
+          "text": "3.19",
+          "boundingBox": {
+            "left": 1037,
+            "top": 851,
+            "right": 1163,
+            "bottom": 901
+          },
+          "confidence": 0.875
+        },
+        {
+          "text": "2.99",
+          "boundingBox": {
+            "left": 1038,
+            "top": 898,
+            "right": 1160,
+            "bottom": 940
+          },
+          "confidence": 0.82128906
+        }
+      ],
+      "boundingBox": {
+        "left": 1037,
+        "top": 851,
+        "right": 1163,
+        "bottom": 940
+      }
+    },
+    {
+      "text": "2.",
+      "lines": [
+        {
+          "text": "2.",
+          "boundingBox": {
+            "left": 1035,
+            "top": 944,
+            "right": 1089,
+            "bottom": 993
+          },
+          "confidence": 0.6777344
+        }
+      ],
+      "boundingBox": {
+        "left": 1035,
+        "top": 944,
+        "right": 1089,
+        "bottom": 993
+      }
+    },
+    {
+      "text": ".99",
+      "lines": [
+        {
+          "text": ".99",
+          "boundingBox": {
+            "left": 1082,
+            "top": 988,
+            "right": 1158,
+            "bottom": 1040
+          },
+          "confidence": 0.57421875
+        }
+      ],
+      "boundingBox": {
+        "left": 1082,
+        "top": 988,
+        "right": 1158,
+        "bottom": 1040
+      }
+    },
+    {
+      "text": "2. 99",
+      "lines": [
+        {
+          "text": "2. 99",
+          "boundingBox": {
+            "left": 1049,
+            "top": 1038,
+            "right": 1154,
+            "bottom": 1091
+          },
+          "confidence": 0.49121094
+        }
+      ],
+      "boundingBox": {
+        "left": 1049,
+        "top": 1038,
+        "right": 1154,
+        "bottom": 1091
+      }
+    },
+    {
+      "text": "44.32\n4.21",
+      "lines": [
+        {
+          "text": "44.32",
+          "boundingBox": {
+            "left": 989,
+            "top": 1126,
+            "right": 1152,
+            "bottom": 1181
+          },
+          "confidence": 0.89453125
+        },
+        {
+          "text": "4.21",
+          "boundingBox": {
+            "left": 1038,
+            "top": 1180,
+            "right": 1152,
+            "bottom": 1238
+          },
+          "confidence": 0.8769531
+        }
+      ],
+      "boundingBox": {
+        "left": 986,
+        "top": 1126,
+        "right": 1155,
+        "bottom": 1239
+      }
+    },
+    {
+      "text": "48.53",
+      "lines": [
+        {
+          "text": "48.53",
+          "boundingBox": {
+            "left": 820,
+            "top": 1215,
+            "right": 1137,
+            "bottom": 1285
+          },
+          "confidence": 0.834375
+        }
+      ],
+      "boundingBox": {
+        "left": 820,
+        "top": 1215,
+        "right": 1137,
+        "bottom": 1285
+      }
+    }
+  ]
+}

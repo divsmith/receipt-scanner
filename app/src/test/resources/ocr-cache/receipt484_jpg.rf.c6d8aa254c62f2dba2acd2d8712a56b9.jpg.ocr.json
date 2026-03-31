@@ -1,0 +1,677 @@
+{
+  "fullText": "SAT\n1\nDOUGLASs BURGERS #1S\n18325 Hasaington Blvd\nhitter, Calif 90805\n(562) 699-7434\n1 8RGER COHEO\nfctes\naner ican c\nadd bacone\ngril onionse\n1 SUB ZUCDHINI\nRaspberry ice Te\nBurger(h/4\nsesane bur\nRFGULAR\n1 add baconEE\nCheck 20o18\n2/08/19\nadd avocados.\n1 NAKE SPECIAL\non tons rings\nlemonade\nSERV.CHARGE(2N)\nCash\nSub/Ttl\nTax\nDRV THRU\n5:30p\n9.99\n0.70\n1.99\n2.49\n5.99\n1.99\n1.99\n3.00\n2.49\n0.81\n31.24\n2.97\n34.21\n34,21",
+  "blocks": [
+    {
+      "text": "SAT",
+      "lines": [
+        {
+          "text": "SAT",
+          "boundingBox": {
+            "left": 232,
+            "top": 454,
+            "right": 301,
+            "bottom": 492
+          },
+          "confidence": 0.7421875
+        }
+      ],
+      "boundingBox": {
+        "left": 232,
+        "top": 454,
+        "right": 301,
+        "bottom": 492
+      }
+    },
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 288,
+            "top": 1029,
+            "right": 301,
+            "bottom": 1075
+          },
+          "confidence": 0.125
+        }
+      ],
+      "boundingBox": {
+        "left": 288,
+        "top": 1029,
+        "right": 301,
+        "bottom": 1075
+      }
+    },
+    {
+      "text": "DOUGLASs BURGERS #1S\n18325 Hasaington Blvd\nhitter, Calif 90805\n(562) 699-7434",
+      "lines": [
+        {
+          "text": "DOUGLASs BURGERS #1S",
+          "boundingBox": {
+            "left": 515,
+            "top": 176,
+            "right": 946,
+            "bottom": 238
+          },
+          "confidence": 0.55577254
+        },
+        {
+          "text": "18325 Hasaington Blvd",
+          "boundingBox": {
+            "left": 478,
+            "top": 223,
+            "right": 968,
+            "bottom": 277
+          },
+          "confidence": 0.6099918
+        },
+        {
+          "text": "hitter, Calif 90805",
+          "boundingBox": {
+            "left": 536,
+            "top": 257,
+            "right": 969,
+            "bottom": 317
+          },
+          "confidence": 0.551011
+        },
+        {
+          "text": "(562) 699-7434",
+          "boundingBox": {
+            "left": 570,
+            "top": 295,
+            "right": 902,
+            "bottom": 357
+          },
+          "confidence": 0.56640625
+        }
+      ],
+      "boundingBox": {
+        "left": 476,
+        "top": 176,
+        "right": 971,
+        "bottom": 361
+      }
+    },
+    {
+      "text": "1 8RGER COHEO\nfctes\naner ican c\nadd bacone\ngril onionse\n1 SUB ZUCDHINI\nRaspberry ice Te\nBurger(h/4\nsesane bur\nRFGULAR\n1 add baconEE",
+      "lines": [
+        {
+          "text": "1 8RGER COHEO",
+          "boundingBox": {
+            "left": 306,
+            "top": 528,
+            "right": 623,
+            "bottom": 575
+          },
+          "confidence": 0.4083807
+        },
+        {
+          "text": "fctes",
+          "boundingBox": {
+            "left": 406,
+            "top": 578,
+            "right": 524,
+            "bottom": 615
+          },
+          "confidence": 0.4484375
+        },
+        {
+          "text": "aner ican c",
+          "boundingBox": {
+            "left": 352,
+            "top": 613,
+            "right": 629,
+            "bottom": 667
+          },
+          "confidence": 0.6423611
+        },
+        {
+          "text": "add bacone",
+          "boundingBox": {
+            "left": 390,
+            "top": 657,
+            "right": 628,
+            "bottom": 709
+          },
+          "confidence": 0.55338544
+        },
+        {
+          "text": "gril onionse",
+          "boundingBox": {
+            "left": 392,
+            "top": 700,
+            "right": 671,
+            "bottom": 750
+          },
+          "confidence": 0.56747156
+        },
+        {
+          "text": "1 SUB ZUCDHINI",
+          "boundingBox": {
+            "left": 297,
+            "top": 741,
+            "right": 619,
+            "bottom": 796
+          },
+          "confidence": 0.48079428
+        },
+        {
+          "text": "Raspberry ice Te",
+          "boundingBox": {
+            "left": 342,
+            "top": 787,
+            "right": 751,
+            "bottom": 841
+          },
+          "confidence": 0.63699776
+        },
+        {
+          "text": "Burger(h/4",
+          "boundingBox": {
+            "left": 336,
+            "top": 833,
+            "right": 616,
+            "bottom": 891
+          },
+          "confidence": 0.4734375
+        },
+        {
+          "text": "sesane bur",
+          "boundingBox": {
+            "left": 412,
+            "top": 879,
+            "right": 648,
+            "bottom": 930
+          },
+          "confidence": 0.44270834
+        },
+        {
+          "text": "RFGULAR",
+          "boundingBox": {
+            "left": 342,
+            "top": 920,
+            "right": 632,
+            "bottom": 981
+          },
+          "confidence": 0.70647323
+        },
+        {
+          "text": "1 add baconEE",
+          "boundingBox": {
+            "left": 292,
+            "top": 968,
+            "right": 656,
+            "bottom": 1030
+          },
+          "confidence": 0.51633525
+        }
+      ],
+      "boundingBox": {
+        "left": 276,
+        "top": 516,
+        "right": 758,
+        "bottom": 1030
+      }
+    },
+    {
+      "text": "Check 20o18\n2/08/19",
+      "lines": [
+        {
+          "text": "Check 20o18",
+          "boundingBox": {
+            "left": 422,
+            "top": 381,
+            "right": 949,
+            "bottom": 449
+          },
+          "confidence": 0.5921875
+        },
+        {
+          "text": "2/08/19",
+          "boundingBox": {
+            "left": 666,
+            "top": 433,
+            "right": 834,
+            "bottom": 478
+          },
+          "confidence": 0.6082589
+        }
+      ],
+      "boundingBox": {
+        "left": 422,
+        "top": 382,
+        "right": 951,
+        "bottom": 491
+      }
+    },
+    {
+      "text": "add avocados.\n1 NAKE SPECIAL",
+      "lines": [
+        {
+          "text": "add avocados.",
+          "boundingBox": {
+            "left": 383,
+            "top": 1018,
+            "right": 697,
+            "bottom": 1073
+          },
+          "confidence": 0.62565106
+        },
+        {
+          "text": "1 NAKE SPECIAL",
+          "boundingBox": {
+            "left": 289,
+            "top": 1062,
+            "right": 623,
+            "bottom": 1126
+          },
+          "confidence": 0.7161458
+        }
+      ],
+      "boundingBox": {
+        "left": 287,
+        "top": 1015,
+        "right": 699,
+        "bottom": 1126
+      }
+    },
+    {
+      "text": "on tons rings\nlemonade\nSERV.CHARGE(2N)",
+      "lines": [
+        {
+          "text": "on tons rings",
+          "boundingBox": {
+            "left": 402,
+            "top": 1109,
+            "right": 706,
+            "bottom": 1172
+          },
+          "confidence": 0.74822444
+        },
+        {
+          "text": "lemonade",
+          "boundingBox": {
+            "left": 328,
+            "top": 1162,
+            "right": 663,
+            "bottom": 1221
+          },
+          "confidence": 0.68408203
+        },
+        {
+          "text": "SERV.CHARGE(2N)",
+          "boundingBox": {
+            "left": 300,
+            "top": 1211,
+            "right": 704,
+            "bottom": 1278
+          },
+          "confidence": 0.6765625
+        }
+      ],
+      "boundingBox": {
+        "left": 296,
+        "top": 1109,
+        "right": 709,
+        "bottom": 1279
+      }
+    },
+    {
+      "text": "Cash",
+      "lines": [
+        {
+          "text": "Cash",
+          "boundingBox": {
+            "left": 294,
+            "top": 1544,
+            "right": 407,
+            "bottom": 1593
+          },
+          "confidence": 0.7792969
+        }
+      ],
+      "boundingBox": {
+        "left": 294,
+        "top": 1544,
+        "right": 407,
+        "bottom": 1593
+      }
+    },
+    {
+      "text": "Sub/Ttl\nTax\nDRV THRU",
+      "lines": [
+        {
+          "text": "Sub/Ttl",
+          "boundingBox": {
+            "left": 304,
+            "top": 1323,
+            "right": 484,
+            "bottom": 1377
+          },
+          "confidence": 0.63616073
+        },
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 304,
+            "top": 1386,
+            "right": 382,
+            "bottom": 1430
+          },
+          "confidence": 0.74088544
+        },
+        {
+          "text": "DRV THRU",
+          "boundingBox": {
+            "left": 283,
+            "top": 1418,
+            "right": 679,
+            "bottom": 1492
+          },
+          "confidence": 0.7734375
+        }
+      ],
+      "boundingBox": {
+        "left": 281,
+        "top": 1320,
+        "right": 679,
+        "bottom": 1492
+      }
+    },
+    {
+      "text": "5:30p",
+      "lines": [
+        {
+          "text": "5:30p",
+          "boundingBox": {
+            "left": 1102,
+            "top": 400,
+            "right": 1252,
+            "bottom": 442
+          },
+          "confidence": 0.63203126
+        }
+      ],
+      "boundingBox": {
+        "left": 1102,
+        "top": 400,
+        "right": 1252,
+        "bottom": 442
+      }
+    },
+    {
+      "text": "9.99",
+      "lines": [
+        {
+          "text": "9.99",
+          "boundingBox": {
+            "left": 1026,
+            "top": 500,
+            "right": 1134,
+            "bottom": 542
+          },
+          "confidence": 0.3544922
+        }
+      ],
+      "boundingBox": {
+        "left": 1026,
+        "top": 500,
+        "right": 1134,
+        "bottom": 542
+      }
+    },
+    {
+      "text": "0.70",
+      "lines": [
+        {
+          "text": "0.70",
+          "boundingBox": {
+            "left": 1030,
+            "top": 580,
+            "right": 1140,
+            "bottom": 628
+          },
+          "confidence": 0.49414062
+        }
+      ],
+      "boundingBox": {
+        "left": 1030,
+        "top": 580,
+        "right": 1140,
+        "bottom": 628
+      }
+    },
+    {
+      "text": "1.99",
+      "lines": [
+        {
+          "text": "1.99",
+          "boundingBox": {
+            "left": 1040,
+            "top": 632,
+            "right": 1140,
+            "bottom": 672
+          },
+          "confidence": 0.453125
+        }
+      ],
+      "boundingBox": {
+        "left": 1040,
+        "top": 632,
+        "right": 1140,
+        "bottom": 672
+      }
+    },
+    {
+      "text": "2.49",
+      "lines": [
+        {
+          "text": "2.49",
+          "boundingBox": {
+            "left": 1042,
+            "top": 714,
+            "right": 1147,
+            "bottom": 765
+          },
+          "confidence": 0.8486328
+        }
+      ],
+      "boundingBox": {
+        "left": 1042,
+        "top": 714,
+        "right": 1147,
+        "bottom": 765
+      }
+    },
+    {
+      "text": "5.99",
+      "lines": [
+        {
+          "text": "5.99",
+          "boundingBox": {
+            "left": 1049,
+            "top": 811,
+            "right": 1157,
+            "bottom": 855
+          },
+          "confidence": 0.44433594
+        }
+      ],
+      "boundingBox": {
+        "left": 1049,
+        "top": 811,
+        "right": 1157,
+        "bottom": 855
+      }
+    },
+    {
+      "text": "1.99",
+      "lines": [
+        {
+          "text": "1.99",
+          "boundingBox": {
+            "left": 1065,
+            "top": 949,
+            "right": 1165,
+            "bottom": 992
+          },
+          "confidence": 0.47558594
+        }
+      ],
+      "boundingBox": {
+        "left": 1065,
+        "top": 949,
+        "right": 1165,
+        "bottom": 992
+      }
+    },
+    {
+      "text": "1.99",
+      "lines": [
+        {
+          "text": "1.99",
+          "boundingBox": {
+            "left": 1071,
+            "top": 996,
+            "right": 1169,
+            "bottom": 1037
+          },
+          "confidence": 0.67089844
+        }
+      ],
+      "boundingBox": {
+        "left": 1071,
+        "top": 996,
+        "right": 1169,
+        "bottom": 1037
+      }
+    },
+    {
+      "text": "3.00",
+      "lines": [
+        {
+          "text": "3.00",
+          "boundingBox": {
+            "left": 1070,
+            "top": 1044,
+            "right": 1176,
+            "bottom": 1087
+          },
+          "confidence": 0.7792969
+        }
+      ],
+      "boundingBox": {
+        "left": 1070,
+        "top": 1044,
+        "right": 1176,
+        "bottom": 1087
+      }
+    },
+    {
+      "text": "2.49",
+      "lines": [
+        {
+          "text": "2.49",
+          "boundingBox": {
+            "left": 1076,
+            "top": 1090,
+            "right": 1184,
+            "bottom": 1140
+          },
+          "confidence": 0.828125
+        }
+      ],
+      "boundingBox": {
+        "left": 1076,
+        "top": 1090,
+        "right": 1184,
+        "bottom": 1140
+      }
+    },
+    {
+      "text": "0.81",
+      "lines": [
+        {
+          "text": "0.81",
+          "boundingBox": {
+            "left": 1082,
+            "top": 1192,
+            "right": 1188,
+            "bottom": 1238
+          },
+          "confidence": 0.48339844
+        }
+      ],
+      "boundingBox": {
+        "left": 1082,
+        "top": 1192,
+        "right": 1188,
+        "bottom": 1238
+      }
+    },
+    {
+      "text": "31.24\n2.97\n34.21",
+      "lines": [
+        {
+          "text": "31.24",
+          "boundingBox": {
+            "left": 1058,
+            "top": 1289,
+            "right": 1208,
+            "bottom": 1352
+          },
+          "confidence": 0.64140624
+        },
+        {
+          "text": "2.97",
+          "boundingBox": {
+            "left": 1092,
+            "top": 1335,
+            "right": 1208,
+            "bottom": 1397
+          },
+          "confidence": 0.7109375
+        },
+        {
+          "text": "34.21",
+          "boundingBox": {
+            "left": 960,
+            "top": 1393,
+            "right": 1217,
+            "bottom": 1454
+          },
+          "confidence": 0.82734376
+        }
+      ],
+      "boundingBox": {
+        "left": 947,
+        "top": 1289,
+        "right": 1221,
+        "bottom": 1470
+      }
+    },
+    {
+      "text": "34,21",
+      "lines": [
+        {
+          "text": "34,21",
+          "boundingBox": {
+            "left": 1064,
+            "top": 1489,
+            "right": 1214,
+            "bottom": 1525
+          },
+          "confidence": 0.703125
+        }
+      ],
+      "boundingBox": {
+        "left": 1064,
+        "top": 1489,
+        "right": 1214,
+        "bottom": 1525
+      }
+    }
+  ]
+}

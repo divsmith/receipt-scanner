@@ -1,0 +1,629 @@
+{
+  "fullText": "K3# 2\nS1de1\nSibtotal\n1 0b1 2tr Chees\nSpecla l Reauet\nADO Leaf LettC\nADD Mac Sauce\nTax\n1617 NESST\nLOS ANGELIECE53\nCashless\nCrange\nTEL\nTake-Out Total\nMER# 439206\nCARD ISSUER\nBOW DE3IT CAR0 E\nTRANSATION AMOT\nCHIP READ\nAUTHOR12ATION OE15\nSEQW 039988\nAID: A00000004 23\nHcDona ld's now a a1\nT0\nE\n2a13 03:D8 PM\nDrcer 97\n5.99\n0.25\n0.40\n6.64\n0.83\n7.27\nT.27\n0.00\n7.27",
+  "blocks": [
+    {
+      "text": "K3# 2\nS1de1",
+      "lines": [
+        {
+          "text": "K3# 2",
+          "boundingBox": {
+            "left": 307,
+            "top": 223,
+            "right": 440,
+            "bottom": 278
+          },
+          "confidence": 0.47460938
+        },
+        {
+          "text": "S1de1",
+          "boundingBox": {
+            "left": 303,
+            "top": 271,
+            "right": 429,
+            "bottom": 322
+          },
+          "confidence": 0.5234375
+        }
+      ],
+      "boundingBox": {
+        "left": 302,
+        "top": 223,
+        "right": 441,
+        "bottom": 324
+      }
+    },
+    {
+      "text": "Sibtotal",
+      "lines": [
+        {
+          "text": "Sibtotal",
+          "boundingBox": {
+            "left": 261,
+            "top": 615,
+            "right": 475,
+            "bottom": 681
+          },
+          "confidence": 0.55566406
+        }
+      ],
+      "boundingBox": {
+        "left": 261,
+        "top": 615,
+        "right": 475,
+        "bottom": 681
+      }
+    },
+    {
+      "text": "1 0b1 2tr Chees\nSpecla l Reauet\nADO Leaf LettC\nADD Mac Sauce",
+      "lines": [
+        {
+          "text": "1 0b1 2tr Chees",
+          "boundingBox": {
+            "left": 312,
+            "top": 364,
+            "right": 685,
+            "bottom": 463
+          },
+          "confidence": 0.47102866
+        },
+        {
+          "text": "Specla l Reauet",
+          "boundingBox": {
+            "left": 355,
+            "top": 423,
+            "right": 743,
+            "bottom": 520
+          },
+          "confidence": 0.56219953
+        },
+        {
+          "text": "ADO Leaf LettC",
+          "boundingBox": {
+            "left": 353,
+            "top": 471,
+            "right": 746,
+            "bottom": 572
+          },
+          "confidence": 0.664388
+        },
+        {
+          "text": "ADD Mac Sauce",
+          "boundingBox": {
+            "left": 326,
+            "top": 519,
+            "right": 669,
+            "bottom": 608
+          },
+          "confidence": 0.63352275
+        }
+      ],
+      "boundingBox": {
+        "left": 291,
+        "top": 364,
+        "right": 760,
+        "bottom": 619
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 312,
+            "top": 673,
+            "right": 393,
+            "bottom": 722
+          },
+          "confidence": 0.71875
+        }
+      ],
+      "boundingBox": {
+        "left": 312,
+        "top": 673,
+        "right": 393,
+        "bottom": 722
+      }
+    },
+    {
+      "text": "1617 NESST\nLOS ANGELIECE53",
+      "lines": [
+        {
+          "text": "1617 NESST",
+          "boundingBox": {
+            "left": 567,
+            "top": 68,
+            "right": 843,
+            "bottom": 153
+          },
+          "confidence": 0.58203125
+        },
+        {
+          "text": "LOS ANGELIECE53",
+          "boundingBox": {
+            "left": 496,
+            "top": 103,
+            "right": 1128,
+            "bottom": 238
+          },
+          "confidence": 0.52762276
+        }
+      ],
+      "boundingBox": {
+        "left": 496,
+        "top": 59,
+        "right": 1135,
+        "bottom": 240
+      }
+    },
+    {
+      "text": "Cashless\nCrange",
+      "lines": [
+        {
+          "text": "Cashless",
+          "boundingBox": {
+            "left": 236,
+            "top": 822,
+            "right": 457,
+            "bottom": 888
+          },
+          "confidence": 0.7661133
+        },
+        {
+          "text": "Crange",
+          "boundingBox": {
+            "left": 228,
+            "top": 874,
+            "right": 397,
+            "bottom": 939
+          },
+          "confidence": 0.62369794
+        }
+      ],
+      "boundingBox": {
+        "left": 228,
+        "top": 819,
+        "right": 458,
+        "bottom": 946
+      }
+    },
+    {
+      "text": "TEL",
+      "lines": [
+        {
+          "text": "TEL",
+          "boundingBox": {
+            "left": 587,
+            "top": 163,
+            "right": 653,
+            "bottom": 216
+          },
+          "confidence": 0.84244794
+        }
+      ],
+      "boundingBox": {
+        "left": 587,
+        "top": 163,
+        "right": 653,
+        "bottom": 216
+      }
+    },
+    {
+      "text": "Take-Out Total",
+      "lines": [
+        {
+          "text": "Take-Out Total",
+          "boundingBox": {
+            "left": 253,
+            "top": 715,
+            "right": 623,
+            "bottom": 802
+          },
+          "confidence": 0.64813703
+        }
+      ],
+      "boundingBox": {
+        "left": 253,
+        "top": 715,
+        "right": 623,
+        "bottom": 802
+      }
+    },
+    {
+      "text": "MER# 439206\nCARD ISSUER",
+      "lines": [
+        {
+          "text": "MER# 439206",
+          "boundingBox": {
+            "left": 217,
+            "top": 981,
+            "right": 520,
+            "bottom": 1063
+          },
+          "confidence": 0.6417969
+        },
+        {
+          "text": "CARD ISSUER",
+          "boundingBox": {
+            "left": 241,
+            "top": 1036,
+            "right": 528,
+            "bottom": 1122
+          },
+          "confidence": 0.721875
+        }
+      ],
+      "boundingBox": {
+        "left": 210,
+        "top": 981,
+        "right": 533,
+        "bottom": 1123
+      }
+    },
+    {
+      "text": "BOW DE3IT CAR0 E\nTRANSATION AMOT\nCHIP READ",
+      "lines": [
+        {
+          "text": "BOW DE3IT CAR0 E",
+          "boundingBox": {
+            "left": 228,
+            "top": 1091,
+            "right": 742,
+            "bottom": 1199
+          },
+          "confidence": 0.6159856
+        },
+        {
+          "text": "TRANSATION AMOT",
+          "boundingBox": {
+            "left": 205,
+            "top": 1142,
+            "right": 725,
+            "bottom": 1255
+          },
+          "confidence": 0.61467636
+        },
+        {
+          "text": "CHIP READ",
+          "boundingBox": {
+            "left": 193,
+            "top": 1201,
+            "right": 453,
+            "bottom": 1277
+          },
+          "confidence": 0.72216797
+        }
+      ],
+      "boundingBox": {
+        "left": 193,
+        "top": 1087,
+        "right": 742,
+        "bottom": 1308
+      }
+    },
+    {
+      "text": "AUTHOR12ATION OE15\nSEQW 039988\nAID: A00000004 23",
+      "lines": [
+        {
+          "text": "AUTHOR12ATION OE15",
+          "boundingBox": {
+            "left": 206,
+            "top": 1251,
+            "right": 908,
+            "bottom": 1396
+          },
+          "confidence": 0.59420955
+        },
+        {
+          "text": "SEQW 039988",
+          "boundingBox": {
+            "left": 216,
+            "top": 1313,
+            "right": 494,
+            "bottom": 1399
+          },
+          "confidence": 0.62890625
+        },
+        {
+          "text": "AID: A00000004 23",
+          "boundingBox": {
+            "left": 193,
+            "top": 1365,
+            "right": 735,
+            "bottom": 1485
+          },
+          "confidence": 0.6296875
+        }
+      ],
+      "boundingBox": {
+        "left": 193,
+        "top": 1251,
+        "right": 908,
+        "bottom": 1506
+      }
+    },
+    {
+      "text": "HcDona ld's now a a1",
+      "lines": [
+        {
+          "text": "HcDona ld's now a a1",
+          "boundingBox": {
+            "left": 216,
+            "top": 1478,
+            "right": 729,
+            "bottom": 1603
+          },
+          "confidence": 0.5095215
+        }
+      ],
+      "boundingBox": {
+        "left": 216,
+        "top": 1478,
+        "right": 729,
+        "bottom": 1603
+      }
+    },
+    {
+      "text": "T0",
+      "lines": [
+        {
+          "text": "T0",
+          "boundingBox": {
+            "left": 951,
+            "top": 217,
+            "right": 1031,
+            "bottom": 271
+          },
+          "confidence": 0.32617188
+        }
+      ],
+      "boundingBox": {
+        "left": 951,
+        "top": 217,
+        "right": 1031,
+        "bottom": 271
+      }
+    },
+    {
+      "text": "E",
+      "lines": [
+        {
+          "text": "E",
+          "boundingBox": {
+            "left": 1051,
+            "top": 137,
+            "right": 1075,
+            "bottom": 185
+          },
+          "confidence": 0.14453125
+        }
+      ],
+      "boundingBox": {
+        "left": 1051,
+        "top": 137,
+        "right": 1075,
+        "bottom": 185
+      }
+    },
+    {
+      "text": "2a13 03:D8 PM\nDrcer 97",
+      "lines": [
+        {
+          "text": "2a13 03:D8 PM",
+          "boundingBox": {
+            "left": 814,
+            "top": 292,
+            "right": 1298,
+            "bottom": 394
+          },
+          "confidence": 0.37144887
+        },
+        {
+          "text": "Drcer 97",
+          "boundingBox": {
+            "left": 1083,
+            "top": 377,
+            "right": 1291,
+            "bottom": 437
+          },
+          "confidence": 0.5859375
+        }
+      ],
+      "boundingBox": {
+        "left": 809,
+        "top": 292,
+        "right": 1299,
+        "bottom": 439
+      }
+    },
+    {
+      "text": "5.99",
+      "lines": [
+        {
+          "text": "5.99",
+          "boundingBox": {
+            "left": 1181,
+            "top": 483,
+            "right": 1293,
+            "bottom": 535
+          },
+          "confidence": 0.54589844
+        }
+      ],
+      "boundingBox": {
+        "left": 1181,
+        "top": 483,
+        "right": 1293,
+        "bottom": 535
+      }
+    },
+    {
+      "text": "0.25",
+      "lines": [
+        {
+          "text": "0.25",
+          "boundingBox": {
+            "left": 1179,
+            "top": 580,
+            "right": 1290,
+            "bottom": 632
+          },
+          "confidence": 0.7080078
+        }
+      ],
+      "boundingBox": {
+        "left": 1179,
+        "top": 580,
+        "right": 1290,
+        "bottom": 632
+      }
+    },
+    {
+      "text": "0.40",
+      "lines": [
+        {
+          "text": "0.40",
+          "boundingBox": {
+            "left": 1176,
+            "top": 630,
+            "right": 1289,
+            "bottom": 680
+          },
+          "confidence": 0.6845703
+        }
+      ],
+      "boundingBox": {
+        "left": 1176,
+        "top": 630,
+        "right": 1289,
+        "bottom": 680
+      }
+    },
+    {
+      "text": "6.64",
+      "lines": [
+        {
+          "text": "6.64",
+          "boundingBox": {
+            "left": 1174,
+            "top": 730,
+            "right": 1285,
+            "bottom": 783
+          },
+          "confidence": 0.8105469
+        }
+      ],
+      "boundingBox": {
+        "left": 1174,
+        "top": 730,
+        "right": 1285,
+        "bottom": 783
+      }
+    },
+    {
+      "text": "0.83",
+      "lines": [
+        {
+          "text": "0.83",
+          "boundingBox": {
+            "left": 1172,
+            "top": 781,
+            "right": 1287,
+            "bottom": 835
+          },
+          "confidence": 0.6513672
+        }
+      ],
+      "boundingBox": {
+        "left": 1172,
+        "top": 781,
+        "right": 1287,
+        "bottom": 835
+      }
+    },
+    {
+      "text": "7.27",
+      "lines": [
+        {
+          "text": "7.27",
+          "boundingBox": {
+            "left": 1174,
+            "top": 831,
+            "right": 1282,
+            "bottom": 886
+          },
+          "confidence": 0.60546875
+        }
+      ],
+      "boundingBox": {
+        "left": 1174,
+        "top": 831,
+        "right": 1282,
+        "bottom": 886
+      }
+    },
+    {
+      "text": "T.27",
+      "lines": [
+        {
+          "text": "T.27",
+          "boundingBox": {
+            "left": 1171,
+            "top": 938,
+            "right": 1281,
+            "bottom": 994
+          },
+          "confidence": 0.6279297
+        }
+      ],
+      "boundingBox": {
+        "left": 1171,
+        "top": 938,
+        "right": 1281,
+        "bottom": 994
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 1167,
+            "top": 991,
+            "right": 1282,
+            "bottom": 1050
+          },
+          "confidence": 0.5449219
+        }
+      ],
+      "boundingBox": {
+        "left": 1167,
+        "top": 991,
+        "right": 1282,
+        "bottom": 1050
+      }
+    },
+    {
+      "text": "7.27",
+      "lines": [
+        {
+          "text": "7.27",
+          "boundingBox": {
+            "left": 1160,
+            "top": 1267,
+            "right": 1277,
+            "bottom": 1330
+          },
+          "confidence": 0.7080078
+        }
+      ],
+      "boundingBox": {
+        "left": 1160,
+        "top": 1267,
+        "right": 1277,
+        "bottom": 1330
+      }
+    }
+  ]
+}

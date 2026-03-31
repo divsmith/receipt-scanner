@@ -1,0 +1,597 @@
+{
+  "fullText": "MITASU JAPANESE RESTAURANT SDN BHD\nB-01,CENTRAL PLAZA,\n34,JALAN SULTAN ISHAIL,\n50250 KUALA LUMPUR\nTEL 03-2110 2833\n(GST Res. No : 001774428160)\nTax Invo ice\nTable D2\nBill#:V001-201060\nDate 29-06-2018 19:59:15\nCashier: AARON\nCty Descript ion\n11 (28.01) Acult\nSubtotal:\nServ. Charge (1C%):\n6ST Payable (0%):\nTotal:\nTOTAL:\n-\nClosed: 001\nServer: AARON\nVISA\n$***3042\n- LIM CHAI JA\nOdr No: 199535\nPax(s): 11\nTotal TAX\nD 709.50 SR\n709.50\n70.95\n0.00\n760.45\n780.45\n29-08-2018 21:52:03\n780.45",
+  "blocks": [
+    {
+      "text": "MITASU JAPANESE RESTAURANT SDN BHD\nB-01,CENTRAL PLAZA,\n34,JALAN SULTAN ISHAIL,\n50250 KUALA LUMPUR\nTEL 03-2110 2833\n(GST Res. No : 001774428160)\nTax Invo ice\nTable D2\nBill#:V001-201060\nDate 29-06-2018 19:59:15\nCashier: AARON",
+      "lines": [
+        {
+          "text": "MITASU JAPANESE RESTAURANT SDN BHD",
+          "boundingBox": {
+            "left": 314,
+            "top": 33,
+            "right": 1042,
+            "bottom": 90
+          },
+          "confidence": 0.7604167
+        },
+        {
+          "text": "B-01,CENTRAL PLAZA,",
+          "boundingBox": {
+            "left": 468,
+            "top": 90,
+            "right": 874,
+            "bottom": 142
+          },
+          "confidence": 0.7526042
+        },
+        {
+          "text": "34,JALAN SULTAN ISHAIL,",
+          "boundingBox": {
+            "left": 428,
+            "top": 149,
+            "right": 912,
+            "bottom": 199
+          },
+          "confidence": 0.7777158
+        },
+        {
+          "text": "50250 KUALA LUMPUR",
+          "boundingBox": {
+            "left": 500,
+            "top": 208,
+            "right": 878,
+            "bottom": 256
+          },
+          "confidence": 0.78637695
+        },
+        {
+          "text": "TEL 03-2110 2833",
+          "boundingBox": {
+            "left": 514,
+            "top": 262,
+            "right": 852,
+            "bottom": 309
+          },
+          "confidence": 0.782087
+        },
+        {
+          "text": "(GST Res. No : 001774428160)",
+          "boundingBox": {
+            "left": 388,
+            "top": 299,
+            "right": 981,
+            "bottom": 364
+          },
+          "confidence": 0.7027995
+        },
+        {
+          "text": "Tax Invo ice",
+          "boundingBox": {
+            "left": 428,
+            "top": 343,
+            "right": 906,
+            "bottom": 406
+          },
+          "confidence": 0.73515624
+        },
+        {
+          "text": "Table D2",
+          "boundingBox": {
+            "left": 262,
+            "top": 396,
+            "right": 587,
+            "bottom": 452
+          },
+          "confidence": 0.75223213
+        },
+        {
+          "text": "Bill#:V001-201060",
+          "boundingBox": {
+            "left": 238,
+            "top": 447,
+            "right": 613,
+            "bottom": 497
+          },
+          "confidence": 0.7366728
+        },
+        {
+          "text": "Date 29-06-2018 19:59:15",
+          "boundingBox": {
+            "left": 234,
+            "top": 494,
+            "right": 859,
+            "bottom": 553
+          },
+          "confidence": 0.8531605
+        },
+        {
+          "text": "Cashier: AARON",
+          "boundingBox": {
+            "left": 234,
+            "top": 559,
+            "right": 545,
+            "bottom": 606
+          },
+          "confidence": 0.8004808
+        }
+      ],
+      "boundingBox": {
+        "left": 224,
+        "top": 30,
+        "right": 1052,
+        "bottom": 608
+      }
+    },
+    {
+      "text": "Cty Descript ion",
+      "lines": [
+        {
+          "text": "Cty Descript ion",
+          "boundingBox": {
+            "left": 234,
+            "top": 673,
+            "right": 614,
+            "bottom": 729
+          },
+          "confidence": 0.8136161
+        }
+      ],
+      "boundingBox": {
+        "left": 234,
+        "top": 673,
+        "right": 614,
+        "bottom": 729
+      }
+    },
+    {
+      "text": "11 (28.01) Acult",
+      "lines": [
+        {
+          "text": "11 (28.01) Acult",
+          "boundingBox": {
+            "left": 249,
+            "top": 787,
+            "right": 593,
+            "bottom": 850
+          },
+          "confidence": 0.77120537
+        }
+      ],
+      "boundingBox": {
+        "left": 249,
+        "top": 787,
+        "right": 593,
+        "bottom": 850
+      }
+    },
+    {
+      "text": "Subtotal:\nServ. Charge (1C%):\n6ST Payable (0%):",
+      "lines": [
+        {
+          "text": "Subtotal:",
+          "boundingBox": {
+            "left": 247,
+            "top": 910,
+            "right": 442,
+            "bottom": 957
+          },
+          "confidence": 0.7621528
+        },
+        {
+          "text": "Serv. Charge (1C%):",
+          "boundingBox": {
+            "left": 250,
+            "top": 957,
+            "right": 663,
+            "bottom": 1017
+          },
+          "confidence": 0.7550551
+        },
+        {
+          "text": "6ST Payable (0%):",
+          "boundingBox": {
+            "left": 242,
+            "top": 1011,
+            "right": 619,
+            "bottom": 1069
+          },
+          "confidence": 0.74322915
+        }
+      ],
+      "boundingBox": {
+        "left": 239,
+        "top": 902,
+        "right": 664,
+        "bottom": 1069
+      }
+    },
+    {
+      "text": "Total:",
+      "lines": [
+        {
+          "text": "Total:",
+          "boundingBox": {
+            "left": 240,
+            "top": 1074,
+            "right": 367,
+            "bottom": 1123
+          },
+          "confidence": 0.85807294
+        }
+      ],
+      "boundingBox": {
+        "left": 240,
+        "top": 1074,
+        "right": 367,
+        "bottom": 1123
+      }
+    },
+    {
+      "text": "TOTAL:",
+      "lines": [
+        {
+          "text": "TOTAL:",
+          "boundingBox": {
+            "left": 236,
+            "top": 1132,
+            "right": 494,
+            "bottom": 1182
+          },
+          "confidence": 0.7213542
+        }
+      ],
+      "boundingBox": {
+        "left": 236,
+        "top": 1132,
+        "right": 494,
+        "bottom": 1182
+      }
+    },
+    {
+      "text": "-",
+      "lines": [
+        {
+          "text": "-",
+          "boundingBox": {
+            "left": 212,
+            "top": 1443,
+            "right": 236,
+            "bottom": 1498
+          },
+          "confidence": 0.42578125
+        }
+      ],
+      "boundingBox": {
+        "left": 212,
+        "top": 1443,
+        "right": 236,
+        "bottom": 1498
+      }
+    },
+    {
+      "text": "Closed: 001\nServer: AARON",
+      "lines": [
+        {
+          "text": "Closed: 001",
+          "boundingBox": {
+            "left": 224,
+            "top": 1244,
+            "right": 478,
+            "bottom": 1307
+          },
+          "confidence": 0.8222656
+        },
+        {
+          "text": "Server: AARON",
+          "boundingBox": {
+            "left": 220,
+            "top": 1308,
+            "right": 528,
+            "bottom": 1369
+          },
+          "confidence": 0.82454425
+        }
+      ],
+      "boundingBox": {
+        "left": 217,
+        "top": 1242,
+        "right": 527,
+        "bottom": 1369
+      }
+    },
+    {
+      "text": "VISA",
+      "lines": [
+        {
+          "text": "VISA",
+          "boundingBox": {
+            "left": 218,
+            "top": 1384,
+            "right": 310,
+            "bottom": 1432
+          },
+          "confidence": 0.78027344
+        }
+      ],
+      "boundingBox": {
+        "left": 218,
+        "top": 1384,
+        "right": 310,
+        "bottom": 1432
+      }
+    },
+    {
+      "text": "$***3042",
+      "lines": [
+        {
+          "text": "$***3042",
+          "boundingBox": {
+            "left": 371,
+            "top": 1431,
+            "right": 657,
+            "bottom": 1494
+          },
+          "confidence": 0.54296875
+        }
+      ],
+      "boundingBox": {
+        "left": 371,
+        "top": 1431,
+        "right": 657,
+        "bottom": 1494
+      }
+    },
+    {
+      "text": "- LIM CHAI JA",
+      "lines": [
+        {
+          "text": "- LIM CHAI JA",
+          "boundingBox": {
+            "left": 209,
+            "top": 1505,
+            "right": 526,
+            "bottom": 1566
+          },
+          "confidence": 0.7359375
+        }
+      ],
+      "boundingBox": {
+        "left": 209,
+        "top": 1505,
+        "right": 526,
+        "bottom": 1566
+      }
+    },
+    {
+      "text": "Odr No: 199535",
+      "lines": [
+        {
+          "text": "Odr No: 199535",
+          "boundingBox": {
+            "left": 814,
+            "top": 433,
+            "right": 1128,
+            "bottom": 481
+          },
+          "confidence": 0.7158203
+        }
+      ],
+      "boundingBox": {
+        "left": 814,
+        "top": 433,
+        "right": 1128,
+        "bottom": 481
+      }
+    },
+    {
+      "text": "Pax(s): 11",
+      "lines": [
+        {
+          "text": "Pax(s): 11",
+          "boundingBox": {
+            "left": 884,
+            "top": 540,
+            "right": 1127,
+            "bottom": 595
+          },
+          "confidence": 0.7005208
+        }
+      ],
+      "boundingBox": {
+        "left": 884,
+        "top": 540,
+        "right": 1127,
+        "bottom": 595
+      }
+    },
+    {
+      "text": "Total TAX",
+      "lines": [
+        {
+          "text": "Total TAX",
+          "boundingBox": {
+            "left": 943,
+            "top": 654,
+            "right": 1133,
+            "bottom": 712
+          },
+          "confidence": 0.7475586
+        }
+      ],
+      "boundingBox": {
+        "left": 943,
+        "top": 654,
+        "right": 1133,
+        "bottom": 712
+      }
+    },
+    {
+      "text": "D 709.50 SR",
+      "lines": [
+        {
+          "text": "D 709.50 SR",
+          "boundingBox": {
+            "left": 844,
+            "top": 778,
+            "right": 1135,
+            "bottom": 831
+          },
+          "confidence": 0.75390625
+        }
+      ],
+      "boundingBox": {
+        "left": 844,
+        "top": 778,
+        "right": 1135,
+        "bottom": 831
+      }
+    },
+    {
+      "text": "709.50",
+      "lines": [
+        {
+          "text": "709.50",
+          "boundingBox": {
+            "left": 1004,
+            "top": 892,
+            "right": 1135,
+            "bottom": 941
+          },
+          "confidence": 0.78190106
+        }
+      ],
+      "boundingBox": {
+        "left": 1004,
+        "top": 892,
+        "right": 1135,
+        "bottom": 941
+      }
+    },
+    {
+      "text": "70.95",
+      "lines": [
+        {
+          "text": "70.95",
+          "boundingBox": {
+            "left": 1028,
+            "top": 952,
+            "right": 1136,
+            "bottom": 986
+          },
+          "confidence": 0.8648437
+        }
+      ],
+      "boundingBox": {
+        "left": 1028,
+        "top": 952,
+        "right": 1136,
+        "bottom": 986
+      }
+    },
+    {
+      "text": "0.00",
+      "lines": [
+        {
+          "text": "0.00",
+          "boundingBox": {
+            "left": 1052,
+            "top": 1002,
+            "right": 1144,
+            "bottom": 1038
+          },
+          "confidence": 0.7734375
+        }
+      ],
+      "boundingBox": {
+        "left": 1052,
+        "top": 1002,
+        "right": 1144,
+        "bottom": 1038
+      }
+    },
+    {
+      "text": "760.45",
+      "lines": [
+        {
+          "text": "760.45",
+          "boundingBox": {
+            "left": 1010,
+            "top": 1050,
+            "right": 1147,
+            "bottom": 1095
+          },
+          "confidence": 0.82682294
+        }
+      ],
+      "boundingBox": {
+        "left": 1010,
+        "top": 1050,
+        "right": 1147,
+        "bottom": 1095
+      }
+    },
+    {
+      "text": "780.45",
+      "lines": [
+        {
+          "text": "780.45",
+          "boundingBox": {
+            "left": 880,
+            "top": 1106,
+            "right": 1151,
+            "bottom": 1157
+          },
+          "confidence": 0.82421875
+        }
+      ],
+      "boundingBox": {
+        "left": 880,
+        "top": 1106,
+        "right": 1151,
+        "bottom": 1157
+      }
+    },
+    {
+      "text": "29-08-2018 21:52:03",
+      "lines": [
+        {
+          "text": "29-08-2018 21:52:03",
+          "boundingBox": {
+            "left": 670,
+            "top": 1225,
+            "right": 1167,
+            "bottom": 1287
+          },
+          "confidence": 0.7986111
+        }
+      ],
+      "boundingBox": {
+        "left": 670,
+        "top": 1225,
+        "right": 1167,
+        "bottom": 1287
+      }
+    },
+    {
+      "text": "780.45",
+      "lines": [
+        {
+          "text": "780.45",
+          "boundingBox": {
+            "left": 1036,
+            "top": 1352,
+            "right": 1180,
+            "bottom": 1403
+          },
+          "confidence": 0.79036456
+        }
+      ],
+      "boundingBox": {
+        "left": 1036,
+        "top": 1352,
+        "right": 1180,
+        "bottom": 1403
+      }
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+{
+  "fullText": "aggio\nprder 9862\nfable 14\nGRI LLE\nVillaggio Grille\n4780 Wharf Parkway\nOrange Beach, AL 36561\nPHONE: 251-224-6510\n06/08/19 11:45 AM\nCust 3 Server 156 JAMIE\n1 P-VILLAGIO BREEZE\n1 ADD SALAD\n1 LUNCH SEAFOOD PASTA\n1 KID PEPERONI PIZZA\n1 KID ALFREDO\nSub-total:\nTax:\n0.01\n3.00\n14.00\n7.00\n7.00\n31.01\n3.11\nTota | Due: : 34- 12",
+  "blocks": [
+    {
+      "text": "aggio",
+      "lines": [
+        {
+          "text": "aggio",
+          "boundingBox": {
+            "left": 681,
+            "top": 25,
+            "right": 1281,
+            "bottom": 205
+          },
+          "confidence": 0.43203124
+        }
+      ],
+      "boundingBox": {
+        "left": 681,
+        "top": 25,
+        "right": 1281,
+        "bottom": 205
+      }
+    },
+    {
+      "text": "prder 9862\nfable 14",
+      "lines": [
+        {
+          "text": "prder 9862",
+          "boundingBox": {
+            "left": 220,
+            "top": 568,
+            "right": 502,
+            "bottom": 618
+          },
+          "confidence": 0.7395833
+        },
+        {
+          "text": "fable 14",
+          "boundingBox": {
+            "left": 226,
+            "top": 618,
+            "right": 440,
+            "bottom": 664
+          },
+          "confidence": 0.77622765
+        }
+      ],
+      "boundingBox": {
+        "left": 220,
+        "top": 568,
+        "right": 502,
+        "bottom": 664
+      }
+    },
+    {
+      "text": "GRI LLE",
+      "lines": [
+        {
+          "text": "GRI LLE",
+          "boundingBox": {
+            "left": 574,
+            "top": 176,
+            "right": 1149,
+            "bottom": 253
+          },
+          "confidence": 0.7246094
+        }
+      ],
+      "boundingBox": {
+        "left": 574,
+        "top": 176,
+        "right": 1149,
+        "bottom": 253
+      }
+    },
+    {
+      "text": "Villaggio Grille\n4780 Wharf Parkway\nOrange Beach, AL 36561\nPHONE: 251-224-6510",
+      "lines": [
+        {
+          "text": "Villaggio Grille",
+          "boundingBox": {
+            "left": 574,
+            "top": 325,
+            "right": 1010,
+            "bottom": 369
+          },
+          "confidence": 0.7158854
+        },
+        {
+          "text": "4780 Wharf Parkway",
+          "boundingBox": {
+            "left": 542,
+            "top": 371,
+            "right": 1038,
+            "bottom": 419
+          },
+          "confidence": 0.9025879
+        },
+        {
+          "text": "Orange Beach, AL 36561",
+          "boundingBox": {
+            "left": 484,
+            "top": 413,
+            "right": 1092,
+            "bottom": 467
+          },
+          "confidence": 0.84457237
+        },
+        {
+          "text": "PHONE: 251-224-6510",
+          "boundingBox": {
+            "left": 508,
+            "top": 466,
+            "right": 1042,
+            "bottom": 511
+          },
+          "confidence": 0.81727433
+        }
+      ],
+      "boundingBox": {
+        "left": 483,
+        "top": 323,
+        "right": 1093,
+        "bottom": 511
+      }
+    },
+    {
+      "text": "06/08/19 11:45 AM\nCust 3 Server 156 JAMIE",
+      "lines": [
+        {
+          "text": "06/08/19 11:45 AM",
+          "boundingBox": {
+            "left": 562,
+            "top": 568,
+            "right": 1076,
+            "bottom": 618
+          },
+          "confidence": 0.73333335
+        },
+        {
+          "text": "Cust 3 Server 156 JAMIE",
+          "boundingBox": {
+            "left": 502,
+            "top": 612,
+            "right": 1196,
+            "bottom": 664
+          },
+          "confidence": 0.8875411
+        }
+      ],
+      "boundingBox": {
+        "left": 502,
+        "top": 564,
+        "right": 1196,
+        "bottom": 664
+      }
+    },
+    {
+      "text": "1 P-VILLAGIO BREEZE\n1 ADD SALAD",
+      "lines": [
+        {
+          "text": "1 P-VILLAGIO BREEZE",
+          "boundingBox": {
+            "left": 211,
+            "top": 822,
+            "right": 749,
+            "bottom": 873
+          },
+          "confidence": 0.7734375
+        },
+        {
+          "text": "1 ADD SALAD",
+          "boundingBox": {
+            "left": 193,
+            "top": 877,
+            "right": 505,
+            "bottom": 929
+          },
+          "confidence": 0.8177083
+        }
+      ],
+      "boundingBox": {
+        "left": 193,
+        "top": 820,
+        "right": 749,
+        "bottom": 932
+      }
+    },
+    {
+      "text": "1 LUNCH SEAFOOD PASTA\n1 KID PEPERONI PIZZA\n1 KID ALFREDO",
+      "lines": [
+        {
+          "text": "1 LUNCH SEAFOOD PASTA",
+          "boundingBox": {
+            "left": 192,
+            "top": 934,
+            "right": 810,
+            "bottom": 988
+          },
+          "confidence": 0.77473956
+        },
+        {
+          "text": "1 KID PEPERONI PIZZA",
+          "boundingBox": {
+            "left": 178,
+            "top": 990,
+            "right": 776,
+            "bottom": 1046
+          },
+          "confidence": 0.81985295
+        },
+        {
+          "text": "1 KID ALFREDO",
+          "boundingBox": {
+            "left": 175,
+            "top": 1048,
+            "right": 553,
+            "bottom": 1108
+          },
+          "confidence": 0.77059656
+        }
+      ],
+      "boundingBox": {
+        "left": 175,
+        "top": 930,
+        "right": 809,
+        "bottom": 1109
+      }
+    },
+    {
+      "text": "Sub-total:",
+      "lines": [
+        {
+          "text": "Sub-total:",
+          "boundingBox": {
+            "left": 673,
+            "top": 1243,
+            "right": 993,
+            "bottom": 1295
+          },
+          "confidence": 0.8269531
+        }
+      ],
+      "boundingBox": {
+        "left": 673,
+        "top": 1243,
+        "right": 993,
+        "bottom": 1295
+      }
+    },
+    {
+      "text": "Tax:",
+      "lines": [
+        {
+          "text": "Tax:",
+          "boundingBox": {
+            "left": 874,
+            "top": 1314,
+            "right": 998,
+            "bottom": 1360
+          },
+          "confidence": 0.78222656
+        }
+      ],
+      "boundingBox": {
+        "left": 874,
+        "top": 1314,
+        "right": 998,
+        "bottom": 1360
+      }
+    },
+    {
+      "text": "0.01",
+      "lines": [
+        {
+          "text": "0.01",
+          "boundingBox": {
+            "left": 1214,
+            "top": 832,
+            "right": 1330,
+            "bottom": 870
+          },
+          "confidence": 0.8027344
+        }
+      ],
+      "boundingBox": {
+        "left": 1214,
+        "top": 832,
+        "right": 1330,
+        "bottom": 870
+      }
+    },
+    {
+      "text": "3.00",
+      "lines": [
+        {
+          "text": "3.00",
+          "boundingBox": {
+            "left": 1218,
+            "top": 890,
+            "right": 1340,
+            "bottom": 928
+          },
+          "confidence": 0.9042969
+        }
+      ],
+      "boundingBox": {
+        "left": 1218,
+        "top": 890,
+        "right": 1340,
+        "bottom": 928
+      }
+    },
+    {
+      "text": "14.00",
+      "lines": [
+        {
+          "text": "14.00",
+          "boundingBox": {
+            "left": 1200,
+            "top": 943,
+            "right": 1346,
+            "bottom": 989
+          },
+          "confidence": 0.85078126
+        }
+      ],
+      "boundingBox": {
+        "left": 1200,
+        "top": 943,
+        "right": 1346,
+        "bottom": 989
+      }
+    },
+    {
+      "text": "7.00",
+      "lines": [
+        {
+          "text": "7.00",
+          "boundingBox": {
+            "left": 1228,
+            "top": 1006,
+            "right": 1352,
+            "bottom": 1046
+          },
+          "confidence": 0.8652344
+        }
+      ],
+      "boundingBox": {
+        "left": 1228,
+        "top": 1006,
+        "right": 1352,
+        "bottom": 1046
+      }
+    },
+    {
+      "text": "7.00",
+      "lines": [
+        {
+          "text": "7.00",
+          "boundingBox": {
+            "left": 1232,
+            "top": 1064,
+            "right": 1358,
+            "bottom": 1106
+          },
+          "confidence": 0.8613281
+        }
+      ],
+      "boundingBox": {
+        "left": 1232,
+        "top": 1064,
+        "right": 1358,
+        "bottom": 1106
+      }
+    },
+    {
+      "text": "31.01",
+      "lines": [
+        {
+          "text": "31.01",
+          "boundingBox": {
+            "left": 1209,
+            "top": 1252,
+            "right": 1366,
+            "bottom": 1297
+          },
+          "confidence": 0.8382813
+        }
+      ],
+      "boundingBox": {
+        "left": 1209,
+        "top": 1252,
+        "right": 1366,
+        "bottom": 1297
+      }
+    },
+    {
+      "text": "3.11",
+      "lines": [
+        {
+          "text": "3.11",
+          "boundingBox": {
+            "left": 1246,
+            "top": 1318,
+            "right": 1372,
+            "bottom": 1364
+          },
+          "confidence": 0.7861328
+        }
+      ],
+      "boundingBox": {
+        "left": 1246,
+        "top": 1318,
+        "right": 1372,
+        "bottom": 1364
+      }
+    },
+    {
+      "text": "Tota | Due: : 34- 12",
+      "lines": [
+        {
+          "text": "Tota | Due: : 34- 12",
+          "boundingBox": {
+            "left": 377,
+            "top": 1426,
+            "right": 1461,
+            "bottom": 1520
+          },
+          "confidence": 0.7015625
+        }
+      ],
+      "boundingBox": {
+        "left": 377,
+        "top": 1426,
+        "right": 1461,
+        "bottom": 1520
+      }
+    }
+  ]
+}

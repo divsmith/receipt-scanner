@@ -1,0 +1,576 @@
+{
+  "fullText": "TABLE\n5 GUESTS\nCOLUMBUS RESTAURANT\n736 0CEAN DRIVE\nMIAMI BEACH, FL 33139\nTEL: 786-275-6944\n2 F8D BLUE MARGARI\n1 CHEESE URGER\n1 CHICKEN MARSALA\nTAX and SRUICE Detail\n91\nFOOD:\nSALES TAX 7I. 143.00\nRESORT TAXZ2\nSERUICE207\nTOTAL\nGustavo\nSERUICE:\nTF ARTICLES\nANBIANCE:\nHANE:\nSATURDAY 01-27-2018 03:59PM\nKey 12-Waitr: 12-POS\n5S.00 100!\nTax\n14.501\n18.50!\n10.01 153.01\nPLEASE RATE US SO ME CAN BETTER SPEUE\n1 2 3 4 S 6 7 8 V\n8.60\n184.47\n1 234 5 67 89 10\n12 3 4 5 6 789",
+  "blocks": [
+    {
+      "text": "TABLE\n5 GUESTS",
+      "lines": [
+        {
+          "text": "TABLE",
+          "boundingBox": {
+            "left": 304,
+            "top": 298,
+            "right": 445,
+            "bottom": 355
+          },
+          "confidence": 0.7085937
+        },
+        {
+          "text": "5 GUESTS",
+          "boundingBox": {
+            "left": 357,
+            "top": 364,
+            "right": 505,
+            "bottom": 412
+          },
+          "confidence": 0.7248884
+        }
+      ],
+      "boundingBox": {
+        "left": 301,
+        "top": 298,
+        "right": 509,
+        "bottom": 414
+      }
+    },
+    {
+      "text": "COLUMBUS RESTAURANT\n736 0CEAN DRIVE\nMIAMI BEACH, FL 33139\nTEL: 786-275-6944",
+      "lines": [
+        {
+          "text": "COLUMBUS RESTAURANT",
+          "boundingBox": {
+            "left": 423,
+            "top": 50,
+            "right": 927,
+            "bottom": 112
+          },
+          "confidence": 0.77300346
+        },
+        {
+          "text": "736 0CEAN DRIVE",
+          "boundingBox": {
+            "left": 546,
+            "top": 119,
+            "right": 812,
+            "bottom": 163
+          },
+          "confidence": 0.73407453
+        },
+        {
+          "text": "MIAMI BEACH, FL 33139",
+          "boundingBox": {
+            "left": 501,
+            "top": 166,
+            "right": 867,
+            "bottom": 224
+          },
+          "confidence": 0.66536456
+        },
+        {
+          "text": "TEL: 786-275-6944",
+          "boundingBox": {
+            "left": 527,
+            "top": 225,
+            "right": 831,
+            "bottom": 268
+          },
+          "confidence": 0.7919922
+        }
+      ],
+      "boundingBox": {
+        "left": 421,
+        "top": 49,
+        "right": 927,
+        "bottom": 271
+      }
+    },
+    {
+      "text": "2 F8D BLUE MARGARI\n1 CHEESE URGER\n1 CHICKEN MARSALA\nTAX and SRUICE Detail",
+      "lines": [
+        {
+          "text": "2 F8D BLUE MARGARI",
+          "boundingBox": {
+            "left": 377,
+            "top": 457,
+            "right": 699,
+            "bottom": 505
+          },
+          "confidence": 0.7377604
+        },
+        {
+          "text": "1 CHEESE URGER",
+          "boundingBox": {
+            "left": 393,
+            "top": 509,
+            "right": 649,
+            "bottom": 561
+          },
+          "confidence": 0.8248698
+        },
+        {
+          "text": "1 CHICKEN MARSALA",
+          "boundingBox": {
+            "left": 392,
+            "top": 561,
+            "right": 685,
+            "bottom": 611
+          },
+          "confidence": 0.8286458
+        },
+        {
+          "text": "TAX and SRUICE Detail",
+          "boundingBox": {
+            "left": 297,
+            "top": 615,
+            "right": 699,
+            "bottom": 665
+          },
+          "confidence": 0.76627606
+        }
+      ],
+      "boundingBox": {
+        "left": 297,
+        "top": 456,
+        "right": 702,
+        "bottom": 665
+      }
+    },
+    {
+      "text": "91",
+      "lines": [
+        {
+          "text": "91",
+          "boundingBox": {
+            "left": 533,
+            "top": 312,
+            "right": 580,
+            "bottom": 358
+          },
+          "confidence": 0.8339844
+        }
+      ],
+      "boundingBox": {
+        "left": 533,
+        "top": 312,
+        "right": 580,
+        "bottom": 358
+      }
+    },
+    {
+      "text": "FOOD:",
+      "lines": [
+        {
+          "text": "FOOD:",
+          "boundingBox": {
+            "left": 279,
+            "top": 1362,
+            "right": 359,
+            "bottom": 1414
+          },
+          "confidence": 0.5601562
+        }
+      ],
+      "boundingBox": {
+        "left": 279,
+        "top": 1362,
+        "right": 359,
+        "bottom": 1414
+      }
+    },
+    {
+      "text": "SALES TAX 7I. 143.00\nRESORT TAXZ2\nSERUICE207",
+      "lines": [
+        {
+          "text": "SALES TAX 7I. 143.00",
+          "boundingBox": {
+            "left": 296,
+            "top": 785,
+            "right": 703,
+            "bottom": 826
+          },
+          "confidence": 0.6711857
+        },
+        {
+          "text": "RESORT TAXZ2",
+          "boundingBox": {
+            "left": 294,
+            "top": 835,
+            "right": 516,
+            "bottom": 884
+          },
+          "confidence": 0.7105824
+        },
+        {
+          "text": "SERUICE207",
+          "boundingBox": {
+            "left": 293,
+            "top": 892,
+            "right": 478,
+            "bottom": 938
+          },
+          "confidence": 0.66367185
+        }
+      ],
+      "boundingBox": {
+        "left": 292,
+        "top": 781,
+        "right": 703,
+        "bottom": 938
+      }
+    },
+    {
+      "text": "TOTAL",
+      "lines": [
+        {
+          "text": "TOTAL",
+          "boundingBox": {
+            "left": 298,
+            "top": 1042,
+            "right": 560,
+            "bottom": 1098
+          },
+          "confidence": 0.7085937
+        }
+      ],
+      "boundingBox": {
+        "left": 298,
+        "top": 1042,
+        "right": 560,
+        "bottom": 1098
+      }
+    },
+    {
+      "text": "Gustavo",
+      "lines": [
+        {
+          "text": "Gustavo",
+          "boundingBox": {
+            "left": 580,
+            "top": 378,
+            "right": 704,
+            "bottom": 414
+          },
+          "confidence": 0.79185265
+        }
+      ],
+      "boundingBox": {
+        "left": 580,
+        "top": 378,
+        "right": 704,
+        "bottom": 414
+      }
+    },
+    {
+      "text": "SERUICE:",
+      "lines": [
+        {
+          "text": "SERUICE:",
+          "boundingBox": {
+            "left": 276,
+            "top": 1412,
+            "right": 407,
+            "bottom": 1473
+          },
+          "confidence": 0.6665039
+        }
+      ],
+      "boundingBox": {
+        "left": 276,
+        "top": 1412,
+        "right": 407,
+        "bottom": 1473
+      }
+    },
+    {
+      "text": "TF ARTICLES",
+      "lines": [
+        {
+          "text": "TF ARTICLES",
+          "boundingBox": {
+            "left": 503,
+            "top": 726,
+            "right": 703,
+            "bottom": 773
+          },
+          "confidence": 0.7128906
+        }
+      ],
+      "boundingBox": {
+        "left": 503,
+        "top": 726,
+        "right": 703,
+        "bottom": 773
+      }
+    },
+    {
+      "text": "ANBIANCE:\nHANE:",
+      "lines": [
+        {
+          "text": "ANBIANCE:",
+          "boundingBox": {
+            "left": 278,
+            "top": 1470,
+            "right": 421,
+            "bottom": 1528
+          },
+          "confidence": 0.57942706
+        },
+        {
+          "text": "HANE:",
+          "boundingBox": {
+            "left": 274,
+            "top": 1535,
+            "right": 355,
+            "bottom": 1587
+          },
+          "confidence": 0.50078124
+        }
+      ],
+      "boundingBox": {
+        "left": 271,
+        "top": 1465,
+        "right": 426,
+        "bottom": 1587
+      }
+    },
+    {
+      "text": "SATURDAY 01-27-2018 03:59PM\nKey 12-Waitr: 12-POS",
+      "lines": [
+        {
+          "text": "SATURDAY 01-27-2018 03:59PM",
+          "boundingBox": {
+            "left": 286,
+            "top": 1137,
+            "right": 792,
+            "bottom": 1197
+          },
+          "confidence": 0.76171875
+        },
+        {
+          "text": "Key 12-Waitr: 12-POS",
+          "boundingBox": {
+            "left": 284,
+            "top": 1194,
+            "right": 661,
+            "bottom": 1260
+          },
+          "confidence": 0.70182294
+        }
+      ],
+      "boundingBox": {
+        "left": 282,
+        "top": 1133,
+        "right": 795,
+        "bottom": 1260
+      }
+    },
+    {
+      "text": "5S.00 100!",
+      "lines": [
+        {
+          "text": "5S.00 100!",
+          "boundingBox": {
+            "left": 792,
+            "top": 433,
+            "right": 1013,
+            "bottom": 515
+          },
+          "confidence": 0.4496528
+        }
+      ],
+      "boundingBox": {
+        "left": 792,
+        "top": 433,
+        "right": 1013,
+        "bottom": 515
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 816,
+            "top": 732,
+            "right": 866,
+            "bottom": 772
+          },
+          "confidence": 0.5052083
+        }
+      ],
+      "boundingBox": {
+        "left": 816,
+        "top": 732,
+        "right": 866,
+        "bottom": 772
+      }
+    },
+    {
+      "text": "14.501",
+      "lines": [
+        {
+          "text": "14.501",
+          "boundingBox": {
+            "left": 930,
+            "top": 495,
+            "right": 1014,
+            "bottom": 551
+          },
+          "confidence": 0.34375
+        }
+      ],
+      "boundingBox": {
+        "left": 930,
+        "top": 495,
+        "right": 1014,
+        "bottom": 551
+      }
+    },
+    {
+      "text": "18.50!",
+      "lines": [
+        {
+          "text": "18.50!",
+          "boundingBox": {
+            "left": 931,
+            "top": 552,
+            "right": 1020,
+            "bottom": 606
+          },
+          "confidence": 0.50390625
+        }
+      ],
+      "boundingBox": {
+        "left": 931,
+        "top": 552,
+        "right": 1020,
+        "bottom": 606
+      }
+    },
+    {
+      "text": "10.01 153.01",
+      "lines": [
+        {
+          "text": "10.01 153.01",
+          "boundingBox": {
+            "left": 797,
+            "top": 785,
+            "right": 1021,
+            "bottom": 827
+          },
+          "confidence": 0.54545456
+        }
+      ],
+      "boundingBox": {
+        "left": 797,
+        "top": 785,
+        "right": 1021,
+        "bottom": 827
+      }
+    },
+    {
+      "text": "PLEASE RATE US SO ME CAN BETTER SPEUE\n1 2 3 4 S 6 7 8 V",
+      "lines": [
+        {
+          "text": "PLEASE RATE US SO ME CAN BETTER SPEUE",
+          "boundingBox": {
+            "left": 380,
+            "top": 1289,
+            "right": 961,
+            "bottom": 1353
+          },
+          "confidence": 0.54817706
+        },
+        {
+          "text": "1 2 3 4 S 6 7 8 V",
+          "boundingBox": {
+            "left": 508,
+            "top": 1348,
+            "right": 917,
+            "bottom": 1407
+          },
+          "confidence": 0.56380206
+        }
+      ],
+      "boundingBox": {
+        "left": 379,
+        "top": 1289,
+        "right": 961,
+        "bottom": 1410
+      }
+    },
+    {
+      "text": "8.60",
+      "lines": [
+        {
+          "text": "8.60",
+          "boundingBox": {
+            "left": 962,
+            "top": 900,
+            "right": 1022,
+            "bottom": 945
+          },
+          "confidence": 0.32617188
+        }
+      ],
+      "boundingBox": {
+        "left": 962,
+        "top": 900,
+        "right": 1022,
+        "bottom": 945
+      }
+    },
+    {
+      "text": "184.47",
+      "lines": [
+        {
+          "text": "184.47",
+          "boundingBox": {
+            "left": 787,
+            "top": 1033,
+            "right": 1043,
+            "bottom": 1126
+          },
+          "confidence": 0.8307292
+        }
+      ],
+      "boundingBox": {
+        "left": 787,
+        "top": 1033,
+        "right": 1043,
+        "bottom": 1126
+      }
+    },
+    {
+      "text": "1 234 5 67 89 10\n12 3 4 5 6 789",
+      "lines": [
+        {
+          "text": "1 234 5 67 89 10",
+          "boundingBox": {
+            "left": 508,
+            "top": 1405,
+            "right": 952,
+            "bottom": 1467
+          },
+          "confidence": 0.57670456
+        },
+        {
+          "text": "12 3 4 5 6 789",
+          "boundingBox": {
+            "left": 497,
+            "top": 1463,
+            "right": 886,
+            "bottom": 1525
+          },
+          "confidence": 0.5668403
+        }
+      ],
+      "boundingBox": {
+        "left": 496,
+        "top": 1405,
+        "right": 952,
+        "bottom": 1525
+      }
+    }
+  ]
+}

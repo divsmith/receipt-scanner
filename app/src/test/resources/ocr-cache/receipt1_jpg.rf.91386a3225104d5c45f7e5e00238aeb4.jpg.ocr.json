@@ -1,0 +1,421 @@
+{
+  "fullText": "Server: Franc is\nOrder #: 69923\nTab le: B11\n1 Coffee\n2 Lunch\n1 Coke\n5305 E PACIF IC cOAST HWY\nLong Beach. CA 90004\n(562) 597-0906\nGAEEN FIELD\nSUB TO TAL:\nTax 1:\nTOTAL:\nStat ion: 3\n126/2016 12:53:10 PM\nTHANK YOU!\nDine In\nGuests: 2\n3.00\n5.90\n3.00\n51.90\nų.68\n$56.58",
+  "blocks": [
+    {
+      "text": "Server: Franc is",
+      "lines": [
+        {
+          "text": "Server: Franc is",
+          "boundingBox": {
+            "left": 403,
+            "top": 652,
+            "right": 745,
+            "bottom": 690
+          },
+          "confidence": 0.81501114
+        }
+      ],
+      "boundingBox": {
+        "left": 403,
+        "top": 652,
+        "right": 745,
+        "bottom": 690
+      }
+    },
+    {
+      "text": "Order #: 69923\nTab le: B11",
+      "lines": [
+        {
+          "text": "Order #: 69923",
+          "boundingBox": {
+            "left": 387,
+            "top": 730,
+            "right": 710,
+            "bottom": 772
+          },
+          "confidence": 0.7675781
+        },
+        {
+          "text": "Tab le: B11",
+          "boundingBox": {
+            "left": 382,
+            "top": 773,
+            "right": 605,
+            "bottom": 812
+          },
+          "confidence": 0.62282985
+        }
+      ],
+      "boundingBox": {
+        "left": 382,
+        "top": 730,
+        "right": 710,
+        "bottom": 813
+      }
+    },
+    {
+      "text": "1 Coffee",
+      "lines": [
+        {
+          "text": "1 Coffee",
+          "boundingBox": {
+            "left": 382,
+            "top": 856,
+            "right": 556,
+            "bottom": 899
+          },
+          "confidence": 0.7271205
+        }
+      ],
+      "boundingBox": {
+        "left": 382,
+        "top": 856,
+        "right": 556,
+        "bottom": 899
+      }
+    },
+    {
+      "text": "2 Lunch\n1 Coke",
+      "lines": [
+        {
+          "text": "2 Lunch",
+          "boundingBox": {
+            "left": 354,
+            "top": 904,
+            "right": 527,
+            "bottom": 937
+          },
+          "confidence": 0.7779948
+        },
+        {
+          "text": "1 Coke",
+          "boundingBox": {
+            "left": 368,
+            "top": 943,
+            "right": 498,
+            "bottom": 988
+          },
+          "confidence": 0.8179687
+        }
+      ],
+      "boundingBox": {
+        "left": 352,
+        "top": 904,
+        "right": 527,
+        "bottom": 990
+      }
+    },
+    {
+      "text": "5305 E PACIF IC cOAST HWY\nLong Beach. CA 90004\n(562) 597-0906",
+      "lines": [
+        {
+          "text": "5305 E PACIF IC cOAST HWY",
+          "boundingBox": {
+            "left": 583,
+            "top": 498,
+            "right": 1153,
+            "bottom": 529
+          },
+          "confidence": 0.75996095
+        },
+        {
+          "text": "Long Beach. CA 90004",
+          "boundingBox": {
+            "left": 629,
+            "top": 538,
+            "right": 1102,
+            "bottom": 569
+          },
+          "confidence": 0.7957261
+        },
+        {
+          "text": "(562) 597-0906",
+          "boundingBox": {
+            "left": 708,
+            "top": 574,
+            "right": 1030,
+            "bottom": 614
+          },
+          "confidence": 0.76742786
+        }
+      ],
+      "boundingBox": {
+        "left": 583,
+        "top": 498,
+        "right": 1153,
+        "bottom": 614
+      }
+    },
+    {
+      "text": "GAEEN FIELD",
+      "lines": [
+        {
+          "text": "GAEEN FIELD",
+          "boundingBox": {
+            "left": 727,
+            "top": 437,
+            "right": 983,
+            "bottom": 492
+          },
+          "confidence": 0.7636719
+        }
+      ],
+      "boundingBox": {
+        "left": 727,
+        "top": 437,
+        "right": 983,
+        "bottom": 492
+      }
+    },
+    {
+      "text": "SUB TO TAL:\nTax 1:",
+      "lines": [
+        {
+          "text": "SUB TO TAL:",
+          "boundingBox": {
+            "left": 341,
+            "top": 1033,
+            "right": 590,
+            "bottom": 1077
+          },
+          "confidence": 0.6241319
+        },
+        {
+          "text": "Tax 1:",
+          "boundingBox": {
+            "left": 341,
+            "top": 1080,
+            "right": 495,
+            "bottom": 1124
+          },
+          "confidence": 0.69921875
+        }
+      ],
+      "boundingBox": {
+        "left": 340,
+        "top": 1033,
+        "right": 590,
+        "bottom": 1125
+      }
+    },
+    {
+      "text": "TOTAL:",
+      "lines": [
+        {
+          "text": "TOTAL:",
+          "boundingBox": {
+            "left": 329,
+            "top": 1179,
+            "right": 476,
+            "bottom": 1248
+          },
+          "confidence": 0.5651042
+        }
+      ],
+      "boundingBox": {
+        "left": 329,
+        "top": 1179,
+        "right": 476,
+        "bottom": 1248
+      }
+    },
+    {
+      "text": "Stat ion: 3",
+      "lines": [
+        {
+          "text": "Stat ion: 3",
+          "boundingBox": {
+            "left": 1108,
+            "top": 656,
+            "right": 1356,
+            "bottom": 691
+          },
+          "confidence": 0.7465278
+        }
+      ],
+      "boundingBox": {
+        "left": 1108,
+        "top": 656,
+        "right": 1356,
+        "bottom": 691
+      }
+    },
+    {
+      "text": "126/2016 12:53:10 PM",
+      "lines": [
+        {
+          "text": "126/2016 12:53:10 PM",
+          "boundingBox": {
+            "left": 590,
+            "top": 1307,
+            "right": 1117,
+            "bottom": 1358
+          },
+          "confidence": 0.7463108
+        }
+      ],
+      "boundingBox": {
+        "left": 590,
+        "top": 1307,
+        "right": 1117,
+        "bottom": 1358
+      }
+    },
+    {
+      "text": "THANK YOU!",
+      "lines": [
+        {
+          "text": "THANK YOU!",
+          "boundingBox": {
+            "left": 712,
+            "top": 1413,
+            "right": 972,
+            "bottom": 1454
+          },
+          "confidence": 0.72265625
+        }
+      ],
+      "boundingBox": {
+        "left": 712,
+        "top": 1413,
+        "right": 972,
+        "bottom": 1454
+      }
+    },
+    {
+      "text": "Dine In\nGuests: 2",
+      "lines": [
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 1184,
+            "top": 742,
+            "right": 1362,
+            "bottom": 772
+          },
+          "confidence": 0.7467448
+        },
+        {
+          "text": "Guests: 2",
+          "boundingBox": {
+            "left": 1135,
+            "top": 784,
+            "right": 1364,
+            "bottom": 815
+          },
+          "confidence": 0.71191406
+        }
+      ],
+      "boundingBox": {
+        "left": 1135,
+        "top": 742,
+        "right": 1364,
+        "bottom": 815
+      }
+    },
+    {
+      "text": "3.00\n5.90",
+      "lines": [
+        {
+          "text": "3.00",
+          "boundingBox": {
+            "left": 1268,
+            "top": 869,
+            "right": 1367,
+            "bottom": 902
+          },
+          "confidence": 0.6845703
+        },
+        {
+          "text": "5.90",
+          "boundingBox": {
+            "left": 1241,
+            "top": 911,
+            "right": 1371,
+            "bottom": 947
+          },
+          "confidence": 0.6191406
+        }
+      ],
+      "boundingBox": {
+        "left": 1240,
+        "top": 869,
+        "right": 1371,
+        "bottom": 947
+      }
+    },
+    {
+      "text": "3.00",
+      "lines": [
+        {
+          "text": "3.00",
+          "boundingBox": {
+            "left": 1276,
+            "top": 962,
+            "right": 1376,
+            "bottom": 992
+          },
+          "confidence": 0.8203125
+        }
+      ],
+      "boundingBox": {
+        "left": 1276,
+        "top": 962,
+        "right": 1376,
+        "bottom": 992
+      }
+    },
+    {
+      "text": "51.90\nų.68",
+      "lines": [
+        {
+          "text": "51.90",
+          "boundingBox": {
+            "left": 1246,
+            "top": 1053,
+            "right": 1381,
+            "bottom": 1086
+          },
+          "confidence": 0.73828125
+        },
+        {
+          "text": "ų.68",
+          "boundingBox": {
+            "left": 1275,
+            "top": 1098,
+            "right": 1383,
+            "bottom": 1132
+          },
+          "confidence": 0.4716797
+        }
+      ],
+      "boundingBox": {
+        "left": 1245,
+        "top": 1052,
+        "right": 1383,
+        "bottom": 1132
+      }
+    },
+    {
+      "text": "$56.58",
+      "lines": [
+        {
+          "text": "$56.58",
+          "boundingBox": {
+            "left": 1227,
+            "top": 1199,
+            "right": 1394,
+            "bottom": 1270
+          },
+          "confidence": 0.64453125
+        }
+      ],
+      "boundingBox": {
+        "left": 1227,
+        "top": 1199,
+        "right": 1394,
+        "bottom": 1270
+      }
+    }
+  ]
+}

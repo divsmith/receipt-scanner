@@ -1,0 +1,465 @@
+{
+  "fullText": "1\nGuest 1\nCRE\nTax\nHAWWI ETHIOPIAN RESTAU\nCashier: Mosa\n13-Jul-2018 8:53:47P\nTransaction 000016\n1 30.Dulet\nSubtotal\nTotal\n1125 QUEEN ST\nALEXANDRIA, VA 22314\n7037179740\nORDER: Table 2\nDine In\n26.Fish Goulash\n1 34. Vegetarian Dish\n$19.95\n$20.95\n$21.95\n$62.85\n$6.91\n$69.76",
+  "blocks": [
+    {
+      "text": "1",
+      "lines": [
+        {
+          "text": "1",
+          "boundingBox": {
+            "left": 332,
+            "top": 894,
+            "right": 346,
+            "bottom": 942
+          },
+          "confidence": 0.265625
+        }
+      ],
+      "boundingBox": {
+        "left": 332,
+        "top": 894,
+        "right": 346,
+        "bottom": 942
+      }
+    },
+    {
+      "text": "Guest 1",
+      "lines": [
+        {
+          "text": "Guest 1",
+          "boundingBox": {
+            "left": 337,
+            "top": 827,
+            "right": 490,
+            "bottom": 876
+          },
+          "confidence": 0.85221356
+        }
+      ],
+      "boundingBox": {
+        "left": 337,
+        "top": 827,
+        "right": 490,
+        "bottom": 876
+      }
+    },
+    {
+      "text": "CRE",
+      "lines": [
+        {
+          "text": "CRE",
+          "boundingBox": {
+            "left": 218,
+            "top": 1556,
+            "right": 302,
+            "bottom": 1600
+          },
+          "confidence": 0.45703125
+        }
+      ],
+      "boundingBox": {
+        "left": 218,
+        "top": 1556,
+        "right": 302,
+        "bottom": 1600
+      }
+    },
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 268,
+            "top": 1260,
+            "right": 340,
+            "bottom": 1318
+          },
+          "confidence": 0.74869794
+        }
+      ],
+      "boundingBox": {
+        "left": 268,
+        "top": 1260,
+        "right": 340,
+        "bottom": 1318
+      }
+    },
+    {
+      "text": "HAWWI ETHIOPIAN RESTAU",
+      "lines": [
+        {
+          "text": "HAWWI ETHIOPIAN RESTAU",
+          "boundingBox": {
+            "left": 554,
+            "top": 242,
+            "right": 1138,
+            "bottom": 294
+          },
+          "confidence": 0.82734376
+        }
+      ],
+      "boundingBox": {
+        "left": 554,
+        "top": 242,
+        "right": 1138,
+        "bottom": 294
+      }
+    },
+    {
+      "text": "Cashier: Mosa\n13-Jul-2018 8:53:47P",
+      "lines": [
+        {
+          "text": "Cashier: Mosa",
+          "boundingBox": {
+            "left": 373,
+            "top": 619,
+            "right": 647,
+            "bottom": 665
+          },
+          "confidence": 0.87923175
+        },
+        {
+          "text": "13-Jul-2018 8:53:47P",
+          "boundingBox": {
+            "left": 368,
+            "top": 680,
+            "right": 796,
+            "bottom": 724
+          },
+          "confidence": 0.84457237
+        }
+      ],
+      "boundingBox": {
+        "left": 367,
+        "top": 619,
+        "right": 795,
+        "bottom": 726
+      }
+    },
+    {
+      "text": "Transaction 000016",
+      "lines": [
+        {
+          "text": "Transaction 000016",
+          "boundingBox": {
+            "left": 353,
+            "top": 766,
+            "right": 755,
+            "bottom": 813
+          },
+          "confidence": 0.88120407
+        }
+      ],
+      "boundingBox": {
+        "left": 353,
+        "top": 766,
+        "right": 755,
+        "bottom": 813
+      }
+    },
+    {
+      "text": "1 30.Dulet",
+      "lines": [
+        {
+          "text": "1 30.Dulet",
+          "boundingBox": {
+            "left": 340,
+            "top": 956,
+            "right": 594,
+            "bottom": 1018
+          },
+          "confidence": 0.7760417
+        }
+      ],
+      "boundingBox": {
+        "left": 340,
+        "top": 956,
+        "right": 594,
+        "bottom": 1018
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 274,
+            "top": 1175,
+            "right": 469,
+            "bottom": 1240
+          },
+          "confidence": 0.7675781
+        }
+      ],
+      "boundingBox": {
+        "left": 274,
+        "top": 1175,
+        "right": 469,
+        "bottom": 1240
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 242,
+            "top": 1426,
+            "right": 354,
+            "bottom": 1494
+          },
+          "confidence": 0.771875
+        }
+      ],
+      "boundingBox": {
+        "left": 242,
+        "top": 1426,
+        "right": 354,
+        "bottom": 1494
+      }
+    },
+    {
+      "text": "1125 QUEEN ST\nALEXANDRIA, VA 22314\n7037179740",
+      "lines": [
+        {
+          "text": "1125 QUEEN ST",
+          "boundingBox": {
+            "left": 690,
+            "top": 299,
+            "right": 966,
+            "bottom": 329
+          },
+          "confidence": 0.7972301
+        },
+        {
+          "text": "ALEXANDRIA, VA 22314",
+          "boundingBox": {
+            "left": 613,
+            "top": 338,
+            "right": 1040,
+            "bottom": 375
+          },
+          "confidence": 0.8420139
+        },
+        {
+          "text": "7037179740",
+          "boundingBox": {
+            "left": 712,
+            "top": 384,
+            "right": 938,
+            "bottom": 418
+          },
+          "confidence": 0.8996094
+        }
+      ],
+      "boundingBox": {
+        "left": 613,
+        "top": 299,
+        "right": 1040,
+        "bottom": 418
+      }
+    },
+    {
+      "text": "ORDER: Table 2\nDine In",
+      "lines": [
+        {
+          "text": "ORDER: Table 2",
+          "boundingBox": {
+            "left": 600,
+            "top": 456,
+            "right": 1052,
+            "bottom": 516
+          },
+          "confidence": 0.8854167
+        },
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 719,
+            "top": 539,
+            "right": 921,
+            "bottom": 601
+          },
+          "confidence": 0.84440106
+        }
+      ],
+      "boundingBox": {
+        "left": 598,
+        "top": 453,
+        "right": 1051,
+        "bottom": 602
+      }
+    },
+    {
+      "text": "26.Fish Goulash",
+      "lines": [
+        {
+          "text": "26.Fish Goulash",
+          "boundingBox": {
+            "left": 410,
+            "top": 894,
+            "right": 754,
+            "bottom": 942
+          },
+          "confidence": 0.8842076
+        }
+      ],
+      "boundingBox": {
+        "left": 410,
+        "top": 894,
+        "right": 754,
+        "bottom": 942
+      }
+    },
+    {
+      "text": "1 34. Vegetarian Dish",
+      "lines": [
+        {
+          "text": "1 34. Vegetarian Dish",
+          "boundingBox": {
+            "left": 329,
+            "top": 1022,
+            "right": 821,
+            "bottom": 1098
+          },
+          "confidence": 0.7827691
+        }
+      ],
+      "boundingBox": {
+        "left": 329,
+        "top": 1022,
+        "right": 821,
+        "bottom": 1098
+      }
+    },
+    {
+      "text": "$19.95",
+      "lines": [
+        {
+          "text": "$19.95",
+          "boundingBox": {
+            "left": 1161,
+            "top": 901,
+            "right": 1319,
+            "bottom": 961
+          },
+          "confidence": 0.7128906
+        }
+      ],
+      "boundingBox": {
+        "left": 1161,
+        "top": 901,
+        "right": 1319,
+        "bottom": 961
+      }
+    },
+    {
+      "text": "$20.95",
+      "lines": [
+        {
+          "text": "$20.95",
+          "boundingBox": {
+            "left": 1170,
+            "top": 974,
+            "right": 1330,
+            "bottom": 1032
+          },
+          "confidence": 0.8072917
+        }
+      ],
+      "boundingBox": {
+        "left": 1170,
+        "top": 974,
+        "right": 1330,
+        "bottom": 1032
+      }
+    },
+    {
+      "text": "$21.95",
+      "lines": [
+        {
+          "text": "$21.95",
+          "boundingBox": {
+            "left": 1176,
+            "top": 1046,
+            "right": 1340,
+            "bottom": 1109
+          },
+          "confidence": 0.8255208
+        }
+      ],
+      "boundingBox": {
+        "left": 1176,
+        "top": 1046,
+        "right": 1340,
+        "bottom": 1109
+      }
+    },
+    {
+      "text": "$62.85",
+      "lines": [
+        {
+          "text": "$62.85",
+          "boundingBox": {
+            "left": 1188,
+            "top": 1202,
+            "right": 1358,
+            "bottom": 1272
+          },
+          "confidence": 0.8046875
+        }
+      ],
+      "boundingBox": {
+        "left": 1188,
+        "top": 1202,
+        "right": 1358,
+        "bottom": 1272
+      }
+    },
+    {
+      "text": "$6.91",
+      "lines": [
+        {
+          "text": "$6.91",
+          "boundingBox": {
+            "left": 1228,
+            "top": 1288,
+            "right": 1362,
+            "bottom": 1360
+          },
+          "confidence": 0.615625
+        }
+      ],
+      "boundingBox": {
+        "left": 1228,
+        "top": 1288,
+        "right": 1362,
+        "bottom": 1360
+      }
+    },
+    {
+      "text": "$69.76",
+      "lines": [
+        {
+          "text": "$69.76",
+          "boundingBox": {
+            "left": 1206,
+            "top": 1463,
+            "right": 1386,
+            "bottom": 1544
+          },
+          "confidence": 0.67903644
+        }
+      ],
+      "boundingBox": {
+        "left": 1206,
+        "top": 1463,
+        "right": 1386,
+        "bottom": 1544
+      }
+    }
+  ]
+}

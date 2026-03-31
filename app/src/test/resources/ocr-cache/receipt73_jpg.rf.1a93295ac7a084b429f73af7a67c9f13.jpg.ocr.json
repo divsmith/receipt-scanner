@@ -1,0 +1,587 @@
+{
+  "fullText": "Trinity Restaur ant\n190 Jer icho Tpke\nFloral Park NY 11001\nTel. (516) 358-5584\nOrder 217510\n02/18/17 10:20 PM\nTable 15 Cust. 2\n****K*\n1 Quesadilla\n1 Pot Roast\n1 Fish An Chips\n1 Side Salad\n1 Dft Shock top\n2 Dft Guiness\nCheck 101244\nServer\nANMERAN\n21 Kelly Bowe\nK***K***K***kK**K*\nTaxable:\nSub-total:\nTax:\n11. 00\n18. 00\n16. 00\n4. 00\n5. 50\n15. 00\n69. 50\n69. 50\nWe Veicme\nTotal Due 75. 50\n6. 00\nAmerice r EprêsS Cards",
+  "blocks": [
+    {
+      "text": "Trinity Restaur ant\n190 Jer icho Tpke\nFloral Park NY 11001\nTel. (516) 358-5584\nOrder 217510",
+      "lines": [
+        {
+          "text": "Trinity Restaur ant",
+          "boundingBox": {
+            "left": 133,
+            "top": 230,
+            "right": 637,
+            "bottom": 270
+          },
+          "confidence": 0.8409926
+        },
+        {
+          "text": "190 Jer icho Tpke",
+          "boundingBox": {
+            "left": 134,
+            "top": 267,
+            "right": 586,
+            "bottom": 309
+          },
+          "confidence": 0.8348214
+        },
+        {
+          "text": "Floral Park NY 11001",
+          "boundingBox": {
+            "left": 149,
+            "top": 299,
+            "right": 721,
+            "bottom": 346
+          },
+          "confidence": 0.82674634
+        },
+        {
+          "text": "Tel. (516) 358-5584",
+          "boundingBox": {
+            "left": 134,
+            "top": 340,
+            "right": 672,
+            "bottom": 379
+          },
+          "confidence": 0.8681066
+        },
+        {
+          "text": "Order 217510",
+          "boundingBox": {
+            "left": 134,
+            "top": 380,
+            "right": 478,
+            "bottom": 417
+          },
+          "confidence": 0.8103693
+        }
+      ],
+      "boundingBox": {
+        "left": 133,
+        "top": 225,
+        "right": 721,
+        "bottom": 417
+      }
+    },
+    {
+      "text": "02/18/17 10:20 PM\nTable 15 Cust. 2\n****K*",
+      "lines": [
+        {
+          "text": "02/18/17 10:20 PM",
+          "boundingBox": {
+            "left": 136,
+            "top": 422,
+            "right": 655,
+            "bottom": 456
+          },
+          "confidence": 0.79296875
+        },
+        {
+          "text": "Table 15 Cust. 2",
+          "boundingBox": {
+            "left": 140,
+            "top": 453,
+            "right": 627,
+            "bottom": 502
+          },
+          "confidence": 0.84915864
+        },
+        {
+          "text": "****K*",
+          "boundingBox": {
+            "left": 156,
+            "top": 503,
+            "right": 293,
+            "bottom": 532
+          },
+          "confidence": 0.43815103
+        }
+      ],
+      "boundingBox": {
+        "left": 136,
+        "top": 418,
+        "right": 654,
+        "bottom": 532
+      }
+    },
+    {
+      "text": "1 Quesadilla\n1 Pot Roast",
+      "lines": [
+        {
+          "text": "1 Quesadilla",
+          "boundingBox": {
+            "left": 154,
+            "top": 614,
+            "right": 496,
+            "bottom": 651
+          },
+          "confidence": 0.8192472
+        },
+        {
+          "text": "1 Pot Roast",
+          "boundingBox": {
+            "left": 176,
+            "top": 651,
+            "right": 467,
+            "bottom": 696
+          },
+          "confidence": 0.86241317
+        }
+      ],
+      "boundingBox": {
+        "left": 154,
+        "top": 614,
+        "right": 497,
+        "bottom": 696
+      }
+    },
+    {
+      "text": "1 Fish An Chips\n1 Side Salad\n1 Dft Shock top",
+      "lines": [
+        {
+          "text": "1 Fish An Chips",
+          "boundingBox": {
+            "left": 176,
+            "top": 689,
+            "right": 586,
+            "bottom": 736
+          },
+          "confidence": 0.836263
+        },
+        {
+          "text": "1 Side Salad",
+          "boundingBox": {
+            "left": 180,
+            "top": 730,
+            "right": 504,
+            "bottom": 776
+          },
+          "confidence": 0.84453124
+        },
+        {
+          "text": "1 Dft Shock top",
+          "boundingBox": {
+            "left": 182,
+            "top": 770,
+            "right": 592,
+            "bottom": 814
+          },
+          "confidence": 0.84016925
+        }
+      ],
+      "boundingBox": {
+        "left": 176,
+        "top": 688,
+        "right": 592,
+        "bottom": 814
+      }
+    },
+    {
+      "text": "2 Dft Guiness",
+      "lines": [
+        {
+          "text": "2 Dft Guiness",
+          "boundingBox": {
+            "left": 163,
+            "top": 817,
+            "right": 539,
+            "bottom": 851
+          },
+          "confidence": 0.79758525
+        }
+      ],
+      "boundingBox": {
+        "left": 163,
+        "top": 817,
+        "right": 539,
+        "bottom": 851
+      }
+    },
+    {
+      "text": "Check 101244\nServer",
+      "lines": [
+        {
+          "text": "Check 101244",
+          "boundingBox": {
+            "left": 712,
+            "top": 412,
+            "right": 1044,
+            "bottom": 451
+          },
+          "confidence": 0.9137074
+        },
+        {
+          "text": "Server",
+          "boundingBox": {
+            "left": 686,
+            "top": 452,
+            "right": 847,
+            "bottom": 493
+          },
+          "confidence": 0.8886719
+        }
+      ],
+      "boundingBox": {
+        "left": 685,
+        "top": 411,
+        "right": 1045,
+        "bottom": 493
+      }
+    },
+    {
+      "text": "ANMERAN",
+      "lines": [
+        {
+          "text": "ANMERAN",
+          "boundingBox": {
+            "left": 193,
+            "top": 1421,
+            "right": 477,
+            "bottom": 1461
+          },
+          "confidence": 0.33537945
+        }
+      ],
+      "boundingBox": {
+        "left": 193,
+        "top": 1421,
+        "right": 477,
+        "bottom": 1461
+      }
+    },
+    {
+      "text": "21 Kelly Bowe",
+      "lines": [
+        {
+          "text": "21 Kelly Bowe",
+          "boundingBox": {
+            "left": 904,
+            "top": 447,
+            "right": 1244,
+            "bottom": 490
+          },
+          "confidence": 0.7837358
+        }
+      ],
+      "boundingBox": {
+        "left": 904,
+        "top": 447,
+        "right": 1244,
+        "bottom": 490
+      }
+    },
+    {
+      "text": "K***K***K***kK**K*",
+      "lines": [
+        {
+          "text": "K***K***K***kK**K*",
+          "boundingBox": {
+            "left": 777,
+            "top": 492,
+            "right": 1273,
+            "bottom": 520
+          },
+          "confidence": 0.32899305
+        }
+      ],
+      "boundingBox": {
+        "left": 777,
+        "top": 492,
+        "right": 1273,
+        "bottom": 520
+      }
+    },
+    {
+      "text": "Taxable:",
+      "lines": [
+        {
+          "text": "Taxable:",
+          "boundingBox": {
+            "left": 729,
+            "top": 881,
+            "right": 933,
+            "bottom": 916
+          },
+          "confidence": 0.7573242
+        }
+      ],
+      "boundingBox": {
+        "left": 729,
+        "top": 881,
+        "right": 933,
+        "bottom": 916
+      }
+    },
+    {
+      "text": "Sub-total:",
+      "lines": [
+        {
+          "text": "Sub-total:",
+          "boundingBox": {
+            "left": 667,
+            "top": 958,
+            "right": 938,
+            "bottom": 998
+          },
+          "confidence": 0.80625
+        }
+      ],
+      "boundingBox": {
+        "left": 667,
+        "top": 958,
+        "right": 938,
+        "bottom": 998
+      }
+    },
+    {
+      "text": "Tax:",
+      "lines": [
+        {
+          "text": "Tax:",
+          "boundingBox": {
+            "left": 841,
+            "top": 999,
+            "right": 940,
+            "bottom": 1030
+          },
+          "confidence": 0.7519531
+        }
+      ],
+      "boundingBox": {
+        "left": 841,
+        "top": 999,
+        "right": 940,
+        "bottom": 1030
+      }
+    },
+    {
+      "text": "11. 00\n18. 00",
+      "lines": [
+        {
+          "text": "11. 00",
+          "boundingBox": {
+            "left": 1096,
+            "top": 605,
+            "right": 1229,
+            "bottom": 636
+          },
+          "confidence": 0.7984375
+        },
+        {
+          "text": "18. 00",
+          "boundingBox": {
+            "left": 1100,
+            "top": 642,
+            "right": 1230,
+            "bottom": 675
+          },
+          "confidence": 0.83125
+        }
+      ],
+      "boundingBox": {
+        "left": 1096,
+        "top": 605,
+        "right": 1230,
+        "bottom": 675
+      }
+    },
+    {
+      "text": "16. 00",
+      "lines": [
+        {
+          "text": "16. 00",
+          "boundingBox": {
+            "left": 1103,
+            "top": 681,
+            "right": 1233,
+            "bottom": 713
+          },
+          "confidence": 0.8539063
+        }
+      ],
+      "boundingBox": {
+        "left": 1103,
+        "top": 681,
+        "right": 1233,
+        "bottom": 713
+      }
+    },
+    {
+      "text": "4. 00",
+      "lines": [
+        {
+          "text": "4. 00",
+          "boundingBox": {
+            "left": 1129,
+            "top": 721,
+            "right": 1239,
+            "bottom": 752
+          },
+          "confidence": 0.8076172
+        }
+      ],
+      "boundingBox": {
+        "left": 1129,
+        "top": 721,
+        "right": 1239,
+        "bottom": 752
+      }
+    },
+    {
+      "text": "5. 50\n15. 00",
+      "lines": [
+        {
+          "text": "5. 50",
+          "boundingBox": {
+            "left": 1133,
+            "top": 759,
+            "right": 1240,
+            "bottom": 790
+          },
+          "confidence": 0.88964844
+        },
+        {
+          "text": "15. 00",
+          "boundingBox": {
+            "left": 1111,
+            "top": 798,
+            "right": 1244,
+            "bottom": 829
+          },
+          "confidence": 0.853125
+        }
+      ],
+      "boundingBox": {
+        "left": 1111,
+        "top": 759,
+        "right": 1244,
+        "bottom": 829
+      }
+    },
+    {
+      "text": "69. 50",
+      "lines": [
+        {
+          "text": "69. 50",
+          "boundingBox": {
+            "left": 1135,
+            "top": 871,
+            "right": 1252,
+            "bottom": 914
+          },
+          "confidence": 0.8375
+        }
+      ],
+      "boundingBox": {
+        "left": 1135,
+        "top": 871,
+        "right": 1252,
+        "bottom": 914
+      }
+    },
+    {
+      "text": "69. 50",
+      "lines": [
+        {
+          "text": "69. 50",
+          "boundingBox": {
+            "left": 1119,
+            "top": 953,
+            "right": 1254,
+            "bottom": 985
+          },
+          "confidence": 0.9078125
+        }
+      ],
+      "boundingBox": {
+        "left": 1119,
+        "top": 953,
+        "right": 1254,
+        "bottom": 985
+      }
+    },
+    {
+      "text": "We Veicme",
+      "lines": [
+        {
+          "text": "We Veicme",
+          "boundingBox": {
+            "left": 656,
+            "top": 1478,
+            "right": 1126,
+            "bottom": 1508
+          },
+          "confidence": 0.4111328
+        }
+      ],
+      "boundingBox": {
+        "left": 656,
+        "top": 1478,
+        "right": 1126,
+        "bottom": 1508
+      }
+    },
+    {
+      "text": "Total Due 75. 50",
+      "lines": [
+        {
+          "text": "Total Due 75. 50",
+          "boundingBox": {
+            "left": 439,
+            "top": 1061,
+            "right": 1317,
+            "bottom": 1129
+          },
+          "confidence": 0.6499399
+        }
+      ],
+      "boundingBox": {
+        "left": 439,
+        "top": 1061,
+        "right": 1317,
+        "bottom": 1129
+      }
+    },
+    {
+      "text": "6. 00",
+      "lines": [
+        {
+          "text": "6. 00",
+          "boundingBox": {
+            "left": 1170,
+            "top": 989,
+            "right": 1258,
+            "bottom": 1027
+          },
+          "confidence": 0.87890625
+        }
+      ],
+      "boundingBox": {
+        "left": 1170,
+        "top": 989,
+        "right": 1258,
+        "bottom": 1027
+      }
+    },
+    {
+      "text": "Americe r EprêsS Cards",
+      "lines": [
+        {
+          "text": "Americe r EprêsS Cards",
+          "boundingBox": {
+            "left": 671,
+            "top": 1503,
+            "right": 1582,
+            "bottom": 1561
+          },
+          "confidence": 0.45024672
+        }
+      ],
+      "boundingBox": {
+        "left": 671,
+        "top": 1503,
+        "right": 1582,
+        "bottom": 1561
+      }
+    }
+  ]
+}

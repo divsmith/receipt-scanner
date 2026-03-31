@@ -1,0 +1,495 @@
+{
+  "fullText": "CITY TASTE\n930 WAYNE AVE #100\nSILVER SPRING, MD 20910\nTEL301-585-111\nServer: BOSS\nDate 05-11-2018 Time 803PM\nTAB#: A06\nDine In\nNo. of Guest : 2\n1 Philadelphia Roll\n1 13. Shrimp Tempura Roll\n[Roll]\n1 Rich / Famous Roll\n1 16. Spicy Salmon Roll\n[Roli)\n1 Veg/Tofu Pad Thai\nSpicy\n#90\n4.85\nTHANK YOU VERY MUCH.\n4.25\n4.85\n4.25\n8.95\nAmount: 27.15\nTAX(6ºo): 1.63\nTOTAL: 28.78",
+  "blocks": [
+    {
+      "text": "CITY TASTE",
+      "lines": [
+        {
+          "text": "CITY TASTE",
+          "boundingBox": {
+            "left": 610,
+            "top": 238,
+            "right": 929,
+            "bottom": 291
+          },
+          "confidence": 0.8237847
+        }
+      ],
+      "boundingBox": {
+        "left": 610,
+        "top": 238,
+        "right": 929,
+        "bottom": 291
+      }
+    },
+    {
+      "text": "930 WAYNE AVE #100\nSILVER SPRING, MD 20910\nTEL301-585-111",
+      "lines": [
+        {
+          "text": "930 WAYNE AVE #100",
+          "boundingBox": {
+            "left": 570,
+            "top": 278,
+            "right": 960,
+            "bottom": 331
+          },
+          "confidence": 0.8377604
+        },
+        {
+          "text": "SILVER SPRING, MD 20910",
+          "boundingBox": {
+            "left": 527,
+            "top": 313,
+            "right": 1007,
+            "bottom": 368
+          },
+          "confidence": 0.8048828
+        },
+        {
+          "text": "TEL301-585-111",
+          "boundingBox": {
+            "left": 618,
+            "top": 355,
+            "right": 912,
+            "bottom": 393
+          },
+          "confidence": 0.6177455
+        }
+      ],
+      "boundingBox": {
+        "left": 525,
+        "top": 276,
+        "right": 1009,
+        "bottom": 401
+      }
+    },
+    {
+      "text": "Server: BOSS",
+      "lines": [
+        {
+          "text": "Server: BOSS",
+          "boundingBox": {
+            "left": 352,
+            "top": 517,
+            "right": 581,
+            "bottom": 541
+          },
+          "confidence": 0.8441051
+        }
+      ],
+      "boundingBox": {
+        "left": 352,
+        "top": 517,
+        "right": 581,
+        "bottom": 541
+      }
+    },
+    {
+      "text": "Date 05-11-2018 Time 803PM",
+      "lines": [
+        {
+          "text": "Date 05-11-2018 Time 803PM",
+          "boundingBox": {
+            "left": 376,
+            "top": 457,
+            "right": 884,
+            "bottom": 496
+          },
+          "confidence": 0.7584919
+        }
+      ],
+      "boundingBox": {
+        "left": 376,
+        "top": 457,
+        "right": 884,
+        "bottom": 496
+      }
+    },
+    {
+      "text": "TAB#: A06",
+      "lines": [
+        {
+          "text": "TAB#: A06",
+          "boundingBox": {
+            "left": 350,
+            "top": 560,
+            "right": 618,
+            "bottom": 592
+          },
+          "confidence": 0.8256836
+        }
+      ],
+      "boundingBox": {
+        "left": 350,
+        "top": 560,
+        "right": 618,
+        "bottom": 592
+      }
+    },
+    {
+      "text": "Dine In",
+      "lines": [
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 680,
+            "top": 416,
+            "right": 854,
+            "bottom": 448
+          },
+          "confidence": 0.8671875
+        }
+      ],
+      "boundingBox": {
+        "left": 680,
+        "top": 416,
+        "right": 854,
+        "bottom": 448
+      }
+    },
+    {
+      "text": "No. of Guest : 2",
+      "lines": [
+        {
+          "text": "No. of Guest : 2",
+          "boundingBox": {
+            "left": 346,
+            "top": 599,
+            "right": 613,
+            "bottom": 636
+          },
+          "confidence": 0.8333333
+        }
+      ],
+      "boundingBox": {
+        "left": 346,
+        "top": 599,
+        "right": 613,
+        "bottom": 636
+      }
+    },
+    {
+      "text": "1 Philadelphia Roll",
+      "lines": [
+        {
+          "text": "1 Philadelphia Roll",
+          "boundingBox": {
+            "left": 441,
+            "top": 655,
+            "right": 849,
+            "bottom": 711
+          },
+          "confidence": 0.8072151
+        }
+      ],
+      "boundingBox": {
+        "left": 441,
+        "top": 655,
+        "right": 849,
+        "bottom": 711
+      }
+    },
+    {
+      "text": "1 13. Shrimp Tempura Roll\n[Roll]",
+      "lines": [
+        {
+          "text": "1 13. Shrimp Tempura Roll",
+          "boundingBox": {
+            "left": 444,
+            "top": 714,
+            "right": 1032,
+            "bottom": 771
+          },
+          "confidence": 0.77622765
+        },
+        {
+          "text": "[Roll]",
+          "boundingBox": {
+            "left": 474,
+            "top": 766,
+            "right": 600,
+            "bottom": 808
+          },
+          "confidence": 0.765625
+        }
+      ],
+      "boundingBox": {
+        "left": 444,
+        "top": 714,
+        "right": 1032,
+        "bottom": 808
+      }
+    },
+    {
+      "text": "1 Rich / Famous Roll",
+      "lines": [
+        {
+          "text": "1 Rich / Famous Roll",
+          "boundingBox": {
+            "left": 438,
+            "top": 817,
+            "right": 890,
+            "bottom": 871
+          },
+          "confidence": 0.85839844
+        }
+      ],
+      "boundingBox": {
+        "left": 438,
+        "top": 817,
+        "right": 890,
+        "bottom": 871
+      }
+    },
+    {
+      "text": "1 16. Spicy Salmon Roll\n[Roli)",
+      "lines": [
+        {
+          "text": "1 16. Spicy Salmon Roll",
+          "boundingBox": {
+            "left": 437,
+            "top": 883,
+            "right": 968,
+            "bottom": 941
+          },
+          "confidence": 0.80365956
+        },
+        {
+          "text": "[Roli)",
+          "boundingBox": {
+            "left": 468,
+            "top": 925,
+            "right": 594,
+            "bottom": 977
+          },
+          "confidence": 0.5885417
+        }
+      ],
+      "boundingBox": {
+        "left": 437,
+        "top": 883,
+        "right": 969,
+        "bottom": 977
+      }
+    },
+    {
+      "text": "1 Veg/Tofu Pad Thai\nSpicy",
+      "lines": [
+        {
+          "text": "1 Veg/Tofu Pad Thai",
+          "boundingBox": {
+            "left": 426,
+            "top": 987,
+            "right": 911,
+            "bottom": 1049
+          },
+          "confidence": 0.83691406
+        },
+        {
+          "text": "Spicy",
+          "boundingBox": {
+            "left": 523,
+            "top": 1044,
+            "right": 648,
+            "bottom": 1096
+          },
+          "confidence": 0.79765624
+        }
+      ],
+      "boundingBox": {
+        "left": 426,
+        "top": 987,
+        "right": 912,
+        "bottom": 1097
+      }
+    },
+    {
+      "text": "#90",
+      "lines": [
+        {
+          "text": "#90",
+          "boundingBox": {
+            "left": 1086,
+            "top": 440,
+            "right": 1188,
+            "bottom": 474
+          },
+          "confidence": 0.87630206
+        }
+      ],
+      "boundingBox": {
+        "left": 1086,
+        "top": 440,
+        "right": 1188,
+        "bottom": 474
+      }
+    },
+    {
+      "text": "4.85",
+      "lines": [
+        {
+          "text": "4.85",
+          "boundingBox": {
+            "left": 1132,
+            "top": 656,
+            "right": 1226,
+            "bottom": 689
+          },
+          "confidence": 0.82910156
+        }
+      ],
+      "boundingBox": {
+        "left": 1132,
+        "top": 656,
+        "right": 1226,
+        "bottom": 689
+      }
+    },
+    {
+      "text": "THANK YOU VERY MUCH.",
+      "lines": [
+        {
+          "text": "THANK YOU VERY MUCH.",
+          "boundingBox": {
+            "left": 440,
+            "top": 1302,
+            "right": 1130,
+            "bottom": 1344
+          },
+          "confidence": 0.80675554
+        }
+      ],
+      "boundingBox": {
+        "left": 440,
+        "top": 1302,
+        "right": 1130,
+        "bottom": 1344
+      }
+    },
+    {
+      "text": "4.25",
+      "lines": [
+        {
+          "text": "4.25",
+          "boundingBox": {
+            "left": 1136,
+            "top": 713,
+            "right": 1230,
+            "bottom": 754
+          },
+          "confidence": 0.84472656
+        }
+      ],
+      "boundingBox": {
+        "left": 1136,
+        "top": 713,
+        "right": 1230,
+        "bottom": 754
+      }
+    },
+    {
+      "text": "4.85",
+      "lines": [
+        {
+          "text": "4.85",
+          "boundingBox": {
+            "left": 1146,
+            "top": 822,
+            "right": 1240,
+            "bottom": 854
+          },
+          "confidence": 0.91015625
+        }
+      ],
+      "boundingBox": {
+        "left": 1146,
+        "top": 822,
+        "right": 1240,
+        "bottom": 854
+      }
+    },
+    {
+      "text": "4.25",
+      "lines": [
+        {
+          "text": "4.25",
+          "boundingBox": {
+            "left": 1151,
+            "top": 885,
+            "right": 1247,
+            "bottom": 919
+          },
+          "confidence": 0.88964844
+        }
+      ],
+      "boundingBox": {
+        "left": 1151,
+        "top": 885,
+        "right": 1247,
+        "bottom": 919
+      }
+    },
+    {
+      "text": "8.95",
+      "lines": [
+        {
+          "text": "8.95",
+          "boundingBox": {
+            "left": 1160,
+            "top": 990,
+            "right": 1256,
+            "bottom": 1028
+          },
+          "confidence": 0.7011719
+        }
+      ],
+      "boundingBox": {
+        "left": 1160,
+        "top": 990,
+        "right": 1256,
+        "bottom": 1028
+      }
+    },
+    {
+      "text": "Amount: 27.15\nTAX(6ºo): 1.63\nTOTAL: 28.78",
+      "lines": [
+        {
+          "text": "Amount: 27.15",
+          "boundingBox": {
+            "left": 862,
+            "top": 1112,
+            "right": 1266,
+            "bottom": 1154
+          },
+          "confidence": 0.8548177
+        },
+        {
+          "text": "TAX(6ºo): 1.63",
+          "boundingBox": {
+            "left": 833,
+            "top": 1164,
+            "right": 1269,
+            "bottom": 1209
+          },
+          "confidence": 0.6808894
+        },
+        {
+          "text": "TOTAL: 28.78",
+          "boundingBox": {
+            "left": 817,
+            "top": 1223,
+            "right": 1277,
+            "bottom": 1260
+          },
+          "confidence": 0.83664775
+        }
+      ],
+      "boundingBox": {
+        "left": 816,
+        "top": 1112,
+        "right": 1276,
+        "bottom": 1263
+      }
+    }
+  ]
+}

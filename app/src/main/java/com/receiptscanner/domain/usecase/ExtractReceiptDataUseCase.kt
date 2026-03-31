@@ -4,31 +4,50 @@ import android.graphics.Bitmap
 import com.receiptscanner.data.ocr.EntityExtractionHelper
 import com.receiptscanner.data.ocr.MlKitTextRecognizer
 import com.receiptscanner.data.ocr.ReceiptParser
+import com.receiptscanner.data.ocr.ImagePreprocessor
 import com.receiptscanner.domain.model.ExtractedReceiptData
+import java.time.LocalDate
 import javax.inject.Inject
+
+internal fun mergeParsedAndEntityData(
+    parsed: ExtractedReceiptData,
+    entities: EntityExtractionHelper.ExtractionResult,
+): ExtractedReceiptData {
+    val useEntityTotal = parsed.totalAmount == null && entities.totalAmount != null
+
+    // ML Kit entity extraction sometimes returns today's date as a fallback when it cannot
+    // resolve a date entity (e.g. numeric codes that loosely resemble dates). Reject any
+    // entity-extracted date that is in the future — receipt dates are always today or earlier.
+    val safeEntityDate = entities.date?.takeIf { !it.isAfter(LocalDate.now()) }
+
+    return parsed.copy(
+        date = parsed.date ?: safeEntityDate,
+        totalAmount = if (useEntityTotal) entities.totalAmount ?: parsed.totalAmount else parsed.totalAmount,
+        totalConfidence = if (useEntityTotal) 0.25f else parsed.totalConfidence,
+        cardLastFour = parsed.cardLastFour ?: entities.cardLastFour,
+    )
+}
 
 class ExtractReceiptDataUseCase @Inject constructor(
     private val textRecognizer: MlKitTextRecognizer,
     private val receiptParser: ReceiptParser,
     private val entityExtractor: EntityExtractionHelper,
+    private val imagePreprocessor: ImagePreprocessor,
 ) {
     suspend operator fun invoke(bitmap: Bitmap, rotationDegrees: Int = 0): Result<ExtractedReceiptData> {
         return try {
-            val ocrResult = textRecognizer.recognizeText(bitmap, rotationDegrees)
-            val parsed = receiptParser.parse(ocrResult)
+            val processed = imagePreprocessor.preprocess(bitmap)
+            try {
+                val ocrResult = textRecognizer.recognizeText(processed, rotationDegrees)
+                val parsed = receiptParser.parse(ocrResult)
 
-            // Use ML Kit Entity Extraction as a secondary validation pass. It runs
-            // concurrently-safe here since both are suspend funs on the calling coroutine.
-            // Entity results only override parser results when the parser found nothing.
-            val entities = entityExtractor.extract(ocrResult.fullText)
+                val entities = entityExtractor.extract(ocrResult.fullText)
+                val merged = mergeParsedAndEntityData(parsed, entities)
 
-            val merged = parsed.copy(
-                date = parsed.date ?: entities.date,
-                totalAmount = parsed.totalAmount ?: entities.totalAmount,
-                cardLastFour = parsed.cardLastFour ?: entities.cardLastFour,
-            )
-
-            Result.success(merged)
+                Result.success(merged)
+            } finally {
+                processed.recycle()
+            }
         } catch (e: Exception) {
             Result.failure(e)
         }

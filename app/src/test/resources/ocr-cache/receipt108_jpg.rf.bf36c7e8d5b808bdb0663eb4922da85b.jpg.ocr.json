@@ -1,0 +1,610 @@
+{
+  "fullText": "Wallington N. J, 07057\nTel :973.773.7100 Fax :\nLan Sheng\n209 Paterson Ave.\nDine In\nServer: Mary\n2 Person\nc Soy V.\nB2 ]\n: 973.773.7101\n# 101\n06/13/17\nSpicy Chicken w. Spicy Garli\nH- Peking Duck\nne Chili\nO8:38 PM - 09:17 P.\nStir Beef Fillet w. Tofu\nPork w. Spicy Capsicum\nWhite Rice (S)\nSubTotal\nSales Tax\nTotal\nS7.95\nPork w. Spicy Tofu & Cayen S12.95\nThank You\nHave A Nice Day\nS18.95\nS15.95\nS12.95\n$1.50\n$70.25\n$4.90\n$75.15",
+  "blocks": [
+    {
+      "text": "Wallington N. J, 07057\nTel :973.773.7100 Fax :",
+      "lines": [
+        {
+          "text": "Wallington N. J, 07057",
+          "boundingBox": {
+            "left": 429,
+            "top": 299,
+            "right": 837,
+            "bottom": 345
+          },
+          "confidence": 0.7783717
+        },
+        {
+          "text": "Tel :973.773.7100 Fax :",
+          "boundingBox": {
+            "left": 286,
+            "top": 337,
+            "right": 728,
+            "bottom": 379
+          },
+          "confidence": 0.78945315
+        }
+      ],
+      "boundingBox": {
+        "left": 285,
+        "top": 299,
+        "right": 838,
+        "bottom": 383
+      }
+    },
+    {
+      "text": "Lan Sheng\n209 Paterson Ave.",
+      "lines": [
+        {
+          "text": "Lan Sheng",
+          "boundingBox": {
+            "left": 498,
+            "top": 240,
+            "right": 772,
+            "bottom": 274
+          },
+          "confidence": 0.8642578
+        },
+        {
+          "text": "209 Paterson Ave.",
+          "boundingBox": {
+            "left": 476,
+            "top": 277,
+            "right": 788,
+            "bottom": 305
+          },
+          "confidence": 0.82135415
+        }
+      ],
+      "boundingBox": {
+        "left": 476,
+        "top": 237,
+        "right": 788,
+        "bottom": 305
+      }
+    },
+    {
+      "text": "Dine In\nServer: Mary",
+      "lines": [
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 239,
+            "top": 473,
+            "right": 425,
+            "bottom": 505
+          },
+          "confidence": 0.81184894
+        },
+        {
+          "text": "Server: Mary",
+          "boundingBox": {
+            "left": 235,
+            "top": 515,
+            "right": 481,
+            "bottom": 553
+          },
+          "confidence": 0.859375
+        }
+      ],
+      "boundingBox": {
+        "left": 234,
+        "top": 473,
+        "right": 480,
+        "bottom": 553
+      }
+    },
+    {
+      "text": "2 Person",
+      "lines": [
+        {
+          "text": "2 Person",
+          "boundingBox": {
+            "left": 246,
+            "top": 557,
+            "right": 437,
+            "bottom": 581
+          },
+          "confidence": 0.8264509
+        }
+      ],
+      "boundingBox": {
+        "left": 246,
+        "top": 557,
+        "right": 437,
+        "bottom": 581
+      }
+    },
+    {
+      "text": "c Soy V.",
+      "lines": [
+        {
+          "text": "c Soy V.",
+          "boundingBox": {
+            "left": 342,
+            "top": 658,
+            "right": 483,
+            "bottom": 699
+          },
+          "confidence": 0.70442706
+        }
+      ],
+      "boundingBox": {
+        "left": 342,
+        "top": 658,
+        "right": 483,
+        "bottom": 699
+      }
+    },
+    {
+      "text": "B2 ]",
+      "lines": [
+        {
+          "text": "B2 ]",
+          "boundingBox": {
+            "left": 602,
+            "top": 402,
+            "right": 728,
+            "bottom": 446
+          },
+          "confidence": 0.5729167
+        }
+      ],
+      "boundingBox": {
+        "left": 602,
+        "top": 402,
+        "right": 728,
+        "bottom": 446
+      }
+    },
+    {
+      "text": ": 973.773.7101",
+      "lines": [
+        {
+          "text": ": 973.773.7101",
+          "boundingBox": {
+            "left": 728,
+            "top": 296,
+            "right": 983,
+            "bottom": 381
+          },
+          "confidence": 0.71634614
+        }
+      ],
+      "boundingBox": {
+        "left": 728,
+        "top": 296,
+        "right": 983,
+        "bottom": 381
+      }
+    },
+    {
+      "text": "# 101",
+      "lines": [
+        {
+          "text": "# 101",
+          "boundingBox": {
+            "left": 640,
+            "top": 456,
+            "right": 796,
+            "bottom": 504
+          },
+          "confidence": 0.703125
+        }
+      ],
+      "boundingBox": {
+        "left": 640,
+        "top": 456,
+        "right": 796,
+        "bottom": 504
+      }
+    },
+    {
+      "text": "06/13/17",
+      "lines": [
+        {
+          "text": "06/13/17",
+          "boundingBox": {
+            "left": 640,
+            "top": 505,
+            "right": 803,
+            "bottom": 538
+          },
+          "confidence": 0.72753906
+        }
+      ],
+      "boundingBox": {
+        "left": 640,
+        "top": 505,
+        "right": 803,
+        "bottom": 538
+      }
+    },
+    {
+      "text": "Spicy Chicken w. Spicy Garli",
+      "lines": [
+        {
+          "text": "Spicy Chicken w. Spicy Garli",
+          "boundingBox": {
+            "left": 326,
+            "top": 604,
+            "right": 887,
+            "bottom": 664
+          },
+          "confidence": 0.85807294
+        }
+      ],
+      "boundingBox": {
+        "left": 326,
+        "top": 604,
+        "right": 887,
+        "bottom": 664
+      }
+    },
+    {
+      "text": "H- Peking Duck",
+      "lines": [
+        {
+          "text": "H- Peking Duck",
+          "boundingBox": {
+            "left": 321,
+            "top": 694,
+            "right": 655,
+            "bottom": 737
+          },
+          "confidence": 0.8307292
+        }
+      ],
+      "boundingBox": {
+        "left": 321,
+        "top": 694,
+        "right": 655,
+        "bottom": 737
+      }
+    },
+    {
+      "text": "ne Chili",
+      "lines": [
+        {
+          "text": "ne Chili",
+          "boundingBox": {
+            "left": 311,
+            "top": 903,
+            "right": 469,
+            "bottom": 940
+          },
+          "confidence": 0.87834823
+        }
+      ],
+      "boundingBox": {
+        "left": 311,
+        "top": 903,
+        "right": 469,
+        "bottom": 940
+      }
+    },
+    {
+      "text": "O8:38 PM - 09:17 P.",
+      "lines": [
+        {
+          "text": "O8:38 PM - 09:17 P.",
+          "boundingBox": {
+            "left": 658,
+            "top": 489,
+            "right": 1052,
+            "bottom": 593
+          },
+          "confidence": 0.7734375
+        }
+      ],
+      "boundingBox": {
+        "left": 658,
+        "top": 489,
+        "right": 1052,
+        "bottom": 593
+      }
+    },
+    {
+      "text": "Stir Beef Fillet w. Tofu",
+      "lines": [
+        {
+          "text": "Stir Beef Fillet w. Tofu",
+          "boundingBox": {
+            "left": 320,
+            "top": 729,
+            "right": 774,
+            "bottom": 771
+          },
+          "confidence": 0.86035156
+        }
+      ],
+      "boundingBox": {
+        "left": 320,
+        "top": 729,
+        "right": 774,
+        "bottom": 771
+      }
+    },
+    {
+      "text": "Pork w. Spicy Capsicum\nWhite Rice (S)",
+      "lines": [
+        {
+          "text": "Pork w. Spicy Capsicum",
+          "boundingBox": {
+            "left": 318,
+            "top": 766,
+            "right": 806,
+            "bottom": 819
+          },
+          "confidence": 0.8552632
+        },
+        {
+          "text": "White Rice (S)",
+          "boundingBox": {
+            "left": 319,
+            "top": 811,
+            "right": 617,
+            "bottom": 859
+          },
+          "confidence": 0.8496094
+        }
+      ],
+      "boundingBox": {
+        "left": 318,
+        "top": 767,
+        "right": 807,
+        "bottom": 860
+      }
+    },
+    {
+      "text": "SubTotal\nSales Tax",
+      "lines": [
+        {
+          "text": "SubTotal",
+          "boundingBox": {
+            "left": 714,
+            "top": 967,
+            "right": 905,
+            "bottom": 1020
+          },
+          "confidence": 0.8666992
+        },
+        {
+          "text": "Sales Tax",
+          "boundingBox": {
+            "left": 709,
+            "top": 1017,
+            "right": 906,
+            "bottom": 1058
+          },
+          "confidence": 0.8671875
+        }
+      ],
+      "boundingBox": {
+        "left": 705,
+        "top": 966,
+        "right": 908,
+        "bottom": 1062
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 556,
+            "top": 1121,
+            "right": 720,
+            "bottom": 1179
+          },
+          "confidence": 0.8640625
+        }
+      ],
+      "boundingBox": {
+        "left": 556,
+        "top": 1121,
+        "right": 720,
+        "bottom": 1179
+      }
+    },
+    {
+      "text": "S7.95",
+      "lines": [
+        {
+          "text": "S7.95",
+          "boundingBox": {
+            "left": 942,
+            "top": 574,
+            "right": 1050,
+            "bottom": 622
+          },
+          "confidence": 0.69609374
+        }
+      ],
+      "boundingBox": {
+        "left": 942,
+        "top": 574,
+        "right": 1050,
+        "bottom": 622
+      }
+    },
+    {
+      "text": "Pork w. Spicy Tofu & Cayen S12.95",
+      "lines": [
+        {
+          "text": "Pork w. Spicy Tofu & Cayen S12.95",
+          "boundingBox": {
+            "left": 338,
+            "top": 811,
+            "right": 1092,
+            "bottom": 912
+          },
+          "confidence": 0.8466435
+        }
+      ],
+      "boundingBox": {
+        "left": 338,
+        "top": 811,
+        "right": 1092,
+        "bottom": 912
+      }
+    },
+    {
+      "text": "Thank You\nHave A Nice Day",
+      "lines": [
+        {
+          "text": "Thank You",
+          "boundingBox": {
+            "left": 512,
+            "top": 1283,
+            "right": 806,
+            "bottom": 1335
+          },
+          "confidence": 0.9042969
+        },
+        {
+          "text": "Have A Nice Day",
+          "boundingBox": {
+            "left": 432,
+            "top": 1343,
+            "right": 890,
+            "bottom": 1405
+          },
+          "confidence": 0.898112
+        }
+      ],
+      "boundingBox": {
+        "left": 431,
+        "top": 1281,
+        "right": 890,
+        "bottom": 1406
+      }
+    },
+    {
+      "text": "S18.95\nS15.95",
+      "lines": [
+        {
+          "text": "S18.95",
+          "boundingBox": {
+            "left": 927,
+            "top": 652,
+            "right": 1059,
+            "bottom": 703
+          },
+          "confidence": 0.7545573
+        },
+        {
+          "text": "S15.95",
+          "boundingBox": {
+            "left": 930,
+            "top": 691,
+            "right": 1065,
+            "bottom": 741
+          },
+          "confidence": 0.6933594
+        }
+      ],
+      "boundingBox": {
+        "left": 924,
+        "top": 653,
+        "right": 1066,
+        "bottom": 742
+      }
+    },
+    {
+      "text": "S12.95",
+      "lines": [
+        {
+          "text": "S12.95",
+          "boundingBox": {
+            "left": 935,
+            "top": 733,
+            "right": 1071,
+            "bottom": 783
+          },
+          "confidence": 0.80859375
+        }
+      ],
+      "boundingBox": {
+        "left": 935,
+        "top": 733,
+        "right": 1071,
+        "bottom": 783
+      }
+    },
+    {
+      "text": "$1.50",
+      "lines": [
+        {
+          "text": "$1.50",
+          "boundingBox": {
+            "left": 965,
+            "top": 775,
+            "right": 1077,
+            "bottom": 822
+          },
+          "confidence": 0.63671875
+        }
+      ],
+      "boundingBox": {
+        "left": 965,
+        "top": 775,
+        "right": 1077,
+        "bottom": 822
+      }
+    },
+    {
+      "text": "$70.25\n$4.90",
+      "lines": [
+        {
+          "text": "$70.25",
+          "boundingBox": {
+            "left": 957,
+            "top": 953,
+            "right": 1099,
+            "bottom": 1001
+          },
+          "confidence": 0.6875
+        },
+        {
+          "text": "$4.90",
+          "boundingBox": {
+            "left": 1011,
+            "top": 994,
+            "right": 1113,
+            "bottom": 1046
+          },
+          "confidence": 0.784375
+        }
+      ],
+      "boundingBox": {
+        "left": 957,
+        "top": 951,
+        "right": 1112,
+        "bottom": 1050
+      }
+    },
+    {
+      "text": "$75.15",
+      "lines": [
+        {
+          "text": "$75.15",
+          "boundingBox": {
+            "left": 892,
+            "top": 1100,
+            "right": 1119,
+            "bottom": 1170
+          },
+          "confidence": 0.86067706
+        }
+      ],
+      "boundingBox": {
+        "left": 892,
+        "top": 1100,
+        "right": 1119,
+        "bottom": 1170
+      }
+    }
+  ]
+}

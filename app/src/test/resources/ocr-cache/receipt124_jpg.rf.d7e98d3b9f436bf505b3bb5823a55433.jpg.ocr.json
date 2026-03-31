@@ -1,0 +1,504 @@
+{
+  "fullText": "El Meson Mexican Restaurant\n794 South Perry St Unit EF\nCASTLE ROCK, CO 80104\n(720) 733-9705\nServer: IGOR\nI\nOrder #: 18533\nTable: Al\n1 SOPA DE TORTILA BOWL\n1 TACO SALAD\nCHKN\n1 HOUSE MARGARITA JUMBO\n1 Dr Pepper\n1 SIDE CHEESE\n1 HOUSE MARGARITA JUMBO\nSUB TOTAL:\nTax 1:\nTOTAL:\nStat ion: 33\nDine In\nGuests: 2\n5.50\n9.50\n12.50\n2.65\n1.55\n12.50\n44.20\n3.50",
+  "blocks": [
+    {
+      "text": "El Meson Mexican Restaurant\n794 South Perry St Unit EF\nCASTLE ROCK, CO 80104\n(720) 733-9705",
+      "lines": [
+        {
+          "text": "El Meson Mexican Restaurant",
+          "boundingBox": {
+            "left": 411,
+            "top": 29,
+            "right": 1094,
+            "bottom": 99
+          },
+          "confidence": 0.7783203
+        },
+        {
+          "text": "794 South Perry St Unit EF",
+          "boundingBox": {
+            "left": 412,
+            "top": 87,
+            "right": 1090,
+            "bottom": 139
+          },
+          "confidence": 0.83407736
+        },
+        {
+          "text": "CASTLE ROCK, CO 80104",
+          "boundingBox": {
+            "left": 454,
+            "top": 137,
+            "right": 1018,
+            "bottom": 193
+          },
+          "confidence": 0.8315972
+        },
+        {
+          "text": "(720) 733-9705",
+          "boundingBox": {
+            "left": 561,
+            "top": 199,
+            "right": 942,
+            "bottom": 253
+          },
+          "confidence": 0.89753604
+        }
+      ],
+      "boundingBox": {
+        "left": 411,
+        "top": 28,
+        "right": 1096,
+        "bottom": 258
+      }
+    },
+    {
+      "text": "Server: IGOR\nI",
+      "lines": [
+        {
+          "text": "Server: IGOR",
+          "boundingBox": {
+            "left": 200,
+            "top": 327,
+            "right": 527,
+            "bottom": 383
+          },
+          "confidence": 0.80078125
+        },
+        {
+          "text": "I",
+          "boundingBox": {
+            "left": 426,
+            "top": 323,
+            "right": 444,
+            "bottom": 388
+          },
+          "confidence": 0.5703125
+        }
+      ],
+      "boundingBox": {
+        "left": 200,
+        "top": 322,
+        "right": 527,
+        "bottom": 392
+      }
+    },
+    {
+      "text": "Order #: 18533\nTable: Al",
+      "lines": [
+        {
+          "text": "Order #: 18533",
+          "boundingBox": {
+            "left": 196,
+            "top": 460,
+            "right": 580,
+            "bottom": 512
+          },
+          "confidence": 0.8072917
+        },
+        {
+          "text": "Table: Al",
+          "boundingBox": {
+            "left": 195,
+            "top": 523,
+            "right": 435,
+            "bottom": 581
+          },
+          "confidence": 0.79052734
+        }
+      ],
+      "boundingBox": {
+        "left": 195,
+        "top": 457,
+        "right": 579,
+        "bottom": 582
+      }
+    },
+    {
+      "text": "1 SOPA DE TORTILA BOWL",
+      "lines": [
+        {
+          "text": "1 SOPA DE TORTILA BOWL",
+          "boundingBox": {
+            "left": 223,
+            "top": 660,
+            "right": 800,
+            "bottom": 724
+          },
+          "confidence": 0.79123265
+        }
+      ],
+      "boundingBox": {
+        "left": 223,
+        "top": 660,
+        "right": 800,
+        "bottom": 724
+      }
+    },
+    {
+      "text": "1 TACO SALAD\nCHKN",
+      "lines": [
+        {
+          "text": "1 TACO SALAD",
+          "boundingBox": {
+            "left": 222,
+            "top": 727,
+            "right": 527,
+            "bottom": 791
+          },
+          "confidence": 0.8027344
+        },
+        {
+          "text": "CHKN",
+          "boundingBox": {
+            "left": 252,
+            "top": 797,
+            "right": 361,
+            "bottom": 853
+          },
+          "confidence": 0.8642578
+        }
+      ],
+      "boundingBox": {
+        "left": 222,
+        "top": 724,
+        "right": 527,
+        "bottom": 853
+      }
+    },
+    {
+      "text": "1 HOUSE MARGARITA JUMBO\n1 Dr Pepper\n1 SIDE CHEESE",
+      "lines": [
+        {
+          "text": "1 HOUSE MARGARITA JUMBO",
+          "boundingBox": {
+            "left": 230,
+            "top": 861,
+            "right": 831,
+            "bottom": 927
+          },
+          "confidence": 0.8064453
+        },
+        {
+          "text": "1 Dr Pepper",
+          "boundingBox": {
+            "left": 232,
+            "top": 930,
+            "right": 500,
+            "bottom": 994
+          },
+          "confidence": 0.8046875
+        },
+        {
+          "text": "1 SIDE CHEESE",
+          "boundingBox": {
+            "left": 234,
+            "top": 994,
+            "right": 554,
+            "bottom": 1060
+          },
+          "confidence": 0.7397017
+        }
+      ],
+      "boundingBox": {
+        "left": 230,
+        "top": 861,
+        "right": 831,
+        "bottom": 1060
+      }
+    },
+    {
+      "text": "1 HOUSE MARGARITA JUMBO",
+      "lines": [
+        {
+          "text": "1 HOUSE MARGARITA JUMBO",
+          "boundingBox": {
+            "left": 226,
+            "top": 1065,
+            "right": 832,
+            "bottom": 1130
+          },
+          "confidence": 0.7962891
+        }
+      ],
+      "boundingBox": {
+        "left": 226,
+        "top": 1065,
+        "right": 832,
+        "bottom": 1130
+      }
+    },
+    {
+      "text": "SUB TOTAL:\nTax 1:",
+      "lines": [
+        {
+          "text": "SUB TOTAL:",
+          "boundingBox": {
+            "left": 205,
+            "top": 1199,
+            "right": 467,
+            "bottom": 1256
+          },
+          "confidence": 0.79210067
+        },
+        {
+          "text": "Tax 1:",
+          "boundingBox": {
+            "left": 212,
+            "top": 1264,
+            "right": 380,
+            "bottom": 1328
+          },
+          "confidence": 0.81875
+        }
+      ],
+      "boundingBox": {
+        "left": 204,
+        "top": 1199,
+        "right": 467,
+        "bottom": 1329
+      }
+    },
+    {
+      "text": "TOTAL:",
+      "lines": [
+        {
+          "text": "TOTAL:",
+          "boundingBox": {
+            "left": 206,
+            "top": 1405,
+            "right": 361,
+            "bottom": 1502
+          },
+          "confidence": 0.48046875
+        }
+      ],
+      "boundingBox": {
+        "left": 206,
+        "top": 1405,
+        "right": 361,
+        "bottom": 1502
+      }
+    },
+    {
+      "text": "Stat ion: 33",
+      "lines": [
+        {
+          "text": "Stat ion: 33",
+          "boundingBox": {
+            "left": 1022,
+            "top": 319,
+            "right": 1305,
+            "bottom": 383
+          },
+          "confidence": 0.8535156
+        }
+      ],
+      "boundingBox": {
+        "left": 1022,
+        "top": 319,
+        "right": 1305,
+        "bottom": 383
+      }
+    },
+    {
+      "text": "Dine In\nGuests: 2",
+      "lines": [
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 1109,
+            "top": 455,
+            "right": 1307,
+            "bottom": 517
+          },
+          "confidence": 0.8079427
+        },
+        {
+          "text": "Guests: 2",
+          "boundingBox": {
+            "left": 1065,
+            "top": 525,
+            "right": 1309,
+            "bottom": 593
+          },
+          "confidence": 0.83203125
+        }
+      ],
+      "boundingBox": {
+        "left": 1065,
+        "top": 454,
+        "right": 1309,
+        "bottom": 593
+      }
+    },
+    {
+      "text": "5.50",
+      "lines": [
+        {
+          "text": "5.50",
+          "boundingBox": {
+            "left": 1196,
+            "top": 668,
+            "right": 1308,
+            "bottom": 718
+          },
+          "confidence": 0.8339844
+        }
+      ],
+      "boundingBox": {
+        "left": 1196,
+        "top": 668,
+        "right": 1308,
+        "bottom": 718
+      }
+    },
+    {
+      "text": "9.50",
+      "lines": [
+        {
+          "text": "9.50",
+          "boundingBox": {
+            "left": 1194,
+            "top": 738,
+            "right": 1306,
+            "bottom": 788
+          },
+          "confidence": 0.8515625
+        }
+      ],
+      "boundingBox": {
+        "left": 1194,
+        "top": 738,
+        "right": 1306,
+        "bottom": 788
+      }
+    },
+    {
+      "text": "12.50",
+      "lines": [
+        {
+          "text": "12.50",
+          "boundingBox": {
+            "left": 1172,
+            "top": 874,
+            "right": 1306,
+            "bottom": 925
+          },
+          "confidence": 0.8570312
+        }
+      ],
+      "boundingBox": {
+        "left": 1172,
+        "top": 874,
+        "right": 1306,
+        "bottom": 925
+      }
+    },
+    {
+      "text": "2.65",
+      "lines": [
+        {
+          "text": "2.65",
+          "boundingBox": {
+            "left": 1196,
+            "top": 942,
+            "right": 1306,
+            "bottom": 992
+          },
+          "confidence": 0.9091797
+        }
+      ],
+      "boundingBox": {
+        "left": 1196,
+        "top": 942,
+        "right": 1306,
+        "bottom": 992
+      }
+    },
+    {
+      "text": "1.55",
+      "lines": [
+        {
+          "text": "1.55",
+          "boundingBox": {
+            "left": 1202,
+            "top": 1010,
+            "right": 1306,
+            "bottom": 1058
+          },
+          "confidence": 0.8125
+        }
+      ],
+      "boundingBox": {
+        "left": 1202,
+        "top": 1010,
+        "right": 1306,
+        "bottom": 1058
+      }
+    },
+    {
+      "text": "12.50",
+      "lines": [
+        {
+          "text": "12.50",
+          "boundingBox": {
+            "left": 1172,
+            "top": 1073,
+            "right": 1305,
+            "bottom": 1127
+          },
+          "confidence": 0.85234374
+        }
+      ],
+      "boundingBox": {
+        "left": 1172,
+        "top": 1073,
+        "right": 1305,
+        "bottom": 1127
+      }
+    },
+    {
+      "text": "44.20",
+      "lines": [
+        {
+          "text": "44.20",
+          "boundingBox": {
+            "left": 1168,
+            "top": 1212,
+            "right": 1306,
+            "bottom": 1262
+          },
+          "confidence": 0.9085938
+        }
+      ],
+      "boundingBox": {
+        "left": 1168,
+        "top": 1212,
+        "right": 1306,
+        "bottom": 1262
+      }
+    },
+    {
+      "text": "3.50",
+      "lines": [
+        {
+          "text": "3.50",
+          "boundingBox": {
+            "left": 1188,
+            "top": 1282,
+            "right": 1302,
+            "bottom": 1336
+          },
+          "confidence": 0.890625
+        }
+      ],
+      "boundingBox": {
+        "left": 1188,
+        "top": 1282,
+        "right": 1302,
+        "bottom": 1336
+      }
+    }
+  ]
+}

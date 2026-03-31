@@ -1,0 +1,621 @@
+{
+  "fullText": "91-5431 Kapolei Parkway, Suite 426\nKapolei, HI 96707\n(808) 628-4771\nMargar ita\nAdd Tequi la\nStrawberry Daiquiri\nKICKIN KAJUN KAPOLEI\nKa Makana Al1'1\nAdd Vodca\nSnow Combo\nKickin Sauce\nMi ld\nSubtotal:\nTotal Tax:\nTotal:\nReceipt Total:\nServer: Chenay B\nTable: Table 2\nDate: 7/18/19, 5:47 PM\nSuggested Gratuity\nTip\n$6.00\n+$4.00\n$6.00\n+$4.00\n$54.00\n+$0.00\n+$0.00\n$74.00\n$3.49\n$77.49\n$38.75\nTotal",
+  "blocks": [
+    {
+      "text": "91-5431 Kapolei Parkway, Suite 426\nKapolei, HI 96707\n(808) 628-4771",
+      "lines": [
+        {
+          "text": "91-5431 Kapolei Parkway, Suite 426",
+          "boundingBox": {
+            "left": 505,
+            "top": 478,
+            "right": 1192,
+            "bottom": 516
+          },
+          "confidence": 0.8359375
+        },
+        {
+          "text": "Kapolei, HI 96707",
+          "boundingBox": {
+            "left": 682,
+            "top": 514,
+            "right": 1032,
+            "bottom": 556
+          },
+          "confidence": 0.8221354
+        },
+        {
+          "text": "(808) 628-4771",
+          "boundingBox": {
+            "left": 710,
+            "top": 554,
+            "right": 986,
+            "bottom": 593
+          },
+          "confidence": 0.88371396
+        }
+      ],
+      "boundingBox": {
+        "left": 505,
+        "top": 475,
+        "right": 1191,
+        "bottom": 594
+      }
+    },
+    {
+      "text": "Margar ita",
+      "lines": [
+        {
+          "text": "Margar ita",
+          "boundingBox": {
+            "left": 412,
+            "top": 797,
+            "right": 605,
+            "bottom": 833
+          },
+          "confidence": 0.88064235
+        }
+      ],
+      "boundingBox": {
+        "left": 412,
+        "top": 797,
+        "right": 605,
+        "bottom": 833
+      }
+    },
+    {
+      "text": "Add Tequi la\nStrawberry Daiquiri",
+      "lines": [
+        {
+          "text": "Add Tequi la",
+          "boundingBox": {
+            "left": 480,
+            "top": 832,
+            "right": 708,
+            "bottom": 871
+          },
+          "confidence": 0.803125
+        },
+        {
+          "text": "Strawberry Daiquiri",
+          "boundingBox": {
+            "left": 416,
+            "top": 864,
+            "right": 818,
+            "bottom": 916
+          },
+          "confidence": 0.82508683
+        }
+      ],
+      "boundingBox": {
+        "left": 415,
+        "top": 827,
+        "right": 818,
+        "bottom": 916
+      }
+    },
+    {
+      "text": "KICKIN KAJUN KAPOLEI\nKa Makana Al1'1",
+      "lines": [
+        {
+          "text": "KICKIN KAJUN KAPOLEI",
+          "boundingBox": {
+            "left": 635,
+            "top": 407,
+            "right": 1045,
+            "bottom": 435
+          },
+          "confidence": 0.8487413
+        },
+        {
+          "text": "Ka Makana Al1'1",
+          "boundingBox": {
+            "left": 700,
+            "top": 444,
+            "right": 1006,
+            "bottom": 472
+          },
+          "confidence": 0.68689907
+        }
+      ],
+      "boundingBox": {
+        "left": 635,
+        "top": 407,
+        "right": 1045,
+        "bottom": 472
+      }
+    },
+    {
+      "text": "Add Vodca",
+      "lines": [
+        {
+          "text": "Add Vodca",
+          "boundingBox": {
+            "left": 482,
+            "top": 911,
+            "right": 673,
+            "bottom": 949
+          },
+          "confidence": 0.8652344
+        }
+      ],
+      "boundingBox": {
+        "left": 482,
+        "top": 911,
+        "right": 673,
+        "bottom": 949
+      }
+    },
+    {
+      "text": "Snow Combo",
+      "lines": [
+        {
+          "text": "Snow Combo",
+          "boundingBox": {
+            "left": 416,
+            "top": 953,
+            "right": 632,
+            "bottom": 991
+          },
+          "confidence": 0.7986111
+        }
+      ],
+      "boundingBox": {
+        "left": 416,
+        "top": 953,
+        "right": 632,
+        "bottom": 991
+      }
+    },
+    {
+      "text": "Kickin Sauce\nMi ld",
+      "lines": [
+        {
+          "text": "Kickin Sauce",
+          "boundingBox": {
+            "left": 484,
+            "top": 991,
+            "right": 740,
+            "bottom": 1029
+          },
+          "confidence": 0.80965906
+        },
+        {
+          "text": "Mi ld",
+          "boundingBox": {
+            "left": 484,
+            "top": 1034,
+            "right": 570,
+            "bottom": 1070
+          },
+          "confidence": 0.75878906
+        }
+      ],
+      "boundingBox": {
+        "left": 482,
+        "top": 988,
+        "right": 742,
+        "bottom": 1070
+      }
+    },
+    {
+      "text": "Subtotal:\nTotal Tax:",
+      "lines": [
+        {
+          "text": "Subtotal:",
+          "boundingBox": {
+            "left": 422,
+            "top": 1114,
+            "right": 610,
+            "bottom": 1155
+          },
+          "confidence": 0.8680556
+        },
+        {
+          "text": "Total Tax:",
+          "boundingBox": {
+            "left": 422,
+            "top": 1154,
+            "right": 635,
+            "bottom": 1195
+          },
+          "confidence": 0.7760417
+        }
+      ],
+      "boundingBox": {
+        "left": 421,
+        "top": 1111,
+        "right": 635,
+        "bottom": 1195
+      }
+    },
+    {
+      "text": "Total:",
+      "lines": [
+        {
+          "text": "Total:",
+          "boundingBox": {
+            "left": 432,
+            "top": 1242,
+            "right": 552,
+            "bottom": 1278
+          },
+          "confidence": 0.81315106
+        }
+      ],
+      "boundingBox": {
+        "left": 432,
+        "top": 1242,
+        "right": 552,
+        "bottom": 1278
+      }
+    },
+    {
+      "text": "Receipt Total:",
+      "lines": [
+        {
+          "text": "Receipt Total:",
+          "boundingBox": {
+            "left": 428,
+            "top": 1354,
+            "right": 729,
+            "bottom": 1405
+          },
+          "confidence": 0.86778843
+        }
+      ],
+      "boundingBox": {
+        "left": 428,
+        "top": 1354,
+        "right": 729,
+        "bottom": 1405
+      }
+    },
+    {
+      "text": "Server: Chenay B\nTable: Table 2",
+      "lines": [
+        {
+          "text": "Server: Chenay B",
+          "boundingBox": {
+            "left": 957,
+            "top": 631,
+            "right": 1277,
+            "bottom": 669
+          },
+          "confidence": 0.85546875
+        },
+        {
+          "text": "Table: Table 2",
+          "boundingBox": {
+            "left": 1000,
+            "top": 669,
+            "right": 1278,
+            "bottom": 702
+          },
+          "confidence": 0.851237
+        }
+      ],
+      "boundingBox": {
+        "left": 957,
+        "top": 631,
+        "right": 1278,
+        "bottom": 704
+      }
+    },
+    {
+      "text": "Date: 7/18/19, 5:47 PM",
+      "lines": [
+        {
+          "text": "Date: 7/18/19, 5:47 PM",
+          "boundingBox": {
+            "left": 837,
+            "top": 706,
+            "right": 1281,
+            "bottom": 746
+          },
+          "confidence": 0.8684211
+        }
+      ],
+      "boundingBox": {
+        "left": 837,
+        "top": 706,
+        "right": 1281,
+        "bottom": 746
+      }
+    },
+    {
+      "text": "Suggested Gratuity",
+      "lines": [
+        {
+          "text": "Suggested Gratuity",
+          "boundingBox": {
+            "left": 700,
+            "top": 1499,
+            "right": 1084,
+            "bottom": 1559
+          },
+          "confidence": 0.8582261
+        }
+      ],
+      "boundingBox": {
+        "left": 700,
+        "top": 1499,
+        "right": 1084,
+        "bottom": 1559
+      }
+    },
+    {
+      "text": "Tip",
+      "lines": [
+        {
+          "text": "Tip",
+          "boundingBox": {
+            "left": 1002,
+            "top": 1550,
+            "right": 1072,
+            "bottom": 1583
+          },
+          "confidence": 0.40364584
+        }
+      ],
+      "boundingBox": {
+        "left": 1002,
+        "top": 1550,
+        "right": 1072,
+        "bottom": 1583
+      }
+    },
+    {
+      "text": "$6.00",
+      "lines": [
+        {
+          "text": "$6.00",
+          "boundingBox": {
+            "left": 1188,
+            "top": 779,
+            "right": 1287,
+            "bottom": 816
+          },
+          "confidence": 0.85
+        }
+      ],
+      "boundingBox": {
+        "left": 1188,
+        "top": 779,
+        "right": 1287,
+        "bottom": 816
+      }
+    },
+    {
+      "text": "+$4.00",
+      "lines": [
+        {
+          "text": "+$4.00",
+          "boundingBox": {
+            "left": 1172,
+            "top": 819,
+            "right": 1290,
+            "bottom": 855
+          },
+          "confidence": 0.80403644
+        }
+      ],
+      "boundingBox": {
+        "left": 1172,
+        "top": 819,
+        "right": 1290,
+        "bottom": 855
+      }
+    },
+    {
+      "text": "$6.00",
+      "lines": [
+        {
+          "text": "$6.00",
+          "boundingBox": {
+            "left": 1192,
+            "top": 856,
+            "right": 1293,
+            "bottom": 893
+          },
+          "confidence": 0.875
+        }
+      ],
+      "boundingBox": {
+        "left": 1192,
+        "top": 856,
+        "right": 1293,
+        "bottom": 893
+      }
+    },
+    {
+      "text": "+$4.00",
+      "lines": [
+        {
+          "text": "+$4.00",
+          "boundingBox": {
+            "left": 1177,
+            "top": 895,
+            "right": 1295,
+            "bottom": 932
+          },
+          "confidence": 0.8248698
+        }
+      ],
+      "boundingBox": {
+        "left": 1177,
+        "top": 895,
+        "right": 1295,
+        "bottom": 932
+      }
+    },
+    {
+      "text": "$54.00",
+      "lines": [
+        {
+          "text": "$54.00",
+          "boundingBox": {
+            "left": 1178,
+            "top": 934,
+            "right": 1299,
+            "bottom": 970
+          },
+          "confidence": 0.90234375
+        }
+      ],
+      "boundingBox": {
+        "left": 1178,
+        "top": 934,
+        "right": 1299,
+        "bottom": 970
+      }
+    },
+    {
+      "text": "+$0.00",
+      "lines": [
+        {
+          "text": "+$0.00",
+          "boundingBox": {
+            "left": 1183,
+            "top": 972,
+            "right": 1301,
+            "bottom": 1009
+          },
+          "confidence": 0.8098958
+        }
+      ],
+      "boundingBox": {
+        "left": 1183,
+        "top": 972,
+        "right": 1301,
+        "bottom": 1009
+      }
+    },
+    {
+      "text": "+$0.00",
+      "lines": [
+        {
+          "text": "+$0.00",
+          "boundingBox": {
+            "left": 1188,
+            "top": 1012,
+            "right": 1304,
+            "bottom": 1048
+          },
+          "confidence": 0.77994794
+        }
+      ],
+      "boundingBox": {
+        "left": 1188,
+        "top": 1012,
+        "right": 1304,
+        "bottom": 1048
+      }
+    },
+    {
+      "text": "$74.00",
+      "lines": [
+        {
+          "text": "$74.00",
+          "boundingBox": {
+            "left": 1191,
+            "top": 1090,
+            "right": 1311,
+            "bottom": 1126
+          },
+          "confidence": 0.8938802
+        }
+      ],
+      "boundingBox": {
+        "left": 1191,
+        "top": 1090,
+        "right": 1311,
+        "bottom": 1126
+      }
+    },
+    {
+      "text": "$3.49",
+      "lines": [
+        {
+          "text": "$3.49",
+          "boundingBox": {
+            "left": 1214,
+            "top": 1132,
+            "right": 1316,
+            "bottom": 1166
+          },
+          "confidence": 0.8921875
+        }
+      ],
+      "boundingBox": {
+        "left": 1214,
+        "top": 1132,
+        "right": 1316,
+        "bottom": 1166
+      }
+    },
+    {
+      "text": "$77.49",
+      "lines": [
+        {
+          "text": "$77.49",
+          "boundingBox": {
+            "left": 1200,
+            "top": 1212,
+            "right": 1323,
+            "bottom": 1248
+          },
+          "confidence": 0.8098958
+        }
+      ],
+      "boundingBox": {
+        "left": 1200,
+        "top": 1212,
+        "right": 1323,
+        "bottom": 1248
+      }
+    },
+    {
+      "text": "$38.75",
+      "lines": [
+        {
+          "text": "$38.75",
+          "boundingBox": {
+            "left": 1205,
+            "top": 1329,
+            "right": 1327,
+            "bottom": 1365
+          },
+          "confidence": 0.8717448
+        }
+      ],
+      "boundingBox": {
+        "left": 1205,
+        "top": 1329,
+        "right": 1327,
+        "bottom": 1365
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": 1235,
+            "top": 1526,
+            "right": 1340,
+            "bottom": 1566
+          },
+          "confidence": 0.6851562
+        }
+      ],
+      "boundingBox": {
+        "left": 1235,
+        "top": 1526,
+        "right": 1340,
+        "bottom": 1566
+      }
+    }
+  ]
+}

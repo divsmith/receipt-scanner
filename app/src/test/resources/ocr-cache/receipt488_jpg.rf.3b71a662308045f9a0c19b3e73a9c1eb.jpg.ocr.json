@@ -1,0 +1,630 @@
+{
+  "fullText": "Tax\nSubtotal\nTotal\nArroz\nRINCON MEXCANO\nBOMERvLLE MA B214s\n99 BREAWAY\n617966137\nCashier: LORENZO REYES\no9-May 2017 71946\nORDER: 45\nDine In\nTaeo De Peseacio\nwcder 7.sTOGTZX6ANR8\nTaco Tuesday Poflo\nTaco b Carne Asada\nTeco D Chortro\nFaco Tuesday Pastor\nHorchata\nTace Tuesday Pollo\nTaco D Cochinita\nTaco D Carnitas\n83.00\n$7.00\n$2.00\n$2.99\n$2.99\n$1.00\nS2.99\nS1.00\n$2.99\n$2.99\n$28,95\n$2.03\n$30.98",
+  "blocks": [
+    {
+      "text": "Tax",
+      "lines": [
+        {
+          "text": "Tax",
+          "boundingBox": {
+            "left": 44,
+            "top": 977,
+            "right": 134,
+            "bottom": 1033
+          },
+          "confidence": 0.73567706
+        }
+      ],
+      "boundingBox": {
+        "left": 44,
+        "top": 977,
+        "right": 134,
+        "bottom": 1033
+      }
+    },
+    {
+      "text": "Subtotal",
+      "lines": [
+        {
+          "text": "Subtotal",
+          "boundingBox": {
+            "left": 59,
+            "top": 920,
+            "right": 294,
+            "bottom": 1012
+          },
+          "confidence": 0.7290039
+        }
+      ],
+      "boundingBox": {
+        "left": 59,
+        "top": 920,
+        "right": 294,
+        "bottom": 1012
+      }
+    },
+    {
+      "text": "Total",
+      "lines": [
+        {
+          "text": "Total",
+          "boundingBox": {
+            "left": -4,
+            "top": 1082,
+            "right": 139,
+            "bottom": 1157
+          },
+          "confidence": 0.8390625
+        }
+      ],
+      "boundingBox": {
+        "left": -4,
+        "top": 1082,
+        "right": 139,
+        "bottom": 1157
+      }
+    },
+    {
+      "text": "Arroz",
+      "lines": [
+        {
+          "text": "Arroz",
+          "boundingBox": {
+            "left": 362,
+            "top": 480,
+            "right": 485,
+            "bottom": 534
+          },
+          "confidence": 0.41328126
+        }
+      ],
+      "boundingBox": {
+        "left": 362,
+        "top": 480,
+        "right": 485,
+        "bottom": 534
+      }
+    },
+    {
+      "text": "RINCON MEXCANO\nBOMERvLLE MA B214s\n99 BREAWAY",
+      "lines": [
+        {
+          "text": "RINCON MEXCANO",
+          "boundingBox": {
+            "left": 630,
+            "top": 150,
+            "right": 1114,
+            "bottom": 293
+          },
+          "confidence": 0.7001202
+        },
+        {
+          "text": "BOMERvLLE MA B214s",
+          "boundingBox": {
+            "left": 616,
+            "top": 216,
+            "right": 1098,
+            "bottom": 362
+          },
+          "confidence": 0.40356445
+        },
+        {
+          "text": "99 BREAWAY",
+          "boundingBox": {
+            "left": 732,
+            "top": 208,
+            "right": 1009,
+            "bottom": 306
+          },
+          "confidence": 0.33680555
+        }
+      ],
+      "boundingBox": {
+        "left": 613,
+        "top": 150,
+        "right": 1115,
+        "bottom": 365
+      }
+    },
+    {
+      "text": "617966137",
+      "lines": [
+        {
+          "text": "617966137",
+          "boundingBox": {
+            "left": 720,
+            "top": 279,
+            "right": 974,
+            "bottom": 361
+          },
+          "confidence": 0.4262153
+        }
+      ],
+      "boundingBox": {
+        "left": 720,
+        "top": 279,
+        "right": 974,
+        "bottom": 361
+      }
+    },
+    {
+      "text": "Cashier: LORENZO REYES\no9-May 2017 71946",
+      "lines": [
+        {
+          "text": "Cashier: LORENZO REYES",
+          "boundingBox": {
+            "left": 344,
+            "top": 351,
+            "right": 872,
+            "bottom": 517
+          },
+          "confidence": 0.640625
+        },
+        {
+          "text": "o9-May 2017 71946",
+          "boundingBox": {
+            "left": 305,
+            "top": 382,
+            "right": 786,
+            "bottom": 533
+          },
+          "confidence": 0.5372396
+        }
+      ],
+      "boundingBox": {
+        "left": 305,
+        "top": 344,
+        "right": 873,
+        "bottom": 554
+      }
+    },
+    {
+      "text": "ORDER: 45",
+      "lines": [
+        {
+          "text": "ORDER: 45",
+          "boundingBox": {
+            "left": 659,
+            "top": 322,
+            "right": 1002,
+            "bottom": 437
+          },
+          "confidence": 0.8261719
+        }
+      ],
+      "boundingBox": {
+        "left": 659,
+        "top": 322,
+        "right": 1002,
+        "bottom": 437
+      }
+    },
+    {
+      "text": "Dine In",
+      "lines": [
+        {
+          "text": "Dine In",
+          "boundingBox": {
+            "left": 706,
+            "top": 389,
+            "right": 929,
+            "bottom": 479
+          },
+          "confidence": 0.78515625
+        }
+      ],
+      "boundingBox": {
+        "left": 706,
+        "top": 389,
+        "right": 929,
+        "bottom": 479
+      }
+    },
+    {
+      "text": "Taeo De Peseacio",
+      "lines": [
+        {
+          "text": "Taeo De Peseacio",
+          "boundingBox": {
+            "left": 364,
+            "top": 516,
+            "right": 734,
+            "bottom": 642
+          },
+          "confidence": 0.5764509
+        }
+      ],
+      "boundingBox": {
+        "left": 364,
+        "top": 516,
+        "right": 734,
+        "bottom": 642
+      }
+    },
+    {
+      "text": "wcder 7.sTOGTZX6ANR8",
+      "lines": [
+        {
+          "text": "wcder 7.sTOGTZX6ANR8",
+          "boundingBox": {
+            "left": -8,
+            "top": 1197,
+            "right": 620,
+            "bottom": 1379
+          },
+          "confidence": 0.5470806
+        }
+      ],
+      "boundingBox": {
+        "left": -8,
+        "top": 1197,
+        "right": 620,
+        "bottom": 1379
+      }
+    },
+    {
+      "text": "Taco Tuesday Poflo",
+      "lines": [
+        {
+          "text": "Taco Tuesday Poflo",
+          "boundingBox": {
+            "left": 339,
+            "top": 555,
+            "right": 775,
+            "bottom": 693
+          },
+          "confidence": 0.6113281
+        }
+      ],
+      "boundingBox": {
+        "left": 339,
+        "top": 555,
+        "right": 775,
+        "bottom": 693
+      }
+    },
+    {
+      "text": "Taco b Carne Asada\nTeco D Chortro\nFaco Tuesday Pastor\nHorchata",
+      "lines": [
+        {
+          "text": "Taco b Carne Asada",
+          "boundingBox": {
+            "left": 324,
+            "top": 597,
+            "right": 779,
+            "bottom": 731
+          },
+          "confidence": 0.5861979
+        },
+        {
+          "text": "Teco D Chortro",
+          "boundingBox": {
+            "left": 309,
+            "top": 636,
+            "right": 657,
+            "bottom": 746
+          },
+          "confidence": 0.57389325
+        },
+        {
+          "text": "Faco Tuesday Pastor",
+          "boundingBox": {
+            "left": 290,
+            "top": 678,
+            "right": 774,
+            "bottom": 819
+          },
+          "confidence": 0.7341452
+        },
+        {
+          "text": "Horchata",
+          "boundingBox": {
+            "left": 262,
+            "top": 716,
+            "right": 488,
+            "bottom": 798
+          },
+          "confidence": 0.76123047
+        }
+      ],
+      "boundingBox": {
+        "left": 262,
+        "top": 590,
+        "right": 791,
+        "bottom": 861
+      }
+    },
+    {
+      "text": "Tace Tuesday Pollo\nTaco D Cochinita\nTaco D Carnitas",
+      "lines": [
+        {
+          "text": "Tace Tuesday Pollo",
+          "boundingBox": {
+            "left": 254,
+            "top": 761,
+            "right": 723,
+            "bottom": 903
+          },
+          "confidence": 0.7246094
+        },
+        {
+          "text": "Taco D Cochinita",
+          "boundingBox": {
+            "left": 234,
+            "top": 802,
+            "right": 653,
+            "bottom": 930
+          },
+          "confidence": 0.7723214
+        },
+        {
+          "text": "Taco D Carnitas",
+          "boundingBox": {
+            "left": 216,
+            "top": 852,
+            "right": 613,
+            "bottom": 971
+          },
+          "confidence": 0.6595553
+        }
+      ],
+      "boundingBox": {
+        "left": 215,
+        "top": 757,
+        "right": 723,
+        "bottom": 991
+      }
+    },
+    {
+      "text": "83.00\n$7.00\n$2.00",
+      "lines": [
+        {
+          "text": "83.00",
+          "boundingBox": {
+            "left": 1136,
+            "top": 657,
+            "right": 1263,
+            "bottom": 713
+          },
+          "confidence": 0.6015625
+        },
+        {
+          "text": "$7.00",
+          "boundingBox": {
+            "left": 1130,
+            "top": 699,
+            "right": 1256,
+            "bottom": 755
+          },
+          "confidence": 0.57890624
+        },
+        {
+          "text": "$2.00",
+          "boundingBox": {
+            "left": 1124,
+            "top": 737,
+            "right": 1255,
+            "bottom": 796
+          },
+          "confidence": 0.4265625
+        }
+      ],
+      "boundingBox": {
+        "left": 1121,
+        "top": 652,
+        "right": 1271,
+        "bottom": 796
+      }
+    },
+    {
+      "text": "$2.99",
+      "lines": [
+        {
+          "text": "$2.99",
+          "boundingBox": {
+            "left": 1117,
+            "top": 779,
+            "right": 1245,
+            "bottom": 838
+          },
+          "confidence": 0.7476562
+        }
+      ],
+      "boundingBox": {
+        "left": 1117,
+        "top": 779,
+        "right": 1245,
+        "bottom": 838
+      }
+    },
+    {
+      "text": "$2.99",
+      "lines": [
+        {
+          "text": "$2.99",
+          "boundingBox": {
+            "left": 1111,
+            "top": 817,
+            "right": 1242,
+            "bottom": 878
+          },
+          "confidence": 0.73828125
+        }
+      ],
+      "boundingBox": {
+        "left": 1111,
+        "top": 817,
+        "right": 1242,
+        "bottom": 878
+      }
+    },
+    {
+      "text": "$1.00",
+      "lines": [
+        {
+          "text": "$1.00",
+          "boundingBox": {
+            "left": 1107,
+            "top": 860,
+            "right": 1242,
+            "bottom": 924
+          },
+          "confidence": 0.73515624
+        }
+      ],
+      "boundingBox": {
+        "left": 1107,
+        "top": 860,
+        "right": 1242,
+        "bottom": 924
+      }
+    },
+    {
+      "text": "S2.99",
+      "lines": [
+        {
+          "text": "S2.99",
+          "boundingBox": {
+            "left": 1103,
+            "top": 903,
+            "right": 1237,
+            "bottom": 966
+          },
+          "confidence": 0.6773437
+        }
+      ],
+      "boundingBox": {
+        "left": 1103,
+        "top": 903,
+        "right": 1237,
+        "bottom": 966
+      }
+    },
+    {
+      "text": "S1.00",
+      "lines": [
+        {
+          "text": "S1.00",
+          "boundingBox": {
+            "left": 1098,
+            "top": 949,
+            "right": 1236,
+            "bottom": 1012
+          },
+          "confidence": 0.640625
+        }
+      ],
+      "boundingBox": {
+        "left": 1098,
+        "top": 949,
+        "right": 1236,
+        "bottom": 1012
+      }
+    },
+    {
+      "text": "$2.99",
+      "lines": [
+        {
+          "text": "$2.99",
+          "boundingBox": {
+            "left": 1092,
+            "top": 993,
+            "right": 1231,
+            "bottom": 1057
+          },
+          "confidence": 0.6984375
+        }
+      ],
+      "boundingBox": {
+        "left": 1092,
+        "top": 993,
+        "right": 1231,
+        "bottom": 1057
+      }
+    },
+    {
+      "text": "$2.99",
+      "lines": [
+        {
+          "text": "$2.99",
+          "boundingBox": {
+            "left": 1087,
+            "top": 1040,
+            "right": 1228,
+            "bottom": 1104
+          },
+          "confidence": 0.625
+        }
+      ],
+      "boundingBox": {
+        "left": 1087,
+        "top": 1040,
+        "right": 1228,
+        "bottom": 1104
+      }
+    },
+    {
+      "text": "$28,95",
+      "lines": [
+        {
+          "text": "$28,95",
+          "boundingBox": {
+            "left": 1047,
+            "top": 1133,
+            "right": 1219,
+            "bottom": 1206
+          },
+          "confidence": 0.6848958
+        }
+      ],
+      "boundingBox": {
+        "left": 1047,
+        "top": 1133,
+        "right": 1219,
+        "bottom": 1206
+      }
+    },
+    {
+      "text": "$2.03",
+      "lines": [
+        {
+          "text": "$2.03",
+          "boundingBox": {
+            "left": 1073,
+            "top": 1191,
+            "right": 1217,
+            "bottom": 1256
+          },
+          "confidence": 0.71171874
+        }
+      ],
+      "boundingBox": {
+        "left": 1073,
+        "top": 1191,
+        "right": 1217,
+        "bottom": 1256
+      }
+    },
+    {
+      "text": "$30.98",
+      "lines": [
+        {
+          "text": "$30.98",
+          "boundingBox": {
+            "left": 1028,
+            "top": 1291,
+            "right": 1209,
+            "bottom": 1366
+          },
+          "confidence": 0.7421875
+        }
+      ],
+      "boundingBox": {
+        "left": 1028,
+        "top": 1291,
+        "right": 1209,
+        "bottom": 1366
+      }
+    }
+  ]
+}

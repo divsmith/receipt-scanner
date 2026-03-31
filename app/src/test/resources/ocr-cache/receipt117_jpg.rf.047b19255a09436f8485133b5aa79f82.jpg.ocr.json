@@ -1,0 +1,619 @@
+{
+  "fullText": "ROs ebu d on Ru sh\n720 North Rush Street\nChicago, IL\n312-266-644 4\nJul15'17 04:07PM\nDate:\nCard\nAcct\nType:\n#:\nCard Entry:\nCheck:\nTable:\nTrans\nTrans Key:\nAuth Code: 190275\nServer:\nSubtotal:\nTIP\nSWIPED\nType: PURCHASE\nTOTAL\nVisa\nSIGNA TLRE\nXXXXXXXXXXXX34 26\nThank\nGIGO05625257729\n1738\n81/1\n226 Chelse a\n79. 17\nTHIS IS ROSEBUD'S COPY\nYou !\nAMERICAN\nEXPRESS",
+  "blocks": [
+    {
+      "text": "ROs ebu d on Ru sh\n720 North Rush Street\nChicago, IL\n312-266-644 4\nJul15'17 04:07PM",
+      "lines": [
+        {
+          "text": "ROs ebu d on Ru sh",
+          "boundingBox": {
+            "left": 17,
+            "top": 37,
+            "right": 1182,
+            "bottom": 114
+          },
+          "confidence": 0.5453726
+        },
+        {
+          "text": "720 North Rush Street",
+          "boundingBox": {
+            "left": 228,
+            "top": 93,
+            "right": 1015,
+            "bottom": 168
+          },
+          "confidence": 0.83289933
+        },
+        {
+          "text": "Chicago, IL",
+          "boundingBox": {
+            "left": 412,
+            "top": 158,
+            "right": 823,
+            "bottom": 217
+          },
+          "confidence": 0.8105469
+        },
+        {
+          "text": "312-266-644 4",
+          "boundingBox": {
+            "left": 436,
+            "top": 202,
+            "right": 872,
+            "bottom": 272
+          },
+          "confidence": 0.8844401
+        },
+        {
+          "text": "Jul15'17 04:07PM",
+          "boundingBox": {
+            "left": 496,
+            "top": 252,
+            "right": 1109,
+            "bottom": 319
+          },
+          "confidence": 0.76666665
+        }
+      ],
+      "boundingBox": {
+        "left": 15,
+        "top": 11,
+        "right": 1190,
+        "bottom": 333
+      }
+    },
+    {
+      "text": "Date:",
+      "lines": [
+        {
+          "text": "Date:",
+          "boundingBox": {
+            "left": 9,
+            "top": 275,
+            "right": 196,
+            "bottom": 316
+          },
+          "confidence": 0.7789062
+        }
+      ],
+      "boundingBox": {
+        "left": 9,
+        "top": 275,
+        "right": 196,
+        "bottom": 316
+      }
+    },
+    {
+      "text": "Card\nAcct",
+      "lines": [
+        {
+          "text": "Card",
+          "boundingBox": {
+            "left": 12,
+            "top": 324,
+            "right": 167,
+            "bottom": 379
+          },
+          "confidence": 0.7753906
+        },
+        {
+          "text": "Acct",
+          "boundingBox": {
+            "left": 18,
+            "top": 388,
+            "right": 166,
+            "bottom": 430
+          },
+          "confidence": 0.7265625
+        }
+      ],
+      "boundingBox": {
+        "left": 11,
+        "top": 324,
+        "right": 167,
+        "bottom": 430
+      }
+    },
+    {
+      "text": "Type:\n#:\nCard Entry:",
+      "lines": [
+        {
+          "text": "Type:",
+          "boundingBox": {
+            "left": 240,
+            "top": 328,
+            "right": 423,
+            "bottom": 385
+          },
+          "confidence": 0.7390625
+        },
+        {
+          "text": "#:",
+          "boundingBox": {
+            "left": 224,
+            "top": 388,
+            "right": 286,
+            "bottom": 430
+          },
+          "confidence": 0.578125
+        },
+        {
+          "text": "Card Entry:",
+          "boundingBox": {
+            "left": 47,
+            "top": 434,
+            "right": 458,
+            "bottom": 495
+          },
+          "confidence": 0.828125
+        }
+      ],
+      "boundingBox": {
+        "left": 46,
+        "top": 328,
+        "right": 459,
+        "bottom": 495
+      }
+    },
+    {
+      "text": "Check:",
+      "lines": [
+        {
+          "text": "Check:",
+          "boundingBox": {
+            "left": 53,
+            "top": 655,
+            "right": 280,
+            "bottom": 714
+          },
+          "confidence": 0.8001302
+        }
+      ],
+      "boundingBox": {
+        "left": 53,
+        "top": 655,
+        "right": 280,
+        "bottom": 714
+      }
+    },
+    {
+      "text": "Table:",
+      "lines": [
+        {
+          "text": "Table:",
+          "boundingBox": {
+            "left": 34,
+            "top": 714,
+            "right": 258,
+            "bottom": 761
+          },
+          "confidence": 0.76171875
+        }
+      ],
+      "boundingBox": {
+        "left": 34,
+        "top": 714,
+        "right": 258,
+        "bottom": 761
+      }
+    },
+    {
+      "text": "Trans\nTrans Key:\nAuth Code: 190275",
+      "lines": [
+        {
+          "text": "Trans",
+          "boundingBox": {
+            "left": 38,
+            "top": 495,
+            "right": 224,
+            "bottom": 553
+          },
+          "confidence": 0.7289063
+        },
+        {
+          "text": "Trans Key:",
+          "boundingBox": {
+            "left": 26,
+            "top": 543,
+            "right": 427,
+            "bottom": 609
+          },
+          "confidence": 0.7413194
+        },
+        {
+          "text": "Auth Code: 190275",
+          "boundingBox": {
+            "left": 30,
+            "top": 592,
+            "right": 733,
+            "bottom": 653
+          },
+          "confidence": 0.8403646
+        }
+      ],
+      "boundingBox": {
+        "left": 25,
+        "top": 485,
+        "right": 734,
+        "bottom": 662
+      }
+    },
+    {
+      "text": "Server:",
+      "lines": [
+        {
+          "text": "Server:",
+          "boundingBox": {
+            "left": 36,
+            "top": 776,
+            "right": 302,
+            "bottom": 816
+          },
+          "confidence": 0.80078125
+        }
+      ],
+      "boundingBox": {
+        "left": 36,
+        "top": 776,
+        "right": 302,
+        "bottom": 816
+      }
+    },
+    {
+      "text": "Subtotal:",
+      "lines": [
+        {
+          "text": "Subtotal:",
+          "boundingBox": {
+            "left": 40,
+            "top": 874,
+            "right": 384,
+            "bottom": 927
+          },
+          "confidence": 0.85894096
+        }
+      ],
+      "boundingBox": {
+        "left": 40,
+        "top": 874,
+        "right": 384,
+        "bottom": 927
+      }
+    },
+    {
+      "text": "TIP",
+      "lines": [
+        {
+          "text": "TIP",
+          "boundingBox": {
+            "left": 50,
+            "top": 996,
+            "right": 154,
+            "bottom": 1038
+          },
+          "confidence": 0.6223958
+        }
+      ],
+      "boundingBox": {
+        "left": 50,
+        "top": 996,
+        "right": 154,
+        "bottom": 1038
+      }
+    },
+    {
+      "text": "SWIPED\nType: PURCHASE",
+      "lines": [
+        {
+          "text": "SWIPED",
+          "boundingBox": {
+            "left": 503,
+            "top": 430,
+            "right": 726,
+            "bottom": 487
+          },
+          "confidence": 0.73828125
+        },
+        {
+          "text": "Type: PURCHASE",
+          "boundingBox": {
+            "left": 293,
+            "top": 482,
+            "right": 803,
+            "bottom": 547
+          },
+          "confidence": 0.8034856
+        }
+      ],
+      "boundingBox": {
+        "left": 292,
+        "top": 427,
+        "right": 803,
+        "bottom": 547
+      }
+    },
+    {
+      "text": "TOTAL",
+      "lines": [
+        {
+          "text": "TOTAL",
+          "boundingBox": {
+            "left": 48,
+            "top": 1103,
+            "right": 233,
+            "bottom": 1151
+          },
+          "confidence": 0.59453124
+        }
+      ],
+      "boundingBox": {
+        "left": 48,
+        "top": 1103,
+        "right": 233,
+        "bottom": 1151
+      }
+    },
+    {
+      "text": "Visa",
+      "lines": [
+        {
+          "text": "Visa",
+          "boundingBox": {
+            "left": 500,
+            "top": 332,
+            "right": 642,
+            "bottom": 372
+          },
+          "confidence": 0.66308594
+        }
+      ],
+      "boundingBox": {
+        "left": 500,
+        "top": 332,
+        "right": 642,
+        "bottom": 372
+      }
+    },
+    {
+      "text": "SIGNA TLRE",
+      "lines": [
+        {
+          "text": "SIGNA TLRE",
+          "boundingBox": {
+            "left": 65,
+            "top": 1260,
+            "right": 405,
+            "bottom": 1326
+          },
+          "confidence": 0.6545139
+        }
+      ],
+      "boundingBox": {
+        "left": 65,
+        "top": 1260,
+        "right": 405,
+        "bottom": 1326
+      }
+    },
+    {
+      "text": "XXXXXXXXXXXX34 26",
+      "lines": [
+        {
+          "text": "XXXXXXXXXXXX34 26",
+          "boundingBox": {
+            "left": 502,
+            "top": 364,
+            "right": 1113,
+            "bottom": 427
+          },
+          "confidence": 0.77783203
+        }
+      ],
+      "boundingBox": {
+        "left": 502,
+        "top": 364,
+        "right": 1113,
+        "bottom": 427
+      }
+    },
+    {
+      "text": "Thank",
+      "lines": [
+        {
+          "text": "Thank",
+          "boundingBox": {
+            "left": 68,
+            "top": 1495,
+            "right": 435,
+            "bottom": 1554
+          },
+          "confidence": 0.784375
+        }
+      ],
+      "boundingBox": {
+        "left": 68,
+        "top": 1495,
+        "right": 435,
+        "bottom": 1554
+      }
+    },
+    {
+      "text": "GIGO05625257729",
+      "lines": [
+        {
+          "text": "GIGO05625257729",
+          "boundingBox": {
+            "left": 508,
+            "top": 525,
+            "right": 1081,
+            "bottom": 596
+          },
+          "confidence": 0.8768229
+        }
+      ],
+      "boundingBox": {
+        "left": 508,
+        "top": 525,
+        "right": 1081,
+        "bottom": 596
+      }
+    },
+    {
+      "text": "1738",
+      "lines": [
+        {
+          "text": "1738",
+          "boundingBox": {
+            "left": 522,
+            "top": 652,
+            "right": 660,
+            "bottom": 694
+          },
+          "confidence": 0.89453125
+        }
+      ],
+      "boundingBox": {
+        "left": 522,
+        "top": 652,
+        "right": 660,
+        "bottom": 694
+      }
+    },
+    {
+      "text": "81/1",
+      "lines": [
+        {
+          "text": "81/1",
+          "boundingBox": {
+            "left": 534,
+            "top": 698,
+            "right": 673,
+            "bottom": 756
+          },
+          "confidence": 0.84375
+        }
+      ],
+      "boundingBox": {
+        "left": 534,
+        "top": 698,
+        "right": 673,
+        "bottom": 756
+      }
+    },
+    {
+      "text": "226 Chelse a",
+      "lines": [
+        {
+          "text": "226 Chelse a",
+          "boundingBox": {
+            "left": 522,
+            "top": 747,
+            "right": 940,
+            "bottom": 807
+          },
+          "confidence": 0.88554686
+        }
+      ],
+      "boundingBox": {
+        "left": 522,
+        "top": 747,
+        "right": 940,
+        "bottom": 807
+      }
+    },
+    {
+      "text": "79. 17",
+      "lines": [
+        {
+          "text": "79. 17",
+          "boundingBox": {
+            "left": 840,
+            "top": 848,
+            "right": 1193,
+            "bottom": 902
+          },
+          "confidence": 0.62578124
+        }
+      ],
+      "boundingBox": {
+        "left": 840,
+        "top": 848,
+        "right": 1193,
+        "bottom": 902
+      }
+    },
+    {
+      "text": "THIS IS ROSEBUD'S COPY",
+      "lines": [
+        {
+          "text": "THIS IS ROSEBUD'S COPY",
+          "boundingBox": {
+            "left": 60,
+            "top": 1347,
+            "right": 933,
+            "bottom": 1446
+          },
+          "confidence": 0.70230263
+        }
+      ],
+      "boundingBox": {
+        "left": 60,
+        "top": 1347,
+        "right": 933,
+        "bottom": 1446
+      }
+    },
+    {
+      "text": "You !",
+      "lines": [
+        {
+          "text": "You !",
+          "boundingBox": {
+            "left": 559,
+            "top": 1471,
+            "right": 850,
+            "bottom": 1544
+          },
+          "confidence": 0.5292969
+        }
+      ],
+      "boundingBox": {
+        "left": 559,
+        "top": 1471,
+        "right": 850,
+        "bottom": 1544
+      }
+    },
+    {
+      "text": "AMERICAN\nEXPRESS",
+      "lines": [
+        {
+          "text": "AMERICAN",
+          "boundingBox": {
+            "left": 1156,
+            "top": 1413,
+            "right": 1488,
+            "bottom": 1479
+          },
+          "confidence": 0.734375
+        },
+        {
+          "text": "EXPRESS",
+          "boundingBox": {
+            "left": 1243,
+            "top": 1478,
+            "right": 1516,
+            "bottom": 1541
+          },
+          "confidence": 0.6316964
+        }
+      ],
+      "boundingBox": {
+        "left": 1154,
+        "top": 1413,
+        "right": 1518,
+        "bottom": 1542
+      }
+    }
+  ]
+}
