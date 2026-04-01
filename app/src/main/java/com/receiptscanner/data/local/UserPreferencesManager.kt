@@ -11,6 +11,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
+import com.receiptscanner.domain.model.CloudOcrProviderType
 import com.receiptscanner.domain.model.OcrMode
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -66,8 +67,32 @@ class UserPreferencesManager @Inject constructor(
         }
     }
 
+    val cloudOcrProviderType: Flow<CloudOcrProviderType> = dataStore.data.map { prefs ->
+        try {
+            CloudOcrProviderType.valueOf(prefs[KEY_CLOUD_OCR_PROVIDER] ?: CloudOcrProviderType.OPENROUTER.name)
+        } catch (_: IllegalArgumentException) {
+            CloudOcrProviderType.OPENROUTER
+        }
+    }
+
+    val openRouterModelId: Flow<String?> = dataStore.data.map { prefs ->
+        prefs[KEY_OPENROUTER_MODEL_ID]
+    }
+
     val debugModeEnabled: Flow<Boolean> = dataStore.data.map { prefs ->
         prefs[KEY_DEBUG_MODE] ?: false
+    }
+
+    suspend fun saveCloudOcrProviderType(providerType: CloudOcrProviderType) {
+        dataStore.edit { prefs ->
+            prefs[KEY_CLOUD_OCR_PROVIDER] = providerType.name
+        }
+    }
+
+    suspend fun saveOpenRouterModelId(modelId: String) {
+        dataStore.edit { prefs ->
+            prefs[KEY_OPENROUTER_MODEL_ID] = modelId
+        }
     }
 
     suspend fun saveDebugMode(enabled: Boolean) {
@@ -85,6 +110,8 @@ class UserPreferencesManager @Inject constructor(
         private val KEY_BUDGET_NAME = stringPreferencesKey("selected_budget_name")
         private val KEY_DEFAULT_ACCOUNT_ID = stringPreferencesKey("default_account_id")
         private val KEY_OCR_MODE = stringPreferencesKey("ocr_mode")
+        private val KEY_CLOUD_OCR_PROVIDER = stringPreferencesKey("cloud_ocr_provider")
+        private val KEY_OPENROUTER_MODEL_ID = stringPreferencesKey("openrouter_model_id")
         private val KEY_DEBUG_MODE = booleanPreferencesKey("debug_mode_enabled")
     }
 }

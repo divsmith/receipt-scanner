@@ -3,9 +3,13 @@ package com.receiptscanner.data.ocr
 import android.graphics.Bitmap
 import android.graphics.Matrix
 import android.util.Base64
+import com.receiptscanner.data.local.UserPreferencesManager
 import com.receiptscanner.data.remote.copilot.CopilotApiService
+import com.receiptscanner.data.remote.openrouter.OpenRouterApiService
+import com.receiptscanner.domain.model.CloudOcrProviderType
 import com.receiptscanner.domain.model.ExtractedReceiptData
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withContext
 import java.io.ByteArrayOutputStream
 import javax.inject.Inject
@@ -14,6 +18,8 @@ import javax.inject.Singleton
 @Singleton
 class CloudOcrProvider @Inject constructor(
     private val copilotApiService: CopilotApiService,
+    private val openRouterApiService: OpenRouterApiService,
+    private val userPreferencesManager: UserPreferencesManager,
 ) {
     suspend fun extract(bitmap: Bitmap, rotationDegrees: Int): Result<ExtractedReceiptData> {
         return try {
@@ -25,7 +31,17 @@ class CloudOcrProvider @Inject constructor(
                     if (rotated !== bitmap) rotated.recycle()
                 }
             }
-            copilotApiService.extractReceiptData(base64)
+
+            when (userPreferencesManager.cloudOcrProviderType.first()) {
+                CloudOcrProviderType.COPILOT -> copilotApiService.extractReceiptData(base64)
+                CloudOcrProviderType.OPENROUTER -> {
+                    val modelId = userPreferencesManager.openRouterModelId.first()
+                        ?: return Result.failure(
+                            IllegalStateException("No OpenRouter model selected. Choose one in Settings.")
+                        )
+                    openRouterApiService.extractReceiptData(base64, modelId)
+                }
+            }
         } catch (e: Exception) {
             Result.failure(e)
         }

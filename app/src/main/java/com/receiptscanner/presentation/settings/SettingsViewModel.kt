@@ -6,9 +6,13 @@ import androidx.work.WorkManager
 import com.receiptscanner.data.local.TokenProvider
 import com.receiptscanner.data.local.UserPreferencesManager
 import com.receiptscanner.data.remote.copilot.CopilotTokenProvider
+import com.receiptscanner.data.remote.openrouter.OpenRouterApiService
+import com.receiptscanner.data.remote.openrouter.OpenRouterTokenProvider
 import com.receiptscanner.domain.model.Account
 import com.receiptscanner.domain.model.Budget
+import com.receiptscanner.domain.model.CloudOcrProviderType
 import com.receiptscanner.domain.model.OcrMode
+import com.receiptscanner.domain.model.OpenRouterModel
 import com.receiptscanner.domain.repository.TransactionQueueRepository
 import com.receiptscanner.domain.repository.YnabRepository
 import com.receiptscanner.domain.usecase.SyncPayeeCacheUseCase
@@ -25,6 +29,8 @@ import javax.inject.Inject
 class SettingsViewModel @Inject constructor(
     private val tokenProvider: TokenProvider,
     private val copilotTokenProvider: CopilotTokenProvider,
+    private val openRouterTokenProvider: OpenRouterTokenProvider,
+    private val openRouterApiService: OpenRouterApiService,
     private val ynabRepository: YnabRepository,
     private val syncPayeeCacheUseCase: SyncPayeeCacheUseCase,
     private val userPreferencesManager: UserPreferencesManager,
@@ -43,8 +49,16 @@ class SettingsViewModel @Inject constructor(
         val isSyncing: Boolean = false,
         val pendingCount: Int = 0,
         val ocrMode: OcrMode = OcrMode.LOCAL,
+        val cloudOcrProviderType: CloudOcrProviderType = CloudOcrProviderType.OPENROUTER,
+        // GitHub Copilot token (kept for future use)
         val copilotToken: String = "",
         val isCopilotTokenSaved: Boolean = false,
+        // OpenRouter
+        val openRouterApiKey: String = "",
+        val isOpenRouterApiKeySaved: Boolean = false,
+        val openRouterModelId: String? = null,
+        val availableOpenRouterModels: List<OpenRouterModel> = emptyList(),
+        val isLoadingModels: Boolean = false,
         val error: String? = null,
         val successMessage: String? = null,
         val debugModeEnabled: Boolean = false,
@@ -57,6 +71,8 @@ class SettingsViewModel @Inject constructor(
         loadSavedState()
         observePendingCount()
         observeOcrMode()
+        observeCloudOcrProviderType()
+        observeOpenRouterModelId()
         observeDebugMode()
     }
 
@@ -64,6 +80,22 @@ class SettingsViewModel @Inject constructor(
         viewModelScope.launch {
             userPreferencesManager.ocrMode.collect { mode ->
                 _uiState.update { it.copy(ocrMode = mode) }
+            }
+        }
+    }
+
+    private fun observeCloudOcrProviderType() {
+        viewModelScope.launch {
+            userPreferencesManager.cloudOcrProviderType.collect { type ->
+                _uiState.update { it.copy(cloudOcrProviderType = type) }
+            }
+        }
+    }
+
+    private fun observeOpenRouterModelId() {
+        viewModelScope.launch {
+            userPreferencesManager.openRouterModelId.collect { modelId ->
+                _uiState.update { it.copy(openRouterModelId = modelId) }
             }
         }
     }
@@ -89,6 +121,7 @@ class SettingsViewModel @Inject constructor(
         viewModelScope.launch {
             val existingToken = tokenProvider.getToken()
             val existingCopilotToken = copilotTokenProvider.getToken()
+            val existingOpenRouterKey = openRouterTokenProvider.getToken()
             val budgetId = userPreferencesManager.getBudgetId()
             val defaultAccountId = userPreferencesManager.getDefaultAccountId()
 
@@ -103,6 +136,10 @@ class SettingsViewModel @Inject constructor(
                         "••••" + existingCopilotToken.takeLast(4)
                     else "",
                     isCopilotTokenSaved = !existingCopilotToken.isNullOrBlank(),
+                    openRouterApiKey = if (!existingOpenRouterKey.isNullOrBlank())
+                        "••••" + existingOpenRouterKey.takeLast(4)
+                    else "",
+                    isOpenRouterApiKeySaved = !existingOpenRouterKey.isNullOrBlank(),
                     selectedBudgetId = budgetId,
                     defaultAccountId = defaultAccountId,
                 )
@@ -113,6 +150,11 @@ class SettingsViewModel @Inject constructor(
                 if (budgetId != null) {
                     loadAccounts(budgetId)
                 }
+            }
+
+            // Pre-load models if OpenRouter key is already saved
+            if (!existingOpenRouterKey.isNullOrBlank()) {
+                refreshOpenRouterModels()
             }
         }
     }
@@ -140,12 +182,21 @@ class SettingsViewModel @Inject constructor(
     }
 
     fun updateOcrMode(mode: OcrMode) {
-        if (mode == OcrMode.CLOUD && !_uiState.value.isCopilotTokenSaved) {
-            _uiState.update { it.copy(error = "Please save a GitHub token first") }
-            return
-        }
         viewModelScope.launch {
             userPreferencesManager.saveOcrMode(mode)
+        }
+    }
+
+    fun updateCloudOcrProvider(providerType: CloudOcrProviderType) {
+        viewModelScope.launch {
+            userPreferencesManager.saveCloudOcrProviderType(providerType)
+            // If switching to OpenRouter and models aren't loaded yet, fetch them
+            if (providerType == CloudOcrProviderType.OPENROUTER &&
+                _uiState.value.availableOpenRouterModels.isEmpty() &&
+                _uiState.value.isOpenRouterApiKeySaved
+            ) {
+                refreshOpenRouterModels()
+            }
         }
     }
 
@@ -165,6 +216,57 @@ class SettingsViewModel @Inject constructor(
                 copilotToken = "••••" + token.takeLast(4),
                 isCopilotTokenSaved = true,
                 successMessage = "GitHub token saved",
+            )
+        }
+    }
+
+    fun updateOpenRouterApiKey(key: String) {
+        _uiState.update { it.copy(openRouterApiKey = key) }
+    }
+
+    fun saveOpenRouterApiKey() {
+        val key = _uiState.value.openRouterApiKey.trim()
+        if (key.isBlank() || key.startsWith("••••")) {
+            _uiState.update { it.copy(error = "Please enter an OpenRouter API key") }
+            return
+        }
+        openRouterTokenProvider.setToken(key)
+        _uiState.update {
+            it.copy(
+                openRouterApiKey = "••••" + key.takeLast(4),
+                isOpenRouterApiKeySaved = true,
+                successMessage = "OpenRouter API key saved",
+            )
+        }
+        refreshOpenRouterModels()
+    }
+
+    fun selectOpenRouterModel(model: OpenRouterModel) {
+        viewModelScope.launch {
+            userPreferencesManager.saveOpenRouterModelId(model.id)
+        }
+    }
+
+    fun refreshOpenRouterModels() {
+        viewModelScope.launch {
+            _uiState.update { it.copy(isLoadingModels = true) }
+            openRouterApiService.getModels().fold(
+                onSuccess = { models ->
+                    _uiState.update {
+                        it.copy(
+                            availableOpenRouterModels = models,
+                            isLoadingModels = false,
+                        )
+                    }
+                },
+                onFailure = { e ->
+                    _uiState.update {
+                        it.copy(
+                            isLoadingModels = false,
+                            error = "Failed to load models: ${e.message}",
+                        )
+                    }
+                },
             )
         }
     }
@@ -254,6 +356,7 @@ class SettingsViewModel @Inject constructor(
             ynabRepository.clearAllCaches()
             tokenProvider.setToken(null)
             copilotTokenProvider.setToken(null)
+            openRouterTokenProvider.setToken(null)
             userPreferencesManager.clearAll()
             _uiState.value = UiState()
         }

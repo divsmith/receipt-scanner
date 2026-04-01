@@ -1,7 +1,9 @@
 package com.receiptscanner.presentation.settings
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -10,7 +12,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -46,11 +50,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.receiptscanner.domain.model.CloudOcrProviderType
 import com.receiptscanner.domain.model.OcrMode
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -62,8 +68,11 @@ fun SettingsScreen(
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val snackbarHostState = remember { SnackbarHostState() }
     var showToken by remember { mutableStateOf(false) }
+    var showCopilotToken by remember { mutableStateOf(false) }
+    var showOpenRouterKey by remember { mutableStateOf(false) }
     var budgetExpanded by remember { mutableStateOf(false) }
     var accountExpanded by remember { mutableStateOf(false) }
+    var modelExpanded by remember { mutableStateOf(false) }
 
     LaunchedEffect(uiState.error) {
         uiState.error?.let {
@@ -145,6 +154,8 @@ fun SettingsScreen(
                         style = MaterialTheme.typography.titleMedium,
                     )
                     Spacer(modifier = Modifier.height(8.dp))
+
+                    // Local option
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier
@@ -165,6 +176,8 @@ fun SettingsScreen(
                             )
                         }
                     }
+
+                    // Cloud option
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier
@@ -177,7 +190,7 @@ fun SettingsScreen(
                             onClick = { viewModel.updateOcrMode(OcrMode.CLOUD) },
                         )
                         Column(modifier = Modifier.padding(start = 8.dp)) {
-                            Text("Cloud (GitHub Copilot AI)", style = MaterialTheme.typography.bodyLarge)
+                            Text("Cloud OCR", style = MaterialTheme.typography.bodyLarge)
                             Text(
                                 "Vision AI — more accurate, requires internet",
                                 style = MaterialTheme.typography.bodySmall,
@@ -186,47 +199,212 @@ fun SettingsScreen(
                         }
                     }
 
+                    // Cloud provider sub-options
                     if (uiState.ocrMode == OcrMode.CLOUD) {
-                        var showCopilotToken by remember { mutableStateOf(false) }
-                        Spacer(modifier = Modifier.height(12.dp))
-                        HorizontalDivider()
-                        Spacer(modifier = Modifier.height(12.dp))
-                        Text(
-                            "GitHub Token",
-                            style = MaterialTheme.typography.titleSmall,
-                        )
                         Spacer(modifier = Modifier.height(4.dp))
-                        Text(
-                            "Requires a GitHub PAT with Copilot access. Create one at github.com/settings/tokens.",
-                            style = MaterialTheme.typography.bodySmall,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        )
+                        HorizontalDivider(modifier = Modifier.padding(start = 16.dp))
                         Spacer(modifier = Modifier.height(8.dp))
-                        OutlinedTextField(
-                            value = uiState.copilotToken,
-                            onValueChange = viewModel::updateCopilotToken,
-                            modifier = Modifier.fillMaxWidth(),
-                            label = { Text("GitHub Personal Access Token") },
-                            singleLine = true,
-                            visualTransformation = if (showCopilotToken)
-                                VisualTransformation.None
-                            else PasswordVisualTransformation(),
-                            trailingIcon = {
-                                IconButton(onClick = { showCopilotToken = !showCopilotToken }) {
-                                    Icon(
-                                        if (showCopilotToken) Icons.Default.VisibilityOff
-                                        else Icons.Default.Visibility,
-                                        contentDescription = if (showCopilotToken) "Hide" else "Show",
+
+                        // GitHub Copilot — coming soon, greyed out
+                        Box(modifier = Modifier.alpha(0.38f)) {
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(start = 16.dp, top = 4.dp, bottom = 4.dp),
+                            ) {
+                                RadioButton(
+                                    selected = uiState.cloudOcrProviderType == CloudOcrProviderType.COPILOT,
+                                    onClick = null,
+                                    enabled = false,
+                                )
+                                Column(modifier = Modifier.padding(start = 8.dp)) {
+                                    Row(verticalAlignment = Alignment.CenterVertically) {
+                                        Text(
+                                            "GitHub Copilot",
+                                            style = MaterialTheme.typography.bodyLarge,
+                                        )
+                                        Spacer(modifier = Modifier.width(8.dp))
+                                        Text(
+                                            "Coming Soon",
+                                            style = MaterialTheme.typography.labelSmall,
+                                            modifier = Modifier
+                                                .background(
+                                                    MaterialTheme.colorScheme.primaryContainer,
+                                                    RoundedCornerShape(4.dp),
+                                                )
+                                                .padding(horizontal = 4.dp, vertical = 2.dp),
+                                        )
+                                    }
+                                    Text(
+                                        "Requires GitHub Copilot subscription",
+                                        style = MaterialTheme.typography.bodySmall,
                                     )
                                 }
-                            },
-                        )
-                        Spacer(modifier = Modifier.height(8.dp))
-                        Button(
-                            onClick = viewModel::saveCopilotToken,
-                            modifier = Modifier.fillMaxWidth(),
+                            }
+                        }
+
+                        // OpenRouter
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clickable { viewModel.updateCloudOcrProvider(CloudOcrProviderType.OPENROUTER) }
+                                .padding(start = 16.dp, top = 4.dp, bottom = 4.dp),
                         ) {
-                            Text("Save GitHub Token")
+                            RadioButton(
+                                selected = uiState.cloudOcrProviderType == CloudOcrProviderType.OPENROUTER,
+                                onClick = { viewModel.updateCloudOcrProvider(CloudOcrProviderType.OPENROUTER) },
+                            )
+                            Column(modifier = Modifier.padding(start = 8.dp)) {
+                                Text("OpenRouter", style = MaterialTheme.typography.bodyLarge)
+                                Text(
+                                    "100+ free vision models via openrouter.ai",
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                )
+                            }
+                        }
+
+                        // OpenRouter configuration
+                        if (uiState.cloudOcrProviderType == CloudOcrProviderType.OPENROUTER) {
+                            Spacer(modifier = Modifier.height(8.dp))
+                            Column(modifier = Modifier.padding(start = 16.dp)) {
+                                val needsSetup = !uiState.isOpenRouterApiKeySaved ||
+                                    uiState.openRouterModelId == null
+                                if (needsSetup) {
+                                    Text(
+                                        "Complete the setup below to start using Cloud OCR.",
+                                        style = MaterialTheme.typography.bodySmall,
+                                        color = MaterialTheme.colorScheme.primary,
+                                    )
+                                    Spacer(modifier = Modifier.height(8.dp))
+                                }
+                                OutlinedTextField(
+                                    value = uiState.openRouterApiKey,
+                                    onValueChange = viewModel::updateOpenRouterApiKey,
+                                    modifier = Modifier.fillMaxWidth(),
+                                    label = { Text("OpenRouter API Key") },
+                                    singleLine = true,
+                                    visualTransformation = if (showOpenRouterKey)
+                                        VisualTransformation.None
+                                    else PasswordVisualTransformation(),
+                                    trailingIcon = {
+                                        IconButton(onClick = { showOpenRouterKey = !showOpenRouterKey }) {
+                                            Icon(
+                                                if (showOpenRouterKey) Icons.Default.VisibilityOff
+                                                else Icons.Default.Visibility,
+                                                contentDescription = if (showOpenRouterKey) "Hide" else "Show",
+                                            )
+                                        }
+                                    },
+                                )
+                                Spacer(modifier = Modifier.height(4.dp))
+                                Text(
+                                    "Get a free API key at openrouter.ai",
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                )
+                                Spacer(modifier = Modifier.height(8.dp))
+                                Button(
+                                    onClick = viewModel::saveOpenRouterApiKey,
+                                    modifier = Modifier.fillMaxWidth(),
+                                ) {
+                                    Text("Save API Key")
+                                }
+
+                                if (uiState.isOpenRouterApiKeySaved) {
+                                    Spacer(modifier = Modifier.height(16.dp))
+                                    Text(
+                                        "Vision Model",
+                                        style = MaterialTheme.typography.labelMedium,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    )
+                                    Spacer(modifier = Modifier.height(4.dp))
+
+                                    val selectedModelName = uiState.availableOpenRouterModels
+                                        .find { it.id == uiState.openRouterModelId }?.name
+                                        ?: uiState.openRouterModelId
+                                        ?: "Select a model"
+
+                                    Row(
+                                        verticalAlignment = Alignment.CenterVertically,
+                                        modifier = Modifier.fillMaxWidth(),
+                                    ) {
+                                        ExposedDropdownMenuBox(
+                                            expanded = modelExpanded,
+                                            onExpandedChange = {
+                                                if (!uiState.isLoadingModels) modelExpanded = it
+                                            },
+                                            modifier = Modifier.weight(1f),
+                                        ) {
+                                            OutlinedTextField(
+                                                value = if (uiState.isLoadingModels) "Loading models…"
+                                                else selectedModelName,
+                                                onValueChange = {},
+                                                modifier = Modifier
+                                                    .fillMaxWidth()
+                                                    .menuAnchor(MenuAnchorType.PrimaryNotEditable),
+                                                readOnly = true,
+                                                enabled = !uiState.isLoadingModels,
+                                                trailingIcon = {
+                                                    if (uiState.isLoadingModels) {
+                                                        CircularProgressIndicator(
+                                                            modifier = Modifier.size(20.dp),
+                                                            strokeWidth = 2.dp,
+                                                        )
+                                                    } else {
+                                                        ExposedDropdownMenuDefaults.TrailingIcon(
+                                                            expanded = modelExpanded,
+                                                        )
+                                                    }
+                                                },
+                                            )
+                                            ExposedDropdownMenu(
+                                                expanded = modelExpanded,
+                                                onDismissRequest = { modelExpanded = false },
+                                            ) {
+                                                uiState.availableOpenRouterModels.forEach { model ->
+                                                    DropdownMenuItem(
+                                                        text = {
+                                                            Column {
+                                                                Text(model.name)
+                                                                Text(
+                                                                    model.id,
+                                                                    style = MaterialTheme.typography.bodySmall,
+                                                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                                                )
+                                                            }
+                                                        },
+                                                        onClick = {
+                                                            viewModel.selectOpenRouterModel(model)
+                                                            modelExpanded = false
+                                                        },
+                                                    )
+                                                }
+                                            }
+                                        }
+                                        IconButton(
+                                            onClick = viewModel::refreshOpenRouterModels,
+                                            enabled = !uiState.isLoadingModels,
+                                        ) {
+                                            Icon(
+                                                Icons.Default.Refresh,
+                                                contentDescription = "Refresh models",
+                                            )
+                                        }
+                                    }
+
+                                    if (uiState.availableOpenRouterModels.isEmpty() && !uiState.isLoadingModels) {
+                                        Spacer(modifier = Modifier.height(4.dp))
+                                        Text(
+                                            "No free vision models found. Tap ↻ to retry.",
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.error,
+                                        )
+                                    }
+                                }
+                            }
                         }
                     }
                 }
