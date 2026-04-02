@@ -70,6 +70,7 @@ fun SettingsScreen(
     var showToken by remember { mutableStateOf(false) }
     var showCopilotToken by remember { mutableStateOf(false) }
     var showOpenRouterKey by remember { mutableStateOf(false) }
+    var showNvidiaKey by remember { mutableStateOf(false) }
     var budgetExpanded by remember { mutableStateOf(false) }
     var accountExpanded by remember { mutableStateOf(false) }
     var modelExpanded by remember { mutableStateOf(false) }
@@ -403,6 +404,75 @@ fun SettingsScreen(
                                             color = MaterialTheme.colorScheme.error,
                                         )
                                     }
+                                }
+                            }
+                        }
+
+                        // NVIDIA NIM
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clickable { viewModel.updateCloudOcrProvider(CloudOcrProviderType.NVIDIA) }
+                                .padding(start = 16.dp, top = 4.dp, bottom = 4.dp),
+                        ) {
+                            RadioButton(
+                                selected = uiState.cloudOcrProviderType == CloudOcrProviderType.NVIDIA,
+                                onClick = { viewModel.updateCloudOcrProvider(CloudOcrProviderType.NVIDIA) },
+                            )
+                            Column(modifier = Modifier.padding(start = 8.dp)) {
+                                Text("NVIDIA NIM", style = MaterialTheme.typography.bodyLarge)
+                                Text(
+                                    "Phi-4-multimodal-instruct via NVIDIA NIM",
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                )
+                            }
+                        }
+
+                        // NVIDIA configuration
+                        if (uiState.cloudOcrProviderType == CloudOcrProviderType.NVIDIA) {
+                            Spacer(modifier = Modifier.height(8.dp))
+                            Column(modifier = Modifier.padding(start = 16.dp)) {
+                                if (!uiState.isNvidiaApiKeySaved) {
+                                    Text(
+                                        "Complete the setup below to start using Cloud OCR.",
+                                        style = MaterialTheme.typography.bodySmall,
+                                        color = MaterialTheme.colorScheme.primary,
+                                    )
+                                    Spacer(modifier = Modifier.height(8.dp))
+                                }
+                                OutlinedTextField(
+                                    value = uiState.nvidiaApiKey,
+                                    onValueChange = viewModel::updateNvidiaApiKey,
+                                    modifier = Modifier.fillMaxWidth(),
+                                    label = { Text("NVIDIA API Key") },
+                                    singleLine = true,
+                                    visualTransformation = if (showNvidiaKey)
+                                        VisualTransformation.None
+                                    else PasswordVisualTransformation(),
+                                    trailingIcon = {
+                                        IconButton(onClick = { showNvidiaKey = !showNvidiaKey }) {
+                                            Icon(
+                                                if (showNvidiaKey) Icons.Default.VisibilityOff
+                                                else Icons.Default.Visibility,
+                                                contentDescription = if (showNvidiaKey) "Hide" else "Show",
+                                            )
+                                        }
+                                    },
+                                )
+                                Spacer(modifier = Modifier.height(4.dp))
+                                Text(
+                                    "Get a free API key at build.nvidia.com",
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                )
+                                Spacer(modifier = Modifier.height(8.dp))
+                                Button(
+                                    onClick = viewModel::saveNvidiaApiKey,
+                                    modifier = Modifier.fillMaxWidth(),
+                                ) {
+                                    Text("Save API Key")
                                 }
                             }
                         }

@@ -6,6 +6,8 @@ import androidx.work.WorkManager
 import com.receiptscanner.data.local.TokenProvider
 import com.receiptscanner.data.local.UserPreferencesManager
 import com.receiptscanner.data.remote.copilot.CopilotTokenProvider
+import com.receiptscanner.data.remote.nvidia.NvidiaApiService
+import com.receiptscanner.data.remote.nvidia.NvidiaTokenProvider
 import com.receiptscanner.data.remote.openrouter.OpenRouterApiService
 import com.receiptscanner.data.remote.openrouter.OpenRouterTokenProvider
 import com.receiptscanner.domain.model.Account
@@ -30,6 +32,7 @@ class SettingsViewModel @Inject constructor(
     private val tokenProvider: TokenProvider,
     private val copilotTokenProvider: CopilotTokenProvider,
     private val openRouterTokenProvider: OpenRouterTokenProvider,
+    private val nvidiaTokenProvider: NvidiaTokenProvider,
     private val openRouterApiService: OpenRouterApiService,
     private val ynabRepository: YnabRepository,
     private val syncPayeeCacheUseCase: SyncPayeeCacheUseCase,
@@ -59,6 +62,9 @@ class SettingsViewModel @Inject constructor(
         val openRouterModelId: String? = null,
         val availableOpenRouterModels: List<OpenRouterModel> = emptyList(),
         val isLoadingModels: Boolean = false,
+        // NVIDIA NIM
+        val nvidiaApiKey: String = "",
+        val isNvidiaApiKeySaved: Boolean = false,
         val error: String? = null,
         val successMessage: String? = null,
         val debugModeEnabled: Boolean = false,
@@ -122,6 +128,7 @@ class SettingsViewModel @Inject constructor(
             val existingToken = tokenProvider.getToken()
             val existingCopilotToken = copilotTokenProvider.getToken()
             val existingOpenRouterKey = openRouterTokenProvider.getToken()
+            val existingNvidiaKey = nvidiaTokenProvider.getToken()
             val budgetId = userPreferencesManager.getBudgetId()
             val defaultAccountId = userPreferencesManager.getDefaultAccountId()
 
@@ -140,6 +147,10 @@ class SettingsViewModel @Inject constructor(
                         "••••" + existingOpenRouterKey.takeLast(4)
                     else "",
                     isOpenRouterApiKeySaved = !existingOpenRouterKey.isNullOrBlank(),
+                    nvidiaApiKey = if (!existingNvidiaKey.isNullOrBlank())
+                        "••••" + existingNvidiaKey.takeLast(4)
+                    else "",
+                    isNvidiaApiKeySaved = !existingNvidiaKey.isNullOrBlank(),
                     selectedBudgetId = budgetId,
                     defaultAccountId = defaultAccountId,
                 )
@@ -239,6 +250,26 @@ class SettingsViewModel @Inject constructor(
             )
         }
         refreshOpenRouterModels()
+    }
+
+    fun updateNvidiaApiKey(key: String) {
+        _uiState.update { it.copy(nvidiaApiKey = key) }
+    }
+
+    fun saveNvidiaApiKey() {
+        val key = _uiState.value.nvidiaApiKey.trim()
+        if (key.isBlank() || key.startsWith("••••")) {
+            _uiState.update { it.copy(error = "Please enter a NVIDIA API key") }
+            return
+        }
+        nvidiaTokenProvider.setToken(key)
+        _uiState.update {
+            it.copy(
+                nvidiaApiKey = "••••" + key.takeLast(4),
+                isNvidiaApiKeySaved = true,
+                successMessage = "NVIDIA API key saved",
+            )
+        }
     }
 
     fun selectOpenRouterModel(model: OpenRouterModel) {
@@ -357,6 +388,7 @@ class SettingsViewModel @Inject constructor(
             tokenProvider.setToken(null)
             copilotTokenProvider.setToken(null)
             openRouterTokenProvider.setToken(null)
+            nvidiaTokenProvider.setToken(null)
             userPreferencesManager.clearAll()
             _uiState.value = UiState()
         }

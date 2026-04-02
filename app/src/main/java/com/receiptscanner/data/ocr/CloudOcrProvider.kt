@@ -5,6 +5,7 @@ import android.graphics.Matrix
 import android.util.Base64
 import com.receiptscanner.data.local.UserPreferencesManager
 import com.receiptscanner.data.remote.copilot.CopilotApiService
+import com.receiptscanner.data.remote.nvidia.NvidiaApiService
 import com.receiptscanner.data.remote.openrouter.OpenRouterApiService
 import com.receiptscanner.domain.model.CloudOcrProviderType
 import com.receiptscanner.domain.model.ExtractedReceiptData
@@ -19,6 +20,7 @@ import javax.inject.Singleton
 class CloudOcrProvider @Inject constructor(
     private val copilotApiService: CopilotApiService,
     private val openRouterApiService: OpenRouterApiService,
+    private val nvidiaApiService: NvidiaApiService,
     private val userPreferencesManager: UserPreferencesManager,
 ) {
     suspend fun extract(bitmap: Bitmap, rotationDegrees: Int): Result<ExtractedReceiptData> {
@@ -41,6 +43,7 @@ class CloudOcrProvider @Inject constructor(
                         )
                     openRouterApiService.extractReceiptData(base64, modelId)
                 }
+                CloudOcrProviderType.NVIDIA -> nvidiaApiService.extractReceiptData(base64)
             }
         } catch (e: Exception) {
             Result.failure(e)
