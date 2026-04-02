@@ -12,7 +12,6 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import com.receiptscanner.domain.model.CloudOcrProviderType
-import com.receiptscanner.domain.model.CloudOcrResolution
 import com.receiptscanner.domain.model.OcrMode
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -102,20 +101,6 @@ class UserPreferencesManager @Inject constructor(
         }
     }
 
-    val cloudOcrResolution: Flow<CloudOcrResolution> = dataStore.data.map { prefs ->
-        try {
-            CloudOcrResolution.valueOf(prefs[KEY_CLOUD_OCR_RESOLUTION] ?: CloudOcrResolution.FULL.name)
-        } catch (_: IllegalArgumentException) {
-            CloudOcrResolution.FULL
-        }
-    }
-
-    suspend fun saveCloudOcrResolution(resolution: CloudOcrResolution) {
-        dataStore.edit { prefs ->
-            prefs[KEY_CLOUD_OCR_RESOLUTION] = resolution.name
-        }
-    }
-
     suspend fun clearAll() {
         dataStore.edit { it.clear() }
     }
@@ -128,6 +113,5 @@ class UserPreferencesManager @Inject constructor(
         private val KEY_CLOUD_OCR_PROVIDER = stringPreferencesKey("cloud_ocr_provider")
         private val KEY_OPENROUTER_MODEL_ID = stringPreferencesKey("openrouter_model_id")
         private val KEY_DEBUG_MODE = booleanPreferencesKey("debug_mode_enabled")
-        private val KEY_CLOUD_OCR_RESOLUTION = stringPreferencesKey("cloud_ocr_resolution")
     }
 }

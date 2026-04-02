@@ -26,12 +26,7 @@ class CloudOcrProvider @Inject constructor(
             val base64 = withContext(Dispatchers.Default) {
                 val rotated = applyRotation(bitmap, rotationDegrees)
                 try {
-                    val resized = resizeForCloudOcr(rotated)
-                    try {
-                        bitmapToBase64Jpeg(resized)
-                    } finally {
-                        if (resized !== rotated) resized.recycle()
-                    }
+                    bitmapToBase64Jpeg(rotated)
                 } finally {
                     if (rotated !== bitmap) rotated.recycle()
                 }
@@ -59,14 +54,11 @@ class CloudOcrProvider @Inject constructor(
     }
 
     private fun bitmapToBase64Jpeg(bitmap: Bitmap, quality: Int = 85): String {
+        val resized = ensureMaxDimension(bitmap, MAX_IMAGE_DIMENSION)
         val stream = ByteArrayOutputStream()
-        bitmap.compress(Bitmap.CompressFormat.JPEG, quality, stream)
+        resized.compress(Bitmap.CompressFormat.JPEG, quality, stream)
+        if (resized !== bitmap) resized.recycle()
         return Base64.encodeToString(stream.toByteArray(), Base64.NO_WRAP)
-    }
-
-    private suspend fun resizeForCloudOcr(bitmap: Bitmap): Bitmap {
-        val maxDimension = userPreferencesManager.cloudOcrResolution.first().maxDimension
-        return ensureMaxDimension(bitmap, maxDimension)
     }
 
     private fun ensureMaxDimension(bitmap: Bitmap, maxDimension: Int): Bitmap {
@@ -76,5 +68,9 @@ class CloudOcrProvider @Inject constructor(
         val newWidth = (bitmap.width * scale).toInt()
         val newHeight = (bitmap.height * scale).toInt()
         return Bitmap.createScaledBitmap(bitmap, newWidth, newHeight, true)
+    }
+
+    companion object {
+        private const val MAX_IMAGE_DIMENSION = 2048
     }
 }

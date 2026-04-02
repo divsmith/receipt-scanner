@@ -1,6 +1,5 @@
 package com.receiptscanner.presentation.navigation
 
-import android.net.Uri
 import androidx.compose.animation.AnimatedContentTransitionScope
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
@@ -13,19 +12,14 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.receiptscanner.presentation.camera.CameraScreen
 import com.receiptscanner.presentation.history.ReceiptHistoryScreen
-import com.receiptscanner.presentation.preview.ReceiptPreviewScreen
 import com.receiptscanner.presentation.review.TransactionReviewScreen
 import com.receiptscanner.presentation.settings.SettingsScreen
 
 object Routes {
     const val CAMERA = "camera"
-    const val RECEIPT_PREVIEW = "receipt_preview/{imagePath}/{rotationDegrees}"
     const val REVIEW = "review/{receiptId}"
     const val HISTORY = "history"
     const val SETTINGS = "settings"
-
-    fun receiptPreview(imagePath: String, rotationDegrees: Int) =
-        "receipt_preview/${Uri.encode(imagePath)}/$rotationDegrees"
 
     fun review(receiptId: String) = "review/$receiptId"
 }
@@ -54,8 +48,8 @@ fun AppNavigation() {
     ) {
         composable(Routes.CAMERA) {
             CameraScreen(
-                onNavigateToPreview = { imagePath, rotationDegrees ->
-                    navController.navigate(Routes.receiptPreview(imagePath, rotationDegrees))
+                onReceiptCaptured = { receiptId ->
+                    navController.navigate(Routes.review(receiptId))
                 },
                 onNavigateToHistory = {
                     navController.navigate(Routes.HISTORY)
@@ -63,23 +57,6 @@ fun AppNavigation() {
                 onNavigateToSettings = {
                     navController.navigate(Routes.SETTINGS)
                 }
-            )
-        }
-        composable(
-            route = Routes.RECEIPT_PREVIEW,
-            arguments = listOf(
-                navArgument("imagePath") { type = NavType.StringType },
-                navArgument("rotationDegrees") { type = NavType.IntType },
-            ),
-        ) {
-            ReceiptPreviewScreen(
-                onNavigateToReview = { receiptId ->
-                    navController.navigate(Routes.review(receiptId)) {
-                        // Remove the preview screen from back stack so back from review goes to camera
-                        popUpTo(Routes.CAMERA)
-                    }
-                },
-                onRetake = { navController.popBackStack() },
             )
         }
         composable(
