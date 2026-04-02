@@ -56,7 +56,7 @@ import kotlinx.coroutines.flow.collectLatest
 
 @Composable
 fun CameraScreen(
-    onReceiptCaptured: (String) -> Unit,
+    onNavigateToPreview: (imagePath: String, rotationDegrees: Int) -> Unit,
     onNavigateToHistory: () -> Unit,
     onNavigateToSettings: () -> Unit,
     viewModel: CameraViewModel = hiltViewModel(),
@@ -102,10 +102,10 @@ fun CameraScreen(
         }
     }
 
-    // Navigate to review on successful capture
+    // Navigate to preview once image is saved
     LaunchedEffect(Unit) {
-        viewModel.navigateToReview.collectLatest { receiptId ->
-            onReceiptCaptured(receiptId)
+        viewModel.navigateToPreview.collectLatest { (imagePath, rotationDegrees) ->
+            onNavigateToPreview(imagePath, rotationDegrees)
         }
     }
 
@@ -132,16 +132,6 @@ fun CameraScreen(
                 .fillMaxSize()
                 .padding(paddingValues),
         ) {
-            // Debug overlay takes over the full screen when present
-            if (uiState.debugOcrData != null) {
-                DebugOcrOverlay(
-                    debugData = uiState.debugOcrData!!,
-                    onContinue = { viewModel.continueFromDebugOverlay() },
-                    onRetake = { viewModel.retakeFromDebugOverlay() },
-                )
-                return@Scaffold
-            }
-
             // Camera preview
             if (hasCameraPermission) {
                 val previewView = remember { PreviewView(context) }
